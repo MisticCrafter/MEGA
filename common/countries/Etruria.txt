@@ -1,0 +1,140 @@
+ck2_converter_generated = yes
+graphical_culture = easterngfx
+color = { 114 154 143 }
+revolutionary_colors = { 14 0 14 }
+historical_idea_groups = {
+	religious_ideas
+	trade_ideas
+	defensive_ideas
+	economic_ideas
+	diplomatic_ideas
+	innovativeness_ideas
+	offensive_ideas
+	spy_ideas
+}
+historical_units = {
+	austrian_grenzer
+	austrian_hussar
+	austrian_jaeger
+	austrian_tercio
+	austrian_white_coat
+	italian_condotta
+	mixed_order_infantry
+	napoleonic_lancers
+	napoleonic_square
+	open_order_cavalry
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+}
+monarch_names = {
+	"Adelasia #1" = -1
+	"Adelchis #1" = 10
+	"Alberic #2" = 10
+	"Anscario #1" = 10
+	"Arnulf #0" = 0
+	"Aurelius #0" = 0
+	"Ausilio #1" = 10
+	"Bonifacio #2" = 10
+	"Federico #1" = 10
+	"Gierolt #1" = 10
+	"Giuditta #0" = -1
+	"Gojslav #0" = 0
+	"Guy #4" = 10
+	"Hildeprand #1" = 10
+	"Hran #0" = 0
+	"Ivaniš #0" = 0
+	"Kezhedey #0" = 0
+	"Konstancja #1" = -1
+	"Lambert #3" = 10
+	"Landolfo #2" = 10
+	"Louis #1" = 10
+	"Matej #0" = 0
+	"Matilda #1" = -1
+	"Mauring #1" = 10
+	"Mihajlo #0" = 0
+	"Radivoj #0" = 0
+	"Suppo #2" = 10
+	"Teobaldo #1" = 10
+	"Theochariste #0" = -1
+	"Theodicus #1" = 10
+	"Thierry #2" = 10
+	"Tiziana #1" = -1
+	"Ubert #2" = 10
+	"Uc #1" = 10
+	"Vukac #0" = 0
+}
+leader_names = {
+	"Allori"
+	"Barberini"
+	"Bartolini"
+	"Benciveni"
+	"Bizzelli"
+	"Boncompagni"
+	"Botta-Adorno"
+	"Buontalenti"
+	"Buti"
+	"Butteri"
+	"Cercignani"
+	"Chiastavelli"
+	"Chigi"
+	"Corsini"
+	"Cybo-Malaspina"
+	"Gori"
+	"Grimaldi"
+	"Grimaldi di Busca"
+	"Lanzi"
+	"Lessi"
+	"Ludovisi"
+	"Malaspina"
+	"Mancinetti"
+	"Nasini"
+	"Orsini"
+	"Piccolomini"
+	"Pico"
+	"Pierallini"
+	"Pieroni"
+	"Piombante"
+	"Pontelli"
+	"Rivani"
+	"Rospigliosi"
+	"Savaranola"
+	"Soderini"
+	"Tempesta"
+	"Terreni"
+	"Tonelli"
+	"Traballesi"
+	"Ulivelli"
+	"Vasari"
+	"Zucchi"
+	"d'Appiani d'Aragona"
+	"d'Asburgo"
+	"de' Medici"
+	"degli Albizzi"
+	"del Moro"
+	"del Rosso"
+	"di Campofregoso"
+	"di Farnese"
+}
+ship_names = {
+	"Arezzo"
+	"Bisenzio"
+	"Corso Donati"
+	"Dino Compagni"
+	"Firenze"
+	"Francesco Petrarca"
+	"Giotto"
+	"Impruneta"
+	"Medici"
+	"Mugnone"
+	"Orsanmichele"
+	"Pistoia"
+	"Prato"
+	"Ripoli"
+	"San Lorenzo"
+	"Santa Trinita"
+	"Sesto Fiorentino"
+}
+army_names = {
+	"Armata de $PROVINCE$"
+}

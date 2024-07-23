@@ -1,0 +1,16 @@
+ck2_converter_generated = yes
+graphical_culture = africangfx
+color = { 225 25 25 }
+monarch_names = {
+	"Bangben #1" = 10
+	"Bi Awur´bi #0" = 0
+	"Flomo #1" = 10
+	"Gyem Che #0" = 0
+	"Kwesi #0" = 0
+	"Mardea #0" = -1
+	"Nimene #1" = 10
+	"Okonfo #0" = 0
+	"Ovlur #0" = 0
+	"Pereko #0" = 0
+	"Togba #1" = 10
+}

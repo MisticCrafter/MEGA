@@ -1,0 +1,57 @@
+government = monarchy
+add_government_reform = plutocratic_reform
+government_rank = 2
+technology_group = indian
+religion = hinduism
+primary_culture = bengali
+capital = 2044
+mercantilism = 15
+1444.11.11= {
+	monarch = {
+		name = "Jira"
+		dynasty = "Kalyanachandrid"
+		adm = 4
+		dip = 4
+		mil = 5
+		birth_date = 1427.10.25
+		female = yes
+		religion = hinduism
+		culture = bengali
+	}
+	add_ruler_personality = free_thinker_personality
+	add_ruler_personality = lawgiver_personality
+	queen = {
+		name = "Kambiz"
+		dynasty = "Samanid"
+		adm = 3
+		dip = 4
+		mil = 4
+		country_of_origin = TRT
+		birth_date = 1412.5.25
+		death_date = 1472.5.25
+		religion = sunni
+		culture = hindustani_proper
+	}
+	add_queen_personality = silver_tongue_personality
+	add_queen_personality = zealot_personality
+	heir = {
+		name = "Bhavashankari"
+		monarch_name = "Bhavashankari"
+		dynasty = "Kalyanachandrid"
+		adm = 4
+		dip = 2
+		mil = 4
+		birth_date = 1432.3.23
+		death_date = 1497.3.23
+		female = yes
+		claim = 89
+		religion = mahayana
+		culture = bengali
+	}
+	add_heir_personality = obsessive_perfectionist_personality
+	add_heir_personality = secretive_personality
+}
+1444.11.11= {
+	add_prestige = 75
+	add_treasury = 81
+}

@@ -1,0 +1,58 @@
+government = republic
+add_government_reform = free_city
+government_rank = 1
+technology_group = western
+religion = converted_dynamic_faith_113
+primary_culture = dynamic-breton-cosmopolitan_french-culture-num1
+capital = 172
+fixed_capital = 172
+mercantilism = 25
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Rumun"
+		dynasty = "von Eppstein"
+		adm = 5
+		dip = 5
+		mil = 5
+		birth_date = 1408.9.19
+		female = yes
+		religion = converted_dynamic_faith_113
+		culture = dynamic-breton-cosmopolitan_french-culture-num1
+	}
+	add_ruler_personality = bold_fighter_personality
+	add_ruler_personality = just_personality
+	queen = {
+		name = "Jean"
+		dynasty = "of Brittany"
+		adm = 6
+		dip = 6
+		mil = 6
+		country_of_origin = Z24
+		birth_date = 1414.1.16
+		death_date = 1474.1.16
+		religion = converted_dynamic_faith_113
+		culture = dynamic-breton-cosmopolitan_french-culture-num1
+	}
+	add_queen_personality = craven_personality
+	add_queen_personality = free_thinker_personality
+	heir = {
+		name = "Gilles"
+		monarch_name = "Gilles"
+		dynasty = "von Eppstein"
+		adm = 2
+		dip = 3
+		mil = 2
+		birth_date = 1437.5.16
+		death_date = 1502.5.16
+		claim = 89
+		religion = converted_dynamic_faith_113
+		culture = dynamic-breton-cosmopolitan_french-culture-num1
+	}
+	add_heir_personality = charismatic_negotiator_personality
+	add_heir_personality = kind_hearted_personality
+}
+1444.11.11= {
+	add_prestige = 55
+	add_treasury = 62
+}

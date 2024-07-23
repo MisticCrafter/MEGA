@@ -1,0 +1,69 @@
+ck2_converter_generated = yes
+graphical_culture = inuitgfx
+color = { 38 66 71 }
+revolutionary_colors = { 5 0 13 }
+historical_idea_groups = {
+	trade_ideas
+	defensive_ideas
+	offensive_ideas
+	economic_ideas
+	diplomatic_ideas
+	aristocracy_ideas
+	spy_ideas
+	religious_ideas
+}
+historical_units = {
+	dutch_maurician
+	mixed_order_infantry
+	napoleonic_lancers
+	napoleonic_square
+	open_order_cavalry
+	prussian_frederickian
+	prussian_uhlan
+	swedish_arme_blanche
+	swedish_caroline
+	swedish_gallop
+	swedish_gustavian
+	swiss_landsknechten
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+}
+monarch_names = {
+	"Izerge #0" = 0
+	"Kachyrii #0" = -1
+	"Kinyak #1" = 10
+	"Matyo #0" = 0
+	"Nekhot #0" = 0
+	"Olday #1" = -1
+	"Shkay #3" = 10
+	"Shymay #0" = -1
+	"Sokhron #1" = 10
+	"Varaka #1" = 10
+	"Vikay #0" = 0
+	"Yamshan #1" = 10
+}
+leader_names = {
+	"Azegid"
+	"Gachegid"
+	"Irtegid"
+	"Lunegid"
+	"Moshegid"
+	"Rategid"
+	"Syktyvkar"
+	"Yugra"
+	"Zhebegid"
+	"Zhunegid"
+}
+ship_names = {
+	"Noroava"
+	"Olota"
+	"Ordava"
+	"Pemka"
+	"Poshayka"
+	"Tekay"
+	"Tetyava"
+	"Tundya"
+	"Unzhutka"
+	"Yalgava"
+}

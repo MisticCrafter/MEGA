@@ -1,0 +1,27 @@
+ck2_converter_generated = yes
+graphical_culture = muslimgfx
+color = { 173 130 0 }
+monarch_names = {
+	"Adherbal #0" = 0
+	"Adimun #1" = 10
+	"Adisun #1" = 10
+	"Aemilian #0" = 0
+	"Agdun #1" = 10
+	"Awdia #2" = 10
+	"Bannu #0" = 0
+	"Bilqis #0" = -1
+	"Bwlama #2" = 10
+	"Cornelia #0" = -1
+	"Dolo #1" = 10
+	"Dumu #1" = 10
+	"Iher #0" = 0
+	"Isalcas #0" = 0
+	"Isli #1" = 10
+	"Jibril #1" = 10
+	"Khadija #0" = -1
+	"Maziba #0" = 0
+	"Medjan #0" = 0
+	"Noumouroudou #1" = 10
+	"Silvia #0" = -1
+	"Tacfin #1" = 10
+}

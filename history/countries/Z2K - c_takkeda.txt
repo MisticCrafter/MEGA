@@ -1,0 +1,57 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = muslim
+religion = catholic
+primary_culture = berber
+capital = 2272
+fixed_capital = 2272
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Bwlama II"
+		dynasty = "Bereté"
+		adm = 2
+		dip = 3
+		mil = 4
+		birth_date = 1394.5.19
+		religion = catholic
+		culture = berber
+	}
+	add_ruler_personality = architectural_visionary_personality
+	add_ruler_personality = tactical_genius_personality
+	queen = {
+		name = "Silvia"
+		dynasty = "of Otranto"
+		adm = 5
+		dip = 3
+		mil = 4
+		country_of_origin = Z2K
+		birth_date = 1383.9.27
+		death_date = 1443.9.27
+		female = yes
+		religion = catholic
+		culture = dynamic-roman-culture-num1
+	}
+	add_queen_personality = drunkard_personality
+	add_queen_personality = tactical_genius_personality
+	heir = {
+		name = "Adherbal"
+		monarch_name = "Adherbal"
+		dynasty = "Bereté"
+		adm = 4
+		dip = 5
+		mil = 6
+		birth_date = 1416.10.16
+		death_date = 1481.10.16
+		claim = 89
+		religion = catholic
+		culture = berber
+	}
+	add_heir_personality = martial_educator_personality
+	add_heir_personality = tactical_genius_personality
+}
+1444.11.11= {
+	add_prestige = 73
+	add_treasury = 56
+}

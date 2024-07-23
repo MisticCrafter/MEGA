@@ -1,0 +1,55 @@
+government = monarchy
+add_government_reform = rajput_kingdom
+government_rank = 2
+technology_group = indian
+religion = hinduism
+primary_culture = dynamic-gondi-oriya-culture-num1
+capital = 552
+1444.11.11= {
+	monarch = {
+		name = "Vidhyadharabhanja II"
+		dynasty = "Somavamsi"
+		adm = 5
+		dip = 5
+		mil = 5
+		birth_date = 1374.4.7
+		religion = hinduism
+		culture = dynamic-gondi-oriya-culture-num1
+	}
+	add_ruler_personality = pious_personality
+	add_ruler_personality = zealot_personality
+	queen = {
+		name = "Shantaladevi"
+		dynasty = "Orsini"
+		adm = 3
+		dip = 3
+		mil = 2
+		country_of_origin = ORI
+		birth_date = 1403.1.16
+		death_date = 1463.1.16
+		female = yes
+		religion = hinduism
+		culture = kannada
+	}
+	add_queen_personality = careful_personality
+	add_queen_personality = scholar_personality
+	heir = {
+		name = "Apsaradeva"
+		monarch_name = "Apsaradeva"
+		dynasty = "Somavamsi"
+		adm = 3
+		dip = 5
+		mil = 6
+		birth_date = 1431.9.23
+		death_date = 1496.9.23
+		claim = 89
+		religion = hinduism
+		culture = dynamic-gondi-oriya-culture-num1
+	}
+	add_heir_personality = industrious_personality
+	add_heir_personality = tolerant_personality
+}
+1444.11.11= {
+	add_prestige = 105
+	add_treasury = 61
+}

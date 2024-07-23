@@ -1,0 +1,92 @@
+ck2_converter_generated = yes
+graphical_culture = indiangfx
+color = { 233 88 88 }
+revolutionary_colors = { 1 0 1 }
+historical_idea_groups = {
+	quantity_ideas
+	defensive_ideas
+	trade_ideas
+	innovativeness_ideas
+	diplomatic_ideas
+	spy_ideas
+	economic_ideas
+	aristocracy_ideas
+}
+historical_units = {
+	bhonsle_infantry
+	indian_arquebusier
+	indian_elephant
+	indian_footsoldier
+	indian_shock_cavalry
+	maharathan_guerilla_warfare
+	rajput_hill_fighters
+	reformed_mughal_musketeer
+	sikh_rifle
+	south_indian_musketeer
+	tipu_sultan_rocket
+}
+monarch_names = {
+	"Ariñcaya #1" = 10
+	"Arulmolivarman #1" = 10
+	"Atirâjêntira #1" = 10
+	"Chandaladevi #0" = -1
+	"Cuntara #1" = 10
+	"Cîvallapan #1" = 10
+	"Devakhadga #3" = 10
+	"Devavati #0" = -1
+	"Gayatri #0" = -1
+	"Ghosha #1" = 10
+	"Hira #0" = -1
+	"Irâcâtirâca #1" = 10
+	"Irâcêntira #2" = 10
+	"Kanakacûriya #1" = 10
+	"Kantarâtitta #1" = 10
+	"Kavatiyakkan #1" = -1
+	"Mahâdeviyâr #1" = -1
+	"Nayanadevi #0" = -1
+	"Netuntukkai #1" = -1
+	"Parântaka #1" = 10
+	"Pâkkilân #1" = 10
+	"Raghudev #1" = 10
+	"Uttama #1" = 10
+	"Vina #0" = -1
+	"Vîrarâcêntira #1" = 10
+}
+leader_names = {
+	"Chetty"
+	"Dalawa"
+	"Mudaliar"
+	"Nayak"
+	"Rajapopalachari"
+	"Saluva"
+	"Saraf"
+	"Sastri"
+	"Senji"
+	"Thondaiman"
+}
+ship_names = {
+	"Amirtha"
+	"Amman"
+	"Arul"
+	"Chellam"
+	"Devi"
+	"Durga"
+	"Gayatri"
+	"Iniya"
+	"Kaveri"
+	"Lakshmi"
+	"Madhu"
+	"Meenakshi"
+	"Nalini"
+	"Palar"
+	"Parvati"
+	"Pennar"
+	"Ponnaiyar"
+	"Ponni"
+	"Radha"
+	"Ratri"
+	"Sarasvati"
+	"Sita"
+	"Tamarai"
+	"Vaigai"
+}

@@ -1,0 +1,40 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+religion = converted_dynamic_faith_113
+primary_culture = hessian
+capital = 81
+1444.11.11= {
+	monarch = {
+		name = "Garibald"
+		dynasty = "Billung-Hersfeld"
+		adm = 1
+		dip = 3
+		mil = 1
+		birth_date = 1417.10.6
+		religion = converted_dynamic_faith_113
+		culture = hessian
+	}
+	add_ruler_personality = cruel_personality
+	add_ruler_personality = zealot_personality
+	heir = {
+		name = "Berthold"
+		monarch_name = "Berthold III"
+		dynasty = "Billung-Hersfeld"
+		adm = 6
+		dip = 6
+		mil = 6
+		birth_date = 1409.11.29
+		death_date = 1474.11.29
+		claim = 89
+		religion = catholic
+		culture = hessian
+	}
+	add_heir_personality = fierce_negotiator_personality
+	add_heir_personality = zealot_personality
+}
+1444.11.11= {
+	add_prestige = 61
+	add_treasury = 71
+}

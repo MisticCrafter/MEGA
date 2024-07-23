@@ -1,0 +1,56 @@
+government = monarchy
+add_government_reform = uparaja_reform
+government_rank = 2
+technology_group = indian
+religion = mahayana
+primary_culture = bengali
+capital = 4415
+add_accepted_culture = dynamic-sinhala-tamil-culture-num1
+1444.11.11= {
+	monarch = {
+		name = "Devakhadga III"
+		dynasty = "Devakhadgid"
+		adm = 5
+		dip = 3
+		mil = 5
+		birth_date = 1380.5.12
+		religion = mahayana
+		culture = bengali
+	}
+	add_ruler_personality = entrepreneur_personality
+	add_ruler_personality = scholar_personality
+	queen = {
+		name = "Hira"
+		dynasty = "Bhaumik"
+		adm = 3
+		dip = 4
+		mil = 4
+		country_of_origin = MAD
+		birth_date = 1373.8.9
+		death_date = 1433.8.9
+		female = yes
+		religion = hinduism
+		culture = bengali
+	}
+	add_queen_personality = infertile_personality
+	add_queen_personality = lawgiver_personality
+	heir = {
+		name = "Dhireshwar"
+		monarch_name = "Dhireshwar"
+		dynasty = "Devakhadgid"
+		adm = 6
+		dip = 6
+		mil = 5
+		birth_date = 1400.7.26
+		death_date = 1465.7.26
+		claim = 89
+		religion = mahayana
+		culture = bengali
+	}
+	add_heir_personality = drunkard_personality
+	add_heir_personality = zealot_personality
+}
+1444.11.11= {
+	add_prestige = 96
+	add_treasury = 80
+}

@@ -1,0 +1,57 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = saxon
+capital = 4741
+add_accepted_culture = sorbian
+elector = yes
+1444.11.11= {
+	monarch = {
+		name = "Willibirg"
+		dynasty = "Billung-Hersfeld"
+		adm = 3
+		dip = 4
+		mil = 3
+		birth_date = 1419.12.13
+		female = yes
+		religion = catholic
+		culture = saxon
+	}
+	add_ruler_personality = tactical_genius_personality
+	add_ruler_personality = tolerant_personality
+	queen = {
+		name = "Wulff"
+		dynasty = "Billung-Lippe"
+		adm = 4
+		dip = 5
+		mil = 4
+		country_of_origin = ANH
+		birth_date = 1407.4.12
+		death_date = 1467.4.12
+		religion = catholic
+		culture = sorbian
+	}
+	add_queen_personality = malevolent_personality
+	add_queen_personality = obsessive_perfectionist_personality
+	heir = {
+		name = "Garibald"
+		monarch_name = "Garibald"
+		dynasty = "Billung-Hersfeld"
+		adm = 2
+		dip = 5
+		mil = 2
+		birth_date = 1417.10.6
+		death_date = 1482.10.6
+		claim = 89
+		religion = converted_dynamic_faith_113
+		culture = bavarian
+	}
+	add_heir_personality = cruel_personality
+	add_heir_personality = zealot_personality
+}
+1444.11.11= {
+	add_prestige = 70
+	add_treasury = 39
+}

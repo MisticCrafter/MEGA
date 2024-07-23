@@ -1,0 +1,44 @@
+government = monarchy
+add_government_reform = uparaja_reform
+government_rank = 1
+technology_group = eastern
+religion = vajrayana
+primary_culture = dynamic-uralic-culture-num1
+capital = 4691
+fixed_capital = 4691
+add_accepted_culture = ostyaki
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Vezhav"
+		dynasty = "of Votkhar"
+		adm = 3
+		dip = 5
+		mil = 1
+		birth_date = 1395.10.13
+		female = yes
+		religion = vajrayana
+		culture = dynamic-uralic-culture-num1
+	}
+	add_ruler_personality = cruel_personality
+	add_ruler_personality = drunkard_personality
+	heir = {
+		name = "Putyayka"
+		monarch_name = "Putyayka II"
+		dynasty = "of Votkhar"
+		adm = 5
+		dip = 4
+		mil = 5
+		birth_date = 1423.2.11
+		death_date = 1488.2.11
+		claim = 89
+		religion = vajrayana
+		culture = dynamic-uralic-culture-num1
+	}
+	add_heir_personality = tactical_genius_personality
+	add_heir_personality = tolerant_personality
+}
+1444.11.11= {
+	add_prestige = 76
+	add_treasury = 48
+}

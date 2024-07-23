@@ -1,0 +1,27 @@
+ck2_converter_generated = yes
+graphical_culture = asiangfx
+color = { 140 140 180 }
+monarch_names = {
+	"Asha #1" = -1
+	"Dechen #1" = -1
+	"Dohna #0" = -1
+	"Gyeltsen #1" = 10
+	"Gyeltso #0" = 0
+	"Keldroma #0" = 0
+	"Khadroma #0" = -1
+	"Khritsun #0" = -1
+	"Lhachen Byangchupsenpa #1" = 10
+	"Lhachen Drakpadé #1" = 10
+	"Lhachen Gyalpo #3" = 10
+	"Lhachen Pelgyigön #1" = 10
+	"Lhachen Takpa #1" = 10
+	"Lhami #0" = -1
+	"Mé #0" = 0
+	"Norbu #0" = 0
+	"Nyimagön #0" = 0
+	"Phurbu #0" = 0
+	"Vidhyadhara #1" = 10
+	"Wangdue #1" = -1
+	"Yangchen #1" = -1
+	"Zhyelmotsün #1" = -1
+}

@@ -1,0 +1,57 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = eastern
+religion = siberian_pagan
+primary_culture = uralic
+capital = 4689
+add_accepted_culture = ostyaki
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Kichay"
+		dynasty = "of Votkhar"
+		adm = 4
+		dip = 4
+		mil = 4
+		birth_date = 1401.9.10
+		religion = siberian_pagan
+		culture = uralic
+	}
+	add_ruler_personality = martial_educator_personality
+	add_ruler_personality = tactical_genius_personality
+	queen = {
+		name = "Sochava"
+		dynasty = "Orsini"
+		adm = 3
+		dip = 2
+		mil = 1
+		country_of_origin = Z14
+		birth_date = 1403.11.27
+		death_date = 1463.11.27
+		female = yes
+		religion = siberian_pagan
+		culture = uralic
+	}
+	add_queen_personality = infertile_personality
+	add_queen_personality = loose_lips_personality
+	heir = {
+		name = "Ozhmeg"
+		monarch_name = "Ozhmeg II"
+		dynasty = "of Votkhar"
+		adm = 3
+		dip = 1
+		mil = 3
+		birth_date = 1439.6.7
+		death_date = 1504.6.7
+		claim = 89
+		religion = siberian_pagan
+		culture = uralic
+	}
+	add_heir_personality = obsessive_perfectionist_personality
+	add_heir_personality = zealot_personality
+}
+1444.11.11= {
+	add_prestige = 76
+	add_treasury = 46
+}

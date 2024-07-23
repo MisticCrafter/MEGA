@@ -1,0 +1,80 @@
+ck2_converter_generated = yes
+graphical_culture = indiangfx
+color = { 157 200 42 }
+revolutionary_colors = { 10 4 13 }
+historical_idea_groups = {
+	quantity_ideas
+	offensive_ideas
+	economic_ideas
+	defensive_ideas
+	trade_ideas
+	diplomatic_ideas
+	administrative_ideas
+	aristocracy_ideas
+}
+historical_units = {
+	bhonsle_cavalry
+	indian_arquebusier
+	indian_elephant
+	indian_footsoldier
+	indian_rifle
+	mughal_mansabdar
+	mughal_musketeer
+	rajput_hill_fighters
+	rajput_musketeer
+	sikh_hit_and_run
+	tipu_sultan_rocket
+}
+monarch_names = {
+	"Ambra-Prasad #0" = 0
+	"Anekonda #0" = 0
+	"Dattadevi #0" = -1
+	"Dronasinha #1" = 10
+	"Harsa #1" = 10
+	"Harshapala #1" = 10
+	"Lakshmivarman #0" = 0
+	"Rasaladevi #0" = -1
+	"Ratan-Singh #3" = 10
+	"Suratrana #0" = 0
+	"Vasudeva #1" = 10
+	"Vigrahapala #0" = 0
+}
+leader_names = {
+	"Ali"
+	"Azad"
+	"Bhutto"
+	"Hussein"
+	"Jahan"
+	"Khan"
+	"Lodi"
+	"Lohia"
+	"Musharif"
+	"Nagar"
+	"Nazimuddin"
+	"Ra'ana"
+	"Sharif"
+	"Sharma"
+	"Sinan"
+	"Singh"
+	"Viqar-ul-Mulk"
+}
+ship_names = {
+	"Alia"
+	"Chambal"
+	"Fatimah"
+	"Ganges"
+	"Jalsena"
+	"Kala Jahazi"
+	"Khan"
+	"Lal Jahazi"
+	"Nausena"
+	"Nav ka Yudh"
+	"Niknaz"
+	"Nila Jahazi"
+	"Niloufa"
+	"Noor"
+	"Sagar"
+	"Spiti"
+	"Yamuna"
+	"Yasmine"
+}

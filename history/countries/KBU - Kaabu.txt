@@ -1,0 +1,56 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 2
+technology_group = east_african
+religion = converted_dynamic_faith_111
+primary_culture = dynamic-amhara-somali-culture-num1
+capital = 2238
+add_accepted_culture = senegambian
+1444.11.11= {
+	monarch = {
+		name = "Jiinow"
+		dynasty = "McDuck-Ghazali"
+		adm = 3
+		dip = 4
+		mil = 3
+		birth_date = 1424.10.7
+		female = yes
+		religion = converted_dynamic_faith_111
+		culture = dynamic-amhara-somali-culture-num1
+	}
+	add_ruler_personality = pious_personality
+	add_ruler_personality = zealot_personality
+	queen = {
+		name = "Amare"
+		dynasty = "Dawaro"
+		adm = 4
+		dip = 4
+		mil = 3
+		country_of_origin = KBU
+		birth_date = 1423.3.12
+		death_date = 1483.3.12
+		religion = converted_dynamic_faith_111
+		culture = dynamic-amhara-somali-culture-num1
+	}
+	add_queen_personality = pious_personality
+	add_queen_personality = zealot_personality
+	heir = {
+		name = "Hamid"
+		monarch_name = "Hamid"
+		dynasty = "McDuck-Ghazali"
+		adm = 4
+		dip = 6
+		mil = 5
+		birth_date = 1426.3.1
+		death_date = 1491.3.1
+		claim = 89
+		religion = catholic
+		culture = dynamic-amhara-somali-culture-num1
+	}
+	add_heir_personality = conqueror_personality
+	add_heir_personality = tactical_genius_personality
+}
+1444.11.11= {
+	add_prestige = 62
+	add_treasury = 53
+}

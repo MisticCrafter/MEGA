@@ -1,0 +1,57 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 2
+technology_group = western
+religion = catholic
+primary_culture = dynamic-roman-culture-num1
+capital = 774
+add_accepted_culture = daju
+add_accepted_culture = kanuri
+1444.11.11= {
+	monarch = {
+		name = "Philip"
+		dynasty = "Theodosian"
+		adm = 3
+		dip = 4
+		mil = 5
+		birth_date = 1407.2.17
+		religion = catholic
+		culture = dynamic-roman-culture-num1
+	}
+	add_ruler_personality = lawgiver_personality
+	add_ruler_personality = strict_personality
+	queen = {
+		name = "Poshayka"
+		dynasty = "of Votkhar"
+		adm = 3
+		dip = 5
+		mil = 3
+		country_of_origin = DAR
+		birth_date = 1403.12.3
+		death_date = 1463.12.3
+		female = yes
+		religion = siberian_pagan
+		culture = uralic
+	}
+	add_queen_personality = righteous_personality
+	add_queen_personality = zealot_personality
+	heir = {
+		name = "Clementius"
+		monarch_name = "Clementius"
+		dynasty = "Theodosian"
+		adm = 3
+		dip = 3
+		mil = 4
+		birth_date = 1434.10.2
+		death_date = 1499.10.2
+		claim = 89
+		religion = catholic
+		culture = dynamic-roman-culture-num1
+	}
+	add_heir_personality = cruel_personality
+	add_heir_personality = zealot_personality
+}
+1444.11.11= {
+	add_prestige = 70
+	add_treasury = 63
+}

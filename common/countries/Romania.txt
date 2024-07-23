@@ -1,0 +1,102 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 21 96 178 }
+revolutionary_colors = { 13 8 5 }
+historical_idea_groups = {
+	defensive_ideas
+	offensive_ideas
+	spy_ideas
+	trade_ideas
+	diplomatic_ideas
+	economic_ideas
+	innovativeness_ideas
+	administrative_ideas
+}
+historical_units = {
+	eastern_carabinier
+	eastern_knights
+	eastern_medieval_infantry
+	eastern_militia
+	eastern_skirmisher
+	eastern_uhlan
+	ottoman_lancer
+	ottoman_new_model
+	ottoman_nizami_cedid
+	ottoman_reformed_janissary
+	ottoman_reformed_spahi
+	ottoman_sekban
+	ottoman_toprakli_dragoon
+	ottoman_toprakli_hit_and_run
+	slavic_stradioti
+}
+monarch_names = {
+	"Arnaud #0" = 0
+	"Attila #1" = 10
+	"Berthold #1" = 10
+	"Dana #0" = -1
+	"Engelmar #1" = 10
+	"Ioan #0" = 0
+	"Liupolt #1" = 10
+	"Mechthild #0" = -1
+	"Nizzo #0" = 0
+	"Wartrun #1" = -1
+}
+leader_names = {
+	"Basarab"
+	"Brâncoveanu"
+	"Callimachi"
+	"Campineanu"
+	"Cantacuzino"
+	"Cantemir"
+	"Caragea"
+	"Craiovescu"
+	"Dracul"
+	"Duca"
+	"Ghica"
+	"Golescu"
+	"Ilias"
+	"Ipsilanti"
+	"Lupu"
+	"Mavrocordat"
+	"Mircea"
+	"Moruzi"
+	"Movila"
+	"Musatin"
+	"Norocea"
+	"Racovita"
+	"Ruset"
+	"Sturdza"
+	"Sutu"
+	"Tepelus"
+	"Tolmay"
+	"Vacarescu"
+	"Voda"
+}
+ship_names = {
+	"Atacul de noapte"
+	"Athleta Christi"
+	"Baia"
+	"Bogdan I"
+	"Calugareni"
+	"Dracul"
+	"Frumuseatsa valurilor"
+	"Iuga"
+	"Litovoi"
+	"Moldova"
+	"Posada"
+	"Putera"
+	"Romania"
+	"Rovine"
+	"Râul Prut"
+	"Sirmium"
+	"Sperietoaria"
+	"Stefan cel Mare"
+	"Suceava"
+	"Târgul Moldovei"
+	"Vaslui"
+	"Viteazul"
+	"mari"
+}
+army_names = {
+	"Oastea de $PROVINCE$"
+}

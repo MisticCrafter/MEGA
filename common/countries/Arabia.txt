@@ -1,0 +1,163 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 76 141 58 }
+revolutionary_colors = { 10 0 1 }
+historical_idea_groups = {
+	religious_ideas
+	defensive_ideas
+	trade_ideas
+	offensive_ideas
+	spy_ideas
+	diplomatic_ideas
+	quantity_ideas
+	economic_ideas
+}
+historical_units = {
+	ali_bey_reformed_infantry
+	mamluk_archer
+	mamluk_cavalry_charge
+	mamluk_duel
+	mamluk_musket_charge
+	muslim_dragoon
+	muslim_mass_infantry
+}
+monarch_names = {
+	"Abu-al-Malik #1" = 10
+	"Ar-Radi #1" = 10
+	"Arias #0" = 0
+	"As-Saffah #1" = 10
+	"Bahman #0" = 0
+	"Cathèrine #0" = -1
+	"Elham #0" = -1
+	"Gerardo #0" = 0
+	"Gil #0" = 0
+	"Golnaz #0" = -1
+	"Harun al-Rashid #1" = 10
+	"Hisham #1" = 10
+	"Ibrahim #1" = 10
+	"Khashayar #0" = 0
+	"Mafalda #0" = -1
+	"Marwan #2" = 10
+	"Morad #0" = 0
+	"Muawiyah #2" = 10
+	"Osorio #0" = 0
+	"Pedro #1" = 10
+	"Sol #0" = -1
+	"Sulayman #1" = 10
+	"Umar #1" = 10
+	"Vela #0" = 0
+	"Yazid #3" = 10
+	"al-Amin #1" = 10
+	"al-Hadi #1" = 10
+	"al-Ma'mum #1" = 10
+	"al-Mahdi #1" = 10
+	"al-Mansur #1" = 10
+	"al-Mu'tadid #1" = 10
+	"al-Mu'tamid #1" = 10
+	"al-Mu'tasim #1" = 10
+	"al-Mu'tazz #1" = 10
+	"al-Muhtadi #1" = 10
+	"al-Muktafi #1" = 10
+	"al-Muntasir #1" = 10
+	"al-Muqtadir #1" = 10
+	"al-Musta'in #1" = 10
+	"al-Mustakfi #1" = 10
+	"al-Mutawakkil #1" = 10
+	"al-Muti #1" = 10
+	"al-Muttaqi #1" = 10
+	"al-Qahir #1" = 10
+	"al-Ta'i #1" = 10
+	"al-Walid #2" = 10
+	"al-Wathiq #1" = 10
+	"Élodie #0" = -1
+}
+leader_names = {
+	"Abbas"
+	"Ali"
+	"Aybak"
+	"Baibars"
+	"Bay"
+	"Bey"
+	"Bugha"
+	"Chammas"
+	"Farhat"
+	"Hammoud"
+	"Ibrahim"
+	"Inâl"
+	"Kansur"
+	"Khalil"
+	"Mansour"
+	"Saleh"
+	"Sayfuddin"
+	"Taleb"
+	"Youssef"
+	"Zangi"
+}
+ship_names = {
+	"Ad-Däkhilah"
+	"Adl"
+	"Ahmen Muyaid"
+	"Al-Ali"
+	"Al-Bahriyah"
+	"Al-Farafirah"
+	"Al-Kharijah"
+	"Alim"
+	"Ashraf Barsbay"
+	"Aziz"
+	"Aziz Gamal"
+	"Bari"
+	"Basir"
+	"Basit"
+	"Ben Barqooq"
+	"Farag Ben Barqooq"
+	"Fattah"
+	"Ghaffar"
+	"Hakam"
+	"Harrat Al-Buqum"
+	"Harrat Al-Kishb"
+	"Harrat Hadan"
+	"Harrat Khaybar"
+	"Harrat Kurama"
+	"Harrat Nawasif"
+	"Harrat Rahat"
+	"Harrat al-Unayyir"
+	"Hijaz"
+	"Jabal Abu Hasan"
+	"Jabal Baydan"
+	"Jabal Sawda"
+	"Jabal al-Jurayrah"
+	"Jabbar"
+	"Jeddah"
+	"Khafid"
+	"Khaliq"
+	"Malik"
+	"Mecca"
+	"Medina"
+	"Mu'izz"
+	"Mu'min"
+	"Mudhill"
+	"Muhaymin"
+	"Musawwir"
+	"Mutakabbir"
+	"Muyaid Sheikh"
+	"Nahr an-Nil"
+	"Nasser Muhamed"
+	"Qabid"
+	"Qahhar"
+	"Quddus"
+	"Rafi"
+	"Rahim"
+	"Rahman"
+	"Razzaq"
+	"Salam"
+	"Sami"
+	"Wahhab"
+	"Zaher Barqooq"
+	"Zaher Tatar"
+}
+army_names = {
+	"Jaish-al $PROVINCE$"
+}
+fleet_names = {
+	"Istawal-al $PROVINCE$"
+}

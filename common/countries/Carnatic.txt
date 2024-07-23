@@ -1,0 +1,92 @@
+ck2_converter_generated = yes
+graphical_culture = indiangfx
+color = { 232 79 142 }
+revolutionary_colors = { 0 10 0 }
+historical_idea_groups = {
+	offensive_ideas
+	administrative_ideas
+	economic_ideas
+	defensive_ideas
+	humanist_ideas
+	aristocracy_ideas
+	diplomatic_ideas
+	trade_ideas
+}
+historical_units = {
+	bhonsle_infantry
+	indian_arquebusier
+	indian_elephant
+	indian_footsoldier
+	indian_shock_cavalry
+	maharathan_guerilla_warfare
+	mughal_mansabdar
+	rajput_hill_fighters
+	reformed_mughal_musketeer
+	sikh_rifle
+	south_indian_musketeer
+	tipu_sultan_rocket
+}
+monarch_names = {
+	"Amoghavarsha #3" = 10
+	"Barzah #0" = -1
+	"Bhavashankari #0" = -1
+	"Chime #0" = -1
+	"Dantidurga #1" = 10
+	"Dhruva #2" = 10
+	"Durgasimha #0" = 0
+	"Gobburi #0" = 0
+	"Govinda #3" = 10
+	"Indra #2" = 10
+	"Jayasimha #1" = 10
+	"Karka #1" = 10
+	"Khottiga #1" = 10
+	"Kirtivarman #2" = 10
+	"Krishna #3" = 10
+	"Maharani #0" = -1
+	"Mangalesa #1" = 10
+	"Pulakesi #2" = 10
+	"Rachamalla #2" = 10
+	"Satyasraya #2" = 10
+	"Somesvara #3" = 10
+	"Srivikrama #2" = 10
+	"Tailapa #1" = 10
+	"Vijayaditya #1" = 10
+	"Vikramaditya #3" = 10
+	"Vinayaditya #2" = 10
+}
+leader_names = {
+	"Bahadur"
+	"Chetty"
+	"Khader"
+	"Khan"
+	"Khan Wallajah"
+	"Mudaliar"
+	"Rajapopalachari"
+	"Reddy"
+	"Saluva"
+	"Sastri"
+	"Thondaiman"
+	"ul Umra"
+}
+ship_names = {
+	"Chambal"
+	"Devi"
+	"Durga"
+	"Ganga"
+	"Gayatri"
+	"Jalsena"
+	"Kala Jahazi"
+	"Lakshmi"
+	"Lal Jahazi"
+	"Nausena"
+	"Nav ka Yudh"
+	"Nila Jahazi"
+	"Parvati"
+	"Radha"
+	"Ratri"
+	"Sagar"
+	"Sarasvati"
+	"Sita"
+	"Spiti"
+	"Yamuna"
+}

@@ -1,0 +1,66 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 44 160 70 }
+revolutionary_colors = { 5 16 1 }
+historical_idea_groups = {
+	defensive_ideas
+	trade_ideas
+	religious_ideas
+	quantity_ideas
+	offensive_ideas
+	spy_ideas
+	economic_ideas
+	quality_ideas
+}
+historical_units = {
+	adal_guerilla_warfare
+	adal_gunpowder_warfare
+	african_abyssinian_cavalry
+	african_abyssinian_light_cavalry
+	african_dragoon
+	african_hill_warfare
+	african_hussar
+	african_somali_cavalry
+	african_spearmen
+	bantu_tribal_warfare
+	westernized_adal
+}
+monarch_names = {
+	"Amina #0" = -1
+	"Antonina #0" = -1
+	"Aurelian #0" = 0
+	"Clementius #0" = 0
+	"Decius #0" = 0
+	"Iordanes #1" = 10
+	"Iôannou #1" = 10
+	"Justinian #0" = 0
+	"Paulina #0" = -1
+	"Poshayka #0" = -1
+	"Rong #0" = 0
+	"Zerebekka #1" = -1
+}
+leader_names = {
+	"Abboud"
+	"Fung"
+	"Garang"
+	"Kayra"
+	"Keira"
+	"Kelueljang"
+	"Lugor"
+	"Nuer"
+	"Shol"
+	"Taha"
+}
+ship_names = {
+	"Amenirdis"
+	"Amon"
+	"Apedemak"
+	"Arensnuphis"
+	"Bes"
+	"Dedwen"
+	"Khnum"
+	"Mandulis"
+	"Mut"
+	"Taweret"
+	"Tefnut"
+}

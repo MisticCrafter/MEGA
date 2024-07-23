@@ -1,0 +1,40 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = eastern
+religion = catholic
+primary_culture = dynamic-greek-culture-num1
+capital = 4699
+1444.11.11= {
+	monarch = {
+		name = "Michael II"
+		dynasty = "of Trikala"
+		adm = 5
+		dip = 4
+		mil = 5
+		birth_date = 1425.2.1
+		religion = catholic
+		culture = dynamic-greek-culture-num1
+	}
+	add_ruler_personality = strict_personality
+	add_ruler_personality = tolerant_personality
+	heir = {
+		name = "Ioannes"
+		monarch_name = "Ioannes II"
+		dynasty = "of Trikala"
+		adm = 6
+		dip = 5
+		mil = 5
+		birth_date = 1426.8.25
+		death_date = 1491.8.25
+		claim = 89
+		religion = catholic
+		culture = dynamic-greek-culture-num1
+	}
+	add_heir_personality = kind_hearted_personality
+	add_heir_personality = strict_personality
+}
+1444.11.11= {
+	add_prestige = 57
+	add_treasury = 0
+}

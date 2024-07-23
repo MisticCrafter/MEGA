@@ -1,0 +1,73 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 114 171 184 }
+revolutionary_colors = { 15 0 5 }
+historical_idea_groups = {
+	trade_ideas
+	defensive_ideas
+	religious_ideas
+	economic_ideas
+	diplomatic_ideas
+	spy_ideas
+	offensive_ideas
+	innovativeness_ideas
+}
+historical_units = {
+	austrian_grenzer
+	austrian_hussar
+	austrian_jaeger
+	austrian_tercio
+	austrian_white_coat
+	dutch_maurician
+	mixed_order_infantry
+	napoleonic_lancers
+	napoleonic_square
+	open_order_cavalry
+	swiss_landsknechten
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+}
+monarch_names = {
+	"Adalgod #3" = 10
+	"Aras #0" = 0
+	"Berthold #2" = 10
+	"Bertold #1" = 10
+	"Ferdinand #0" = 0
+	"Garibald #1" = 10
+	"Giselmar #2" = 10
+	"Ida #1" = -1
+	"Iwo #0" = 0
+	"Jaspar #1" = 10
+	"Ludwig #0" = 0
+	"Ulrich #0" = 0
+	"Walter #1" = 10
+}
+leader_names = {
+	"Arnsberg"
+	"Bebra"
+	"Eder"
+	"Fulda"
+	"Hamm"
+	"Kassel"
+	"Knyphausen"
+	"Lippstadt"
+	"Münden"
+	"Paderborn"
+	"von Scheideck"
+}
+ship_names = {
+	"Fulda"
+	"Hanau"
+	"Heinrich I"
+	"Kassel"
+	"Lahn"
+	"Marburg"
+	"Stirnberg"
+	"Wasserkuppe"
+	"Werra"
+	"Wetzlar"
+}
+army_names = {
+	"Armee von $PROVINCE$"
+}

@@ -1,0 +1,91 @@
+ck2_converter_generated = yes
+graphical_culture = asiangfx
+color = { 215 12 64 }
+revolutionary_colors = { 13 16 0 }
+historical_idea_groups = {
+	religious_ideas
+	offensive_ideas
+	defensive_ideas
+	trade_ideas
+	spy_ideas
+	economic_ideas
+	diplomatic_ideas
+	aristocracy_ideas
+}
+historical_units = {
+	indian_arquebusier
+	indian_elephant
+	indian_footsoldier
+	indian_rifle
+	indian_shock_cavalry
+	mughal_mansabdar
+	mughal_musketeer
+	rajput_hill_fighters
+	rajput_musketeer
+	reformed_mughal_mansabdar
+	reformed_mughal_musketeer
+}
+monarch_names = {
+	"Aman #0" = 0
+	"Amrit #0" = 0
+	"Anamika #1" = -1
+	"Apala #0" = -1
+	"Aryan #1" = 10
+	"Avanish #0" = 0
+	"Dhiman #0" = 0
+	"Farzad #1" = 10
+	"Gangesh #0" = 0
+	"Iha #0" = -1
+	"Nasr #1" = 10
+	"Shamindra #0" = 0
+	"Sotri #1" = 10
+	"Tulku #2" = 10
+	"Yogita #0" = 0
+}
+leader_names = {
+	"Bahadur"
+	"Bikram"
+	"Chand"
+	"Chhettri"
+	"Dev"
+	"Gurung"
+	"Koirala"
+	"Limbu"
+	"Madhesi"
+	"Magar"
+	"Malla"
+	"Rai"
+	"Rana"
+	"Thapa"
+	"Yadav"
+}
+ship_names = {
+	"Arun"
+	"Behri"
+	"Bhote Kosi"
+	"Devi"
+	"Dudh Kosi"
+	"Durga"
+	"Gayatri"
+	"Jalsena"
+	"Kala Jahazi"
+	"Kali Gandaki"
+	"Karnali"
+	"Lakshmi"
+	"Lal Jahazi"
+	"Narayani"
+	"Nausena"
+	"Nav ka Yudh"
+	"Nila Jahazi"
+	"Parvati"
+	"Radha"
+	"Rapti"
+	"Ratri"
+	"Sagar"
+	"Sapt Kosi"
+	"Sarasvati"
+	"Seti"
+	"Sita"
+	"Sun Kosi"
+	"Trishuli"
+}

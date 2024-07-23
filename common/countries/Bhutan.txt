@@ -1,0 +1,67 @@
+ck2_converter_generated = yes
+graphical_culture = asiangfx
+color = { 93 180 76 }
+revolutionary_colors = { 8 0 6 }
+historical_idea_groups = {
+	religious_ideas
+	economic_ideas
+	defensive_ideas
+	offensive_ideas
+	administrative_ideas
+	trade_ideas
+	diplomatic_ideas
+	spy_ideas
+}
+historical_units = {
+	asian_arquebusier
+	asian_charge_cavalry
+	asian_mass_infantry
+	asian_musketeer
+	east_asian_spearmen
+	eastern_bow
+	reformed_asian_cavalry
+	reformed_asian_musketeer
+}
+monarch_names = {
+	"Akar #0" = -1
+	"Gonpo #0" = 0
+	"Gésar #1" = 10
+	"Jetsunmo #0" = -1
+	"Kyi #2" = -1
+	"Mertri #1" = 10
+	"Nant-tha #0" = -1
+	"Ngodup #0" = -1
+	"Nyimagön #0" = 0
+	"Pelmö #1" = -1
+	"Riumel #0" = 0
+	"Sati #0" = -1
+	"Thothori #0" = 0
+	"Tséwang #0" = 0
+	"Yaksherpen #1" = 10
+}
+leader_names = {
+	"Chomphel"
+	"Gyaltshen"
+	"Gyamtsho"
+	"Lhopi"
+	"Peljor"
+	"Phuntsho"
+	"Rabgye"
+	"Tshering"
+	"Wangchuk"
+	"Wangpo"
+}
+ship_names = {
+	"Chhu"
+	"Dng Chu"
+	"Manas Chu"
+	"Mangde Chu"
+	"Mo Chu"
+	"Pa Chu"
+	"Pho Chu"
+	"Punaka"
+	"Sangkosh"
+	"Thimbu"
+	"Tongsa Chu"
+	"Towang Chu"
+}

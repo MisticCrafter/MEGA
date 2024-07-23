@@ -1,0 +1,109 @@
+ck2_converter_generated = yes
+graphical_culture = easterngfx
+color = { 145 30 75 }
+revolutionary_colors = { 5 13 6 }
+historical_idea_groups = {
+	defensive_ideas
+	offensive_ideas
+	trade_ideas
+	spy_ideas
+	maritime_ideas
+	economic_ideas
+	diplomatic_ideas
+	administrative_ideas
+}
+historical_units = {
+	bardiche_infantry
+	eastern_carabinier
+	eastern_knights
+	eastern_militia
+	eastern_skirmisher
+	eastern_uhlan
+	muscovite_caracolle
+	muscovite_cossack
+	muscovite_musketeer
+	muscovite_soldaty
+	russian_cuirassier
+	russian_green_coat
+	russian_lancer
+	russian_mass
+	russian_petrine
+	slavic_stradioti
+}
+monarch_names = {
+	"Abas #1" = 10
+	"Aelia #0" = -1
+	"Anoush #1" = -1
+	"Archili #0" = 0
+	"Artashir #1" = 10
+	"Ashot #4" = 10
+	"Biur #0" = 0
+	"Cassia #1" = -1
+	"Constans #0" = 0
+	"Danush #1" = 10
+	"Eusebios #1" = 10
+	"Farzad #1" = 10
+	"Gagik #2" = 10
+	"Iese #0" = 0
+	"Jack #1" = 10
+	"Jindrich #0" = 0
+	"Maximinus #0" = 0
+	"Pashang #1" = 10
+	"Poppaea #0" = -1
+	"Smbat #3" = 10
+	"Sumbat #0" = 0
+}
+leader_names = {
+	"Adamian"
+	"Adomian"
+	"Aghajanian"
+	"Altounyan"
+	"Apkarian"
+	"Babaian"
+	"Babikian"
+	"Bagian"
+	"Bhobanyan"
+	"Chobanian"
+	"Damadian"
+	"Eskandarian"
+	"Kapikian"
+	"Kazanjian"
+	"Kebabian"
+	"Kevorkian"
+	"Khachikyan"
+	"Khatchaturian"
+	"Kirlian"
+	"Mergelyan"
+	"Meymarian"
+	"Orbeli"
+	"Pogosyan"
+	"Sadian"
+	"Sevanian"
+	"Shahinian"
+	"Simjian"
+}
+ship_names = {
+	"Ani"
+	"Aramu"
+	"Ararat"
+	"Argishtis"
+	"Artsakh"
+	"Dvin"
+	"Erimena"
+	"Haik"
+	"Haldi"
+	"Ishpuinis"
+	"Kars"
+	"Lutipri"
+	"Manzikert"
+	"Menuas"
+	"Musasir"
+	"Parisos"
+	"Rusas II"
+	"Sarduri I"
+	"Sarduris II"
+	"Selardi"
+	"Siwini"
+	"Vaspurakan"
+	"Yerevan"
+}

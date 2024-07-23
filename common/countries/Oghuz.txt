@@ -1,0 +1,44 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 235 35 35 }
+revolutionary_colors = { 10 0 8 }
+historical_idea_groups = {
+	horde_ideas
+	economic_ideas
+	quantity_ideas
+	spy_ideas
+	offensive_ideas
+	administrative_ideas
+	quality_ideas
+	trade_ideas
+}
+historical_units = {
+	reformed_steppe_rifles
+	steppe_cavalry
+	steppe_footmen
+	steppe_infantry
+	steppe_lancers
+	steppe_mounted_raiders
+	steppe_musketeers
+	steppe_raiders
+	steppe_riders
+	steppe_rifles
+	steppe_uhlans
+}
+monarch_names = {
+	"Baytas #1" = 10
+	"Decius #0" = 0
+	"Fabianus #0" = 0
+	"Fabius #0" = 0
+	"Goland #1" = -1
+	"Jochi #1" = 10
+	"Kurush #1" = 10
+	"Maximinus #1" = 10
+	"Poppaea #0" = -1
+	"Rustem #1" = 10
+	"Sempronius #0" = 0
+	"Sextus #0" = 0
+	"Tekçe #1" = -1
+	"Toks #1" = 10
+	"Tora #0" = 0
+}
