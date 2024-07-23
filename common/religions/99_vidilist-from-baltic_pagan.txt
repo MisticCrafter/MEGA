@@ -1,5 +1,5 @@
 pagan = {
-	converted_dynamic_faith_110 = {
+	vidilist = {
 		color = { 87 54 107 }
 		icon =  176
 		country = {

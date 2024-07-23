@@ -1,5 +1,5 @@
 christian = {
-	converted_dynamic_faith_111 = {
+	abyss_mystic = {
 		color = { 82 10 226 }
 		icon =  177
 		country = {

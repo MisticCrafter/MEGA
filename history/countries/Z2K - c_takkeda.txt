@@ -31,7 +31,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		death_date = 1443.9.27
 		female = yes
 		religion = catholic
-		culture = dynamic-roman-culture-num1
+		culture = mare-roman
 	}
 	add_queen_personality = drunkard_personality
 	add_queen_personality = tactical_genius_personality

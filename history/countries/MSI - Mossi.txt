@@ -30,7 +30,7 @@ add_accepted_culture = mali
 		death_date = 1454.1.9
 		female = yes
 		religion = catholic
-		culture = dynamic-mali-soninke-culture-num1
+		culture = senegambian
 	}
 	add_queen_personality = cruel_personality
 	add_queen_personality = infertile_personality

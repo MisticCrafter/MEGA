@@ -30,7 +30,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		country_of_origin = Z0M
 		birth_date = 1399.10.29
 		death_date = 1459.10.29
-		religion = converted_dynamic_faith_111
+		religion = abyss_mystic
 		culture = nubian
 	}
 	add_queen_personality = tactical_genius_personality

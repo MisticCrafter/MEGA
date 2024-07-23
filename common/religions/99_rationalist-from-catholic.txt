@@ -1,5 +1,5 @@
 christian = {
-	converted_dynamic_faith_112 = {
+	rationalist = {
 		color = { 18 64 18 }
 		icon =  178
 		country = {

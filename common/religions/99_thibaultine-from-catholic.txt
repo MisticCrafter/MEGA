@@ -1,5 +1,5 @@
 christian = {
-	converted_dynamic_faith_113 = {
+	thibaultine = {
 		color = { 146 75 75 }
 		icon =  179
 		country = {

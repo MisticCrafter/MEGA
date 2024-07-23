@@ -3,7 +3,7 @@ add_government_reform = feudalism_reform
 government_rank = 2
 technology_group = sub_saharan
 religion = catholic
-primary_culture = dynamic-mali-yorumba-culture-num1
+primary_culture = yorumba
 capital = 2290
 add_accepted_culture = fon
 add_accepted_culture = mali
@@ -17,7 +17,7 @@ add_accepted_culture = mali
 		birth_date = 1415.10.17
 		female = yes
 		religion = catholic
-		culture = dynamic-mali-yorumba-culture-num1
+		culture = yorumba
 	}
 	add_ruler_personality = drunkard_personality
 	add_ruler_personality = expansionist_personality
@@ -31,7 +31,7 @@ add_accepted_culture = mali
 		birth_date = 1408.9.5
 		death_date = 1468.9.5
 		religion = catholic
-		culture = dynamic-hausa-bozo-culture-num1
+		culture = hausa
 	}
 	add_queen_personality = loose_lips_personality
 	add_queen_personality = tolerant_personality
@@ -46,7 +46,7 @@ add_accepted_culture = mali
 		death_date = 1491.1.25
 		claim = 89
 		religion = catholic
-		culture = dynamic-mali-yorumba-culture-num1
+		culture = yorumba
 	}
 	add_heir_personality = cruel_personality
 	add_heir_personality = tactical_genius_personality

@@ -3,7 +3,7 @@ add_government_reform = feudalism_reform
 government_rank = 1
 technology_group = western
 religion = catholic
-primary_culture = dynamic-roman-culture-num1
+primary_culture = mare-roman
 capital = 468
 add_accepted_culture = cuman
 add_accepted_culture = khazar
@@ -16,7 +16,7 @@ add_accepted_culture = khazar
 		mil = 3
 		birth_date = 1387.3.2
 		religion = catholic
-		culture = dynamic-roman-culture-num1
+		culture = mare-roman
 	}
 	add_ruler_personality = drunkard_personality
 	add_ruler_personality = obsessive_perfectionist_personality
@@ -46,7 +46,7 @@ add_accepted_culture = khazar
 		death_date = 1492.3.24
 		claim = 89
 		religion = catholic
-		culture = dynamic-roman-culture-num1
+		culture = mare-roman
 	}
 	add_heir_personality = just_personality
 	add_heir_personality = strict_personality

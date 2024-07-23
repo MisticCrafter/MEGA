@@ -31,7 +31,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		birth_date = 1426.1.25
 		death_date = 1486.1.25
 		religion = catholic
-		culture = dynamic-mali-yorumba-culture-num1
+		culture = yorumba
 	}
 	add_queen_personality = cruel_personality
 	add_queen_personality = tactical_genius_personality
@@ -46,7 +46,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		death_date = 1508.8.24
 		claim = 89
 		religion = catholic
-		culture = dynamic-mali-yorumba-culture-num1
+		culture = yorumba
 	}
 	add_heir_personality = well_connected_personality
 	add_heir_personality = zealot_personality

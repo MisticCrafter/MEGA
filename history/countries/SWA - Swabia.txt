@@ -30,7 +30,7 @@ add_accepted_culture = swabian
 		death_date = 1472.5.21
 		female = yes
 		religion = catholic
-		culture = dynamic-sorbian-culture-num1
+		culture = zeizian
 	}
 	add_queen_personality = cruel_personality
 	add_queen_personality = tactical_genius_personality

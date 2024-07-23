@@ -45,7 +45,7 @@ elector = yes
 		birth_date = 1417.10.6
 		death_date = 1482.10.6
 		claim = 89
-		religion = converted_dynamic_faith_113
+		religion = thibaultine
 		culture = bavarian
 	}
 	add_heir_personality = cruel_personality

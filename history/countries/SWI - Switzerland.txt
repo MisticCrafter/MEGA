@@ -2,7 +2,7 @@ government = monarchy
 add_government_reform = feudalism_reform
 government_rank = 2
 technology_group = western
-religion = converted_dynamic_faith_113
+religion = thibaultine
 primary_culture = swiss
 capital = 4720
 1444.11.11= {
@@ -13,7 +13,7 @@ capital = 4720
 		dip = 5
 		mil = 4
 		birth_date = 1396.5.31
-		religion = converted_dynamic_faith_113
+		religion = thibaultine
 		culture = swiss
 	}
 	add_ruler_personality = intricate_web_weaver_personality
@@ -43,7 +43,7 @@ capital = 4720
 		birth_date = 1417.11.1
 		death_date = 1482.11.1
 		claim = 89
-		religion = converted_dynamic_faith_113
+		religion = thibaultine
 		culture = swiss
 	}
 	add_heir_personality = midas_touched_personality

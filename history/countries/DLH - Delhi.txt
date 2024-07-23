@@ -30,7 +30,7 @@ add_accepted_culture = avadhi
 		death_date = 1464.5.15
 		female = yes
 		religion = vajrayana
-		culture = dynamic-avadhi-culture-num1
+		culture = hisari
 	}
 	add_queen_personality = free_thinker_personality
 	add_queen_personality = tolerant_personality

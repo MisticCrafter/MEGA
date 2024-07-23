@@ -3,7 +3,7 @@ add_government_reform = steppe_horde
 government_rank = 2
 technology_group = western
 religion = nestorian
-primary_culture = dynamic-roman-culture-num1
+primary_culture = mare-roman
 capital = 2360
 add_accepted_culture = uzbehk
 set_country_flag = ZZZ_generated_converter_nation
@@ -16,7 +16,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		mil = 5
 		birth_date = 1395.2.16
 		religion = nestorian
-		culture = dynamic-roman-culture-num1
+		culture = mare-roman
 	}
 	add_ruler_personality = charismatic_negotiator_personality
 	add_ruler_personality = drunkard_personality
@@ -31,7 +31,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		death_date = 1485.11.2
 		female = yes
 		religion = nestorian
-		culture = dynamic-roman-culture-num1
+		culture = mare-roman
 	}
 	add_queen_personality = obsessive_perfectionist_personality
 	add_queen_personality = strict_personality
@@ -46,7 +46,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		death_date = 1501.11.5
 		claim = 89
 		religion = nestorian
-		culture = dynamic-roman-culture-num1
+		culture = mare-roman
 	}
 	add_heir_personality = just_personality
 	add_heir_personality = naive_personality

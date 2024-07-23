@@ -3,7 +3,7 @@ add_government_reform = feudalism_reform
 government_rank = 1
 technology_group = western
 religion = catholic
-primary_culture = dynamic-sorbian-culture-num1
+primary_culture = zeizian
 capital = 61
 1444.11.11= {
 	monarch = {
@@ -14,7 +14,7 @@ capital = 61
 		mil = 3
 		birth_date = 1419.5.3
 		religion = catholic
-		culture = dynamic-sorbian-culture-num1
+		culture = zeizian
 	}
 	add_ruler_personality = drunkard_personality
 	add_ruler_personality = embezzler_personality
@@ -29,7 +29,7 @@ capital = 61
 		death_date = 1479.11.27
 		female = yes
 		religion = catholic
-		culture = dynamic-sorbian-culture-num1
+		culture = zeizian
 	}
 	add_queen_personality = drunkard_personality
 	add_queen_personality = greedy_personality
@@ -44,7 +44,7 @@ capital = 61
 		death_date = 1509.4.1
 		claim = 89
 		religion = catholic
-		culture = dynamic-sorbian-culture-num1
+		culture = zeizian
 	}
 	add_heir_personality = well_connected_personality
 	add_heir_personality = zealot_personality

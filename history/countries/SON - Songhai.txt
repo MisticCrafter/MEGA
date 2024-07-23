@@ -30,7 +30,7 @@ mercantilism = 15
 		death_date = 1472.11.8
 		female = yes
 		religion = catholic
-		culture = dynamic-roman-culture-num1
+		culture = mare-roman
 	}
 	add_queen_personality = strict_personality
 	add_queen_personality = tactical_genius_personality

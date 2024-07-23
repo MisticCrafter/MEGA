@@ -29,7 +29,7 @@ capital = 4204
 		death_date = 1480.12.30
 		female = yes
 		religion = nestorian
-		culture = dynamic-andalucian-culture-num1
+		culture = aragonese
 	}
 	add_queen_personality = bold_fighter_personality
 	add_queen_personality = lawgiver_personality

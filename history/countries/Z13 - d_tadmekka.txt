@@ -29,7 +29,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		birth_date = 1388.9.20
 		death_date = 1448.9.20
 		female = yes
-		religion = converted_dynamic_faith_113
+		religion = thibaultine
 		culture = basque
 	}
 	add_queen_personality = industrious_personality

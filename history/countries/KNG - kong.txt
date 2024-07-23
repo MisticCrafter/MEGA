@@ -3,7 +3,7 @@ add_government_reform = feudalism_reform
 government_rank = 2
 technology_group = sub_saharan
 religion = catholic
-primary_culture = dynamic-mali-culture-num1
+primary_culture = mali
 capital = 1125
 add_accepted_culture = mali
 1444.11.11= {
@@ -15,7 +15,7 @@ add_accepted_culture = mali
 		mil = 6
 		birth_date = 1397.1.1
 		religion = catholic
-		culture = dynamic-mali-culture-num1
+		culture = mali
 	}
 	add_ruler_personality = drunkard_personality
 	add_ruler_personality = obsessive_perfectionist_personality
@@ -45,7 +45,7 @@ add_accepted_culture = mali
 		death_date = 1469.11.20
 		claim = 89
 		religion = catholic
-		culture = dynamic-mali-culture-num1
+		culture = mali
 	}
 	add_heir_personality = strict_personality
 	add_heir_personality = tactical_genius_personality

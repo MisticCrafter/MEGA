@@ -1,5 +1,5 @@
 christian = {
-	converted_dynamic_faith_114 = {
+	tigranic = {
 		color = { 182 159 56 }
 		icon =  180
 		country = {

@@ -3,7 +3,7 @@ add_government_reform = feudalism_reform
 government_rank = 1
 technology_group = western
 religion = nestorian
-primary_culture = dynamic-roman-culture-num1
+primary_culture = mare-roman
 capital = 4692
 add_accepted_culture = cuman
 set_country_flag = ZZZ_generated_converter_nation
@@ -16,7 +16,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		mil = 6
 		birth_date = 1419.10.18
 		religion = nestorian
-		culture = dynamic-roman-culture-num1
+		culture = mare-roman
 	}
 	add_ruler_personality = drunkard_personality
 	add_ruler_personality = lawgiver_personality
@@ -31,7 +31,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		death_date = 1475.5.16
 		female = yes
 		religion = catholic
-		culture = dynamic-swabian-culture-num1
+		culture = swabian
 	}
 	add_queen_personality = conqueror_personality
 	add_queen_personality = fertile_personality
@@ -47,7 +47,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		female = yes
 		claim = 89
 		religion = nestorian
-		culture = dynamic-roman-culture-num1
+		culture = mare-roman
 	}
 	add_heir_personality = cruel_personality
 	add_heir_personality = zealot_personality

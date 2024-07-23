@@ -2,7 +2,7 @@ government = monarchy
 add_government_reform = feudalism_reform
 government_rank = 3
 technology_group = western
-religion = converted_dynamic_faith_112
+religion = rationalist
 primary_culture = dutch
 capital = 4383
 1444.11.11= {
@@ -14,7 +14,7 @@ capital = 4383
 		mil = 6
 		birth_date = 1357.11.28
 		female = yes
-		religion = converted_dynamic_faith_112
+		religion = rationalist
 		culture = dutch
 	}
 	add_ruler_personality = bold_fighter_personality
@@ -30,7 +30,7 @@ capital = 4383
 		death_date = 1458.8.26
 		female = yes
 		claim = 89
-		religion = converted_dynamic_faith_112
+		religion = rationalist
 		culture = dutch
 	}
 	add_heir_personality = drunkard_personality

@@ -30,7 +30,7 @@ add_accepted_culture = ostyaki
 		birth_date = 1399.2.25
 		death_date = 1459.2.25
 		religion = catholic
-		culture = dynamic-uralic-culture-num1
+		culture = ostyaki
 	}
 	add_queen_personality = strict_personality
 	add_queen_personality = tolerant_personality
@@ -45,7 +45,7 @@ add_accepted_culture = ostyaki
 		death_date = 1492.10.22
 		claim = 89
 		religion = catholic
-		culture = dynamic-uralic-culture-num1
+		culture = ostyaki
 	}
 	add_heir_personality = strict_personality
 	add_heir_personality = zealot_personality

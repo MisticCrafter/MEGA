@@ -2,7 +2,7 @@ government = monarchy
 add_government_reform = feudalism_reform
 government_rank = 1
 technology_group = western
-religion = converted_dynamic_faith_112
+religion = rationalist
 primary_culture = dutch
 capital = 370
 1444.11.11= {
@@ -14,7 +14,7 @@ capital = 370
 		mil = 4
 		birth_date = 1393.8.26
 		female = yes
-		religion = converted_dynamic_faith_112
+		religion = rationalist
 		culture = dutch
 	}
 	add_ruler_personality = drunkard_personality
@@ -28,7 +28,7 @@ capital = 370
 		country_of_origin = ICE
 		birth_date = 1397.6.7
 		death_date = 1457.6.7
-		religion = converted_dynamic_faith_112
+		religion = rationalist
 		culture = dutch
 	}
 	add_queen_personality = drunkard_personality
@@ -43,7 +43,7 @@ capital = 370
 		birth_date = 1414.8.11
 		death_date = 1479.8.11
 		claim = 89
-		religion = converted_dynamic_faith_112
+		religion = rationalist
 		culture = dutch
 	}
 	add_heir_personality = benevolent_personality
