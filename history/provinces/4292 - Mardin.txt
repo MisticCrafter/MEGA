@@ -1,5 +1,5 @@
-owner = Z00
-controller = Z00
+owner = PAP
+controller = PAP
 capital = "Mardin"
 is_city = yes
 culture = ultramar
@@ -8,8 +8,7 @@ trade_goods = wool
 base_tax = 3
 base_production = 5
 base_manpower = 2
-add_core = KOJ
-add_core = Z00
+add_core = PAP
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian
