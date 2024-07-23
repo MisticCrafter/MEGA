@@ -1,6 +1,6 @@
 owner = Z1S
 controller = Z1S
-capital = "Fehérvár"
+capital = "Székesfehérvár"
 is_city = yes
 culture = hungarian
 religion = catholic

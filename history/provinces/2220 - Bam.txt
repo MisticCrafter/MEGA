@@ -1,5 +1,5 @@
-owner = PER
-controller = PER
+owner = BAL
+controller = BAL
 capital = "Bam"
 is_city = yes
 culture = turko_iranian
@@ -8,7 +8,7 @@ trade_goods = cotton
 base_tax = 5
 base_production = 5
 base_manpower = 4
-add_core = PER
+add_core = BAL
 add_core = TRS
 discovered_by = east_african
 discovered_by = eastern

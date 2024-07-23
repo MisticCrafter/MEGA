@@ -1,3 +1,5 @@
+1444.11.11 = { celestial_emperor = MNG }
+
 dependency=
 {
 	subject_type="tributary_state"
@@ -115,59 +117,56 @@ dependency=
 	end_date="1836.1.1"
 }
 
-vassal=
+dependency=
 {
-	first="BSH"
-	second="Z19"
-	start_date="1444.11.11"
+	subject_type="tributary_state"
+	first="MNG"
+	second="KAM"
+	start_date="769.1.1"
 	end_date="1836.1.1"
 }
 
-vassal=
+dependency=
 {
-	first="MLW"
-	second="BND"
-	start_date="1444.11.11"
+	subject_type="tributary_state"
+	first="MNG"
+	second="Z1Q"
+	start_date="769.1.1"
 	end_date="1836.1.1"
 }
 
-vassal=
+dependency=
 {
-	first="OGD"
-	second="Z1B"
-	start_date="1444.11.11"
+	subject_type="tributary_state"
+	first="MNG"
+	second="Z0N"
+	start_date="769.1.1"
 	end_date="1836.1.1"
 }
 
-vassal=
+dependency=
 {
-	first="OYO"
-	second="Z0Z"
-	start_date="1444.11.11"
+	subject_type="tributary_state"
+	first="MNG"
+	second="Z0J"
+	start_date="769.1.1"
 	end_date="1836.1.1"
 }
 
-vassal=
+dependency=
 {
-	first="PHA"
-	second="Z0X"
-	start_date="1444.11.11"
+	subject_type="tributary_state"
+	first="MNG"
+	second="Z2W"
+	start_date="769.1.1"
 	end_date="1836.1.1"
 }
 
-vassal=
+dependency=
 {
-	first="Z07"
-	second="ETR"
-	start_date="1444.11.11"
+	subject_type="tributary_state"
+	first="MNG"
+	second="Z0C"
+	start_date="769.1.1"
 	end_date="1836.1.1"
 }
-
-vassal=
-{
-	first="Z0C"
-	second="SYG"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-

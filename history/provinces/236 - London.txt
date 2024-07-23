@@ -1,5 +1,5 @@
-owner = Z0W
-controller = Z0W
+owner = ENG
+controller = ENG
 capital = "London"
 is_city = yes
 culture = herutfordian
@@ -10,7 +10,7 @@ base_production = 4
 base_manpower = 5
 extra_cost = 26
 center_of_trade = 2
-add_core = Z0W
+add_core = ENG
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

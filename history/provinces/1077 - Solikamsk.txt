@@ -1,5 +1,5 @@
-owner = Z19
-controller = Z19
+owner = BSH
+controller = BSH
 capital = "Usolye Kamskoye"
 is_city = yes
 culture = bashkirian
@@ -8,7 +8,7 @@ trade_goods = salt
 base_tax = 2
 base_production = 1
 base_manpower = 1
-add_core = Z19
+add_core = BSH
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

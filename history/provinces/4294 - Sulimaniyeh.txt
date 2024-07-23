@@ -1,5 +1,5 @@
-owner = Z00
-controller = Z00
+owner = ASY
+controller = ASY
 capital = "Sulimaniyeh"
 is_city = yes
 culture = ultramar
@@ -8,8 +8,8 @@ trade_goods = wool
 base_tax = 4
 base_production = 5
 base_manpower = 2
-add_core = KOJ
-add_core = Z00
+
+add_core = ASY
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

@@ -1,5 +1,5 @@
-owner = HAB
-controller = HAB
+owner = SLO
+controller = SLO
 capital = "Hont"
 is_city = yes
 culture = slovak
@@ -9,7 +9,6 @@ hre = yes
 base_tax = 1
 base_production = 4
 base_manpower = 2
-add_core = HAB
 add_core = SLO
 discovered_by = east_african
 discovered_by = eastern

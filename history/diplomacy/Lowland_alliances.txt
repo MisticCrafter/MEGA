@@ -1,0 +1,46 @@
+dependency = {
+    subject_type=appanage
+	first="NED"
+	second="FLA"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+dependency = {
+    subject_type=appanage
+	first="NED"
+	second="SCO"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+dependency = {
+    subject_type=appanage
+	first="NED"
+	second="IRE"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+dependency = {
+    subject_type=appanage
+	first="NED"
+	second="WLS"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+Union = {
+	first="NED"
+	second="ENG"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+dependency = {
+    subject_type=appanage
+	first="NED"
+	second="LUX"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}

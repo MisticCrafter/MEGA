@@ -1,5 +1,5 @@
-owner = NED
-controller = NED
+owner = ENG
+controller = ENG
 capital = "Hastings"
 is_city = yes
 culture = essexian
@@ -8,8 +8,7 @@ trade_goods = grain
 base_tax = 5
 base_production = 5
 base_manpower = 3
-add_core = ESX
-add_core = NED
+add_core = ENG
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

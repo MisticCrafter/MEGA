@@ -1,5 +1,5 @@
-owner = Z00
-controller = Z00
+owner = NAX
+controller = NAX
 capital = "Hama"
 is_city = yes
 culture = ultramar
@@ -9,8 +9,7 @@ fort_15th = yes
 base_tax = 5
 base_production = 5
 base_manpower = 2
-add_core = KOJ
-add_core = Z00
+add_core = NAX
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

@@ -1,5 +1,5 @@
-owner = PUN
-controller = PUN
+owner = AFG
+controller = AFG
 capital = "Peshawar"
 is_city = yes
 culture = hindustani_proper
@@ -10,8 +10,7 @@ base_production = 5
 base_manpower = 2
 extra_cost = 8
 center_of_trade = 1
-add_core = HIN
-add_core = PUN
+add_core = AFG
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

@@ -869,12 +869,6 @@ KIE_ideas = {
 	}
 }
 
-NAX_ideas = {
-	trigger = {
-		tag = NAX
-	}
-}
-
 POM_ideas = {
 	trigger = {
 		OR = {

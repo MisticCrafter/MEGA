@@ -1,5 +1,5 @@
-owner = ICE
-controller = ICE
+owner = FLA
+controller = FLA
 capital = "Lille"
 is_city = yes
 culture = wallonian
@@ -9,7 +9,7 @@ base_tax = 2
 base_production = 4
 base_manpower = 4
 add_core = HAI
-add_core = ICE
+add_core = FLA
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

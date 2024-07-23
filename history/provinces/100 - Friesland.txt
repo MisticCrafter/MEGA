@@ -1,5 +1,5 @@
-owner = ICE
-controller = ICE
+owner = FLA
+controller = FLA
 capital = "Leeuwarden"
 is_city = yes
 culture = frisian
@@ -9,7 +9,7 @@ base_tax = 4
 base_production = 5
 base_manpower = 3
 add_core = FRI
-add_core = ICE
+add_core = FLA
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

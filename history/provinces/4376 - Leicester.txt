@@ -1,5 +1,5 @@
-owner = Z0W
-controller = Z0W
+owner = ENG
+controller = ENG
 capital = "Leicester"
 is_city = yes
 culture = mercian
@@ -10,7 +10,7 @@ base_tax = 4
 base_production = 3
 base_manpower = 3
 add_core = MRC
-add_core = Z0W
+add_core = ENG
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

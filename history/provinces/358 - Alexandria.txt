@@ -12,7 +12,6 @@ base_manpower = 2
 extra_cost = 8
 center_of_trade = 1
 add_core = KNI
-add_core = KOJ
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

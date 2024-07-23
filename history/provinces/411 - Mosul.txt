@@ -1,5 +1,5 @@
-owner = Z00
-controller = Z00
+owner = ASY
+controller = ASY
 capital = "Al Mawsil"
 is_city = yes
 culture = ultramar
@@ -9,8 +9,8 @@ fort_15th = yes
 base_tax = 6
 base_production = 4
 base_manpower = 3
-add_core = KOJ
-add_core = Z00
+
+add_core = ASY
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

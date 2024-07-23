@@ -1,5 +1,5 @@
-owner = Z00
-controller = Z00
+owner = HSN
+controller = HSN
 capital = "Bitlis"
 is_city = yes
 culture = ultramar
@@ -8,8 +8,8 @@ trade_goods = wool
 base_tax = 6
 base_production = 5
 base_manpower = 5
-add_core = KOJ
-add_core = Z00
+
+add_core = HSN
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

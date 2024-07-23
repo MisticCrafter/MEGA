@@ -1,5 +1,5 @@
-owner = ICE
-controller = ICE
+owner = NED
+controller = NED
 capital = "Akureyri"
 is_city = yes
 culture = dutch
@@ -9,6 +9,7 @@ base_tax = 1
 base_production = 3
 base_manpower = 3
 add_core = ICE
+add_core = NED
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian
