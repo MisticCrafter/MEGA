@@ -1,10 +1,10 @@
 owner = ADU
 controller = ADU
-capital = "Funchal"
+capital = "Vagasael"
 is_city = yes
-culture = berber
-religion = converted_dynamic_faith_114
-trade_goods = unknown
+culture = andal
+religion = tigranic
+trade_goods = sugar
 base_tax = 1
 base_production = 1
 base_manpower = 1

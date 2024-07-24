@@ -3,7 +3,7 @@ add_government_reform = feudalism_reform
 government_rank = 2
 technology_group = muslim
 religion = nestorian
-primary_culture = dynamic-tajik-oghuz-culture-num1
+primary_culture = sogdian
 capital = 2363
 add_accepted_culture = uzbehk
 set_country_flag = ZZZ_generated_converter_nation
@@ -16,7 +16,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		mil = 3
 		birth_date = 1422.1.4
 		religion = nestorian
-		culture = dynamic-tajik-oghuz-culture-num1
+		culture = sogdian
 	}
 	add_ruler_personality = craven_personality
 	add_ruler_personality = zealot_personality
@@ -31,7 +31,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		death_date = 1476.7.28
 		claim = 89
 		religion = nestorian
-		culture = dynamic-tajik-oghuz-culture-num1
+		culture = sogdian
 	}
 	add_heir_personality = drunkard_personality
 	add_heir_personality = strict_personality

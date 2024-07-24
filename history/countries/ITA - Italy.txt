@@ -2,7 +2,7 @@ government = monarchy
 add_government_reform = autocracy_reform
 government_rank = 2
 technology_group = western
-religion = converted_dynamic_faith_113
+religion = thibaultine
 primary_culture = lombard
 capital = 104
 1444.11.11= {
@@ -13,7 +13,7 @@ capital = 104
 		dip = 3
 		mil = 3
 		birth_date = 1391.2.27
-		religion = converted_dynamic_faith_113
+		religion = thibaultine
 		culture = lombard
 	}
 	add_ruler_personality = obsessive_perfectionist_personality
@@ -28,7 +28,7 @@ capital = 104
 		birth_date = 1419.3.1
 		death_date = 1479.3.1
 		female = yes
-		religion = converted_dynamic_faith_113
+		religion = thibaultine
 		culture = italian
 	}
 	add_queen_personality = fertile_personality
@@ -43,7 +43,7 @@ capital = 104
 		birth_date = 1422.3.20
 		death_date = 1487.3.20
 		claim = 89
-		religion = converted_dynamic_faith_113
+		religion = thibaultine
 		culture = italian
 	}
 	add_heir_personality = calm_personality

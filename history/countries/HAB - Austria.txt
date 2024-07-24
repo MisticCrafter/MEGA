@@ -30,7 +30,7 @@ elector = yes
 		birth_date = 1422.8.28
 		death_date = 1482.8.28
 		religion = catholic
-		culture = dynamic-roman-culture-num1
+		culture = mare-roman
 	}
 	add_queen_personality = intricate_web_weaver_personality
 	add_queen_personality = lawgiver_personality

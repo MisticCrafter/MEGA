@@ -1,0 +1,47 @@
+dependency = {
+	subject_type = appanage
+	first = ADU 
+	second = POR 
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+dependency = {
+	subject_type = appanage
+	first = ADU 
+	second = CAS 
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+dependency = {
+	subject_type = appanage
+	first = ADU 
+	second = GAL 
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+dependency = {
+	subject_type = appanage
+	first = ADU 
+	second = ASU 
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+dependency = {
+	subject_type = appanage
+	first = ADU 
+	second = LON 
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+dependency = {
+	subject_type = appanage
+	first = ADU 
+	second = NAV 
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}

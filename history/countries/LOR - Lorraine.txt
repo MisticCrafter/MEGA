@@ -2,7 +2,7 @@ government = monarchy
 add_government_reform = feudalism_reform
 government_rank = 1
 technology_group = western
-religion = converted_dynamic_faith_112
+religion = rationalist
 primary_culture = dutch
 capital = 80
 add_accepted_culture = alsatian
@@ -14,7 +14,7 @@ add_accepted_culture = alsatian
 		dip = 4
 		mil = 5
 		birth_date = 1387.6.25
-		religion = converted_dynamic_faith_112
+		religion = rationalist
 		culture = dutch
 	}
 	add_ruler_personality = lawgiver_personality
@@ -29,7 +29,7 @@ add_accepted_culture = alsatian
 		birth_date = 1415.1.9
 		death_date = 1475.1.9
 		female = yes
-		religion = converted_dynamic_faith_112
+		religion = rationalist
 		culture = dutch
 	}
 	add_queen_personality = bold_fighter_personality
@@ -45,7 +45,7 @@ add_accepted_culture = alsatian
 		death_date = 1499.2.24
 		female = yes
 		claim = 89
-		religion = converted_dynamic_faith_112
+		religion = rationalist
 		culture = dutch
 	}
 	add_heir_personality = bold_fighter_personality

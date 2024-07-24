@@ -5,7 +5,6 @@ technology_group = sub_saharan
 religion = catholic
 primary_culture = senegambian
 capital = 2246
-add_accepted_culture = dynamic-mali-soninke-culture-num1
 set_country_flag = ZZZ_generated_converter_nation
 1444.11.11= {
 	monarch = {
@@ -31,7 +30,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		birth_date = 1403.3.21
 		death_date = 1463.3.21
 		religion = catholic
-		culture = dynamic-mali-soninke-culture-num1
+		culture = senegambian
 	}
 	add_queen_personality = tactical_genius_personality
 	add_queen_personality = tolerant_personality

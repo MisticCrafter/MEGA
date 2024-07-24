@@ -54,7 +54,7 @@ christian = {
 		papacy = {
 			papal_tag = PAP
 			election_cost = 5
-			seat_of_papacy = 118 # rome
+			seat_of_papacy = 410 #Baghdad
 			
 			
 			#Council of Trent Positions

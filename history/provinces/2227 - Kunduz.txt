@@ -9,7 +9,7 @@ base_tax = 5
 base_production = 8
 base_manpower = 5
 add_core = KHO
-add_core = KOJ
+
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

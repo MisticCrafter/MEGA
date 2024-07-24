@@ -1,106 +1,207 @@
 ck2_converter_generated = yes
 graphical_culture = easterngfx
-color = { 240 230 155 }
-revolutionary_colors = { 1 0 10 }
+color = { 0 102 102 } #{ 0 88 80 }
+revolutionary_colors = { 9 0 9 }
 historical_idea_groups = {
-	defensive_ideas
-	innovativeness_ideas
-	maritime_ideas
 	exploration_ideas
+	expansion_ideas
 	trade_ideas
-	diplomatic_ideas
-	economic_ideas
 	quality_ideas
+	economic_ideas
+	offensive_ideas
+	quantity_ideas
+	defensive_ideas
 }
 historical_units = {
-	ali_bey_reformed_infantry
-	mamluk_archer
-	mamluk_cavalry_charge
-	mamluk_duel
-	mamluk_musket_charge
-	muslim_dragoon
-	muslim_mass_infantry
+	austrian_grenzer
+	austrian_hussar
+	austrian_jaeger
+	austrian_tercio
+	austrian_white_coat
+	mixed_order_infantry
+	napoleonic_lancers
+	napoleonic_square
+	open_order_cavalry
+	spanish_tercio
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
 }
 monarch_names = {
-	"Abd al-Rahman #5" = 10
-	"Abdallah #1" = 10
-	"Adrianos #0" = 0
-	"Ali #1" = 10
-	"Chrysogone #0" = -1
+	"Aristarco #0" = 10
+	"Adriano #0" = 10
+	"Aleano #0" = 10
+	"Críso #0" = -1
 	"Georgia #0" = -1
-	"Gerasimos #0" = 0
-	"Hisham #4" = 10
-	"Konstantinos #0" = 0
-	"Kosmas #1" = 10
-	"Leontia #1" = -1
-	"Marcellinus #0" = 0
-	"Markia #0" = -1
-	"Muhammad #4" = 10
-	"Nikodemos #0" = 0
-	"Nuño #0" = 0
-	"Pavlina #0" = -1
-	"Romanos #1" = 10
-	"Sebastianos #1" = 10
-	"Suleyman #2" = 10
-	"Thomais #0" = -1
-	"Tiberios #1" = 10
-	"Yahya #2" = 10
-	"al-Hakam #2" = 10
-	"al-Mundir #1" = 10
-	"al-Qasim #2" = 10
+	"Gerasimo #0" = 0
+	"Constantino #0" = 10
+	"Cosmas #0" = 10
+	"Leontiana #0" = -1
+	"Marcelino #0" = 0
+	"Leonor #0" = -1
+	"Nicodemano #0" = 0
+	"Nuno #0" = 0
+	"Paulina #0" = -1
+	"Romano #0" = 10
+	"Sebastiano #0" = 10
+	"Aldara #0" = -1
+	"Tiberio #0" = 10
+	"Mariano #0" = 10
+	"Tigrano #0" = 10
+	"Gaelouro #0" = 5
+	"Cesantino #0" = 5
+	"Calamouro #0" = 5
+	"Methodio #0" = 0
+	"Tirreno #0" = 0
+	"Maria #0" = -1
+	"Rafael #0" = 0
+	"Aristides #0" = 0
+	"Julio #0" = 5
+	"Ademante #0" = 5
+	"Zeno #0" = 5
+	"Nerissa #0" = -1
+	"Adrameno #0" = 5
+	"Cathelo #0" = 0
+	"Isra #0" = -1
+	"Anái #0" = 0
+	"Mirata #0" = -1
+	"Béatriz #0" = -1
+	"Saviana #0" = -1
 }
 leader_names = {
-	"Ibn Abbad"
-	"Ibn Abd Allah"
-	"Ibn Abd al-Rahman"
-	"Ibn Abi Hafs"
-	"Ibn Ali"
-	"Ibn Hakan"
-	"Ibn Hammud"
-	"Ibn Hisam"
-	"Ibn Husayn"
-	"Ibn Idris"
-	"Ibn Ishaq"
-	"Ibn Isma'il"
-	"Ibn Marwan"
-	"Ibn Muhammad"
-	"Ibn Nasr"
-	"Ibn Qasim"
-	"Ibn Sa'd"
-	"Ibn Sulayman"
-	"Ibn Umar"
-	"Ibn Ummay"
-	"Ibn Utman"
-	"Ibn Ya'far"
-	"Ibn Yahyà"
-	"Ibn Yusuf"
-	"Ibn al-Azafi"
+	"de Sintra"
+	"Corterreal"
+	"Mûndaneros"
+	"Dûnedanos"
+	"de Gades"
+	"de Braganza"
+	"de Cartagena"
+	"da Câmara"
+	"Álvares Cabral"
+	"de Almeida"
+	"Albuquerque"
+	"Vaz Mardel"
+	"de Targares"
+	"de Tudela"
+	"Lagares"
+	"da Ellada"
+	"da Sardenha"
+	"de Vilhena"
+	"de Penamacor"
+	"de Trastámara"
+	"Cintranos"
+	"Teles de Mindano"
+	"Teles da Guerra"
+	"Teles d'Alcôr"
+	"de Rivia"
+	"de Tauros"
 }
 ship_names = {
-	"Ismail I"
-	"Ismail II"
-	"Muhammed III"
-	"Muhammed IV"
-	"Muhammed IX"
-	"Muhammed V"
-	"Muhammed VI"
-	"Muhammed VII"
-	"Muhammed VIII"
-	"Muhammed X"
-	"Muhammed al-Faqih"
-	"Muhammed ibn Nasr"
-	"Nasr"
-	"Yusuf I"
-	"Yusuf II"
-	"Yusuf III"
-	"Yusuf IV"
-	"Yusuf V"
+	"Afonso de Albuquerque"
+	"Albacora"
+	"Amazona"
+	"Andorinha"
+	"António"
+	"Argo"
+	"Arpão"
+	"Belém"
+	"Boaventura"
+	"Bom Sucesso"
+	"Calipso"
+	"Capitania"
+	"Colombo"
+	"Coroa"
+	"Corte Real"
+	"Curiosa"
+	"Damão"
+	"Delfim"
+	"Diligente"
+	"Douro"
+	"Duquesa de Bragança"
+	"Dão"
+	"Espadarte"
+	"Falcão"
+	"Fereta"
+	"Flor de la Mar"
+	"Furão"
+	"Fénix"
+	"Gaivota"
+	"Galgo"
+	"Garota"
+	"Garça"
+	"Giavota"
+	"Golfinho"
+	"Gonçalo"
+	"Graça Divina"
+	"Guadiana"
+	"Infante Don Pedro"
+	"Júpiter"
+	"Lebre"
+	"Leio"
+	"Liz"
+	"Lobo Soares"
+	"Luanda"
+	"Madre de Deus"
+	"Magnânimo"
+	"Martim de Freitas"
+	"Medusa"
+	"Minerva"
+	"Monte du Ouro"
+	"Neptuno"
+	"Ninfa"
+	"Nossa Senhora da Conceição"
+	"Nossa Senhora da Esperanca"
+	"Nossa Senhora da Glória"
+	"Nossa Senhora da Vitória"
+	"Nossa Senhora das Necessidades"
+	"Nunes"
+	"Oliveira de Guimarães"
+	"Padre Eterno"
+	"Polifemo"
+	"Príncipe Real"
+	"Pérola"
+	"Quietação"
+	"Real Fidelíssima"
+	"Relíquias"
+	"Sacramento"
+	"Salvador do Mundo"
+	"Santiago"
+	"Santiago Maior"
+	"Santíssima Trinidade"
+	"Santíssimo Sacramento"
+	"Serpente"
+	"Serpento do Mar"
+	"Simenta de Carvalho"
+	"Successo"
+	"Taforea"
+	"Tejo"
+	"Todos os Santos"
+	"Torta"
+	"Tritão"
+	"Ulisses"
+	"Unido"
+	"Unilo"
+	"União"
+	"Urania"
+	"Vale"
+	"Vasco da Gama"
+	"Vingança"
+	"Voador"
+	"Volador"
+	"Vulcano"
+	"Vénus"
+	"Zabra Augusta"
+	"Zabra Júlia"
+	"Águia"
 }
 army_names = {
-	"Jaish Al $PROVINCE$"
+	"Guarda Real"
+	"Guarda de $PROVINCE$"
 }
 fleet_names = {
-	"Alboran Sea Squadron"
-	"Balaeric Sea Squadron"
-	"Jabal Tariq Squadron"
+	"Grande Armada"
+	"Armada Rossada"
+	"Armada Leucada"
+	"Armada Áurea"
+	"Armada Argenta"
 }

@@ -31,7 +31,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		country_of_origin = Z2A
 		birth_date = 1383.12.2
 		death_date = 1443.12.2
-		religion = converted_dynamic_faith_113
+		religion = thibaultine
 		culture = franconian
 	}
 	add_queen_personality = strict_personality
@@ -46,7 +46,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		birth_date = 1411.4.18
 		death_date = 1476.4.18
 		claim = 89
-		religion = converted_dynamic_faith_113
+		religion = thibaultine
 		culture = bavarian
 	}
 	add_heir_personality = cruel_personality

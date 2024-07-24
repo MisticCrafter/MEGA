@@ -1,6 +1,6 @@
 owner = BOH
 controller = BOH
-capital = "Praha"
+capital = "Charliewinning"
 is_city = yes
 culture = czech
 religion = catholic

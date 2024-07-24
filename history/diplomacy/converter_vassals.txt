@@ -1,0 +1,105 @@
+vassal=
+{
+	first="BSH"
+	second="Z19"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+vassal=
+{
+	first="MLW"
+	second="BND"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+vassal=
+{
+	first="OGD"
+	second="Z1B"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+vassal=
+{
+	first="OYO"
+	second="Z0Z"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+vassal=
+{
+	first="PHA"
+	second="Z0X"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+vassal=
+{
+	first="Z07"
+	second="ETR"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+march=
+{
+	first="HAB"
+	second="SLO"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+vassal=
+{
+	first="PUN"
+	second="KSH"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+vassal = {
+	first = "PER"
+	second = "KRY"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+vassal = {
+	first = "PER"
+	second = "KHO"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+vassal = {
+	first = "PER"
+	second = "BAL"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+vassal = {
+	first = "DAN"
+	second = "DNZ"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+vassal = {
+	first = "PAP"
+	second = "ASY"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+vassal = {
+	first = "PAP"
+	second = "HSN"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}

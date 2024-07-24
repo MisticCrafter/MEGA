@@ -1,6 +1,6 @@
 owner = JNN
 controller = JNN
-capital = "Jenne"
+capital = "Karawinning"
 is_city = yes
 culture = mali
 religion = catholic

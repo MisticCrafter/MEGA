@@ -29,8 +29,8 @@ add_accepted_culture = bulgarian
 		country_of_origin = BUL
 		birth_date = 1408.1.6
 		death_date = 1468.1.6
-		religion = converted_dynamic_faith_111
-		culture = dynamic-roman-culture-num1
+		religion = abyss_mystic
+		culture = mare-roman
 	}
 	add_queen_personality = kind_hearted_personality
 	add_queen_personality = strict_personality
@@ -44,8 +44,8 @@ add_accepted_culture = bulgarian
 		birth_date = 1438.11.30
 		death_date = 1503.11.30
 		claim = 89
-		religion = converted_dynamic_faith_111
-		culture = dynamic-roman-culture-num1
+		religion = abyss_mystic
+		culture = mare-roman
 	}
 	add_heir_personality = obsessive_perfectionist_personality
 	add_heir_personality = zealot_personality

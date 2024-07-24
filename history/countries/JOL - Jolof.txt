@@ -3,7 +3,7 @@ add_government_reform = feudalism_reform
 government_rank = 2
 technology_group = western
 religion = catholic
-primary_culture = dynamic-roman-culture-num1
+primary_culture = mare-roman
 capital = 2237
 add_accepted_culture = senegambian
 1444.11.11= {
@@ -15,7 +15,7 @@ add_accepted_culture = senegambian
 		mil = 6
 		birth_date = 1427.3.30
 		religion = catholic
-		culture = dynamic-roman-culture-num1
+		culture = mare-roman
 	}
 	add_ruler_personality = industrious_personality
 	add_ruler_personality = lawgiver_personality

@@ -1,0 +1,41 @@
+march = {
+	first="SWI"
+	second="GUY"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+march = {
+	first="SWI"
+	second="TOU"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+vassal = {
+	first="SWI"
+	second="AUV"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+union = {
+    first = "SWI"
+    second = "ITA"
+    start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+vassal = {
+    first = "ITA"
+    second = "VRN"
+    start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+vassal = {
+    first = "ITA"
+    second = "VEN"
+    start_date="1444.11.11"
+	end_date="1836.1.1"
+}

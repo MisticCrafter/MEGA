@@ -3,7 +3,7 @@ add_government_reform = feudalism_reform
 government_rank = 1
 technology_group = eastern
 religion = catholic
-primary_culture = dynamic-greek-culture-num1
+primary_culture = cretan
 capital = 4698
 1444.11.11= {
 	monarch = {
@@ -14,7 +14,7 @@ capital = 4698
 		mil = 4
 		birth_date = 1391.2.20
 		religion = catholic
-		culture = dynamic-greek-culture-num1
+		culture = cretan
 	}
 	add_ruler_personality = bold_fighter_personality
 	add_ruler_personality = drunkard_personality
@@ -29,7 +29,7 @@ capital = 4698
 		death_date = 1451.1.7
 		female = yes
 		religion = catholic
-		culture = dynamic-greek-culture-num3
+		culture = armeniac
 	}
 	add_queen_personality = just_personality
 	add_queen_personality = righteous_personality

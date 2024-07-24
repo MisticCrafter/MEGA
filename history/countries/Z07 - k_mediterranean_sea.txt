@@ -3,7 +3,7 @@ add_government_reform = autocracy_reform
 government_rank = 2
 technology_group = western
 religion = catholic
-primary_culture = dynamic-roman-culture-num1
+primary_culture = mare-roman
 capital = 125
 set_country_flag = ZZZ_generated_converter_nation
 1444.11.11= {
@@ -16,7 +16,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		birth_date = 1387.1.13
 		female = yes
 		religion = catholic
-		culture = dynamic-roman-culture-num1
+		culture = mare-roman
 	}
 	add_ruler_personality = martial_educator_personality
 	add_ruler_personality = tactical_genius_personality
@@ -45,7 +45,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		death_date = 1481.12.26
 		claim = 89
 		religion = catholic
-		culture = dynamic-roman-culture-num1
+		culture = mare-roman
 	}
 	add_heir_personality = obsessive_perfectionist_personality
 	add_heir_personality = pious_personality

@@ -1,9 +1,9 @@
 owner = ADU
 controller = ADU
-capital = "The Azores"
+capital = "Delasael"
 is_city = yes
-culture = berber
-religion = converted_dynamic_faith_114
+culture = andal
+religion = tigranic
 trade_goods = fish
 base_tax = 1
 base_production = 1

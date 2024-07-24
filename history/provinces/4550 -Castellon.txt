@@ -1,8 +1,8 @@
 owner = Z07
 controller = Z07
-capital = "Castellon"
+capital = "Tortosa"
 is_city = yes
-culture = dynamic-andalucian-culture-num1
+culture = catalan
 religion = catholic
 trade_goods = grain
 base_tax = 4

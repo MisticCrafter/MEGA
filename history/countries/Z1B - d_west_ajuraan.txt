@@ -2,8 +2,8 @@ government = monarchy
 add_government_reform = feudalism_reform
 government_rank = 1
 technology_group = east_african
-religion = converted_dynamic_faith_111
-primary_culture = dynamic-somali-culture-num1
+religion = abyss_mystic
+primary_culture = ajuuraanic
 capital = 2781
 set_country_flag = ZZZ_generated_converter_nation
 1444.11.11= {
@@ -14,8 +14,8 @@ set_country_flag = ZZZ_generated_converter_nation
 		mil = 2
 		birth_date = 1.1.1
 		regent = yes
-		religion = converted_dynamic_faith_111
-		culture = dynamic-somali-culture-num1
+		religion = abyss_mystic
+		culture = ajuuraanic
 	}
 	heir = {
 		name = "Hamalmal"
@@ -26,8 +26,8 @@ set_country_flag = ZZZ_generated_converter_nation
 		birth_date = 1434.8.13
 		death_date = 1499.8.13
 		claim = 89
-		religion = converted_dynamic_faith_111
-		culture = dynamic-somali-culture-num1
+		religion = abyss_mystic
+		culture = ajuuraanic
 	}
 }
 1444.11.11= {

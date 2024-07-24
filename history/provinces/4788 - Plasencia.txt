@@ -1,9 +1,9 @@
 owner = ADU
 controller = ADU
-capital = "Plasencia"
+capital = "Amerita"
 is_city = yes
-culture = dynamic-greek-culture-num4
-religion = converted_dynamic_faith_114
+culture = andal
+religion = tigranic
 trade_goods = livestock
 base_tax = 4
 base_production = 5

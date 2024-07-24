@@ -1,0 +1,42 @@
+christian = {
+	abyss_mystic = {
+		color = { 82 10 226 }
+		icon =  177
+		country = {
+ 
+		technology_cost = -0.1
+	
+
+		heir_chance = 1
+	
+
+		discipline = 0.05
+	
+
+		heir_chance = 0.25
+	
+}
+		country_as_secondary = {
+ 
+		technology_cost = -0.05
+	
+
+		heir_chance = 1
+	
+}
+		province = {
+ 
+		local_missionary_strength = -0.02
+	
+
+		local_missionary_strength = 0.01
+	
+}
+		
+	flags_with_emblem_percentage = 20
+	flag_emblem_index_range = { 1 4 }
+	heretic = { ZAMIKAELITES STEPHANITES EUSTATHIANS }
+
+	}
+}
+

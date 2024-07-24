@@ -1,5 +1,5 @@
-owner = Z00
-controller = Z00
+owner = Z02
+controller = Z02
 capital = "Maras"
 is_city = yes
 culture = ultramar
@@ -8,8 +8,7 @@ trade_goods = wool
 base_tax = 3
 base_production = 4
 base_manpower = 1
-add_core = KOJ
-add_core = Z00
+add_core = Z02
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

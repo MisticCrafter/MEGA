@@ -1,5 +1,5 @@
-owner = Z00
-controller = Z00
+owner = PAP
+controller = PAP
 capital = "Najaf"
 is_city = yes
 culture = ultramar
@@ -8,8 +8,8 @@ trade_goods = spices
 base_tax = 5
 base_production = 4
 base_manpower = 2
-add_core = KOJ
-add_core = Z00
+
+add_core = PAP
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

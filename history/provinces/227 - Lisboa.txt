@@ -1,9 +1,9 @@
 owner = ADU
 controller = ADU
-capital = "Lisboa"
+capital = "Lisarra"
 is_city = yes
-culture = dynamic-greek-culture-num4
-religion = converted_dynamic_faith_114
+culture = andal
+religion = tigranic
 trade_goods = fish
 base_tax = 5
 base_production = 5

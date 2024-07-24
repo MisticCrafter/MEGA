@@ -9,7 +9,6 @@ base_tax = 5
 base_production = 4
 base_manpower = 3
 extra_cost = 10
-add_core = KOJ
 add_core = Z00
 discovered_by = east_african
 discovered_by = eastern

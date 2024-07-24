@@ -1,9 +1,9 @@
 owner = ADU
 controller = ADU
-capital = "Caceres"
+capital = "Madelyma"
 is_city = yes
-culture = dynamic-greek-culture-num4
-religion = converted_dynamic_faith_114
+culture = andal
+religion = tigranic
 trade_goods = wool
 base_tax = 3
 base_production = 5

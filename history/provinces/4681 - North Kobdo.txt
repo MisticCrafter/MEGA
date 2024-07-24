@@ -1,5 +1,5 @@
-owner = ZUN
-controller = ZUN
+owner = KHA
+controller = KHA
 capital = "Olgii"
 is_city = yes
 culture = khazak
@@ -10,7 +10,7 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 add_core = KZH
-add_core = ZUN
+add_core = KHA
 discovered_by = chinese
 discovered_by = east_african
 discovered_by = eastern

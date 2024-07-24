@@ -1,5 +1,5 @@
-owner = Z1W
-controller = Z1W
+owner = HAB
+controller = HAB
 capital = "Paris"
 is_city = yes
 culture = cosmopolitan_french
@@ -11,7 +11,7 @@ base_production = 9
 base_manpower = 6
 center_of_trade = 2
 add_core = FRA
-add_core = Z1W
+add_core = HAB
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

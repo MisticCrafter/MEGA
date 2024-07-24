@@ -1,10 +1,10 @@
 owner = ADU
 controller = ADU
-capital = "Sevilla"
+capital = "Sintra"
 is_city = yes
-culture = dynamic-greek-culture-num4
-religion = converted_dynamic_faith_114
-trade_goods = wine
+culture = andal
+religion = tigranic
+trade_goods = silk
 fort_15th = yes
 base_tax = 8
 base_production = 6
