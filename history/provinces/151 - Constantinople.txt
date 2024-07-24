@@ -1,6 +1,6 @@
 owner = LAE
 controller = LAE
-capital = "Constantinople"
+capital = "Dottowinning"
 is_city = yes
 culture = pontic_greek
 religion = catholic

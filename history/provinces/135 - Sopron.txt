@@ -1,6 +1,6 @@
 owner = Z2H
 controller = Z2H
-capital = "Sopron"
+capital = "Ivanwinning"
 is_city = yes
 culture = hungarian
 religion = catholic
