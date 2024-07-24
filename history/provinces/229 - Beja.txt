@@ -1,6 +1,6 @@
 owner = Z0E
 controller = Z0E
-capital = "Beja"
+capital = "Myrosa"
 is_city = yes
 culture = andal
 religion = tigranic
@@ -9,6 +9,7 @@ base_tax = 1
 base_production = 4
 base_manpower = 2
 add_core = Z0E
+add_core = ADU
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

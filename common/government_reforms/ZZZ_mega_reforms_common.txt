@@ -1,0 +1,72 @@
+# changed so as to account for Andalos
+tercio_reform = {
+	icon = "tercios_reform"
+	allow_normal_conversion = yes
+	potential = {
+		has_dlc = "Domination"
+		culture_group = iberian
+		NOT = { religion_group = muslim }
+		NOT = { primary_culture = portugese }
+		NOT = { primary_culture = brazilian }
+		NOT = { tag = CAS }
+		NOT = { tag = SPA }
+		NOT = { tag = ARA }
+        NOT = { tag = ADU }
+		is_colonial_nation = no
+	}
+	trigger = {
+		if = {
+			limit = { has_modifier_locking_military_tier = yes }
+			OR = {
+				has_reform = tercio_reform
+				has_not_modifier_locking_military_tier = yes
+			}
+		}
+	}
+	modifiers = {
+		has_tercio = yes
+		allowed_tercio_fraction = 0.1
+		army_tradition = 0.5
+		yearly_army_professionalism = 0.0025
+	}
+	
+	ai = {
+		factor = 1000
+	}
+}
+
+# changed so as to accomodate Andalos
+tercios_reform = {
+	icon = "tercios_reform"
+	allow_normal_conversion = yes
+	potential = {
+		has_dlc = "Domination" 
+		OR = {
+            is_or_was_tag = { tag = ADU }
+			AND = {
+				is_or_was_tag = { tag = ARA }
+				OR = {
+					total_development = 500 
+					is_great_power = yes 
+				}
+			}
+			mission_completed = spa_tercios_system
+			custom_trigger_tooltip = {
+				tooltip = has_unlocked_this_reform_tt
+				has_country_flag = enable_tercios_reform_flag
+			}
+			has_reform = tercios_reform
+		}
+		NOT = { religion_group = muslim } 
+	}
+	modifiers = {
+		has_tercio = yes
+		allowed_tercio_fraction = 0.2
+		army_tradition = 0.5
+		yearly_army_professionalism = 0.0025
+	}
+	
+	ai = {
+		factor = 1
+	}
+}

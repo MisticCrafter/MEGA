@@ -1,6 +1,6 @@
 owner = Z0E
 controller = Z0E
-capital = "Faro"
+capital = "Balsa"
 is_city = yes
 culture = andal
 religion = tigranic
@@ -8,7 +8,9 @@ trade_goods = salt
 base_tax = 4
 base_production = 4
 base_manpower = 2
+center_of_trade = 1
 add_core = Z0E
+add_core = ADU
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

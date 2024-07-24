@@ -1,0 +1,47 @@
+andal_subject_monarchy = {
+	rank = {
+		1 = LORD_PARAMOUNTCY
+		2 = LORD_PARAMOUNTCY
+		3 = LORD_PARAMOUNTCY
+	}
+
+	ruler_male = {
+		1 = LORD_PARAMOUNT
+		2 = LORD_PARAMOUNT
+		3 = LORD_PARAMOUNT
+	}
+
+	ruler_female = {
+		1 = LADY_PARAMOUNT
+		2 = LADY_PARAMOUNT
+		3 = LADY_PARAMOUNT
+	}
+	
+	trigger = {
+		has_reform = andal_subject_reform
+	}
+}
+
+andal_crown_monarchy = {
+	rank = {
+		1 = ARCHONATE
+		2 = ARCHONATE
+		3 = GRAND_ARCHONATE
+	}
+
+	ruler_male = {
+		1 = ARCHON
+		2 = ARCHON
+		3 = GRAND_ARCHON
+	}
+
+	ruler_female = {
+		1 = ARCHONESS
+		2 = ARCHONESS
+		3 = GRAND_ARCHONESS
+	}
+	
+	trigger = {
+		has_reform = andal_crown_reform
+	}
+}

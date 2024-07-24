@@ -1,6 +1,6 @@
 owner = Z07
 controller = Z07
-capital = "Castellon"
+capital = "Tortosa"
 is_city = yes
 culture = catalan
 religion = catholic

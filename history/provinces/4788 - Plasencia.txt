@@ -1,6 +1,6 @@
 owner = ADU
 controller = ADU
-capital = "Plasencia"
+capital = "Amerita"
 is_city = yes
 culture = andal
 religion = tigranic

@@ -1,6 +1,6 @@
 owner = CAS
 controller = CAS
-capital = "Burgos"
+capital = "Cintragarra"
 is_city = yes
 culture = castillian
 religion = tigranic

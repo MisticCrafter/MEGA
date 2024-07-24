@@ -1,8 +1,8 @@
 owner = ADU
 controller = ADU
-capital = "Las Palmas"
+capital = "Tameron"
 is_city = yes
-culture = berber
+culture = andal
 religion = tigranic
 trade_goods = unknown
 fort_15th = yes

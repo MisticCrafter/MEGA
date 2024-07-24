@@ -751,9 +751,9 @@ country_event = {
 		name = "plati_ck_new_flavor.EVTOPTG10"							#
 		ai_chance = { factor = 99 }											#Its exsclusive for them, so they really want it
 		trigger = {
-			primary_culture = portugese
+			primary_culture = andal
 		}
-		add_government_reform = portuguese_monarchy_reform
+		add_government_reform = andal_crown_reform
 	}
 	option = {
 		name = "plati_ck_new_flavor.EVTOPTH10"							#

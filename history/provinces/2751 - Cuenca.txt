@@ -1,6 +1,6 @@
 owner = VAL
 controller = VAL
-capital = "Cuenca"
+capital = "Valaretta"
 is_city = yes
 culture = andal
 religion = tigranic
@@ -9,6 +9,7 @@ base_tax = 4
 base_production = 6
 base_manpower = 2
 add_core = VAL
+add_core = ADU
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian
