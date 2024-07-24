@@ -1,5 +1,5 @@
-owner = AFR
-controller = AFR
+owner = Z2Y
+controller = Z2Y
 capital = "Hun"
 is_city = yes
 culture = berber
@@ -8,8 +8,7 @@ trade_goods = livestock
 base_tax = 3
 base_production = 4
 base_manpower = 1
-add_core = AFR
-add_core = TLC
+add_core = Z2Y
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian
