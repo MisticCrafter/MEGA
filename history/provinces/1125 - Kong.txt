@@ -1,8 +1,8 @@
-owner = KNG
-controller = KNG
+owner = Z01
+controller = Z01
 capital = "Kong"
 is_city = yes
-culture = mali
+culture = akan
 religion = catholic
 trade_goods = ivory
 base_tax = 3
