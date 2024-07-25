@@ -4,24 +4,18 @@ christian = {
 		icon =  179
 		country = {
  
-		stability_cost_modifier = -0.1
-	
-
-		heir_chance = 1
+		no_stability_loss_on_monarch_death = yes
 	
 
 		spy_offence = 0.5
 	
-
-		female_advisor_chance = 0.5
-	
 }
 		country_as_secondary = {
  
-		stability_cost_modifier = -0.1
+		no_stability_loss_on_monarch_death = yes
 	
 
-		heir_chance = 1
+		spy_offence = 0.5
 	
 }
 		province = {
