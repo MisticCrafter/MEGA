@@ -439,7 +439,7 @@ andalos_slot_2_missions = {
 	has_country_shield = yes
 	
 	adu_beyond_cape_bojador = {
-		icon = mission_establish_high_seas_navy
+		icon = mission_look_west
 		required_missions = { }
 		completed_by = 1445.1.1
 		
@@ -1215,7 +1215,7 @@ andalos_slot_3_missions_b = {
 	}
 
 	adu_bengal = {
-		icon = mission_indian_trade_company
+		icon = mission_unite_bengal
 		required_missions = { adu_discover_india }
 		position = 6
 		trigger = {
@@ -2326,7 +2326,7 @@ andalos_slot_5_missions_c = {
 	has_country_shield = yes
 	
 	adu_indonesia = {
-		icon = mission_junk_boat
+		icon = mission_rb_colonise_spice_islands
 		required_missions = { adu_malacca }
 		completed_by = 1536.1.1
 		position = 7
