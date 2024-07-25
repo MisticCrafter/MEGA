@@ -70,3 +70,279 @@ tercios_reform = {
 		factor = 1
 	}
 }
+
+# Changed to fit within the Piety mechanics of Rationalism
+strengthen_the_courts_of_realism_reform = {
+	icon = "state_madrasas_reform"
+	allow_normal_conversion = yes
+	potential = {
+		NOT = { has_government_attribute = is_pirate_republic_reform }
+		OR = {
+			is_revolutionary = no
+			NOT = { has_dlc = "Emperor" }
+		}
+		religion = rationalist
+	}
+
+	modifiers = {
+		monthly_piety_accelerator = 0.0025
+		state_maintenance_modifier = -0.1
+		church_loyalty_modifier = 0.05
+		church_influence_modifier = 0.1
+		burghers_loyalty_modifier = 0.05
+		burghers_influence_modifier = -0.1
+	}
+
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+		custom_attributes = {
+			allow_piety_switch_decision = yes	# The piety reversal decision.
+		}
+	}
+
+	custom_attributes = {
+		temples_modifier = yes
+	}
+}
+
+the_humanistic_principle_of_rationalism_reform = { 
+	icon = "man_on_podium"
+	allow_normal_conversion = yes
+	potential = {
+		NOT = { has_government_attribute = is_pirate_republic_reform }
+		OR = {
+			is_revolutionary = no
+			NOT = { has_dlc = "Emperor" }
+		}
+		religion = rationalist
+	}
+
+	modifiers = {
+		monthly_piety = -0.0025
+		innovativeness_gain = 0.25
+		manpower_in_true_faith_provinces = 0.10
+		burghers_influence_modifier = 0.1
+		burghers_loyalty_modifier = 0.05
+	}
+
+	custom_attributes = {
+		disables_estate_church = yes
+		disables_estate_brahmins = yes
+	}
+
+}
+
+maintain_balance_between_the_courts_and_humanists_reform = {
+	icon = "consolidate_power_in_cities_reform"
+	allow_normal_conversion = yes
+	potential = {
+		NOT = { has_government_attribute = is_pirate_republic_reform }
+		OR = {
+			is_revolutionary = no
+			NOT = { has_dlc = "Emperor" }
+		}
+		religion = rationalist
+	}
+
+	modifiers = {
+		diplomats = 1
+		all_estate_loyalty_equilibrium = 0.05
+	}
+
+}
+
+curtail_power_of_the_rationalists_reform = {
+	icon = "support_state_reform"
+	allow_normal_conversion = yes
+	potential = {
+		NOT = { has_government_attribute = is_pirate_republic_reform }
+		OR = {
+			is_revolutionary = no
+			NOT = { has_dlc = "Emperor" }
+		}
+		religion = rationalist
+	}
+
+	modifiers = {
+		adm_tech_cost_modifier = -0.1
+		religious_unity = 0.1
+		church_influence_modifier = -0.1
+	}
+
+	custom_attributes = {
+		seizing_land_no_rebels_from_estate_church = yes
+	}
+}
+
+# Changing Common Religious Reforms to exclude my religion.
+separate_clergy_from_state_affairs_reform = {
+	icon = "partial_secularisation_reform"
+	allow_normal_conversion = yes
+	potential = {
+		NOT = { has_government_attribute = is_pirate_republic_reform }
+		OR = {
+			is_revolutionary = no
+			NOT = { has_dlc = "Emperor" }
+		}
+		NOT = { religion = rationalist }
+	}
+	trigger = {
+		OR = {
+			full_idea_group = innovativeness_ideas
+			full_idea_group = humanist_ideas
+		}
+		NOT = { has_idea_group = religious_ideas }
+		NOT = { has_idea_group = theocracy_ideas }
+		is_not_blocked_by_estate_privilege = { estate = estate_church }
+		is_not_blocked_by_estate_privilege = { estate = estate_brahmins }
+	}
+	modifiers = {
+		tolerance_of_heathens_capacity = 1
+		tolerance_of_heretics_capacity = 1
+		innovativeness_gain = 0.25
+	}
+	custom_attributes = {
+		disables_estate_church = yes
+		disables_estate_brahmins = yes
+	}
+	
+	ai = {
+		factor = 1
+	}
+}
+
+secure_clergy_power_reform = {
+	icon = "warrior_monks_reform"
+	allow_normal_conversion = yes
+	potential = {
+		NOT = { has_government_attribute = is_pirate_republic_reform }
+		OR = {
+			is_revolutionary = no
+			NOT = { has_dlc = "Emperor" }
+		}
+		NOT = { religion = rationalist }
+	}
+	modifiers = {
+		church_influence_modifier = 0.05
+	}
+	effect = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_tax_building_trigger = yes
+				}
+				add_province_modifier = {
+					name = gov_expanded_temple_rights_mod
+					duration = -1
+				}
+			}
+		}
+	}
+	post_removed_effect = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = gov_expanded_temple_rights_mod
+				}
+				remove_province_modifier = gov_expanded_temple_rights_mod
+			}
+		}
+	}
+	custom_attributes = {
+		temples_modifier = yes
+	}
+	
+	ai = {
+		factor = 1
+	}
+}
+
+curtail_clergy_power_reform = {
+	icon = "monks"
+	allow_normal_conversion = yes
+	potential = {
+		NOT = { has_government_attribute = is_pirate_republic_reform }
+		OR = {
+			is_revolutionary = no
+			NOT = { has_dlc = "Emperor" }
+		}
+		NOT = { religion = rationalist }
+	}
+	modifiers = {
+		adm_tech_cost_modifier = -0.1
+		religious_unity = 0.1
+		church_influence_modifier = -0.1
+	}
+	custom_attributes = {
+		seizing_land_no_rebels_from_estate_church = yes
+	}
+	
+	ai = {
+		factor = 1
+	}
+}
+
+head_of_the_reformed_church_reform = {
+	icon = "regionally_elected_commanders"
+	allow_normal_conversion = yes
+	potential = {
+		NOT = { has_government_attribute = is_pirate_republic_reform }
+		OR = {
+			is_revolutionary = no
+			NOT = { has_dlc = "Emperor" }
+		}
+		NOT = { religion = catholic }
+		NOT = { religion = coptic }
+		NOT = { religion = orthodox }
+		religion_group = christian
+		NOT = { religion = rationalist }
+	}
+	modifiers = {
+		church_influence_modifier = -0.05
+		global_tax_modifier = 0.15
+		church_power_modifier = 0.1
+		monthly_fervor_increase = 0.25
+	}
+	effect = {
+		hidden_effect = {
+			if = {
+				limit = { is_defender_of_faith = yes }
+				add_country_modifier = {
+					name = gov_improved_defender_of_faith_mod
+					duration = -1
+				}
+			}
+		}
+	}
+	post_removed_effect = {
+		remove_country_modifier = gov_improved_defender_of_faith_mod
+	}
+	custom_attributes = {
+		improved_defender_of_faith = yes	#Being Defender of Faith increases Dip Rep, Tolerance and Morale
+	}
+	
+	ai = {
+		factor = 1
+	}
+}
+
+maintain_clergy_balance_of_power_reform = {
+	icon = "consolidate_power_in_cities_reform"
+	allow_normal_conversion = yes
+	potential = {
+		NOT = { has_government_attribute = is_pirate_republic_reform }
+		OR = {
+			is_revolutionary = no
+			NOT = { has_dlc = "Emperor" }
+		}
+		NOT = { religion = rationalist }
+	}
+	modifiers = {
+		all_estate_loyalty_equilibrium = 0.05
+		diplomats = 1
+	}
+	
+	ai = {
+		factor = 1
+	}
+}
