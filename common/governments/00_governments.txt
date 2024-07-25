@@ -664,6 +664,9 @@ republic = {
 				#Mamluks
 				egyptian_government_reform
 				city_alliance_reform
+				zeven_provincies_republic_reform
+				reformed_nederlands_republic_reform
+				united_zeven_provincies_republic_reform
 			}
 		}
 		republican_virtues = {

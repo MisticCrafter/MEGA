@@ -1,0 +1,108 @@
+adu_brazil_buff = {
+    global_tariffs = 0.25
+    reduced_liberty_desire_on_other_continent = 10
+    global_colonial_growth = 15
+}
+
+adu_colombia_buff = {
+    manpower_recovery_speed = 0.10
+    reinforce_speed = 0.10
+    global_colonial_growth = 15
+}
+
+adu_caribbean_buff = {
+    global_trade_goods_size_modifier = 0.1
+    trade_steering = 0.1
+}
+
+adu_malabar_buff = {
+    placed_merchant_power = 5
+    global_ship_trade_power = 0.3
+}
+
+adu_defeat_incas_modifier = {
+    treasure_fleet_income = 0.1
+    global_heathen_missionary_strength = 0.02
+    army_tradition_from_battle = 1
+}
+
+adu_defeat_aztecs_modifier = {
+    treasure_fleet_income = 0.1
+    discipline = 0.05
+    army_tradition_from_battle = 1
+}
+
+adu_andaman_sea_trade_modifier = {
+    local_development_cost = -0.1
+    province_trade_power_modifier = 0.15
+    statewide_governing_cost = -0.2
+}
+
+adu_east_indies_trade_modifier = {
+    local_development_cost = -0.1
+    province_trade_power_modifier = 0.15
+    statewide_governing_cost = -0.2
+}
+
+adu_persian_gulf_trade_modifier = {
+    local_development_cost = -0.1
+    province_trade_power_modifier = 0.15
+    statewide_governing_cost = -0.2
+}
+
+adu_malabar_coast_trade_modifier = {
+    local_development_cost = -0.1
+    province_trade_power_modifier = 0.15
+    statewide_governing_cost = -0.2
+}
+
+swi_andal_alliance_modifier = {
+    land_morale = 0.10
+}
+
+adu_ascendancy = {
+    max_absolutism_effect = 0.2
+    diplomatic_reputation = 2
+    land_morale = 0.15
+}
+
+adu_circumnavigation_modifier = {
+    max_admiral_maneuver = 1
+    global_colonial_growth = 25
+    admiral_cost = -0.5
+}
+
+adu_feitoria = {
+    trade_value = 5
+    trade_goods_size = 0.5
+    defensiveness = 0.25
+    supply_limit_modifier = 0.25
+}
+
+adu_guinean_gold = {
+    trade_goods_size = 1
+    trade_goods_size_modifier = -0.75
+}
+
+adu_restore_crown_authority = {
+    legitimacy = 0.5
+    monthly_reform_progress_modifier = 0.1
+    all_estate_influence_modifier = -0.1
+}
+
+adu_golden_citadel = {
+    local_development_cost = -0.1
+    allowed_num_of_buildings = 1
+    local_institution_spread = 0.1
+}
+
+adu_silver_citadel = {
+    local_development_cost = -0.1
+    allowed_num_of_buildings = 1
+    local_institution_spread = 0.1
+}
+
+adu_centralization_effect = {
+    allow_free_estate_privilege_revocation = yes
+    global_autonomy = -0.15
+}
