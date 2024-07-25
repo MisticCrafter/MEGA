@@ -1,0 +1,2668 @@
+andalos_slot_1_missions = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential_on_load = {
+		OR = {
+			has_dlc = "Domination" 
+			has_dlc = "Golden Century"
+		}
+	}
+	potential = {
+		OR = {
+			has_dlc = "Domination" 
+			has_dlc = "Golden Century"
+		}
+		tag = ADU
+		NOT = { map_setup = map_setup_random }
+		is_random_new_world = no
+	}
+	has_country_shield = yes
+	
+	
+	adu_go_westward = {
+		icon = mission_establish_high_seas_navy
+		required_missions = { adu_beyond_cape_bojador }
+		position = 2
+		completed_by = 1501.1.1
+		
+		provinces_to_highlight = {
+			colonial_region = colonial_brazil
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		
+		trigger = { 
+			custom_trigger_tooltip = {
+				tooltip = miss_discover_brazil
+				colonial_brazil = {
+					has_discovered = ROOT
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = miss_colonize_brazil
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 1
+					colonial_region = colonial_brazil
+					is_city = yes
+				}
+			}
+		}
+	
+		effect = {
+			add_country_modifier = {
+				name = "por_brazil_colonial"
+				duration = 5475
+			}
+			if = { 
+				limit = { has_dlc = "Domination" }
+				change_innovativeness = 4
+			}
+			else = { add_adm_power = 50 }
+		}
+	}
+	adu_brazil_colonies = {
+		icon = mission_iberian_conquistador
+		required_missions = { adu_go_westward }
+		completed_by = 1540.1.1
+		
+		provinces_to_highlight = {
+			colonial_region = colonial_brazil
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		
+		trigger = { 
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 10
+				colonial_region = colonial_brazil
+				is_city = yes
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "adu_brazil_buff"
+				duration = 7300
+			}
+		}
+	}
+	adu_bandeirantes = {
+		icon = mission_brazilian_bandeirantes
+		required_missions = { adu_brazil_colonies }
+		
+		provinces_to_highlight = {
+			OR = {
+				area = minas_gerais_area
+				area = rio_de_janeiro_area
+				area = sao_paolo_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			if = {
+				limit = {
+					has_dlc = "Dharma"
+				}
+				763 = {
+					province_has_center_of_trade_of_level = 2
+				}
+			}
+			else = {
+				763 = {
+					OR = {
+						has_building = marketplace
+						has_building = trade_depot
+						has_building = stock_exchange
+					}
+				}
+			}
+			minas_gerais_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			rio_de_janeiro_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			sao_paolo_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					765 = {
+						NOT = {
+							trade_goods = gold
+						}
+					}
+				}
+				765 = {
+					change_trade_goods = gold
+				}
+			}
+			765 = {
+				add_province_modifier = {
+					name = "por_minas_gerais"
+					duration = -1
+				}
+			}
+			set_country_flag = por_bandeirantes_flag
+			custom_tooltip = por_bandeirantes_tooltip
+		}
+	}
+	adu_colombia_colonies = {
+		icon = mission_establish_high_seas_navy
+		required_missions = { adu_bandeirantes }
+		completed_by = 1540.1.1
+		
+		provinces_to_highlight = {
+			colonial_region = colonial_colombia
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		
+		trigger = { 
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 10
+				colonial_region = colonial_colombia
+				is_city = yes
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "adu_colombia_buff"
+				duration = 7300
+			}
+			define_conquistador = {
+				name = "Francisco Pizarro"
+				fire = 4
+				shock = 4
+				manuever = 5
+				siege = 1
+			}
+			peru_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	adu_defeat_incas = {
+		icon = mission_assemble_an_army
+		required_missions = { adu_colombia_colonies }
+		provinces_to_highlight = {
+			OR = {
+				area = kuntisuyu_area
+				area = antisuyu_area
+				area = huanuco_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+
+		trigger = {
+			kuntisuyu_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			antisuyu_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			huanuco_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+
+		effect = {
+			custom_tooltip = adu_peru_capital_move_tt
+			hidden_effect = {
+				if = {
+					limit = {
+						any_subject_country = {
+							OR = {
+								is_subject_of_type = colony
+								is_subject_of_type = crown_colony
+								is_subject_of_type = private_enterprise
+								is_subject_of_type = self_governing_colony
+							}
+							owns = 809
+						}
+					}
+					every_subject_country = {
+						limit = {
+							owns = 809
+						}
+						809 = {
+							prev_move_capital_effect = yes
+						}
+					}
+				}
+			}
+			add_country_modifier = {
+				name = adu_defeat_incas_modifier
+				duration = 7300
+			}
+			add_years_of_income = 2
+		}
+	}
+	
+	adu_ceylon = {
+		icon = mission_portuguese_ceylon
+		required_missions = { adu_malabar }
+		position = 7
+		provinces_to_highlight = {
+			OR = {
+				area = lanka_area
+				area = south_lanka_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			lanka_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			south_lanka_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_mercantilism = 3
+			
+			if = { 
+				limit = { has_dlc = "Domination" }
+				add_country_modifier = {
+					name = por_presence_in_india_modifier
+					duration = 5475
+				}
+			}
+		}
+	}
+	
+	adu_competitive_advantage = {
+		icon = mission_sea_battles
+		required_missions = { adu_restore_order }
+		completed_by = 1472.1.1
+		position = 10
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				has_manpower_building_trigger = yes 
+				value = 15
+			}
+			OR = { 
+				army_tradition = 50 
+				army_professionalism = 0.15
+			}
+			if = {
+				limit = { ai = no }
+				navy_size_percentage = 0.95
+				army_size_percentage = 0.85
+			}
+			else = { navy_size_percentage = 0.85 army_size_percentage = 0.75 }
+			
+		}
+
+		effect = {
+			add_government_reform = tercios_reform
+			if = {
+				limit = { has_dlc = "Cradle of Civilization" }
+				add_army_professionalism = 0.05
+			}
+			else = { add_army_tradition = 10 }
+			northern_morocco_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			western_morocco_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			southern_morocco_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_claim = ROOT
+			}
+		}
+	}
+	
+	adu_conquer_coastal_morocco = {
+		icon = mission_arabian_fort
+		required_missions = { adu_competitive_advantage }
+		completed_by = 1488.1.1
+		position = 11
+		provinces_to_highlight = {
+			area = northern_morocco_area
+			area = western_morocco_area
+			area = southern_morocco_area
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			owns = 4563
+			western_morocco_area = {
+				type = all
+				owned_by = ROOT
+			}
+			southern_morocco_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			western_morocco_area = {
+				limit = { 
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "buffer_zone_commerce"
+					duration = 5475
+				}
+			}
+			northern_morocco_area = {
+				limit = { 
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "buffer_zone_commerce"
+					duration = 5475
+				}
+			}
+			southern_morocco_area = {
+				limit = { 
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "buffer_zone_commerce"
+					duration = 5475
+				}
+			}
+			add_country_modifier = {
+				name = spa_reformed_tercio_modifier
+				duration = -1 
+			}
+			if = { 
+				limit = { 
+					has_dlc = "Rights of Man" 
+					NOT = { num_of_ruler_traits = { amount = 3 } }
+				}				
+				add_ruler_personality = strict_personality
+			}
+			else = { 
+				change_ruler_stat = {
+					type = mil
+					amount = 2
+				}
+			}
+		}
+	}
+}
+
+andalos_slot_2_missions = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential_on_load = {
+		OR = {
+			has_dlc = "Domination" 
+			has_dlc = "Golden Century"
+		}
+	}
+	potential = {
+		OR = {
+			has_dlc = "Domination" 
+			has_dlc = "Golden Century"
+		}
+		tag = ADU
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	adu_beyond_cape_bojador = {
+		icon = mission_look_west
+		required_missions = { }
+		completed_by = 1445.1.1
+		
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = miss_discover_west_africa
+				west_africa_coast_area = {
+					has_discovered = ROOT
+				}
+			}
+			num_of_colonists = 1
+		}
+		
+		effect = {
+			if = {
+				limit = { 
+					has_dlc = "Domination" 
+					has_dlc = "Rule Britannia" 
+				}
+				change_innovativeness = 3 
+			}
+			else = { add_prestige = 10 }
+			add_country_modifier = {
+				name = "the_unknown_frontier"
+				duration = 5475
+			}
+		}
+	}
+	adu_colonize_guinea = {
+		icon = mission_colonial
+		required_missions = { adu_beyond_cape_bojador }
+		completed_by = 1445.1.1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1096
+				province_id = 1111
+				AND = {
+					trade_goods = gold
+					region = niger_region
+					owner = {
+						NOT = {
+							has_opinion = {
+								who = ROOT
+								value = 100
+							}
+						}
+					}
+				}
+			}
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = { 
+			1096 = {
+				owned_by = ROOT
+				is_city = yes
+			}
+			1111 = {
+				owned_by = ROOT
+				is_city = yes
+			}
+			custom_trigger_tooltip = {
+				tooltip = adu_has_guinean_friend_tt
+				niger_region = {
+					trade_goods = gold
+					owner = {
+						has_opinion = {
+							who = ROOT
+							value = 100
+						}
+					}
+					NOT = { owned_by = ROOT }
+				}
+			}
+
+		}
+	
+		effect = {
+			define_explorer = {
+				name = "Diogo Cão"
+				shock = 2
+				fire = 2
+				manuever = 4
+				siege = 1
+			}
+			1096 = {
+				change_trade_goods = sugar
+				add_base_production = 2
+				add_base_manpower = 2
+				add_province_modifier = {
+					name = "adu_feitoria"
+					duration = -1
+				}
+			}
+			1111 = {
+				change_trade_goods = gold
+				add_base_production = 2
+				add_base_manpower = 2
+				add_province_modifier = {
+					name = "adu_feitoria"
+					duration = -1
+				}
+				add_province_modifier = {
+					name = "adu_guinean_gold"
+					duration = -1
+				}
+			}
+		}
+	}
+	adu_caribbean = {
+		icon = mission_colonize_the_caribbean
+		required_missions = { adu_go_westward }
+		completed_by = 1540.1.1
+		
+		provinces_to_highlight = {
+			colonial_region = colonial_the_carribean
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		
+		trigger = { 
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 10
+				colonial_region = colonial_the_carribean
+				is_city = yes
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "adu_caribbean_buff"
+				duration = 7300
+			}
+			define_conquistador = {
+				name = "Fernando Corterreal"
+				shock = 5
+				fire = 5
+				manuever = 6
+				siege = 1
+			}
+			central_america_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			mexico_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	adu_defeat_aztecs = {
+		icon = mission_assemble_an_army
+		required_missions = { adu_caribbean }
+		position = 4
+		provinces_to_highlight = {
+			OR = {
+				area = mexico_area
+				area = eastern_mexico_area
+				area = puebla_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+
+		trigger = {
+			mexico_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			eastern_mexico_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			puebla_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+
+		effect = {
+			custom_tooltip = adu_mexico_capital_move_tt
+			hidden_effect = {
+				if = {
+					limit = {
+						any_subject_country = {
+							OR = {
+								is_subject_of_type = colony
+								is_subject_of_type = crown_colony
+								is_subject_of_type = private_enterprise
+								is_subject_of_type = self_governing_colony
+							}
+							owns = 852
+						}
+					}
+					every_subject_country = {
+						limit = {
+							owns = 852
+						}
+						852 = {
+							prev_move_capital_effect = yes
+						}
+					}
+				}
+			}
+			add_country_modifier = {
+				name = adu_defeat_aztecs_modifier
+				duration = 7300
+			}
+			add_years_of_income = 2
+		}
+	}
+}
+
+andalos_slot_2_missions_b = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential_on_load = {
+		OR = {
+			has_dlc = "Domination" 
+			has_dlc = "Golden Century"
+		}
+	}
+	potential = {
+		OR = {
+			has_dlc = "Domination" 
+			has_dlc = "Golden Century"
+		}
+		tag = ADU
+		NOT = { map_setup = map_setup_random }
+		is_random_new_world = no
+	}
+	has_country_shield = yes
+	
+	adu_malabar = {
+		icon = mission_portuguese_malabar
+		required_missions = { adu_discover_india }
+		position = 6
+		provinces_to_highlight = {
+			area = malabar_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			malabar_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			1340 = {
+				add_trade_modifier = {
+					who = root
+					duration = 7300
+					power = 50
+					key = andal_coromandel_trade
+				}
+			}
+			lanka_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			south_lanka_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			529 = {
+				if = {
+					limit = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			4430 = {
+				if = {
+					limit = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			517 = {
+				if = {
+					limit = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+	}
+	
+	adu_surat = {
+		icon = mission_control_surat
+		required_missions = { adu_malabar }
+		position = 7
+		provinces_to_highlight = {
+			OR = {
+				province_id = 529
+				province_id = 4430
+				province_id = 517
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			529 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4430 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			517 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			504 = {
+				add_trade_modifier = {
+					who = root
+					duration = 7300
+					power = 50
+					key = andal_gujarat_trade
+				}
+			}
+			add_country_modifier = {
+				name = "adu_malabar_buff"
+				duration = 7300
+			}
+		}
+	}
+}
+
+andalos_slot_2_missions_c = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential_on_load = {
+		OR = {
+			has_dlc = "Domination" 
+			has_dlc = "Golden Century"
+		}
+	}
+	potential = {
+		OR = {
+			has_dlc = "Domination" 
+			has_dlc = "Golden Century"
+		}
+		tag = ADU
+		NOT = { map_setup = map_setup_random }
+		is_random_new_world = no
+	}
+	has_country_shield = yes
+	
+	adu_restore_order = {
+		icon = mission_unite_home_region
+		required_missions = {}
+		completed_by = 1470.1.1
+		position = 9
+		provinces_to_highlight = { 
+			OR = { 
+				AND = {
+					is_capital_of = ROOT 
+					NOT = { num_of_times_improved = 8 }
+				}
+				AND = {
+					is_capital = yes 
+					owner = {
+						is_subject_of = ROOT 
+						liberty_desire = 10 
+					}
+				}
+				AND = {
+					owned_by = Z0E
+				owned_by = VAL
+				NOT = { owned_by = ROOT }
+				}
+			}
+		}
+		
+		trigger = {
+			NOT = { exists = Z0E }
+			NOT = { exists = VAL }
+			capital_scope = { 
+				num_of_times_improved = 8 
+			}
+			NOT = { 
+				any_subject_country = { liberty_desire = 5 }
+			}
+			legitimacy_equivalent = 90 
+		}
+		effect = {
+			add_navy_tradition = 15
+			add_army_tradition = 15
+			add_country_modifier = {
+				name = "adu_restore_crown_authority"
+				duration = 7300
+			}
+
+			custom_tooltip = fra_20rf_per_adm
+			hidden_effect = {
+				if = {
+					limit = { monthly_adm = 20 } 
+					change_government_reform_progress = 400 
+				}
+				else_if = {
+					limit = { monthly_adm = 19 } 
+					change_government_reform_progress = 380 
+				}
+				else_if = {
+					limit = { monthly_adm = 18 } 
+					change_government_reform_progress = 360 
+				}
+				else_if = {
+					limit = { monthly_adm = 17 } 
+					change_government_reform_progress = 340 
+				}
+				else_if = {
+					limit = { monthly_adm = 16 } 
+					change_government_reform_progress = 320 
+				}
+				else_if = {
+					limit = { monthly_adm = 15 } 
+					change_government_reform_progress = 300
+				}
+				else_if = {
+					limit = { monthly_adm = 14 } 
+					change_government_reform_progress = 280
+				}
+				else_if = {
+					limit = { monthly_adm = 13 } 
+					change_government_reform_progress = 260
+				}
+				else_if = {
+					limit = { monthly_adm = 12 } 
+					change_government_reform_progress = 240
+				}
+				else_if = {
+					limit = { monthly_adm = 11 } 
+					change_government_reform_progress = 220
+				}
+				else_if = {
+					limit = { monthly_adm = 10 } 
+					change_government_reform_progress = 200
+				}
+				else_if = {
+					limit = { monthly_adm = 9 } 
+					change_government_reform_progress = 180
+				}
+				else_if = {
+					limit = { monthly_adm = 8 } 
+					change_government_reform_progress = 160
+				}
+				else_if = {
+					limit = { monthly_adm = 7 } 
+					change_government_reform_progress = 140
+				}
+				else_if = {
+					limit = { monthly_adm = 6 } 
+					change_government_reform_progress = 120
+				}
+				else = { change_government_reform_progress = 100 }
+			}
+		}
+	}
+	
+	adu_flagship = {
+		icon = mission_launch_a_flagship
+		required_missions = { adu_restore_order }
+		position = 10
+		provinces_to_highlight = {
+			province_id = 224
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			if = {
+				limit = { has_dlc = "Golden Century" }
+				has_flagship = yes
+			}
+			else = {
+				num_of_heavy_ship = 8
+			}
+			227 = {
+				owned_by = ROOT
+				has_dock_building_trigger = yes 
+				has_shipyard_building_trigger = yes 
+				base_production = 12 
+			}
+		}
+		effect = {
+			add_navy_tradition = 30
+			227 = {
+				if = {
+					limit = { has_building = grand_shipyard }
+					add_base_production = 2 
+				}
+				else_if = {
+					limit = { has_building = shipyard }
+					remove_building = shipyard 
+					add_building = grand_shipyard 
+				}
+				else = { add_building = shipyard }
+			}
+		}
+	}
+
+	adu_reform_navy = {
+		icon = mission_aragonese_navy
+		required_missions = { adu_flagship }
+		position = 11
+		trigger = {
+			num_of_owned_provinces_with = {
+				has_shipyard_building_trigger = yes 
+				value = 6 
+			}
+			OR = { 
+				navy_tradition = 75 
+				navy_size = 80
+			}
+		}
+		effect = {
+			if = {
+				limit = { has_dlc = "Domination" }
+				add_country_modifier = {
+					name = por_reform_navy_1_modifier
+					duration = -1 
+				}
+			}
+			else = { 
+				define_advisor = {
+					type = naval_reformer
+					skill = 3
+					cost_multiplier = 0.25
+				}
+				add_navy_tradition = 25 
+			}
+		}
+	}
+}
+
+andalos_slot_3_missions = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential_on_load = {
+		OR = {
+			has_dlc = "Domination" 
+			has_dlc = "Golden Century"
+		}
+	}
+	potential = {
+		OR = {
+			has_dlc = "Domination" 
+			has_dlc = "Golden Century"
+		}
+		tag = ADU
+		NOT = { map_setup = map_setup_random }
+		is_random_new_world = no
+	}
+	has_country_shield = yes
+	adu_congo = {
+		icon = mission_african_soldier
+		required_missions = { adu_beyond_cape_bojador }
+		position = 2
+		completed_by = 1584.1.1
+		provinces_to_highlight = {
+			region = kongo_region
+			NOT = { owned_by = ROOT }
+			has_discovered = ROOT
+		}
+		
+		trigger = { 
+			custom_trigger_tooltip = {
+				tooltip = miss_discover_kongo
+				kongo_region = {
+					has_discovered = ROOT
+				}
+			}
+			OR = {
+				1167 = {
+					owned_by = ROOT
+					is_city = yes
+				}
+				1172 = {
+					owned_by = ROOT
+					is_city = yes
+				}
+			}
+		}
+	
+		effect = {
+			custom_tooltip = adu_discover_congo_tt
+			hidden_effect = {
+				4097 = {
+					discover_country = ROOT
+				}
+			}
+			4097 = {
+				add_trade_modifier = {
+					who = root
+					duration = 5475
+					power = 20
+					key = ivory_coast_ambition
+				}
+			}
+			custom_tooltip = adu_congo_feitorias_tt
+			if = {
+				limit = {
+					1167 = {
+						owned_by = ROOT
+					}
+				}
+				1167 = {
+					add_province_modifier = {
+						name = "adu_feitoria"
+						duration = -1
+					}
+				}
+			}
+			if = {
+				limit = {
+					1172 = {
+						owned_by = ROOT
+					}
+				}
+				1172 = {
+					add_province_modifier = {
+						name = "adu_feitoria"
+						duration = -1
+					}
+				}
+			}
+			add_prestige_or_monarch_power = { amount = 15 }
+		}
+	}
+}
+
+andalos_slot_3_missions_b = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential_on_load = {
+		OR = {
+			has_dlc = "Domination" 
+			has_dlc = "Golden Century"
+		}
+	}
+	potential = {
+		OR = {
+			has_dlc = "Domination" 
+			has_dlc = "Golden Century"
+		}
+		tag = ADU
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	adu_discover_east_africa = {
+		icon = mission_have_two_subjects
+		required_missions = { adu_discover_cape }
+		completed_by = 1530.1.1
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1186
+				province_id = 1192
+				area = mozambique_area
+			}
+			NOT = { owned_by = ROOT }
+			has_discovered = ROOT
+		}
+		
+		trigger = { 
+			custom_trigger_tooltip = {
+				tooltip = miss_discover_east_africa
+				east_africa_region = {
+					has_discovered = ROOT
+				}
+			}
+			1186 = {
+				owned_by = ROOT
+			}
+			1192 = {
+				owned_by = ROOT
+			}
+			mozambique_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+	
+		effect = {
+			add_prestige_or_monarch_power = { amount = 15 }
+			add_years_of_income = 1 
+			zimbabwe_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			butua_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	adu_african_gold = {
+		icon = mission_african_gold
+		required_missions = { adu_discover_east_africa }
+		position = 4
+		
+		provinces_to_highlight = {
+			OR = {
+				area = zimbabwe_area
+				area = butua_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			zimbabwe_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			butua_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			1188 = {
+				if = {
+					limit = { trade_goods = gold }
+					add_base_production = 2
+					add_province_modifier = {
+						name = "por_african_gold_modifier"
+						duration = 7300
+					}
+				}
+			}
+			1185 = {
+				if = {
+					limit = { trade_goods = gold }
+					add_base_production = 2
+					add_province_modifier = {
+						name = "por_african_gold_modifier"
+						duration = 7300
+					}
+				}
+			}
+			1184 = {
+				if = {
+					limit = { trade_goods = gold }
+					add_base_production = 2
+					add_province_modifier = {
+						name = "por_african_gold_modifier"
+						duration = 7300
+					}
+				}
+			}
+			1186 = {
+				if = {
+					limit = { trade_goods = gold }
+					add_base_production = 2
+					add_province_modifier = {
+						name = "por_african_gold_modifier"
+						duration = 7300
+					}
+				}
+			}
+		}
+	}
+
+	adu_bengal = {
+		icon = mission_unite_bengal
+		required_missions = { adu_discover_india }
+		position = 6
+		trigger = {
+			1340 = {
+				is_strongest_trade_power = ROOT
+			}
+			custom_trigger_tooltip = {
+				tooltip = adu_discover_bengal_tt
+				coromandel_region = {
+					has_discovered = ROOT
+				}
+				568 = {
+					has_discovered = POR
+				}
+			}
+		}
+
+		effect = {
+			if = { 
+				limit = { has_dlc = "Rule Britannia" }
+				change_innovativeness = 2
+			}
+			west_bengal_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			east_bengal_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			tripura_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			orissa_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			arakan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lower_burma_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			if = {
+				limit = {
+					568 = {
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+				}
+				568 = {
+					owner = {
+						country_event = { id = flavor_andalos.6 }
+					}
+				}
+				custom_tooltip = flavor_andalos_6_tt
+			}
+			else = {
+				add_mercantilism = 5
+			}
+		}
+	}
+
+	adu_burma = {
+		icon = mission_portuguese_burma
+		required_missions = { adu_bengal }
+		position = 7
+		provinces_to_highlight = {
+			OR = {
+				area = arakan_area
+				area = lower_burma_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			arakan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lower_burma_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			1343 = {
+				add_trade_modifier = {
+					who = root
+					duration = 7300
+					power = 50
+					key = andal_bengal_trade
+				}
+			}
+			if = { 
+				limit = { has_dlc = "Domination" }
+				586 = { 
+					add_province_modifier = {
+						name = adu_andaman_sea_trade_modifier
+						duration = -1 
+					}
+					add_base_production = 2 
+				}
+			}
+		}
+	}
+	
+	adu_indian_investment = {
+		icon = mission_indian_trade_company
+		required_missions = { adu_surat adu_burma }
+		position = 8
+		trigger = {
+			if = {
+				limit = {
+					has_dlc = "Dharma"
+				}
+				calc_true_if = {
+					desc = por_indian_investment_tooltip
+					india_superregion = {
+						type = all
+						has_trade_company_investment_in_area = {
+							investor = ROOT
+							count_one_per_area = yes
+						}
+					}
+					amount = 5
+				}
+			}
+			else = {
+				504 = {
+					is_strongest_trade_power = ROOT
+				}
+				1340 = {
+					is_strongest_trade_power = ROOT
+				}
+				1343 = {
+					is_strongest_trade_power = ROOT
+				}
+			}
+		}
+		effect = {
+			set_country_flag = por_india_mission_flag
+			country_event = { id = flavor_andalos.4 }
+			custom_tooltip = flavor_andalos_4_tt
+		}
+	}
+
+	adu_develop_country = {
+		icon = mission_expand_into_the_forest
+		required_missions = { adu_restore_order }
+		position = 10
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					province_id = 224
+					NOT = { is_capital_of = ROOT }
+				}
+				AND = {
+					superregion = europe_superregion
+					NOT = { province_id = 224 }
+					higher_development_than = 224
+					NOT = { owned_by = ROOT }
+				}
+				AND = {
+					province_id = 224
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { num_of_buildings_in_province = 6 }
+						NOT = { development = 30 }
+						has_trade_building_trigger = no
+					}
+				}
+			}
+		}
+		trigger = {
+			224 = {
+				owned_by = ROOT
+				has_trade_building_trigger = yes
+				has_tax_building_trigger = yes
+				has_production_building_trigger = yes
+				num_of_buildings_in_province = 6
+				development = 30
+			}
+			227 = {
+				owned_by = ROOT
+				has_trade_building_trigger = yes
+				has_tax_building_trigger = yes
+				has_production_building_trigger = yes
+				num_of_buildings_in_province = 6
+				development = 30
+			}
+			capital_scope = {
+				province_id = 224
+				custom_trigger_tooltip = {
+					tooltip = adu_highest_dev_capital_tt
+					NOT = {
+						europe_superregion = {
+							NOT = { province_id = 224 }
+							higher_development_than = 224
+							NOT = { owned_by = ROOT }
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					224 = { has_trade_building_trigger = no }
+				}
+				custom_tooltip = 224_gets_trade_upgrade_tt
+			}
+			else = {
+				224 = { 
+					upgrade_building = { trade = yes }
+				}
+			}
+			if = {
+				limit = {
+					227 = { has_trade_building_trigger = no }
+				}
+				custom_tooltip = 227_gets_trade_upgrade_tt
+			}
+			else = {
+				227 = { 
+					upgrade_building = { trade = yes }
+				}
+			}
+
+			224 = {
+				add_province_modifier = {
+					name = "adu_golden_citadel"
+					duration = -1
+				}
+			}
+
+			227 = {
+				add_province_modifier = {
+					name = "adu_silver_citadel"
+					duration = -1
+				}
+			}
+		}
+	}
+
+	adu_revoke_privileges = {
+		icon = mission_have_two_subjects
+		required_missions = { adu_develop_country }
+		position = 11
+		provinces_to_highlight = {
+			owner = {
+				is_subject_of = ROOT
+				capital_scope = {
+					region = iberia_region
+				}
+			}
+			region = iberia_region
+		}
+		trigger = {
+			NOT = { has_estate_privilege = estate_nobles_strong_duchies }
+			custom_trigger_tooltip = {
+				tooltip = centralize_adu_tt
+				NOT = {
+					any_subject_country = {
+						capital_scope = {
+							region = iberia_region
+						}
+					}
+				}
+			}
+			total_development = 500 
+			crown_land_share = 50 
+		}
+		effect = {
+			if = {
+				limit = { has_reform = andal_crown_reform }
+				add_government_reform = absolutist_andalos_reform
+			}
+			else = { change_government_reform_progress = 100 }
+			hidden_effect = {
+				unlock_government_reform = {
+					government_reform = absolutist_andalos_reform
+				}
+			}
+			add_country_modifier = {
+				name = "adu_centralization_effect"
+				duration = 3650
+			}
+		}
+	}
+}
+
+andalos_slot_4_missions = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential_on_load = {
+		OR = {
+			has_dlc = "Domination" 
+			has_dlc = "Golden Century"
+		}
+	}
+	potential = {
+		OR = {
+			has_dlc = "Domination" 
+			has_dlc = "Golden Century"
+		}
+		tag = ADU
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	adu_discover_cape = {
+		icon = mission_sea_battles
+		required_missions = { adu_beyond_cape_bojador }
+		completed_by = 1499.1.1
+		position = 2
+		
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = miss_discover_south_africa
+				south_africa_region = {
+					has_discovered = ROOT
+				}
+			}
+			light_ship_fraction = 0.25
+			navy_size_percentage = 1
+		}
+	
+		effect = {
+			define_explorer = {
+				name = "Vasco da Gama"
+				shock = 3
+				fire = 2
+				manuever = 6
+				siege = 0
+			}
+			add_prestige = 10
+			add_yearly_sailors = 3
+			cape_of_good_hope_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			mozambique_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			1186 = {
+				add_permanent_claim = ROOT
+			}
+			1192 = {
+				add_permanent_claim = ROOT
+			}
+			1201 = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	adu_zanzibar = {
+		icon = mission_cannons_firing
+		required_missions = { adu_discover_cape }
+		position = 3
+		
+		provinces_to_highlight = {
+			province_id = 1201
+			NOT = { owned_by = ROOT }
+			has_discovered = ROOT
+		}
+		
+		trigger = { 
+			1201 = {
+				owned_by = ROOT
+			}
+		}
+	
+		effect = {
+			1201 = {
+				add_trade_modifier = {
+					who = root
+					duration = 5475
+					power = 20
+					key = horn_africa_ambition
+				}
+			}
+			1201 = {
+				add_base_production = 3
+				add_base_manpower = 3
+				add_province_modifier = {
+					name = "adu_feitoria"
+					duration = -1
+				}
+			}
+			1099 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			2999 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	adu_discover_horn_africa = {
+		icon = mission_establish_high_seas_navy
+		required_missions = { adu_zanzibar }
+		completed_by = 1535.1.1
+		position = 4
+		trigger = { 
+			custom_trigger_tooltip = {
+				tooltip = miss_discover_horn_africa
+				OR = {
+					mogadishu_area = { has_discovered = ROOT }
+					majarteen_area = { has_discovered = ROOT }
+					somaliland_area = { has_discovered = ROOT }
+				}
+			}
+		}
+	
+		effect = {
+			if = {
+				limit = { has_dlc = "Domination" }
+				add_navy_tradition = 15 
+			}
+			if = {
+				limit = {
+					1099 = {
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+				}
+				1099 = {
+						owner = {
+							country_event = { id = flavor_andalos.3 }
+						}
+					}
+				custom_tooltip = flavor_andalos_3_tt
+			}
+			else = {
+				add_mercantilism = 5
+			}
+			2999 = {
+				add_permanent_claim = ROOT
+			}
+			majarteen_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_claim = ROOT
+			}
+			mogadishu_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_claim = ROOT
+			}
+		}
+	}
+
+	adu_discover_india = {
+		icon = mission_trade_company_region_abroad
+		required_missions = { adu_discover_horn_africa }
+		completed_by = 1536.1.1
+		position = 5
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = adu_discover_coromandel_tt
+				coromandel_region = {
+					has_discovered = ROOT
+				}
+				2030 = {
+					has_discovered = POR
+				}
+			}
+		}
+		
+		effect = {
+			if = { 
+				limit = { has_dlc = "Rule Britannia" }
+				change_innovativeness = 2
+			}
+			define_conquistador = {
+				name = "Afonso de Albuquerque"
+				fire = 5
+				shock = 5
+				manuever = 5
+				siege = 0
+			}
+			malabar_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			596 = { add_permanent_claim = ROOT }
+			if = {
+				limit = {
+					2030 = {
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+				}
+				2030 = {
+					owner = {
+						country_event = { id = flavor_andalos.5 }
+					}
+				}
+				custom_tooltip = flavor_andalos_5_tt
+			}
+			else = {
+				add_mercantilism = 5
+			}
+		}
+	}
+	
+	adu_malacca = {
+		icon = mission_portuguese_malacca
+		required_missions = { adu_discover_india }
+		position = 6
+		provinces_to_highlight = {
+			province_id = 596
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			owns_core_province = 596
+		}
+		effect = {
+			596 = {
+				add_province_modifier = {
+					name = "adu_east_indies_trade_modifier"
+					duration = -1
+				}
+				add_province_modifier = {
+					name = "adu_feitoria"
+					duration = -1
+				}
+			}
+			johor_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			timor_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			makassar_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			spice_islands_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lesser_sunda_islands_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			south_sulawesi_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			sulawesi_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			molluca_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	adu_trade_with_china = {
+		icon = mission_trade_with_cathay
+		required_missions = { adu_malacca }
+		position = 7
+		provinces_to_highlight = {
+			province_id = 1371
+		}
+		
+		trigger = {
+			1371 = {
+				trade_share = {
+					country = ROOT
+					share = 15
+				}
+			}
+			668 = {
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					owner = {
+						is_subject = no
+						has_opinion = {
+							who = ROOT
+							value = 50
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					668 = {
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+				}
+				668 = {
+					owner = {
+						country_event = { id = flavor_andalos.1 }
+					}
+				}
+				custom_tooltip = flavor_andalos_1_tt
+			}
+			else = {
+				add_mercantilism = 5
+			}
+		}
+	}
+	
+	adu_trade_with_japan = {
+		icon = mission_trade_with_japan
+		required_missions = { adu_trade_with_china }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1376
+				AND = {
+					province_id = 4182
+					NOT = { owned_by = ROOT }
+					owner = { NOT = { vassal_of = ROOT } }
+				}
+			}
+		}
+
+		trigger = {
+			1376 = {
+				trade_share = {
+					country = ROOT
+					share = 15
+				}
+			}
+			4182 = {
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					owner = {
+						is_subject = no
+						has_opinion = {
+							who = ROOT
+							value = 50
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					4182 = {
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+				}
+				4182 = {
+					owner = {
+						country_event = { id = flavor_andalos.2 }
+					}
+				}
+				custom_tooltip = flavor_andalos_2_tt
+			}
+			else = {
+				add_mercantilism = 5
+			}
+		}
+	}
+	
+	adu_swiss_alliance = {
+		icon = catholic_confraternity
+		required_missions = {  }
+		position = 9
+		trigger = {
+			OR = {
+				AND = {
+					alliance_with = SWI
+					reverse_has_opinion = {
+						who = SWI
+						value = 100
+					}
+				}
+				is_rival = SWI
+				NOT = { exists = SWI }
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					alliance_with = SWI
+				}
+				SWI = {
+					add_country_modifier = {
+						name = swi_andal_alliance_modifier
+						duration = 14600
+					}
+				}
+			}
+			valencia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			aragon_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			catalonia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			baleares_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = por_struggle_for_iberia_modifier 
+				duration = 14600
+			}
+		}
+	}
+
+	adu_fate_of_iberia = {
+		icon = mission_intervene_in_castile
+		required_missions = { adu_restore_order adu_swiss_alliance }
+		position = 10
+		provinces_to_highlight = {
+			OR = {
+				area = valencia_area
+				area = aragon_area
+				area = catalonia_area
+				area = baleares_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			valencia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			aragon_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			catalonia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			baleares_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			iberia_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_prestige_or_monarch_power = { amount = 25 }
+		}
+	}
+	adu_imperial_andalos = {
+		icon = a_real_roman_empire
+		required_missions = { adu_fate_of_iberia adu_reform_navy adu_universities adu_conquer_coastal_morocco adu_revoke_privileges }
+		position = 12
+		provinces_to_highlight = {
+			region = iberia_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			iberia_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						government_rank = 3
+					}
+				}
+				set_government_rank = 3
+			}
+			add_country_modifier = {
+				name = adu_ascendancy
+				duration = -1
+			}
+			add_prestige_or_monarch_power = { amount = 50 }
+			add_power_projection = { 
+				type = 25_permanent_power_projection
+				amount = 25 
+			}
+			custom_tooltip = chi_permanent_pp
+		}
+	}
+}
+
+andalos_slot_5_missions = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Golden Century"
+		has_dlc = "Domination"
+	}
+	potential = {
+		has_dlc = "Golden Century"
+		has_dlc = "Domination"
+		tag = ADU
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	adu_exploration_ideas = {
+		icon = imperial_navy
+		required_missions = { }
+		position = 1
+		
+		trigger = { 
+			OR = { 
+				full_idea_group = exploration_ideas
+				full_idea_group = expansion_ideas
+			}
+		}
+	
+		effect = {
+			if = {
+				limit = { has_dlc = "Rights of Man" }
+				custom_tooltip = por_more_likely_to_get_expansionist_tt
+				set_country_flag = por_more_likely_to_get_expansionist_flag 
+				change_ruler_stat = {
+					type = dip
+					amount = 1
+				}
+			}
+			else = {
+				change_ruler_stat = {
+					type = dip
+					amount = 2
+				}
+				add_prestige_or_monarch_power = { amount = 10 }
+			}
+		}
+	}
+	
+	adu_circumnavigation = {
+		icon = mission_explore_the_world
+		required_missions = { adu_exploration_ideas adu_discover_cape }
+		position = 3
+		
+		trigger = { 
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = achievement_magellans_voyage_tooltip
+					has_country_flag = circumnavigation_first
+				}
+				custom_trigger_tooltip = {
+					tooltip = second_circumnavigation_tt
+					has_country_flag = circumnavigation_done
+				}
+			}
+		}
+	
+		effect = {
+			if = {
+				limit = { has_country_flag = circumnavigation_first }
+				add_country_modifier = {
+					name = adu_circumnavigation_modifier
+					duration = -1 
+				}
+			}
+			else = {
+				add_country_modifier = {
+					name = adu_circumnavigation_modifier
+					duration = 9125
+				}
+			}
+		}
+	}
+}
+
+
+andalos_slot_5_missions_b = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential_on_load = {
+		OR = {
+			has_dlc = "Golden Century"
+			has_dlc = "Domination"
+		}
+	}
+	potential = {
+		OR = {
+			has_dlc = "Golden Century"
+			has_dlc = "Domination"
+		}
+		tag = ADU
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	adu_hormuz = {
+		icon = mission_persian_soldiers
+		required_missions = { adu_zanzibar }
+		position = 4
+		completed_by = 1508.1.1
+		provinces_to_highlight = {
+			province_id = 2999
+			NOT = { owned_by = ROOT }
+			has_discovered = ROOT
+		}
+		
+		trigger = { 
+			2999 = { owned_by = ROOT }
+		}
+	
+		effect = {
+			2999 = {
+				add_base_production = 3
+				add_base_manpower = 3
+				add_province_modifier = {
+					name = "adu_persian_gulf_trade_modifier"
+					duration = -1
+				}
+				add_province_modifier = {
+					name = "adu_feitoria"
+					duration = -1
+				}
+			}
+			mascat_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	adu_oman = {
+		icon = mission_portuguese_oman
+		required_missions = { adu_hormuz }
+		position = 5
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					area = mascat_area
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
+				AND = {
+					province_id = 400
+					NOT = { owned_by = ROOT }
+				}
+			}
+		}
+		
+		trigger = {
+			mascat_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			400 = { owned_by = ROOT }
+		}
+		effect = {
+			400 = {
+				add_base_production = 3
+				add_base_manpower = 3
+				add_province_modifier = {
+					name = "adu_feitoria"
+					duration = -1
+				}
+			}
+			396 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	adu_bahrain = {
+		icon = mission_portuguese_oman
+		required_missions = { adu_oman }
+		position = 5
+		provinces_to_highlight = {
+			province_id = 396
+			NOT = { owned_by = ROOT }
+			has_discovered = ROOT
+		}
+		
+		trigger = {
+			396 = { owned_by = ROOT }
+		}
+
+		effect = {
+			396 = {
+				add_base_production = 3
+				add_base_manpower = 3
+				add_province_modifier = {
+					name = "adu_feitoria"
+					duration = -1
+				}
+			}
+		}
+	}
+}
+
+andalos_slot_5_missions_c = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential_on_load = {
+		OR = {
+			has_dlc = "Golden Century"
+			has_dlc = "Domination"
+		}
+	}
+	potential = {
+		OR = {
+			has_dlc = "Golden Century"
+			has_dlc = "Domination"
+		}
+		tag = ADU
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	adu_indonesia = {
+		icon = mission_rb_colonise_spice_islands
+		required_missions = { adu_malacca }
+		completed_by = 1536.1.1
+		position = 7
+		provinces_to_highlight = {
+			region = malaya_region
+			NOT = { owned_by = ROOT }
+			has_discovered = ROOT
+		}
+		
+		trigger = {
+			custom_trigger_tooltip = {
+			tooltip = miss_discover_malaya
+				malaya_region = {
+					has_discovered = ROOT
+				}
+			}
+			4815 = { owned_by = ROOT } #Singapura
+			2686 = { owned_by = ROOT } #Bintan
+			2695 = { owned_by = ROOT } #East Timor
+			641 = { owned_by = ROOT } #Makassar
+			649 = { owned_by = ROOT } #Ternate
+			650 = { owned_by = ROOT } #Tidore
+		}
+	
+		effect = {
+			add_country_modifier = {
+				name = "por_spice_trade"
+				duration = 9125
+			}
+			custom_tooltip = adu_indonesia_feitorias_tt
+			hidden_effect = {
+				4815 = {
+					add_base_production = 3
+					add_base_manpower = 3
+					add_province_modifier = {
+						name = "adu_feitoria"
+						duration = -1
+					}
+				}
+				2686 = {
+					add_base_production = 3
+					add_base_manpower = 3
+					add_province_modifier = {
+						name = "adu_feitoria"
+						duration = -1
+					}
+				}
+				2695 = {
+					add_base_production = 3
+					add_base_manpower = 3
+					add_province_modifier = {
+						name = "adu_feitoria"
+						duration = -1
+					}
+				}
+				641 = {
+					add_base_production = 3
+					add_base_manpower = 3
+					add_province_modifier = {
+						name = "adu_feitoria"
+						duration = -1
+					}
+				}
+				649 = {
+					add_base_production = 3
+					add_base_manpower = 3
+					add_province_modifier = {
+						name = "adu_feitoria"
+						duration = -1
+					}
+				}
+				650 = {
+					add_base_production = 3
+					add_base_manpower = 3
+					add_province_modifier = {
+						name = "adu_feitoria"
+						duration = -1
+					}
+				}
+			}
+			custom_tooltip = adu_claim_philippines_tt
+			hidden_effect = {
+				mindanao_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				west_mindanao_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				visayas_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				palawan_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				luzon_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				southern_luzon_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+	}
+	
+	adu_philippines = {
+		icon = mission_las_islas_filipinas
+		required_missions = { adu_indonesia }
+		position = 8
+		provinces_to_highlight = {
+			OR = {
+				area = mindanao_area
+				area = west_mindanao_area
+				area = visayas_area
+				area = palawan_area
+				area = luzon_area
+				area = southern_luzon_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		trigger = {
+			southern_luzon_area = {
+				type = all
+				owned_by = ROOT
+			}
+			luzon_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			mindanao_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			west_mindanao_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			visayas_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			palawan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			224 = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			224 = { change_trade_goods = cloves add_base_production = 4 } 
+			southern_luzon_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				change_religion = ROOT
+			}
+			luzon_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				change_religion = ROOT
+			}
+			if = {
+				limit = {
+					has_dlc = "Dharma"
+					656 = {
+						NOT = {
+							province_has_center_of_trade_of_level = 2
+						}
+					}
+				}
+				656 = {
+					add_center_of_trade_level = 1
+				}
+			}
+		}
+	}
+	
+	adu_wine_monopolies = {
+		icon = mission_wine_monopolies
+		required_missions = {  }
+		position = 9
+		provinces_to_highlight = {
+			trade_goods = wine
+			NOT = { owned_by = ROOT }
+			NOT = {
+				OR = {
+					has_building = workshop
+					has_building = counting_house
+				}
+			}
+			has_discovered = ROOT
+		}
+		
+		trigger = {
+			OR = {
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 10
+					trade_goods = wine
+					OR = {
+						has_building = workshop
+						has_building = counting_house
+					}
+				}
+				trading_bonus = {
+					trade_goods = wine
+					value = yes
+				}
+				production_leader = {
+					trade_goods = wine
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "por_wine_monopolies"
+				duration = 7300
+			}
+			
+			if = { 
+				limit = { has_dlc = "Domination" }
+				custom_tooltip = por_every_wine_prov_tt
+				tooltip = { add_base_production = 3 } 
+				hidden_effect = {
+					every_owned_province = {
+						limit = { trade_goods = wine } 
+						add_base_production = 3 
+					}
+				}
+			}
+		}
+	}
+	adu_trading_houses = {
+		icon = mission_great_trading_houses
+		required_missions = { adu_wine_monopolies }
+		position = 10
+		provinces_to_highlight = {
+			province_id = 1293
+		}
+		
+		trigger = {
+			OR = {
+				num_of_merchants = 6
+				1293 = {
+					is_strongest_trade_power = ROOT
+				}
+			}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 10
+				has_trade_building_trigger = yes 
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "por_houses_of_trade"
+				duration = 14600
+			}
+		}
+	}
+	adu_universities = {
+		icon = mission_arts_and_letters
+		required_missions = { adu_trading_houses }
+		position = 11
+		provinces_to_highlight = {
+			province_id = 224
+			NOT = { 
+				has_building = university 
+				owned_by = ROOT
+			}			
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				has_building = university 
+				value = 8 
+			}
+			224 = {
+				has_building = university
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "por_arts_and_letters"
+				duration = 14600
+			}
+		}
+	}
+}
