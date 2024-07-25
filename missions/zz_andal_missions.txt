@@ -472,10 +472,23 @@ andalos_slot_2_missions = {
 		icon = mission_colonial
 		required_missions = { adu_beyond_cape_bojador }
 		completed_by = 1445.1.1
-		
 		provinces_to_highlight = {
-			province_id = 1096
-			province_id = 1111
+			OR = {
+				province_id = 1096
+				province_id = 1111
+				AND = {
+					trade_goods = gold
+					region = niger_region
+					owner = {
+						NOT = {
+							has_opinion = {
+								who = ROOT
+								value = 100
+							}
+						}
+					}
+				}
+			}
 			NOT = { owned_by = ROOT }
 		}
 		
@@ -488,6 +501,20 @@ andalos_slot_2_missions = {
 				owned_by = ROOT
 				is_city = yes
 			}
+			custom_trigger_tooltip = {
+				tooltip = adu_has_guinean_friend_tt
+				niger_region = {
+					trade_goods = gold
+					owner = {
+						has_opinion = {
+							who = ROOT
+							value = 100
+						}
+					}
+					NOT = { owned_by = ROOT }
+				}
+			}
+
 		}
 	
 		effect = {
@@ -1430,7 +1457,7 @@ andalos_slot_3_missions_b = {
 			capital_scope = {
 				province_id = 224
 				custom_trigger_tooltip = {
-					tooltip = ven_highest_dev_capital_tt
+					tooltip = adu_highest_dev_capital_tt
 					NOT = {
 						europe_superregion = {
 							NOT = { province_id = 224 }

@@ -1,6 +1,6 @@
 owner = ADU
 controller = ADU
-capital = "Amerita"
+capital = "Coréa"
 is_city = yes
 culture = andal
 religion = tigranic

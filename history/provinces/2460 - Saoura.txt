@@ -1,8 +1,8 @@
 owner = Z2D
 controller = Z2D
-capital = "Oulad Mhedi"
+capital = "Sijilmassa"
 is_city = yes
-culture = moroccan
+culture = berber
 religion = catholic
 trade_goods = livestock
 base_tax = 3

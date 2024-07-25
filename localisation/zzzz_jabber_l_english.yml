@@ -142,6 +142,8 @@
  centralize_adu_tt:0 "No subject country has its capital in the §YHispania§! region."
  224_gets_trade_upgrade_tt:0 "§YSintra§! will have its §YTrade§! building upgraded."
  227_gets_trade_upgrade_tt:0 "§YLisarra§! will have its §YTrade§! building upgraded."
+ adu_highest_dev_capital_tt:0 "§YSintra§! is the highest dev province in Europe."
+ adu_has_guinean_friend_tt:0 "At least one gold producer in §YWest Africa§! has at least §Y100§! opinion of us."
  flavor_andalos_1_tt:0 "§JEvent Insight:§!\nWe will make a petition for the purchase of §YMacau§!. If we have good enough relations with its ruler, we may be successful."
  flavor_andalos_2_tt:0 "§JEvent Insight:§!\nWe will make a petition for the purchase of §YHizen§!. If we have good enough relations with its ruler, we may be successful."
  flavor_andalos_3_tt:0 "§JEvent Insight:§!\nWe will make a petition for the purchase of §YSocotra§!. If we have good enough relations with its ruler, we may be successful."

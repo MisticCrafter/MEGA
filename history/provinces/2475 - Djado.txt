@@ -1,5 +1,5 @@
 capital = "Djado"
-culture = kanuri
+culture = berber
 religion = catholic
 trade_goods = unknown
 base_tax = 3
