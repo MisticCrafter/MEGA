@@ -389,7 +389,7 @@ north_brabant_area = { #3
 ########################################
 
 aragon_area = { #4
-	211 214 2990 4557
+	211 214 2990 4550 4557
 }
 
 catalonia_area = { #5
@@ -397,7 +397,7 @@ catalonia_area = { #5
 }
 
 valencia_area = { #5
-	220 1750 4549 4550
+	220 1750 4549
 }
 
 lower_andalucia_area = { #5
