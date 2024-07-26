@@ -65,7 +65,7 @@ union=
 union=
 {
 	first="Z00"
-	second="ARB"
+	second="YEM"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }

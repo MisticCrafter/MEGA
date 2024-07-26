@@ -1,5 +1,5 @@
-owner = ARB
-controller = ARB
+owner = YEM
+controller = YEM
 capital = "Marib"
 is_city = yes
 culture = yemeni_culture
@@ -8,7 +8,7 @@ trade_goods = livestock
 base_tax = 3
 base_production = 3
 base_manpower = 1
-add_core = ARB
+add_core = YEM
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian
