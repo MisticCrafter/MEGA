@@ -58,7 +58,7 @@
  adu_restore_order_title:0 "A Dish Served Cold"
  adu_restore_order_desc:0 "In our darkest hour, seven high lords chose to band together and plunge their accursed daggers into our backs. They failed: we perserve, as we always have. Five of them have been slain, and their holdings attained. Two remain: the duke of Cynetaía and the queen of Sarcaía. It's high time we remind them why it was not the crazed papists of the north nor the zealous muslims of the south who sealed the fate of Iberia, but us. And us alone."
  adu_flagship_title:0 "Hoist the Colours!"
- adu_flagship_desc:0 "Our realm is secure. The Pyrenees guard us from the petty feuds of the Franks and Germans, the Atlas shields us from the zealous Crusaders in Mauretania, and Trinacria's gaze does not linger in our possessions. It is clear that we now must turn the seas and claim mastery of them lest another take such laurels."
+ adu_flagship_desc:0 "Our realm is secure. The Pyrenees guard us from the petty feuds of the Franks and Germans, the Atlas shields us from the zealous Crusaders in Mauretania, and Trinacria's gaze does not linger in our possessions. It is clear that we now must turn to the seas and claim mastery of them lest another take such laurels."
  adu_congo_title:0 "Into the Congo"
  adu_congo_desc:0 "Only a few explorers have ventured south from the Ivory Coast, and fewer still have returned. Even so, the riches we have glimpsed from that accursed jungle are more than worth the blood we spill. It's high time we commit to this endeavour and assail the Congo in full!"
  adu_discover_east_africa_title:0 "Shipyards of the East"
@@ -152,7 +152,7 @@
  centralize_adu_tt:0 "No subject country has its capital in the §YHispania§! region."
  224_gets_trade_upgrade_tt:0 "§YSintra§! will have its §YTrade§! building upgraded."
  227_gets_trade_upgrade_tt:0 "§YLisarra§! will have its §YTrade§! building upgraded."
- adu_highest_dev_capital_tt:0 "§YSintra§! is the highest dev province in Europe."
+ adu_highest_dev_capital_tt:0 "§YSintra§! has the highest development in Europe."
  adu_has_guinean_friend_tt:0 "At least one gold producer in §YWest Africa§! has at least §Y100§! opinion of us."
  flavor_andalos_1_tt:0 "§JEvent Insight:§!\nWe will make a petition for the purchase of §YMacau§!. If we have good enough relations with its ruler, we may be successful."
  flavor_andalos_2_tt:0 "§JEvent Insight:§!\nWe will make a petition for the purchase of §YHizen§!. If we have good enough relations with its ruler, we may be successful."
@@ -167,4 +167,19 @@
  # flavor_andalos.4 -> casa da india
  # flavor_andalos.5 -> andal goal (flavor_por.11)
  # flavor_andalos.6 -> andal chittagong
+ # Ideas
+ adu_idea_1:0 "Beyond the Cape"
+ adu_idea_1_desc:0 "Merchants and spies both weave tales of yet-unseen realms beyond the treacherous capes of Morocco teeming with wealth and power ripe for the taking. With our borders firmly set and our rivals deterred or otherwise distracted, there can be no better time to validate such claims. Let us call upon our captains and explorers and set sail southwards!"
+ adu_idea_2:0 "New Kingdoms"
+ adu_idea_2_desc:0 "Just as our ancestors did nearly five hundred years ago, it is imperative that we plant our arms in these virgin lands and build new kingdoms atop them! Let the foolish kings of Europe feud amongst themselves, let them waste themselves in their petty delusions of grandeur whilst we secure for ourselves a legacy greater than even Rome itself!"
+ adu_idea_3:0 "A Ship in Every Sea"
+ adu_idea_3_desc:0 "Nobles and merchants both joke that there is not a gulf or sea in this world on which an Andal ship isn't sailing at any given moment. This is a clear exaggeration, but it is quite telling as to the cess of our maritime ventures: previously a wartorn backwater, the lands of the Andal crown now see ludicrous amounts of goods and wealth drifting into its harbours, and the health of its treasury clearly reflects that."
+ adu_idea_4:0 "Halls of Endless Debate"
+ adu_idea_4_desc:0 "Owing both to our hellenic and islamic heritages, a great deal of importance is placed upon the scholarly arts within the Andal realm. Our two citadels, the Golden in Sintra and the Silver in Lisarra, serve twofold as high courts for our nobility and serene temples to intelligence, science and research, being famed across the continent as the birthplace of many breakthroughs."
+ adu_idea_5:0 "Homesteading"
+ adu_idea_5_desc:0 "For centuries, our feudal nobility has been a heavy burden for the Crown to bear. Scores of worthless nobles clung to privileges, influence and power earned in times long gone and deprived the realm of a much-needed ability to react, to adapt and to reimagine itself in face of the challenges it now faces. At long last, they are gone, and the Crown has taken such developments in stride: now, any man - highborn or otherwise - who accomplishes a great deed for the realm is to be awarded a parcel of land to live in, to develop, to care for and manage, all in the Archon's name."
+ adu_idea_6:0 "Blacksteel Foundries"
+ adu_idea_6_desc:0 "Andalos is a realm famed for many qualities: its prolific merchants, its loyal officers, its natural beauty, its rich traditions and so on. Its spies and intelligence are not among that list, but undeservedly so. Generation after generation, families of spies have carted back absolute bibles worth of information on foreign concerns, namely their craftsmanship. Owing to this, our foundries and smithies are unparalleled, producing higher quality weaponry and artillery than any other power within sight."
+ adu_idea_7:0 "One under the Archon"
+ adu_idea_7_desc:0 "Every man who wishes to enter into the Archon's service, be it in His armies, in His navies, in His companies or His offices and bureaus must swear a solemn oath: to know no lord but the Archon in Sintra, to obey no command but that from the Archon in Sintra and to pay no tribute but to the Archon in Sintra. The Archon is absolute, and all are His subjects."
 
