@@ -1,5 +1,5 @@
-owner = OGD
-controller = OGD
+owner = WLY
+controller = WLY
 capital = "Irgalem"
 is_city = yes
 culture = sidamo
@@ -9,7 +9,7 @@ fort_15th = yes
 base_tax = 2
 base_production = 2
 base_manpower = 1
-add_core = OGD
+add_core = WLY
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

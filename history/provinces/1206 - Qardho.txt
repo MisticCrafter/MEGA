@@ -1,8 +1,8 @@
 owner = AJU
 controller = AJU
-capital = "ajuuraanic"
+capital = "Qardho"
 is_city = yes
-culture = amhara
+culture = ajuuraanic
 religion = abyss_mystic
 trade_goods = incense
 base_tax = 1

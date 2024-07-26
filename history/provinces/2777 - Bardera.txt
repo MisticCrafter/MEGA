@@ -1,5 +1,5 @@
-owner = OGD
-controller = OGD
+owner = AJU
+controller = AJU
 capital = "Baardheere"
 is_city = yes
 culture = ajuuraanic
@@ -8,8 +8,7 @@ trade_goods = grain
 base_tax = 5
 base_production = 1
 base_manpower = 1
-add_core = KAF
-add_core = OGD
+add_core = AJU
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

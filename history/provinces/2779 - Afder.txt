@@ -1,5 +1,5 @@
-owner = OGD
-controller = OGD
+owner = ETH
+controller = ETH
 capital = "Afder"
 is_city = yes
 culture = amhara
@@ -8,7 +8,7 @@ trade_goods = livestock
 base_tax = 3
 base_production = 2
 base_manpower = 1
-add_core = OGD
+add_core = ETH
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

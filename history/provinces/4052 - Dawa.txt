@@ -1,5 +1,5 @@
-owner = OGD
-controller = OGD
+owner = AJU
+controller = AJU
 capital = "Dawa"
 is_city = yes
 culture = ajuuraanic
@@ -8,8 +8,7 @@ trade_goods = unknown
 base_tax = 1
 base_production = 2
 base_manpower = 1
-add_core = KAF
-add_core = OGD
+add_core = AJU
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian
