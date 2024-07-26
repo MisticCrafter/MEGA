@@ -15819,7 +15819,7 @@ ASU_ideas = {
 
 ADU_ideas = {
 	start = {
-		land_morale = 0.15 
+		infantry_power = 0.1
 		naval_forcelimit_modifier = 0.25 
 	}
 
@@ -15837,16 +15837,16 @@ ADU_ideas = {
 		range = 0.20
 	}
 	adu_idea_2 = {
-		colonists = 1
-    }
-	adu_idea_3 = {
-        global_ship_trade_power = 0.15
-		treasure_fleet_income = 0.3
-    }
-	adu_idea_4 = {
 		idea_cost = -0.05
 		church_power_modifier = 0.1
 	}
+	adu_idea_3 = {
+        global_ship_trade_power = 0.25
+		treasure_fleet_income = 0.3
+    }
+	adu_idea_4 = {
+		colonists = 1
+    }
 	adu_idea_5 = {
 		global_manpower_modifier = 0.1
 		core_creation = -0.1
