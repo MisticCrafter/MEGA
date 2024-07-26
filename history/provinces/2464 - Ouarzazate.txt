@@ -1,5 +1,5 @@
-owner = Z2O
-controller = Z2O
+owner = SOS
+controller = SOS
 capital = "Ouarzazate"
 is_city = yes
 culture = berber
@@ -8,7 +8,7 @@ trade_goods = grain
 base_tax = 1
 base_production = 4
 base_manpower = 1
-add_core = Z2O
+add_core = SOS
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

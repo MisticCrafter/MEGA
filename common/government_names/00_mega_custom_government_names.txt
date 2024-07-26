@@ -45,3 +45,27 @@ andal_crown_monarchy = {
 		has_reform = andal_crown_reform
 	}
 }
+
+christian_berber_monarchy = {
+	rank = {
+		1 = GRAND_DUCHY
+		2 = PRINCIPALITY
+		3 = PRINCIPALITY
+	}
+
+	ruler_male = {
+		1 = GRAND_DUKE
+		2 = PRINCE
+		3 = PRINCE
+	}
+
+	ruler_female = {
+		1 = GRAND_DUCHESS
+		2 = PRINCESS
+		3 = PRINCESS
+	}
+	
+	trigger = {
+		has_reform = christian_berber_reform
+	}
+}

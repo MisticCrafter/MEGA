@@ -6,6 +6,10 @@
  andal_subject_reform_desc:0 "The fate of Hispania has been resolved. The Andals, a people born of an unlikely marriage between the Hellenes of the East and the Mozarabs of the South, have donned an iron wreath and claimed all of Hispania as their rightful domain. We are lords and dukes in our own right, aye, but it is Andal law, Andal tradition and Andal decrees that permeate and govern our realm, for good and for bad."
  absolutist_andalos_reform:0 "Grand Archonate"
  absolutist_andalos_reform_desc:0 ""
+ mauretanian_crusader_reform:0 "Crusader Kingdom"
+ mauretanian_crusader_reform_desc:0 "Born of the bloody Sicilian Crusades, the newly-established Crusader states of Mauretania have stood far longer than most wagered they would. Most though that the Frankish and Italian nobility would be embroiled in endless clashes with their new Berber subjects, but history took the opposite course: the martial high nobility of Western Christendom quickly brought the exceptionally skilled Numidian cavalrymen into the fold, forming an equestrian order unparalleled across all of Europe."
+ christian_berber_reform:0 "Berber Principality"
+ christian_berber_reform_desc:0 "Albeit short, Roman rule over Mauretania has left a lasting mark: the Berber peoples have taken to Roman traditions and titles like fishes to water and, though noticeably marked by folk elements, the Berber realms retain the outline of Roman statesmanship to this very day."
  # Gov. Names
  LORD_PARAMOUNTCY:0 "Vice Archonate"
  LORD_PARAMOUNT:0 "Lord Paramount"
@@ -16,6 +20,12 @@
  GRAND_ARCHON:0 "Grand Archon"
  ARCHONESS:0 "Archoness"
  GRAND_ARCHONESS:0 "Grand Archoness"
+ GRAND_DUCHY:0 "Grand Duchy"
+ PRINCIPALITY:0 "Principality"
+ GRAND_DUKE:0 "Grand Duke"
+ PRINCE:0 "Prince"
+ GRAND_DUCHESS:0 "Grand Duchess"
+ PRINCESS:0 "Princess"
  # Missions
  adu_beyond_cape_bojador_title:0 "Beyond Cape Bojador"
  adu_beyond_cape_bojador_desc:0 "Spies and retired crusaders generals - an unlikely duo if there ever was one - have sung to us the same song: berber merchants from beyond the Atlas emerge from the depths of the Sahara with caravan after caravan loaded with gold, ivory and all manner of intriguing trinkets and valuables. It is obvious to us that there are wealthy lands beyond the veil of the desert, but few dare brave its wrath; our explorers, however, present a different solution. We must sail close to the African coast, beyond the treacherous Cape Bojador, and trace this golden trail ever southwards!"

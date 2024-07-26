@@ -1,7 +1,6 @@
-# changed so as to accomodate Andalos
 andal_crown_reform = {
 	icon = "portuguese_king"
-	allow_normal_conversion = yes
+	allow_normal_conversion = no
 	potential = {
 		primary_culture = andal
 	}
@@ -25,7 +24,7 @@ andal_crown_reform = {
 
 andal_subject_reform = {
 	icon = "portuguese_king"
-	allow_normal_conversion = yes
+	allow_normal_conversion = no
 	potential = {
 		culture_group = iberian
         is_subject_of = ADU
@@ -99,5 +98,51 @@ absolutist_andalos_reform = {
 
 	custom_attributes = {
 		centralize_state_development = yes 
+	}
+}
+
+mauretanian_crusader_reform = {
+	icon = "holy_state_reform"
+	allow_normal_conversion = no
+	potential = {
+		culture_group = maghrebi
+		religion_group = christian
+	}
+	nation_designer_trigger = {
+		culture_group = maghrebi
+		religion_group = christian
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	modifiers = {
+		cav_to_inf_ratio = 0.33
+		cavalry_power = 0.10
+		land_morale = 0.10
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+christian_berber_reform = {
+	icon = "noble_muslim"
+	allow_normal_conversion = no
+	potential = {
+		primary_culture = berber
+		religion_group = christian
+	}
+	nation_designer_trigger = {
+		primary_culture = berber
+		religion_group = christian
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	modifiers = {
+		cav_to_inf_ratio = 0.5
+		cavalry_power = 0.20
+		reduced_liberty_desire = 20
+	}
+	ai = {
+		factor = 1
 	}
 }

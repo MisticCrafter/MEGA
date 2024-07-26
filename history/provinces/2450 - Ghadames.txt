@@ -1,5 +1,5 @@
-owner = Z0K
-controller = Z0K
+owner = GHD
+controller = GHD
 capital = "Ghadames"
 is_city = yes
 culture = berber
@@ -8,7 +8,7 @@ trade_goods = spices
 base_tax = 3
 base_production = 1
 base_manpower = 1
-add_core = Z0K
+add_core = GHD
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

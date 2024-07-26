@@ -1,0 +1,48 @@
+vassal = {
+	first = AFR 
+	second = KBA 
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+vassal = {
+	first = AFR 
+	second = Z2Y 
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+union = {
+	first = AFR 
+	second = TRP 
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+vassal = {
+	first = GHD
+	second = TGT
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+vassal = {
+	first = GHD
+	second = MZB
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+union = {
+	first = GHD
+	second = FZA
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+alliance = {
+	first = AFR
+	second = MOR
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}

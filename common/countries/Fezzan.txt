@@ -1,84 +1,103 @@
-ck2_converter_generated = yes
+#Country Name: Please see filename.
+
 graphical_culture = muslimgfx
+
 color = { 113 176 151 }
 revolutionary_colors = { 5 0 5 }
+
 historical_idea_groups = {
 	trade_ideas
 	defensive_ideas
 	religious_ideas
-	maritime_ideas
+	maritime_ideas	
 	administrative_ideas
 	offensive_ideas
 	economic_ideas
 	expansion_ideas
 }
+
 historical_units = {
-	ali_bey_reformed_infantry
 	mamluk_archer
 	mamluk_cavalry_charge
 	mamluk_duel
 	mamluk_musket_charge
-	muslim_dragoon
 	muslim_mass_infantry
+	muslim_dragoon
+	ali_bey_reformed_infantry
 }
+
 monarch_names = {
-	"Abdallah #3" = 10
-	"Abdallah ibn al-Khattab al-Hawwari #1" = 10
-	"Amma #0" = 0
-	"Awdia #0" = 0
-	"Baram #1" = 10
-	"Bibya #0" = -1
-	"Biri #2" = 10
-	"Bukkus #0" = 0
-	"Cala #0" = -1
-	"Dabbalemi #1" = 10
-	"Dunama #1" = 10
-	"Fune #1" = 10
-	"Gazî #1" = 10
-	"Halil #1" = 10
-	"Hiyan #1" = 10
-	"Isma'il #1" = 10
-	"Karima #1" = -1
-	"Khadija #1" = -1
-	"Madidu #0" = 0
-	"Maximinus #1" = 10
-	"Otho #1" = 10
-	"Taklit #0" = -1
-	"Tatbirt #0" = -1
-	"Thakiya #2" = 10
-	"Yadne #0" = 0
-	"al-Khattab #1" = 10
+	"Juba #0" = 10
+	"Mauro #0" = 10
+	"Adalberto #0" = 10
+	"Ausato #0" = 0
+	"Carima #0" = -1
+	"Orus #0" = 10
+	"Garcia #0" = 0
+	"Balturro #0" = 5
+	"Adrameno #0" = 5
+	"Gauterro #0" = 10
+	"Cassio #0" = 10
+	"Élias #0" = 5
+	"Ioan #0" = 10
+	"Arias #0" = 5
+	"Alamo #1" = 10
+	"Annius #0" = 0
+	"Anno #0" = 0
+	"Cassia #1" = -1
+	"David #1" = 10
+	"Daecio #0" = 0
+	"Druzzo #0" = 0
+	"Fabricio #0" = 0
+	"Havarro #1" = 10
+	"Hebraíno #2" = 10
+	"Jack #2" = 10
+	"Masgavo #0" = 0
+	"Mazimo #0" = 0
+	"Nacer #1" = 10
+	"Poppaea #0" = -1
+	"Raul #1" = 10
+	"Salim #1" = 10
+	"Tamiro #1" = 10
+	"Aumar #2" = 10
+	"Tamaro #0" = 5
+	"Rutillo #0" = 5
+	"Agmano #0" = 10
+	"Jugurtha #0" = 20
+	"Aemilio #0" = 10
+	"Miquessano #0" = 5
+	"Massino #0" = 10
+	"Atherbal #0" = 5
+	"Lensallo #0" = 10
+	"Daenias #0" = 10
+	"Sedica #0" = -1
+	"Mariam #0" = -1
+	"Otho #1" = 5
+	"Benito #0" = 0
+	"Alessandro #0" = 10
+	"Cura #0" = 10
+	"Salimata #0" = -1
+	"Flavia #0" = -1
+	"Albonno #0" = 5
+	"Munio #0" = 0
 }
+
 leader_names = {
-	"Adhoum"
-	"Akimi"
-	"Badra"
-	"Bassir"
-	"Dali"
-	"Hakimi"
-	"Naybet"
-	"Saber"
-	"Sassi"
-	"Taher"
+	Taher
+	Akimi
+	Adhoum
+	Hakimi
+	Naybet
+	Bassir
+	Saber
+	Badra
+	Sassi
+	Dali
 }
+
 ship_names = {
-	"Alim"
-	"Aziz"
-	"Bari"
-	"Fattah"
-	"Ghaffar"
-	"Jabbar"
-	"Khaliq"
-	"Malik"
-	"Mu'min"
-	"Muhaymin"
-	"Musawwir"
-	"Mutakabbir"
-	"Qahhar"
-	"Quddus"
-	"Rahim"
-	"Rahman"
-	"Razzaq"
-	"Salam"
-	"Wahhab"
+	Alim Fattah Razzaq Wahhab Qahhar Ghaffar
+	Musawwir Bari Khaliq Mutakabbir Jabbar
+	Aziz Muhaymin Mu'min Salam Quddus Malik
+	Rahim Rahman
 }

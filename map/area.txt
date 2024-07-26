@@ -1390,7 +1390,7 @@ cyrenaica_area = { #5
 }
 
 fezzan_area = { #4
-	2448 2449 2474 4567
+	2448 2449 2450 2474 4567
 }
 
 tunisia_area = { #5
@@ -1398,7 +1398,7 @@ tunisia_area = { #5
 }
 
 djerba_area = { #3
-	353 2453 2954
+	352 353 2453 2954
 }
 
 algiers_area = { #3
@@ -1414,15 +1414,15 @@ kabylia_area = { #3
 }
 
 hautes_plaines_area = { #3
-	2459 2462 2463 
+	350 2459 2462 2463 
 }
 
 ouled_nail_area = { #3
-	350 351 2458
+	351 2458
 }
 
 north_saharan_area = { #5
-	352 2450 2456 2457 2472
+	2456 2457 2472
 }
 
 tafilalt_area = { #3

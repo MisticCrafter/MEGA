@@ -1,5 +1,5 @@
-owner = Z2O
-controller = Z2O
+owner = TFL
+controller = TFL
 capital = "Tagmadert"
 is_city = yes
 culture = berber
@@ -9,7 +9,7 @@ base_tax = 1
 base_production = 5
 base_manpower = 3
 extra_cost = 8
-add_core = Z2O
+add_core = TFL
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

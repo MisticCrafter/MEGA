@@ -1,5 +1,5 @@
-owner = Z2Y
-controller = Z2Y
+owner = FZA
+controller = FZA
 capital = "Murzuk"
 is_city = yes
 culture = berber
@@ -8,8 +8,7 @@ trade_goods = ivory
 base_tax = 1
 base_production = 3
 base_manpower = 1
-add_core = TLC
-add_core = Z2Y
+add_core = FZA
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

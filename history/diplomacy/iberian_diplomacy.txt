@@ -45,3 +45,10 @@ dependency = {
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
+
+union = {
+	first = Z0E
+	second = VAL
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}

@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = feudalism_reform
+add_government_reform = mauretanian_crusader_reform
 government_rank = 2
 technology_group = western
 religion = catholic
@@ -14,14 +14,14 @@ set_country_flag = ZZZ_generated_converter_nation
 		dip = 3
 		mil = 3
 		birth_date = 1407.12.4
-		religion = catholic
+		religion = thibaultine
 		culture = italian
 	}
 	add_ruler_personality = charismatic_negotiator_personality
 	add_ruler_personality = righteous_personality
 	queen = {
-		name = "Salimata"
-		dynasty = "Fing"
+		name = "Sara"
+		dynasty = "de Sintra"
 		adm = 4
 		dip = 4
 		mil = 2
@@ -29,8 +29,8 @@ set_country_flag = ZZZ_generated_converter_nation
 		birth_date = 1405.11.8
 		death_date = 1465.11.8
 		female = yes
-		religion = catholic
-		culture = mali
+		religion = tigranic
+		culture = andal
 	}
 	add_queen_personality = fierce_negotiator_personality
 	add_queen_personality = zealot_personality
@@ -44,7 +44,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		birth_date = 1428.8.14
 		death_date = 1493.8.14
 		claim = 89
-		religion = catholic
+		religion = thibaultine
 		culture = italian
 	}
 	add_heir_personality = lawgiver_personality

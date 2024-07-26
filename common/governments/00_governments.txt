@@ -129,8 +129,11 @@ monarchy = {
 				austrian_absolute_monarchy
 				merchant_aristocracy_reform
 				gothic_monarchy_reform
+				# Added by megacampaign
 				andal_crown_reform
 				andal_subject_reform
+				mauretanian_crusader_reform
+				christian_berber_reform
 			}
 		}
 		hereditary_vs_nobility = {

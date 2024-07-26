@@ -1,5 +1,5 @@
-owner = Z0B
-controller = Z0B
+owner = MZB
+controller = MZB
 capital = "Laghwat"
 is_city = yes
 culture = berber
@@ -9,8 +9,7 @@ fort_15th = yes
 base_tax = 1
 base_production = 1
 base_manpower = 1
-add_core = ALG
-add_core = Z0B
+add_core = MZB
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian
