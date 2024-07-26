@@ -124,26 +124,10 @@ FRA_ideas = {
 				OR = {
 					primary_culture = cosmopolitan_french
 					primary_culture = normand
-					primary_culture = occitain
+					primary_culture = auvergnat
 				}
 				NOT = {
 					tag = KOJ
-				}
-			}
-		}
-	}
-}
-
-PRU_ideas = {
-	trigger = {
-		OR = {
-			tag = PRU
-			AND = {
-				culture_group = germanic
-				is_subject = no
-				MIL = 5
-				NOT = {
-					num_of_cities = 10
 				}
 			}
 		}

@@ -30,7 +30,7 @@ elector = yes
 		birth_date = 1397.12.15
 		death_date = 1457.12.15
 		religion = catholic
-		culture = alsatian
+		culture = lothringen
 	}
 	add_queen_personality = benevolent_personality
 	add_queen_personality = drunkard_personality

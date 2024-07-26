@@ -1,9 +1,9 @@
 government = monarchy
-add_government_reform = english_monarchy
+add_government_reform = persian_government_reform
 government_rank = 3
 technology_group = western
 religion = catholic
-primary_culture = ultramar
+primary_culture = persian
 capital = 429
 1444.11.11= {
 	monarch = {

@@ -5,7 +5,6 @@ technology_group = eastern
 religion = catholic
 primary_culture = greek
 capital = 146
-add_accepted_culture = cretan
 1444.11.11= {
 	monarch = {
 		name = "Methodios"

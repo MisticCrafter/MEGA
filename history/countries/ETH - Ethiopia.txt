@@ -3,7 +3,7 @@ add_government_reform = plutocratic_reform
 government_rank = 2
 technology_group = east_african
 religion = abyss_mystic
-primary_culture = somali-ethiopian
+primary_culture = amhara
 capital = 2769
 mercantilism = 15
 1444.11.11= {
@@ -16,7 +16,7 @@ mercantilism = 15
 		birth_date = 1423.10.5
 		female = yes
 		religion = abyss_mystic
-		culture = somali-ethiopian
+		culture = amhara
 	}
 	add_ruler_personality = pious_personality
 	add_ruler_personality = zealot_personality
@@ -31,7 +31,7 @@ mercantilism = 15
 		death_date = 1495.10.30
 		claim = 89
 		religion = abyss_mystic
-		culture = somali-ethiopian
+		culture = amhara
 	}
 	add_heir_personality = bold_fighter_personality
 	add_heir_personality = zealot_personality

@@ -6,7 +6,7 @@ germanic = {
 	german = {
 		primary = GER
 	}
-	alsatian = {
+	lothringen = {
 		primary = ALS
 		dynasty_names = {
 			Anspach Asperger "auf der Maur" Bauer Bernstein Blauschild Blumenthal Bollinger
@@ -953,6 +953,7 @@ iranian = {
 	mervi = { primary = KHO }
 	shirvani = { primary = SRV }
 	parthian = { primary = PRA }
+	turko_iranian = { primary = TRS }
 }
 altaic = {
 	khitan = {
@@ -960,7 +961,6 @@ altaic = {
 		dynasty_names = { Genden Amar Tserendorj Tomorbaatar Damdinbazar Bodoo Sukhbaatar Jamyan Choibalsan Chagdarjav }
 	}
 	turko_afghan = { primary = AFG }
-	turko_iranian = { primary = TRS }
 }
 central_american = {
 }

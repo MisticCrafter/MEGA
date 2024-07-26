@@ -3,7 +3,7 @@ add_government_reform = free_city
 government_rank = 1
 technology_group = western
 religion = thibaultine
-primary_culture = gallo
+primary_culture = breton
 capital = 172
 fixed_capital = 172
 mercantilism = 25
@@ -18,7 +18,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		birth_date = 1408.9.19
 		female = yes
 		religion = thibaultine
-		culture = gallo
+		culture = breton
 	}
 	add_ruler_personality = bold_fighter_personality
 	add_ruler_personality = just_personality
@@ -32,7 +32,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		birth_date = 1414.1.16
 		death_date = 1474.1.16
 		religion = thibaultine
-		culture = gallo
+		culture = breton
 	}
 	add_queen_personality = craven_personality
 	add_queen_personality = free_thinker_personality
@@ -47,7 +47,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		death_date = 1502.5.16
 		claim = 89
 		religion = thibaultine
-		culture = gallo
+		culture = breton
 	}
 	add_heir_personality = charismatic_negotiator_personality
 	add_heir_personality = kind_hearted_personality

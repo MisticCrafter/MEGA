@@ -5,6 +5,7 @@ technology_group = eastern
 religion = catholic
 primary_culture = ruthenian
 capital = 279
+add_accepted_culture = kishinyov
 1444.11.11= {
 	monarch = {
 		name = "Radoslav"

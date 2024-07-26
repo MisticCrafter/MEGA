@@ -3,7 +3,7 @@ add_government_reform = feudalism_reform
 government_rank = 1
 technology_group = western
 religion = rationalist
-primary_culture = alsatian
+primary_culture = lothringen
 capital = 4766
 1444.11.11= {
 	monarch = {
@@ -14,7 +14,7 @@ capital = 4766
 		mil = 4
 		birth_date = 1423.11.11
 		religion = rationalist
-		culture = alsatian
+		culture = lothringen
 	}
 	add_ruler_personality = drunkard_personality
 	add_ruler_personality = lawgiver_personality
@@ -29,7 +29,7 @@ capital = 4766
 		death_date = 1487.6.16
 		claim = 89
 		religion = catholic
-		culture = alsatian
+		culture = lothringen
 	}
 	add_heir_personality = greedy_personality
 	add_heir_personality = tactical_genius_personality
