@@ -1,6 +1,6 @@
 ck2_converter_generated = yes
 graphical_culture = westerngfx
-color = { 73 152 76 }
+color = { 180 0 0 } #{ 73 152 76 }
 revolutionary_colors = { 10 0 5 }
 historical_idea_groups = {
 	maritime_ideas
@@ -29,6 +29,13 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
+	"Antonino #0" = 0
+	"Cassia #1" = -1
+	"Domitius #0" = 0
+	"Jack #2" = 10
+	"Marcus #0" = 0
+	"Pulcheria #0" = -1
+	"Quinto #0" = 0
 	"Achille #0" = 0
 	"Alberto #0" = 0
 	"Antonio #0" = 0

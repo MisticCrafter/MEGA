@@ -1,5 +1,5 @@
 capital = "Ewaso Ngiro"
-culture = somali
+culture = ajuuraanic
 religion = shamanism
 trade_goods = unknown
 base_tax = 1

@@ -1,5 +1,5 @@
-owner = NBI
-controller = NBI
+owner = NUB
+controller = NUB
 capital = "Sennar"
 is_city = yes
 culture = nubian

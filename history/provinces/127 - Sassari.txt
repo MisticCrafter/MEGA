@@ -1,5 +1,5 @@
-owner = Z07
-controller = Z07
+owner = SIC
+controller = SIC
 capital = "Sassari"
 is_city = yes
 culture = mare-roman
@@ -10,7 +10,7 @@ base_tax = 4
 base_production = 5
 base_manpower = 3
 add_core = BYZ
-add_core = Z07
+add_core = SIC
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian
