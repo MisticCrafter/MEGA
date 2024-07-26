@@ -1,5 +1,5 @@
-owner = HSN
-controller = HSN
+owner = TEM
+controller = TEM
 capital = "Bitlis"
 is_city = yes
 culture = ultramar
@@ -9,7 +9,7 @@ base_tax = 6
 base_production = 5
 base_manpower = 5
 
-add_core = HSN
+add_core = TEM
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

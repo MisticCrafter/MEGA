@@ -1,5 +1,5 @@
-owner = HSN
-controller = HSN
+owner = TEM
+controller = TEM
 capital = "Diyar Bekir"
 is_city = yes
 culture = armenian
@@ -10,7 +10,7 @@ base_production = 4
 base_manpower = 2
 extra_cost = 8
 center_of_trade = 1
-add_core = HSN
+add_core = TEM
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian
