@@ -1,5 +1,5 @@
-owner = AJU
-controller = AJU
+owner = BEJ
+controller = BEJ
 capital = "Qoz Rajab"
 is_city = yes
 culture = nubian
@@ -8,7 +8,7 @@ trade_goods = livestock
 base_tax = 4
 base_production = 3
 base_manpower = 2
-add_core = AJU
+add_core = BEJ
 add_core = NUB
 discovered_by = east_african
 discovered_by = eastern

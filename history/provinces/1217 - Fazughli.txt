@@ -1,8 +1,8 @@
-owner = NBI
-controller = NBI
+owner = NUB
+controller = NUB
 capital = "Alays"
 is_city = yes
-culture = nubian
+culture = sidamo
 religion = catholic
 trade_goods = unknown
 base_tax = 2

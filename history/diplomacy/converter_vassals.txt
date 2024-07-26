@@ -40,7 +40,7 @@ vassal=
 
 vassal=
 {
-	first="Z07"
+	first="SIC"
 	second="ETR"
 	start_date="1444.11.11"
 	end_date="1836.1.1"

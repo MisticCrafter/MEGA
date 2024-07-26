@@ -1,6 +1,6 @@
 owner = AJU
 controller = AJU
-capital = "Qardho"
+capital = "ajuuraanic"
 is_city = yes
 culture = amhara
 religion = abyss_mystic

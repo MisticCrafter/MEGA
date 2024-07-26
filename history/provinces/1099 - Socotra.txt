@@ -1,5 +1,5 @@
-owner = ETH
-controller = ETH
+owner = AJU
+controller = AJU
 capital = "Suqutra"
 is_city = yes
 culture = yemeni_culture
@@ -8,8 +8,7 @@ trade_goods = fish
 base_tax = 1
 base_production = 5
 base_manpower = 1
-add_core = ADE
-add_core = ETH
+add_core = AJU
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian
