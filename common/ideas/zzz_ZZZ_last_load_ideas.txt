@@ -7,22 +7,6 @@ irish_ideas = {
 	}
 }
 
-somali_ideas = {
-	trigger = {
-		OR = {
-			primary_culture = somali
-			primary_culture = harari
-			primary_culture = afar
-		}
-	}
-}
-
-greek_ideas = {
-	trigger = {
-		culture_group = byzantine
-	}
-}
-
 TIB_ideas = {
 	start = {
 		global_unrest = -1

@@ -14,7 +14,7 @@ zeven_provincies_republic_reform = {				# Starting reform for my nation, is mode
 			have_had_reform = zeven_provincies_republic_reform
 		}
 	}
-	legacy_equivalent = dutch_republic_legacy
+
 	royal_marriage = yes
 	lock_level_when_selected = yes
 

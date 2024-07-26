@@ -1,0 +1,16 @@
+positive_piety = {					# Realist - Rationalist Religion Mechanic
+	technology_cost = -0.1
+	production_efficiency = 0.2
+	global_autonomy = -0.05
+	church_loyalty_modifier = 0.15
+	burghers_loyalty_modifier = -0.15
+}
+
+#For convenience, its multiplied by negative piety in code.
+negative_piety = { 					# Humanist - Rationalist Religion Mechanic
+	discipline = 0.05
+	years_of_nationalism = -10
+	idea_cost = -0.1
+	church_loyalty_modifier = -0.15
+	burghers_loyalty_modifier = 0.15
+}

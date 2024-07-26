@@ -34,7 +34,7 @@ vassal = {
 }
 
 vassal = {
-    first = "ITA"
+    first = "SWI"
     second = "VEN"
     start_date="1444.11.11"
 	end_date="1836.1.1"
