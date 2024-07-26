@@ -1,12 +1,12 @@
 owner = MOR
 controller = MOR
-capital = "Meknes"
+capital = "Macanes"
 is_city = yes
 culture = moroccan
 religion = catholic
 trade_goods = cloth
-base_tax = 4
-base_production = 5
+base_tax = 2
+base_production = 3
 base_manpower = 3
 add_core = MOR
 discovered_by = east_african

@@ -1,6 +1,6 @@
 owner = Z2Y
 controller = Z2Y
-capital = "Sfax"
+capital = "Thena"
 is_city = yes
 culture = tunisian
 religion = catholic

@@ -1,13 +1,13 @@
 owner = TRP
 controller = TRP
-capital = "Tripoli"
+capital = "Leptis"
 is_city = yes
 culture = libyan
 religion = catholic
 trade_goods = cloth
-base_tax = 2
-base_production = 4
-base_manpower = 1
+base_tax = 4
+base_production = 8
+base_manpower = 3
 extra_cost = 16
 center_of_trade = 2
 add_core = TRP

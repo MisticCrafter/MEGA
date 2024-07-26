@@ -46,7 +46,7 @@ dependency = {
 	end_date="1836.1.1"
 }
 
-union = {
+alliance = {
 	first = Z0E
 	second = VAL
 	start_date="1444.11.11"

@@ -1,6 +1,6 @@
 owner = Z0B
 controller = Z0B
-capital = "Mostaganem"
+capital = "Tenessa"
 is_city = yes
 culture = algerian
 religion = catholic

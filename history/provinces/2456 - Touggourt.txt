@@ -1,6 +1,6 @@
 owner = MZB
 controller = MZB
-capital = "Touggourt"
+capital = "Nepta"
 is_city = yes
 culture = berber
 religion = tigranic

@@ -1,12 +1,12 @@
 owner = TRP
 controller = TRP
-capital = "Zuwarah"
+capital = "Sabrata"
 is_city = yes
 culture = tunisian
 religion = catholic
 trade_goods = fish
-base_tax = 4
-base_production = 4
+base_tax = 3
+base_production = 5
 base_manpower = 3
 add_core = TRP
 add_permanent_claim = AFR

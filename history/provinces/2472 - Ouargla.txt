@@ -1,6 +1,6 @@
 owner = GHD
 controller = GHD
-capital = "Ouargla"
+capital = "Tanallera"
 is_city = yes
 culture = berber
 religion = catholic

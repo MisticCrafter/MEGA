@@ -1,6 +1,6 @@
 owner = AFR
 controller = AFR
-capital = "Annaba"
+capital = "Hippona"
 is_city = yes
 culture = tunisian
 religion = catholic
@@ -10,7 +10,6 @@ base_tax = 3
 base_production = 4
 base_manpower = 2
 add_core = AFR
-add_core = ALG
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

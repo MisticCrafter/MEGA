@@ -1,11 +1,11 @@
 owner = MOR
 controller = MOR
-capital = "Tadla"
+capital = "Taedola"
 is_city = yes
 culture = moroccan
 religion = catholic
 trade_goods = copper
-base_tax = 6
+base_tax = 2
 base_production = 4
 base_manpower = 3
 add_core = MOR

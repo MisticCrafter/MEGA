@@ -182,25 +182,97 @@ western_aryan = {
 }
 
 maghrebi = {
-	libyan = {
+	moroccan = {
+		primary = MOR
 		dynasty_names = {
-			"al-Ilighi" "al-Tadsi" "Zayyanid" Maatka Wattasid Atfayyish "Beni Isguen" "al-Afdali" "Mzabi"
-			Tabghurin "al-Malshuti"
+			"d'Épingle" "Satharenos" "Mocranes" "Lascarius" "de Targares" "Ceara" "de Sintra" "de Braganza" "Karling"
+			"Lancaster" "van Paradyx" "de Myron" "de Zacantor" "de Penamacor" "de Trastámara" "Canavessa" "von Babenberg"
+			"von Habsburg" "Capet" "de Valois" "de Dreux" "von Julichgau" "de Gramont" "Prydain" "Salian" "von Metz"
 		}
 		male_names = {
-			"Abu Abdallah" "Abu Abbas Ahmad" "Abu Tashufin" "Abu Hammu" "Abu Muh" "Abu Zayyan" "Abu Malek" "Abul Hadjdjadj"
-			"Abu Thabid" "Abu Said" "'Abd al-Karim" Barakat Basir Dawud Faris Haidar Hashim Jabbar 
-			Junayd Najib Qasim Rahim Rashîd Safi Sakhr Wahid Zahir Jamal Mustafa Muzaffaraddin N'Guna Nasr Nazar Niptasan 
-			Nizamaddin Ptolemee Ptolemy Qutaiba Rashid Sa'id Salah Salla Salomon Solomon Sammer Sayyid Seghada Sekla Shamsaddin 
-			Sifaks Sifal Sinbad Sisso Stembanos Suggut Sultan T'ar'iq Tabat Tacfin Taffounnout Tahir Takfarinas Tanan Tariq 
-			Tegama Thabitah Tifan Theophanus Tiljad Ugdada Ugwistan Umar Umar Uqess'un Uregh Urtilian Urz'ig Uzmir Uzza Wahab 
-			Watt'as Xamida Yabdas Yaghmurasen Yahya Yahya Yattuy Yeften Yeh'lem Yiliyen Yuba Yugerten Yugurthen Youkhanna John 
-			Yunes Yusuf Joseph Yuva Z'effun Zafir Zalelsan Zayar Zer'wal Zigza Ziri Zubeyr
+			Juba Mauro Adalberto Ausato Orus Garcia Balturro Adrameno Gauterro Cassio Élias Ioan 
+			Arias Alamo Annius Anno David Daecio Druzzo Fabricio Havarro Hebraíno Jack Masgavo Mazimo 
+			Nacer Raul Salim Tamiro Aumar Tamaro Rutillo Agmano Jugurtha Aemilio Miquessano Massino 
+			Atherbal Lensallo Daenias Otho Benito Alessandro Cura Albonno Munio Argeno Masmudano Lacumaces
+			Lucio Carin Faris Matteos Musano Selin Misageno Durano
 		}
 		female_names = {
-			Randa Tabassum 	Dema Dimah Dinara Dua Durra Durriyya Edza Eleonorka Eleanor Faghissa Fahriya Fariza Fedada 
-			Tazenkwedt Tazirit Tazrurt Tella Temzi Tfit Tigmi Tikinas Tilelli Timmi Tinhinan Tintadefi 
-			Tintifawin Tinzert Tisent Tislit Titbirt Titrit Tizemt Tiziri Triya Tudert Tuh'r'ict Tureght 
+			Salimata Flavia Mariam Sedica Poppaea Cassia Carima Randa Tabassa Basima Basillia Cala Cantara Tamena
+			Taninna Tati Dida Linda Elia Julia Biba
+		}
+	}
+	tunisian = {
+		primary = AFR
+		dynasty_names = {
+			"d'Épingle" "Satharenos" "Mocranes" "Lascarius" "de Targares" "Ceara" "de Sintra" "de Braganza" "Karling"
+			"Lancaster" "van Paradyx" "de Myron" "de Zacantor" "de Penamacor" "de Trastámara" "Canavessa" "von Babenberg"
+			"von Habsburg" "Capet" "de Valois" "de Dreux" "von Julichgau" "de Gramont" "Prydain" "Salian" "von Metz"
+		}
+		male_names = {
+			Juba Mauro Adalberto Ausato Orus Garcia Balturro Adrameno Gauterro Cassio Élias Ioan 
+			Arias Alamo Annius Anno David Daecio Druzzo Fabricio Havarro Hebraíno Jack Masgavo Mazimo 
+			Nacer Raul Salim Tamiro Aumar Tamaro Rutillo Agmano Jugurtha Aemilio Miquessano Massino 
+			Atherbal Lensallo Daenias Otho Benito Alessandro Cura Albonno Munio Argeno Masmudano Lacumaces
+			Lucio Carin Faris Matteos Musano Selin Misageno Durano
+		}
+		female_names = {
+			Salimata Flavia Mariam Sedica Poppaea Cassia Carima Randa Tabassa Basima Basillia Cala Cantara Tamena
+			Taninna Tati Dida Linda Elia Julia Biba
+		}
+	}
+	algerian = {
+		primary = Z0B
+		dynasty_names = {
+			"d'Épingle" "Satharenos" "Mocranes" "Lascarius" "de Targares" "Ceara" "de Sintra" "de Braganza" "Karling"
+			"Lancaster" "van Paradyx" "de Myron" "de Zacantor" "de Penamacor" "de Trastámara" "Canavessa" "von Babenberg"
+			"von Habsburg" "Capet" "de Valois" "de Dreux" "von Julichgau" "de Gramont" "Prydain" "Salian" "von Metz"
+		}
+		male_names = {
+			Juba Mauro Adalberto Ausato Orus Garcia Balturro Adrameno Gauterro Cassio Élias Ioan 
+			Arias Alamo Annius Anno David Daecio Druzzo Fabricio Havarro Hebraíno Jack Masgavo Mazimo 
+			Nacer Raul Salim Tamiro Aumar Tamaro Rutillo Agmano Jugurtha Aemilio Miquessano Massino 
+			Atherbal Lensallo Daenias Otho Benito Alessandro Cura Albonno Munio Argeno Masmudano Lacumaces
+			Lucio Carin Faris Matteos Musano Selin Misageno Durano
+		}
+		female_names = {
+			Salimata Flavia Mariam Sedica Poppaea Cassia Carima Randa Tabassa Basima Basillia Cala Cantara Tamena
+			Taninna Tati Dida Linda Elia Julia Biba
+		}
+	}
+	berber = {
+		primary = GHD
+		dynasty_names = {
+			"de Sintra" "de Targares" "de Zacantor" "de Myron" "of the Jugurthii" "of the Gathelii" "of the Auresii"
+			"of the Massavii" "of the Edinaii" "of the Cavelaii" "of the Dernalii"
+		}
+		male_names = {
+			Juba Mauro Adalberto Ausato Orus Garcia Balturro Adrameno Gauterro Cassio Élias Ioan 
+			Arias Alamo Annius Anno David Daecio Druzzo Fabricio Havarro Hebraíno Jack Masgavo Mazimo 
+			Nacer Raul Salim Tamiro Aumar Tamaro Rutillo Agmano Jugurtha Aemilio Miquessano Massino 
+			Atherbal Lensallo Daenias Otho Benito Alessandro Cura Albonno Munio Argeno Masmudano Lacumaces
+			Lucio Carin Faris Matteos Musano Selin Misageno Durano
+		}
+		female_names = {
+			Salimata Flavia Mariam Sedica Poppaea Cassia Carima Randa Tabassa Basima Basillia Cala Cantara Tamena
+			Taninna Tati Dida Linda Elia Julia Biba
+		}
+	}
+	libyan = {
+		dynasty_names = {
+			"d'Épingle" "Satharenos" "Mocranes" "Lascarius" "de Targares" "Ceara" "de Sintra" "de Braganza" "Karling"
+			"Lancaster" "van Paradyx" "de Myron" "de Zacantor" "de Penamacor" "de Trastámara" "Canavessa" "von Babenberg"
+			"von Habsburg" "Capet" "de Valois" "de Dreux" "von Julichgau" "de Gramont" "Prydain" "Salian" "von Metz"
+		}
+		male_names = {
+			Juba Mauro Adalberto Ausato Orus Garcia Balturro Adrameno Gauterro Cassio Élias Ioan 
+			Arias Alamo Annius Anno David Daecio Druzzo Fabricio Havarro Hebraíno Jack Masgavo Mazimo 
+			Nacer Raul Salim Tamiro Aumar Tamaro Rutillo Agmano Jugurtha Aemilio Miquessano Massino 
+			Atherbal Lensallo Daenias Otho Benito Alessandro Cura Albonno Munio Argeno Masmudano Lacumaces
+			Lucio Carin Faris Matteos Musano Selin Misageno Durano
+		}
+		female_names = {
+			Salimata Flavia Mariam Sedica Poppaea Cassia Carima Randa Tabassa Basima Basillia Cala Cantara Tamena
+			Taninna Tati Dida Linda Elia Julia Biba
 		}
 	}
 }

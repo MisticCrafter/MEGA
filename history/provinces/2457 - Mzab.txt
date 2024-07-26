@@ -1,13 +1,13 @@
 owner = MZB
 controller = MZB
-capital = "Ghardaia"
+capital = "Gardaia"
 is_city = yes
 culture = berber
 religion = tigranic
 trade_goods = livestock
-base_tax = 3
-base_production = 3
-base_manpower = 1
+base_tax = 2
+base_production = 4
+base_manpower = 3
 add_core = MZB
 discovered_by = east_african
 discovered_by = eastern

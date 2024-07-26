@@ -1,13 +1,13 @@
 owner = MOR
 controller = MOR
-capital = "Mazzagan"
+capital = "Mazagan"
 is_city = yes
 culture = moroccan
 religion = catholic
 trade_goods = grain
-base_tax = 5
-base_production = 7
-base_manpower = 2
+base_tax = 4
+base_production = 5
+base_manpower = 6
 add_core = MOR
 discovered_by = east_african
 discovered_by = eastern

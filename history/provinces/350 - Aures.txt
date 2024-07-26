@@ -1,14 +1,14 @@
 owner = MZB
 controller = MZB
-capital = "Laghwat"
+capital = "Mesurfelta"
 is_city = yes
 culture = berber
 religion = catholic
 trade_goods = livestock
 fort_15th = yes
 base_tax = 1
-base_production = 1
-base_manpower = 1
+base_production = 2
+base_manpower = 2
 add_core = MZB
 discovered_by = east_african
 discovered_by = eastern
