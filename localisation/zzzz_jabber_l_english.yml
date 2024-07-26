@@ -182,4 +182,12 @@
  adu_idea_6_desc:0 "Andalos is a realm famed for many qualities: its prolific merchants, its loyal officers, its natural beauty, its rich traditions and so on. Its spies and intelligence are not among that list, but undeservedly so. Generation after generation, families of spies have carted back absolute bibles worth of information on foreign concerns, namely their craftsmanship. Owing to this, our foundries and smithies are unparalleled, producing higher quality weaponry and artillery than any other power within sight."
  adu_idea_7:0 "One under the Archon"
  adu_idea_7_desc:0 "Every man who wishes to enter into the Archon's service, be it in His armies, in His navies, in His companies or His offices and bureaus must swear a solemn oath: to know no lord but the Archon in Sintra, to obey no command but that from the Archon in Sintra and to pay no tribute but to the Archon in Sintra. The Archon is absolute, and all are His subjects."
-
+ # Cultures
+ crusader_group:0 "Crusader"
+ crusader_levantine:0 "Ultramar"
+ crusader_egyptian:0 "Alexandrian"
+ crusader_antiochene:0 "Antiochene"
+ crusader_mesopotamian:0 "Mesopotamian"
+ crusader_arabic:0 "Arabic"
+ crusader_persian:0 "Persic"
+ crusader_ethiopian:0 "Axumite"

@@ -3,6 +3,6 @@ add_government_reform = monastic_order_reform
 government_rank = 1
 technology_group = western
 religion = catholic
-primary_culture = ultramar
+primary_culture = crusader_levantine
 capital = 2313
 fixed_capital = 2313

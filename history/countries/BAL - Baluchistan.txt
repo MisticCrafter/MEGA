@@ -31,7 +31,7 @@ add_accepted_culture = turko_iranian
 		death_date = 1457.3.19
 		claim = 89
 		religion = catholic
-		culture = ultramar
+		culture = crusader_levantine
 	}
 	add_heir_personality = infertile_personality
 	add_heir_personality = lawgiver_personality
