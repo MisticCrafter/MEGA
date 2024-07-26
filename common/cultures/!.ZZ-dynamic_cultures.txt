@@ -19,7 +19,7 @@ baltic = {
 }
 
 british = {
-	herutfordian = {
+	anglic = {
 		male_names = { "Arncytel" "Balthere" "Beorhtfrith" "Beorhthelm" "Beorhtm�r" "Beorhtnoth" "Beorhtric" "Beorhtsige" "Beorhtwine" "Beorn" "Beornr�d" "Beornwulf" "Burgheard" "Byrhtnoth" "Cearl" "Cenfus" "Cenr�d" "Cenwulf" "Ceolwulf" "Cerdic" "Copsige" "Cuthberht" "Cuthr�d" "Cynehelm" "Cynewulf" "Cytelbearn" "Eadberht" "Eadfrith" "Eadgar" "Eadmund" "Eadm�r" "Eadric" "Eadr�d" "Eadsige" "Eadulf" "Eadweald" "Eadweard" "Eadwig" "Eadwine" "Eadwulf" "Ealdhun" "Ealdmund" "Ealdr�d" "Ealdwine" "Ealdwulf" "Eanberht" "Eanfrith" "Eanhere" "Eardwulf" "Eastmund" "Ecgberht" "Ecgfrith" "Gamall" "Godwine" "Gospatric" "Guthfrith" "Guthmund" "Gyrth" "Hacon" "Harold" "Heahberht" "Hereberht" "Hereweald" "Hereweard" "Hlothere" "Hrodberht" "Inw�r" "Leofheah" "Leofhelm" "Leofric" "Leofweald" "Leofwine" "Maccus" "Morcar" "M�rleswegn" "Offa" "Onlaf" "Ordgar" "Oscytel" "Oshere" "Osmund" "Osric" "Osr�d" "Osulf" "Osweald" "Oswine" "Oswulf" "Peter" "R�dwulf" "R�genweald" "Scule" "Sigeberht" "Sigehelm" "Sigeric" "Siger�d" "Sighere" "Siweard" "Stigand" "Swegn" "Swithelm" "Swithr�d" "Sw�fr�d" "S�bert" "S�lr�d" "S�weald" "S�xbald" "S�xr�d" "Thor�d" "Thurcytel" "Thurfrith" "Tostig" "Uhtr�d" "Ulfcytel" "Waltheof" "Werestan" "Wiglaf" "Wihtr�d" "Wistan" "Wulf" "Wulfgar" "Wulfgeat" "Wulfhelm" "Wulfhere" "Wulfm�r" "Wulfnoth" "Wulfstan" "�lfgar" "�lfm�r" "�lfnoth" "�lfric" "�lfr�d" "�lfsige" "�lfstan" "�lfwald" "�lfweard" "�lfwig" "�lfwine" "�lle" "�thelbald" "�thelberht" "�thelfrith" "�thelhere" "�thelm�r" "�thelric" "�thelr�d" "�thelsige" "�thelstan" "�thelweald" "�thelweard" "�thelwine" "�thelwold" "�thelwulf" "Eormenred" "Eorcenberht" "Eormenric" "Eadbald" "R�dwald" }
 		female_names = { "Agatha" "Balthild" "Beorhtfl�d" "Beorhtgifu" "Beorhtgyth" "Beorhtwaru" "Beorhtwynn" "Beornfl�d" "Beorngyth" "Bl�ja" "Burgfl�d" "Ceolfl�d" "Cristina" "Cuthburg" "Cwenburg" "Cyneburg" "Cynegyth" "Cynehild" "Cyneswith" "Cynethryth" "Eadburg" "Eadfl�d" "Eadgifu" "Eadgyth" "Eadhburh" "Eadhild" "Ealdgyth" "Ealhfl�d" "Ealhswith" "Eanswith" "Ecgfrida" "Ecgwyn" "Godgifu" "Gunhilda" "Gytha" "Helga" "Heregyth" "Hereswith" "Hextilda" "Hungifu" "Judith" "Leoffl�d" "Leofgifu" "Leofrun" "Leofwaru" "Leofwynn" "Margaret" "Maud" "Matilda" "Mildrith" "Octreda" "Siffl�d" "Sigrid" "S�thryth" "Wulffl�d" "Wulfgifu" "Wulfgyth" "Wulfhild" "Wulfrun" "Wulfthryth" "Wulfwaru" "Wulfwynn" "Wynnfl�d" "W�rburg" "�bba" "�lffl�d" "�lfgifu" "�lfgyth" "�lfl�da" "�lfrida" "�lfswith" "�lfthryth" "�lfwynn" "�thelburg" "�thelfl�d" "�thelgifu" "�thelhild" "�thelr�da" "�thelswith" "�thelthryth" "�thelburh" "Seaxburh" "Wihtburh" }
 		dynasty_names = { "Godhelming" "Beorming" "Eorling" "�bbing" "H�sting" "�lling" "Eadricing" "Eadwulfing" "Leodwalding" "�thelfrithing" "Yffing" "Ingving" "Offing" "Oswalding" "Cerdicing" "Wiglafing" "Coenwalhing" "Beorning" "Iceling" "Wuffing" "Wihtgilsing" "Ross" "Ciesla" "Rowe" "Borthwick" }
@@ -109,11 +109,45 @@ iberian = {
 	}
 }
 
-latin = {
+roman_group = {
 	mare-roman = {
 		male_names = { "Appius" "Aulus" "Caelus" "Decimus" "Decius" "Drusus" "Faustus" "Gaius" "Gnaeus" "Lucius" "Mamercus" "Manius" "Marcus" "Mettius" "Numerius" "Publius" "Quintus" "Secundus" "Septimus" "Servius" "Sextus" "Spurius" "Tertius" "Titus" "Tiberius" "Titus" "Albinus" "Albus" "Agricola" "Agrippa" "Aratus" "Asina" "Auspex" "Balbus" "Barbatus" "Bibulus" "Brutus" "Bubo" "Buteo" "Caesar" "Calvus" "Calvinus" "Cato" "Catulus" "Cethegus" "Cicero" "Cinna" "Cotta" "Crispian" "Curio" "Dama" "Damasus" "Dentatus" "Dives" "Dolabella" "Donatus" "Draco" "Emeritus" "Eugenius" "Euphemius" "Falco" "Falx" "Felix" "Fimbria" "Flaccus" "Florus" "Fronto" "Gala" "Galerus" "Gemellus" "Gorgonius" "Gracchus" "Gracilis" "Habitus" "Herma" "Hilarius" "Horatius" "Ignatius" "Iuba" "Labeo" "Laenas" "Lepidus" "Leptis" "Lentulus" "Libo" "Longinus" "Longus" "Lucan" "Lucullus" "Lupius" "Macro" "Martialis" "Marullus" "Maximus" "Memmius" "Mercator" "Messalla" "Montanus" "Murena" "Mus" "Nasica" "Oceanus" "Octavianus" "Opis" "Optatus" "Otho" "Paenula" "Pantera" "Pavo" "Peregrinus" "Pertinax" "Petronax" "Pictor" "Pilatus" "Polus" "Prisca" "Primus" "Procyon" "Pulcher" "Quarto" "Quiricus" "Regillus" "Remus" "Romanus" "Romulus" "Rufus" "Ruso" "Sabinus" "Salinator" "Scaevola" "Scipio" "Scrofa" "Seneca" "Senna" "Severus" "Sorex" "Statius" "Strabo" "Super" "Superbus" "Tacitus" "Tertulus" "Trebonius" "Tibullus" "Tullius" "Ursinus" "Ursus" "Valens" "Varro" "Varus" "Vergilius" "Viator" "Victor" "Vindex" "Virilis" "Vitalis" "Vitus" "Zeno" "Zoilus" "Zosimus" }
 		female_names = { "Prima" "Secunda" "Tertia" "Quarta" "Quinta" "Septa" "Septima" "Octava" "Nona" "Decima" "Undecima" "Duodecima" }
 		dynasty_names = { "Aemilia" "Antonia" "Atilia" "Atia" "Aufidia" "Aurelia" "Caecilia" "Calpurnia" "Cassia" "Claudia" "Clodia" "Cornelia" "Domitia" "Fabia" "Flavia" "Fulvia" "Furia" "Gabinia" "Galeria" "Horatia" "Julia" "Junia" "Licinia" "Livia" "Lucia" "Mamilia" "Manlia" "Maria" "Memmia" "Nigidia" "Octavia" "Papiria" "Plinia" "Postumia" "Pompeia" "Rabiria" "Quinctia" "Salvia" "Scribonia" "Sempronia" "Sertoria" "Silia" "Titia" "Tullia" "Ulpia" "Valeria" "Vesuvia" "Vinicia" "Viridia" "Vitellia" }
+	}
+	romanian = {
+		dynasty_names = {
+			"Basarab" "Danesti" "Draculesti"
+			Callimachi Ghica Cantacuzino Cantemiresti Racovita Caradja Sturdza 
+			Conachi Soutzos Golescu Vacarescu Mavrocordatos Craiovesti H jdau
+			Kogalniceanu Movilesti
+		}
+		male_names = {
+			Alexandru Radu Vlad Constantin Mihail Mircea George Grigore Mihnea Nicolae Besarab Vladislav Mattia 
+			Radu Ilias Scarlat Stefan Dan Alexandru Ilias Gabriel Ioan George Leon Moise Neagoie Besarab 
+			Leon Radu Mihnea Serban Simeon Teodosiu Vintila Vladut Milos Corneliu Flaviu Iuliu Octavian Sergiu 
+			Valeriu Petru Petrascu Radu 
+			Adrian Alexandru Alexander Anghel Angel Aron Bajan Balc Barbat Basarab Bogdan Bogdan Carol 
+			Ciprian Ciubar Claudiu
+			Corneliu Cornelius Costin Damjan Dan Dragos Dumitru Emerik Florin Franjo Francis Gavril 
+			Gheorghe George Grigore Gregory Iacob Gabriel
+			Iancu Ieremia Ilie Ioan John Iorghu Iosif Iuga Janos John Ladislau Latcu Laurentiu Laurence 
+			Litovoi Lucian Lucius Marin Marius
+			Mihai Milos Milosz Mircea Moise Nicolaie Petre Pirvu Radovan Radu Roman Sas Seneslav 
+			Sergiu Simion Simon
+			Stefan Stephen Stelian Teodor Theodore Tepes Tibor Tihomir Timotei Tudor Thierry Valentin 
+			Valentin Valeriu Vasile Basil Veaceslav
+			Victor Vilhelm William Vintila Vlad
+		}
+		female_names = {
+			Adelina Adriana Afina Alexandra Alexia Ana Anna Anastasia Anastasia Angela Arina Christina 
+			Christina Clara Clara Dana Ecatarina Catherine
+			Elena Helen Elisabeta Elisabeth Emilia Emily Eufroysina Euphrosyne Felicia Floarea Flora 
+			Ioana Ionela Irina Iulia Juliana Maria Maria Monica Iacoba
+			Natalia Olimpia Paraschiva Petra Roxana Ruxandra Smaranda Sophia Sophia Stana Stefana 
+			Stefania Stephania Teodora Rahela Flavia Cosmina
+			Tereza Teresa Vasilica Violeta Yolanda Voica Zina
+		}
 	}
 }
 
