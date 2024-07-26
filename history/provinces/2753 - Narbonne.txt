@@ -9,7 +9,6 @@ base_tax = 7
 base_production = 3
 base_manpower = 1
 center_of_trade = 2
-add_core = CAT
 add_core = TOU
 discovered_by = east_african
 discovered_by = eastern

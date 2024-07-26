@@ -21,13 +21,13 @@ vassal = {
 
 union = {
     first = "SWI"
-    second = "ITA"
+    second = "MLO"
     start_date="1444.11.11"
 	end_date="1836.1.1"
 }
 
 vassal = {
-    first = "ITA"
+    first = "MLO"
     second = "VRN"
     start_date="1444.11.11"
 	end_date="1836.1.1"
