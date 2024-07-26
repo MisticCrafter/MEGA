@@ -29,7 +29,7 @@ capital = 305
 		death_date = 1471.5.26
 		female = yes
 		religion = catholic
-		culture = cretan
+		culture = greek
 	}
 	add_queen_personality = just_personality
 	add_queen_personality = strict_personality

@@ -29,7 +29,7 @@ capital = 4731
 		death_date = 1456.8.16
 		female = yes
 		religion = catholic
-		culture = cretan
+		culture = greek
 	}
 	add_queen_personality = conqueror_personality
 	add_queen_personality = zealot_personality

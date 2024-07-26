@@ -30,7 +30,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		death_date = 1484.11.9
 		female = yes
 		religion = nestorian
-		culture = cretan
+		culture = greek
 	}
 	add_queen_personality = charismatic_negotiator_personality
 	add_queen_personality = just_personality

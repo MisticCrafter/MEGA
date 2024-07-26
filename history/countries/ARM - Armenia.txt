@@ -30,7 +30,7 @@ add_accepted_culture = georgian
 		death_date = 1479.12.4
 		female = yes
 		religion = catholic
-		culture = cretan
+		culture = greek
 	}
 	add_queen_personality = intricate_web_weaver_personality
 	add_queen_personality = secretive_personality
