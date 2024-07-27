@@ -30,14 +30,16 @@ tri_idea_7:0 "Outremer Veterans"
 tri_idea_7_desc:0 ""
 #Gov title names yayayaya
 CRUSADER_KING:0 "Crusader King" #is this a ck3 reference??!???!
-CRUSADER_EMPEROR:0 "Eastern Emperor"
+CRUSADER_EMPEROR:0 "Emperor"
 CRUSADER_QUEEN:0 "Crusader Queen"
-CRUSADER_EMPRESS:0 "Eastern Empress"
+CRUSADER_EMPRESS:0 "Empress"
 #reforms
 dollarstore_roman_republic_government:0 "Roman Republic"
 dollarstore_roman_republic_government_desc:0 ""
 outremer_government_reform:0 "Outremer Kingdom"
 outremer_government_reform_desc:0 ""
+stardust_crusaders_reform:0 "Land of the Stardust Crusaders"
+stardust_crusaders_reform_desc:0 ""
 #gove mechanics ajdiwisdna
 conscript_holy_war:0 "Mass Conscription"
 conscript_holy_war_desc:0 ""
@@ -51,3 +53,5 @@ swiss_fed:0 ""
 swiss_fed_desc:0 ""
 reformed_swiss_fed:0 ""
 reformed_swiss_fed_desc:0 ""
+#tooltips w
+was_outremer_tt:0 "\nIf we formed Japan as §YOutremer§!, we will gain the following reward:"
