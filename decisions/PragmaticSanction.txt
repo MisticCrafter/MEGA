@@ -8,7 +8,6 @@ country_decisions = {
 		}
 		allow = {
 			allows_female_emperor = no
-			has_female_heir = yes
 			is_emperor = yes
 		}
 		effect = {
