@@ -1251,8 +1251,11 @@ andalos_slot_3_missions_b = {
 			}
 			custom_trigger_tooltip = {
 				tooltip = adu_discover_bengal_tt
-				coromandel_region = {
+				bengal_region = {
 					has_discovered = ROOT
+				}
+				1343 = {
+					has_discovered = POR
 				}
 				568 = {
 					has_discovered = POR
@@ -1307,22 +1310,8 @@ andalos_slot_3_missions_b = {
 				}
 				add_permanent_claim = ROOT
 			}
-			if = {
-				limit = {
-					568 = {
-						NOT = { country_or_non_sovereign_subject_holds = ROOT }
-					}
-				}
-				568 = {
-					owner = {
-						country_event = { id = flavor_andalos.6 }
-					}
-				}
-				custom_tooltip = flavor_andalos_6_tt
-			}
-			else = {
-				add_mercantilism = 5
-			}
+			country_event = { id = flavor_andalos.6 }
+			custom_tooltip = flavor_andalos_6_tt
 		}
 	}
 
@@ -1404,7 +1393,7 @@ andalos_slot_3_missions_b = {
 			}
 		}
 		effect = {
-			set_country_flag = por_india_mission_flag
+			set_country_flag = adu_casa_da_india_flag
 			country_event = { id = flavor_andalos.4 }
 			custom_tooltip = flavor_andalos_4_tt
 		}
@@ -1663,18 +1652,22 @@ andalos_slot_4_missions = {
 				}
 			}
 			1099 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
 			}
 			2999 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -1745,9 +1738,12 @@ andalos_slot_4_missions = {
 			custom_trigger_tooltip = {
 				tooltip = adu_discover_coromandel_tt
 				coromandel_region = {
-					has_discovered = ROOT
+					has_discovered = POR
 				}
 				2030 = {
+					has_discovered = POR
+				}
+				1339 = {
 					has_discovered = POR
 				}
 			}
@@ -1773,22 +1769,8 @@ andalos_slot_4_missions = {
 				add_permanent_claim = ROOT
 			}
 			596 = { add_permanent_claim = ROOT }
-			if = {
-				limit = {
-					2030 = {
-						NOT = { country_or_non_sovereign_subject_holds = ROOT }
-					}
-				}
-				2030 = {
-					owner = {
-						country_event = { id = flavor_andalos.5 }
-					}
-				}
-				custom_tooltip = flavor_andalos_5_tt
-			}
-			else = {
-				add_mercantilism = 5
-			}
+			country_event = { id = flavor_andalos.5 }
+			custom_tooltip = flavor_andalos_5_tt
 		}
 	}
 	
@@ -2297,11 +2279,13 @@ andalos_slot_5_missions_b = {
 				}
 			}
 			396 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
 			}
 		}
 	}
