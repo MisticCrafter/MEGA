@@ -1,15 +1,15 @@
 government = republic
 add_government_reform = zeven_provincies_republic_reform
-government_rank = 3
+government_rank = 2
 technology_group = western
 religion = rationalist
 primary_culture = dutch
 capital = 4383
 1444.11.11= {
 	monarch = {
-		name = "Astolfo"
+		name = "Astolfo I"
 		dynasty = "van Paradyx"
-		adm = 4
+		adm = 5
 		dip = 4
 		mil = 6
 		birth_date = 1357.11.28
@@ -17,24 +17,9 @@ capital = 4383
 		religion = rationalist
 		culture = dutch
 	}
+	clear_scripted_personalities = yes
 	add_ruler_personality = intricate_web_weaver_personality
 	add_ruler_personality = legendary_conqueror_personality
-	heir = {
-		name = "Astolfo"
-		monarch_name = "Astolfo"
-		dynasty = "van Paradyx"
-		adm = 3
-		dip = 2
-		mil = 4
-		birth_date = 1393.8.26
-		death_date = 1458.8.26
-		female = yes
-		claim = 89
-		religion = rationalist
-		culture = dutch
-	}
-	add_heir_personality = drunkard_personality
-	add_heir_personality = cruel_personality
 }
 1444.11.11= {
 	add_prestige = 124

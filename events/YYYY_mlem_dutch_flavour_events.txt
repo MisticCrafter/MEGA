@@ -1,0 +1,101 @@
+namespace = nederlands_flavour_mega
+
+country_event = {
+	id = nederlands_flavour_mega.1
+	title = nederlands_flavour_mega.1.title
+	desc = nederlands_flavour_mega.1.desc
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	trigger = {
+		AND = {
+			has_game_started = yes
+			tag = NED
+		}
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = nederlands_flavour_mega.1.a
+		add_ruler_modifier = {
+			name = rule_of_stadhouderess_astolfo_i
+		}
+		change_statists_vs_orangists = 0.50
+	}
+}
+
+country_event = {
+	id = nederlands_flavour_mega.2
+	title = nederlands_flavour_mega.2.title
+	desc = nederlands_flavour_mega.2.desc
+	picture = KING_SICK_IN_BED_eventPicture
+
+	trigger = {
+		AND = {
+			tag = NED
+			NOT = { has_ruler = "Astolfo I" }
+		}
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = nederlands_flavour_mega.2.a
+		define_ruler = {
+			name = "Astolfo II"
+			dynasty = "van Paradyx"
+			adm = 4
+			dip = 4
+			mil = 5
+			age = 26
+			female = yes
+		}
+		add_ruler_personality = cruel_personality
+		add_ruler_personality = reformist_personality
+		add_ruler_modifier = {
+			name = rule_of_the_tyrant_astolfo_ii
+		}
+		set_ruler_flag = has_the_tyrant_astolfo_ii
+		change_statists_vs_orangists = 1
+		create_union = FLA
+	}
+
+	option = {
+		name = nederlands_flavour_mega.2.b
+		define_advisor = {
+			type = statesman
+			skill = 1
+			discount = yes
+			age = 26
+			female = yes
+			name = "Astolfo van Paradyx"
+		}
+		change_statists_vs_orangists = -0.66
+	}
+}
+
+country_event = {
+	id = nederlands_flavour_mega.3
+	title = nederlands_flavour_mega.3.title
+	desc = nederlands_flavour_mega.3.desc
+	picture = REFORM_eventPicture
+
+	trigger = {
+		AND = {
+			religion = rationalist
+			NOT = { has_country_modifier = rationalist_gender_equality }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	option = {
+		name = nederlands_flavour_mega.3.a
+		add_country_modifier = {
+			name = rationalist_gender_equality
+			duration = -1
+		}
+	}
+}

@@ -4,11 +4,7 @@ zeven_provincies_republic_reform = {				# Starting reform for my nation, is mode
 	potential = {
 		OR = {
 			AND = {
-				OR = {
-					primary_culture = dutch
-					primary_culture = frisian
-					primary_culture = flemish
-				}
+				tag = NED
 				NOT = { map_setup = map_setup_random }
 			}
 			have_had_reform = zeven_provincies_republic_reform
@@ -72,6 +68,7 @@ zeven_provincies_republic_reform = {				# Starting reform for my nation, is mode
 		has_parliament = yes
 	}
 	duration = 4
+	fixed_rank = 2
 }
 
 reformed_nederlands_republic_reform = {				# reform after you first remove all the appenages, is going to be modeled on dutch republic normally.
@@ -103,14 +100,6 @@ reformed_nederlands_republic_reform = {				# reform after you first remove all t
 		has_voc_indiamen = yes
 		allowed_voc_indiamen_fraction = 0.1
 	}
-
-	removed_effect = {
-		if = {
-			# Monarchs seize power
-			limit = { government = monarchy }
-			country_event = { id = dutch_republic.33 }
-		}
-	}
 	
 	custom_attributes = {
 		enables_plutocratic_idea_group = yes
@@ -141,6 +130,32 @@ reformed_nederlands_republic_reform = {				# reform after you first remove all t
 		}
 	}
 
+	effect = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_port = yes
+				}
+				add_province_modifier = {
+					name = gov_coastal_government
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+
+	removed_effect = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = gov_coastal_government
+				}
+				remove_province_modifier = gov_coastal_government
+			}
+		}
+		
+	}
 	conditional = {
 		allow = {
 			OR = {
@@ -191,14 +206,6 @@ united_zeven_provincies_republic_reform = {			# after you reunify Zeven Provinci
 		allowed_voc_indiamen_fraction = 0.25
 	}
 
-	removed_effect = {
-		if = {
-			# Monarchs seize power
-			limit = { government = monarchy }
-			country_event = { id = dutch_republic.33 }
-		}
-	}
-
 	custom_attributes = {
 		enables_plutocratic_idea_group = yes
 		enables_aristocratic_idea_group = no
@@ -228,6 +235,32 @@ united_zeven_provincies_republic_reform = {			# after you reunify Zeven Provinci
 		}
 	}
 
+	effect = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_port = yes
+				}
+				add_province_modifier = {
+					name = gov_coastal_government
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+
+	removed_effect = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = gov_coastal_government
+				}
+				remove_province_modifier = gov_coastal_government
+			}
+		}
+	}
+
 	conditional = {
 		allow = {
 			OR = {
@@ -238,5 +271,5 @@ united_zeven_provincies_republic_reform = {			# after you reunify Zeven Provinci
 		has_parliament = yes
 	}
 	duration = 8
-
+	fixed_rank = 3
 }
