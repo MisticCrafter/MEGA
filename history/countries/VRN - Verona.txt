@@ -1,5 +1,5 @@
-government = republic
-add_government_reform = civic_republicanism_government
+government = monarchy
+add_government_reform = reformed_swiss_fed
 government_rank = 1
 technology_group = western
 religion = thibaultine
