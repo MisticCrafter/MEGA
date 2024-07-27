@@ -1285,6 +1285,7 @@ theocracy = {
 				blood_theocracy_reform
 				#Hi it's me dotto again smile
 				outremer_government_reform
+				stardust_crusaders_reform
 			}
 		}
 		internal_vs_external_mission = {
