@@ -1,6 +1,6 @@
-government = monarchy
-add_government_reform = english_monarchy
-government_rank = 2
+government = tribal
+add_government_reform = steppe_horde
+government_rank = 3
 technology_group = nomad_group
 religion = nestorian
 primary_culture = uyghur

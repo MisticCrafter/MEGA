@@ -1,5 +1,5 @@
-owner = HSN
-controller = HSN
+owner = TEM
+controller = TEM
 capital = "Hisn Kayfa"
 is_city = yes
 culture = armenian
@@ -9,7 +9,7 @@ fort_15th = yes
 base_tax = 3
 base_production = 1
 base_manpower = 2
-add_core = HSN
+add_core = TEM
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

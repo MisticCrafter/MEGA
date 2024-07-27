@@ -329,6 +329,9 @@ levantine_christian_cultural_ideas = {
 	bonus = { prestige = 1 }
 
 	trigger = {
+		NOT = {
+			tag = Z00
+		}
 		OR = {
 			culture_group = turko_semitic
 			capital_scope = { region = mashriq_region }

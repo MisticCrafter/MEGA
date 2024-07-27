@@ -4,7 +4,7 @@
  alan:3 "Alan"
  albanian_g:0 "Arvanite"
  alexandrine:0 "Alexandrine"
- lothringen:3 "Lothringen"
+ lothringen:3 "Lotharingian"
  anatolian:3 "Anatolian"
  angevin:3 "Angevin"
  anglosaxon:3 "Anglo-Saxon"
@@ -200,7 +200,6 @@
  red_ruthenian:3 "Red Ruthenian"
  rhaetian:0 "Rhaetian"
  roman:3 "Roman"
- roman_group:3 "Roman"
  romsborgian:0 "Romsborgian"
  ruotsish:0 "Ruotsish"
  russian_culture:3 "Russian"
@@ -274,7 +273,7 @@
  old_ligurian:0 "Ligustic"
  venetic:0 "Venetic"
  siculian:0 "Siculian"
- roman_group:0 "Romantic"
+ roman_group:0 "Latin"
  
   # RICE
  yeniseian:0 "Yeniseian"

@@ -1,5 +1,5 @@
-government = monarchy
-add_government_reform = autocracy_reform
+government = republic
+add_government_reform = dollarstore_roman_republic_government
 government_rank = 2
 technology_group = western
 religion = catholic
@@ -30,7 +30,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		birth_date = 1400.2.21
 		death_date = 1460.2.21
 		religion = catholic
-		culture = ultramar
+		culture = crusader_levantine
 	}
 	add_queen_personality = drunkard_personality
 	add_queen_personality = righteous_personality

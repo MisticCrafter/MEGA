@@ -1,8 +1,8 @@
 owner = KNI
 controller = KNI
-capital = "Al Iskandirya"
+capital = "Alexandria"
 is_city = yes
-culture = ultramar
+culture = crusader_egyptian
 religion = catholic
 trade_goods = spices
 fort_15th = yes

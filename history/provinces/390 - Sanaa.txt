@@ -1,5 +1,5 @@
-owner = ARB
-controller = ARB
+owner = YEM
+controller = YEM
 capital = "Sana'a"
 is_city = yes
 culture = yemeni_culture
@@ -10,7 +10,7 @@ base_tax = 1
 base_production = 5
 base_manpower = 2
 add_core = ADE
-add_core = ARB
+add_core = YEM
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

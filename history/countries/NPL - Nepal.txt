@@ -44,7 +44,7 @@ capital = 557
 		death_date = 1461.7.11
 		claim = 89
 		religion = catholic
-		culture = ultramar
+		culture = crusader_levantine
 	}
 	add_heir_personality = pious_personality
 	add_heir_personality = righteous_personality

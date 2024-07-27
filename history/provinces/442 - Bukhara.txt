@@ -1,5 +1,5 @@
-owner = Z12
-controller = Z12
+owner = Z1P
+controller = Z1P
 capital = "Bukhara"
 is_city = yes
 culture = sogdian
@@ -8,7 +8,7 @@ trade_goods = salt
 base_tax = 3
 base_production = 5
 base_manpower = 2
-add_core = Z12
+add_core = Z1P
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

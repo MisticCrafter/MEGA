@@ -1,5 +1,5 @@
-owner = Z0P
-controller = Z0P
+owner = KHZ
+controller = KHZ
 capital = "Ukek"
 is_city = yes
 culture = astrakhani
@@ -9,7 +9,7 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 add_core = AST
-add_core = Z0P
+add_core = KHZ
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

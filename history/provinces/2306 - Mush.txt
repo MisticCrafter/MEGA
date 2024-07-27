@@ -1,5 +1,5 @@
-owner = HSN
-controller = HSN
+owner = TEM
+controller = TEM
 capital = "Mus"
 is_city = yes
 culture = armenian
@@ -8,7 +8,7 @@ trade_goods = wool
 base_tax = 6
 base_production = 4
 base_manpower = 4
-add_core = HSN
+add_core = TEM
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

@@ -29,7 +29,7 @@ capital = 280
 		death_date = 1480.2.8
 		female = yes
 		religion = catholic
-		culture = ultramar
+		culture = crusader_levantine
 	}
 	add_queen_personality = cruel_personality
 	add_queen_personality = fertile_personality

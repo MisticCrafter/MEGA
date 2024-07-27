@@ -29,7 +29,7 @@ capital = 4720
 		death_date = 1468.1.12
 		female = yes
 		religion = catholic
-		culture = ultramar
+		culture = crusader_levantine
 	}
 	add_queen_personality = righteous_personality
 	add_queen_personality = tactical_genius_personality
