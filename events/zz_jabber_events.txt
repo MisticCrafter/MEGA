@@ -1,0 +1,621 @@
+namespace = flavor_andalos
+
+# The Purchase of Macau (for province owner)
+country_event = {
+	id = flavor_andalos.1
+	title = flavor_andalos.1.title
+	desc = flavor_andalos.1.desc
+	picture = PORTUGUESE_MERCHANTS_eventPicture
+
+    major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_andalos.1.a
+		ai_chance = { 
+            factor = 1 
+        }
+		trigger = {
+			668 = {
+				is_capital = no
+			}
+		}
+		
+        set_variable = {
+            which = jabber_twoYearsIncome
+            value = 0
+        }
+        export_to_variable = {
+            which = jabber_twoYearsIncome
+            value = monthly_income
+            who = ROOT
+        }
+        multiply_variable = {
+            which = jabber_twoYearsIncome
+            value = 24
+        }
+
+		tooltip = {
+            add_years_of_income = 2
+			668 = {
+				cede_province = FROM
+				add_core = FROM
+                add_province_modifier = {
+                    name = "adu_feitoria"
+                    duration = -1
+                }
+			}
+		}
+		hidden_effect = {
+			FROM = {
+				country_event = { id = flavor_andalos.10 }
+			}
+		}
+	}
+	option = {
+		name = flavor_andalos.1.b
+		ai_chance = { factor = 0 }
+		add_prestige = 5
+	}
+}
+
+# The Purchase of Hizen (for province owner)
+country_event = {
+	id = flavor_andalos.2
+	title = flavor_andalos.2.title
+	desc = flavor_andalos.2.desc
+	picture = PORTUGUESE_MERCHANTS_eventPicture
+
+    major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_andalos.2.a
+		ai_chance = { 
+            factor = 1 
+        }
+		trigger = {
+			4182 = {
+				is_capital = no
+			}
+		}
+
+        set_variable = {
+            which = jabber_twoYearsIncome
+            value = 0
+        }
+        export_to_variable = {
+            which = jabber_twoYearsIncome
+            value = monthly_income
+            who = ROOT
+        }
+        multiply_variable = {
+            which = jabber_twoYearsIncome
+            value = 24
+        }
+
+		tooltip = {
+            add_years_of_income = 2
+			4182 = {
+				cede_province = FROM
+				add_core = FROM
+                center_of_trade = 1
+                add_province_modifier = {
+                    name = "adu_feitoria"
+                    duration = -1
+                }
+			}
+		}
+		hidden_effect = {
+			FROM = {
+				country_event = { id = flavor_andalos.11 }
+			}
+		}
+	}
+	option = {
+		name = flavor_andalos.2.b
+		ai_chance = { factor = 0 }
+		add_prestige = 5
+	}
+}
+
+# The Purchase of Socotra (for province owner)
+country_event = {
+	id = flavor_andalos.3
+	title = flavor_andalos.3.title
+	desc = flavor_andalos.3.desc
+	picture = PORTUGUESE_MERCHANTS_eventPicture
+
+    major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_andalos.3.a
+		ai_chance = { 
+            factor = 1 
+        }
+		trigger = {
+			1099 = {
+				is_capital = no
+			}
+		}
+
+        set_variable = {
+            which = jabber_twoYearsIncome
+            value = 0
+        }
+        export_to_variable = {
+            which = jabber_twoYearsIncome
+            value = monthly_income
+            who = ROOT
+        }
+        multiply_variable = {
+            which = jabber_twoYearsIncome
+            value = 24
+        }
+
+		tooltip = {
+            add_years_of_income = 2
+			1099 = {
+				cede_province = FROM
+				add_core = FROM
+                center_of_trade = 1
+                add_province_modifier = {
+                    name = "adu_feitoria"
+                    duration = -1
+                }
+			}
+		}
+		hidden_effect = {
+			FROM = {
+				country_event = { id = flavor_andalos.12 }
+			}
+		}
+	}
+	option = {
+		name = flavor_andalos.3.b
+		ai_chance = { factor = 0 }
+		add_prestige = 5
+	}
+}
+
+# Andal East India Company
+country_event = {
+	id = flavor_andalos.4
+	title = flavor_andalos.4.title
+	desc = flavor_andalos.4.desc
+	picture = MERCHANTS_TALKING_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			AND = {
+				NOT = { has_dlc = "Golden Century" }
+				tag = POR
+				has_country_modifier = india_trade_co
+			}
+			has_country_flag = adu_casa_da_india_flag
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {		
+        # Sounds like a good plan.
+		name = flavor_andalos.4.a
+		add_mercantilism = 10
+		add_country_modifier = {
+			name = adu_east_india_company_modifier
+			duration = -1
+		}
+	}
+}
+
+# Vasco da Gama in India
+country_event = {
+	id = flavor_andalos.5
+	title = flavor_andalos.5.title
+	desc = flavor_andalos.5.desc
+	picture = SHIP_SAILING_eventPicture
+
+    major = yes
+	is_triggered_only = yes
+
+	option = {
+        # Glorious! (Goa is controlled by AI)
+		name = flavor_andalos.5.a
+		trigger = {
+			2030 = {
+				owner = {
+					ai = yes
+				}
+			}
+		}
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 0
+				overextension_percentage = 1.5
+			}
+		}
+		2030 = { 
+            cede_province = ADU
+            add_province_modifier = {
+                name = "adu_feitoria"
+                duration = -1
+            }
+        }
+		add_permanent_claim = 2030
+		add_prestige = 10
+	}
+	option = {
+        # Curses, they are too strong! (A player controls Goa)
+		name = flavor_andalos.5.b
+		trigger = {
+			2030 = {
+				owner = {
+					ai = no
+				}
+			}
+		}
+		ai_chance = { factor = 10 }
+		add_permanent_claim = 2030
+		add_prestige = 10
+	}
+}
+
+# Vasco da Gama in Burma
+country_event = {
+	id = flavor_andalos.6
+	title = flavor_andalos.6.title
+	desc = flavor_andalos.6.desc
+	picture = SHIP_SAILING_eventPicture
+
+    major = yes
+	is_triggered_only = yes
+
+	option = {
+        # Glorious! (Chittagong is controlled by AI)
+		name = flavor_andalos.6.a
+		trigger = {
+			568 = {
+				owner = {
+					ai = yes
+				}
+			}
+		}
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 0
+				overextension_percentage = 1.5
+			}
+		}
+		568 = { 
+            cede_province = ADU
+            add_province_modifier = {
+                name = "adu_feitoria"
+                duration = -1
+            }
+        }
+		add_permanent_claim = 568
+		add_prestige = 10
+	}
+	option = {
+        # Curses, they are too strong! (A player controls Chittagong)
+		name = flavor_andalos.6.b
+		trigger = {
+			568 = {
+				owner = {
+					ai = no
+				}
+			}
+		}
+		ai_chance = { factor = 10 }
+		add_permanent_claim = 568
+		add_prestige = 10
+	}
+}
+
+# Christopher Columbus
+country_event = {
+	id = flavor_andalos.7
+	title = flavor_andalos.7.title
+	desc = flavor_andalos.7.desc
+	picture = SHIP_SAILING_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = ADU
+		exploration_ideas = 2
+		NOT = { has_global_flag = columbus_happened }
+		is_year = 1460
+		OR = {
+			NOT = {
+				north_america = {
+					has_discovered = ROOT
+				}
+			}
+			NOT = {
+				south_america = {
+					has_discovered = ROOT
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+        # Reject his proposal
+		name = flavor_andalos.7.a
+		ai_chance = { factor = 75 }
+		set_country_flag = turned_down_columbus
+		if = {
+			limit = {
+				any_known_country = {
+					has_idea = quest_for_the_new_world
+					religion = catholic
+				}
+			}
+			random_known_country = {
+				limit = {
+					NOT = { has_country_flag = turned_down_columbus }
+					religion = catholic
+					has_idea = quest_for_the_new_world
+				}
+				country_event = { id = flavor_spa.1 }
+			}
+		}
+	}
+	option = {
+        # Hire Columbus
+		name = flavor_andalos.7.b
+		ai_chance = { factor = 25 }
+		set_global_flag = columbus_happened
+		add_years_of_income = -0.10
+		define_explorer = {
+			name = Cristóvão Colombo
+			fire = 2
+			shock = 2
+			manuever = 6
+			siege = 0
+		}
+	}
+}
+
+# Vasco da Gama
+country_event = {
+	id = flavor_andalos.8
+	title = flavor_andalos.8.title
+	desc = flavor_andalos.8.desc
+	picture = SHIP_SAILING_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = ADU
+		exploration_ideas = 2
+		is_year = 1460
+		1460 = {
+            has_discovered = ROOT
+        }
+        1177 = {
+            has_discovered = ROOT
+        }
+	}
+
+	mean_time_to_happen = {
+		months = 10
+	}
+
+	option = {
+        # Hire Vasco da Gama
+		name = flavor_andalos.8.a
+		ai_chance = { factor = 100 }
+		add_years_of_income = -0.25
+		define_explorer = {
+			name = Vasco da Gama
+			fire = 4
+			shock = 3
+			manuever = 4
+			siege = 2
+		}
+	}
+}
+
+# Men of Andalos (for african nation)
+country_event = {
+    id = flavor_andalos.9
+    title = flavor_andalos.9.title
+	desc = flavor_andalos.9.desc
+	picture = SHIP_SAILING_eventPicture
+
+    major = yes
+    fire_only_once = yes
+    is_triggered_only = yes
+
+    major_trigger = {
+        capital_scope = {
+            OR = {
+                superregion = europe_superregion
+                region = mashriq_region
+                region = maghreb_region
+                region = egypt_region
+                region = horn_of_africa_region
+                region = arabia_region
+            }
+        }
+    }
+
+    trigger = {
+        NOT = { has_country_flag = andal_african_alliance }
+    }
+
+    option = {
+        # Ally with Andalos
+        name = flavor_andalos.9.a
+        ai_chance = { factor = 75 }
+        create_alliance = FROM
+		add_historical_friend = FROM
+        add_country_modifier = {
+            name = "adu_african_alliance"
+            duration = 7300
+        }
+        every_owned_province = {
+            if = {
+                limit = {
+                    province_has_center_of_trade_of_level = 1
+                    has_port = yes
+                }
+                1466 = {
+                    add_trade_modifier = {
+                        who = root
+                        duration = 7300
+                        power = 50
+                        key = andal_guinea_trade
+                    }
+                }
+                add_base_production = 2
+                add_base_manpower = 2
+                add_province_modifier = {
+                    name = "adu_feitoria"
+                    duration = -1
+                }
+            }
+        }
+        FROM = { add_historical_friend = ROOT }
+    }
+
+    option = {
+        # Reject them
+        name = flavor_andalos.9.b
+        ai_chance = { factor = 25 }
+        add_prestige_or_monarch_power = {
+			amount = 10
+		}
+    }
+}
+
+# The Purchase of Macau (positive reply, for Andalos)
+country_event = {
+	id = flavor_andalos.10
+	title = flavor_andalos.10.title
+	desc = flavor_andalos.10.desc
+	picture = PORTUGUESE_MERCHANTS_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_andalos.10.a
+        while = {
+            limit = {
+                NOT = {
+                    check_variable = {
+                        which = jabber_twoYearsIncome
+                        value = 0
+                    }
+                }
+            }
+            add_treasury = -2
+            subtract_variable = {
+                which = jabber_twoYearsIncome
+                value = 2
+            }
+        }
+		668 = {
+			cede_province = ROOT
+			add_core = ROOT
+            add_province_modifier = {
+                name = "adu_feitoria"
+                duration = -1
+            }
+		}
+	}
+}
+
+# The Purchase of Hizen (positive reply, for Andalos)
+country_event = {
+	id = flavor_andalos.11
+	title = flavor_andalos.11.title
+	desc = flavor_andalos.11.desc
+	picture = PORTUGUESE_MERCHANTS_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_andalos.11.a
+        while = {
+            limit = {
+                check_variable = {
+                    which = jabber_twoYearsIncome
+                    value = 0
+                }
+            }
+            add_treasury = -2
+            subtract_variable = {
+                which = jabber_twoYearsIncome
+                value = 2
+            }
+        }
+		4182 = {
+			cede_province = ROOT
+			add_core = ROOT
+            center_of_trade = 1
+            add_province_modifier = {
+                name = "adu_feitoria"
+                duration = -1
+            }
+		}
+	}
+}
+
+# The Purchase of Socotra (positive reply, for Andalos)
+country_event = {
+	id = flavor_andalos.12
+	title = flavor_andalos.12.title
+	desc = flavor_andalos.12.desc
+	picture = PORTUGUESE_MERCHANTS_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_andalos.12.a
+        custom_tooltip = test_tt
+        while = {
+            limit = {
+                check_variable = {
+                    which = jabber_twoYearsIncome
+                    value = 0
+                }
+            }
+
+            add_treasury = -2
+            subtract_variable = {
+                which = jabber_twoYearsIncome
+                value = 2
+            }
+        }
+		1099 = {
+			cede_province = ROOT
+			add_core = ROOT
+            center_of_trade = 1
+            add_province_modifier = {
+                name = "adu_feitoria"
+                duration = -1
+            }
+		}
+	}
+}
