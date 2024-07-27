@@ -6,6 +6,7 @@ religion = catholic
 primary_culture = crusader_levantine
 capital = 379
 set_country_flag = ZZZ_generated_converter_nation
+set_country_flag = enable_holy_orders_flag 
 1444.11.11= {
 	monarch = {
 		name = "Pedro"

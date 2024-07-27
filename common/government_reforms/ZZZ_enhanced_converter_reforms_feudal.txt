@@ -290,15 +290,6 @@ principality = {
 		NOT = { has_reform = tsardom }
 		NOT = { have_had_reform = tsardom }
 		OR = {
-			religion = orthodox
-			religion = monothelite
-			religion = iconoclast
-			religion = paulician
-			religion = bogomilist
-			religion = slavic_pagan
-			religion = slavic_pagan_reformed
-		}
-		OR = {
 			culture_group = east_slavic
 			culture_group = slavic
 			AND = {
@@ -315,15 +306,6 @@ principality = {
 		OR = {
 			culture_group = east_slavic
 			culture_group = slavic
-		}
-		OR = {
-			religion = orthodox
-			religion = monothelite
-			religion = iconoclast
-			religion = paulician
-			religion = bogomilist
-			religion = slavic_pagan
-			religion = slavic_pagan_reformed
 		}
 	}
 	modifiers = {
@@ -358,16 +340,6 @@ tsardom = {
 			culture_group = slavic
 		}
 		OR = {
-			religion = orthodox
-			religion = monothelite
-			religion = iconoclast
-			religion = paulician
-			religion = bogomilist
-			religion = slavic_pagan
-			religion = slavic_pagan_reformed
-			tag = UKR
-		}
-		OR = {
 			AND = {
 				tag = RUS
 				NOT = { map_setup = map_setup_random }
@@ -389,15 +361,6 @@ tsardom = {
 		OR = {
 			culture_group = east_slavic
 			culture_group = slavic
-		}
-		OR = {
-			religion = orthodox
-			religion = monothelite
-			religion = iconoclast
-			religion = paulician
-			religion = bogomilist
-			religion = slavic_pagan
-			religion = slavic_pagan_reformed
 		}
 	}
 

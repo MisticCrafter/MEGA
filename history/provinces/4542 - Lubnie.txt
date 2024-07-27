@@ -1,5 +1,5 @@
-owner = KIE
-controller = KIE
+owner = UKR
+controller = UKR
 capital = "Lubnie"
 is_city = yes
 culture = ruthenian
@@ -9,7 +9,7 @@ fort_15th = yes
 base_tax = 1
 base_production = 5
 base_manpower = 2
-add_core = KIE
+add_core = UKR
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian
