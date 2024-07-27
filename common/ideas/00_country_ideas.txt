@@ -4397,7 +4397,7 @@ NPL_ideas = {
 KNI_ideas = {
 	start = {
 		discipline = 0.05
-		may_perform_slave_raid = yes
+		hostile_attrition = 1
 	}
 	
 	bonus = {
@@ -15891,6 +15891,7 @@ Z00_ideas = {  #Outremer Ideas
 
 	z00_idea_3 = {
 		missionaries = 1
+		may_recruit_female_generals = yes
 		missionary_maintenance_cost = -0.25
 	}
 

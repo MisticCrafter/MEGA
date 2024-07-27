@@ -28,6 +28,17 @@ tri_idea_6:0 "Banking Connections"
 tri_idea_6_desc:0 ""
 tri_idea_7:0 "Outremer Veterans"
 tri_idea_7_desc:0 ""
+#Gov title names yayayaya
+CRUSADER_KING:0 "Crusader King" #is this a ck3 reference??!???!
+CRUSADER_EMPEROR:0 "Eastern Emperor"
+CRUSADER_QUEEN:0 "Crusader Queen"
+CRUSADER_EMPRESS:0 "Eastern Empress"
 #reforms
 dollarstore_roman_republic_government:0 "Roman Republic"
 dollarstore_roman_republic_government_desc:0 ""
+outremer_government_reform:0 "Outremer Kingdom"
+outremer_government_reform_desc:0 ""
+#gove mechanics ajdiwisdna
+conscript_holy_war:0 "Mass Conscription"
+conscript_holy_war_desc:0 ""
+ability_outremer_theocracy_mechanic:0 "Outremer Feudal Theocracy"

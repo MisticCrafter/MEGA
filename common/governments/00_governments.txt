@@ -1278,6 +1278,8 @@ theocracy = {
 				#Egypt
 				egyptian_government_reform
 				blood_theocracy_reform
+				#Hi it's me dotto again smile
+				outremer_government_reform
 			}
 		}
 		internal_vs_external_mission = {
