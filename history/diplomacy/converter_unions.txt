@@ -32,14 +32,6 @@ union=
 
 union=
 {
-	first="KHZ"
-	second="Z0P"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-union=
-{
 	first="ETH"
 	second="AJU"
 	start_date="1444.11.11"
