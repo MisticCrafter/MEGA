@@ -134,6 +134,10 @@ monarchy = {
 				andal_subject_reform
 				mauretanian_crusader_reform
 				christian_berber_reform
+				#Dotto jumpscare
+				swiss_minority
+				swiss_fed
+				reformed_swiss_fed
 			}
 		}
 		hereditary_vs_nobility = {
@@ -676,6 +680,7 @@ republic = {
 				united_zeven_provincies_republic_reform
 				#fucking forgot to put things here - dotts
 				dollarstore_roman_republic_government
+				swiss_cantonate
 			}
 		}
 		republican_virtues = {

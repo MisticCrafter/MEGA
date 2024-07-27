@@ -85,3 +85,93 @@ outremer_government_reform = {
 		factor = 1000
 	}
 }
+
+#Swiss Cantonate icon = "united_cantons_reform"
+swiss_cantonate = {
+	icon = "united_cantons_reform"
+	allow_normal_conversion = yes
+	duration = 8
+	modifiers = {
+		governing_capacity_modifier = -0.5
+		defensiveness = 0.33
+		global_defender_dice_roll_bonus = 1
+		global_tax_modifier = -0.25
+		production_efficiency = -0.25
+		mercenary_manpower = 0.5
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	lock_level_when_selected = yes
+	potential = {
+		OR = {
+			tag = GUY
+			tag = TOU
+			tag = AUV
+		}
+	}
+	custom_attributes = {
+		mercs_do_not_cost_army_professionalism = yes
+	}
+}
+
+swiss_minority = {
+	icon = "united_cantons_reform"
+	allow_normal_conversion = yes
+	modifiers = {
+		num_accepted_cultures = -10
+		global_unrest = 2
+		culture_conversion_time = -0.25
+		culture_conversion_cost = -0.35
+		mercenary_manpower = 0.5
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	potential = {
+		tag = MLO
+	}
+	
+	custom_attributes = {
+		mercs_do_not_cost_army_professionalism = yes
+	}
+}
+
+swiss_fed = {
+	icon = "united_cantons_reform"
+	allow_normal_conversion = yes
+	modifiers = {
+		min_autonomy = 10
+		monarch_admin_power = -2
+		monarch_diplomatic_power = -2
+		monarch_military_power = -2
+		diplomatic_upkeep = 2
+		mercenary_manpower = 0.5
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	potential = {
+		tag = SWI
+	}
+
+	custom_attributes = {
+		mercs_do_not_cost_army_professionalism = yes
+	}
+}
+
+reformed_swiss_fed = {
+	icon = "united_cantons_reform"
+	allow_normal_conversion = yes
+	modifiers = {
+		min_autonomy_in_territories = -0.1
+		free_policy = 1
+		mercenary_manpower = 0.5
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	potential = {
+		tag = VRN
+	}
+
+	custom_attributes = {
+		mercs_do_not_cost_army_professionalism = yes
+	}
+}
