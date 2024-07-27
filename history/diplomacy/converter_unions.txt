@@ -1,8 +1,8 @@
-union=
-{
+dependency = {
+	subject_type="tributary_state"
 	first="MDV"
-	second="MOS"
-	start_date="1444.11.11"
+	second="MOs"
+	start_date="769.1.1"
 	end_date="1836.1.1"
 }
 
@@ -10,14 +10,6 @@ union=
 {
 	first="Z1H"
 	second="Z2B"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-union=
-{
-	first="KHZ"
-	second="CIR"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }

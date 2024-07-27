@@ -1,7 +1,7 @@
-government = monarchy
-add_government_reform = uparaja_reform
+government = tribal
+add_government_reform = steppe_horde
 government_rank = 1
-technology_group = eastern
+technology_group = nomad_group
 religion = vajrayana
 primary_culture = ostyaki
 capital = 4691
