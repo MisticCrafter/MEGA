@@ -674,6 +674,8 @@ republic = {
 				zeven_provincies_republic_reform
 				reformed_nederlands_republic_reform
 				united_zeven_provincies_republic_reform
+				#fucking forgot to put things here - dotts
+				dollarstore_roman_republic_government
 			}
 		}
 		republican_virtues = {
