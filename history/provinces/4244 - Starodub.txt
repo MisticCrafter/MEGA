@@ -1,5 +1,5 @@
-owner = KIE
-controller = KIE
+owner = UKR
+controller = UKR
 capital = "Trubchevsk"
 is_city = yes
 culture = ryazanian
@@ -8,7 +8,7 @@ trade_goods = grain
 base_tax = 9
 base_production = 1
 base_manpower = 1
-add_core = KIE
+add_core = UKR
 add_core = RYA
 discovered_by = east_african
 discovered_by = eastern

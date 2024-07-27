@@ -1,5 +1,5 @@
-owner = KIE
-controller = KIE
+owner = UKR
+controller = UKR
 capital = "Mazyr"
 is_city = yes
 culture = byelorussian
@@ -9,7 +9,7 @@ fort_15th = yes
 base_tax = 1
 base_production = 1
 base_manpower = 3
-add_core = KIE
+add_core = UKR
 add_core = PLT
 discovered_by = east_african
 discovered_by = eastern
