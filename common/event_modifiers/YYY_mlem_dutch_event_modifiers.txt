@@ -1,0 +1,16 @@
+rule_of_stadhouderess_astolfo_i = {
+	reduced_liberty_desire = 15
+	monarch_lifespan = 0.25
+}
+
+rule_of_the_tyrant_astolfo_ii = {
+	reduced_liberty_desire = 25
+	monarch_lifespan = -0.15
+	global_unrest = 2
+}
+
+rationalist_gender_equality = {
+	may_recruit_female_generals = yes
+	female_advisor_chance = 0.5
+	manpower_recovery_speed = 0.05
+}
