@@ -2507,7 +2507,10 @@ tsardom = {
 			culture_group = east_slavic
 			culture_group = slavic
 		}
-		NOT = { primary_culture = ruthenian }
+		OR = {
+			NOT = { primary_culture = ruthenian }
+			was_tag = UKR
+		}
 		NOT = { primary_culture = byelorussian }
 		OR = {
 			AND = {
