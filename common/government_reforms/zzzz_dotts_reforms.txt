@@ -61,10 +61,16 @@ outremer_government_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
 	potential = {
-		tag = Z00
+		OR = {
+			tag = Z00
+			was_tag = Z00
+		}	
 	}
 	trigger = {
-		tag = Z00
+		OR = {
+			tag = Z00
+			was_tag = Z00
+		}	
 	}
 	modifiers = {
 		cb_on_religious_enemies = yes
@@ -83,6 +89,43 @@ outremer_government_reform = {
 	}
 	ai = {
 		factor = 1000
+	}
+}
+
+#Stardust Crusaders !!!!
+stardust_crusaders_reform = {
+	icon = "land_christian_sun_reform"
+	allow_normal_conversion = no
+	potential = {
+		OR = { 
+			AND = {
+				has_reform = stardust_crusaders_reform
+				is_playing_custom_nation = yes
+			}
+			have_had_reform = stardust_crusaders_reform
+			mission_completed = jap_spread_the_christian_faith
+			has_reform = stardust_crusaders_reform
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 150
+	nation_designer_trigger = {
+		capital_scope = { region = japan_region } 
+	}
+	rulers_can_be_generals = yes
+	heirs_can_be_generals = yes
+	maintain_dynasty = yes
+	fixed_rank = 3
+	modifiers = {
+		manpower_recovery_speed = 0.15
+		cb_on_religious_enemies = yes
+		movement_speed = 0.1
+		cavalry_cost = -0.15
+		allowed_samurai_fraction = 0.1
+	}
+	
+	government_abilities = {
+		land_of_the_christian_sun_mechanic
 	}
 }
 
@@ -175,3 +218,4 @@ reformed_swiss_fed = {
 		mercs_do_not_cost_army_professionalism = yes
 	}
 }
+
