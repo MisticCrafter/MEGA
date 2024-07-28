@@ -116,3 +116,82 @@ adu_african_alliance = {
     land_morale = 0.1
     shock_damage = 0.05
 }
+
+adu_andal_red = {
+    trade_goods_size = 0.5
+    local_unrest = -1
+}
+
+###
+
+tigranic_cooldown_modifier = {
+    church_loyalty_modifier = 0.02
+}
+
+tigranic_divination_adm_modifier = {
+    production_efficiency = 0.1
+    manpower_recovery_speed = -0.10
+    church_influence_modifier = 0.1
+}
+
+tigranic_divination_dip_modifier = {
+    diplomatic_reputation = 1
+    spy_offence = -0.25
+    church_influence_modifier = 0.1
+}
+
+tigranic_divination_mil_modifier = {
+    land_morale = 0.1
+    global_tax_modifier = -0.1
+    church_influence_modifier = 0.1
+}
+
+tigranic_festival_modifier = {
+    reduced_liberty_desire = 10
+    yearly_corruption = 0.1
+}
+
+tigranic_triumph_modifier = {
+    land_morale = 0.15
+    discipline = -0.05
+}
+
+tigranic_paladins_modifier = {
+    leader_land_shock = 1
+    leader_cost = 0.33
+}
+
+tigranic_warsongs_modifier = {
+    war_exhaustion = -0.05
+    shock_damage_received = 0.1
+}
+
+tigranic_fertility_modifier = {
+    heir_chance = 0.5
+    advisor_cost = 0.33
+}
+
+tigranic_feedland_modifier = {
+    local_development_cost = -0.1
+    local_manpower_modifier = 0.25
+}
+
+tigranic_exploitland_modifier = {
+    trade_goods_size_modifier = 0.25
+}
+
+tigranic_buildlessons_modifier = {
+    build_cost = -0.25
+    global_prosperity_growth = 0.25
+}
+
+tigranic_techlessons_modifier = {
+    technology_cost = -0.1
+    yearly_innovativeness = 0.3
+}
+
+tigranic_colonylessons_modifier = {
+    colony_development_boost = 1
+    colony_cost_modifier = -0.25
+}
+
