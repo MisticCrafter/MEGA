@@ -1,0 +1,7 @@
+spriteTypes = {
+
+    spriteType = {
+		name = "GFX_lessons_of_valerio"
+		texturefile = "gfx//interface//church_aspects//tigranic//lessons_of_valerio.dds"	
+	}
+}

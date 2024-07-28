@@ -1,36 +1,50 @@
 christian = {
 	tigranic = {
-		color = { 182 159 56 }
-		icon =  180
+		color = { 255 201 14 } #{ 182 159 56 }
+		icon = 180
+
 		country = {
- 
-		technology_cost = -0.1
-	
+			tolerance_heathen = 2
+			technology_cost = -0.1
+		}
 
-		leader_naval_manuever = 1
-		global_ship_trade_power = 0.1
-	
-
-		female_advisor_chance = 0.5
-	
-
-		tolerance_heathen = 1
-		tolerance_heretic = 1
-	
-}
 		country_as_secondary = {
- 
-		technology_cost = -0.05
-	
+			technology_cost = -0.05
+		}
 
-		global_trade_power = 0.1
-	
-}
 		province = {
- 
-		local_missionary_strength = 0.01
-	
-}
+			local_manpower_modifier = 0.1
+		}
+
+		on_convert = {
+			change_religion = tigranic
+			add_prestige = -100
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
+		}
+
+		uses_anglican_power = yes
+		aspects = {
+			tigranic_divine_the_stars
+			tigranic_rein_in_subjects
+			tigranic_hold_a_triumph
+			tigranic_paladins
+			tigranic_warsongs
+			tigranic_rite_of_fertility
+
+			tigranic_feed_the_land
+			tigranic_exploit_the_land
+
+			tigranic_lessons_of_valerio
+			tigranic_lessons_of_tigranna
+			tigranic_lessons_of_marianos
+
+			tigranic_summon_the_courts
+			tigranic_call_the_banners
+		}
+		aspects_name = ANGLICAN_ASPECTS
 		
 	heretic = { BOGOMILIST WALDENSIAN FRATICELLI LOLLARD SOCINIAN }
 

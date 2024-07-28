@@ -1582,13 +1582,6 @@ andalos_slot_4_missions = {
 		}
 	
 		effect = {
-			define_explorer = {
-				name = "Vasco da Gama"
-				shock = 3
-				fire = 2
-				manuever = 6
-				siege = 0
-			}
 			add_prestige = 10
 			add_yearly_sailors = 3
 			cape_of_good_hope_area = {
@@ -1614,6 +1607,7 @@ andalos_slot_4_missions = {
 			1201 = {
 				add_permanent_claim = ROOT
 			}
+			country_event = { id = flavor_andalos.8 }
 		}
 	}
 	
@@ -2583,11 +2577,21 @@ andalos_slot_5_missions_c = {
 			if = { 
 				limit = { has_dlc = "Domination" }
 				custom_tooltip = por_every_wine_prov_tt
-				tooltip = { add_base_production = 3 } 
+				tooltip = { 
+					add_base_production = 3
+					add_province_modifier = {
+						name = "adu_andal_red"
+						duration = -1
+					}
+				} 
 				hidden_effect = {
 					every_owned_province = {
 						limit = { trade_goods = wine } 
-						add_base_production = 3 
+						add_base_production = 3
+						add_province_modifier = {
+							name = "adu_andal_red"
+							duration = -1
+						} 
 					}
 				}
 			}

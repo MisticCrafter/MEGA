@@ -1,0 +1,76 @@
+country_decisions = {
+
+    andalos_guinean_ally_decision = {
+        major = yes
+        potential = {
+            tag = ADU
+            custom_trigger_tooltip = {
+				tooltip = miss_discover_west_africa
+				west_africa_coast_area = {
+					has_discovered = ROOT
+				}
+			}
+			num_of_colonists = 1
+            NOT = { has_country_flag = adu_has_guinean_friend_flag }
+        }
+
+        provinces_to_highlight = {
+            has_port = yes
+            province_has_center_of_trade_of_level = 1
+            owner = {
+                NOT = { tag = ADU }
+                capital_scope = {
+                    OR = {
+                        region = niger_region
+                        region = guinea_region
+                    }
+                }
+            }
+        }
+
+        allow = {
+            NOT = { has_country_flag = adu_has_guinean_friend_flag } #redundant
+            any_known_country = {
+                capital_scope = {
+                    OR = {
+                        region = niger_region
+                        region = guinea_region
+                    }
+                }
+                any_owned_province = {
+                    has_port = yes
+                    province_has_center_of_trade_of_level = 1
+                }
+                has_opinion = {
+                    who = ROOT
+                    value = 120
+                }
+                guaranteed_by = ROOT
+            }
+        }
+
+        effect = {
+            set_country_flag = adu_has_guinean_friend_flag
+            random_known_country = {
+                limit = {
+                    capital_scope = {
+                        OR = {
+                            region = niger_region
+                            region = guinea_region
+                        }
+                    }
+                    has_opinion = {
+                        who = ROOT
+                        value = 120
+                    }
+                    guaranteed_by = ROOT
+                    any_owned_province = {
+                        has_port = yes
+                        province_has_center_of_trade_of_level = 1
+                    }
+                }
+                country_event = { id = flavor_andalos.9 }
+            }
+        }
+    }
+}
