@@ -1,5 +1,5 @@
-owner = BUR
-controller = BUR
+owner = CHP
+controller = CHP
 capital = "Bar-le-Duc"
 is_city = yes
 culture = cosmopolitan_french
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 1
 base_production = 4
 base_manpower = 2
-add_core = BUR
+add_core = CHP
 add_core = FRA
 discovered_by = east_african
 discovered_by = eastern
