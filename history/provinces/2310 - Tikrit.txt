@@ -9,7 +9,7 @@ fort_15th = yes
 base_tax = 4
 base_production = 4
 base_manpower = 3
-
+add_core = ASY
 add_core = PAP
 discovered_by = east_african
 discovered_by = eastern
