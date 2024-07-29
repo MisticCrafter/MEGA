@@ -1,8 +1,8 @@
 owner = KNI
 controller = KNI
-capital = "el Qasr"
+capital = "Bavanessa"
 is_city = yes
-culture = crusader_egyptian
+culture = al_misr_arabic
 religion = catholic
 trade_goods = livestock
 base_tax = 1

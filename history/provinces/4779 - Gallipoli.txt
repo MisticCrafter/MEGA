@@ -1,6 +1,6 @@
 owner = LAE
 controller = LAE
-capital = "Gallipoli"
+capital = "Gallipolis"
 is_city = yes
 culture = crusader_greek
 religion = catholic

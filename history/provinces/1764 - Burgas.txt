@@ -1,6 +1,6 @@
 owner = BUL
 controller = BUL
-capital = "Burgas"
+capital = "Anchialos"
 is_city = yes
 culture = pontic_greek
 religion = catholic

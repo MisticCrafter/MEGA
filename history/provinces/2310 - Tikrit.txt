@@ -1,6 +1,6 @@
 owner = PAP
 controller = PAP
-capital = "Tikrit"
+capital = "Assur"
 is_city = yes
 culture = babylonian
 religion = catholic

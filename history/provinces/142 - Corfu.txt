@@ -1,6 +1,6 @@
 owner = CEP
 controller = CEP
-capital = "Corfu"
+capital = "Korypho"
 is_city = yes
 culture = greek
 religion = catholic

@@ -1,6 +1,6 @@
 owner = PAP
 controller = PAP
-capital = "Mardin"
+capital = "Merida"
 is_city = yes
 culture = assyrian
 religion = catholic

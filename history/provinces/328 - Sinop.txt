@@ -1,6 +1,6 @@
 owner = ARM
 controller = ARM
-capital = "Sinop"
+capital = "Sinope"
 is_city = yes
 culture = pontic_greek
 religion = catholic

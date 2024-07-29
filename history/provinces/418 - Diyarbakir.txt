@@ -1,6 +1,6 @@
 owner = TEM
 controller = TEM
-capital = "Diyar Bekir"
+capital = "Tigranacerta"
 is_city = yes
 culture = armenian
 religion = catholic

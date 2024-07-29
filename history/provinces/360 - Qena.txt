@@ -1,6 +1,6 @@
 owner = KNI
 controller = KNI
-capital = "Qus"
+capital = "Napoli en lo Nilo"
 is_city = yes
 culture = crusader_egyptian
 religion = catholic

@@ -1,6 +1,6 @@
 owner = GRE
 controller = GRE
-capital = "Athens"
+capital = "Athenai"
 is_city = yes
 culture = greek
 religion = catholic

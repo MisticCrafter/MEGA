@@ -1,6 +1,6 @@
 owner = NAX
 controller = NAX
-capital = "Ayntab"
+capital = "Cyrra"
 is_city = yes
 culture = crusader_antiochene
 religion = catholic

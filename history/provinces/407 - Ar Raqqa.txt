@@ -1,6 +1,6 @@
 owner = NAX
 controller = NAX
-capital = "Ar Rakkah"
+capital = "Callinica"
 is_city = yes
 culture = crusader_antiochene
 religion = catholic

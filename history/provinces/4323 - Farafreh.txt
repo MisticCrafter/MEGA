@@ -1,8 +1,8 @@
 owner = KNI
 controller = KNI
-capital = "Farafreh"
+capital = "Farafenna"
 is_city = yes
-culture = crusader_egyptian
+culture = al_misr_arabic
 religion = catholic
 trade_goods = livestock
 fort_15th = yes

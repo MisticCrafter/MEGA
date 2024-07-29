@@ -1,6 +1,6 @@
 owner = KNI
 controller = KNI
-capital = "Al Fayyum"
+capital = "Bacchida"
 is_city = yes
 culture = al_misr_arabic
 religion = catholic

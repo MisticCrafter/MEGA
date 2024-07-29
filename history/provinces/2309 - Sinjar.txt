@@ -1,6 +1,6 @@
 owner = PAP
 controller = PAP
-capital = "Sindjar"
+capital = "Singara"
 is_city = yes
 culture = assyrian
 religion = catholic

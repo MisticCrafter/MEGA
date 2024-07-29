@@ -1,6 +1,6 @@
 owner = KNI
 controller = KNI
-capital = "Girga"
+capital = "Girganna"
 is_city = yes
 culture = al_misr_arabic
 religion = catholic

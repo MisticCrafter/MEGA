@@ -1,6 +1,6 @@
 owner = Z08
 controller = Z08
-capital = "Yozgat"
+capital = "Tavion"
 is_city = yes
 culture = anatolian
 religion = catholic

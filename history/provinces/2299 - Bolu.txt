@@ -1,6 +1,6 @@
 owner = Z08
 controller = Z08
-capital = "Bolu"
+capital = "Klaudioupolis"
 is_city = yes
 culture = pontic_greek
 religion = catholic

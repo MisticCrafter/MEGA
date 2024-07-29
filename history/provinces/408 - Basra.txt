@@ -1,6 +1,6 @@
 owner = Z00
 controller = Z00
-capital = "Basra"
+capital = "Apollogena"
 is_city = yes
 culture = crusader_mesopotamian
 religion = catholic
