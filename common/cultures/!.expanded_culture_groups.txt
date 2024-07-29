@@ -30,6 +30,21 @@ germanic = {
 			Solna "von Neusohl" "von Eperies" Fragopolis "von Kaschau"
 		}
 	}
+	hilfsvolk = {
+		primary = HAB
+	}
+	bergevolk = {
+		primary = HAB 
+	}
+	baumvolk = {
+		primary = HAB
+	}
+	silesian1 = {
+		primary = HAB
+	}
+	upper_saxon = {
+		primary = HAB
+	}
 	
 	jerusalemer = { primary = KOJ }
 	kurlander = { primary = KUR }
