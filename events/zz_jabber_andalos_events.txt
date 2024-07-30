@@ -433,7 +433,6 @@ country_event = {
 	option = {
         # Hire Vasco da Gama
 		name = flavor_andalos.8.a
-		ai_chance = { factor = 1 }
 		add_years_of_income = -0.25
 		define_explorer = {
 			name = "Vasco da Gama"
@@ -476,7 +475,7 @@ country_event = {
     option = {
         # Ally with Andalos
         name = flavor_andalos.9.a
-        ai_chance = { factor = 90 }
+        ai_chance = { factor = 75 }
         create_alliance = FROM
 		add_historical_friend = FROM
         add_country_modifier = {
@@ -509,12 +508,13 @@ country_event = {
 			add_historical_friend = ROOT
 			set_country_flag = adu_has_guinean_friend_flag
 		}
+		set_country_flag = adu_guinean_friend
     }
 
     option = {
         # Reject them
         name = flavor_andalos.9.b
-        ai_chance = { factor = 10 }
+        ai_chance = { factor = 25 }
         add_prestige_or_monarch_power = {
 			amount = 10
 		}
@@ -638,6 +638,143 @@ country_event = {
                 name = "adu_feitoria"
                 duration = -1
             }
+		}
+	}
+}
+
+# Brothers in Faith (spawns for african friend)
+country_event = {
+	id = flavor_andalos.13
+	title = flavor_andalos.13.title
+	desc = flavor_andalos.13.desc
+	picture = RELIGIOUS_CONVERSION_eventPicture
+
+	major = yes
+	fire_only_once = yes
+
+	major_trigger = {
+		capital_scope = {
+            OR = {
+                superregion = europe_superregion
+                region = mashriq_region
+                region = maghreb_region
+                region = egypt_region
+                region = horn_of_africa_region
+                region = arabia_region
+            }
+        }
+	}
+
+	trigger = {
+		ADU = {
+			has_country_flag = adu_has_guinean_friend_flag
+		}
+		has_country_flag = adu_guinean_friend
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = flavor_andalos.13.a
+		ai_chance = { factor = 75 }
+		change_religion = tigranic
+		add_country_modifier = {
+			name = "religious_zeal"
+			duration = 7300
+		}
+		capital_scope = {
+			add_building_construction = {
+				building = cathedral
+				speed = 0.5
+				cost = 0.5
+			}
+		}
+	}
+
+	option = {
+		name = flavor_andalos.13.b
+		ai_chance = { factor = 25 }
+		add_prestige = 10
+		add_country_modifier = {
+			name = "adu_rejected_faith_union"
+			duration = 7300
+		}
+		reverse_add_opinion = {
+			who = ADU
+			modifier = renounced_as_heretics
+		}
+	}
+}
+
+# The Fall of Hellas
+country_event = {
+	id = flavor_andalos.14
+	title = flavor_andalos.14.title
+	desc = flavor_andalos.14.desc
+	picture = EUROPEAN_REFUGEES_eventPicture
+
+	major = yes
+	fire_only_once = yes
+
+	major_trigger = {
+		capital_scope = {
+            OR = {
+                superregion = europe_superregion
+                region = mashriq_region
+                region = maghreb_region
+                region = egypt_region
+                region = horn_of_africa_region
+                region = arabia_region
+            }
+        }
+	}
+
+	trigger = {
+		tag = ADU
+		GRE = {
+			OR = {
+				NOT = { primary_culture = greek }
+				exists = no
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = flavor_andalos.14.a
+		custom_tooltip = hellenic_refugees_andal_tt
+		hidden_effect = {
+			every_known_country = {
+				limit = {
+					primary_culture = andal
+				}
+				add_prestige = 10
+				add_adm_power = -50
+				add_country_modifier = {
+					name = "adu_hellenic_refugees"
+					duration = 7300
+				}
+			}
+		}
+		custom_tooltip = hellenic_refugees_tigranic_tt
+		hidden_effect = {
+			every_known_country = {
+				limit = {
+					NOT = { primary_culture = andal }
+					religion = tigranic
+				}
+				add_prestige = 5
+				add_adm_power = -10
+				add_country_modifier = {
+					name = "tigranic_hellenic_refugees"
+					duration = 7300
+				}
+			}
 		}
 	}
 }
