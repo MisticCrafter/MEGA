@@ -1,5 +1,5 @@
 andal_crown_reform = {
-	icon = "gov_andal_crown"
+	icon = "andal_crown"
 	allow_normal_conversion = no
 	potential = {
 		primary_culture = andal
@@ -23,7 +23,7 @@ andal_crown_reform = {
 }
 
 andal_subject_reform = {
-	icon = "gov_andal_subject"
+	icon = "andal_subject"
 	allow_normal_conversion = no
 	potential = {
 		culture_group = iberian
@@ -47,7 +47,7 @@ andal_subject_reform = {
 
 
 absolutist_andalos_reform = {
-	icon = "gov_andal_absolute"
+	icon = "andal_absolute"
 	allow_normal_conversion = no
 	potential = {
 		has_dlc = "Domination" 

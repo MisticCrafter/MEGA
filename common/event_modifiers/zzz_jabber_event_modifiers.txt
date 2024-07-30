@@ -122,6 +122,20 @@ adu_andal_red = {
     local_unrest = -1
 }
 
+adu_rejected_faith_union = {
+    unrest_catholic_provinces = -1
+    church_loyalty_modifier = 0.1
+    church_influence_modifier = 0.1
+    burghers_loyalty_modifier = -0.1
+    burghers_influence_modifier = -0.1
+}
+
+adu_hellenic_refugees = {
+    idea_cost = -0.05
+    global_colonial_growth = 25
+    state_maintenance_modifier = 0.25
+}
+
 ###
 
 tigranic_global_cooldown_modifier = {
@@ -197,5 +211,10 @@ tigranic_techlessons_modifier = {
 tigranic_colonylessons_modifier = {
     colony_development_boost = 1
     colony_cost_modifier = -0.25
+}
+
+tigranic_hellenic_refugees = {
+    state_maintenance_modifier = 0.05
+    global_colonial_growth = 15
 }
 

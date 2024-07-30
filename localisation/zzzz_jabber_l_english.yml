@@ -143,6 +143,7 @@
  adu_east_india_company_modifier: "Great House of India"
  adu_african_alliance: "Andal Weaponry"
  adu_andal_red: "Andal Red"
+ adu_rejected_faith_union: "Rejected a Union of Faith"
  tigranic_global_cooldown_modifier: "Recently Activated Aspect"
  tigranic_riveraspect_cooldown_modifier: "Recently Issued River Decree"
  tigranic_divination_adm_modifier: "Premonitions of a Good Harvest"
@@ -158,7 +159,6 @@
  tigranic_buildlessons_modifier: "Lessons of Valerio, the Builder"
  tigranic_techlessons_modifier: "Lessons of Tigranna, the Scholar"
  tigranic_colonylessons_modifier: "Lessons of Marianos, the Father"
-
 
  # Tooltips
  adu_discover_congo_tt: "We will discover the center of the §YCongo§! trade node."
@@ -178,6 +178,8 @@
  227_gets_trade_upgrade_tt: "§YLisarra§! will have its §YTrade§! building upgraded."
  adu_highest_dev_capital_tt: "§YSintra§! has the highest development in Europe."
  adu_has_guinean_friend_tt: "At least one gold producer in §YWest Africa§! has at least §Y100§! opinion of us."
+ hellenic_refugees_andal_tt: "All §YAndal§! nations will gain §G10§! Prestige, lose §R50§! Administrative Power and get '§YHellenic Refugees§!' for §Y20 years§!, giving the following effects:\nState Maintenance: §R+25%§!\nGlobal Settler Increase: §G+25.00§!\nIdea Cost: §G-5.0%§!"
+ hellenic_refugees_tigranic_tt: "\nAll §Ynon-Andal Tigranic§! nations will gain §G5§! Prestige, lose §R10§! Administrative Power and get '§YHellenic Refugees§!' for §Y20 years§!, giving the following effects:\nState Maintenance: §R+5%§!\nGlobal Settler Increase: §G+15.00§!"
  flavor_andalos_1_tt: "§GEvent Insight:§!\nWe will make a petition for the purchase of §YMacau§!. If we have good enough relations with its ruler, we may be successful.\n§RNote: If the local ruler agrees, we will pay a sum equal to two years of their monthly income!§!"
  flavor_andalos_2_tt: "§GEvent Insight:§!\nWe will make a petition for the purchase of §YHizen§!. If we have good enough relations with its ruler, we may be successful.\n§RNote: If the local ruler agrees, we will pay a sum equal to two years of their monthly income!§!"
  flavor_andalos_3_tt: "§GEvent Insight:§!\nWe will make a petition for the purchase of §YSocotra§!. If we have good enough relations with its ruler, we may be successful.\n§RNote: If the local ruler agrees, we will pay a sum equal to two years of their monthly income!§!"
@@ -231,6 +233,13 @@
  flavor_andalos.12.title: "Socotra is ours!"
  flavor_andalos.12.desc: "At last, we have received a reply from the rulers of Socotra: they accept our deal! Socotra now flies the Andal flag!"
  flavor_andalos.12.a: "Huzzah!"
+ flavor_andalos.13.title: "Brothers in Faith"
+ flavor_andalos.13.desc: "Our people were as quick to trade as they were to break bread with one another, and we are all the richer for it. There isn't a day where a ship isn't spotted sailing south, loaded with Andal wine, fruits, salted meats or textiles, or another sailing north to mirror it, carrying [Root.Culture.GetName] ivory, precious metals, dyes or coffee. Our ports grow busier than every before, and it is not uncommon to see Andal men wandering about and chatting with our own. Many enjoy one another's dishes, spend hours telling each other stories, describing one another's homelands and natal lands and speak of one another's culture, traditions and, above all, religion.\nWe are all followers of Christ, but the ways of the Andals are not the same as our own. They do not hold to Rome's teachings, they do not spare a thought for the Pope, they seek to integrate folk traditions rather than uproot them and they hold the act of reflection as highly as they do prayer, judging them to be two sides of the same coin. A most unorthodox creed indeed, but nevertheless an interesting one - considerable scores of our countrymen have already converted, and even our monarch periodically reflects on the matter, much to the displeasure of the clergy. It's clear that [Root.Monarch.GetName] must make a decision: does [Root.GetName] keep its ties with the Papacy, or does it follow in the Andals' footsteps?"
+ flavor_andalos.13.a: "The Andals have aided us far more than the Pope ever has. Let us adopt their ways!"
+ flavor_andalos.13.b: "The Romans were clear in their teachings: the Pope is absolute!"
+ flavor_andalos.14.title: "The Fall of Hellas"
+ flavor_andalos.14.desc: "Not two weeks past, we received a raven: Attica fell, and Athens burned with it. Then another: Argos is blockaded, half our fleet is in flames. And yet another: Mystras, Patras and Elis are under siege and cannot hold for much longer. And yet another. And yet another. Today, however, the raven did not bear King Eirenaios' seal, but that of our own subject, the count of Cartagena: hundreds of ships have near-assailed the harbour, spilling thousands of our downtrodden brethren and kin into the city. Traders, nobles, injured warriors, lowly peasants and even the King of Hellas himself. Indeed, our worst fear has been realized: our brother realm, Hellas, has fallen, and its folk seek refuge in our lands."
+ flavor_andalos.14.a: "Welcome, welcome and thrice-welcome!"
  # Events (Tigranic)
  flavor_tigranic.1.title: "Divine the Stars"
  flavor_tigranic.1.desc: "mlem"
