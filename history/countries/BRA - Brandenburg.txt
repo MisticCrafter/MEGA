@@ -34,20 +34,19 @@ capital = 4748
 	add_queen_personality = careful_personality
 	add_queen_personality = tolerant_personality
 	heir = {
-		name = "Charlie"
-		monarch_name = "Charlie"
-		dynasty = "von Babenberg"
-		adm = 4
-		dip = 6
-		mil = 3
+		name = "Harry Burt"
+		monarch_name = "Harry Burt"
+		dynasty = "Orsini"
+		adm = 3
+		dip = 2
+		mil = 4
 		birth_date = 1423.8.28
 		death_date = 1488.8.28
-		female = yes
+		female = no
 		claim = 89
 		religion = catholic
 		culture = bavarian
 	}
-	add_heir_personality = fertile_personality
 	add_heir_personality = pious_personality
 }
 1444.11.11= {
