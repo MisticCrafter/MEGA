@@ -1,5 +1,5 @@
-owner = MLO
-controller = MLO
+owner = SAV
+controller = SAV
 capital = "Pavia"
 is_city = yes
 culture = lombard
@@ -8,7 +8,7 @@ trade_goods = grain
 base_tax = 4
 base_production = 5
 base_manpower = 2
-add_core = MLO
+add_core = SAV
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

@@ -1,5 +1,5 @@
-owner = MLO
-controller = MLO
+owner = SAV
+controller = SAV
 capital = "Brescia"
 is_city = yes
 culture = venetian
@@ -8,7 +8,7 @@ trade_goods = cloth
 base_tax = 4
 base_production = 1
 base_manpower = 2
-add_core = MLO
+add_core = SAV
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

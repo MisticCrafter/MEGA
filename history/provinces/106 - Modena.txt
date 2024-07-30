@@ -1,5 +1,5 @@
-owner = MLO
-controller = MLO
+owner = SAV
+controller = SAV
 capital = "Modena"
 is_city = yes
 culture = romagnan
@@ -9,7 +9,7 @@ base_tax = 5
 base_production = 1
 base_manpower = 4
 add_core = FER
-add_core = MLO
+add_core = SAV
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian
