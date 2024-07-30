@@ -170,7 +170,7 @@ swiss_minority = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
 	potential = {
-		tag = MLO
+		tag = SAV
 	}
 	
 	custom_attributes = {
