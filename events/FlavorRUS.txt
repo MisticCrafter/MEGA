@@ -2576,86 +2576,15 @@ country_event = {
 	# Establish the autonomous Grand Duchy of Finland
 	option = {
 		name = flavor_rus.105.a
-		hidden_effect = {
-			finland_area = {
-				add_core = FIN
-				remove_core = ROOT 
-				if = {
-					limit = { NOT = { owned_by = ROOT } }
-					cede_province = ROOT
-				}
+		every_owned_province = {
+			limit = {
+				culture = finnish
 			}
-			bothnia_area = {
-				add_core = FIN
-				remove_core = ROOT 
-				if = {
-					limit = { NOT = { owned_by = ROOT } }
-					cede_province = ROOT
-				}
-			}
-			1930 = {
-				add_core = FIN
-				remove_core = ROOT 
-				if = {
-					limit = { NOT = { owned_by = ROOT } }
-					cede_province = ROOT
-				}
-			}
-			32 = {
-				add_core = FIN
-				remove_core = ROOT 
-				if = {
-					limit = { NOT = { owned_by = ROOT } }
-					cede_province = ROOT
-				}
-			}
-			4124 = {
-				add_core = FIN
-				remove_core = ROOT 
-				if = {
-					limit = { NOT = { owned_by = ROOT } }
-					cede_province = ROOT
-				}
-			}
-			4151 = {
-				add_core = FIN
-				remove_core = ROOT 
-				if = {
-					limit = { NOT = { owned_by = ROOT } }
-					cede_province = ROOT
-				}
-			}
+			add_core = FIN
+			remove_core = ROOT
+			cede_province = FIN
 		}
-		if = {
-			limit = { NOT = { exists = FIN } }
-			release = FIN
-			hidden_effect = {
-				FIN = {
-					change_government = monarchy
-					add_government_reform = feudalism_reform
-					if = {
-						limit = { 28 = { religion = catholic } }
-						change_religion = catholic
-					}
-					else_if = {
-						limit = { 28 = { religion = protestant } }
-						change_religion = protestant
-					}
-					else_if = {
-						limit = { 28 = { religion = reformed } }
-						change_religion = reformed
-					}
-					else = {
-						change_religion = orthodox
-					}
-					change_primary_culture = finnish
-					set_prestige_to_zero = yes
-					add_adm_power = 50
-					add_dip_power = 50
-					add_mil_power = 50
-				}
-			}
-		}
+
 		if = {
 			limit = { FIN = { is_subject = no } }
 			if = {
