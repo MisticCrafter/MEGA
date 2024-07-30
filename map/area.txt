@@ -1068,7 +1068,7 @@ northern_greece_area = { #3 #Northern Greece
 	142 144 147 4699 4698
 }
 
-eastern_thrace_area = { #3 #Northern Greece
+western_thrace_area = { #3 #Northern Greece
 	4705 4702 148
 }
 

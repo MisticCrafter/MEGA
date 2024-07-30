@@ -280,7 +280,7 @@ balkan_region = {
 		albania_area
 		silistria_area
 		slavonia_area
-		eastern_thrace_area
+		western_thrace_area
 	}
 }
 
