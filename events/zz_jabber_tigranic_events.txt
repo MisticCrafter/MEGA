@@ -17,21 +17,33 @@ country_event = {
 		name = flavor_tigranic.1.a
 		random_list = {
 			33 = {
-				add_country_modifier = {
-					name = "tigranic_divination_adm_modifier"
-					duration = 4750
+				country_event = { id = flavor_tigranic.14 }
+				custom_tooltip = tigranic_divination_adm_tt
+				tooltip = {
+					add_country_modifier = {
+						name = "tigranic_divination_adm_modifier"
+						duration = 4750
+					}
 				}
 			}
 			33 = {
-				add_country_modifier = {
-					name = "tigranic_divination_dip_modifier"
-					duration = 4750
+				country_event = { id = flavor_tigranic.15 }
+				custom_tooltip = tigranic_divination_dip_tt
+				tooltip = {
+					add_country_modifier = {
+						name = "tigranic_divination_dip_modifier"
+						duration = 4750
+					}
 				}
 			}
 			33 = {
-				add_country_modifier = {
-					name = "tigranic_divination_mil_modifier"
-					duration = 4750
+				country_event = { id = flavor_tigranic.16 }
+				custom_tooltip = tigranic_divination_mil_tt
+				tooltip = {
+					add_country_modifier = {
+						name = "tigranic_divination_mil_modifier"
+						duration = 4750
+					}
 				}
 			}
 		}
@@ -305,5 +317,71 @@ country_event = {
 
 	option = {
 		name = flavor_tigranic.13.a
+	}
+}
+
+# Divine the Stars (adm result)
+country_event = {
+    id = flavor_tigranic.14
+	title = flavor_tigranic.14.title
+	desc = flavor_tigranic.14.desc
+	picture = FEAST_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		religion = tigranic
+	}
+
+	option = {
+		name = flavor_tigranic.14.a
+		add_country_modifier = {
+			name = "tigranic_divination_adm_modifier"
+			duration = 7300
+		}
+	}
+}
+
+# Divine the Stars (dip result)
+country_event = {
+    id = flavor_tigranic.15
+	title = flavor_tigranic.15.title
+	desc = flavor_tigranic.15.desc
+	picture = FEAST_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		religion = tigranic
+	}
+
+	option = {
+		name = flavor_tigranic.15.a
+		add_country_modifier = {
+			name = "tigranic_divination_dip_modifier"
+			duration = 7300
+		}
+	}
+}
+
+# Divine the Stars (mil result)
+country_event = {
+    id = flavor_tigranic.16
+	title = flavor_tigranic.16.title
+	desc = flavor_tigranic.16.desc
+	picture = FEAST_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		religion = tigranic
+	}
+
+	option = {
+		name = flavor_tigranic.16.a
+		add_country_modifier = {
+			name = "tigranic_divination_mil_modifier"
+			duration = 7300
+		}
 	}
 }

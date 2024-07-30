@@ -124,7 +124,7 @@ adu_andal_red = {
 
 ###
 
-tigranic_cooldown_modifier = {
+tigranic_global_cooldown_modifier = {
     church_loyalty_modifier = 0.02
 }
 
