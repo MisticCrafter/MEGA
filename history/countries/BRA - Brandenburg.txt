@@ -20,7 +20,7 @@ capital = 4748
 	add_ruler_personality = midas_touched_personality
 	queen = {
 		name = "Raina"
-		dynasty = "Orsini"
+		dynasty = "Luitpolding"
 		adm = 5
 		dip = 3
 		mil = 5
@@ -29,23 +29,22 @@ capital = 4748
 		death_date = 1473.6.7
 		female = yes
 		religion = catholic
-		culture = sorbian
+		culture = austrian
 	}
 	add_queen_personality = careful_personality
 	add_queen_personality = tolerant_personality
 	heir = {
-		name = "Harry Burt"
-		monarch_name = "Harry Burt"
-		dynasty = "Orsini"
+		name = "Heribert"
+		monarch_name = "Heribert"
+		dynasty = "Luitpolding"
 		adm = 3
 		dip = 2
 		mil = 4
 		birth_date = 1423.8.28
 		death_date = 1488.8.28
-		female = no
 		claim = 89
 		religion = catholic
-		culture = bavarian
+		culture = austrian
 	}
 	add_heir_personality = pious_personality
 }
