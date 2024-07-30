@@ -138,7 +138,7 @@ adu_hellenic_refugees = {
 
 ###
 
-tigranic_cooldown_modifier = {
+tigranic_global_cooldown_modifier = {
     church_loyalty_modifier = 0.02
 }
 

@@ -8,14 +8,15 @@ country_decisions = {
 	}
 	provinces_to_highlight = {
 		OR = {
-			province_id = 4759 #oberkarten		60
-			province_id = 4751 #cilli	30
-			province_id = 128 # Unterkaerten	75
-			province_id = 129 # Krain	90 255
+			province_id = 4759 #oberkarten		60->45
+			province_id = 4751 #cilli	30 -> 22.5
+			province_id = 128 # Unterkaerten	75 -> 56.25
+			province_id = 129 # Krain	90->67.5 255 -> 191
 		}
 		NOT = { owned_by = ROOT }
 	}
 		allow = {
+		has_reform = austrian_absolute_monarchy
 		owns_core_province = 4759 
 		owns_core_province = 4751
 		owns_core_province = 128 
@@ -76,17 +77,18 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 			OR = {
-				province_id = 1767	#Szlavonia 82
-				province_id = 4757	#bjelovar	30
-				province_id = 152	#varasd	 37
-				province_id = 4756	#Kolubara 80
-				province_id = 141	#szendro 75
-				province_id = 4173 #szerem 75
-				province_id = 4239 #belgrade 67 446
+				province_id = 1767	#Szlavonia 82->61.5
+				province_id = 4757	#bjelovar	30->22.5
+				province_id = 152	#varasd	 37->27.75
+				province_id = 4756	#Kolubara 80->60
+				province_id = 141	#szendro 75->56.25
+				province_id = 4173 #szerem 75->56.25
+				province_id = 4239 #belgrade 67->50.25 446->334.5
 			}
 			NOT = { owned_by = ROOT }
 		}
 		allow = {
+			has_reform = austrian_absolute_monarchy
 			owns_or_subject_of = 1767
 			owns_or_subject_of = 4757
 			owns_or_subject_of = 152
@@ -96,7 +98,7 @@ country_decisions = {
 		effect = {
 			set_country_flag = hungarian_balkan_migration
 			add_years_of_income = -1 #cost to convert instantly instead of having to wait
-			dip_power_cost = 446 #how much diplo it takes from the start of the game to convert those provinces to Hungarian as Hungary
+			dip_power_cost = 335 #how much diplo it takes from the start of the game to convert those provinces to Hungarian as Hungary
 			1767 = {
 				change_culture = hungarian
 			}
@@ -157,11 +159,13 @@ country_decisions = {
 		}
 		allow = {
 			owns_core_province = 266 
+			has_reform = austrian_absolute_monarchy
 		}
 		effect = {
 			set_country_flag = cze_germanification
 			add_years_of_income = -1 #cost to convert instantly instead of having to wait
-			dip_power_cost = 592 #cost to convert province to sudeten german from start of the game, the total number was reduced by 33% due to bohemian historic subjugation by the German Confederation and Holy Roman Empire 
+			
+			dip_power_cost = 521 #reduced by 58%  838
 			266 = { 
 				change_culture = sudeten #180
 			}
@@ -199,6 +203,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			has_reform = austrian_absolute_monarchy
 			owns_core_province = 4752
 			owns_core_province = 137
 			owns_core_province = 136
@@ -207,7 +212,7 @@ country_decisions = {
 		}
 		effect = {
 			set_country_flag = western_balkans_settlement_act
-			dip_power_cost = 935
+			dip_power_cost = 701 #935
 			add_years_of_income = -1
 			4752 = { #75
 				change_culture = hilfsvolk
@@ -258,11 +263,13 @@ country_decisions = {
 			owns_all_provinces = {
 				area = silesia_area
 			}
+			has_reform = austrian_absolute_monarchy
 		}
 		effect = {
 			set_country_flag = silesia_subjugation
-			dip_power_cost = 330 #if you want to recheck my math go ahead, the jobs all yours :3
+			dip_power_cost = 247 #330
 			add_years_of_income = -0.75 #I think you get the point by now.
+			
 			2966 = { #80
 				change_culture = silesian1
 			}
