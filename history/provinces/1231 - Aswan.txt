@@ -1,6 +1,6 @@
 owner = KNI
 controller = KNI
-capital = "Aswan"
+capital = "Elefantinna"
 is_city = yes
 culture = crusader_egyptian
 religion = catholic

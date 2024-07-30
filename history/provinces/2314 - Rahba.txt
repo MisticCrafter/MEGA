@@ -1,8 +1,8 @@
 owner = PAP
 controller = PAP
-capital = "Deir ez-Zor"
+capital = "Dura-Europa"
 is_city = yes
-culture = assyrian
+culture = crusader_mesopotamian
 religion = catholic
 trade_goods = grain
 base_tax = 5

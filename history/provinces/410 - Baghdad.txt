@@ -1,6 +1,6 @@
 owner = PAP
 controller = PAP
-capital = "Baghdad"
+capital = "Cardunias"
 is_city = yes
 culture = crusader_mesopotamian
 religion = catholic

@@ -1,6 +1,6 @@
 owner = Z00
 controller = Z00
-capital = "Tadmuriyah"
+capital = "Palmira"
 is_city = yes
 culture = crusader_levantine
 religion = catholic

@@ -1,6 +1,6 @@
 owner = PAP
 controller = PAP
-capital = "Sahiliyah"
+capital = "Harradum"
 is_city = yes
 culture = babylonian
 religion = catholic

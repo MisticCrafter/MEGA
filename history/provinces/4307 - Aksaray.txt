@@ -1,6 +1,6 @@
 owner = Z02
 controller = Z02
-capital = "Aksaray"
+capital = "Koloneia"
 is_city = yes
 culture = anatolian
 religion = catholic

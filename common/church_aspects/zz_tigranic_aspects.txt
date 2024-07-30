@@ -1,5 +1,5 @@
 tigranic_divine_the_stars = {
-    sprite = "GFX_lessons_of_valerio"
+    sprite = "GFX_divine_the_stars"
     cost = 25
 
     trigger = {
@@ -8,23 +8,11 @@ tigranic_divine_the_stars = {
 
     effect = {
         country_event = { id = flavor_tigranic.1 } # Divine the Stars
-        # Clear feed/exploit duality flags
+        
         hidden_effect = {
-            if = {
-                limit = {
-                    has_country_flag = tigranic_feed_the_land_flag
-                }
-                clr_country_flag = tigranic_feed_the_land_flag
-            }
-            if = {
-                limit = {
-                    has_country_flag = tigranic_exploit_the_land_flag
-                }
-                clr_country_flag = tigranic_exploit_the_land_flag
-            }
             add_country_modifier = {
                 name = tigranic_cooldown_modifier
-                duration = 4750
+                duration = 365
             }
         }
     }
@@ -32,7 +20,7 @@ tigranic_divine_the_stars = {
 }
 
 tigranic_arrange_a_festival = {
-    sprite = "GFX_lessons_of_valerio"
+    sprite = "GFX_arrange_festival"
     cost = 25
 
     trigger = {
@@ -42,30 +30,18 @@ tigranic_arrange_a_festival = {
 
     effect = {
         country_event = { id = flavor_tigranic.2 } # A Feast in [capital]
-        # Clear feed/exploit duality flags
+        
         hidden_effect = {
-            if = {
-                limit = {
-                    has_country_flag = tigranic_feed_the_land_flag
-                }
-                clr_country_flag = tigranic_feed_the_land_flag
-            }
-            if = {
-                limit = {
-                    has_country_flag = tigranic_exploit_the_land_flag
-                }
-                clr_country_flag = tigranic_exploit_the_land_flag
-            }
             add_country_modifier = {
                 name = tigranic_cooldown_modifier
-                duration = 4750
+                duration = 365
             }
         }
     }
 }
 
 tigranic_hold_a_triumph = {
-    sprite = "GFX_lessons_of_valerio"
+    sprite = "GFX_hold_triumph"
     cost = 25
 
     trigger = {
@@ -75,30 +51,18 @@ tigranic_hold_a_triumph = {
 
     effect = {
         country_event = { id = flavor_tigranic.3 } # A Triumph in [capital]
-        # Clear feed/exploit duality flags
+        
         hidden_effect = {
-            if = {
-                limit = {
-                    has_country_flag = tigranic_feed_the_land_flag
-                }
-                clr_country_flag = tigranic_feed_the_land_flag
-            }
-            if = {
-                limit = {
-                    has_country_flag = tigranic_exploit_the_land_flag
-                }
-                clr_country_flag = tigranic_exploit_the_land_flag
-            }
             add_country_modifier = {
                 name = tigranic_cooldown_modifier
-                duration = 4750
+                duration = 365
             }
         }
     }
 }
 
 tigranic_paladins = {
-    sprite = "GFX_lessons_of_valerio"
+    sprite = "GFX_elevate_paladins"
     cost = 25
 
     trigger = {
@@ -108,23 +72,11 @@ tigranic_paladins = {
 
     effect = {
         country_event = { id = flavor_tigranic.4 } # The Paladins of [country]
-        # Clear feed/exploit duality flags
+        
         hidden_effect = {
-            if = {
-                limit = {
-                    has_country_flag = tigranic_feed_the_land_flag
-                }
-                clr_country_flag = tigranic_feed_the_land_flag
-            }
-            if = {
-                limit = {
-                    has_country_flag = tigranic_exploit_the_land_flag
-                }
-                clr_country_flag = tigranic_exploit_the_land_flag
-            }
             add_country_modifier = {
                 name = tigranic_cooldown_modifier
-                duration = 4750
+                duration = 365
             }
         }
     }
@@ -132,7 +84,7 @@ tigranic_paladins = {
 
 
 tigranic_warsongs = {
-    sprite = "GFX_lessons_of_valerio"
+    sprite = "GFX_romanticized_feats"
     cost = 25
 
     trigger = {
@@ -141,30 +93,18 @@ tigranic_warsongs = {
 
     effect = {
         country_event = { id = flavor_tigranic.5 } # Hymns of Good War
-        # Clear feed/exploit duality flags
+        
         hidden_effect = {
-            if = {
-                limit = {
-                    has_country_flag = tigranic_feed_the_land_flag
-                }
-                clr_country_flag = tigranic_feed_the_land_flag
-            }
-            if = {
-                limit = {
-                    has_country_flag = tigranic_exploit_the_land_flag
-                }
-                clr_country_flag = tigranic_exploit_the_land_flag
-            }
             add_country_modifier = {
                 name = tigranic_cooldown_modifier
-                duration = 4750
+                duration = 365
             }
         }
     }
 }
 
 tigranic_rite_of_fertility = {
-    sprite = "GFX_lessons_of_valerio"
+    sprite = "GFX_rite_of_fertility"
     cost = 25
 
     trigger = {
@@ -174,67 +114,59 @@ tigranic_rite_of_fertility = {
 
     effect = {
         country_event = { id = flavor_tigranic.6 } # Rite of Fertility
-        # Clear feed/exploit duality flags
+        
         hidden_effect = {
-            if = {
-                limit = {
-                    has_country_flag = tigranic_feed_the_land_flag
-                }
-                clr_country_flag = tigranic_feed_the_land_flag
-            }
-            if = {
-                limit = {
-                    has_country_flag = tigranic_exploit_the_land_flag
-                }
-                clr_country_flag = tigranic_exploit_the_land_flag
-            }
             add_country_modifier = {
                 name = tigranic_cooldown_modifier
-                duration = 4750
+                duration = 365
             }
         }
     }
 }
 
 tigranic_feed_the_land = {
-    sprite = "GFX_lessons_of_valerio"
+    sprite = "GFX_feed_the_land"
     cost = 50
 
     trigger = {
-        NOT = { has_country_flag = tigranic_exploit_the_land_flag }
-        NOT = { has_country_flag = tigranic_feed_the_land_flag }
+        NOT = { has_country_modifier = tigranic_riveraspect_cooldown_modifier }
         NOT = { has_country_modifier = tigranic_cooldown_modifier }
     }
 
     effect = {
         country_event = { id = flavor_tigranic.7 } # Feed the Land
         hidden_effect = {
-            set_country_flag = tigranic_feed_the_land_flag
+            add_country_modifier = {
+                name = tigranic_riveraspect_cooldown_modifier
+                duration = 7300
+            }
             add_country_modifier = {
                 name = tigranic_cooldown_modifier
-                duration = 4750
+                duration = 365
             }
         }
     }
 }
 
 tigranic_exploit_the_land = {
-    sprite = "GFX_lessons_of_valerio"
+    sprite = "GFX_exploit_the_land"
     cost = 50
 
     trigger = {
-        NOT = { has_country_flag = tigranic_exploit_the_land_flag }
-        NOT = { has_country_flag = tigranic_feed_the_land_flag }
+        NOT = { has_country_modifier = tigranic_riveraspect_cooldown_modifier }
         NOT = { has_country_modifier = tigranic_cooldown_modifier }
     }
 
     effect = {
         country_event = { id = flavor_tigranic.8 } # Exploit the Land
         hidden_effect = {
-            set_country_flag = tigranic_exploit_the_land_flag
+            add_country_modifier = {
+                name = tigranic_riveraspect_cooldown_modifier
+                duration = 7300
+            }
             add_country_modifier = {
                 name = tigranic_cooldown_modifier
-                duration = 4750
+                duration = 365
             }
         }
     }
@@ -262,30 +194,18 @@ tigranic_lessons_of_valerio = {
 
     effect = {
         country_event = { id = flavor_tigranic.9 } # Lessons of Valerio
-        # Clear feed/exploit duality flags
+        
         hidden_effect = {
-            if = {
-                limit = {
-                    has_country_flag = tigranic_feed_the_land_flag
-                }
-                clr_country_flag = tigranic_feed_the_land_flag
-            }
-            if = {
-                limit = {
-                    has_country_flag = tigranic_exploit_the_land_flag
-                }
-                clr_country_flag = tigranic_exploit_the_land_flag
-            }
             add_country_modifier = {
                 name = tigranic_cooldown_modifier
-                duration = 4750
+                duration = 365
             }
         }
     }
 }
 
 tigranic_lessons_of_tigranna = {
-    sprite = "GFX_lessons_of_valerio"
+    sprite = "GFX_lessons_of_tigranna"
     cost = 75
 
     trigger = {
@@ -307,30 +227,18 @@ tigranic_lessons_of_tigranna = {
 
     effect = {
         country_event = { id = flavor_tigranic.10 } # Lessons of Tigranna
-        # Clear feed/exploit duality flags
+        
         hidden_effect = {
-            if = {
-                limit = {
-                    has_country_flag = tigranic_feed_the_land_flag
-                }
-                clr_country_flag = tigranic_feed_the_land_flag
-            }
-            if = {
-                limit = {
-                    has_country_flag = tigranic_exploit_the_land_flag
-                }
-                clr_country_flag = tigranic_exploit_the_land_flag
-            }
             add_country_modifier = {
                 name = tigranic_cooldown_modifier
-                duration = 4750
+                duration = 365
             }
         }
     }
 }
 
 tigranic_lessons_of_marianos = {
-    sprite = "GFX_lessons_of_valerio"
+    sprite = "GFX_lessons_of_marianos"
     cost = 75
 
     trigger = {
@@ -352,30 +260,18 @@ tigranic_lessons_of_marianos = {
 
     effect = {
         country_event = { id = flavor_tigranic.11 } # Lessons of Marianos
-        # Clear feed/exploit duality flags
+        
         hidden_effect = {
-            if = {
-                limit = {
-                    has_country_flag = tigranic_feed_the_land_flag
-                }
-                clr_country_flag = tigranic_feed_the_land_flag
-            }
-            if = {
-                limit = {
-                    has_country_flag = tigranic_exploit_the_land_flag
-                }
-                clr_country_flag = tigranic_exploit_the_land_flag
-            }
             add_country_modifier = {
                 name = tigranic_cooldown_modifier
-                duration = 4750
+                duration = 365
             }
         }
     }
 }
 
 tigranic_summon_the_courts = {
-    sprite = "GFX_lessons_of_valerio"
+    sprite = "GFX_summon_courts"
     cost = 100
 
     trigger = {
@@ -387,30 +283,17 @@ tigranic_summon_the_courts = {
 
     effect = {
         country_event = { id = flavor_tigranic.12 } # Summon the Courts
-        # Clear feed/exploit duality flags (actual event bundled in)
         hidden_effect = {
-            if = {
-                limit = {
-                    has_country_flag = tigranic_feed_the_land_flag
-                }
-                clr_country_flag = tigranic_feed_the_land_flag
-            }
-            if = {
-                limit = {
-                    has_country_flag = tigranic_exploit_the_land_flag
-                }
-                clr_country_flag = tigranic_exploit_the_land_flag
-            }
             add_country_modifier = {
                 name = tigranic_cooldown_modifier
-                duration = 4750
+                duration = 365
             }
         }
     }
 }
 
 tigranic_call_the_banners = {
-    sprite = "GFX_lessons_of_valerio"
+    sprite = "GFX_call_banners"
     cost = 100
 
     trigger = {
@@ -425,28 +308,17 @@ tigranic_call_the_banners = {
                 }
             }
         }
+        at_war_with_religious_enemy = yes
         NOT = { has_country_modifier = tigranic_cooldown_modifier }
     }
 
     effect = {
         country_event = { id = flavor_tigranic.13 } # Call the Banners
-        # Clear feed/exploit duality flags
+        
         hidden_effect = {
-            if = {
-                limit = {
-                    has_country_flag = tigranic_feed_the_land_flag
-                }
-                clr_country_flag = tigranic_feed_the_land_flag
-            }
-            if = {
-                limit = {
-                    has_country_flag = tigranic_exploit_the_land_flag
-                }
-                clr_country_flag = tigranic_exploit_the_land_flag
-            }
             add_country_modifier = {
                 name = tigranic_cooldown_modifier
-                duration = 4750
+                duration = 365
             }
         }
     }

@@ -1,6 +1,6 @@
 owner = Z02
 controller = Z02
-capital = "Karahisar"
+capital = "Philomelion"
 is_city = yes
 culture = anatolian
 religion = catholic

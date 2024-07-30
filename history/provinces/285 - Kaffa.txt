@@ -1,6 +1,6 @@
 owner = VEN
 controller = VEN
-capital = "Kaffa"
+capital = "Caffa"
 is_city = yes
 culture = pontic_greek
 religion = thibaultine

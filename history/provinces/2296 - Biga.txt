@@ -1,6 +1,6 @@
 owner = Z02
 controller = Z02
-capital = "Biga"
+capital = "Abydos"
 is_city = yes
 culture = greek
 religion = catholic

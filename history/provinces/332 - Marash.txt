@@ -1,6 +1,6 @@
 owner = Z02
 controller = Z02
-capital = "Maras"
+capital = "Germanikeia"
 is_city = yes
 culture = armeniac
 religion = catholic

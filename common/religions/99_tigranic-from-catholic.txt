@@ -28,7 +28,7 @@ christian = {
 		uses_anglican_power = yes
 		aspects = {
 			tigranic_divine_the_stars
-			tigranic_rein_in_subjects
+			tigranic_arrange_a_festival
 			tigranic_hold_a_triumph
 			tigranic_paladins
 			tigranic_warsongs

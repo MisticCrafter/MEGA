@@ -1,6 +1,6 @@
 owner = ARM
 controller = ARM
-capital = "Erzindjan"
+capital = "Kelezene"
 is_city = yes
 culture = armenian
 religion = catholic

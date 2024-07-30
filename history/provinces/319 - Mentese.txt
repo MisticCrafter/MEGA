@@ -1,6 +1,6 @@
 owner = Z02
 controller = Z02
-capital = "Mughla"
+capital = "Halikarnassos"
 is_city = yes
 culture = greek
 religion = catholic

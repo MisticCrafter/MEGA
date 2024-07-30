@@ -1,0 +1,15 @@
+spriteTypes = {
+
+    spriteType = {
+		name = "gov_andal_crown"
+		texturefile = "gfx//interface//government_reform_icons//andal_crown.dds"	
+	}
+    spriteType = {
+		name = "gov_andal_subject"
+		texturefile = "gfx//interface//government_reform_icons//andal_subject.dds"	
+	}
+    spriteType = {
+		name = "gov_andal_absolute"
+		texturefile = "gfx//interface//government_reform_icons//andal_absolute.dds"	
+	}
+}

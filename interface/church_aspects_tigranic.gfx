@@ -1,7 +1,68 @@
 spriteTypes = {
 
     spriteType = {
+		name = "GFX_divine_the_stars"
+		texturefile = "gfx//interface//church_aspects//tigranic//divine_the_stars.dds"
+		legacy_lazy_load=no	
+	}
+	spriteType = {
+		name = "GFX_arrange_festival"
+		texturefile = "gfx//interface//church_aspects//tigranic//arrange_festival.dds"
+		legacy_lazy_load=no
+	}
+	spriteType = {
+		name = "GFX_hold_triumph"
+		texturefile = "gfx//interface//church_aspects//tigranic//hold_triumph.dds"
+		legacy_lazy_load=no
+	}
+	spriteType = {
+		name = "GFX_elevate_paladins"
+		texturefile = "gfx//interface//church_aspects//tigranic//elevate_paladins.dds"
+		legacy_lazy_load=no
+	}
+	spriteType = {
+		name = "GFX_romanticized_feats"
+		texturefile = "gfx//interface//church_aspects//tigranic//romanticized_feats.dds"
+		legacy_lazy_load=no
+	}
+	spriteType = {
+		name = "GFX_rite_of_fertility"
+		texturefile = "gfx//interface//church_aspects//tigranic//rite_of_fertility.dds"
+		legacy_lazy_load=no
+	}
+	spriteType = {
+		name = "GFX_feed_the_land"
+		texturefile = "gfx//interface//church_aspects//tigranic//feed_the_land.dds"
+		legacy_lazy_load=no
+	}
+	spriteType = {
+		name = "GFX_exploit_the_land"
+		texturefile = "gfx//interface//church_aspects//tigranic//exploit_the_land.dds"
+		legacy_lazy_load=no
+	}
+	spriteType = {
 		name = "GFX_lessons_of_valerio"
-		texturefile = "gfx//interface//church_aspects//tigranic//lessons_of_valerio.dds"	
+		texturefile = "gfx//interface//church_aspects//tigranic//lessons_of_valerio.dds"
+		legacy_lazy_load=no
+	}
+	spriteType = {
+		name = "GFX_lessons_of_tigranna"
+		texturefile = "gfx//interface//church_aspects//tigranic//lessons_of_tigranna.dds"
+		legacy_lazy_load=no
+	}
+	spriteType = {
+		name = "GFX_lessons_of_marianos"
+		texturefile = "gfx//interface//church_aspects//tigranic//lessons_of_marianos.dds"
+		legacy_lazy_load=no
+	}
+	spriteType = {
+		name = "GFX_summon_courts"
+		texturefile = "gfx//interface//church_aspects//tigranic//summon_courts.dds"
+		legacy_lazy_load=no
+	}
+	spriteType = {
+		name = "GFX_call_banners"
+		texturefile = "gfx//interface//church_aspects//tigranic//call_banners.dds"
+		legacy_lazy_load=no
 	}
 }
