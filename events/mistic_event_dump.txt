@@ -1,0 +1,881 @@
+namespace = flavor_new_swiss
+
+# Murder in Milan: 1450
+country_event = {
+    id = flavor_new_swiss.1
+    title = flavor_new_swiss.1.t
+    desc = flavor_new_swiss.1.d
+    picture = ANGRY_MOB_eventPicture
+
+    fire_only_once = yes
+    
+    trigger = {
+        tag = SWI
+        is_year = 1450
+        SAV = { has_reform = swiss_minority }
+		104 = { country_or_non_sovereign_subject_holds = ROOT }
+        4728 = { country_or_non_sovereign_subject_holds = ROOT }
+        1862 = { country_or_non_sovereign_subject_holds = ROOT }
+        4739 = { country_or_non_sovereign_subject_holds = ROOT }
+    }
+
+    immediate = {
+        if = {
+            limit = {
+                104 = {
+                    NOT = { culture = piedmontese }
+                }
+            }
+            104 = {
+                add_base_tax = -2
+		        add_base_production = -2
+		        add_base_manpower = -2
+                add_devastation = 50
+                change_culture = piedmontese
+            }
+        }
+        if = {
+            limit = {
+                4728 = {
+                    NOT = { culture = piedmontese }
+                }
+            }
+            4728 = {
+                add_base_tax = -1
+		        add_base_production = -1
+		        add_base_manpower = -1
+                add_devastation = 25
+                change_culture = piedmontese
+            }
+        }
+        if = {
+            limit = {
+                1862 = {
+                    NOT = { culture = piedmontese }
+                }
+            }
+            1862 = {
+                add_base_tax = -1
+		        add_base_production = -1
+		        add_base_manpower = -1
+                add_devastation = 25
+                change_culture = piedmontese
+            }
+        }
+        if = {
+            limit = {
+                4739 = {
+                    NOT = { culture = piedmontese }
+                }
+            }
+            4739 = {
+                add_base_tax = -1
+		        add_base_production = -1
+		        add_base_manpower = -1
+                add_devastation = 25
+                change_culture = piedmontese
+                change_trade_goods = livestock
+            }
+        }
+    }
+
+    option = {
+        name = flavor_new_swiss.1.a
+        add_prestige = -30
+    }
+}
+
+# Madness in Modena: 1460
+country_event = {
+    id = flavor_new_swiss.2
+    title = flavor_new_swiss.2.t
+    desc = flavor_new_swiss.2.d
+    picture = ANGRY_MOB_eventPicture
+
+    fire_only_once = yes
+
+    trigger = {
+        tag = SWI
+        is_year = 1460
+        SAV = { has_reform = swiss_minority }
+        105 = { country_or_non_sovereign_subject_holds = ROOT }
+        106 = { country_or_non_sovereign_subject_holds = ROOT }
+        109 = { country_or_non_sovereign_subject_holds = ROOT }
+    }
+
+    immediate = {
+        if = {
+            limit = {
+                105 = {
+                    NOT = { culture = piedmontese }
+                }
+            }
+            105 = {
+		        add_base_tax = -1
+		        add_base_production = -1
+		        add_base_manpower = -1
+                change_culture = piedmontese
+                add_devastation = 25
+            }
+        }
+        if = {
+            limit = {
+                106 = {
+                    NOT = { culture = piedmontese }
+                }
+            }
+            106 = {
+		        add_base_tax = -2
+		        add_base_production = -2
+		        add_base_manpower = -2
+                change_culture = piedmontese
+                add_devastation = 25
+            }
+		}
+        if = {
+            limit = {
+                109 = {
+                    NOT = { culture = piedmontese }
+                }
+            }
+            109 = {
+		        add_base_tax = -1
+		        add_base_production = -1
+		        add_base_manpower = -1
+                change_culture = piedmontese
+                add_devastation = 25
+            }
+        }
+    }
+
+    option = {
+        name = flavor_new_swiss.2.a
+        add_prestige = -30
+	}
+}
+
+# Violence in Verona: 1470
+country_event = {
+    id = flavor_new_swiss.3
+    title = flavor_new_swiss.3.t
+    desc = flavor_new_swiss.3.d
+    picture = ANGRY_MOB_eventPicture
+    
+    fire_only_once = yes
+    
+    trigger = {
+        tag = SWI
+        is_year = 1470
+        SAV = { has_reform = swiss_minority }
+		4729 = { country_or_non_sovereign_subject_holds = ROOT }
+        107 = { country_or_non_sovereign_subject_holds = ROOT }
+        108 = { country_or_non_sovereign_subject_holds = ROOT }
+        109 = { country_or_non_sovereign_subject_holds = ROOT }
+        110 = { country_or_non_sovereign_subject_holds = ROOT }
+    }
+
+    immediate = {
+        if = { 
+            limit = {
+                4729 = { religion = jewish }
+            }
+            4729 = {
+                add_base_tax = -1
+			    add_base_production = -1
+			    add_base_manpower = -1
+                remove_building = temple
+                change_religion = thibaultine
+                add_devastation = 25
+            }
+        }
+        if = {
+            limit = {
+                4729 = {
+                    NOT = { culture = piedmontese }
+                }
+            }
+            4729 = {
+		        add_base_tax = -2
+		        add_base_production = -2
+		        add_base_manpower = -2
+                change_culture = piedmontese
+                add_devastation = 25
+                change_trade_goods = grain
+            }
+		}
+        if = {
+            limit = {
+                107 = {
+                    NOT = { culture = piedmontese }
+                }
+            }
+            107 = {
+                add_base_tax = -1
+			    add_base_production = -1
+		        add_base_manpower = -1
+                add_devastation = 25
+                change_culture = piedmontese 
+            }
+		}
+        if = {
+            limit = {
+                108 = {
+                    NOT = { culture = piedmontese }
+                }
+            }
+            108 = {
+                add_base_tax = -1
+			    add_base_production = -1
+			    add_base_manpower = -1
+                add_devastation = 25
+                change_culture = piedmontese 
+            }
+		}
+        if = {
+            limit = {
+                110 = {
+                    NOT = { 
+                        OR = {
+                            culture = piedmontese
+                            culture = austrian 
+                            }
+                    }
+                }
+            }
+            110 = {
+                add_base_tax = -1
+		        add_base_production = -1
+		        add_base_manpower = -1
+                add_devastation = 25
+                change_culture = austrian
+                add_core = HAB
+            }
+        }
+        4729 = {
+            cede_province = SAV
+            add_core = SAV
+        }
+        107 = {
+            cede_province = SAV
+            add_core = SAV
+        }
+        108 = {
+            cede_province = SAV
+            add_core = SAV
+        }
+        110 = {
+            cede_province = SAV
+            add_core = SAV
+        }
+    }
+
+    option = {
+        name = "flavor_new_swiss.3.a"
+        add_prestige = -30
+    }
+}
+
+# Lawlessness in Liguria: 1480
+country_event = {
+    id = flavor_new_swiss.4
+    title = flavor_new_swiss.4.t
+    desc = flavor_new_swiss.4.d
+    picture = ANGRY_MOB_eventPicture
+    
+    fire_only_once = yes
+    
+    trigger = {
+        tag = SWI
+        is_year = 1480
+        SAV = { has_reform = swiss_minority }
+		2992 = { country_or_non_sovereign_subject_holds = ROOT }
+        101 = { country_or_non_sovereign_subject_holds = ROOT }
+        115 = { country_or_non_sovereign_subject_holds = ROOT }
+    }
+
+    immediate = {
+        if = {
+            limit = {
+                2992 = {
+                    NOT = { culture = piedmontese }
+                }
+            }
+            2992 = {
+                add_base_tax = -1
+			    add_base_production = -1
+			    add_base_manpower = -1
+                add_devastation = 25
+                change_culture = piedmontese 
+            }
+		}
+        if = {
+            limit = {
+                101 = {
+                    NOT = { culture = piedmontese }
+                }
+            }
+            101 = {
+                add_base_tax = -2
+			    add_base_production = -2
+			    add_base_manpower = -2
+                add_devastation = 25
+                change_culture = piedmontese 
+            }
+		}
+        if = {
+            limit = {
+                115 = {
+                    NOT = { culture = piedmontese }
+                }
+            }
+            115 = {
+                add_base_tax = -1
+			    add_base_production = -1
+			    add_base_manpower = -1
+                add_devastation = 25
+                change_culture = piedmontese 
+            }
+		}
+        2992 = {
+            cede_province = SAV
+            add_core = SAV
+        }
+        101 = {
+            cede_province = SAV
+            add_core = SAV
+        }
+        115 = {
+            cede_province = SAV
+            add_core = SAV
+        }
+    }
+
+    option = {
+        name = flavor_new_swiss.4.a
+        add_prestige = -30
+    }
+}
+
+# Tyranny in Trieste: 1490
+country_event = {
+    id = flavor_new_swiss.5
+    title = flavor_new_swiss.5.t
+    desc = flavor_new_swiss.5.d
+    picture = ANGRY_MOB_eventPicture
+    
+    fire_only_once = yes
+    
+    trigger = {
+        tag = SWI
+        is_year = 1490
+        SAV = { has_reform = swiss_minority }
+		1774 = { country_or_non_sovereign_subject_holds = ROOT }
+        111 = { country_or_non_sovereign_subject_holds = ROOT }
+        4738 = { country_or_non_sovereign_subject_holds = ROOT }
+    }
+
+    immediate = {
+        if = {
+            limit = {
+                1774 = {
+                    NOT = { culture = piedmontese }
+                }
+            }
+            1774 = {
+                add_base_tax = -1
+			    add_base_production = -1
+			    add_base_manpower = -1
+                add_devastation = 25
+                change_culture = piedmontese 
+                change_trade_goods = livestock
+            }
+		}
+        if = {
+            limit = {
+                111 = {
+                    NOT = { culture = piedmontese }
+                }
+            }
+            111 = {
+                add_base_tax = -1
+			    add_base_production = -1
+			    add_base_manpower = -1
+                add_devastation = 25
+                change_culture = piedmontese 
+            }
+		}
+        if = {
+            limit = {
+                4738 = {
+                    NOT = { culture = piedmontese }
+                }
+            }
+            4738 = {
+                add_base_tax = -2
+			    add_base_production = -2
+			    add_base_manpower = -2
+                add_devastation = 25
+                change_culture = piedmontese 
+            }
+		}
+        if = {
+            limit = {
+                130 = {
+                    NOT = { culture = piedmontese }
+                    country_or_non_sovereign_subject_holds = ROOT
+                }
+            }
+            130 = {
+                add_base_tax = -1
+			    add_base_production = -1
+			    add_base_manpower = -1
+                add_devastation = 25
+                change_culture = piedmontese 
+            }
+        }
+        if = {
+            limit = {
+                136 = {
+                    culture_group = latin
+                    country_or_non_sovereign_subject_holds = ROOT
+                }
+            }
+            136 = {
+                add_base_tax = -1
+			    add_base_production = -1
+			    add_base_manpower = -1
+                add_devastation = 25
+                change_culture = piedmontese 
+            }
+        }
+        1774 = {
+            cede_province = SAV
+            add_core = SAV
+        }
+        111 = {
+            cede_province = SAV
+            add_core = SAV
+        }
+        4738 = {
+            cede_province = SAV
+            add_core = SAV
+        }
+        if = {
+            limit = {
+                130 = { country_or_non_sovereign_subject_holds = ROOT }
+            }
+            130 = {
+                cede_province = SAV
+                add_core = SAV
+            }
+        }
+        if = {
+            limit = {
+                136 = { country_or_non_sovereign_subject_holds = ROOT }
+            }
+            136 = {
+                cede_province = SAV
+                add_core = SAV
+            }
+        }
+        if = {
+            limit = {
+                1769 = { country_or_non_sovereign_subject_holds = ROOT }
+            }
+            1769 = {
+                cede_province = HAB
+                add_core = HAB
+            }
+        }
+    }
+
+    option = {
+        name = flavor_new_swiss.5.a
+        add_prestige = -30
+    }
+}
+
+# Tuscany, Tarnished: 1500
+country_event = {
+    id = flavor_new_swiss.6
+    title = flavor_new_swiss.6.t
+    desc = flavor_new_swiss.6.d
+    picture = ANGRY_MOB_eventPicture
+    
+    fire_only_once = yes
+    
+    trigger = {
+        tag = SWI
+        is_year = 1500
+        SAV = { has_reform = swiss_minority }
+		2980 = { country_or_non_sovereign_subject_holds = ROOT }
+        116 = { country_or_non_sovereign_subject_holds = ROOT }
+        2978 = { country_or_non_sovereign_subject_holds = ROOT }
+        117 = { country_or_non_sovereign_subject_holds = ROOT }
+    }
+
+    mean_time_to_happen = {
+		months = 120
+	}
+
+    immediate = {
+        if = {
+            limit = {
+                2980 = {
+                    NOT = { culture = piedmontese }
+                }
+            }
+            2980 = {
+                add_base_tax = -1
+			    add_base_production = -1
+			    add_base_manpower = -1
+                add_devastation = 25
+                change_culture = piedmontese 
+            }
+		}
+        2980 = {
+            cede_province = SAV
+            add_core = SAV
+        }
+        if = {
+            limit = {
+                116 = {
+                    NOT = { culture = piedmontese }
+                }
+            }
+            116 = {
+                add_base_tax = -2
+			    add_base_production = -2
+			    add_base_manpower = -2
+                add_devastation = 25
+                change_culture = piedmontese 
+                change_trade_goods = livestock
+            }
+		}
+        116 = {
+            cede_province = SAV
+            add_core = SAV
+        }
+        if = {
+            limit = {
+                2978 = {
+                    NOT = { culture = piedmontese }
+                }
+            }
+            2978 = {
+                add_base_tax = -1
+			    add_base_production = -1
+			    add_base_manpower = -1
+                add_devastation = 25
+                change_culture = piedmontese 
+            }
+		}
+        2978 = {
+            cede_province = SAV
+            add_core = SAV
+        }
+        if = {
+            limit = {
+                117 = {
+                    NOT = { culture = piedmontese }
+                }
+            }
+            117 = {
+                add_base_tax = -2
+			    add_base_production = -2
+			    add_base_manpower = -2
+                add_devastation = 25
+                change_culture = piedmontese 
+                change_trade_goods = grain
+            }
+		}
+        117 = {
+            cede_province = SAV
+            add_core = SAV
+        }
+    }
+
+    option = {
+        name = flavor_new_swiss.6.a
+        add_prestige = -30
+    }
+}
+
+# Revanchism in Ravenna: 1500
+country_event = {
+    id = flavor_new_swiss.7
+    title = flavor_new_swiss.7.t
+    desc = flavor_new_swiss.7.d
+    picture = ANGRY_MOB_eventPicture
+    
+    fire_only_once = yes
+    
+    trigger = {
+        tag = SWI
+        is_year = 1500
+        SAV = { has_reform = swiss_minority }
+		113 = { country_or_non_sovereign_subject_holds = ROOT }
+        4730 = { country_or_non_sovereign_subject_holds = ROOT }
+        114 = { country_or_non_sovereign_subject_holds = ROOT }
+    }
+
+    mean_time_to_happen = {
+		months = 120
+	}
+
+    immediate = {
+        if = {
+            limit = {
+                113 = {
+                    NOT = { culture = piedmontese }
+                }
+            }
+            113 = {
+                add_base_tax = -1
+			    add_base_production = -1
+			    add_base_manpower = -1
+                add_devastation = 25
+                change_culture = piedmontese 
+            }
+        }
+        113 = {
+            cede_province = SAV
+            add_core = SAV
+        }
+        if = {
+            limit = {
+                114 = {
+                    NOT = { culture = piedmontese }
+                }
+            }
+            114 = {
+                add_base_tax = -2
+			    add_base_production = -2
+			    add_base_manpower = -2
+                add_devastation = 25
+                change_culture = piedmontese 
+            }
+		}
+        114 = {
+            cede_province = SAV
+            add_core = SAV
+        }
+        if = {
+            limit = {
+                4730 = {
+                    NOT = { culture = piedmontese }
+                }
+            }
+            4730 = {
+                add_base_tax = -1
+			    add_base_production = -1
+			    add_base_manpower = -1
+                add_devastation = 25
+                change_culture = piedmontese 
+                change_trade_goods = livestock
+            }
+		}
+        4730 = {
+            cede_province = SAV
+            add_core = SAV
+        }
+    }
+
+    option = {
+        name = flavor_new_swiss.7.a
+        add_prestige = -30
+    }
+}
+
+# Sickness in Spoleto: 1500
+country_event = {
+    id = flavor_new_swiss.8
+    title = flavor_new_swiss.8.t
+    desc = flavor_new_swiss.8.d
+    picture = ANGRY_MOB_eventPicture
+    
+    fire_only_once = yes
+    
+    trigger = {
+        tag = SWI
+        is_year = 1500
+        SAV = { has_reform = swiss_minority }
+		4731 = { country_or_non_sovereign_subject_holds = ROOT }
+        119 = { country_or_non_sovereign_subject_holds = ROOT }
+        2976 = { country_or_non_sovereign_subject_holds = ROOT }
+        2977 = { country_or_non_sovereign_subject_holds = ROOT }
+    }
+
+    mean_time_to_happen = {
+		months = 120
+	}
+
+    immediate = {
+        if = {
+            limit = {
+                4731 = {
+                    NOT = { culture = piedmontese }
+                }
+            }
+            4731 = {
+                add_base_tax = -2
+			    add_base_production = -2
+			    add_base_manpower = -2
+                add_devastation = 25
+                change_culture = piedmontese
+            }
+		}
+        4731 = {
+            cede_province = SAV
+            add_core = SAV
+        }
+        if = {
+            limit = {
+                119 = {
+                    NOT = { culture = piedmontese }
+                }
+            }
+            119 = {
+                add_base_tax = -2
+			    add_base_production = -2
+			    add_base_manpower = -2
+                add_devastation = 25
+                change_culture = piedmontese
+                change_trade_goods = wine
+            }
+		}
+        119 = {
+            cede_province = SAV
+            add_core = SAV
+        }
+        if = {
+            limit = {
+                2976 = {
+                    NOT = { culture = piedmontese }
+                }
+            }
+            2976 = {
+                add_base_tax = -1
+			    add_base_production = -1
+			    add_base_manpower = -1
+                add_devastation = 25
+                change_culture = piedmontese
+            }
+		}
+        2976 = {
+            cede_province = SAV
+            add_core = SAV
+        }
+        if = {
+            limit = {
+                2977 = {
+                    NOT = { culture = piedmontese }
+                }
+            }
+            2977 = {
+                add_base_tax = -1
+			    add_base_production = -1
+			    add_base_manpower = -1
+                add_devastation = 25
+                change_culture = piedmontese
+            }
+		}
+        2977 = {
+            cede_province = SAV
+            add_core = SAV
+        }
+    }
+
+    option = {
+        name = flavor_new_swiss.8.a
+        add_prestige = -30
+    }
+}
+
+# Venice, Vanquished: 1500
+country_event = {
+    id = flavor_new_swiss.9
+    title = flavor_new_swiss.9.t
+    desc = flavor_new_swiss.9.d
+    picture = ANGRY_MOB_eventPicture
+    
+    fire_only_once = yes
+    
+    trigger = {
+        tag = SWI
+        is_year = 1500
+        SAV = { has_reform = swiss_minority }
+		112 = { country_or_non_sovereign_subject_holds = ROOT }
+    }
+
+    mean_time_to_happen = {
+		months = 120
+	}
+
+    immediate = {
+        if = {
+            limit = {
+                112 = {
+                    NOT = { culture = piedmontese }
+                }
+            }
+            112 = {
+                add_base_tax = -5
+			    add_base_production = -5
+			    add_base_manpower = -5
+                add_devastation = 100
+                change_culture = piedmontese
+                change_trade_goods = fish
+            }
+		}
+        112 = {
+            cede_province = SAV
+            add_core = SAV
+        }
+        if = {
+            limit = {
+                163 = { country_or_non_sovereign_subject_holds = ROOT }
+            }
+            163 = {
+                cede_province = ROOT
+                add_core = ROOT
+            }
+		}
+        if = {
+            limit = {
+                321 = { country_or_non_sovereign_subject_holds = ROOT }
+            }
+            321 = {
+                cede_province = ROOT
+                add_core = ROOT
+            }
+		}
+        if = {
+            limit = {
+                2410 = { country_or_non_sovereign_subject_holds = ROOT }
+            }
+            2410 = {
+                cede_province = ROOT
+                add_core = ROOT
+            }
+		}
+        if = {
+            limit = {
+                285 = { country_or_non_sovereign_subject_holds = ROOT }
+            }
+            285 = {
+                cede_province = ROOT
+                add_core = ROOT
+            }
+		}
+    }
+    
+    option = {
+        name = flavor_new_swiss.9.a
+        add_prestige = -30
+    }
+}
+
+# Lombardei breaks away!
+
+# Occitania unifies!
