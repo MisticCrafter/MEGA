@@ -3,7 +3,14 @@ tigranic_divine_the_stars = {
     cost = 25
 
     trigger = {
-        NOT = { has_country_modifier = tigranic_cooldown_modifier }
+        NOT = { has_country_modifier = tigranic_global_cooldown_modifier }
+        NOT = {
+			OR = {
+				has_country_modifier = tigranic_divination_adm_modifier
+				has_country_modifier = tigranic_divination_dip_modifier
+				has_country_modifier = tigranic_divination_mil_modifier
+			}
+		}
     }
 
     effect = {
@@ -11,7 +18,7 @@ tigranic_divine_the_stars = {
         
         hidden_effect = {
             add_country_modifier = {
-                name = tigranic_cooldown_modifier
+                name = tigranic_global_cooldown_modifier
                 duration = 365
             }
         }
@@ -24,8 +31,8 @@ tigranic_arrange_a_festival = {
     cost = 25
 
     trigger = {
-        num_of_subjects = 1
-        NOT = { has_country_modifier = tigranic_cooldown_modifier }
+        NOT = { has_country_modifier = tigranic_global_cooldown_modifier }
+        NOT = { has_country_modifier = tigranic_festival_modifier }
     }
 
     effect = {
@@ -33,7 +40,7 @@ tigranic_arrange_a_festival = {
         
         hidden_effect = {
             add_country_modifier = {
-                name = tigranic_cooldown_modifier
+                name = tigranic_global_cooldown_modifier
                 duration = 365
             }
         }
@@ -46,7 +53,8 @@ tigranic_hold_a_triumph = {
 
     trigger = {
         war_exhaustion = 1
-        NOT = { has_country_modifier = tigranic_cooldown_modifier }
+        NOT = { has_country_modifier = tigranic_global_cooldown_modifier }
+        NOT = { has_country_modifier = tigranic_triumph_modifier }
     }
 
     effect = {
@@ -54,7 +62,7 @@ tigranic_hold_a_triumph = {
         
         hidden_effect = {
             add_country_modifier = {
-                name = tigranic_cooldown_modifier
+                name = tigranic_global_cooldown_modifier
                 duration = 365
             }
         }
@@ -67,7 +75,8 @@ tigranic_paladins = {
 
     trigger = {
         dominant_religion = tigranic
-        NOT = { has_country_modifier = tigranic_cooldown_modifier }
+        NOT = { has_country_modifier = tigranic_global_cooldown_modifier }
+        NOT = { has_country_modifier = tigranic_paladins_modifier }
     }
 
     effect = {
@@ -75,7 +84,7 @@ tigranic_paladins = {
         
         hidden_effect = {
             add_country_modifier = {
-                name = tigranic_cooldown_modifier
+                name = tigranic_global_cooldown_modifier
                 duration = 365
             }
         }
@@ -88,7 +97,8 @@ tigranic_warsongs = {
     cost = 25
 
     trigger = {
-        NOT = { has_country_modifier = tigranic_cooldown_modifier }
+        NOT = { has_country_modifier = tigranic_global_cooldown_modifier }
+        NOT = { has_country_modifier = tigranic_warsongs_modifier }
     }
 
     effect = {
@@ -96,7 +106,7 @@ tigranic_warsongs = {
         
         hidden_effect = {
             add_country_modifier = {
-                name = tigranic_cooldown_modifier
+                name = tigranic_global_cooldown_modifier
                 duration = 365
             }
         }
@@ -109,7 +119,8 @@ tigranic_rite_of_fertility = {
 
     trigger = {
         has_heir = no
-        NOT = { has_country_modifier = tigranic_cooldown_modifier }
+        NOT = { has_country_modifier = tigranic_global_cooldown_modifier }
+        NOT = { has_country_modifier = tigranic_fertility_modifier }
     }
 
     effect = {
@@ -117,7 +128,7 @@ tigranic_rite_of_fertility = {
         
         hidden_effect = {
             add_country_modifier = {
-                name = tigranic_cooldown_modifier
+                name = tigranic_global_cooldown_modifier
                 duration = 365
             }
         }
@@ -130,7 +141,13 @@ tigranic_feed_the_land = {
 
     trigger = {
         NOT = { has_country_modifier = tigranic_riveraspect_cooldown_modifier }
-        NOT = { has_country_modifier = tigranic_cooldown_modifier }
+        NOT = { has_country_modifier = tigranic_global_cooldown_modifier }
+        NOT = {
+			OR = {
+				has_country_modifier = tigranic_feedland_modifier
+				has_country_modifier = tigranic_exploitland_modifier
+			}
+		}
     }
 
     effect = {
@@ -141,7 +158,7 @@ tigranic_feed_the_land = {
                 duration = 7300
             }
             add_country_modifier = {
-                name = tigranic_cooldown_modifier
+                name = tigranic_global_cooldown_modifier
                 duration = 365
             }
         }
@@ -154,7 +171,13 @@ tigranic_exploit_the_land = {
 
     trigger = {
         NOT = { has_country_modifier = tigranic_riveraspect_cooldown_modifier }
-        NOT = { has_country_modifier = tigranic_cooldown_modifier }
+        NOT = { has_country_modifier = tigranic_global_cooldown_modifier }
+        NOT = {
+			OR = {
+				has_country_modifier = tigranic_feedland_modifier
+				has_country_modifier = tigranic_exploitland_modifier
+			}
+		}
     }
 
     effect = {
@@ -165,7 +188,7 @@ tigranic_exploit_the_land = {
                 duration = 7300
             }
             add_country_modifier = {
-                name = tigranic_cooldown_modifier
+                name = tigranic_global_cooldown_modifier
                 duration = 365
             }
         }
@@ -189,7 +212,8 @@ tigranic_lessons_of_valerio = {
         }
         NOT = { inflation = 3 }
         NOT = { corruption = 1 }
-        NOT = { has_country_modifier = tigranic_cooldown_modifier }
+        NOT = { has_country_modifier = tigranic_global_cooldown_modifier }
+        NOT = { has_country_modifier = tigranic_buildlessons_modifier }
     }
 
     effect = {
@@ -197,7 +221,7 @@ tigranic_lessons_of_valerio = {
         
         hidden_effect = {
             add_country_modifier = {
-                name = tigranic_cooldown_modifier
+                name = tigranic_global_cooldown_modifier
                 duration = 365
             }
         }
@@ -222,7 +246,8 @@ tigranic_lessons_of_tigranna = {
                 guaranteed_by = ROOT
             }
         }
-        NOT = { has_country_modifier = tigranic_cooldown_modifier }
+        NOT = { has_country_modifier = tigranic_global_cooldown_modifier }
+        NOT = { has_country_modifier = tigranic_techlessons_modifier }
     }
 
     effect = {
@@ -230,7 +255,7 @@ tigranic_lessons_of_tigranna = {
         
         hidden_effect = {
             add_country_modifier = {
-                name = tigranic_cooldown_modifier
+                name = tigranic_global_cooldown_modifier
                 duration = 365
             }
         }
@@ -255,7 +280,8 @@ tigranic_lessons_of_marianos = {
             sailors_percentage = 0.75
             navy_size_percentage = 1
         }
-        NOT = { has_country_modifier = tigranic_cooldown_modifier }
+        NOT = { has_country_modifier = tigranic_global_cooldown_modifier }
+        NOT = { has_country_modifier = tigranic_colonylessons_modifier }
     }
 
     effect = {
@@ -263,7 +289,7 @@ tigranic_lessons_of_marianos = {
         
         hidden_effect = {
             add_country_modifier = {
-                name = tigranic_cooldown_modifier
+                name = tigranic_global_cooldown_modifier
                 duration = 365
             }
         }
@@ -278,14 +304,14 @@ tigranic_summon_the_courts = {
         legitimacy = 90
         num_of_provinces_in_states = 20
         NOT = { average_home_autonomy = 10 }
-        NOT = { has_country_modifier = tigranic_cooldown_modifier }
+        NOT = { has_country_modifier = tigranic_global_cooldown_modifier }
     }
 
     effect = {
         country_event = { id = flavor_tigranic.12 } # Summon the Courts
         hidden_effect = {
             add_country_modifier = {
-                name = tigranic_cooldown_modifier
+                name = tigranic_global_cooldown_modifier
                 duration = 365
             }
         }
@@ -309,7 +335,7 @@ tigranic_call_the_banners = {
             }
         }
         at_war_with_religious_enemy = yes
-        NOT = { has_country_modifier = tigranic_cooldown_modifier }
+        NOT = { has_country_modifier = tigranic_global_cooldown_modifier }
     }
 
     effect = {
@@ -317,7 +343,7 @@ tigranic_call_the_banners = {
         
         hidden_effect = {
             add_country_modifier = {
-                name = tigranic_cooldown_modifier
+                name = tigranic_global_cooldown_modifier
                 duration = 365
             }
         }
