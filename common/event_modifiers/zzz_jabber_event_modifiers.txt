@@ -191,7 +191,7 @@ tigranic_fertility_modifier = {
 
 tigranic_feedland_modifier = {
     local_development_cost = -0.1
-    local_manpower_modifier = 0.25
+    local_manpower_modifier = 0.5
 }
 
 tigranic_exploitland_modifier = {

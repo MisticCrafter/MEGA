@@ -1,6 +1,6 @@
 christian = {
 	tigranic = {
-		color = { 255 201 14 } #{ 182 159 56 }
+		color = { 252 162 100 } #{ 255 201 14 } #{ 182 159 56 }
 		icon = 180
 
 		country = {
