@@ -6965,7 +6965,7 @@ KAZ_ideas = {
 ARM_ideas = {
 	start = {
 		war_exhaustion = -0.02
-		recover_army_morale_speed = 0.10
+		defensiveness = 0.25
 	}
 
 	bonus = {
@@ -6981,7 +6981,7 @@ ARM_ideas = {
 	free = yes		#will be added at load.
 	
 	apostolic_church = {
-		global_missionary_strength = 0.02
+		build_cost = -0.1
 	}
 	land_reclamation = {
 		development_cost = -0.1
