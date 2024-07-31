@@ -74,6 +74,7 @@ country_decisions = {
 			NOT = {
 				has_country_flag = hungarian_balkan_migration
 			}
+			has_country_flag = austrian_balkan_migration
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -201,6 +202,7 @@ country_decisions = {
 			not = {
 				has_country_flag = western_balkans_settlement_act
 			}
+			has_country_flag = hungarian_balkan_migration
 		}
 		allow = {
 			has_reform = austrian_absolute_monarchy
@@ -258,6 +260,7 @@ country_decisions = {
 			not = {
 				has_country_flag = silesia_subjugation
 			}
+			has_country_flag = cze_germanification
 		}
 		allow = {
 			owns_all_provinces = {
