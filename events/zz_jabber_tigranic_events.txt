@@ -305,9 +305,16 @@ country_event = {
 		trigger = {
 			owns = 219
 		}
-		country_event = { id = flavor_tigranic.17 }
+		country_event = { 
+			id = flavor_tigranic.17
+			days = 30
+		}
 		every_subject_country = {
-			country_event = { id = flavor_tigranic.18 }
+			country_event = { 
+				id = flavor_tigranic.18
+				days = 30
+				random = 10
+			}
 		}
 	}
 
@@ -317,9 +324,16 @@ country_event = {
 		trigger = {
 			NOT = { owns = 219 }
 		}
-		country_event = { id = flavor_tigranic.17 }
+		country_event = { 
+			id = flavor_tigranic.17
+			days = 30
+		}
 		every_subject_country = {
-			country_event = { id = flavor_tigranic.18 }
+			country_event = { 
+				id = flavor_tigranic.18
+				days = 30
+				random = 10
+			}
 		}
 	}
 }
@@ -355,7 +369,11 @@ country_event = {
 				limit = {
 					religion = tigranic
 				}
-				country_event = { id = flavor_tigranic.23 }
+				country_event = { 
+					id = flavor_tigranic.23
+					days = 30
+					random = 10
+				}
 			}
 		}
 	}

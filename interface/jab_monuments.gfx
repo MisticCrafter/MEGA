@@ -1,0 +1,11 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_great_project_golden_citadel"
+        texturefile = "gfx//interface//great_projects//great_project_golden_citadel.dds"
+    }
+
+    spriteType = {
+        name = "GFX_great_project_cathedral_madragal"
+        texturefile = "gfx//interface//great_projects//great_project_cathedral_madragal.dds"
+    }
+}

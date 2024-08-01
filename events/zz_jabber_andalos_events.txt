@@ -739,3 +739,124 @@ country_event = {
 		}
 	}
 }
+
+# Jabber's Note: yes I know this is probably a very inefficient way to do this, however I don't have that much time left and I really need to hurry this 
+#(cede provinces to exarchates)
+country_event = {
+	id = flavor_andalos.15
+	title = flavor_andalos.15.title
+	desc = flavor_andalos.15.desc
+	picture = EUROPEAN_REFUGEES_eventPicture
+
+	hidden = yes
+
+	trigger = {
+		tag = ADU
+		any_owned_province = {
+			OR = {
+				# belongs to Mauretania AND the right Exarchate exists
+				AND = {
+					exists = AE2
+					OR = {
+						area = western_morocco_area
+                        area = marrekesh_area
+                        area = southern_morocco_area
+                        area = sus_area
+                        area = tafilalt_area
+                        area = algiers_area
+                        area = hautes_plaines_area
+                        area = barbary_coast_area
+					}
+				}
+				# belongs to Africa AND the right Exarchate exists
+				AND = {
+					exists = AE3
+					OR = {
+						area = tunisia_area
+						area = djerba_area
+						area = tripolitania_area
+						area = fezzan_area
+						area = kabylia_area
+						area = ouled_nail_area
+						area = north_saharan_area
+					}
+				}
+				# belongs to Italia AND the right Exarchate exists
+				AND = {
+					exists = AE4
+					region = italy_region
+				}
+				# belongs to Gallia AND the right Exarchate exists
+				AND = {
+					exists = AE5
+					region = france_region
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = flavor_andalos.15.a
+
+		# cede to Mauretania
+		every_owned_province = {
+			limit = {
+				exists = AE2
+				OR = {
+					area = western_morocco_area
+					area = marrekesh_area
+					area = southern_morocco_area
+					area = sus_area
+					area = tafilalt_area
+					area = algiers_area
+					area = hautes_plaines_area
+					area = barbary_coast_area
+				}
+			}
+			remove_core = ROOT
+			cede_province = AE2
+		}
+
+		# cede to Africa
+		every_owned_province = {
+			limit = {
+				exists = AE3
+				OR = {
+					area = tunisia_area
+					area = djerba_area
+					area = tripolitania_area
+					area = fezzan_area
+					area = kabylia_area
+					area = ouled_nail_area
+					area = north_saharan_area
+				}
+			}
+			remove_core = ROOT
+			cede_province = AE3
+		}
+
+		# cede to Italia
+		every_owned_province = {
+			limit = {
+				exists = AE4
+				region = italy_region
+			}
+			remove_core = ROOT
+			cede_province = AE4
+		}
+
+		# cede to Gallia
+		every_owned_province = {
+			limit = {
+				exists = AE5
+				region = france_region
+			}
+			remove_core = ROOT
+			cede_province = AE5
+		}
+	}
+}

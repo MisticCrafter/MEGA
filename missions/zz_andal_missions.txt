@@ -1481,11 +1481,9 @@ andalos_slot_3_missions_b = {
 				}
 			}
 
-			224 = {
-				add_province_modifier = {
-					name = "adu_golden_citadel"
-					duration = -1
-				}
+			add_great_project_tier = {
+				type = golden_citadel
+				tier = 1
 			}
 
 			227 = {

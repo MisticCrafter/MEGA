@@ -1,11 +1,24 @@
 ﻿l_english:
+ # Countries
+ AE1: "Hesperia"
+ AE1_ADJ: "Hesperic"
+ AE2: "Mauretania"
+ AE2_ADJ: "Mauric"
+ AE3: "Africa"
+ AE3_ADJ: "African"
+ AE4: "Italia"
+ AE4_ADJ: "Italic"
+ AE5: "Gallia"
+ AE5_ADJ: "Gallic"
  # Gov. Reforms
  andal_crown_reform: "Andal Crown"
  andal_crown_reform_desc: "Nearly four centuries ago, Auria Cintranos, known thereafter as 'the Dreamer', foresaw a most terrible fate for her people and her house, then only Dukes of Hellas. Few believed her in the Azure Court, yet it took very little time for the young oracle to be proven right. So we acted. We fled first to Sardinia, then to islamic 'Isbiliya' and founded here a realm mightier than Auria could've ever foreseen."
- andal_subject_reform: "Andal Viceroyalty"
- andal_subject_reform_desc: "The fate of Hispania has been resolved. The Andals, a people born of an unlikely marriage between the Hellenes of the East and the Mozarabs of the South, have donned an iron wreath and claimed all of Hispania as their rightful domain. We are lords and dukes in our own right, aye, but it is Andal law, Andal tradition and Andal decrees that permeate and govern our realm, for good and for bad."
+ andal_subject_reform: "Wardenship"
+ andal_subject_reform_desc: "The fate of Hispania has been resolved. The Andals, a people born of an unlikely marriage between the Hellenes of the East and the Mozarabs of the South, have donned an iron wreath and claimed all of Hispania as their rightful domain. We are lords and dukes in our own right, aye, but it is Andal law, Andal governance and Andal decrees that permeate and govern our realm, for good and for bad."
  absolutist_andalos_reform: "Grand Archonate"
- absolutist_andalos_reform_desc: ""
+ absolutist_andalos_reform_desc: "At long last, Hispania is whole again and we are its masters. No longer do rival powers hound at our gates, nor do simpering Arganic nobles plot treasonous restorations against their sworn lieges. Now, our navies scurry about every sealane and trade route, bringing uncountable wealth from afar; our armies are the envy of Europe and our court is united and loyal. It is not nobles whose prestige rests in deeds done centuries ago, or merchants whose allegiance rests in their profits who work the oars on this great ship, but the hardworking folk of Andalos, and all of them have sworn a solemn oath: they know no lord but the Archon in Sintra, they obey no command but that from the Archon in Sintra and they pay no tribute but to the Archon in Sintra. The Archon is the one true Lord of Hispania, and all are His subjects."
+ andal_exarchate_reform: "Exarchate"
+ andal_exarchate_reform_desc: "Modelled after the lordships beyond the Arganic mountains, an Exarchate is a vicerroyalty of the Andal Crown governed by a commissioner, typically one of military background, appointed directly by the Archon in Sintra - thereafter titled as 'Exarch'."
  mauretanian_crusader_reform: "Crusader Kingdom"
  mauretanian_crusader_reform_desc: "Born of the bloody Sicilian Crusades, the newly-established Crusader states of Mauretania have stood far longer than most wagered they would. Most though that the Frankish and Italian nobility would be embroiled in endless clashes with their new Berber subjects, but history took the opposite course: the martial high nobility of Western Christendom quickly brought the exceptionally skilled Numidian cavalrymen into the fold, forming an equestrian order unparalleled across all of Europe."
  christian_berber_reform: "Berber Principality"
@@ -197,6 +210,8 @@
  tigranic_exploitland_tt: "§RNote:§! This decree is mutually exclusive with '§YStewardship of the Rivers: Life§!'!"
  tigranic_crusade_overlord_tt: "Until the end of our current religious war, we will get:\n   Manpower in True Faith Provinces: §G+30.0%§!\n   Morale Damage: §G+10.0%§!\n   Church Power: §G+10.0%§!\n   Yearly Prestige: §G+1.00§!\nAnd all of our §Ysubjects§! will get:\n   Manpower in True Faith Provinces: §G+15.0%§!\n   Morale Damage: §G+5.0%§!\n   Church Power: §G+5.0%§!\n   Yearly Prestige: §G+0.50§!"
  tigranic_crusade_subject_tt: "Until the end of our liege's current religious war, we will get:\n   Manpower in True Faith Provinces: §G+15.0%§!\n   Morale Damage: §G+5.0%§!\n   Church Power: §G+5.0%§!\n   Yearly Prestige: §G+0.50§!"
+ adu_exarchates_enabled_tt: "Has unlocked §YExarchates§!."
+ adu_exarchates_activate_tt: "Unlocks the creation of §YExarchates§!."
  # Events (Andalos)
  flavor_andalos.1.title: "The Purchase of Macau"
  flavor_andalos.1.desc: "A most interesting petitioner found his way to our halls today: he was pale of skin, bore strange, cumbersome clothes and walked beyond a set of teal banners. He claims to be an envoy from a faraway kingdom, that of 'Andalos', situated further west than any of our maps know. He bows politely and makes a most intriguing request: his liege would purchase the land of Macau in exchange for a great deal of coin, and possibly a military partnership. A most brave foreigner, to request territory of all things from us, but his request is still worth pondering."
@@ -248,6 +263,9 @@
  flavor_andalos.14.title: "The Fall of Hellas"
  flavor_andalos.14.desc: "Not two weeks past, we received a raven: Attica fell, and Athens burned with it. Then another: Argos is blockaded, half our fleet is in flames. And yet another: Mystras, Patras and Elis are under siege and cannot hold for much longer. And yet another. And yet another. Today, however, the raven did not bear King Eirenaios' seal, but that of our own subject, the count of Cartagena: hundreds of ships have near-assailed the harbour, spilling thousands of our downtrodden brethren and kin into the city. Traders, nobles, injured warriors, lowly peasants and even the King of Hellas himself. Indeed, our worst fear has been realized: our brother realm, Hellas, has fallen, and its folk seek refuge in our lands."
  flavor_andalos.14.a: "Welcome, welcome and thrice-welcome!"
+ flavor_andalos.15.title: "! you are not supposed to see this !"
+ flavor_andalos.15.desc: "Hi. This is an event that we use to transfer provinces from Andalos to the appropriate Exarchates, provided they exist. It's also meant to be a hidden event, in the sense that.. well, it remains hidden from the players. If you're seeing this, then something is clearly not right; please report this to Jabber!"
+ flavor_andalos.15.a: "mlem"
  # Events (Tigranic)
  flavor_tigranic.1.title: "Divine the Stars"
  flavor_tigranic.1.desc: "mlem"
@@ -331,8 +349,6 @@
  flavor_tigranic.23.title: "A Raven From [From.Capital.GetName]"
  flavor_tigranic.23.desc: "We've received a raven from [From.Capital.GetName], bearing our liege lord's seal, embossed on dry purple wax - an Andal custom that denotes message of great importance. Nervous, [Root.Monarch.GetName] breaks it, opens the letter and reads: WAR! [From.GetName] has declared a Crusade and is calling all of its banners! A moment passes, and then [Root.Monarch.GetName] turns and calls for his armsmaster..."
  flavor_tigranic.23.a: "And [Root.GetName] will answer!"
- 
-
  # Ideas
  adu_idea_1: "Beyond the Cape"
  adu_idea_1_desc: "Merchants and spies both weave tales of yet-unseen realms beyond the treacherous capes of Morocco teeming with wealth and power ripe for the taking. With our borders firmly set and our rivals deterred or otherwise distracted, there can be no better time to validate such claims. Let us call upon our captains and explorers and set sail southwards!"
@@ -368,6 +384,14 @@
  # Decisions
  andalos_guinean_ally_decision_title: "An Ally in Guinea"
  andalos_guinean_ally_decision_desc: "Our ventures in Arguin and the islands off the Cape of Goreia has brought in a substantial amount of revenue, but it pales in comparison to the ludicrous wealth that flows within and through these realms. Our merchants have tried their utter best, but to no avail: few in Guinea trade their precious goods to queer folk from afar, and those who approach us often think they can swindle us. A disgrace, and one we're not bound to recover from lest we somehow breach into this region's markets. Though much debated, one of our more faith-minded advisors has approached us with an intriguing proposal: though our peoples are markedly different, the recent Roman Crusades have brought those folk into the Christian fold - perhaps we can have some form of friendship sprout from this simple commonality? Another proposal was heard too, this one coming from a man of a more mercantile background: we should break bread with a local ruler we would trust wholeheartedly, and bargain for plots of land in his ports in which we would build a set of permanent quarters, not unlike those Genoa and Venice built across the Mediterranean. These proposals merit discussion, as do most, but many in our court grumble and frown at these approaches..."
+ andalos_exarchate_mauretania_decision_title: "Proclaim the Exarchate of Mauretania"
+ andalos_exarchate_mauretania_decision_desc: "Our recently acquired territories in Mauretania are proving to be more of a burden than a benefit: they are faraway, populated with different, often hostile, folk and coveted by local lords who plot to strike at our darkest hour. The laws of Andalos will not yield the same fruits here as they would in our heartlands, and thus we will not apply them: we shall apply the laws of the Exarchs, as outlined by our predecessors, and appoint a commissioner to rule in our stead."
+ andalos_exarchate_africa_decision_title: "Proclaim the Exarchate of Africa"
+ andalos_exarchate_africa_decision_desc: "Our recently acquired territories in Africa are proving to be more of a burden than a benefit: they are faraway, populated with different, often hostile, folk and coveted by local lords who plot to strike at our darkest hour. The laws of Andalos will not yield the same fruits here as they would in our heartlands, and thus we will not apply them: we shall apply the laws of the Exarchs, as outlined by our predecessors, and appoint a commissioner to rule in our stead."
+ andalos_exarchate_italy_decision_title: "Proclaim the Exarchate of Italia"
+ andalos_exarchate_italy_decision_desc: "Our recently acquired territories in Italia are proving to be more of a burden than a benefit: they are faraway, populated with different, often hostile, folk and coveted by local lords who plot to strike at our darkest hour. The laws of Andalos will not yield the same fruits here as they would in our heartlands, and thus we will not apply them: we shall apply the laws of the Exarchs, as outlined by our predecessors, and appoint a commissioner to rule in our stead."
+ andalos_exarchate_france_decision_title: "Proclaim the Exarchate of Gallia"
+ andalos_exarchate_france_decision_desc: "Our recently acquired territories in Gallia are proving to be more of a burden than a benefit: they are faraway, populated with different, often hostile, folk and coveted by local lords who plot to strike at our darkest hour. The laws of Andalos will not yield the same fruits here as they would in our heartlands, and thus we will not apply them: we shall apply the laws of the Exarchs, as outlined by our predecessors, and appoint a commissioner to rule in our stead."
  # Church Aspects (Tigranic)
  tigranic_divine_the_stars: "Divine the Stars"
  desc_tigranic_divine_the_stars: ""
@@ -398,3 +422,6 @@
  # Estate Privileges
  estate_nobles_andal_strong_duchies: "One King, Seven Crowns"
  estate_nobles_andal_strong_duchies_desc: "With the Battle of Zamora, where Tiresias 'the Breaker' decisively shattered the combined armies of the remaining kings of Hispania, centuries of Catholic rule came to a brisk end: most Great Houses were slain in the fighting, and those remaining fled to the arms of their cousins or uncles beyond the Pyrenees. Tiresias seized this opportunity and installed members of his house as proxy rulers on the now-vacant thrones, proclaiming them to be Lords Paramount of the old kingdoms, and direct vassals to the Archon in Sintra.\n\nCombined with a set of extraordinary privileges, this arrangement allowed Andalos to finally bring the remainder of the peninsula under the fold without exhausting itself in endless uprisings and rebellions, though many wonder if this peace will hold. The old lords, though mollified, have not forgotten what they have lost at our hands and their chains grow weaker with every passing concession..."
+ # Great Projects
+ golden_citadel: "The Golden Citadel"
+ cathedral_madragal: "Temple-Cathedral of Madragal"

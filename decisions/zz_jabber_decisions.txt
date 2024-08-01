@@ -73,4 +73,341 @@ country_decisions = {
             }
         }
     }
+
+    andalos_exarchate_mauretania_decision = {
+        major = yes
+        potential = {
+            tag = ADU
+            custom_trigger_tooltip = {
+				tooltip = adu_exarchates_enabled_tt
+				has_country_flag = adu_exarchates_enabled
+			}
+            NOT = { exists = AE2 } #Mauretania (andal exarchate 2)
+        }
+
+        provinces_to_highlight = {
+            NOT = { owned_by = ADU }
+            OR = {
+                area = western_morocco_area
+                area = marrekesh_area
+                area = southern_morocco_area
+                area = sus_area
+                area = tafilalt_area
+                area = algiers_area
+                area = hautes_plaines_area
+                area = barbary_coast_area
+            }
+        }
+
+        allow = {
+            NOT = { exists = AE2 } #Mauretania
+            num_of_owned_provinces_with = {
+                value = 10
+                OR = {
+                    area = western_morocco_area
+                    area = marrekesh_area
+                    area = southern_morocco_area
+                    area = sus_area
+                    area = tafilalt_area
+                    area = algiers_area
+                    area = hautes_plaines_area
+                    area = barbary_coast_area
+                }
+            }
+            OR = {
+                owns = 345 #Safi
+                owns = 337 #Oranna
+                owns = 343 #Maurida
+            }
+        }
+
+        effect = {
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        area = western_morocco_area
+                        area = marrekesh_area
+                        area = southern_morocco_area
+                        area = sus_area
+                        area = tafilalt_area
+                        area = algiers_area
+                        area = hautes_plaines_area
+                        area = barbary_coast_area
+                    }
+                }
+                remove_core = ROOT
+                add_core = AE2
+                cede_province = AE2
+            }
+
+            if = {
+                limit = {
+                    AE2 = { owns = 345 } #Safi
+                }
+                AE2 = { set_capital = 345 }
+            }
+            
+            else_if = {
+                limit = {
+                    AE2 = { owns = 337 } #Oranna
+                }
+                AE2 = { set_capital = 337 }
+            }
+            else_if = {
+                limit = {
+                    AE2 = { owns = 343 } #Maurida
+                }
+                AE2 = { set_capital = 343 }
+            }
+
+            create_subject = {
+                who = AE2
+                subject_type = vassal
+            }
+
+            AE2 = {
+                change_technology_group = western
+                change_primary_culture = andal
+                change_religion = tigranic
+
+                add_government_reform = andal_exarchate_reform
+            }
+        }
+    }
+
+    andalos_exarchate_africa_decision = {
+        major = yes
+        potential = {
+            tag = ADU
+            custom_trigger_tooltip = {
+				tooltip = adu_exarchates_enabled_tt
+				has_country_flag = adu_exarchates_enabled
+			}
+            NOT = { exists = AE3 } #Africa (andal exarchate 3)
+        }
+
+        provinces_to_highlight = {
+            NOT = { owned_by = ADU }
+            OR = {
+                area = tunisia_area
+                area = djerba_area
+                area = tripolitania_area
+                area = fezzan_area
+                area = kabylia_area
+                area = ouled_nail_area
+                area = north_saharan_area
+            }
+        }
+
+        allow = {
+            NOT = { exists = AE3 } #Africa
+            num_of_owned_provinces_with = {
+                value = 10
+                OR = {
+                    area = tunisia_area
+                    area = djerba_area
+                    area = tripolitania_area
+                    area = fezzan_area
+                    area = kabylia_area
+                    area = ouled_nail_area
+                    area = north_saharan_area
+                }
+            }
+            OR = {
+                owns = 341 #Cartago
+                owns = 354 #Leptis
+            }
+        }
+
+        effect = {
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        area = tunisia_area
+                        area = djerba_area
+                        area = tripolitania_area
+                        area = fezzan_area
+                        area = kabylia_area
+                        area = ouled_nail_area
+                        area = north_saharan_area
+                    }
+                }
+                remove_core = ROOT
+                add_core = AE3
+                cede_province = AE3
+            }
+            
+            if = {
+                limit = {
+                    AE3 = { owns = 341 } #Cartago
+                }
+                AE3 = { set_capital = 341 }
+            }
+            else_if = {
+                limit = {
+                    AE3 = { owns = 354 } #Leptis
+                }
+                AE3 = { set_capital = 354 }
+            }
+
+            create_subject = {
+                who = AE3
+                subject_type = vassal
+            }
+
+            AE3 = {
+                change_technology_group = western
+                change_primary_culture = andal
+                change_religion = tigranic
+
+                add_government_reform = andal_exarchate_reform
+            }
+        }
+    }
+
+    andalos_exarchate_italy_decision = {
+        major = yes
+        potential = {
+            tag = ADU
+            custom_trigger_tooltip = {
+				tooltip = adu_exarchates_enabled_tt
+				has_country_flag = adu_exarchates_enabled
+			}
+            NOT = { exists = AE4 } #Italia (andal exarchate 4)
+        }
+
+        provinces_to_highlight = {
+            NOT = { owned_by = ADU }
+            region = italy_region
+        }
+
+        allow = {
+            NOT = { exists = AE4 } #Italia
+            num_of_owned_provinces_with = {
+                value = 10
+                region = italy_region
+            }
+            OR = {
+                owns = 118 #Roma
+                owns = 125 #Panormus
+                owns = 114 #Ravenna
+            }
+        }
+
+        effect = {
+            every_owned_province = {
+                limit = {
+                    region = italy_region
+                }
+                remove_core = ROOT
+                add_core = AE4
+                cede_province = AE4
+            }
+            
+            if = {
+                limit = {
+                    AE4 = { owns = 118 } #Roma
+                }
+                AE4 = { set_capital = 118 }
+            }
+            else_if = {
+                limit = {
+                    AE4 = { owns = 125 } #Panormus
+                }
+                AE4 = { set_capital = 125 }
+            }
+            else_if = {
+                limit = {
+                    AE4 = { owns = 114 } #Ravenna
+                }
+                AE4 = { set_capital = 114 }
+            }
+
+            create_subject = {
+                who = AE4
+                subject_type = vassal
+            }
+
+            AE4 = {
+                change_technology_group = western
+                change_primary_culture = andal
+                change_religion = tigranic
+
+                add_government_reform = andal_exarchate_reform
+            }
+        }
+    }
+
+    andalos_exarchate_france_decision = {
+        major = yes
+        potential = {
+            tag = ADU
+            custom_trigger_tooltip = {
+				tooltip = adu_exarchates_enabled_tt
+				has_country_flag = adu_exarchates_enabled
+			}
+            NOT = { exists = AE5 } #Gallia (andal exarchate 5)
+        }
+
+        provinces_to_highlight = {
+            NOT = { owned_by = ADU }
+            region = france_region
+        }
+
+        allow = {
+            NOT = { exists = AE5 } #Gallia
+            num_of_owned_provinces_with = {
+                value = 10
+                region = france_region
+            }
+            OR = {
+                owns = 174 #Vordegalla
+                owns = 2753 #Narbonna
+                owns = 203 #Lionna
+            }
+        }
+
+        effect = {
+            every_owned_province = {
+                limit = {
+                    region = france_region
+                }
+                remove_core = ROOT
+                add_core = AE5
+                cede_province = AE5
+            }
+            
+            if = {
+                limit = {
+                    AE5 = { owns = 174 } #Vordegalla
+                }
+                AE5 = { set_capital = 174 }
+            }
+            else_if = {
+                limit = {
+                    AE5 = { owns = 2753 } #Narbonna
+                }
+                AE5 = { set_capital = 2753 }
+            }
+            else_if = {
+                limit = {
+                    AE5 = { owns = 203 } #Lionna
+                }
+                AE5 = { set_capital = 203 }
+            }
+
+            create_subject = {
+                who = AE5
+                subject_type = vassal
+            }
+
+            AE5 = {
+                change_technology_group = western
+                change_primary_culture = andal
+                change_religion = tigranic
+
+                add_government_reform = andal_exarchate_reform
+            }
+        }
+    }
 }

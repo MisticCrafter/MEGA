@@ -1080,3 +1080,9 @@ ZUL = "countries/Zulu.txt"
 ZUN = "countries/Zunghar.txt"
 ZZZ = "countries/Zazzau.txt"
 
+#Added by megacampaing
+AE1 = "countries/ExarchateHesperia.txt"
+AE2 = "countries/ExarchateMauretania.txt"
+AE3 = "countries/ExarchateAfrica.txt"
+AE4 = "countries/ExarchateItalia.txt"
+AE5 = "countries/ExarchateGallia.txt"

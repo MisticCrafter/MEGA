@@ -65,7 +65,7 @@ andal_crown_monarchy = {
 	}
 }
 
-andal_exarchate_monarchy = {
+andal_exarchate_republic = {
 	rank = {
 		1 = EXARCHATE
 		2 = EXARCHATE
@@ -86,10 +86,7 @@ andal_exarchate_monarchy = {
 	
 	trigger = {
 		is_subject = yes
-		NOT = { has_reform = andal_subject_reform }
-		overlord = {
-			primary_culture = andal
-		}
+		has_reform = andal_exarchate_reform
 	}
 }
 
