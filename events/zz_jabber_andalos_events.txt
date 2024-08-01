@@ -455,19 +455,6 @@ country_event = {
     fire_only_once = yes
     is_triggered_only = yes
 
-    major_trigger = {
-        capital_scope = {
-            OR = {
-                superregion = europe_superregion
-                region = mashriq_region
-                region = maghreb_region
-                region = egypt_region
-                region = horn_of_africa_region
-                region = arabia_region
-            }
-        }
-    }
-
     trigger = {
         NOT = { has_country_flag = andal_african_alliance }
     }
@@ -652,19 +639,6 @@ country_event = {
 	major = yes
 	fire_only_once = yes
 
-	major_trigger = {
-		capital_scope = {
-            OR = {
-                superregion = europe_superregion
-                region = mashriq_region
-                region = maghreb_region
-                region = egypt_region
-                region = horn_of_africa_region
-                region = arabia_region
-            }
-        }
-	}
-
 	trigger = {
 		ADU = {
 			has_country_flag = adu_has_guinean_friend_flag
@@ -717,19 +691,6 @@ country_event = {
 
 	major = yes
 	fire_only_once = yes
-
-	major_trigger = {
-		capital_scope = {
-            OR = {
-                superregion = europe_superregion
-                region = mashriq_region
-                region = maghreb_region
-                region = egypt_region
-                region = horn_of_africa_region
-                region = arabia_region
-            }
-        }
-	}
 
 	trigger = {
 		tag = ADU

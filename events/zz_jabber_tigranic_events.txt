@@ -331,6 +331,7 @@ country_event = {
 	desc = flavor_tigranic.13.desc
 	picture = ITALIAN_wars_eventPicture
 
+	major = yes
 	is_triggered_only = yes
 
 	trigger = {
@@ -339,6 +340,24 @@ country_event = {
 
 	option = {
 		name = flavor_tigranic.13.a
+		custom_tooltip = tigranic_crusade_overlord_tt
+		hidden_effect = {
+			every_known_country = {
+				limit = {
+					OR = {
+						defensive_war_with = ROOT
+						offensive_war_with = ROOT
+					}	
+				}
+				set_country_flag = tigranic_crusade_target
+			}
+			every_subject_country = {
+				limit = {
+					religion = tigranic
+				}
+				country_event = { id = flavor_tigranic.23 }
+			}
+		}
 	}
 }
 
@@ -642,6 +661,7 @@ country_event = {
 	desc = flavor_tigranic.22.desc
 	picture = FEAST_eventPicture
 
+	major = yes
 	is_triggered_only = yes
 
 	trigger = {
@@ -650,5 +670,25 @@ country_event = {
 
 	option = {
 		name = flavor_tigranic.22.a
+	}
+}
+
+# Calling the Banners: Reply
+country_event = {
+    id = flavor_tigranic.23
+	title = flavor_tigranic.23.title
+	desc = flavor_tigranic.23.desc
+	picture = ITALIAN_wars_eventPicture
+
+	major = yes
+	is_triggered_only = yes
+
+	trigger = {
+		religion = tigranic
+	}
+
+	option = {
+		name = flavor_tigranic.22.a
+		custom_tooltip = tigranic_crusade_subject_tt
 	}
 }

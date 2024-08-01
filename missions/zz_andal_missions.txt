@@ -1511,7 +1511,6 @@ andalos_slot_3_missions_b = {
 			region = iberia_region
 		}
 		trigger = {
-			NOT = { has_estate_privilege = estate_nobles_strong_duchies }
 			custom_trigger_tooltip = {
 				tooltip = centralize_adu_tt
 				NOT = {
@@ -1957,28 +1956,30 @@ andalos_slot_4_missions = {
 		required_missions = {  }
 		position = 9
 		trigger = {
-			OR = {
-				AND = {
-					alliance_with = SWI
-					reverse_has_opinion = {
-						who = SWI
-						value = 100
-					}
+			any_known_country = {
+				is_great_power = yes
+				capital_scope = { superregion = europe_superregion }
+				alliance_with = ROOT
+				has_opinion = {
+					who = ROOT
+					value = 100
 				}
-				is_rival = SWI
-				NOT = { exists = SWI }
 			}
 		}
 		effect = {
-			if = {
+			every_known_country = {
 				limit = {
-					alliance_with = SWI
-				}
-				SWI = {
-					add_country_modifier = {
-						name = swi_andal_alliance_modifier
-						duration = 14600
+					is_great_power = yes
+					capital_scope = { superregion = europe_superregion }
+					alliance_with = ROOT
+					has_opinion = {
+						who = ROOT
+						value = 100
 					}
+				}
+				add_country_modifier = {
+					name = swi_andal_alliance_modifier
+					duration = 14600
 				}
 			}
 			valencia_area = {

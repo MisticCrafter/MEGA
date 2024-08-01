@@ -303,6 +303,7 @@ tigranic_summon_the_courts = {
     cost = 200
 
     trigger = {
+        is_subject = no
         legitimacy = 90
         num_of_provinces_in_states = 20
         NOT = { average_home_autonomy = 10 }
@@ -312,6 +313,10 @@ tigranic_summon_the_courts = {
     effect = {
         country_event = { id = flavor_tigranic.12 } # Summon the Courts
         hidden_effect = {
+            add_country_modifier = {
+                name = tigranic_greataspect_cooldown_modifier
+                duration = 7300
+            }
             add_country_modifier = {
                 name = tigranic_global_cooldown_modifier
                 duration = 365
@@ -336,6 +341,7 @@ tigranic_call_the_banners = {
                 }
             }
         }
+        is_subject = no
         at_war_with_religious_enemy = yes
         NOT = { has_country_modifier = tigranic_global_cooldown_modifier }
     }
@@ -344,6 +350,10 @@ tigranic_call_the_banners = {
         country_event = { id = flavor_tigranic.13 } # Call the Banners
         
         hidden_effect = {
+            add_country_modifier = {
+                name = tigranic_greataspect_cooldown_modifier
+                duration = 7300
+            }
             add_country_modifier = {
                 name = tigranic_global_cooldown_modifier
                 duration = 365
