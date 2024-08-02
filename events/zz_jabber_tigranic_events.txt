@@ -155,7 +155,7 @@ country_event = {
 	option = {
 		name = flavor_tigranic.6.a
 		add_country_modifier = {
-			name = "tigranic_warsongs_modifier"
+			name = "tigranic_fertility_modifier"
 			duration = 4750
 		}
 	}
@@ -177,16 +177,17 @@ country_event = {
 	option = {
 		name = flavor_tigranic.7.a
 		every_owned_province = {
-                limit = {
-                    trade_goods = grain
-                    trade_goods = wine
-                    trade_goods = tea
-                }
-                add_province_modifier = {
-                    name = "tigranic_feedland_modifier"
-                    duration = 7300
-                }
-            }
+			limit = {
+				province_group = majorrivers
+				trade_goods = grain
+				trade_goods = wine
+				trade_goods = tea
+			}
+			add_province_modifier = {
+				name = "tigranic_feedland_modifier"
+				duration = 7300
+			}
+		}
 	}
 }
 
@@ -206,17 +207,18 @@ country_event = {
 	option = {
 		name = flavor_tigranic.8.a
 		every_owned_province = {
-                limit = {
-                    trade_goods = cotton
-                    trade_goods = spices
-                    trade_goods = sugar
-					trade_goods = cocoa
-                }
-                add_province_modifier = {
-                    name = "tigranic_exploitland_modifier"
-                    duration = 7300
-                }
-            }
+			limit = {
+				province_group = majorrivers
+				trade_goods = cotton
+				trade_goods = spices
+				trade_goods = sugar
+				trade_goods = cocoa
+			}
+			add_province_modifier = {
+				name = "tigranic_exploitland_modifier"
+				duration = 7300
+			}
+		}
 	}
 }
 
@@ -516,6 +518,11 @@ country_event = {
 		name = flavor_tigranic.19.a
 
 		country_event = { id = flavor_tigranic.20 }
+
+		add_country_modifier = {
+			name = "tigranic_council_ministries_modifier"
+			duration = 7300
+		}
 	}
 
 	# Foreign Innovations
@@ -527,6 +534,11 @@ country_event = {
 		}
 
 		country_event = { id = flavor_tigranic.20 }
+
+		add_country_modifier = {
+			name = "tigranic_council_innovations_modifier"
+			duration = 7300
+		}
 	}
 
 	# Colonial Stipends
@@ -538,6 +550,11 @@ country_event = {
 		}
 
 		country_event = { id = flavor_tigranic.20 }
+
+		add_country_modifier = {
+			name = "tigranic_council_colonial_modifier"
+			duration = 7300
+		}
 	}
 
 	# Great Warnings
@@ -549,6 +566,11 @@ country_event = {
 		}
 
 		country_event = { id = flavor_tigranic.20 }
+
+		add_country_modifier = {
+			name = "tigranic_council_warnings_modifier"
+			duration = 7300
+		}
 	}
 
 }
@@ -571,6 +593,11 @@ country_event = {
 		name = flavor_tigranic.20.a
 
 		country_event = { id = flavor_tigranic.21 }
+
+		add_country_modifier = {
+			name = "tigranic_council_diplomats_modifier"
+			duration = 7300
+		}
 	}
 
 	# The Merchant Navy
@@ -584,6 +611,11 @@ country_event = {
 		}
 
 		country_event = { id = flavor_tigranic.21 }
+
+		add_country_modifier = {
+			name = "tigranic_council_merchantnavy_modifier"
+			duration = 7300
+		}
 	}
 
 	# Gothic Ordinances
@@ -595,6 +627,11 @@ country_event = {
 		}
 
 		country_event = { id = flavor_tigranic.21 }
+
+		add_country_modifier = {
+			name = "tigranic_council_ordinances_modifier"
+			duration = 7300
+		}
 	}
 
 	# Oriental Charters
@@ -616,6 +653,11 @@ country_event = {
 		}
 
 		country_event = { id = flavor_tigranic.21 }
+
+		add_country_modifier = {
+			name = "tigranic_council_charters_modifier"
+			duration = 7300
+		}
 	}
 }
 
@@ -637,6 +679,11 @@ country_event = {
 		name = flavor_tigranic.21.a
 
 		country_event = { id = flavor_tigranic.22 }
+
+		add_country_modifier = {
+			name = "tigranic_council_militarywages_modifier"
+			duration = 7300
+		}
 	}
 
 	# Sappers and Engineers
@@ -644,6 +691,11 @@ country_event = {
 		name = flavor_tigranic.21.b
 
 		country_event = { id = flavor_tigranic.22 }
+
+		add_country_modifier = {
+			name = "tigranic_council_sappers_modifier"
+			duration = 7300
+		}
 	}
 
 	# Numidian Cavalry
@@ -658,6 +710,11 @@ country_event = {
 		}
 
 		country_event = { id = flavor_tigranic.22 }
+
+		add_country_modifier = {
+			name = "tigranic_council_cavalry_modifier"
+			duration = 7300
+		}
 	}
 
 	# Tercios
@@ -669,6 +726,11 @@ country_event = {
 		}
 
 		country_event = { id = flavor_tigranic.22 }
+
+		add_country_modifier = {
+			name = "tigranic_council_tercio_modifier"
+			duration = 7300
+		}
 	}
 }
 
@@ -678,8 +740,6 @@ country_event = {
 	title = flavor_tigranic.22.title
 	desc = flavor_tigranic.22.desc
 	picture = FEAST_eventPicture
-
-	major = yes
 	is_triggered_only = yes
 
 	trigger = {
