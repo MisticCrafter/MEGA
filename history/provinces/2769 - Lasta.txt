@@ -1,6 +1,6 @@
 owner = ETH
 controller = ETH
-capital = "Lalibela"
+capital = "The Moneybin"
 is_city = yes
 culture = amhara
 religion = abyss_mystic
