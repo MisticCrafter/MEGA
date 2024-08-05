@@ -18,6 +18,7 @@ andal_subject_monarchy = {
 	}
 	
 	trigger = {
+		is_subject = yes
 		has_reform = andal_subject_reform
 	}
 }
@@ -40,9 +41,52 @@ andal_crown_monarchy = {
 		2 = ARCHONESS
 		3 = GRAND_ARCHONESS
 	}
+
+	heir_male = {
+		1 = PRINCE
+		2 = PRINCE
+		3 = PRINCE
+	}
+
+	heir_female = {
+		1 = PRINCESS
+		2 = PRINCESS
+		3 = PRINCESS
+	}
 	
 	trigger = {
-		has_reform = andal_crown_reform
+		OR = {
+			has_reform = andal_crown_reform
+			AND = {
+				primary_culture = andal
+				is_subject = no
+			}
+		}
+	}
+}
+
+andal_exarchate_republic = {
+	rank = {
+		1 = EXARCHATE
+		2 = EXARCHATE
+		3 = EXARCHATE
+	}
+
+	ruler_male = {
+		1 = EXARCH
+		2 = EXARCH
+		3 = EXARCH
+	}
+
+	ruler_female = {
+		1 = EXARCHESS
+		2 = EXARCHESS
+		3 = EXARCHESS
+	}
+	
+	trigger = {
+		is_subject = yes
+		has_reform = andal_exarchate_reform
 	}
 }
 

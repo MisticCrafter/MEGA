@@ -273,3 +273,26 @@ united_zeven_provincies_republic_reform = {			# after you reunify Zeven Provinci
 	duration = 8
 	fixed_rank = 3
 }
+
+andal_exarchate_reform = {
+	icon = "andal_subject"
+	allow_normal_conversion = no
+	potential = {
+		culture_group = iberian
+        is_subject_of = ADU
+	}
+	nation_designer_trigger = {
+		culture_group = iberian
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	modifiers = {
+		land_morale = 0.1
+		infantry_power = 0.1
+		allowed_tercio_fraction = 0.25
+		liberty_desire_from_subject_development = -0.25
+	}
+	ai = {
+		factor = 1
+	}
+}

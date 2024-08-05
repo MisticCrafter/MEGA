@@ -1,0 +1,49 @@
+tigranic_crusade_overlord = {
+    potential = {
+        religion = tigranic
+        is_subject = no
+    }
+
+    trigger = {
+        is_subject = no
+        at_war_with_religious_enemy = yes
+        any_known_country = {
+            has_country_flag = tigranic_crusade_target
+            OR = {
+                defensive_war_with = ROOT
+                offensive_war_with = ROOT
+            }
+        }
+    }
+
+    manpower_in_true_faith_provinces = 0.3
+    morale_damage = 0.1
+    church_power_modifier = 0.1
+    prestige = 1
+}
+
+tigranic_crusade_subject = {
+    potential = {
+        religion = tigranic
+        is_subject = yes
+    }
+
+    trigger = {
+        is_subject = yes
+        overlord = {
+            at_war_with_religious_enemy = yes
+            any_known_country = {
+                has_country_flag = tigranic_crusade_target
+                OR = {
+                    defensive_war_with = ROOT
+                    offensive_war_with = ROOT
+                }
+            }
+        }
+    }
+
+    manpower_in_true_faith_provinces = 0.15
+    morale_damage = 0.05
+    church_power_modifier = 0.05
+    prestige = 0.5
+}

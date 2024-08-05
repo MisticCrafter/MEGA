@@ -1,0 +1,150 @@
+on_war_won = {
+    if = {
+		limit = {
+			has_country_modifier = hun_avenge_varna
+			FROM = { tag = TUR }
+		}
+		remove_country_modifier = hun_avenge_varna
+	}
+	
+	FROM = { country_event = { id = flavor_cri.6 } }
+	ROOT = { country_event = { id = tributary_events.32 } }
+	if = {
+		limit = {
+			has_country_flag = can_gain_legendary_pirates_flag
+			NOT = { has_ruler_flag = historical_pirate }
+			has_government_attribute = is_pirate_republic_reform
+			FROM = { total_development = ROOT }
+		}
+		random = {
+			chance = 5
+			country_event = {
+				id = pirates.25
+			}
+		}
+	}
+	
+	if = {
+		limit = {
+			is_part_of_hre = yes
+			FROM  = { is_part_of_hre = yes }
+		}
+		ROOT = { save_global_event_target_as = hre_winner }
+		FROM = { save_global_event_target_as = hre_loser }
+		random_known_country = {
+			limit = {
+				has_reform = free_city
+				NOT = {
+					prestige = 40
+				}
+				NOT = {
+					has_country_modifier = fc_treatyconference_timer
+				}
+			}
+			add_country_modifier = {
+				name = fc_treatyconference_timer
+				duration = 3650
+				hidden = yes
+			}
+			country_event = {
+				id = free_cities.7
+				days = 7
+			}
+		}
+	}
+
+	if = {
+		limit = {
+			tag = MLO
+			NOT = { has_country_flag = emp_mlo_won_war_with_swiss_mercs }
+			any_hired_mercenary_company = {
+				home_province = {
+					OR = {
+						area = switzerland_area
+						area = romandie_area
+					}
+				}
+			}
+		}
+		set_country_flag = emp_mlo_won_war_with_swiss_mercs
+	}
+	
+	if = {
+		limit = {
+			is_hiring_condottiere_from = SWI
+		}
+		SWI = { set_country_flag = won_condottiere_war }
+		if = {
+			limit = {
+				tag = PAP
+			}
+			SWI = {
+				set_country_flag = hired_to_pope
+			}
+		}
+	}
+	
+	if = {
+		limit = {
+			primary_culture = melanesian
+			NOT = { has_country_modifier = warlord_mod }
+		}
+		FROM = {
+			country_event = {
+				id = polynesian.17
+			}
+		}
+	}
+	if = {
+		limit = {
+			ROOT = { 
+				tag = SWE
+				has_country_modifier = swe_vasa_leads_the_rebellion
+				is_subject = no
+			}
+			FROM = { tag = DAN }
+		}
+		country_event = {
+			id = flavor_swe.111
+		}
+	}
+	if = {
+		limit = {
+			ROOT = { 
+				tag = SWE
+				has_country_modifier = swe_any_vasa_leads_the_rebellion
+				is_subject = no
+			}
+			FROM = { tag = DAN }
+		}
+		country_event = {
+			id = flavor_swe.105
+		}
+	}
+	if = {
+		limit = {
+			ROOT = { 
+				tag = SWE
+				has_country_flag = swe_declared_independence_war
+				is_subject = no
+			}
+			FROM = { tag = DAN }
+		}
+		country_event = {
+			id = flavor_swe.121
+		}
+	}
+	
+	# Added by megacampaign
+	if = {
+		limit = {
+			FROM = { has_country_flag = tigranic_crusade_target }
+		}
+		FROM = { clr_country_flag = tigranic_crusade_target }
+	}
+	
+	change_variable = {
+		which = num_of_wars_won_var
+		value = 1
+	}
+}
