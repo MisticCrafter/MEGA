@@ -1,0 +1,195 @@
+namespace = dotts_events
+
+country_event = {
+	id = dotts_events.1
+	title = dotts_events.1.t
+	desc = dotts_events.1.d
+	picture = DIPLOMACY_eventPicture
+	hidden = yes
+	trigger = {
+		OR = {
+			AND = {
+				has_country_modifier = out_kni_ally
+				NOT = {
+					KNI = {
+						alliance_with = ROOT
+					}
+				}
+			}
+			AND = {
+				has_country_modifier = out_lae_ally
+				NOT = {
+					LAE = {
+						alliance_with = ROOT
+					}
+				}
+			}
+			AND = {
+				has_country_modifier = out_nax_ally
+				NOT = {
+					NAX = {
+						alliance_with = ROOT
+					}
+				}
+			}
+			AND = {
+				has_country_modifier = out_mor_ally
+				NOT = {
+					MOR = {
+						alliance_with = ROOT
+					}
+				}
+			}
+			AND = {
+				has_country_modifier = out_tem_ally
+				NOT = {
+					TEM = {
+						alliance_with = ROOT
+					}
+				}
+			}
+		}
+		
+	}
+	option = {
+		if = {
+			limit = {
+				has_country_modifier = out_kni_ally
+				NOT = {
+					KNI = {
+						alliance_with = ROOT
+					}
+				}
+			}
+			remove_country_modifier = out_kni_ally
+		}
+		if = {
+			limit = {
+				has_country_modifier = out_lae_ally
+				NOT = {
+					LAE = {
+						alliance_with = ROOT
+					}
+				}
+			}
+			remove_country_modifier = out_lae_ally
+		}
+		if = {
+			limit = {
+				has_country_modifier = out_nax_ally
+				NOT = {
+					NAX = {
+						alliance_with = ROOT
+					}
+				}
+			}
+			remove_country_modifier = out_nax_ally
+		}
+		if = {
+			limit = {
+				has_country_modifier = out_mor_ally
+				NOT = {
+					MOR = {
+						alliance_with = ROOT
+					}
+				}
+			}
+			remove_country_modifier = out_mor_ally
+		}
+		if = {
+			limit = {
+				has_country_modifier = out_tem_ally
+				NOT = {
+					TEM = {
+						alliance_with = ROOT
+					}
+				}
+			}
+			remove_country_modifier = out_tem_ally
+		}
+	}
+}
+#purchase of both provinces
+country_event = {
+	id = dotts_events.2
+	title = dotts_events.2.t
+	desc = dotts_events.2.d
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = dotts_events.2.a
+		4316 = {
+			cede_province = Z00
+			add_core = Z00
+		}
+		2315 = {
+			cede_province = Z00
+			add_core = Z00
+		}
+		add_treasury = 1000
+		Z00 = {
+			add_treasury = -1000
+		}
+	}
+	option = {
+		name = dotts_events.2.b
+		4316 = {
+			add_core = Z00
+		}
+		2315 = {
+			add_core = Z00
+		}
+		add_prestige = 20
+	}
+}
+country_event = { #suez
+	id = dotts_events.3
+	title = dotts_events.3.t
+	desc = dotts_events.3.d
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = dotts_events.2.a
+		2315 = {
+			cede_province = Z00
+			add_core = Z00
+		}
+		add_treasury = 500
+		Z00 = {
+			add_treasury = -500
+		}
+	}
+	option = {
+		name = dotts_events.2.b
+		2315 = {
+			add_core = Z00
+		}
+		add_prestige = 10
+	}
+}
+country_event = { #pelusia 
+	id = dotts_events.4
+	title = dotts_events.4.t
+	desc = dotts_events.4.d
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = dotts_events.2.a
+		4316 = {
+			cede_province = Z00
+			add_core = Z00
+		}
+		add_treasury = 500
+		Z00 = {
+			add_treasury = -500
+		}
+	}
+	option = {
+		name = dotts_events.2.b
+		4316 = {
+			add_core = Z00
+		}
+		add_prestige = 10
+	}
+}
+
