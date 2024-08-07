@@ -125,7 +125,10 @@ outremer_missions_slot1 = {
 
 		trigger = { 
 			390 = {
-				owned_by = ROOT 
+				OR = {
+					owned_by = ROOT 
+					owned_by_subject_of = ROOT
+				}				
 				religion = ROOT
 				has_tax_building_trigger = yes 
 				custom_trigger_tooltip = {
@@ -352,8 +355,10 @@ outremer_missions_slot2 = {
 		effect = {
 			if = {
 				limit = {
-					exists = PAP
-					alliance_with = ROOT
+					PAP = {
+						exists = yes	
+						alliance_with = ROOT
+					}
 				}
 				luristan_area = {
 					limit = {
@@ -440,8 +445,10 @@ outremer_missions_slot2 = {
 		effect = {
 			if = {
 				limit = {
-					exists = PAP
-					alliance_with = ROOT
+					PAP = {
+						exists = yes	
+						alliance_with = ROOT
+					}
 				}
 				persian_gulf_coast = {
 					limit = {
@@ -527,8 +534,10 @@ outremer_missions_slot2 = {
 		effect = {
 			if = {
 				limit = {
-					exists = PAP
-					alliance_with = ROOT
+					PAP = {
+						exists = yes	
+						alliance_with = ROOT
+					}
 				}
 				iraq_e_ajam_area = {
 					limit = {
@@ -671,19 +680,35 @@ outremer_missions_slot2 = {
 		} 
 
 		effect = {
-			persia_region = {
+			if = {
 				limit = {
-					OR = {
-						owned_by = ROOT
-						owned_by_subject_of = ROOT
+					PAP = {
+						exists = yes
+						OR = {
+							alliance_with = ROOT
+							vassal_of = ROOT
+						}
+						
 					}
 				}
-				cede_province = PAP
+				persia_region = {
+					limit = {
+						OR = {
+							owned_by = ROOT
+							owned_by_subject_of = ROOT
+							NOT = {
+								province_id = 2999
+							}
+						}
+					}
+					cede_province = PAP
+				}
 			}
 			add_country_modifier = {
 				name = out_gods_house
 				duration = -1
 			}
+			
 		} 
 	}
 
@@ -819,13 +844,7 @@ outremer_missions_slot2 = {
 				duration = -1
 			}
 			617 = {
-				owner = {
-					reverse_add_casus_belli = {
-						type = cb_crusade
-						target = ROOT
-						months = 24
-					}
-				}
+				add_core = ROOT
 			}
 		} 
 	}
