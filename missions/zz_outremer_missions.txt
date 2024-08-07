@@ -161,7 +161,10 @@ outremer_missions_slot1 = {
 
 		trigger = {
 			387 = {
-				owned_by = ROOT
+				OR = {
+					owned_by = ROOT
+					owned_by_subject_of = ROOT
+				}			
 				has_production_building_trigger = yes
 				development = 20
 				has_fort_building_trigger = yes
@@ -686,7 +689,7 @@ outremer_missions_slot2 = {
 						exists = yes
 						OR = {
 							alliance_with = ROOT
-							vassal_of = ROOT
+							is_subject_of = ROOT
 						}
 						
 					}
@@ -708,7 +711,12 @@ outremer_missions_slot2 = {
 				name = out_gods_house
 				duration = -1
 			}
-			
+			PAP = {
+				add_country_modifier = {
+					name = out_papal_puppet
+					duration = -1
+				}
+			}
 		} 
 	}
 
@@ -844,7 +852,7 @@ outremer_missions_slot2 = {
 				duration = -1
 			}
 			617 = {
-				add_core = ROOT
+				add_permanent_claim = ROOT
 			}
 		} 
 	}
@@ -1612,7 +1620,7 @@ outremer_missions_slot3 = {
 				}
 				add_country_modifier = {
 					name = out_sunrise
-					duration = 1825
+					duration = 3650
 				}
 			}
 		} 
@@ -2000,6 +2008,8 @@ outremer_missions_slot4 = {
 		provinces_to_highlight = {  } 
 
 		trigger = {
+			owns = 4316
+			owns = 2315
 			if = {
 				limit = {
 					4316 = {
@@ -2009,6 +2019,7 @@ outremer_missions_slot4 = {
 					}
 				}
 				4316 = {
+					
 					has_great_project = {
 						type = suez_canal
 					}
@@ -2051,6 +2062,8 @@ outremer_missions_slot4 = {
 		provinces_to_highlight = {  } 
 
 		trigger = {
+			owns = 4316
+			owns = 2315
 			OR = {
 				4316 = {
 					has_great_project = {

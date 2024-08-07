@@ -57,6 +57,9 @@ out_eternal_crusade = {
 	warscore_cost_vs_other_religion = -0.1
 	enforce_religion_cost = -0.10
 }
+out_papal_puppet = {
+	liberty_desire = -50
+}
 #sicily
 #1
 sic_subjucation_spanyards = {
