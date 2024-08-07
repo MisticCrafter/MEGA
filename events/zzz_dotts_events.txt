@@ -192,4 +192,87 @@ country_event = { #pelusia
 		add_prestige = 10
 	}
 }
+country_event = { #persia fix
+	id = dotts_events.5
+	title = flavor_per.18.t
+	desc = flavor_per.18.desc
+	picture = CITY_VIEW_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_per.18.a
+		trigger = {
+			OR = {
+				has_country_flag = per_shia_missions
+				has_country_flag = per_sunni_missions
+				has_country_flag = per_zoroastrian_missions
+			}
+		}
+		select_current_missions = { key = PER }
+		ai_chance = { factor = 0 }
+		add_adm_power = 20000
+	}
+	
+	option = {
+		name = flavor_per.18.c
+		trigger = { NOT = { has_country_flag = per_shia_missions } }
+		set_country_flag = per_shia_missions
+		clr_country_flag = per_sunni_missions
+		clr_country_flag = per_zoroastrian_missions
+		swap_non_generic_missions = yes
+		custom_tooltip = per_preview_muslim_missions
+		ai_chance = { factor = 0 }
+	}
+	
+	option = {
+		name = flavor_per.18.c
+		trigger = { NOT = { has_country_flag = per_sunni_missions } }
+		clr_country_flag = per_shia_missions
+		set_country_flag = per_sunni_missions
+		clr_country_flag = per_zoroastrian_missions
+		swap_non_generic_missions = yes
+		custom_tooltip = per_preview_muslim_missions
+		ai_chance = { factor = 0 }
+	}
+	
+	option = {
+		name = flavor_per.18.d
+		trigger = { NOT = { has_country_flag = per_zoroastrian_missions } }
+		clr_country_flag = per_shia_missions
+		clr_country_flag = per_sunni_missions
+		set_country_flag = per_zoroastrian_missions
+		swap_non_generic_missions = yes
+		custom_tooltip = per_preview_zoroastrian_missions
+		ai_chance = { factor = 0 }
+	}
+	
+	option = {
+		name = flavor_per.18.e
+		custom_tooltip = BYZ_nothing_will_occur
+		ai_chance = {
+			factor = 0
+		}
+	}
+
+	#AI section
+	option = {
+		trigger = {
+			ai = yes
+		}
+		random_list = {
+			60 = { set_country_flag = per_catholic clr_country_flag = per_zoroastrian_missions }
+			40 = { clr_country_flag = per_catholic set_country_flag = per_zoroastrian_missions }
+		}
+		swap_non_generic_missions = yes
+		select_current_missions = { key = PER }
+		trigger_switch = {
+			on_trigger = has_country_flag
+			per_catholic = { add_adm_power = 50 add_dip_power = 50 add_mil_power = 50 }
+			per_zoroastrian_missions = { country_event = { id = flavor_per.35 } }
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
 
