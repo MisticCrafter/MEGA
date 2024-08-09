@@ -2044,3 +2044,8 @@
  ONLY_TERCIO_MODIFIER:0 "§YAffects only Paladin Regiments§!"
  MODIFIER_HAS_TERCIO:0 "Country Allows Paladin Infantry"
  el_escorial:0 "La Meralinéa"
+#hi - dotto
+VRM:0 "Belgian Confederacy"
+VRM_ADJ:0 "Confederate"
+VRM_ideas:0 "Confederacy Ideas"
+vermont_nation_title:0 "Form Belgian Confederacy"
