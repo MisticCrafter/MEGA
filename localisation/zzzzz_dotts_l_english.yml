@@ -10,6 +10,8 @@ out_trade_cities_tt:0 "\n Up to §G3§! provinces with level 3 trade centers and
 out_bedouin_tt:0 "All §YBedouin§! have less than 10% autonomy and less than 2 unrest"
 unlock_out_volunteers_tt:0 "Unlock access to the §YCrusade Volunteers§!"
 out_jap_warning_tt:0 "§RCompleting this mission will swap out our current mission tree§!"
+#great project
+dutch_colonial_office:0 "Dutch Colonial Office"
 #merc....
 out_volunteers:0 "Crusade Volunteers"
 #modifiers

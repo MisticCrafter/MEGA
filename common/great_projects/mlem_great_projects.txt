@@ -1,0 +1,181 @@
+dutch_colonial_office = {
+	start = 965
+	date = 1560.8.20
+
+	build_cost = 0
+	can_be_moved = no
+
+	starting_tier = 0
+	type = monument
+
+	build_trigger = {
+       owner = {
+			primary_culture = dutch
+			is_colonial_nation = yes
+	   	}
+    }
+
+	time = {
+		months = 0
+	}
+
+	can_use_modifiers_trigger = {
+		owner = {
+			primary_culture = dutch
+			OR = {
+				is_former_colonial_nation = yes
+				is_colonial_nation = yes
+			}
+			
+	   	}
+	}
+
+	can_upgrade_trigger = {
+		owner = {
+			primary_culture = dutch
+			OR = {
+				is_former_colonial_nation = yes
+				is_colonial_nation = yes
+			}
+	   	}
+	}
+
+	keep_trigger = {
+		owner = {
+			primary_culture = dutch
+			OR = {
+				is_former_colonial_nation = yes
+				is_colonial_nation = yes
+			}
+	   	}
+	}
+
+	#tier data
+	tier_0 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = {
+			months = 0
+		}
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = {
+			factor = 0
+		}
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {
+		}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {
+		}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {
+			
+		}
+	}
+	
+	tier_1 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = {
+			months = 120
+		}
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = {
+			factor = 1500
+		}
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {
+			
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {
+		}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {
+			global_colonial_growth = 15
+			native_uprising_chance = -0.15
+		}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {
+			
+		}
+	}
+	tier_2 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = {
+			months = 240
+		}
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = {
+			factor = 3000
+		}
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {
+			
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {
+		}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {
+			global_colonial_growth = 25
+			native_uprising_chance = -0.40
+			native_assimilation = 0.50
+		}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {
+			
+		}
+	}
+	tier_3 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = {
+			months = 480
+		}
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = {
+			factor = 6000
+		}
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {
+			
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {
+		}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {
+			global_colonial_growth = 25
+			native_assimilation = 0.50
+		}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {
+			owner = {
+				set_country_flag = mesoamerica_american_frontiers_flag
+				set_country_flag = ned_colonial_office
+				custom_tooltip = AZT_UNLOCKS_ESTABLISHMENT_OF_AMERICAN_FRONTIERS
+			}
+		}
+	}
+}
