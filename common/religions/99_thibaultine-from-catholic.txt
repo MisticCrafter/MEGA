@@ -3,28 +3,19 @@ christian = {
 		color = { 146 75 75 }
 		icon =  179
 		country = {
- 
-		no_stability_loss_on_monarch_death = yes
 	
-
-		spy_offence = 0.5
-	
-}
+			no_stability_loss_on_monarch_death = yes
+			spy_offence = 0.5	
+		}
 		country_as_secondary = {
- 
-		no_stability_loss_on_monarch_death = yes
-	
-
-		spy_offence = 0.5
-	
-}
+			no_stability_loss_on_monarch_death = yes
+			spy_offence = 0.5
+		}
 		province = {
- 
-		local_missionary_strength = 0.01
-	
-}
-		
-	heretic = { BOGOMILIST WALDENSIAN FRATICELLI LOLLARD SOCINIAN }
+			local_missionary_strength = 0.01
+		}
+		fervor = yes
+		heretic = { BOGOMILIST WALDENSIAN FRATICELLI LOLLARD SOCINIAN }
 
 	}
 }
