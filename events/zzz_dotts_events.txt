@@ -304,7 +304,7 @@ country_event = {
 		set_country_flag = ned_colonial_office
 	}
 }
-#check for if has dutch colonial office frontier but not owning it because fucking blahablablahblah cant set flags with that kinda shit
+#check for if has dutch colonial office frontier but not owning it because fucking blahablablahblah cant set flags with that kinda shit fuck you whoever is reading this, shit for brains.
 country_event = {
 	id = dotts_events.7
 	title = dotts_events.7.t

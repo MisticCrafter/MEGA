@@ -92,6 +92,45 @@ HLR_ideas = {
 	}
 }
 
+VRM_ideas = {
+	start = {
+		no_religion_penalty = yes
+		stability_cost_modifier = -0.15
+	}
+	bonus = {
+		discipline = 0.05
+	}
+	trigger = {
+		tag = VRM
+	}
+	free = yes      #will be added at load.
+	VRM_home_of_the_revolution = {
+		land_morale = 0.15
+		max_revolutionary_zeal = 10
+	}
+	VRM_tea_party = {
+		embargo_efficiency = 0.25
+		prestige = 0.5
+	}
+	manifest_destiny = {
+		colonists = 1
+	}
+	VRM_American_Frontier = {
+		native_uprising_chance = -0.5
+		native_assimilation = 0.5
+	}
+	VRM_Cheese_wheels = {
+		global_tax_modifier = 0.1
+	}
+	new_frontiers = {
+		auto_explore_adjacent_to_colony = yes
+		global_colonial_growth = 20
+	}
+	VRM_What_we_do_best = {
+		trade_company_investment_cost = -0.1
+	}
+}
+
 GER_ideas = {
 	start = {
 		legitimacy = 1
@@ -15749,44 +15788,6 @@ SNA_ideas = {
 	}
 }
 
-VRM_ideas = {
-	start = {
-		no_religion_penalty = yes
-		stability_cost_modifier = -0.15
-	}
-	bonus = {
-		discipline = 0.05
-	}
-	trigger = {
-		tag = VRM
-	}
-	free = yes      #will be added at load.
-	VRM_home_of_the_revolution = {
-		land_morale = 0.15
-		max_revolutionary_zeal = 10
-	}
-	VRM_tea_party = {
-		embargo_efficiency = 0.25
-		prestige = 0.5
-	}
-	VRM_American_Frontier = {
-		native_uprising_chance = -0.5
-		native_assimilation = 0.5
-	}
-	VRM_Cheese_wheels = {
-		global_tax_modifier = 0.1
-	}
-	VRM_vermont_constitution = {
-		num_accepted_cultures = 2
-	}
-	VRM_Liberty_is_Life = {
-		liberty_desire_from_subject_development = -0.25
-	}
-	VRM_What_we_do_best = {
-		trade_company_investment_cost = -0.1
-	}
-}
-
 ASU_ideas = {
 	start = {
 		missionaries = 1
@@ -15913,7 +15914,6 @@ Z00_ideas = {  #Outremer Ideas
 		manpower_in_true_faith_provinces = 0.20
 	}
 }
-
 
 SOO_ideas = {
 	start = {
