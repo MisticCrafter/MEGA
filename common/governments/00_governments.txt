@@ -347,6 +347,8 @@ monarchy = {
 				#1.37 Bohemia
 				vozove_hradby_reform
 				russian_mercenary_guard_reform 
+				#hi
+				three_branches_reform
 			}
 		}
 		deliberative_assembly = {
@@ -861,6 +863,8 @@ republic = {
 				#1.37 Bohemia
 				vozove_hradby_reform
 				russian_mercenary_guard_reform 
+				#helo
+				three_branches_reform
 			}
 		}
 		parliamentary_vs_presidential = {
@@ -1437,6 +1441,8 @@ theocracy = {
 				#1.37 Bohemia
 				vozove_hradby_reform
 				russian_mercenary_guard_reform 
+				#doubtful
+				three_branches_reform
 			}
 		}
 		secularization = {

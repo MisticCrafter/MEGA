@@ -220,3 +220,24 @@ reformed_swiss_fed = {
 	}
 }
 
+#Belgian Confed. tier 5 reform
+three_branches_reform = {
+	icon = "new_order_regiments"
+	potential = {
+		tag = VRM
+	}
+	trigger = {
+		tag = VRM	
+	}
+	modifiers = {
+		yearly_army_professionalism = 0.003
+		drill_gain_modifier = 0.50
+		army_tradition = 0.50
+	}
+	government_abilities = {
+		vrm_hidden_three_branches_mechanic
+	}
+	government_abilities = {
+		three_branches
+	}
+}

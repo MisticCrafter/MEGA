@@ -230,3 +230,19 @@ nap_legacy_ruggero = {
 	local_development_cost = -0.1 
 	local_monthly_devastation = -0.1
 }
+#belgian confed
+vrm_army_focus = {
+	land_morale = 0.10
+	naval_morale = -0.05
+	land_forcelimit_modifier = 0.05
+}
+vrm_navy_focus = {
+	naval_morale = 0.10
+	land_morale = -0.05
+	naval_forcelimit_modifier = 0.05
+}
+vrmmc_focus_modifier = {
+	discipline = 0.05
+	shock_damage_received = -0.10
+	is_marine_modifier = yes
+}
