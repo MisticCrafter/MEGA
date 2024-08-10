@@ -322,3 +322,62 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = dotts_events.8
+	title = dotts_events.8.t
+	desc = dotts_events.8.d
+	picture = DIPLOMACY_eventPicture
+	hidden = yes
+
+	trigger = {
+		OR = {
+			AND = {
+				tag = ITA
+				has_country_flag = formed_aragon_italy
+				NOT = {
+					num_of_owned_provinces_with = {
+						value = 3
+						area = aragon_area
+					}
+				}
+			}
+			AND = {
+				tag = ITA
+				NOT = {has_country_flag = formed_aragon_italy}
+				num_of_owned_provinces_with = {
+					value = 3
+					area = aragon_area
+				}
+			}
+		}
+		
+	}
+	option = {
+		trigger = {
+			tag = ITA
+			has_country_flag = formed_aragon_italy
+			
+		}
+		clr_country_flag = formed_aragon_italy
+		restore_country_name = yes
+		restore_country_color = yes
+	}
+	option = {
+		trigger = {
+			tag = ITA
+			NOT = {has_country_flag = formed_aragon_italy}
+			num_of_owned_provinces_with = {
+				value = 3
+				area = aragon_area
+			}
+		}
+		change_country_color = {
+			color = {
+				136 103 58
+			}
+		}
+		set_country_flag = formed_aragon_italy
+		override_country_name = ARI
+	}
+}
+

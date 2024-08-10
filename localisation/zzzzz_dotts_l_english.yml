@@ -149,3 +149,7 @@ PGA_PAPAL_RELATIONS_TT: "\n	Either §Y[PAP.GetName]§!, §YPapal Controller§! o
  nap_struggle_anew: "Struggle Anew"
  nap_sicilian_school: "Scuola Siciliana"
  tts_transumanza: "Transumanza"
+#aragon-italy
+ARI:0 "Aragon-Italy"
+ARI_ADJ:0 "Aragon-Italian"
+ARI_ideas:0 "Aragon-Italian Ideas"
