@@ -3,7 +3,7 @@ Development = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = KNI } 
+	potential = { tag = kni } 
 
 	kni_holy_alexandria = {
 		icon = mission_galleys_in_port
@@ -31,7 +31,7 @@ Development = {
 
 	kni_fort_rosetta = {
 		icon = mission_conquer_50_development
-		position = 2
+		position = 1
 		provinces_to_highlight = { province_id = 362 } 
 
 		trigger = {
@@ -82,7 +82,7 @@ Development = {
 	}
 }
 Naval = {
-	slot = 2
+	slot = 5
 	generic = no
 	ai = yes
 	has_country_shield = yes
@@ -91,6 +91,34 @@ Naval = {
 	kni_struggle_mediterranean = {
 		icon = mission_rb_mediterranean_authority
 		position = 1
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+Diplomatic = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = kni } 
+
+	kni_sway_pope = {
+		icon = sway_the_pope
+		position = 1
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kni_crusader_kings = {
+		icon = mission_united_knight_order
+		position = 2
+		required_missions = { kni_sway_pope } 
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
