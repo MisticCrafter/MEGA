@@ -53,62 +53,6 @@ Development = {
 		effect = {  } 
 	}
 }
-Naval = {
-	slot = 5
-	generic = no
-	ai = yes
-	has_country_shield = yes
-	potential = { tag = KNI } 
-
-	kni_struggle_mediterranean = {
-		icon = mission_rb_mediterranean_authority
-		position = 1
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
-	}
-
-	kni_sea_knights = {
-		icon = crusader_fleet
-		position = 1
-		required_missions = { kni_struggle_mediterranean } 
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
-	}
-}
-Diplomatic = {
-	slot = 3
-	generic = no
-	ai = yes
-	has_country_shield = yes
-	potential = { tag = KNI } 
-
-	kni_sway_pope = {
-		icon = sway_the_pope
-		position = 1
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
-	}
-
-	kni_crusader_kings = {
-		icon = mission_united_knight_order
-		position = 2
-		required_missions = { kni_sway_pope } 
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
-	}
-}
 Empire of the Nile = {
 	slot = 2
 	generic = no
@@ -144,6 +88,34 @@ Empire of the Nile = {
 		}
 	}
 }
+Diplomatic = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = KNI } 
+
+	kni_sway_pope = {
+		icon = sway_the_pope
+		position = 1
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kni_crusader_kings = {
+		icon = mission_united_knight_order
+		position = 2
+		required_missions = { kni_sway_pope } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
 Fortify the South = {
 	slot = 4
 	generic = no
@@ -175,6 +147,34 @@ Fortify the South = {
 	kni_three_castles = {
 		icon = fortify_malta
 		position = 8
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+Naval = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = KNI } 
+
+	kni_struggle_mediterranean = {
+		icon = mission_rb_mediterranean_authority
+		position = 1
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kni_sea_knights = {
+		icon = crusader_fleet
+		position = 1
+		required_missions = { kni_struggle_mediterranean } 
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 

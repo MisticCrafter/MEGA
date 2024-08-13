@@ -8,20 +8,14 @@
  kni_granary_title:0 "Granary of the Mediterranean"
  kni_granary_desc:0 ""
 
- kni_struggle_mediterranean_title:0 "Struggle for the Mediterranean"
- kni_struggle_mediterranean_desc:0 ""
-
- kni_sea_knights_title:0 "Knights of the Sea"
- kni_sea_knights_desc:0 ""
+ kni_fort_rosetta_title:0 "Citadel of Rosetta"
+ kni_fort_rosetta_desc:0 ""
 
  kni_sway_pope_title:0 "Influence the Pope"
  kni_sway_pope_desc:0 ""
 
  kni_crusader_kings_title:0 "Crusader Kings"
  kni_crusader_kings_desc:0 ""
-
- kni_fort_rosetta_title:0 "Citadel of Rosetta"
- kni_fort_rosetta_desc:0 ""
 
  kni_fortify_south_title:0 "Fortify the South"
  kni_fortify_south_desc:0 ""
@@ -31,6 +25,12 @@
 
  kni_three_castles_title:0 "Wall of Three Castles"
  kni_three_castles_desc:0 ""
+
+ kni_struggle_mediterranean_title:0 "Struggle for the Mediterranean"
+ kni_struggle_mediterranean_desc:0 ""
+
+ kni_sea_knights_title:0 "Knights of the Sea"
+ kni_sea_knights_desc:0 ""
 
 
  kni_cairo_god_title:0 "City of God"
