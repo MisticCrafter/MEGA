@@ -69,6 +69,17 @@ Naval = {
 
 		effect = {  } 
 	}
+
+	kni_sea_knights = {
+		icon = crusader_fleet
+		position = 1
+		required_missions = { kni_struggle_mediterranean } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
 }
 Diplomatic = {
 	slot = 3
