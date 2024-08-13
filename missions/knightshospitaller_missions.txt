@@ -44,15 +44,57 @@ Development = {
 			}
 		}
 
-		effect = { 
+		effect = {
 			362 = {
 				add_or_upgrade_fort_building = 1
-				add_base_production = 2
+				add_base_production = 1
 				add_base_manpower = 3
 				add_province_modifier = {
-					name = kni_citadel_of_rosetta
+					name = "kni_citadel_of_rosetta"
 					duration = -1
-			} 
+				}
+			}
 		}
+	}
+
+	kni_thousand_towers = {
+		icon = mission_the_golden_city
+		position = 3
+		required_missions = {
+			kni_fort_rosetta
+			kni_holy_alexandria
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kni_granary = {
+		icon = mission_have_manufactories
+		position = 4
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+Naval = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = kni } 
+
+	kni_struggle_mediterranean = {
+		icon = mission_rb_mediterranean_authority
+		position = 1
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
 }
