@@ -1,6 +1,6 @@
 Development = {
 	slot = 1
-	generic = no
+	generic = yes
 	ai = yes
 	has_country_shield = yes
 	potential = { tag = KNI } 
@@ -55,7 +55,7 @@ Development = {
 }
 Naval = {
 	slot = 5
-	generic = no
+	generic = yes
 	ai = yes
 	has_country_shield = yes
 	potential = { tag = KNI } 
@@ -83,7 +83,7 @@ Naval = {
 }
 Diplomatic = {
 	slot = 3
-	generic = no
+	generic = yes
 	ai = yes
 	has_country_shield = yes
 	potential = { tag = KNI } 
@@ -111,7 +111,7 @@ Diplomatic = {
 }
 Empire of the Nile = {
 	slot = 2
-	generic = no
+	generic = yes
 	ai = yes
 	has_country_shield = yes
 	potential = { tag = KNI } 
@@ -146,7 +146,7 @@ Empire of the Nile = {
 }
 Fortify the South = {
 	slot = 4
-	generic = no
+	generic = yes
 	ai = yes
 	has_country_shield = yes
 	potential = { tag = KNI } 
