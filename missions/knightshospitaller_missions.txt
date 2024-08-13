@@ -1,5 +1,5 @@
 Super_Cool_Holy_Cities = {
-	slot = 1
+	slot = 3
 	generic = no
 	ai = yes
 	has_country_shield = yes
@@ -44,8 +44,30 @@ Super_Cool_Holy_Cities = {
 	}
 
 	kni_granary = {
+		icon = mission_control_the_barbary_coast
+		position = 4
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kni_breadbasket = {
 		icon = mission_pol_breadbasket_europe
-		position = 3
+		position = 1
+		required_missions = { kni_granary } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kni_pearl_mediterranean = {
+		icon = mission_conquer_alexandria
+		position = 1
+		required_missions = { kni_thousand_towers } 
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
@@ -53,8 +75,8 @@ Super_Cool_Holy_Cities = {
 		effect = {  } 
 	}
 }
-Empire_of_the_Nile = {
-	slot = 2
+army = {
+	slot = 4
 	generic = no
 	ai = yes
 	has_country_shield = yes
@@ -87,9 +109,20 @@ Empire_of_the_Nile = {
 			}
 		}
 	}
+
+	kni_legion_white_cross = {
+		icon = mission_modern_knight_army
+		position = 3
+		required_missions = { kni_fort_rosetta } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
 }
 Diplomatic = {
-	slot = 3
+	slot = 1
 	generic = no
 	ai = yes
 	has_country_shield = yes
@@ -116,8 +149,8 @@ Diplomatic = {
 		effect = {  } 
 	}
 }
-Fortify_The_South = {
-	slot = 4
+Fortify = {
+	slot = 2
 	generic = no
 	ai = yes
 	has_country_shield = yes
@@ -153,6 +186,16 @@ Fortify_The_South = {
 
 		effect = {  } 
 	}
+
+	kni_cyrenaica = {
+		icon = fortress_of_belgrade
+		position = 5
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
 }
 Naval = {
 	slot = 5
@@ -175,6 +218,99 @@ Naval = {
 		icon = crusader_fleet
 		position = 1
 		required_missions = { kni_struggle_mediterranean } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kni_pirate_crusaders = {
+		icon = mission_pirate_fleet
+		position = 5
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kni_militant_order = {
+		icon = imperial_navy
+		position = 1
+		required_missions = { kni_sea_knights } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kni_masters_mediterranean = {
+		icon = mission_establish_high_seas_navy
+		position = 4
+		required_missions = {
+			kni_militant_order
+			kni_legion_white_cross
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kni_outremer_eastern_fleets = {
+		icon = crusader_fleet
+		position = 6
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+Landfall_Italy = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = kni } 
+
+	kni_landfall_venice = {
+		icon = mission_raid_on_venice
+		position = 7
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kni_rome = {
+		icon = mission_fall_of_third_rome
+		position = 1
+		required_missions = {
+			kni_landfall_venice
+			kni_landfall_sicily
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+landfall_sicily = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = kni } 
+
+	kni_landfall_sicily = {
+		icon = mission_break_sicily
+		position = 7
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
