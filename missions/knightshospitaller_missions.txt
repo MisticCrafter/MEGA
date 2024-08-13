@@ -1,4 +1,4 @@
-europa = {
+Super_Cool_Holy_Cities = {
 	slot = 1
 	generic = no
 	ai = yes
@@ -53,7 +53,7 @@ europa = {
 		effect = {  } 
 	}
 }
-Empire of the Nile = {
+Empire_of_the_Nile = {
 	slot = 2
 	generic = no
 	ai = yes
@@ -116,7 +116,7 @@ Diplomatic = {
 		effect = {  } 
 	}
 }
-Fortify the South = {
+Fortify_The_South = {
 	slot = 4
 	generic = no
 	ai = yes
