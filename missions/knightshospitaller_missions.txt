@@ -110,7 +110,7 @@ Diplomatic = {
 	}
 }
 Empire of the Nile = {
-	slot = 2
+	slot = 6
 	generic = no
 	ai = yes
 	has_country_shield = yes
