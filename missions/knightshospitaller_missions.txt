@@ -86,7 +86,7 @@ Naval = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = kni } 
+	potential = { tag = KNI } 
 
 	kni_struggle_mediterranean = {
 		icon = mission_rb_mediterranean_authority
@@ -103,7 +103,7 @@ Diplomatic = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = kni } 
+	potential = { tag = KNI } 
 
 	kni_sway_pope = {
 		icon = sway_the_pope
