@@ -10,6 +10,9 @@ out_trade_cities_tt:0 "\n Up to §G3§! provinces with level 3 trade centers and
 out_bedouin_tt:0 "All §YBedouin§! have less than 10% autonomy and less than 2 unrest"
 unlock_out_volunteers_tt:0 "Unlock access to the §YCrusade Volunteers§!"
 out_jap_warning_tt:0 "§RCompleting this mission will swap out our current mission tree§!"
+#great project
+dutch_colonial_office:0 "Dutch Colonial Office"
+theodosian_walls:0 "Theodosian Walls"
 #merc....
 out_volunteers:0 "Crusade Volunteers"
 #modifiers
@@ -147,3 +150,26 @@ PGA_PAPAL_RELATIONS_TT: "\n	Either §Y[PAP.GetName]§!, §YPapal Controller§! o
  nap_struggle_anew: "Struggle Anew"
  nap_sicilian_school: "Scuola Siciliana"
  tts_transumanza: "Transumanza"
+#aragon-italy
+ARI:0 "Aragon-Italy"
+ARI_ADJ:0 "Aragon-Italian"
+ARI_ideas:0 "Aragon-Italian Ideas"
+#Belgian Confed
+ three_branches_reform:0 "Three Branches of The Military"
+ three_branches_reform_desc:0 ""
+ ability_three_branches:0 "Military Funds"
+ unallocated_funds:0 "Unallocated Funds"
+ unallocated_funds_gain_modifier:0 "Unallocated Funds Modifier"
+ monthly_unallocated_funds:0 "Monthly Fund Growth"
+ ability_vrm_hidden_three_branches_mechanic:0 "Three Branches of The Armed Forces"
+ army_focus:0 "Allocate Funds to The Army"
+ army_focus_desc:0 ""
+ navy_focus:0 "Allocate Funds to The Navy"
+ navy_focus_desc:0 ""
+ usmc_focus:0 "Allocate Funds to The Marines"
+ usmc_focus_desc:0 ""
+ vrm_navy_focus:0 "Allocated Funds to The Navy"
+ vrmmc_focus_modifier:0 "Allocated Funds to The Marines"
+ vrm_army_focus:0 "Allocated Funds to The Army"
+ siphon_funds:0 "Siphon Funds"
+ siphon_funds_desc:0 ""

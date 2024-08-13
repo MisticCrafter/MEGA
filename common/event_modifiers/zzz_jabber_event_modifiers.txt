@@ -135,6 +135,63 @@ adu_hellenic_refugees = {
     state_maintenance_modifier = 0.25
 }
 
+adu_adopting_paladins = {
+    reinforce_speed = -0.3
+    land_maintenance_modifier = 0.6
+    land_morale = -0.3
+    is_tercio_modifier = yes
+}
+
+
+adu_reformed_paladins = {
+    allowed_tercio_fraction = 0.30
+    drill_gain_modifier = 0.33
+	reinforce_speed = 0.25
+	is_tercio_modifier = yes
+}
+
+adu_galleons = {
+	allowed_galleon_fraction = 0.2
+	has_galleon = yes
+	navy_tradition = 0.25
+}
+
+adu_caravels = {
+    allowed_caravel_fraction = 0.2
+    has_caravel = yes
+    navy_tradition = 0.25
+}
+
+adu_adopting_galleons = {
+    global_ship_cost = 0.3
+    naval_maintenance_modifier = 0.6
+    naval_morale = -0.3
+    is_galleon_modifier = yes
+}
+
+adu_adopting_caravels = {
+    global_ship_cost = 0.3
+    naval_maintenance_modifier = 0.6
+    naval_morale = -0.3
+    is_caravel_modifier = yes
+}
+
+adu_reformed_galleons = {
+    can_transport_units = yes
+    is_galleon_modifier = yes
+}
+
+adu_reformed_caravels = {
+    movement_speed_in_fleet_modifier = 1
+    ship_trade_power_modifier = 0.5
+    is_caravel_modifier = yes
+}
+
+adu_new_fleets = {
+    allowed_galleon_fraction = 0.3
+    allowed_caravel_fraction = 0.3
+}
+
 ###
 
 tigranic_global_cooldown_modifier = {
@@ -215,8 +272,7 @@ tigranic_techlessons_modifier = {
 }
 
 tigranic_colonylessons_modifier = {
-    colony_development_boost = 1
-    colony_cost_modifier = -0.25
+    global_colonial_growth = 30
 }
 
 tigranic_hellenic_refugees = {

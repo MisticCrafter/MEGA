@@ -5,17 +5,8 @@ sicily_mission_1 = {
 	potential = {
 		OR = {
 			tag = SIC
-			AND = {
-				was_tag = SIC
-				OR = {
-					tag = TTS
-					AND = {
-						tag = ITA
-						NOT = { was_tag = SPI }
-						NOT = { was_tag = TUS }
-					}
-				}
-			}
+			tag = TTS
+			
 		}
 	}
 	has_country_shield = yes
@@ -275,17 +266,8 @@ sicily_mission_2 = {
 	potential = {
 		OR = {
 			tag = SIC
-			AND = {
-				was_tag = SIC
-				OR = {
-					tag = TTS
-					AND = {
-						tag = ITA
-						NOT = { was_tag = SPI }
-						NOT = { was_tag = TUS }
-					}
-				}
-			}
+			tag = TTS
+			
 		}
 	}
 	has_country_shield = yes
@@ -551,17 +533,8 @@ sicily_mission_3 = {
 	potential = {
 		OR = {
 			tag = SIC
-			AND = {
-				was_tag = SIC
-				OR = {
-					tag = TTS
-					AND = {
-						tag = ITA
-						NOT = { was_tag = SPI }
-						NOT = { was_tag = TUS }
-					}
-				}
-			}
+			tag = TTS
+			
 		}
 	}
 	has_country_shield = yes
@@ -1013,17 +986,8 @@ sicily_mission_4 = {
 	potential = {
 		OR = {
 			tag = SIC
-			AND = {
-				was_tag = SIC
-				OR = {
-					tag = TTS
-					AND = {
-						tag = ITA
-						NOT = { was_tag = SPI }
-						NOT = { was_tag = TUS }
-					}
-				}
-			}
+			tag = TTS
+			
 		}
 	}
 	has_country_shield = yes
@@ -1218,17 +1182,8 @@ sicily_mission_5 = {
 	potential = {
 		OR = {
 			tag = SIC
-			AND = {
-				was_tag = SIC
-				OR = {
-					tag = TTS
-					AND = {
-						tag = ITA
-						NOT = { was_tag = SPI }
-						NOT = { was_tag = TUS }
-					}
-				}
-			}
+			tag = TTS
+			
 		}
 	}
 	has_country_shield = yes

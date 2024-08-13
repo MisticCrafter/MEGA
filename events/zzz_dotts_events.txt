@@ -109,6 +109,7 @@ country_event = {
 		}
 	}
 }
+
 #purchase of both provinces
 country_event = {
 	id = dotts_events.2
@@ -273,6 +274,110 @@ country_event = { #persia fix
 		ai_chance = {
 			factor = 100
 		}
+	}
+}
+
+#check for if owning dutch colonial office 
+country_event = {
+	id = dotts_events.6
+	title = dotts_events.6.t
+	desc = dotts_events.6.d
+	picture = DIPLOMACY_eventPicture
+	hidden = yes
+
+	trigger = {
+		owns = 965
+		primary_culture = dutch
+		OR = {
+			is_former_colonial_nation = yes
+			is_colonial_nation = yes
+		}
+		965 = {
+			has_great_project = {
+				type = dutch_colonial_office
+				tier = 3
+			}
+		}
+	}
+	option = {
+		set_country_flag = mesoamerica_american_frontiers_flag
+		set_country_flag = ned_colonial_office
+	}
+}
+#check for if has dutch colonial office frontier but not owning it because fucking blahablablahblah cant set flags with that kinda shit fuck you whoever is reading this, shit for brains.
+country_event = {
+	id = dotts_events.7
+	title = dotts_events.7.t
+	desc = dotts_events.7.d
+	picture = DIPLOMACY_eventPicture
+	hidden = yes
+
+	trigger = {
+		NOT = {owns = 965}
+		has_country_flag = ned_colonial_office
+	}
+	option = {
+		clr_country_flag = mesoamerica_american_frontiers_flag
+		clr_country_flag = ned_colonial_office
+	}
+}
+
+country_event = {
+	id = dotts_events.8
+	title = dotts_events.8.t
+	desc = dotts_events.8.d
+	picture = DIPLOMACY_eventPicture
+	hidden = yes
+
+	trigger = {
+		OR = {
+			AND = {
+				tag = ITA
+				has_country_flag = formed_aragon_italy
+				NOT = {
+					num_of_owned_provinces_with = {
+						value = 3
+						area = aragon_area
+					}
+				}
+			}
+			AND = {
+				tag = ITA
+				NOT = {has_country_flag = formed_aragon_italy}
+				num_of_owned_provinces_with = {
+					value = 3
+					area = aragon_area
+				}
+			}
+		}
+		
+	}
+	option = {
+		trigger = {
+			tag = ITA
+			has_country_flag = formed_aragon_italy
+			
+		}
+		clr_country_flag = formed_aragon_italy
+		restore_country_name = yes
+		restore_country_color = yes
+	}
+	option = {
+		trigger = {
+			tag = ITA
+			NOT = {has_country_flag = formed_aragon_italy}
+			num_of_owned_provinces_with = {
+				value = 3
+				area = aragon_area
+			}
+		}
+		change_country_color = {
+			color = {
+				136 103 58
+			}
+		}
+		set_country_flag = formed_aragon_italy
+		override_country_name = ARI
 	}
 }
 
