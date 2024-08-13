@@ -1,4 +1,4 @@
-Development = {
+europa = {
 	slot = 1
 	generic = no
 	ai = yes
