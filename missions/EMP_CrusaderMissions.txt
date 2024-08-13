@@ -103,12 +103,6 @@ EMP_crusader_2 = {
 	potential = {
 		has_dlc = "Emperor"
 		OR = {
-			tag = CYP
-			tag = KNI
-			tag = ATH
-			tag = NAX
-			tag = KOJ
-			tag = EPI
 		}
 		NOT = { map_setup = map_setup_random }
 	}
@@ -344,12 +338,6 @@ EMP_crusader_3 = {
 	potential = {
 		has_dlc = "Emperor"
 		OR = {
-			tag = CYP
-			tag = KNI
-			tag = ATH
-			tag = NAX
-			tag = KOJ
-			tag = EPI
 		}
 		NOT = { map_setup = map_setup_random }
 	}
@@ -579,12 +567,6 @@ EMP_crusader_4 = {
 	potential = {
 		has_dlc = "Emperor"
 		OR = {
-			tag = CYP
-			tag = KNI
-			tag = ATH
-			tag = NAX
-			tag = KOJ
-			tag = EPI
 		}
 		NOT = { map_setup = map_setup_random }
 	}
@@ -849,12 +831,6 @@ EMP_crusader_5 = {
 	potential = {
 		has_dlc = "Emperor"
 		OR = {
-			tag = CYP
-			tag = KNI
-			tag = ATH
-			tag = NAX
-			tag = KOJ
-			tag = EPI
 		}
 		NOT = { map_setup = map_setup_random }
 		is_random_new_world = no
