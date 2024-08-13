@@ -1,0 +1,7 @@
+#knights
+kni_citadel_of_rosetta = {
+	local_defensiveness = 0.25
+	local_fort_maintenance_modifier = 0.20
+	hostile_attrition = 1
+	max_hostile_attrition = 1
+}   

@@ -1,0 +1,58 @@
+Development = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = KNI } 
+
+	kni_holy_alexandria = {
+		icon = mission_galleys_in_port
+		position = 1
+		provinces_to_highlight = { province_id = 358 } 
+
+		trigger = {
+			358 = {
+				owned_by = ROOT
+				grown_by_development = 10
+				num_of_buildings_in_province = 3
+				num_of_times_expanded_infrastructure = 1
+			}
+		}
+
+		effect = {
+			358 = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_or_upgrade_tax_building = yes
+				add_center_of_trade_level = 1
+			}
+		}
+	}
+
+	kni_fort_rosetta = {
+		icon = mission_conquer_50_development
+		position = 2
+		provinces_to_highlight = { province_id = 362 } 
+
+		trigger = {
+			362 = {
+				owned_by = ROOT
+				grown_by_development = 10
+				has_manpower_building_trigger = yes
+				has_fort_building_trigger = yes
+				num_of_times_expanded_infrastructure = 1
+			}
+		}
+
+		effect = { 
+			362 = {
+				add_or_upgrade_fort_building = 1
+				add_base_production = 2
+				add_base_manpower = 3
+				add_province_modifier = {
+					name = kni_citadel_of_rosetta
+					duration = -1
+			} 
+		}
+	}
+}
