@@ -7,7 +7,7 @@ Development = {
 
 	kni_holy_alexandria = {
 		icon = mission_galleys_in_port
-		position = 4
+		position = 1
 		provinces_to_highlight = { province_id = 358 } 
 
 		trigger = {
@@ -31,7 +31,7 @@ Development = {
 
 	kni_thousand_towers = {
 		icon = mission_the_golden_city
-		position = 5
+		position = 2
 		required_missions = {
 			kni_fort_rosetta
 			kni_holy_alexandria
@@ -69,6 +69,17 @@ Naval = {
 
 		effect = {  } 
 	}
+
+	kni_sea_knights = {
+		icon = crusader_fleet
+		position = 1
+		required_missions = { kni_struggle_mediterranean } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
 }
 Diplomatic = {
 	slot = 3
@@ -79,7 +90,7 @@ Diplomatic = {
 
 	kni_sway_pope = {
 		icon = sway_the_pope
-		position = 5
+		position = 1
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
@@ -107,7 +118,7 @@ Empire of the Nile = {
 
 	kni_fort_rosetta = {
 		icon = mission_conquer_50_development
-		position = 4
+		position = 1
 		provinces_to_highlight = { province_id = 362 } 
 
 		trigger = {
@@ -138,11 +149,11 @@ Fortify the South = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = kni } 
+	potential = { tag = KNI } 
 
 	kni_fortify_south = {
 		icon = mission_castle_construction
-		position = 6
+		position = 1
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
@@ -163,7 +174,7 @@ Fortify the South = {
 
 	kni_three_castles = {
 		icon = fortify_malta
-		position = 3
+		position = 8
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
