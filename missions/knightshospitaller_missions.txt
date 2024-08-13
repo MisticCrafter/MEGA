@@ -3,11 +3,11 @@ Development = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = kni } 
+	potential = { tag = KNI } 
 
 	kni_holy_alexandria = {
 		icon = mission_galleys_in_port
-		position = 1
+		position = 4
 		provinces_to_highlight = { province_id = 358 } 
 
 		trigger = {
@@ -29,37 +29,9 @@ Development = {
 		}
 	}
 
-	kni_fort_rosetta = {
-		icon = mission_conquer_50_development
-		position = 1
-		provinces_to_highlight = { province_id = 362 } 
-
-		trigger = {
-			362 = {
-				owned_by = ROOT
-				grown_by_development = 10
-				has_manpower_building_trigger = yes
-				has_fort_building_trigger = yes
-				num_of_times_expanded_infrastructure = 1
-			}
-		}
-
-		effect = {
-			362 = {
-				add_or_upgrade_fort_building = 1
-				add_base_production = 1
-				add_base_manpower = 3
-				add_province_modifier = {
-					name = "kni_citadel_of_rosetta"
-					duration = -1
-				}
-			}
-		}
-	}
-
 	kni_thousand_towers = {
 		icon = mission_the_golden_city
-		position = 3
+		position = 5
 		required_missions = {
 			kni_fort_rosetta
 			kni_holy_alexandria
@@ -72,8 +44,8 @@ Development = {
 	}
 
 	kni_granary = {
-		icon = mission_have_manufactories
-		position = 4
+		icon = mission_pol_breadbasket_europe
+		position = 6
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
@@ -107,7 +79,7 @@ Diplomatic = {
 
 	kni_sway_pope = {
 		icon = sway_the_pope
-		position = 1
+		position = 5
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
@@ -119,6 +91,79 @@ Diplomatic = {
 		icon = mission_united_knight_order
 		position = 2
 		required_missions = { kni_sway_pope } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+Empire of the Nile = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = KNI } 
+
+	kni_fort_rosetta = {
+		icon = mission_conquer_50_development
+		position = 4
+		provinces_to_highlight = { province_id = 362 } 
+
+		trigger = {
+			362 = {
+				owned_by = ROOT
+				grown_by_development = 10
+				has_manpower_building_trigger = yes
+				has_fort_building_trigger = yes
+				num_of_times_expanded_infrastructure = 1
+			}
+		}
+
+		effect = {
+			362 = {
+				add_or_upgrade_fort_building = 1
+				add_base_production = 1
+				add_base_manpower = 3
+				add_province_modifier = {
+					name = "kni_citadel_of_rosetta"
+					duration = -1
+				}
+			}
+		}
+	}
+}
+Fortify the South = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = kni } 
+
+	kni_fortify_south = {
+		icon = mission_castle_construction
+		position = 6
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kni_entrenched_authority = {
+		icon = mission_knight
+		position = 2
+		required_missions = { kni_fortify_south } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kni_three_castles = {
+		icon = fortify_malta
+		position = 3
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
