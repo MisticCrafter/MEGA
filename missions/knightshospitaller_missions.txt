@@ -45,7 +45,7 @@ Development = {
 
 	kni_granary = {
 		icon = mission_pol_breadbasket_europe
-		position = 6
+		position = 3
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
@@ -146,7 +146,7 @@ Fortify the South = {
 
 	kni_three_castles = {
 		icon = fortify_malta
-		position = 8
+		position = 4
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
