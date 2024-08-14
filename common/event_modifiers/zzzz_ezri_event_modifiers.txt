@@ -11,3 +11,6 @@ roman_engineering = {
 	fort_maintenance_modifier = -0.15
 	yearly_innovativeness = 1
 }
+roman_thinking = {
+	technology_cost = -0.05
+}
