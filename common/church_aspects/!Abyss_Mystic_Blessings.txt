@@ -1,0 +1,103 @@
+#Seramida
+lessons_empress = {
+    is_blessing = yes
+
+    modifier = {
+        ae_impact = -0.10
+    }
+
+    ai_will_do = {
+        factor = 10
+    }
+}
+
+#Ithrilvar
+lessons_scholar = {
+    is_blessing = yes
+
+    modifier = {
+        idea_cost = -0.05
+    }
+
+    ai_will_do = {
+        factor = 10
+    }
+}
+
+#Athaz
+lessons_traveller = {
+    is_blessing = yes
+
+    modifier = {
+        stability_cost_modifier = -0.10
+    }
+
+    ai_will_do = {
+        factor = 10
+    }
+}
+
+#Havi
+lessons_orator = {
+    is_blessing = yes
+
+    modifier = {
+        power_projection_from_insults = 0.10
+    }
+
+    ai_will_do = {
+        factor = 10
+    }
+}
+
+#Swiggan
+lessons_widow = {
+    is_blessing = yes
+
+    modifier = {
+        all_estate_loyalty_equilibrium = 0.5
+    }
+
+    ai_will_do = {
+        factor = 10
+    }
+}
+
+#Thylacine
+lessons_shaman = {
+    is_blessing = yes
+
+    modifier = {
+        spy_offence = 0.1
+    }
+
+    ai_will_do = {
+        factor = 10
+    }
+}
+
+#Executioner
+lessons_builder = {
+    is_blessing = yes
+
+    modifier = {
+        build_cost = -0.1
+    }
+
+    ai_will_do = {
+        factor = 10
+    }
+}
+
+#Assur/Khara-Mera
+lessons_karnak = {
+    is_blessing = yes
+
+    modifier = {
+        global_rebel_suppression_efficiency = -0.15
+    }
+
+    ai_will_do = {
+        factor = 10
+    }
+}
