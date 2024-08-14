@@ -254,7 +254,7 @@ germanic = {
 			Wicher Willem William Wolfard Hendrik Maurits
 			Adriaan Andries Antonius Gaspar Isaac Johan Laurens Paul Abraham Barthout Christiaan
 			Christoffel Constantijn Cornelis Daniel Eise Gabriel Gerben Hans Jeroen Joost Nicolaas 
-			Roeland Rogier Thomas Vincent Zacharias
+			Roeland Rogier Thomas Vincent Zacharias Parajox
 		}
 		female_names = {
 			Ada Adela Adelheid Adelaide Aechte Agaete Aleid Alijse Alice Aliken Anna Annelies
@@ -267,10 +267,10 @@ germanic = {
 			Katrien Catherine Liedwin Lisebet Elisabeth Machtelt Margareta Margaret
 			Maria Mathilde Matilda Oda Odelt Olinde Onna Pieternelle Petronilla Reynilde Sanne 
 			Sigerda Sophie Sophia Swanhildis Thetburga Tiburge Waltrud
-			Wila Wendelmoet Wenna Willemine Yonefij Yvonne Zoete Margaretha Rosanne Tamara
+			Wila Wendelmoet Wenna Willemine Yonefij Yvonne Zoete Margaretha Rosanne Tamara Astolfo
 		}
 		dynasty_names = {
-			"van Oranje" Nassau "van Wassenberg" "van Henegouwen" "de Friesland"
+			"van Paradyx" Nassau "van Wassenberg" "van Henegouwen" "de Friesland"
 			"van Haspinga" "van Limburg" "van Lotharingen"  "von der Mark"
 			"van Leuven" "van Brabant" "van Egmont" "de Reginar" "van Jülich-Hengebach"
 			# CKII
@@ -287,7 +287,7 @@ germanic = {
 	flemish = {
 		primary = FLA
 			dynasty_names = {
-			"van Oranje" Nassau "van Wassenberg" "van Henegouwen" "de Friesland"
+			"van Paradyx" Nassau "van Wassenberg" "van Henegouwen" "de Friesland"
 			"van Haspinga" "van Limburg" "van Lotharingen"  "von der Mark"
 			"van Leuven" "van Brabant" "van Egmont" "de Reginar" "van Jülich-Hengebach"
 			# CKII
@@ -303,7 +303,7 @@ germanic = {
 		male_names = {
 			Filips Jan Boudewijn Arnolf Lodewijk Robrecht Willem Diederik Gwijde Karel Antoon Abraham Alexander Alfons 
 			Andries Balthasar Bartholomeus Christoffel Constantijn Cornelis Daniël David Ernst Erwin Ewoud Floris 
-			Gabriel Godfried Hans Jacob Kasper Ludger Luuk Marinus Pieter Renate Rodolf Roeland Valentijn
+			Gabriel Godfried Hans Jacob Kasper Ludger Luuk Marinus Pieter Renate Rodolf Roeland Valentijn Parajox
 		}
 		female_names = {
 			Ada Adela Adelheid Adelaide Aechte Agaete Aleid Alijse Alice Aliken Anna Annelies
@@ -316,8 +316,8 @@ germanic = {
 			Katrien Catherine Liedwin Lisebet Elisabeth Machtelt Margareta Margaret
 			Maria Mathilde Matilda Oda Odelt Olinde Onna Pieternelle Petronilla Reynilde Sanne 
 			Sigerda Sophie Sophia Swanhildis Thetburga Tiburge Waltrud
-			Wila Wendelmoet Wenna Willemine Yonefij Yvonne Zoete Margaretha Rosanne Tamara
-		}
+			Wila Wendelmoet Wenna Willemine Yonefij Yvonne Zoete Margaretha Rosanne Tamara Astolfo
+		} 
 	}
 	frisian = {
 		primary = FRI
@@ -326,18 +326,18 @@ germanic = {
 			Freark Franciscus Gysbert Gerlof Hendrik Jancko Jacobus Joast Jehan Joaris
 			Kristiaan Karel Keno Loadewyk Magnus Marten Michiel Nicolaas Okko Oluf
 			Pier Rudolf Theunis Tsalling Tsjibbe Tileman Tako Ulrik Ucko Uniko Ubbo
-			Worp Widzel Wigbolt Wijard Wybrand Ygo
+			Worp Widzel Wigbolt Wijard Wybrand Ygo Parajox
 		}
 		female_names = {
 			Albertina Ats Anna Elisabet Fokel Goslinga Juliana Kristine Kynke Marije
-			Ruerdtsje Rintsje Stine Sesilia Sjarlotte Titia Theda Tijdt Wobbel
+			Ruerdtsje Rintsje Stine Sesilia Sjarlotte Titia Theda Tijdt Wobbel Astolfo
 		}
 		dynasty_names = {
 			Abdena Accama "fan Aldenboarch" Brandsma "fan Boalsert" "fan Blije" Beninga
 			Brongersma Binnerts Bonninga "tom Brok" Carree Douwama Durks Dirksen Donia
 			Edema Eisinga Emmius Eschels "fan Esens" Feddes Galama Hamkes Halbertsma Haringsma
 			Japiks "fan Jever" Jelckama Jelgersma Lenige Ripperda "fan Rossum" Steenbicker 
-			Sirksena Syrtsema "fan Thabor" Vitringa Walles Wiarda Zelle
+			Sirksena Syrtsema "fan Thabor" Vitringa Walles Wiarda Zelle "van Paradyx"
 		}
 	}
 	gothic_ger = {
