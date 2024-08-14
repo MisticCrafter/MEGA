@@ -685,9 +685,9 @@ mamluk_warships_doctrine = {
 	button_gfx = 30
 }
 
-mamluk_transports_doctrine = {
+knights_transports_doctrine = {
 	can_select = {
-		has_country_flag = mam_unlock_transports_doctrine_flag
+		TAG = KNI
 	}
 	
 	cost = 0.1

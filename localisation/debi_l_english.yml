@@ -5,14 +5,14 @@
  kni_thousand_towers_title:0 "A Thousand Towers"
  kni_thousand_towers_desc:0 ""
 
+ kni_pearl_mediterranean_title:0 "Pearl of the Mediterranean"
+ kni_pearl_mediterranean_desc:0 ""
+
  kni_granary_title:0 "Granary of the Mediterranean"
  kni_granary_desc:0 ""
 
  kni_breadbasket_title:0 "Breadbasket of the World"
  kni_breadbasket_desc:0 ""
-
- kni_pearl_mediterranean_title:0 "Pearl of the Mediterranean"
- kni_pearl_mediterranean_desc:0 ""
 
  kni_fort_rosetta_title:0 "Citadel of Rosetta"
  kni_fort_rosetta_desc:0 ""
@@ -44,14 +44,14 @@
  kni_sea_knights_title:0 "Knights of the Sea"
  kni_sea_knights_desc:0 ""
 
- kni_pirate_crusaders_title:0 "Pirate Crusaders"
- kni_pirate_crusaders_desc:0 ""
-
  kni_militant_order_title:0 "Navy With an Order"
  kni_militant_order_desc:0 ""
 
  kni_masters_mediterranean_title:0 "Masters of the Mediterranean"
  kni_masters_mediterranean_desc:0 ""
+
+ kni_pirate_crusaders_title:0 "Pirate Crusaders"
+ kni_pirate_crusaders_desc:0 ""
 
  kni_outremer_eastern_fleets_title:0 "Outremer Eastern Fleets"
  kni_outremer_eastern_fleets_desc:0 ""
@@ -70,6 +70,15 @@
 
  kni_reconquista_title:0 "Reconquista of the Sea"
  kni_reconquista_desc:0 ""
+
+ kni_mercantile_relationships_title:0 "Mercantile Relationships"
+ kni_mercantile_relationships_desc:0 ""
+
+ kni_establish_merchant_escorts_title:0 "Merchant Escorts"
+ kni_establish_merchant_escorts_desc:0 ""
+
+ kni_alexandrian_trade_title:0 "Alexandrian Trade"
+ kni_alexandrian_trade_desc:0 ""
 
 
  kni_cairo_god_title:0 "City of God"

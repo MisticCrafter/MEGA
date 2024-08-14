@@ -43,6 +43,17 @@ Super_Cool_Holy_Cities = {
 		effect = {  } 
 	}
 
+	kni_pearl_mediterranean = {
+		icon = mission_conquer_alexandria
+		position = 3
+		required_missions = { kni_thousand_towers } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
 	kni_granary = {
 		icon = mission_control_the_barbary_coast
 		position = 4
@@ -55,19 +66,8 @@ Super_Cool_Holy_Cities = {
 
 	kni_breadbasket = {
 		icon = mission_pol_breadbasket_europe
-		position = 1
+		position = 5
 		required_missions = { kni_granary } 
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
-	}
-
-	kni_pearl_mediterranean = {
-		icon = mission_conquer_alexandria
-		position = 1
-		required_missions = { kni_thousand_towers } 
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
@@ -112,7 +112,7 @@ army = {
 
 	kni_legion_white_cross = {
 		icon = mission_modern_knight_army
-		position = 4
+		position = 3
 		required_missions = { kni_fort_rosetta } 
 		provinces_to_highlight = {  } 
 
@@ -209,25 +209,42 @@ Naval = {
 		position = 1
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {
+			OR = {
+			has_idea_group = naval_ideas
+			has_idea_group = maritime_ideas
+			owns_core_province = 321
+		}
+	}
 
-		effect = {  } 
+		effect = {
+			363 = {
+				add_or_upgrade_shipyard_building = 1
+				add_base_production = 2
+			}
+			362 = {
+				add_or_upgrade_shipyard_building = 1
+				add_base_production = 2
+			}
+			358 = {
+				add_or_upgrade_shipyard_building = 1
+				add_base_production = 2
+			}
+			431 = {
+				add_or_upgrade_shipyard_building = 1
+				add_base_production = 2
+			}
+			321 = {
+				add_or_upgrade_shipyard_building = 1
+				add_base_production = 2
+			}
+		}
 	}
 
 	kni_sea_knights = {
 		icon = crusader_fleet
-		position = 1
+		position = 2
 		required_missions = { kni_struggle_mediterranean } 
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
-	}
-
-	kni_pirate_crusaders = {
-		icon = mission_pirate_fleet
-		position = 6
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
@@ -237,7 +254,7 @@ Naval = {
 
 	kni_militant_order = {
 		icon = imperial_navy
-		position = 1
+		position = 3
 		required_missions = { kni_sea_knights } 
 		provinces_to_highlight = {  } 
 
@@ -260,6 +277,16 @@ Naval = {
 		effect = {  } 
 	}
 
+	kni_pirate_crusaders = {
+		icon = mission_pirate_fleet
+		position = 6
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
 	kni_outremer_eastern_fleets = {
 		icon = crusader_fleet
 		position = 7
@@ -275,7 +302,7 @@ Landfall_Italy = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = kni } 
+	potential = { tag = KNI } 
 
 	kni_landfall_venice = {
 		icon = mission_raid_on_venice
@@ -317,7 +344,7 @@ landfall_sicily = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { tag = kni } 
+	potential = { tag = KNI } 
 
 	kni_landfall_sicily = {
 		icon = mission_break_sicily
@@ -344,5 +371,274 @@ Reconquista = {
 		trigger = {  } 
 
 		effect = {  } 
+	}
+}
+mediterranean = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = KNI } 
+
+	kni_mercantile_relationships = {
+		icon = mam_mercantile_relationship
+		position = 6
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			if = {
+				limit = { VEN = { exists = yes }  } 
+				root = { navy_size = VEN } 
+				OR = {
+					AND = {
+						VEN = {
+							NOT = { alliance_with = ROOT } 
+							custom_trigger_tooltip = {
+								tooltip = has_been_insulted_by_root
+								OR = {
+									has_opinion_modifier = {
+										who = ROOT
+										modifier = insulted
+									}
+									has_opinion_modifier = {
+										who = ROOT
+										modifier = scornfully_insulted
+									}
+								}
+							}
+						}
+					}
+					AND = {
+						VEN = {
+							alliance_with = ROOT
+							OR = {
+								has_opinion = {
+									who = ROOT
+									value = 150
+								}
+								trust = {
+									who = ROOT
+									value = 60
+								}
+								custom_trigger_tooltip = {
+									tooltip = has_grain_export_tt
+									has_ruler_modifier = grain_trade_imports_modifier
+								}
+							}
+						}
+					}
+				}
+			}
+			else = {
+				num_of_galley = 20
+				naval_reformer = 1
+			}
+		}
+
+		effect = {
+			if = {
+				limit = { alliance_with = VEN } 
+				if = {
+					limit = { has_dlc = "Domination" } 
+					custom_tooltip = mam_reward_alliance_yes_tt
+				}
+				else = { custom_tooltip = mam_reward_alliance_yes_tt_no_dlc } 
+				tooltip = {
+					358 = {
+						if = {
+							limit = {
+								owned_by = ROOT
+								has_shipyard_building_trigger = no
+							}
+							add_building = shipyard
+						}
+					}
+					VEN = {
+						add_dip_power = 100
+						change_ruler_stat = {
+							type = dip
+							amount = 1
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = { NOT = { alliance_with = VEN }  } 
+				if = {
+					limit = { has_dlc = "Domination" } 
+					custom_tooltip = mam_reward_alliance_no_tt
+				}
+				else = { custom_tooltip = mam_reward_alliance_no_tt_no_dlc } 
+				tooltip = {
+					358 = {
+						if = {
+							limit = {
+								owned_by = ROOT
+								has_shipyard_building_trigger = no
+							}
+							add_building = shipyard
+						}
+					}
+					VEN = {
+						add_dip_power = 100
+						change_ruler_stat = {
+							type = dip
+							amount = 1
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = { alliance_with = VEN } 
+					has_dlc = "Domination"
+				}
+				custom_tooltip = mam_reward_rival_yes_tt
+				tooltip = {
+					home_trade_node_effect_scope = {
+						add_trade_modifier = {
+							who = ROOT
+							duration = 7300
+							power = 100
+							key = strong_mamluk_regulations_key
+						}
+					}
+					add_mercantilism = 3
+				}
+			}
+			else_if = {
+				limit = { has_dlc = "Domination" } 
+				custom_tooltip = mam_reward_rival_no_tt
+				tooltip = {
+					home_trade_node_effect_scope = {
+						add_trade_modifier = {
+							who = ROOT
+							duration = 7300
+							power = 100
+							key = strong_mamluk_regulations_key
+						}
+					}
+					add_mercantilism = 3
+				}
+			}
+			else_if = {
+				limit = { NOT = { has_dlc = "Domination" }  } 
+				add_mercantilism = 3
+				add_dip_power = 100
+				change_ruler_stat = {
+					type = dip
+					amount = 1
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = { alliance_with = VEN } 
+					VEN = {
+						add_dip_power = 100
+						change_ruler_stat = {
+							type = dip
+							amount = 1
+						}
+					}
+					if = {
+						limit = { has_dlc = "Domination" } 
+						add_country_modifier = {
+							name = "mam_ven_cooperation_modifier"
+							duration = -1
+							hidden = yes
+						}
+					}
+					358 = {
+						if = {
+							limit = {
+								owned_by = ROOT
+								has_shipyard_building_trigger = no
+							}
+							add_building = shipyard
+						}
+					}
+				}
+				else = {
+					home_trade_node_effect_scope = {
+						add_trade_modifier = {
+							who = ROOT
+							duration = 7300
+							power = 100
+							key = strong_mamluk_regulations_key
+						}
+					}
+					add_mercantilism = 3
+				}
+			}
+		}
+	}
+
+	kni_establish_merchant_escorts = {
+		icon = mission_arabian_sea_trade
+		position = 2
+		required_missions = { kni_mercantile_relationships } 
+		provinces_to_highlight = {
+			owned_by = ROOT
+			num_free_building_slots = 1
+			has_port = yes
+		}
+
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 3
+				has_coast_defense_building_trigger = yes
+			}
+			num_of_light_ship = 25
+		}
+
+		effect = {
+			if = {
+				limit = { tag = MAM } 
+				custom_tooltip = mam_upgrade_national_idea_tt
+				set_country_flag = mam_upgrade_national_idea_flag
+				hidden_effect = { swap_free_idea_group = yes } 
+			}
+			else = { add_dip_power = 100 } 
+			create_admiral = { tradition = 70 } 
+		}
+	}
+}
+Trade = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = KNI } 
+
+	kni_alexandrian_trade = {
+		icon = mission_conquer_alexandria
+		position = 10
+		provinces_to_highlight = {
+			OR = {
+				province_id = 358
+				province_id = 362
+				province_id = 363
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				has_trade_building_trigger = no 
+			}
+		}
+		trigger = {
+			358 = { owned_by = ROOT has_trade_building_trigger = yes }
+			362 = { owned_by = ROOT has_trade_building_trigger = yes }
+			363 = { owned_by = ROOT has_trade_building_trigger = yes }
+		}
+		effect = {
+			custom_tooltip = mam_indebted_privilege_no_merc_loss_tt
+			set_country_flag = no_mercantilism_loss_estate_privilege_flag
+
+			if = {
+				limit = { has_dlc = "Mandate of Heaven" }
+				custom_tooltip = mam_trade_building_prosperity_tt
+				set_country_flag = mam_trade_building_prosperity_flag
+			}
+			else = { add_years_of_estate_land_income = 0.25 }
+		}
 	}
 }
