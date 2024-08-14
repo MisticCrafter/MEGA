@@ -721,7 +721,6 @@ mos_rus_eastern_europe = {
 		icon = mission_the_third_rome
 		required_missions = { 
 			mos_rus_protect_south_slavs 
-			mos_rus_russian_patriarchate
 		}
 		position = 8
 		provinces_to_highlight = {
@@ -1269,7 +1268,7 @@ nov_rus_eastern_europe = {
 	
 	nov_rus_involve_in_asian_trade = {
 		icon = mission_asian_trader
-		required_missions = { mos_rus_conquer_persia }
+		required_missions = { mos_rus_conquer_the_caucasus }
 		position = 6
 		provinces_to_highlight = {
 			OR = {
@@ -1687,7 +1686,7 @@ mos_rus_russian_consolidation = {
 	mos_rus_conquer_crimea = {
 		icon = mission_galleys_in_port
 		required_missions = {  }
-		position = 3
+		position = 4
 		provinces_to_highlight = {
 			OR = {
 				area = azov_area
@@ -1741,7 +1740,7 @@ mos_rus_russian_consolidation = {
 		required_missions = {
 			mos_rus_conquer_crimea
 		}
-		position = 4
+		position = 5
 		provinces_to_highlight = {
 			region = caucasia_region
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -4855,8 +4854,8 @@ rus_abolish_serfdom = {
 
 
 
-ukr_roman_herritage = {
-	slot = 1
+ukr_roman_herritage_slot_2 = {
+	slot = 2
 	generic = no
 	ai = yes
 	has_country_shield = yes
@@ -4864,22 +4863,22 @@ ukr_roman_herritage = {
 		was_tag = UKR
 		tag = RUS
 	}
-ukr_roman_engineeering = {
-	icon = mission_early_game_buildings
-	required_missions = {  }
-	position = 14
+	ukr_roman_engineeering = {
+		icon = mission_early_game_buildings
+		required_missions = {  }
+		position = 19
 		
-	trigger = {
-		has_idea_group = infrastructure_ideas
+			trigger = {
+			has_idea_group = infrastructure_ideas
 		
-		workshop = 20
-		barracks = 15
-		num_of_owned_provinces_with = {
-			value = 10
-			has_manufactory_trigger = yes
-			}
+			workshop = 20
+			barracks = 15
 			num_of_owned_provinces_with = {
 				value = 10
+				has_manufactory_trigger = yes
+			}
+			num_of_owned_provinces_with = {
+				value = 15
 				has_fort_building_trigger = yes
 				}
 
@@ -4891,4 +4890,107 @@ ukr_roman_engineeering = {
 			}
 		}	
 	}
+
 }
+
+ukr_roman_herritage_slot_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		was_tag = UKR
+		tag = RUS
+	}
+	
+	ukr_roman_thinking = {
+		icon = bibliotheca_corviana
+		required_missions = {  }
+		position = 19
+		
+			trigger = {
+				has_idea_group = innovativeness_ideas
+				adm_tech = 14
+				dip_tech = 14
+				mil_tech = 14
+				treasury = 1500
+		}
+		
+			effect = {	
+				add_country_modifier = {
+					name = roman_thinking
+					duration = 3650
+			}
+				33 = {
+					add_building = university
+				}
+				280 = {
+					add_building = university
+				}	
+				add_treasury = -1500
+		}
+	}
+
+	ukr_host_roman_advisors = {
+		icon = friends_in_high_places
+		required_missions = { ukr_roman_thinking  }
+		position = 20
+		
+	}
+}
+
+
+ukr_roman_herritage_slot_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		was_tag = UKR
+		tag = RUS
+	}
+		ukr_claim_roman_heritage = {
+			icon = a_roman_empire
+			required_missions = {
+				ukr_roman_engineeering
+				ukr_roman_thinking
+		}
+			position = 20
+
+				trigger = {
+					2410 = {
+						trade_share = { 
+							country = ROOT
+							share = 25
+					}
+				}
+					NOT = {
+						alliance_with = RMN
+						alliance_with = BUL
+					}
+					NOT = {
+						truce_with = RMN
+						truce_with = BUL
+					}
+					
+			}
+				effect = {
+					
+					moldavia_area = {
+						limit = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+						}
+						add_claim = ROOT
+					}
+					silistria_area = {
+						limit = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+						}
+						add_claim = ROOT
+
+					}	
+				}
+			}	
+		}
