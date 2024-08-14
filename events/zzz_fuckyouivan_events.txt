@@ -271,3 +271,97 @@ country_event = {
 		}
 	}
 }
+
+#Ruthenia ~ Host Roman Advisors
+country_event = { 
+	id = ME_Sicily_Events.5
+	title = ME_Sicily_Events.5.T
+	desc = ME_Sicily_Events.5.D
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	is_triggered_only = yes
+		option = {
+			name = ME_Sicily_Events.5.OPT1
+		ai_chance = {
+			factor = 75
+		}
+			RUS = {
+				define_advisor = {
+					type = natural_scientist
+					skill = 3
+					culture = roman
+					religion = catholic
+				}	
+				define_advisor = {
+					type = spymaster
+					skill = 3
+					culture = roman
+					religion = catholic
+				}	
+				define_advisor = {
+					type = quartermaster
+					skill = 3
+					culture = roman
+					religion = catholic
+				}	
+				add_treasury = -300
+				add_historical_friend = SIC
+				add_accepted_culture = roman
+				add_country_modifier = {
+					name = roman_acceptance_epic
+					duration = -1
+				}
+			}
+			
+			SIC = {
+				add_treasury = 150	
+				add_historical_friend = RUS
+		}
+	}
+
+	option = {
+		name = ME_Sicily_Events.5.OPT2
+	ai_chance = {
+		factor = 15
+	}
+		RUS = {
+			add_country_modifier = {
+				name = hosting_roman_advisors
+				duration = -1
+			}
+			add_historical_friend = RUS
+			add_treasury = -300
+			add_accepted_culture = roman
+			add_country_modifier = {
+				name = roman_acceptance_epic
+				duration = -1
+			}
+		}
+		SIC = {
+			add_treasury = 150	
+			add_historical_friend = RUS
+		}
+	}	
+		option = {
+			name = ME_Sicily_Events.5.OPT2
+		ai_chance = {
+			factor = 10
+		}
+			RUS = {
+				add_opinion = {
+					who = SIC
+					modifier = insulted
+			}
+			add_historical_rival = SIC
+			add_treasury = -300
+		}
+			SIC = {
+			add_historical_rival = RUS
+			add_treasury = 300
+			add_opinion = {
+				who = SIC
+				modifier = insulted
+			}
+		}	
+	}
+}
