@@ -94,7 +94,7 @@ lessons_karnak = {
     is_blessing = yes
 
     modifier = {
-        global_rebel_suppression_efficiency = -0.15
+        global_rebel_suppression_efficiency = 0.15
     }
 
     ai_will_do = {
