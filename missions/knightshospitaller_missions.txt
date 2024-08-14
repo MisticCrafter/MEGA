@@ -230,10 +230,6 @@ Naval = {
 				add_or_upgrade_shipyard_building = 1
 				add_base_production = 2
 			}
-			431 = {
-				add_or_upgrade_shipyard_building = 1
-				add_base_production = 2
-			}
 			321 = {
 				add_or_upgrade_shipyard_building = 1
 				add_base_production = 2
