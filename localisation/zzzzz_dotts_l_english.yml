@@ -16,6 +16,7 @@ theodosian_walls:0 "Theodosian Walls"
 colosseum:0 "The Colosseum"
 #merc....
 out_volunteers:0 "Crusade Volunteers"
+merc_gladiators:0 "Gladiators"
 #belgian
 confed_frontier_tt:0 "§G5§! random colonies in §YColonial Eastern America§! or §YColonial Louisiana§! will gain §G300§! settlers"
 confed_expel_natives_tt:0 "Up to §G10§! owned §YNon Dutch§! provinces change to §YDutch§! culture alongside the following modifier:"
