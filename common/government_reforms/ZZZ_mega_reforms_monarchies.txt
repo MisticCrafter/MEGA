@@ -1,5 +1,5 @@
 andal_crown_reform = {
-	icon = "portuguese_king"
+	icon = "andal_crown"
 	allow_normal_conversion = no
 	potential = {
 		primary_culture = andal
@@ -10,9 +10,9 @@ andal_crown_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 10
 	modifiers = {
-		global_missionary_strength = 0.02
-		global_tax_modifier = 0.1
-		sailors_recovery_speed = 0.25
+		vassal_income = 0.2
+		vassal_forcelimit_bonus = 1
+		governing_capacity_modifier = -0.2
 	}
 	custom_attributes = {
 		has_appanages = yes
@@ -23,7 +23,7 @@ andal_crown_reform = {
 }
 
 andal_subject_reform = {
-	icon = "portuguese_king"
+	icon = "andal_subject"
 	allow_normal_conversion = no
 	potential = {
 		culture_group = iberian
@@ -47,7 +47,7 @@ andal_subject_reform = {
 
 
 absolutist_andalos_reform = {
-	icon = "consolidate_power_in_doge_reform"
+	icon = "andal_absolute"
 	allow_normal_conversion = no
 	potential = {
 		has_dlc = "Domination" 

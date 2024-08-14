@@ -134,6 +134,10 @@ monarchy = {
 				andal_subject_reform
 				mauretanian_crusader_reform
 				christian_berber_reform
+				#Dotto jumpscare
+				swiss_minority
+				swiss_fed
+				reformed_swiss_fed
 			}
 		}
 		hereditary_vs_nobility = {
@@ -343,6 +347,8 @@ monarchy = {
 				#1.37 Bohemia
 				vozove_hradby_reform
 				russian_mercenary_guard_reform 
+				#hi
+				three_branches_reform
 			}
 		}
 		deliberative_assembly = {
@@ -671,11 +677,14 @@ republic = {
 				#Mamluks
 				egyptian_government_reform
 				city_alliance_reform
+				#Added by megacampaign
 				zeven_provincies_republic_reform
 				reformed_nederlands_republic_reform
 				united_zeven_provincies_republic_reform
 				#fucking forgot to put things here - dotts
 				dollarstore_roman_republic_government
+				swiss_cantonate
+				andal_exarchate_reform
 			}
 		}
 		republican_virtues = {
@@ -854,6 +863,8 @@ republic = {
 				#1.37 Bohemia
 				vozove_hradby_reform
 				russian_mercenary_guard_reform 
+				#helo
+				three_branches_reform
 			}
 		}
 		parliamentary_vs_presidential = {
@@ -1278,6 +1289,9 @@ theocracy = {
 				#Egypt
 				egyptian_government_reform
 				blood_theocracy_reform
+				#Hi it's me dotto again smile
+				outremer_government_reform
+				stardust_crusaders_reform
 			}
 		}
 		internal_vs_external_mission = {
@@ -1427,6 +1441,8 @@ theocracy = {
 				#1.37 Bohemia
 				vozove_hradby_reform
 				russian_mercenary_guard_reform 
+				#doubtful
+				three_branches_reform
 			}
 		}
 		secularization = {

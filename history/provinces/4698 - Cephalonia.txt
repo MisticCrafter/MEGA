@@ -1,6 +1,6 @@
 owner = CEP
 controller = CEP
-capital = "Agios Georgios"
+capital = "Zakynthos"
 is_city = yes
 culture = greek
 religion = catholic

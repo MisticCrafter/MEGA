@@ -1,0 +1,95 @@
+vrm_hidden_three_branches_mechanic = {
+	available = {
+		has_reform = three_branches_reform
+	}
+	interactions = {
+		army_focus = {
+			gui = three_branches_mechanics_interaction_gui
+			icon = GFX_russian_ability_MIL
+			trigger = {
+				has_government_power = {
+					mechanic_type = three_branches
+					power_type = unallocated_funds
+					value = 50
+				}
+				NOT = { has_country_modifier = vrm_navy_focus }
+				NOT = { has_country_modifier = vrmmc_focus_modifier }
+				NOT = { has_country_modifier = vrm_army_focus }
+			
+			}
+			effect = {
+				add_country_modifier = {
+					name = vrm_army_focus
+					duration = 1825
+				}
+				add_government_power = {
+					mechanic_type = three_branches
+					power_type = unallocated_funds
+					value = -50
+				}
+			}
+			cooldown_years = 5
+			ai_chance = {
+				factor = 10
+			}
+		}
+		navy_focus = {
+			gui = three_branches_mechanics_interaction_gui
+			icon = GFX_russian_ability_MIL
+			trigger = {
+				has_government_power = {
+					mechanic_type = three_branches
+					power_type = unallocated_funds
+					value = 50
+				}
+				NOT = { has_country_modifier = vrm_navy_focus }
+				NOT = { has_country_modifier = vrmmc_focus_modifier }
+				NOT = { has_country_modifier = vrm_army_focus }
+			}
+			effect = {
+				add_country_modifier = {
+					name = vrm_navy_focus
+					duration = 1825
+				}
+				add_government_power = {
+					mechanic_type = three_branches
+					power_type = unallocated_funds
+					value = -50
+				}
+			}
+			cooldown_years = 5
+			ai_chance = {
+				factor = 10
+			}
+		}
+		usmc_focus = {
+			gui = three_branches_mechanics_interaction_gui
+			icon = GFX_russian_ability_MIL
+			trigger = {
+				has_government_power = {
+					mechanic_type = three_branches
+					power_type = unallocated_funds
+					value = 50
+				}
+				NOT = { has_country_modifier = vrm_navy_focus }
+				NOT = { has_country_modifier = vrmmc_focus_modifier }
+				NOT = { has_country_modifier = vrm_army_focus }
+			}
+			effect = {
+				add_country_modifier = {
+					name = vrmmc_focus_modifier
+					duration = 1825
+				}
+				add_government_power = {
+					mechanic_type = three_branches
+					power_type = unallocated_funds
+					value = -50
+				}
+			}
+			cooldown_years = 5
+			ai_chance = {
+				factor = 10
+			}
+		}
+	}
+}

@@ -1,6 +1,6 @@
 owner = ARM
 controller = ARM
-capital = "Divrigi"
+capital = "Liontokert"
 is_city = yes
 culture = armeniac
 religion = catholic

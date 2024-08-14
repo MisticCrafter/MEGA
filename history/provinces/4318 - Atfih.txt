@@ -1,6 +1,6 @@
 owner = KNI
 controller = KNI
-capital = "Atfih"
+capital = "Acanthida"
 is_city = yes
 culture = al_misr_arabic
 religion = catholic

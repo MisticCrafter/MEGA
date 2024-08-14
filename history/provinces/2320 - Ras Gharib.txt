@@ -1,6 +1,6 @@
 owner = KNI
 controller = KNI
-capital = "Ras Gharib"
+capital = "Mios-Ormos"
 is_city = yes
 culture = crusader_egyptian
 religion = catholic

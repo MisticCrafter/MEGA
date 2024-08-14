@@ -289,10 +289,106 @@ andalos_slot_1_missions = {
 			}
 		}
 	}
+
+	adu_conquer_coastal_morocco = {
+		icon = mission_arabian_fort
+		required_missions = { }
+		completed_by = 1488.1.1
+		position = 9
+		provinces_to_highlight = {
+			area = northern_morocco_area
+			area = western_morocco_area
+			area = southern_morocco_area
+			area = algiers_area
+			area = barbary_coast_area
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			OR = {
+				AND = {
+					northern_morocco_area = {
+						type = all
+						owned_by = ROOT
+					}
+					western_morocco_area = {
+						type = all
+						owned_by = ROOT
+					}
+					southern_morocco_area = {
+						type = all
+						owned_by = ROOT
+					}
+				}
+				NOT = { exists = MOR }
+			}
+			OR = {
+				AND = {
+					algiers_area = {
+						type = all
+						owned_by = ROOT
+					}
+					barbary_coast_area = {
+						type = all
+						owned_by = ROOT
+					}
+				}
+				NOT = { exists = Z0B }
+			}
+		}
+		
+		effect = {
+			western_morocco_area = {
+				limit = { 
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "buffer_zone_commerce"
+					duration = 5475
+				}
+			}
+			northern_morocco_area = {
+				limit = { 
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "buffer_zone_commerce"
+					duration = 5475
+				}
+			}
+			southern_morocco_area = {
+				limit = { 
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "buffer_zone_commerce"
+					duration = 5475
+				}
+			}
+			algiers_area = {
+				limit = { 
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "buffer_zone_commerce"
+					duration = 5475
+				}
+			}
+			barbary_coast_area = {
+				limit = { 
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = "buffer_zone_commerce"
+					duration = 5475
+				}
+			}
+		}
+	}
 	
 	adu_competitive_advantage = {
-		icon = mission_sea_battles
-		required_missions = { adu_restore_order }
+		icon = spa_tercios_system
+		required_missions = { adu_restore_order adu_conquer_coastal_morocco }
 		completed_by = 1472.1.1
 		position = 10
 		
@@ -321,98 +417,31 @@ andalos_slot_1_missions = {
 				add_army_professionalism = 0.05
 			}
 			else = { add_army_tradition = 10 }
-			northern_morocco_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			western_morocco_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			southern_morocco_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_claim = ROOT }
-				}
-				add_claim = ROOT
+			add_country_modifier = {
+				name = "adu_adopting_paladins"
+				duration = 3650
 			}
 		}
 	}
-	
-	adu_conquer_coastal_morocco = {
-		icon = mission_arabian_fort
+
+	adu_reform_paladins = {
+		icon = spa_reform_tercios
 		required_missions = { adu_competitive_advantage }
-		completed_by = 1488.1.1
+		completed_by = 1472.1.1
 		position = 11
-		provinces_to_highlight = {
-			area = northern_morocco_area
-			area = western_morocco_area
-			area = southern_morocco_area
-			NOT = { owned_by = ROOT }
-		}
 		
 		trigger = {
-			owns = 4563
-			western_morocco_area = {
-				type = all
-				owned_by = ROOT
-			}
-			southern_morocco_area = {
-				type = all
-				owned_by = ROOT
+			num_of_tercio = 60
+			OR = { 
+				army_professionalism = 0.75
+				army_tradition = 90 
 			}
 		}
-		
+
 		effect = {
-			western_morocco_area = {
-				limit = { 
-					owned_by = ROOT
-				}
-				add_province_modifier = {
-					name = "buffer_zone_commerce"
-					duration = 5475
-				}
-			}
-			northern_morocco_area = {
-				limit = { 
-					owned_by = ROOT
-				}
-				add_province_modifier = {
-					name = "buffer_zone_commerce"
-					duration = 5475
-				}
-			}
-			southern_morocco_area = {
-				limit = { 
-					owned_by = ROOT
-				}
-				add_province_modifier = {
-					name = "buffer_zone_commerce"
-					duration = 5475
-				}
-			}
 			add_country_modifier = {
-				name = spa_reformed_tercio_modifier
+				name = adu_reformed_paladins
 				duration = -1 
-			}
-			if = { 
-				limit = { 
-					has_dlc = "Rights of Man" 
-					NOT = { num_of_ruler_traits = { amount = 3 } }
-				}				
-				add_ruler_personality = strict_personality
-			}
-			else = { 
-				change_ruler_stat = {
-					type = mil
-					amount = 2
-				}
 			}
 		}
 	}
@@ -861,7 +890,54 @@ andalos_slot_2_missions_c = {
 				name = "adu_restore_crown_authority"
 				duration = 7300
 			}
-
+			if = { 
+				limit = { 
+					has_dlc = "Rights of Man" 
+					NOT = { num_of_ruler_traits = { amount = 3 } }
+				}				
+				add_ruler_personality = strict_personality
+			}
+			else = { 
+				change_ruler_stat = {
+					type = mil
+					amount = 2
+				}
+			}
+			northern_morocco_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			western_morocco_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			southern_morocco_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_claim = ROOT
+			}
+			algiers_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_claim = ROOT
+			}
+			barbary_coast_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_claim = ROOT
+			}
 			custom_tooltip = fra_20rf_per_adm
 			hidden_effect = {
 				if = {
@@ -951,6 +1027,12 @@ andalos_slot_2_missions_c = {
 				has_shipyard_building_trigger = yes 
 				base_production = 12 
 			}
+			224 = {
+				owned_by = ROOT
+				has_dock_building_trigger = yes 
+				has_shipyard_building_trigger = yes 
+				base_production = 12 
+			}
 		}
 		effect = {
 			add_navy_tradition = 30
@@ -966,6 +1048,35 @@ andalos_slot_2_missions_c = {
 				}
 				else = { add_building = shipyard }
 			}
+			224 = {
+				if = {
+					limit = { has_building = grand_shipyard }
+					add_base_production = 2 
+				}
+				else_if = {
+					limit = { has_building = shipyard }
+					remove_building = shipyard 
+					add_building = grand_shipyard 
+				}
+				else = { add_building = shipyard }
+			}
+			add_country_modifier = {
+				name = "adu_galleons"
+				duration = -1
+			}
+			add_country_modifier = {
+				name = "adu_caravels"
+				duration = -1
+			}
+			add_country_modifier = {
+				name = "adu_adopting_galleons"
+				duration = 3650
+			}
+
+			add_country_modifier = {
+				name = "adu_adopting_caravels"
+				duration = 3650
+			}
 		}
 	}
 
@@ -974,20 +1085,36 @@ andalos_slot_2_missions_c = {
 		required_missions = { adu_flagship }
 		position = 11
 		trigger = {
+			num_of_caravel = 60
+			num_of_galleon = 60
 			num_of_owned_provinces_with = {
 				has_shipyard_building_trigger = yes 
 				value = 6 
 			}
 			OR = { 
 				navy_tradition = 75 
-				navy_size = 80
+				navy_size = 200
+			}
+			NOT = {
+				OR = {
+					has_country_modifier = adu_adopting_caravels
+					has_country_modifier = adu_adopting_galleons
+				}
 			}
 		}
 		effect = {
 			if = {
 				limit = { has_dlc = "Domination" }
 				add_country_modifier = {
-					name = por_reform_navy_1_modifier
+					name = adu_reformed_galleons
+					duration = -1 
+				}
+				add_country_modifier = {
+					name = adu_reformed_caravels
+					duration = -1 
+				}
+				add_country_modifier = {
+					name = adu_new_fleets
 					duration = -1 
 				}
 			}
@@ -1481,11 +1608,9 @@ andalos_slot_3_missions_b = {
 				}
 			}
 
-			224 = {
-				add_province_modifier = {
-					name = "adu_golden_citadel"
-					duration = -1
-				}
+			add_great_project_tier = {
+				type = golden_citadel
+				tier = 1
 			}
 
 			227 = {
@@ -1511,7 +1636,6 @@ andalos_slot_3_missions_b = {
 			region = iberia_region
 		}
 		trigger = {
-			NOT = { has_estate_privilege = estate_nobles_strong_duchies }
 			custom_trigger_tooltip = {
 				tooltip = centralize_adu_tt
 				NOT = {
@@ -1582,13 +1706,6 @@ andalos_slot_4_missions = {
 		}
 	
 		effect = {
-			define_explorer = {
-				name = "Vasco da Gama"
-				shock = 3
-				fire = 2
-				manuever = 6
-				siege = 0
-			}
 			add_prestige = 10
 			add_yearly_sailors = 3
 			cape_of_good_hope_area = {
@@ -1614,6 +1731,7 @@ andalos_slot_4_missions = {
 			1201 = {
 				add_permanent_claim = ROOT
 			}
+			country_event = { id = flavor_andalos.8 }
 		}
 	}
 	
@@ -1963,28 +2081,30 @@ andalos_slot_4_missions = {
 		required_missions = {  }
 		position = 9
 		trigger = {
-			OR = {
-				AND = {
-					alliance_with = SWI
-					reverse_has_opinion = {
-						who = SWI
-						value = 100
-					}
+			any_known_country = {
+				is_great_power = yes
+				capital_scope = { superregion = europe_superregion }
+				alliance_with = ROOT
+				has_opinion = {
+					who = ROOT
+					value = 100
 				}
-				is_rival = SWI
-				NOT = { exists = SWI }
 			}
 		}
 		effect = {
-			if = {
+			every_known_country = {
 				limit = {
-					alliance_with = SWI
-				}
-				SWI = {
-					add_country_modifier = {
-						name = swi_andal_alliance_modifier
-						duration = 14600
+					is_great_power = yes
+					capital_scope = { superregion = europe_superregion }
+					alliance_with = ROOT
+					has_opinion = {
+						who = ROOT
+						value = 100
 					}
+				}
+				add_country_modifier = {
+					name = swi_andal_alliance_modifier
+					duration = 14600
 				}
 			}
 			valencia_area = {
@@ -2067,7 +2187,7 @@ andalos_slot_4_missions = {
 	}
 	adu_imperial_andalos = {
 		icon = a_real_roman_empire
-		required_missions = { adu_fate_of_iberia adu_reform_navy adu_universities adu_conquer_coastal_morocco adu_revoke_privileges }
+		required_missions = { adu_fate_of_iberia adu_reform_navy adu_universities adu_reform_paladins adu_revoke_privileges }
 		position = 12
 		provinces_to_highlight = {
 			region = iberia_region
@@ -2583,11 +2703,21 @@ andalos_slot_5_missions_c = {
 			if = { 
 				limit = { has_dlc = "Domination" }
 				custom_tooltip = por_every_wine_prov_tt
-				tooltip = { add_base_production = 3 } 
+				tooltip = { 
+					add_base_production = 3
+					add_province_modifier = {
+						name = "adu_andal_red"
+						duration = -1
+					}
+				} 
 				hidden_effect = {
 					every_owned_province = {
 						limit = { trade_goods = wine } 
-						add_base_production = 3 
+						add_base_production = 3
+						add_province_modifier = {
+							name = "adu_andal_red"
+							duration = -1
+						} 
 					}
 				}
 			}

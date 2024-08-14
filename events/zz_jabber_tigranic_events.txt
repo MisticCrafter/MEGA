@@ -1,0 +1,776 @@
+namespace = flavor_tigranic
+
+# Divine the Stars
+country_event = {
+    id = flavor_tigranic.1
+	title = flavor_tigranic.1.title
+	desc = flavor_tigranic.1.desc
+	picture = COMET_SIGHTED_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		religion = tigranic
+	}
+
+	option = {
+		name = flavor_tigranic.1.a
+		random_list = {
+			33 = {
+				country_event = { id = flavor_tigranic.14 }
+				custom_tooltip = tigranic_divination_adm_tt
+				tooltip = {
+					add_country_modifier = {
+						name = "tigranic_divination_adm_modifier"
+						duration = 4750
+					}
+				}
+			}
+			33 = {
+				country_event = { id = flavor_tigranic.15 }
+				custom_tooltip = tigranic_divination_dip_tt
+				tooltip = {
+					add_country_modifier = {
+						name = "tigranic_divination_dip_modifier"
+						duration = 4750
+					}
+				}
+			}
+			33 = {
+				country_event = { id = flavor_tigranic.16 }
+				custom_tooltip = tigranic_divination_mil_tt
+				tooltip = {
+					add_country_modifier = {
+						name = "tigranic_divination_mil_modifier"
+						duration = 4750
+					}
+				}
+			}
+		}
+	}
+}
+
+# A Feast in [capital]
+country_event = {
+    id = flavor_tigranic.2
+	title = flavor_tigranic.2.title
+	desc = flavor_tigranic.2.desc
+	picture = FEAST_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		religion = tigranic
+	}
+
+	option = {
+		name = flavor_tigranic.2.a
+		add_country_modifier = {
+			name = "tigranic_festival_modifier"
+			duration = 4750
+		}
+	}
+}
+
+# A Triumph in [capital]
+country_event = {
+    id = flavor_tigranic.3
+	title = flavor_tigranic.3.title
+	desc = flavor_tigranic.3.desc
+	picture = BYZ_REVOLUTION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		religion = tigranic
+	}
+
+	option = {
+		name = flavor_tigranic.3.a
+		add_country_modifier = {
+			name = "tigranic_triumph_modifier"
+			duration = 4750
+		}
+	}
+}
+
+# The Paladins of [country]
+country_event = {
+    id = flavor_tigranic.4
+	title = flavor_tigranic.4.title
+	desc = flavor_tigranic.4.desc
+	picture = BATTLE_VISTULA_LAGOON_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		religion = tigranic
+	}
+
+	option = {
+		name = flavor_tigranic.4.a
+		create_general = { tradition = 90 }
+		#add_country_modifier = {
+		#	name = "tigranic_paladins_modifier"
+		#	duration = 4750
+		#}
+	}
+}
+
+# Hymns of Good War
+country_event = {
+    id = flavor_tigranic.5
+	title = flavor_tigranic.5.title
+	desc = flavor_tigranic.5.desc
+	picture = SWORD_OF_OSMAN_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		religion = tigranic
+	}
+
+	option = {
+		name = flavor_tigranic.5.a
+		add_country_modifier = {
+			name = "tigranic_warsongs_modifier"
+			duration = 4750
+		}
+	}
+}
+
+# Rite of Fertility
+country_event = {
+    id = flavor_tigranic.6
+	title = flavor_tigranic.6.title
+	desc = flavor_tigranic.6.desc
+	picture = wihgfx_FEMALE_RULER_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		religion = tigranic
+	}
+
+	option = {
+		name = flavor_tigranic.6.a
+		add_country_modifier = {
+			name = "tigranic_fertility_modifier"
+			duration = 4750
+		}
+	}
+}
+
+# Feed the Land
+country_event = {
+    id = flavor_tigranic.7
+	title = flavor_tigranic.7.title
+	desc = flavor_tigranic.7.desc
+	picture = FEAST_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		religion = tigranic
+	}
+
+	option = {
+		name = flavor_tigranic.7.a
+		every_owned_province = {
+			limit = {
+				province_group = majorrivers
+				OR = {
+					trade_goods = grain
+					trade_goods = wine
+					trade_goods = tea
+				}
+			}
+			add_province_modifier = {
+				name = "tigranic_feedland_modifier"
+				duration = 7300
+			}
+		}
+	}
+}
+
+# Exploit the Land
+country_event = {
+    id = flavor_tigranic.8
+	title = flavor_tigranic.8.title
+	desc = flavor_tigranic.8.desc
+	picture = FARMING_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		religion = tigranic
+	}
+
+	option = {
+		name = flavor_tigranic.8.a
+		every_owned_province = {
+			limit = {
+				province_group = majorrivers
+				OR = {
+					trade_goods = cotton
+					trade_goods = spices
+					trade_goods = sugar
+					trade_goods = cocoa
+				}
+			}
+			add_province_modifier = {
+				name = "tigranic_exploitland_modifier"
+				duration = 7300
+			}
+		}
+	}
+}
+
+# Lessons of Valerio
+country_event = {
+    id = flavor_tigranic.9
+	title = flavor_tigranic.9.title
+	desc = flavor_tigranic.9.desc
+	picture = UNIVERSITY_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		religion = tigranic
+	}
+
+	option = {
+		name = flavor_tigranic.8.a
+		add_country_modifier = {
+			name = "tigranic_buildlessons_modifier"
+			duration = 4750
+		}
+	}
+}
+
+# Lessons of Tigranna
+country_event = {
+    id = flavor_tigranic.10
+	title = flavor_tigranic.10.title
+	desc = flavor_tigranic.10.desc
+	picture = WESTERNISATION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		religion = tigranic
+	}
+
+	option = {
+		name = flavor_tigranic.10.a
+		add_country_modifier = {
+			name = "tigranic_techlessons_modifier"
+			duration = 4750
+		}
+	}
+}
+
+# Lessons of Marianos
+country_event = {
+    id = flavor_tigranic.11
+	title = flavor_tigranic.11.title
+	desc = flavor_tigranic.11.desc
+	picture = EXPLORERS_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		religion = tigranic
+	}
+
+	option = {
+		name = flavor_tigranic.11.a
+		add_country_modifier = {
+			name = "tigranic_colonylessons_modifier"
+			duration = 4750
+		}
+	}
+}
+
+# Summon the Courts
+country_event = {
+    id = flavor_tigranic.12
+	title = flavor_tigranic.12.title
+	desc = flavor_tigranic.12.desc
+	picture = COURT_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		religion = tigranic
+	}
+
+	# owns Leragal
+	option = {
+		name = flavor_tigranic.12.a
+		trigger = {
+			owns = 219
+		}
+		country_event = { 
+			id = flavor_tigranic.17
+			days = 30
+		}
+		every_subject_country = {
+			country_event = { 
+				id = flavor_tigranic.18
+				days = 30
+				random = 10
+			}
+		}
+	}
+
+	# does not own Leragal
+	option = {
+		name = flavor_tigranic.12.d
+		trigger = {
+			NOT = { owns = 219 }
+		}
+		country_event = { 
+			id = flavor_tigranic.17
+			days = 30
+		}
+		every_subject_country = {
+			country_event = { 
+				id = flavor_tigranic.18
+				days = 30
+				random = 10
+			}
+		}
+	}
+}
+
+# Call the Banners
+country_event = {
+    id = flavor_tigranic.13
+	title = flavor_tigranic.13.title
+	desc = flavor_tigranic.13.desc
+	picture = ITALIAN_wars_eventPicture
+
+	major = yes
+	is_triggered_only = yes
+
+	trigger = {
+		religion = tigranic
+	}
+
+	option = {
+		name = flavor_tigranic.13.a
+		custom_tooltip = tigranic_crusade_overlord_tt
+		hidden_effect = {
+			every_known_country = {
+				limit = {
+					OR = {
+						defensive_war_with = ROOT
+						offensive_war_with = ROOT
+					}	
+				}
+				set_country_flag = tigranic_crusade_target
+			}
+			every_subject_country = {
+				limit = {
+					religion = tigranic
+				}
+				country_event = { 
+					id = flavor_tigranic.23
+					days = 30
+					random = 10
+				}
+			}
+		}
+	}
+}
+
+# Divine the Stars (adm result)
+country_event = {
+    id = flavor_tigranic.14
+	title = flavor_tigranic.14.title
+	desc = flavor_tigranic.14.desc
+	picture = FEAST_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		religion = tigranic
+	}
+
+	option = {
+		name = flavor_tigranic.14.a
+		add_country_modifier = {
+			name = "tigranic_divination_adm_modifier"
+			duration = 7300
+		}
+	}
+}
+
+# Divine the Stars (dip result)
+country_event = {
+    id = flavor_tigranic.15
+	title = flavor_tigranic.15.title
+	desc = flavor_tigranic.15.desc
+	picture = FEAST_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		religion = tigranic
+	}
+
+	option = {
+		name = flavor_tigranic.15.a
+		add_country_modifier = {
+			name = "tigranic_divination_dip_modifier"
+			duration = 7300
+		}
+	}
+}
+
+# Divine the Stars (mil result)
+country_event = {
+    id = flavor_tigranic.16
+	title = flavor_tigranic.16.title
+	desc = flavor_tigranic.16.desc
+	picture = FEAST_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		religion = tigranic
+	}
+
+	option = {
+		name = flavor_tigranic.16.a
+		add_country_modifier = {
+			name = "tigranic_divination_mil_modifier"
+			duration = 7300
+		}
+	}
+}
+
+# The Great Council of [year]
+country_event = {
+    id = flavor_tigranic.17
+	title = flavor_tigranic.17.title
+	desc = flavor_tigranic.17.desc
+	picture = FEAST_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		religion = tigranic
+	}
+
+	option = {
+		name = flavor_tigranic.17.a
+		country_event = { id = flavor_tigranic.19 }
+	}
+}
+
+# A Raven from [liege capital]
+country_event = {
+    id = flavor_tigranic.18
+	title = flavor_tigranic.18.title
+	desc = flavor_tigranic.18.desc
+	picture = FEAST_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		religion = tigranic
+	}
+
+	option = {
+		name = flavor_tigranic.18.a
+		trigger = {
+			overlord = {
+				owns = 217
+			}
+		}
+		custom_tooltip = tigranic_greatcouncil_toleragal_tt
+	}
+
+	option = {
+		name = flavor_tigranic.18.b
+		trigger = {
+			overlord = {
+				NOT = { owns = 217 }
+			}
+		}
+		custom_tooltip = tigranic_greatcouncil_tocapital_tt
+	}
+}
+
+# Great Council: Matters of the Realm (ADM round)
+country_event = {
+    id = flavor_tigranic.19
+	title = flavor_tigranic.19.title
+	desc = flavor_tigranic.19.desc
+	picture = FEAST_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		religion = tigranic
+	}
+
+	# The Seven Ministries
+	option = {
+		name = flavor_tigranic.19.a
+
+		country_event = { id = flavor_tigranic.20 }
+
+		add_country_modifier = {
+			name = "tigranic_council_ministries_modifier"
+			duration = 7300
+		}
+	}
+
+	# Foreign Innovations
+	option = {
+		name = flavor_tigranic.19.b
+		highlight = yes
+		trigger = {
+			is_lacking_institutions = yes
+		}
+
+		country_event = { id = flavor_tigranic.20 }
+
+		add_country_modifier = {
+			name = "tigranic_council_innovations_modifier"
+			duration = 7300
+		}
+	}
+
+	# Colonial Stipends
+	option = {
+		name = flavor_tigranic.19.c
+		highlight = yes
+		trigger = {
+			num_of_colonists = 1
+		}
+
+		country_event = { id = flavor_tigranic.20 }
+
+		add_country_modifier = {
+			name = "tigranic_council_colonial_modifier"
+			duration = 7300
+		}
+	}
+
+	# Great Warnings
+	option = {
+		name = flavor_tigranic.19.c
+		highlight = yes
+		trigger = {
+			num_of_colonists = 1
+		}
+
+		country_event = { id = flavor_tigranic.20 }
+
+		add_country_modifier = {
+			name = "tigranic_council_warnings_modifier"
+			duration = 7300
+		}
+	}
+
+}
+
+# Great Council: Matters of the Exterior (DIP round)
+country_event = {
+    id = flavor_tigranic.20
+	title = flavor_tigranic.20.title
+	desc = flavor_tigranic.20.desc
+	picture = FEAST_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		religion = tigranic
+	}
+
+	# New Diplomats
+	option = {
+		name = flavor_tigranic.20.a
+
+		country_event = { id = flavor_tigranic.21 }
+
+		add_country_modifier = {
+			name = "tigranic_council_diplomats_modifier"
+			duration = 7300
+		}
+	}
+
+	# The Merchant Navy
+	option = {
+		name = flavor_tigranic.20.b
+		highlight = yes
+		trigger = {
+			any_owned_province = {
+				has_port = yes
+			}
+		}
+
+		country_event = { id = flavor_tigranic.21 }
+
+		add_country_modifier = {
+			name = "tigranic_council_merchantnavy_modifier"
+			duration = 7300
+		}
+	}
+
+	# Gothic Ordinances
+	option = {
+		name = flavor_tigranic.20.c
+		highlight = yes
+		trigger = {
+			has_subject_of_type = appanage
+		}
+
+		country_event = { id = flavor_tigranic.21 }
+
+		add_country_modifier = {
+			name = "tigranic_council_ordinances_modifier"
+			duration = 7300
+		}
+	}
+
+	# Oriental Charters
+	option = {
+		name = flavor_tigranic.20.d
+		highlight = yes
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 5
+				is_overseas = yes
+				center_of_trade = 1
+				NOT = { 
+					OR = {
+						continent = north_america
+						continent = south_america 
+					}
+				}
+			}
+		}
+
+		country_event = { id = flavor_tigranic.21 }
+
+		add_country_modifier = {
+			name = "tigranic_council_charters_modifier"
+			duration = 7300
+		}
+	}
+}
+
+# Great Council: Matters of the Army (MIL round)
+country_event = {
+    id = flavor_tigranic.21
+	title = flavor_tigranic.21.title
+	desc = flavor_tigranic.21.desc
+	picture = FEAST_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		religion = tigranic
+	}
+
+	# Sword for Coin
+	option = {
+		name = flavor_tigranic.21.a
+
+		country_event = { id = flavor_tigranic.22 }
+
+		add_country_modifier = {
+			name = "tigranic_council_militarywages_modifier"
+			duration = 7300
+		}
+	}
+
+	# Sappers and Engineers
+	option = {
+		name = flavor_tigranic.21.b
+
+		country_event = { id = flavor_tigranic.22 }
+
+		add_country_modifier = {
+			name = "tigranic_council_sappers_modifier"
+			duration = 7300
+		}
+	}
+
+	# Numidian Cavalry
+	option = {
+		name = flavor_tigranic.21.c
+		highlight = yes
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				value = 10
+				region = maghreb_region
+			}
+		}
+
+		country_event = { id = flavor_tigranic.22 }
+
+		add_country_modifier = {
+			name = "tigranic_council_cavalry_modifier"
+			duration = 7300
+		}
+	}
+
+	# Tercios
+	option = {
+		name = flavor_tigranic.21.d
+		highlight = yes
+		trigger = {
+			has_reform = tercios_reform
+		}
+
+		country_event = { id = flavor_tigranic.22 }
+
+		add_country_modifier = {
+			name = "tigranic_council_tercio_modifier"
+			duration = 7300
+		}
+	}
+}
+
+# Great Council: End
+country_event = {
+    id = flavor_tigranic.22
+	title = flavor_tigranic.22.title
+	desc = flavor_tigranic.22.desc
+	picture = FEAST_eventPicture
+	is_triggered_only = yes
+
+	trigger = {
+		religion = tigranic
+	}
+
+	option = {
+		name = flavor_tigranic.22.a
+	}
+}
+
+# Calling the Banners: Reply
+country_event = {
+    id = flavor_tigranic.23
+	title = flavor_tigranic.23.title
+	desc = flavor_tigranic.23.desc
+	picture = ITALIAN_wars_eventPicture
+
+	major = yes
+	is_triggered_only = yes
+
+	trigger = {
+		religion = tigranic
+	}
+
+	option = {
+		name = flavor_tigranic.22.a
+		custom_tooltip = tigranic_crusade_subject_tt
+	}
+}

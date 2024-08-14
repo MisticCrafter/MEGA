@@ -1,0 +1,375 @@
+tigranic_divine_the_stars = {
+    sprite = "GFX_divine_the_stars"
+    cost = 50
+
+    trigger = {
+        NOT = { has_country_modifier = tigranic_global_cooldown_modifier }
+        NOT = {
+			OR = {
+				has_country_modifier = tigranic_divination_adm_modifier
+				has_country_modifier = tigranic_divination_dip_modifier
+				has_country_modifier = tigranic_divination_mil_modifier
+			}
+		}
+    }
+
+    effect = {
+        country_event = { id = flavor_tigranic.1 } # Divine the Stars
+        
+        hidden_effect = {
+            add_country_modifier = {
+                name = tigranic_global_cooldown_modifier
+                duration = 365
+            }
+        }
+    }
+
+}
+
+tigranic_arrange_a_festival = {
+    sprite = "GFX_arrange_festival"
+    cost = 50
+
+    trigger = {
+        NOT = { has_country_modifier = tigranic_global_cooldown_modifier }
+        NOT = { has_country_modifier = tigranic_festival_modifier }
+    }
+
+    effect = {
+        country_event = { id = flavor_tigranic.2 } # A Feast in [capital]
+        
+        hidden_effect = {
+            add_country_modifier = {
+                name = tigranic_global_cooldown_modifier
+                duration = 365
+            }
+        }
+    }
+}
+
+tigranic_hold_a_triumph = {
+    sprite = "GFX_hold_triumph"
+    cost = 50
+
+    trigger = {
+        war_exhaustion = 1
+        NOT = { has_country_modifier = tigranic_global_cooldown_modifier }
+        NOT = { has_country_modifier = tigranic_triumph_modifier }
+    }
+
+    effect = {
+        country_event = { id = flavor_tigranic.3 } # A Triumph in [capital]
+        
+        hidden_effect = {
+            add_country_modifier = {
+                name = tigranic_global_cooldown_modifier
+                duration = 365
+            }
+        }
+    }
+}
+
+tigranic_paladins = {
+    sprite = "GFX_elevate_paladins"
+    cost = 50
+
+    trigger = {
+        dominant_religion = tigranic
+        NOT = { has_country_modifier = tigranic_global_cooldown_modifier }
+        NOT = { has_country_modifier = tigranic_paladins_modifier }
+    }
+
+    effect = {
+        country_event = { id = flavor_tigranic.4 } # The Paladins of [country]
+        
+        hidden_effect = {
+            add_country_modifier = {
+                name = tigranic_global_cooldown_modifier
+                duration = 365
+            }
+        }
+    }
+}
+
+
+tigranic_warsongs = {
+    sprite = "GFX_romanticized_feats"
+    cost = 50
+
+    trigger = {
+        NOT = { has_country_modifier = tigranic_global_cooldown_modifier }
+        NOT = { has_country_modifier = tigranic_warsongs_modifier }
+    }
+
+    effect = {
+        country_event = { id = flavor_tigranic.5 } # Hymns of Good War
+        
+        hidden_effect = {
+            add_country_modifier = {
+                name = tigranic_global_cooldown_modifier
+                duration = 365
+            }
+        }
+    }
+}
+
+tigranic_rite_of_fertility = {
+    sprite = "GFX_rite_of_fertility"
+    cost = 50
+
+    trigger = {
+        has_heir = no
+        NOT = { has_country_modifier = tigranic_global_cooldown_modifier }
+        NOT = { has_country_modifier = tigranic_fertility_modifier }
+    }
+
+    effect = {
+        country_event = { id = flavor_tigranic.6 } # Rite of Fertility
+        
+        hidden_effect = {
+            add_country_modifier = {
+                name = tigranic_global_cooldown_modifier
+                duration = 365
+            }
+        }
+    }
+}
+
+tigranic_feed_the_land = {
+    sprite = "GFX_feed_the_land"
+    cost = 100
+
+    trigger = {
+        custom_trigger_tooltip = {
+            tooltip = tigranic_owns_river_province_tt
+            any_owned_province = {
+                province_group = majorrivers
+            }
+        }
+        NOT = { has_country_modifier = tigranic_riveraspect_cooldown_modifier }
+        NOT = { has_country_modifier = tigranic_global_cooldown_modifier }
+        NOT = {
+			OR = {
+				has_country_modifier = tigranic_feedland_modifier
+				has_country_modifier = tigranic_exploitland_modifier
+			}
+		}
+    }
+
+    effect = {
+        custom_tooltip = tigranic_feedland_tt
+        hidden_effect = {
+            country_event = { id = flavor_tigranic.7 } # Feed the Land
+            add_country_modifier = {
+                name = tigranic_riveraspect_cooldown_modifier
+                duration = 7300
+            }
+            add_country_modifier = {
+                name = tigranic_global_cooldown_modifier
+                duration = 365
+            }
+        }
+    }
+}
+
+tigranic_exploit_the_land = {
+    sprite = "GFX_exploit_the_land"
+    cost = 100
+
+    trigger = {
+        custom_trigger_tooltip = {
+            tooltip = tigranic_owns_river_province_tt
+            any_owned_province = {
+                province_group = majorrivers
+            }
+        }
+        NOT = { has_country_modifier = tigranic_riveraspect_cooldown_modifier }
+        NOT = { has_country_modifier = tigranic_global_cooldown_modifier }
+        NOT = {
+			OR = {
+				has_country_modifier = tigranic_feedland_modifier
+				has_country_modifier = tigranic_exploitland_modifier
+			}
+		}
+    }
+
+    effect = {
+        custom_tooltip = tigranic_exploitland_tt
+        hidden_effect = {
+            country_event = { id = flavor_tigranic.8 } # Exploit the Land
+            add_country_modifier = {
+                name = tigranic_riveraspect_cooldown_modifier
+                duration = 7300
+            }
+            add_country_modifier = {
+                name = tigranic_global_cooldown_modifier
+                duration = 365
+            }
+        }
+    }
+}
+
+tigranic_lessons_of_valerio = {
+    sprite = "GFX_lessons_of_valerio"
+    cost = 150
+
+    trigger = {
+        OR = {
+            AND = {
+                has_estate_loan = yes
+                estate_loyalty = {
+                    estate = estate_burghers
+                    loyalty = 70
+                }
+            }
+            num_of_loans = 0
+        }
+        NOT = { inflation = 3 }
+        NOT = { corruption = 1 }
+        NOT = { has_country_modifier = tigranic_global_cooldown_modifier }
+        NOT = { has_country_modifier = tigranic_buildlessons_modifier }
+    }
+
+    effect = {
+        country_event = { id = flavor_tigranic.9 } # Lessons of Valerio
+        
+        hidden_effect = {
+            add_country_modifier = {
+                name = tigranic_global_cooldown_modifier
+                duration = 365
+            }
+        }
+    }
+}
+
+tigranic_lessons_of_tigranna = {
+    sprite = "GFX_lessons_of_tigranna"
+    cost = 150
+
+    trigger = {
+        any_neighbor_country = {
+            NOT = { is_subject_of = ROOT }
+            tech_difference = 2
+            has_opinion = {
+                who = ROOT
+                value = 150
+            }
+            OR = {
+                alliance_with = ROOT
+                marriage_with = ROOT
+                guaranteed_by = ROOT
+            }
+        }
+        NOT = { has_country_modifier = tigranic_global_cooldown_modifier }
+        NOT = { has_country_modifier = tigranic_techlessons_modifier }
+    }
+
+    effect = {
+        country_event = { id = flavor_tigranic.10 } # Lessons of Tigranna
+        
+        hidden_effect = {
+            add_country_modifier = {
+                name = tigranic_global_cooldown_modifier
+                duration = 365
+            }
+        }
+    }
+}
+
+tigranic_lessons_of_marianos = {
+    sprite = "GFX_lessons_of_marianos"
+    cost = 150
+
+    trigger = {
+        OR = {
+            ruler_has_personality = expansionist_personality
+            full_idea_group = exploration_ideas
+			full_idea_group = expansion_ideas
+        }
+        OR = {
+            manpower_percentage = 0.75
+            army_size_percentage = 1
+        }
+        OR = {
+            sailors_percentage = 0.75
+            navy_size_percentage = 1
+        }
+        NOT = { has_country_modifier = tigranic_global_cooldown_modifier }
+        NOT = { has_country_modifier = tigranic_colonylessons_modifier }
+    }
+
+    effect = {
+        country_event = { id = flavor_tigranic.11 } # Lessons of Marianos
+        
+        hidden_effect = {
+            add_country_modifier = {
+                name = tigranic_global_cooldown_modifier
+                duration = 365
+            }
+        }
+    }
+}
+
+tigranic_summon_the_courts = {
+    sprite = "GFX_summon_courts"
+    cost = 200
+
+    trigger = {
+        is_subject = no
+        legitimacy = 90
+        num_of_provinces_in_states = 20
+        NOT = { average_home_autonomy = 10 }
+        NOT = { has_country_modifier = tigranic_global_cooldown_modifier }
+    }
+
+    effect = {
+        country_event = { id = flavor_tigranic.12 } # Summon the Courts
+        hidden_effect = {
+            add_country_modifier = {
+                name = tigranic_greataspect_cooldown_modifier
+                duration = 7300
+            }
+            add_country_modifier = {
+                name = tigranic_global_cooldown_modifier
+                duration = 365
+            }
+        }
+    }
+}
+
+tigranic_call_the_banners = {
+    sprite = "GFX_call_banners"
+    cost = 200
+
+    trigger = {
+        OR = {
+            NOT = { average_home_autonomy = 5 }
+            AND = {
+                num_of_subjects = 2
+                all_subject_country = {
+                    religion = tigranic
+                    dominant_religion = tigranic
+                    NOT = { liberty_desire = 10 }
+                }
+            }
+        }
+        is_subject = no
+        at_war_with_religious_enemy = yes
+        NOT = { has_country_modifier = tigranic_global_cooldown_modifier }
+    }
+
+    effect = {
+        country_event = { id = flavor_tigranic.13 } # Call the Banners
+        
+        hidden_effect = {
+            add_country_modifier = {
+                name = tigranic_greataspect_cooldown_modifier
+                duration = 7300
+            }
+            add_country_modifier = {
+                name = tigranic_global_cooldown_modifier
+                duration = 365
+            }
+        }
+    }
+}

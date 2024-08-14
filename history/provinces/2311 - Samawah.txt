@@ -1,6 +1,6 @@
 owner = PAP
 controller = PAP
-capital = "Najaf"
+capital = "Eridu"
 is_city = yes
 culture = crusader_mesopotamian
 religion = catholic

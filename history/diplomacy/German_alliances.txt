@@ -21,7 +21,7 @@ vassal = {
 
 union = {
     first = "SWI"
-    second = "MLO"
+    second = "SAV"
     start_date="1444.11.11"
 	end_date="1836.1.1"
 }

@@ -1,6 +1,6 @@
 owner = ASY
 controller = ASY
-capital = "Sulimaniyeh"
+capital = "Arrapha Nova"
 is_city = yes
 culture = assyrian
 religion = catholic

@@ -1,6 +1,6 @@
 owner = ARM
 controller = ARM
-capital = "Malatiya"
+capital = "Samosata"
 is_city = yes
 culture = armeniac
 religion = catholic

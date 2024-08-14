@@ -1,6 +1,6 @@
 owner = NAX
 controller = NAX
-capital = "Hama"
+capital = "Apameia"
 is_city = yes
 culture = crusader_antiochene
 religion = catholic

@@ -1,6 +1,6 @@
 owner = KNI
 controller = KNI
-capital = "Al Qusair"
+capital = "Alcazira"
 is_city = yes
 culture = crusader_egyptian
 religion = catholic

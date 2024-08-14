@@ -1,6 +1,6 @@
 owner = TEM
 controller = TEM
-capital = "Hisn Kayfa"
+capital = "Cephana"
 is_city = yes
 culture = armenian
 religion = catholic

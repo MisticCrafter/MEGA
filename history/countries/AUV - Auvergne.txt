@@ -1,9 +1,9 @@
-government = monarchy
-add_government_reform = autocracy_reform
+government = republic
+add_government_reform = swiss_cantonate
 government_rank = 1
 technology_group = western
 religion = thibaultine
-primary_culture = lengadocian
+primary_culture = auvergnat
 capital = 199
 1444.11.11= {
 	monarch = {

@@ -18,6 +18,7 @@ dollarstore_roman_republic_government = {
 				tag = SIC
 				tag = ROM
 				tag = BYZ
+				tag = ITA
 				is_playing_custom_nation = yes
 			}
 		}
@@ -51,4 +52,192 @@ dollarstore_roman_republic_government = {
 		}
 	}
 	duration = 5
+}
+
+# Outremer Reform
+
+outremer_government_reform = {
+	allow_normal_conversion = no
+	icon = "holy_horde"
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	potential = {
+		OR = {
+			tag = Z00
+			was_tag = Z00
+		}	
+	}
+	trigger = {
+		OR = {
+			tag = Z00
+			was_tag = Z00
+		}	
+	}
+	modifiers = {
+		cb_on_religious_enemies = yes
+		movement_speed = 0.1
+		cavalry_cost = -0.15
+		warscore_cost_vs_other_religion = -0.1
+	}
+	rulers_can_be_generals = yes
+	heirs_can_be_generals = yes
+	maintain_dynasty = yes
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+		government_abilities = {
+			outremer_theocracy_mechanic
+		}
+	}
+	ai = {
+		factor = 1000
+	}
+}
+
+#Stardust Crusaders !!!!
+stardust_crusaders_reform = {
+	icon = "land_christian_sun_reform"
+	allow_normal_conversion = no
+	potential = {
+		OR = { 
+			AND = {
+				has_reform = stardust_crusaders_reform
+				is_playing_custom_nation = yes
+			}
+			have_had_reform = stardust_crusaders_reform
+			mission_completed = jap_spread_the_christian_faith
+			has_reform = stardust_crusaders_reform
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 150
+	nation_designer_trigger = {
+		capital_scope = { region = japan_region } 
+	}
+	rulers_can_be_generals = yes
+	heirs_can_be_generals = yes
+	maintain_dynasty = yes
+	fixed_rank = 3
+	modifiers = {
+		manpower_recovery_speed = 0.15
+		cb_on_religious_enemies = yes
+		movement_speed = 0.1
+		cavalry_cost = -0.15
+		allowed_samurai_fraction = 0.1
+	}
+	
+	government_abilities = {
+		land_of_the_christian_sun_mechanic
+	}
+}
+
+#Swiss Cantonate icon = "united_cantons_reform"
+swiss_cantonate = {
+	icon = "united_cantons_reform"
+	allow_normal_conversion = yes
+	duration = 8
+	modifiers = {
+		governing_capacity_modifier = -0.5
+		defensiveness = 0.33
+		own_territory_dice_roll_bonus = 1
+		global_tax_modifier = -0.25
+		production_efficiency = -0.25
+		mercenary_manpower = 0.5
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	lock_level_when_selected = yes
+	potential = {
+		OR = {
+			tag = GUY
+			tag = TOU
+			tag = AUV
+		}
+	}
+	custom_attributes = {
+		mercs_do_not_cost_army_professionalism = yes
+	}
+}
+
+swiss_minority = {
+	icon = "united_cantons_reform"
+	allow_normal_conversion = yes
+	modifiers = {
+		num_accepted_cultures = -10
+		global_unrest = 10
+		culture_conversion_time = -0.25
+		culture_conversion_cost = -0.35
+		mercenary_manpower = 0.5
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	potential = {
+		tag = SAV
+	}
+	
+	custom_attributes = {
+		mercs_do_not_cost_army_professionalism = yes
+	}
+}
+
+swiss_fed = {
+	icon = "united_cantons_reform"
+	allow_normal_conversion = yes
+	modifiers = {
+		min_autonomy = 10
+		monarch_admin_power = -2
+		monarch_diplomatic_power = -2
+		monarch_military_power = -2
+		diplomatic_upkeep = 2
+		mercenary_manpower = 0.5
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	potential = {
+		tag = SWI
+	}
+
+	custom_attributes = {
+		mercs_do_not_cost_army_professionalism = yes
+	}
+}
+
+reformed_swiss_fed = {
+	icon = "united_cantons_reform"
+	allow_normal_conversion = yes
+	modifiers = {
+		min_autonomy_in_territories = -0.1
+		free_policy = 1
+		mercenary_manpower = 0.5
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	potential = {
+		tag = VRN
+	}
+
+	custom_attributes = {
+		mercs_do_not_cost_army_professionalism = yes
+	}
+}
+
+#Belgian Confed. tier 5 reform
+three_branches_reform = {
+	icon = "new_order_regiments"
+	potential = {
+		tag = VRM
+	}
+	trigger = {
+		tag = VRM	
+	}
+	modifiers = {
+		yearly_army_professionalism = 0.003
+		drill_gain_modifier = 0.50
+		army_tradition = 0.50
+	}
+	government_abilities = {
+		vrm_hidden_three_branches_mechanic
+	}
+	government_abilities = {
+		three_branches
+	}
 }

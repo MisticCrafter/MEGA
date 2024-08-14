@@ -92,6 +92,45 @@ HLR_ideas = {
 	}
 }
 
+VRM_ideas = {
+	start = {
+		no_religion_penalty = yes
+		stability_cost_modifier = -0.15
+	}
+	bonus = {
+		discipline = 0.05
+	}
+	trigger = {
+		tag = VRM
+	}
+	free = yes      #will be added at load.
+	VRM_home_of_the_revolution = {
+		land_morale = 0.15
+		max_revolutionary_zeal = 10
+	}
+	VRM_tea_party = {
+		embargo_efficiency = 0.25
+		prestige = 0.5
+	}
+	manifest_destiny = {
+		colonists = 1
+	}
+	VRM_American_Frontier = {
+		native_uprising_chance = -0.5
+		native_assimilation = 0.5
+	}
+	VRM_Cheese_wheels = {
+		global_tax_modifier = 0.1
+	}
+	new_frontiers = {
+		auto_explore_adjacent_to_colony = yes
+		global_colonial_growth = 20
+	}
+	VRM_What_we_do_best = {
+		trade_company_investment_cost = -0.1
+	}
+}
+
 GER_ideas = {
 	start = {
 		legitimacy = 1
@@ -3360,8 +3399,8 @@ NOV_ideas = {
 
 ETH_ideas = {
 	start = {
-		global_autonomy = -0.05
-		land_attrition = -0.10
+		infantry_power = 0.10
+		improve_relation_modifier = 0.20
 	}
 	
 	bonus = {
@@ -3374,10 +3413,11 @@ ETH_ideas = {
 	free = yes		#will be added at load.
 	
 	solomonid_claim = {
-		prestige = 1
+		tolerance_heretic = 2
+		tolerance_of_heretics_capacity = 1
 	}
 	nagusa_negast = {
-		heir_chance = 0.5
+		diplomatic_reputation = 1
 		legitimacy = 1
 		devotion = 1
 		republican_tradition = 0.3
@@ -3385,20 +3425,21 @@ ETH_ideas = {
 		horde_unity = 1
 	}
 	hostile_borders = {
-		defensiveness = 0.20
-		war_exhaustion = -0.03
+		inflation_reduction = 0.1
 	}
 	diplomatic_demeanor = {
-		diplomatic_reputation = 1
+		governing_capacity_modifier = 0.15
 	}
 	the_ark_of_the_covenant = {
-		missionaries = 1
+		development_cost = -0.10
 	}
 	eth_expansionist_policy = {
-		core_creation = -0.10
+		garrison_size = 0.10
+		fort_maintenance_modifier = -0.10
 	}
 	eth_reformed_armies = {
-		army_tradition = 0.5
+		global_unrest = -1
+		years_of_nationalism = -5
 	}
 }
 
@@ -4397,7 +4438,7 @@ NPL_ideas = {
 KNI_ideas = {
 	start = {
 		discipline = 0.05
-		may_perform_slave_raid = yes
+		hostile_attrition = 1
 	}
 	
 	bonus = {
@@ -6965,7 +7006,7 @@ KAZ_ideas = {
 ARM_ideas = {
 	start = {
 		war_exhaustion = -0.02
-		recover_army_morale_speed = 0.10
+		defensiveness = 0.25
 	}
 
 	bonus = {
@@ -6981,7 +7022,7 @@ ARM_ideas = {
 	free = yes		#will be added at load.
 	
 	apostolic_church = {
-		global_missionary_strength = 0.02
+		build_cost = -0.1
 	}
 	land_reclamation = {
 		development_cost = -0.1
@@ -15749,44 +15790,6 @@ SNA_ideas = {
 	}
 }
 
-VRM_ideas = {
-	start = {
-		no_religion_penalty = yes
-		stability_cost_modifier = -0.15
-	}
-	bonus = {
-		discipline = 0.05
-	}
-	trigger = {
-		tag = VRM
-	}
-	free = yes      #will be added at load.
-	VRM_home_of_the_revolution = {
-		land_morale = 0.15
-		max_revolutionary_zeal = 10
-	}
-	VRM_tea_party = {
-		embargo_efficiency = 0.25
-		prestige = 0.5
-	}
-	VRM_American_Frontier = {
-		native_uprising_chance = -0.5
-		native_assimilation = 0.5
-	}
-	VRM_Cheese_wheels = {
-		global_tax_modifier = 0.1
-	}
-	VRM_vermont_constitution = {
-		num_accepted_cultures = 2
-	}
-	VRM_Liberty_is_Life = {
-		liberty_desire_from_subject_development = -0.25
-	}
-	VRM_What_we_do_best = {
-		trade_company_investment_cost = -0.1
-	}
-}
-
 ASU_ideas = {
 	start = {
 		missionaries = 1
@@ -15891,6 +15894,7 @@ Z00_ideas = {  #Outremer Ideas
 
 	z00_idea_3 = {
 		missionaries = 1
+		may_recruit_female_generals = yes
 		missionary_maintenance_cost = -0.25
 	}
 
@@ -15912,7 +15916,6 @@ Z00_ideas = {  #Outremer Ideas
 		manpower_in_true_faith_provinces = 0.20
 	}
 }
-
 
 SOO_ideas = {
 	start = {

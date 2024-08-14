@@ -1,9 +1,11 @@
 government = monarchy
-add_government_reform = feudalism_reform
+add_government_reform = swiss_fed
 government_rank = 2
 technology_group = western
 religion = thibaultine
 primary_culture = swiss
+add_accepted_culture = auvergnat
+add_accepted_culture = piedmontese 
 capital = 4720
 1444.11.11= {
 	monarch = {

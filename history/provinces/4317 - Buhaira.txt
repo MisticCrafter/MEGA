@@ -1,6 +1,6 @@
 owner = KNI
 controller = KNI
-capital = "Damanhur"
+capital = "Damanour"
 is_city = yes
 culture = crusader_egyptian
 religion = catholic

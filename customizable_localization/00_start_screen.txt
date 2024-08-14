@@ -138,7 +138,9 @@ defined_text = {
 			tag = HAB
 			NOT = { is_year = 1452 }
 		}
+		
     }
+	
 	text = {
         localisation_key = string_start_title_bavarians
         trigger = {
@@ -527,7 +529,19 @@ defined_text = {
 	#Later Start Dates
 	text = {
 		localisation_key = string_from_ck3
-		trigger = { always = yes }
+		trigger = { 
+			not = {
+				tag = HAB
+			}
+			always = yes 
+		}
+	}
+	text = { #Austria
+		localisation_key = string_start_babenberg
+		trigger = {
+			tag = HAB
+			NOT = { is_year = 1457 }
+		}
 	}
 }
 

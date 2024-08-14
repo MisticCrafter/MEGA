@@ -1,6 +1,6 @@
 owner = ARM
 controller = ARM
-capital = "Erzurum"
+capital = "Theodosioupolis"
 is_city = yes
 culture = armenian
 religion = catholic

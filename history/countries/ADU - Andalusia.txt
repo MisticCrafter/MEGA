@@ -5,7 +5,10 @@ technology_group = western
 religion = tigranic
 primary_culture = andal
 capital = 224
-1444.11.11= {
+1000.1.1 = {
+	set_estate_privilege = estate_nobles_andal_strong_duchies
+}
+1444.11.11= {	
 	monarch = {
 		name = "Tigrano"
 		dynasty = "de Sintra"

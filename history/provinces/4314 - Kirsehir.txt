@@ -1,6 +1,6 @@
 owner = Z08
 controller = Z08
-capital = "Kirshehir"
+capital = "Ioustinianoupolis"
 is_city = yes
 culture = anatolian
 religion = catholic
