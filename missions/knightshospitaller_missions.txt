@@ -227,7 +227,7 @@ Naval = {
 
 	kni_pirate_crusaders = {
 		icon = mission_pirate_fleet
-		position = 5
+		position = 6
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
@@ -262,7 +262,7 @@ Naval = {
 
 	kni_outremer_eastern_fleets = {
 		icon = crusader_fleet
-		position = 6
+		position = 7
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
@@ -300,6 +300,17 @@ Landfall_Italy = {
 
 		effect = {  } 
 	}
+
+	kni_europe = {
+		icon = mission_knight
+		position = 1
+		required_missions = { kni_rome } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
 }
 landfall_sicily = {
 	slot = 2
@@ -311,6 +322,23 @@ landfall_sicily = {
 	kni_landfall_sicily = {
 		icon = mission_break_sicily
 		position = 7
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+Reconquista = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = KNI } 
+
+	kni_reconquista = {
+		icon = mission_arabian_sea_trade
+		position = 6
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
