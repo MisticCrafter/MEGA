@@ -1,0 +1,186 @@
+akaman_slot_1_missions = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential_on_load = {
+		OR = {
+			has_dlc = "Domination" 
+			has_dlc = "Golden Century"
+		}
+	}
+	potential = {
+		OR = {
+			has_dlc = "Domination" 
+			has_dlc = "Golden Century"
+		}
+		tag = Z01
+		NOT = { map_setup = map_setup_random }
+		is_random_new_world = no
+	}
+	has_country_shield = yes
+
+	ZO1_go_westward = {
+		icon = mission_establish_high_seas_navy
+		position = 2
+		completed_by = 1501.1.1
+		
+		provinces_to_highlight = {
+			colonial_region = colonial_brazil
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		
+		trigger = { 
+			custom_trigger_tooltip = {
+				tooltip = miss_discover_brazil
+				colonial_brazil = {
+					has_discovered = ROOT
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = miss_colonize_brazil
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 1
+					colonial_region = colonial_brazil
+					is_city = yes
+				}
+			}
+		}
+	}
+
+	ZO1_brazil_colonies = {
+		icon = mission_iberian_conquistador
+		required_missions = { ZO1_go_westward }
+		completed_by = 1540.1.1
+		
+		provinces_to_highlight = {
+			colonial_region = colonial_brazil
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		
+		trigger = { 
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 10
+				colonial_region = colonial_brazil
+				is_city = yes
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "ZO1_brazil_buff"
+				duration = 7300
+			}
+		}
+	}
+
+	ZO1_bandeirantes = {
+		icon = mission_brazilian_bandeirantes
+		required_missions = { ZO1_brazil_colonies }
+		
+		provinces_to_highlight = {
+			OR = {
+				area = minas_gerais_area
+				area = rio_de_janeiro_area
+				area = sao_paolo_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			if = {
+				limit = {
+					has_dlc = "Dharma"
+				}
+				763 = {
+					province_has_center_of_trade_of_level = 2
+				}
+			}
+			else = {
+				763 = {
+					OR = {
+						has_building = marketplace
+						has_building = trade_depot
+						has_building = stock_exchange
+					}
+				}
+			}
+			minas_gerais_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			rio_de_janeiro_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			sao_paolo_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					765 = {
+						NOT = {
+							trade_goods = gold
+						}
+					}
+				}
+				765 = {
+					change_trade_goods = gold
+				}
+			}
+			765 = {
+				add_province_modifier = {
+					name = "por_minas_gerais"
+					duration = -1
+				}
+			}
+			set_country_flag = por_bandeirantes_flag
+			custom_tooltip = por_bandeirantes_tooltip
+		}
+	}
+
+	ZO1_ucatan_colonies = {
+		icon = mission_establish_high_seas_navy
+		required_missions = { adu_bandeirantes }
+		completed_by = 1540.1.1
+		
+		provinces_to_highlight = {
+			colonial_region = colonial_colombia
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		
+		trigger = { 
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 10
+				colonial_region = colonial_colombia
+				is_city = yes
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "adu_colombia_buff"
+				duration = 7300
+			}
+			define_conquistador = {
+				name = "Francisco Pizarro"
+				fire = 4
+				shock = 4
+				manuever = 5
+				siege = 1
+			}
+			peru_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
