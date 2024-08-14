@@ -1,5 +1,5 @@
-owner = POL
-controller = POL
+owner = MAZ
+controller = MAZ
 capital = "Ortelsburg"
 is_city = yes
 culture = pruthenian
@@ -8,6 +8,7 @@ trade_goods = naval_supplies
 base_tax = 3
 base_production = 3
 base_manpower = 1
+add_core = MAZ
 add_core = POL
 add_core = PRT
 discovered_by = east_african
