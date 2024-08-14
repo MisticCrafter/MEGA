@@ -10472,8 +10472,8 @@ great_mosque_djenne = {
 
 	#can we build it?
 	build_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = muslim
+		province_is_or_accepts_religion = {
+			religion = abyss_mystic
 		}
 	}
 
@@ -10489,15 +10489,15 @@ great_mosque_djenne = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = muslim
+		province_is_or_accepts_religion = {
+			religion = abyss_mystic
 		}
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = muslim
+		province_is_or_accepts_religion = {
+			religion = abyss_mystic
 		}
 	}
 
@@ -13952,9 +13952,10 @@ kilwa_city = {
 	type = monument
 
 	build_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = muslim
+		OR = {
+			culture_group = african
 		}
+		province_is_or_accepts_culture = yes
 	}
 
 	on_built = {
@@ -13964,15 +13965,17 @@ kilwa_city = {
 	}
 
 	can_use_modifiers_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = muslim
+		OR = {
+			culture_group = african
 		}
+		province_is_or_accepts_culture = yes
 	}
 
 	can_upgrade_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = muslim
+		OR = {
+			culture_group = african
 		}
+		province_is_or_accepts_culture = yes
 	}
 
 	keep_trigger = {
@@ -15108,7 +15111,7 @@ churches_lalibela = {
 
 	build_trigger = {
 		province_is_or_accepts_religion = {
-			religion = coptic
+			religion = abyss_mystic
 		}
 	}
 
@@ -15120,13 +15123,13 @@ churches_lalibela = {
 
 	can_use_modifiers_trigger = {
 		province_is_or_accepts_religion = {
-			religion = coptic
+			religion = abyss_mystic
 		}
 	}
 
 	can_upgrade_trigger = {
 		province_is_or_accepts_religion = {
-			religion = coptic
+			religion = abyss_mystic
 		}
 	}
 
@@ -16795,9 +16798,10 @@ walls_benin = {
 	type = monument
 
 	build_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = pagan
+		OR = {
+			culture_group = west_african
 		}
+		province_is_or_accepts_culture = yes
 	}
 
 	on_built = {
@@ -16807,15 +16811,17 @@ walls_benin = {
 	}
 
 	can_use_modifiers_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = pagan
+		OR = {
+			culture_group = west_african
 		}
+		province_is_or_accepts_culture = yes
 	}
 
 	can_upgrade_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = pagan
+		OR = {
+			culture_group = west_african
 		}
+		province_is_or_accepts_culture = yes
 	}
 
 	keep_trigger = {
@@ -17823,8 +17829,8 @@ harar_jugol = {
 	type = monument
 
 	build_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = muslim
+		province_is_or_accepts_religion = {
+			religion = abyss_mystic
 		}
 	}
 
@@ -17835,14 +17841,14 @@ harar_jugol = {
 	}
 
 	can_use_modifiers_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = muslim
+		province_is_or_accepts_religion = {
+			religion = abyss_mystic
 		}
 	}
 
 	can_upgrade_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = muslim
+		province_is_or_accepts_religion = {
+			religion = abyss_mystic
 		}
 	}
 

@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-kni_dev = {
-	slot = 1
-=======
 Super_Cool_Holy_Cities = {
 	slot = 3
->>>>>>> 2a29b6837d18755892d0ce58fbef4b8cd54da0c9
 	generic = no
 	ai = yes
 	has_country_shield = yes
@@ -80,69 +75,8 @@ Super_Cool_Holy_Cities = {
 		effect = {  } 
 	}
 }
-<<<<<<< HEAD
-kni_naval = {
-	slot = 5
-	generic = no
-	ai = yes
-	has_country_shield = yes
-	potential = { tag = KNI } 
-
-	kni_struggle_mediterranean = {
-		icon = mission_rb_mediterranean_authority
-		position = 1
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
-	}
-
-	kni_sea_knights = {
-		icon = crusader_fleet
-		position = 1
-		required_missions = { kni_struggle_mediterranean } 
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
-	}
-}
-kni_dip = {
-	slot = 3
-	generic = no
-	ai = yes
-	has_country_shield = yes
-	potential = { tag = KNI } 
-
-	kni_sway_pope = {
-		icon = sway_the_pope
-		position = 1
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
-	}
-
-	kni_crusader_kings = {
-		icon = mission_united_knight_order
-		position = 2
-		required_missions = { kni_sway_pope } 
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
-	}
-}
-EmpireoftheNile = {
-	slot = 2
-=======
-army = {
+kni_army = {
 	slot = 4
->>>>>>> 2a29b6837d18755892d0ce58fbef4b8cd54da0c9
 	generic = no
 	ai = yes
 	has_country_shield = yes
@@ -187,11 +121,7 @@ army = {
 		effect = {  } 
 	}
 }
-<<<<<<< HEAD
-FortifytheSouth = {
-	slot = 4
-=======
-Diplomatic = {
+knidiplomatic = {
 	slot = 1
 	generic = no
 	ai = yes
@@ -219,34 +149,12 @@ Diplomatic = {
 		effect = {  } 
 	}
 }
-Fortify = {
-	slot = 2
->>>>>>> 2a29b6837d18755892d0ce58fbef4b8cd54da0c9
+kniforts = {
+	slot = 3
 	generic = no
 	ai = yes
 	has_country_shield = yes
 	potential = { tag = KNI } 
-
-	kni_fortify_south = {
-		icon = mission_castle_construction
-		position = 1
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
-	}
-
-	kni_entrenched_authority = {
-		icon = mission_knight
-		position = 2
-		required_missions = { kni_fortify_south } 
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
-	}
 
 	kni_three_castles = {
 		icon = fortify_malta
@@ -268,7 +176,7 @@ Fortify = {
 		effect = {  } 
 	}
 }
-Naval = {
+kninaval = {
 	slot = 5
 	generic = no
 	ai = yes
@@ -282,27 +190,27 @@ Naval = {
 
 		trigger = {
 			OR = {
-			has_idea_group = naval_ideas
-			has_idea_group = maritime_ideas
-			owns_core_province = 321
+				full_idea_group = naval_ideas
+				full_idea_group = maritime_ideas
+				owns_core_province = 321
+			}
 		}
-	}
 
 		effect = {
 			363 = {
-				add_or_upgrade_shipyard_building = 1
+				add_or_upgrade_shipyard_building = yes
 				add_base_production = 2
 			}
 			362 = {
-				add_or_upgrade_shipyard_building = 1
+				add_or_upgrade_shipyard_building = yes
 				add_base_production = 2
 			}
 			358 = {
-				add_or_upgrade_shipyard_building = 1
+				add_or_upgrade_shipyard_building = yes
 				add_base_production = 2
 			}
 			321 = {
-				add_or_upgrade_shipyard_building = 1
+				add_or_upgrade_shipyard_building = yes
 				add_base_production = 2
 			}
 		}
@@ -311,7 +219,6 @@ Naval = {
 	kni_sea_knights = {
 		icon = crusader_fleet
 		position = 2
-		required_missions = { kni_struggle_mediterranean } 
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
@@ -440,7 +347,7 @@ Reconquista = {
 		effect = {  } 
 	}
 }
-mediterranean = {
+knimediterranean = {
 	slot = 3
 	generic = no
 	ai = yes
@@ -670,7 +577,7 @@ mediterranean = {
 		}
 	}
 }
-Trade = {
+knitrade = {
 	slot = 1
 	generic = no
 	ai = yes
@@ -687,25 +594,35 @@ Trade = {
 				province_id = 363
 			}
 			OR = {
-				NOT = { owned_by = ROOT }
-				has_trade_building_trigger = no 
+				NOT = { owned_by = ROOT } 
+				has_trade_building_trigger = no
 			}
 		}
+
 		trigger = {
-			358 = { owned_by = ROOT has_trade_building_trigger = yes }
-			362 = { owned_by = ROOT has_trade_building_trigger = yes }
-			363 = { owned_by = ROOT has_trade_building_trigger = yes }
+			358 = {
+				owned_by = ROOT
+				has_trade_building_trigger = yes
+			}
+			362 = {
+				owned_by = ROOT
+				has_trade_building_trigger = yes
+			}
+			363 = {
+				owned_by = ROOT
+				has_trade_building_trigger = yes
+			}
 		}
+
 		effect = {
 			custom_tooltip = mam_indebted_privilege_no_merc_loss_tt
 			set_country_flag = no_mercantilism_loss_estate_privilege_flag
-
 			if = {
-				limit = { has_dlc = "Mandate of Heaven" }
+				limit = { has_dlc = "Mandate of Heaven" } 
 				custom_tooltip = mam_trade_building_prosperity_tt
 				set_country_flag = mam_trade_building_prosperity_flag
 			}
-			else = { add_years_of_estate_land_income = 0.25 }
+			else = { add_years_of_estate_land_income = 0.25 } 
 		}
 	}
 }
