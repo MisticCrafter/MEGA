@@ -112,7 +112,7 @@ army = {
 
 	kni_legion_white_cross = {
 		icon = mission_modern_knight_army
-		position = 3
+		position = 4
 		required_missions = { kni_fort_rosetta } 
 		provinces_to_highlight = {  } 
 
@@ -289,7 +289,7 @@ Landfall_Italy = {
 
 	kni_rome = {
 		icon = mission_fall_of_third_rome
-		position = 1
+		position = 8
 		required_missions = {
 			kni_landfall_venice
 			kni_landfall_sicily
@@ -303,7 +303,7 @@ Landfall_Italy = {
 
 	kni_europe = {
 		icon = mission_knight
-		position = 1
+		position = 9
 		required_missions = { kni_rome } 
 		provinces_to_highlight = {  } 
 
