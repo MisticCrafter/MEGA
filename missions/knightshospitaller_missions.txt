@@ -1,4 +1,4 @@
-Development = {
+kni_dev = {
 	slot = 1
 	generic = no
 	ai = yes
@@ -53,7 +53,7 @@ Development = {
 		effect = {  } 
 	}
 }
-Naval = {
+kni_naval = {
 	slot = 5
 	generic = no
 	ai = yes
@@ -81,7 +81,7 @@ Naval = {
 		effect = {  } 
 	}
 }
-Diplomatic = {
+kni_dip = {
 	slot = 3
 	generic = no
 	ai = yes
@@ -109,7 +109,7 @@ Diplomatic = {
 		effect = {  } 
 	}
 }
-Empire of the Nile = {
+EmpireoftheNile = {
 	slot = 2
 	generic = no
 	ai = yes
@@ -133,7 +133,7 @@ Empire of the Nile = {
 
 		effect = {
 			362 = {
-				add_or_upgrade_fort_building = 1
+				add_or_upgrade_fort_building = yes
 				add_base_production = 1
 				add_base_manpower = 3
 				add_province_modifier = {
@@ -144,7 +144,7 @@ Empire of the Nile = {
 		}
 	}
 }
-Fortify the South = {
+FortifytheSouth = {
 	slot = 4
 	generic = no
 	ai = yes
