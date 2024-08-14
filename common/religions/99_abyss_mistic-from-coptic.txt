@@ -32,20 +32,6 @@ christian = {
 		local_missionary_strength = 0.01
 	
 }
-
-		holy_sites = { 2769 1134 358 1234 1211 379 2313 118 }
-
-		blessings = { 
-			lessons_empress
-			lessons_builder
-			lessons_karnak
-			lessons_orator
-			lessons_scholar
-			lessons_shaman
-			lessons_traveller
-			lessons_widow
-
-}
 		
 	flags_with_emblem_percentage = 20
 	flag_emblem_index_range = { 1 4 }
