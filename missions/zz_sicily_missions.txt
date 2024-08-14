@@ -232,15 +232,9 @@ sicily_mission_1 = {
 		trigger = {
 			OR = {
 				overlord_of = ARA
-				AND = {
-					catalonia_area = {
-						type = all
-						country_or_non_sovereign_subject_holds = ROOT
-					}
-					valencia_area = {
-						type = all
-						country_or_non_sovereign_subject_holds = ROOT
-					}
+				aragon_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
 				}
 			}
 		}
