@@ -179,9 +179,11 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				province_group = majorrivers
-				trade_goods = grain
-				trade_goods = wine
-				trade_goods = tea
+				OR = {
+					trade_goods = grain
+					trade_goods = wine
+					trade_goods = tea
+				}
 			}
 			add_province_modifier = {
 				name = "tigranic_feedland_modifier"
@@ -209,10 +211,12 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				province_group = majorrivers
-				trade_goods = cotton
-				trade_goods = spices
-				trade_goods = sugar
-				trade_goods = cocoa
+				OR = {
+					trade_goods = cotton
+					trade_goods = spices
+					trade_goods = sugar
+					trade_goods = cocoa
+				}
 			}
 			add_province_modifier = {
 				name = "tigranic_exploitland_modifier"
