@@ -177,19 +177,18 @@ adu_adopting_caravels = {
 }
 
 adu_reformed_galleons = {
-    can_transport_units = yes
+    movement_speed_in_fleet_modifier = 1
     is_galleon_modifier = yes
 }
 
 adu_reformed_caravels = {
-    movement_speed_in_fleet_modifier = 1
-    ship_trade_power_modifier = 0.5
+    can_transport_units = yes
     is_caravel_modifier = yes
 }
 
 adu_new_fleets = {
-    allowed_galleon_fraction = 0.3
-    allowed_caravel_fraction = 0.3
+    allowed_galleon_fraction = 0.1
+    allowed_caravel_fraction = 0.1
 }
 
 ###
