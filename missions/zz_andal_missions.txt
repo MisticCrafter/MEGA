@@ -500,6 +500,10 @@ andalos_slot_2_missions = {
 				owned_by = ROOT
 				is_city = yes
 			}
+			1306 = {
+				owned_by = ROOT
+				is_city = yes
+			}
 			custom_trigger_tooltip = {
 				tooltip = adu_has_guinean_friend_tt
 				niger_region = {
@@ -526,6 +530,15 @@ andalos_slot_2_missions = {
 			}
 			1096 = {
 				change_trade_goods = sugar
+				add_base_production = 2
+				add_base_manpower = 2
+				add_province_modifier = {
+					name = "adu_feitoria"
+					duration = -1
+				}
+			}
+			1306 = {
+				change_trade_goods = dyes
 				add_base_production = 2
 				add_base_manpower = 2
 				add_province_modifier = {

@@ -1,0 +1,19 @@
+﻿l_english:
+ #Missions
+ aka_go_westward_title: "Go Westward"
+ aka_go_westward_desc: ""
+ aka_brazil_colonies_title: "Brazilian Dominance"
+ aka_brazil_colonies_desc: ""
+ aka_bandeirantes_title: "Unending Gold"
+ aka_bandeirantes_desc: ""
+ aka_yucatan_colonies_title: "The Chocolate Coast"
+ aka_yucatan_colonies_desc: ""
+ aka_cacao_plantations_title: "The Thousand Plantations"
+ aka_cacao_plantations_desc: ""
+ #Event Modifiers
+ aka_colon_buff: "Westward Impulse"
+ aka_brazil_buff: "The Vice-Kingdom of Brazil"
+ aka_yucatan_buff: "Wealth of the Yucatan"
+ #Monuments
+ Lighthouse_of_akkra: "Lighthouse of Akkra"
+ golden_Mosque: "The Golden Mosque"
