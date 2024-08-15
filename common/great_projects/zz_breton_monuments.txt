@@ -1,4 +1,4 @@
-golden_Mosque = {
+golden_mosque = {
 	# province it starts in
 	start = 1138
 	
@@ -184,7 +184,7 @@ golden_Mosque = {
 	}
 }
 
-Lighthouse_of_akkra = {
+lighthouse_of_akkra = {
 	# province it starts in
 	start = 1139
 	

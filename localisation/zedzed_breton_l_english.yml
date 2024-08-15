@@ -15,5 +15,7 @@
  aka_brazil_buff: "The Vice-Kingdom of Brazil"
  aka_yucatan_buff: "Wealth of the Yucatan"
  #Monuments
- Lighthouse_of_akkra: "Lighthouse of Akkra"
- golden_Mosque: "The Golden Mosque"
+ lighthouse_of_akkra: "Lighthouse of Akkra"
+ golden_mosque: "The Golden Mosque"
+ #Tooltips
+ aka_exarchates_enables_tt: "Unlocks the creation of §YExarchates§!."
