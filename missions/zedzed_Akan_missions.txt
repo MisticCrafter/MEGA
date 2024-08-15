@@ -162,7 +162,7 @@ akaman_slot_1_missions = {
 		
 		effect = {
 			add_country_modifier = {
-				name = "adu_colombia_buff"
+				name = "aka_yucatan_buff"
 				duration = 7300
 			}
 			define_conquistador = {
