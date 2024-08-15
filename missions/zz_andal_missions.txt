@@ -2104,7 +2104,7 @@ andalos_slot_4_missions = {
 				}
 				add_country_modifier = {
 					name = swi_andal_alliance_modifier
-					duration = 14600
+					duration = 5475 #40 years to 15, literally the most free morale ever
 				}
 			}
 			valencia_area = {
