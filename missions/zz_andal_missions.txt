@@ -2105,7 +2105,7 @@ andalos_slot_4_missions = {
 			}
 			add_country_modifier = {
 				name = por_struggle_for_iberia_modifier 
-				duration = 14600
+				duration = 5475 #forgot this bit LOL
 			}
 		}
 	}
