@@ -42,3 +42,7 @@ crimean_shipyards = {
 	development_cost_modifier = -0.05
 	ship_recruit_speed = -0.25
 }
+ukr_renaissance = {
+	institution_growth = 0.10
+	embracement_cost = -0.05
+}

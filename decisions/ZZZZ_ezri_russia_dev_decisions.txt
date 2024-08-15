@@ -1,5 +1,8 @@
 country_decisions = {
 	develop_the_dnipro = {
+		color = {
+			201 170 42
+		}
 		potential = {
 			tag = RUS
 			NOT = {
@@ -50,13 +53,16 @@ country_decisions = {
 				add_building = farm_estate
 			}	
 				add_treasury = -500
-				RUS = {
+				root = {
 					set_country_flag = dnipro_developed
-				}
+				}	
 		}
 	}
 
 	develop_sevastapol = {
+		color = {
+			201 170 42
+		}
 		potential = {
 			tag = RUS
 			NOT = {
@@ -111,8 +117,35 @@ country_decisions = {
 				change_trade_goods = naval_supplies
 			}
 			add_treasury = -500
-			set_country_flag = crimea_developed
+			root = {
+				set_country_flag = crimea_developed
+			}	
+			
 		}
+	}
+
+	promote_renaissance_thinking_ukr = {
+		potential = {
+			tag = UKR
+		}
+
+		allow = {
+			has_unembraced_institution = renaissance
+			is_institution_enabled = renaissance
+			monthly_adm = 10
+			num_of_owned_provinces_with = {
+				value = 4
+				has_tax_building_trigger = yes
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = ukr_renaissance
+				duration = -1
+			}
+		}
+
 	}
 
 }
