@@ -2838,7 +2838,6 @@ out_volunteers = {
 }
 #funnything -dotts
 merc_gladiators = {
-	mercenary_desc_key = FREE_OF_FORCELIMIT_COST
 	regiments_per_development = 0.04
 
 	cost_modifier = 0.75
@@ -2848,7 +2847,7 @@ merc_gladiators = {
 	artillery_weight = 0
 
 	sprites = {
-		dlc006_byz_sprite_pack
+		dlc006_byz_sprite_pack easterngfx_sprite_pack 
 	}
 
 	trigger = {
@@ -2865,5 +2864,200 @@ merc_gladiators = {
 		shock_damage = 0.15
 		morale_damage_received = 0.1
 	}
+}
+italy_legion = {
+	mercenary_desc_key = FREE_OF_FORCELIMIT_COST
 	counts_towards_force_limit = no
+	regiments_per_development = 0.04
+
+	cost_modifier = 1.75
+	home_province = 118
+
+	cavalry_weight = 0
+	artillery_weight = 0
+	
+	max_size = 5
+	min_size = 5
+
+	sprites = {
+		dlc100_rom_sprite_pack
+	}
+
+	trigger = {
+		has_country_modifier = italy_legion_modifier
+		owns = 118
+	}
+
+	modifier = {
+		discipline = 0.05
+		morale_damage_received = -0.10
+	}
+}
+africa_legion = {
+	mercenary_desc_key = FREE_OF_FORCELIMIT_COST
+	counts_towards_force_limit = no
+	regiments_per_development = 0.04
+
+	cost_modifier = 1.75
+	home_province = 340
+
+	cavalry_weight = 0
+	artillery_weight = 0
+	
+	max_size = 5
+	min_size = 5
+
+	sprites = {
+		dlc100_rom_sprite_pack
+	}
+
+	trigger = {
+		has_country_modifier = africa_legion_modifier
+		owns = 340
+	}
+
+	modifier = {
+		discipline = 0.05
+		morale_damage_received = -0.10
+	}
+}
+balkan_legion = {
+	mercenary_desc_key = FREE_OF_FORCELIMIT_COST
+	counts_towards_force_limit = no
+	regiments_per_development = 0.04
+
+	cost_modifier = 1.75
+	home_province = 4704
+
+	cavalry_weight = 0
+	artillery_weight = 0
+	
+	max_size = 5
+	min_size = 5
+
+	sprites = {
+		dlc100_rom_sprite_pack
+	}
+
+	trigger = {
+		has_country_modifier = balkan_legion_modifier
+		owns = 4704
+	}
+
+	modifier = {
+		discipline = 0.05
+		morale_damage_received = -0.10
+	}
+}
+egypt_legion = {
+	mercenary_desc_key = FREE_OF_FORCELIMIT_COST
+	counts_towards_force_limit = no
+	regiments_per_development = 0.04
+
+	cost_modifier = 1.75
+	home_province = 358
+
+	cavalry_weight = 0
+	artillery_weight = 0
+	
+	max_size = 5
+	min_size = 5
+
+	sprites = {
+		dlc100_rom_sprite_pack
+	}
+
+	trigger = {
+		has_country_modifier = egypt_legion_modifier
+		owns = 358
+	}
+
+	modifier = {
+		discipline = 0.05
+		morale_damage_received = -0.10
+	}
+}
+iberia_legion = {
+	mercenary_desc_key = FREE_OF_FORCELIMIT_COST
+	counts_towards_force_limit = no
+	regiments_per_development = 0.04
+
+	cost_modifier = 1.75
+	home_province = 208
+
+	cavalry_weight = 0
+	artillery_weight = 0
+	
+	max_size = 5
+	min_size = 5
+
+	sprites = {
+		dlc100_rom_sprite_pack
+	}
+
+	trigger = {
+		has_country_modifier = iberia_legion_modifier
+		owns = 208
+	}
+
+	modifier = {
+		discipline = 0.05
+		morale_damage_received = -0.10
+	}
+}
+france_legion = {
+	mercenary_desc_key = FREE_OF_FORCELIMIT_COST
+	counts_towards_force_limit = no
+	regiments_per_development = 0.04
+
+	cost_modifier = 1.75
+	home_province = 75
+
+	cavalry_weight = 0
+	artillery_weight = 0
+	
+	max_size = 5
+	min_size = 5
+
+	sprites = {
+		dlc100_rom_sprite_pack
+	}
+
+	trigger = {
+		has_country_modifier = france_legion_modifier
+		owns = 75
+	}
+
+	modifier = {
+		discipline = 0.05
+		morale_damage_received = -0.10
+	}
+}
+jerusalem_legion = {
+	mercenary_desc_key = FREE_OF_FORCELIMIT_COST
+	counts_towards_force_limit = no
+	regiments_per_development = 0.04
+
+	cost_modifier = 1.75
+	home_province = 379
+
+	cavalry_weight = 0
+	artillery_weight = 0
+	
+	max_size = 5
+	min_size = 5
+
+	sprites = {
+		dlc100_rom_sprite_pack
+	}
+
+	trigger = {
+		has_country_modifier = jerusalem_legion_modifier
+		owns = 379
+	}
+
+	modifier = {
+		discipline = 0.05
+		morale_damage_received = -0.10
+	}
 }

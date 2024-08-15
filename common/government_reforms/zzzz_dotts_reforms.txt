@@ -241,3 +241,38 @@ three_branches_reform = {
 		three_branches
 	}
 }
+#Palatini Reform
+sic_palatini_reform = {
+	icon = "sparapet_office"
+	potential = {
+		OR = {
+			tag = SIC
+			tag = ITA
+		}
+		
+	}
+	trigger = {
+		OR = {
+			tag = SIC
+			tag = ITA
+		}	
+	}
+	modifiers = {
+		can_recruit_janissaries = yes
+		allow_janissaries_from_own_faith = yes
+	}
+	effect = {
+		hidden_effect = {
+			add_country_modifier = {
+				name = palatini_regiments
+				duration = -1
+				hidden = yes
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			remove_country_modifier = palatini_regiments
+		}
+	}
+}
