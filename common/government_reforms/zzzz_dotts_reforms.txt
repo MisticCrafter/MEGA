@@ -187,8 +187,9 @@ swiss_fed = {
 		monarch_admin_power = -2
 		monarch_diplomatic_power = -2
 		monarch_military_power = -2
-		diplomatic_upkeep = 2
+		diplomatic_upkeep = 3
 		mercenary_manpower = 0.5
+		reduced_liberty_desire = 30
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40

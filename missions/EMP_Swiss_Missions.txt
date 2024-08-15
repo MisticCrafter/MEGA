@@ -8,11 +8,37 @@ swiss_slot_1 = {
 	swiss_cathay = {
 		icon = mission_alliances
 		position = 1
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = { 
+			province_id = 666
+		} 
 
-		trigger = {  } 
+		trigger = {
+			treasury = 500
+			666 = {
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					owner = {
+						is_subject = no
+						alliance_with = ROOT
+						has_opinion = {
+							who = ROOT
+							value = 150
+						}
+					}
+				}
+			}
+		}
 
-		effect = {  } 
+		effect = { 
+			add_treasury = -500
+			666 = {
+				owner = {
+					country_event = { 
+						id = flavor_mistic_swiss_missions.1
+					}
+				}
+			}
+		}
 	}
 
 	swiss_porcelain = {
@@ -163,6 +189,7 @@ swiss_slot_2 = {
 	swiss_brocade = {
 		icon = mission_war_chest
 		position = 10
+		required_missions = { swiss_lombardy_integration } 
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
@@ -249,6 +276,7 @@ swiss_slot_2 = {
 	swiss_dockyards = {
 		icon = toulon_dockyards
 		position = 25
+		required_missions = { swiss_mesosphere } 
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
@@ -471,7 +499,10 @@ swiss_slot_3 = {
 	swiss_thermosphere = {
 		icon = mission_alliances
 		position = 25
-		required_missions = { swiss_mesosphere } 
+		required_missions = { 
+			swiss_mesosphere 
+			swiss_pylons
+		} 
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
@@ -482,7 +513,10 @@ swiss_slot_3 = {
 	swiss_exosphere = {
 		icon = mission_alliances
 		position = 26
-		required_missions = { swiss_thermosphere } 
+		required_missions = { 
+			swiss_thermosphere 
+			swiss_dockyards
+		} 
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
@@ -554,7 +588,10 @@ swiss_slot_3 = {
 	swiss_ascendant = {
 		icon = mission_monarch_in_throne_room
 		position = 32
-		required_missions = { swiss_arrow } 
+		required_missions = { 
+			swiss_arrow
+			swiss_apple
+		} 
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
@@ -777,7 +814,11 @@ swiss_slot_5 = {
 	swiss_seperate = {
 		icon = mission_high_income
 		position = 23
-		required_missions = { swiss_lombardy_integration } 
+		required_missions = { 
+			swiss_lombardy_integration
+			swiss_occitan
+			swiss_troposphere
+		} 
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
