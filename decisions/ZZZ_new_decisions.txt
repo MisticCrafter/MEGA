@@ -1307,9 +1307,10 @@ country_decisions = {
 			SWI = {
 				add_treasury = 1
 				country_event = {
-					id = ez.russia.events.y.2
+					id = ez_russia_events_y.2
 				}
 			}
+			
 		}
 
 		ai_will_do = { #ai wont do the decision if they're in deficit or debt - Dotts
