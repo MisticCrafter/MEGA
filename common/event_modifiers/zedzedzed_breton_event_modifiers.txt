@@ -22,7 +22,7 @@ aka_yucatan_buff = {
 }
 
 aka_colon_buff = {
-    range = 0.5
+    range = 0.2
     colonists = 1
 }
 
