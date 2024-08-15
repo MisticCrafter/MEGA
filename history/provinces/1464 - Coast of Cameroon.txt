@@ -10,3 +10,5 @@ discovered_by = NDO
 discovered_by = OYO
 discovered_by = SOF
 discovered_by = SON
+discovered_by = Z01
+discovered_by = sub_saharan
