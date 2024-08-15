@@ -91,6 +91,29 @@ NED_1 = {
 
 	}
 
+	NED_nederlandische_renaissance = {
+		icon = ned_erasmus
+		position = 4
+		required_missions = {
+			NED_revocation_of_zeven_provincies_autonomy
+		}
+
+		trigger = {
+			always = no
+		}
+
+		effect = {
+			hidden_effect = {
+				if = { limit = { accepted_culture = dutch  } remove_accepted_culture = dutch }
+				if = { limit = { accepted_culture = english  } remove_accepted_culture = english }
+				if = { limit = { accepted_culture = welsh  } remove_accepted_culture = welsh }
+				if = { limit = { accepted_culture = scottish  } remove_accepted_culture = scottish }
+				if = { limit = { accepted_culture = irish  } remove_accepted_culture = irish }
+				change_primary_culture = nederlandische_ZVP
+			}
+		}
+	}
+
 
 	NED_dutch_polders = {
 		icon = mission_colonial
@@ -615,7 +638,7 @@ NED_2 = {
 			}
 			set_country_flag = revoked_zeven_provincies_autonomy_flag
 			country_event = {
-				id = flavor_andalos.12
+				id = nederlands_flavour_mega.12
 			}
 		}
 
@@ -2320,7 +2343,7 @@ NED_5 = {
 
 		effect = {
 			add_country_modifier = {
-				name = republican_guards_ZVP
+				name = republican_guards_founded_ZVP
 				duration = -1
 			}
 			add_country_modifier = {

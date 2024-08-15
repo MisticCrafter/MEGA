@@ -27,7 +27,17 @@
  roman_engineering:0 "Roman Engineering"
  roman_thinking:0 "Roman Thinking"
 
-#Fourth Rome Localization
-FRE:0 "Fourth Rome"
-FRE_ADJ:0 "Roman"
-FRE_ideas:0 "Fouth Rome Ideas"
+ #dev_decisions
+ develop_the_dnipro_title:0 "Develop the Dnipro River"
+ develop_the_dnipro_desc:0 "Develop the Dnipro river and the surounding lands"
+ develop_sevastapol_title:0 "Develop the Sevastapol Area"
+ develop_sevastapol_desc:0 "Develop the the Crimean penninsula and Rostov-on-don"
+
+ #events
+ ez_russia_events_y.1.t:0 "Crimea is too Unprofitable"
+ ez_russia_events_y.1.d:0 "A suggestion to sell the land has entered the court"
+ ez_russia_events_y.1.opt1:0 "Sell that festering corpse"
+ ez_russia_events_y.2.t:0 "Offer to purchace Crimea."
+ ez_russia_events_y.2.d:0 "A lesser nation offers tribute for Crimea."
+ ez_russia_events_y.2.opt1:0 "Grant them the land."
+ ez_russia_events_y.2.opt2:0 "No."

@@ -2,6 +2,9 @@ country_decisions = {
 	develop_the_dnipro = {
 		potential = {
 			tag = RUS
+			NOT = {
+				has_country_flag = dnipro_developed
+			}
 		}
 
 		allow = {
@@ -47,12 +50,18 @@ country_decisions = {
 				add_building = farm_estate
 			}	
 				add_treasury = -500
+				RUS = {
+					set_country_flag = dnipro_developed
+				}
 		}
 	}
 
 	develop_sevastapol = {
 		potential = {
 			tag = RUS
+			NOT = {
+				has_country_flag = crimea_developed
+			}
 		}
 		allow = {
 			adm_tech = 11
@@ -102,6 +111,7 @@ country_decisions = {
 				change_trade_goods = naval_supplies
 			}
 			add_treasury = -500
+			set_country_flag = crimea_developed
 		}
 	}
 
