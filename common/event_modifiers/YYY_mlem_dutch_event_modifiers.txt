@@ -96,6 +96,8 @@ stadhouder_residency_astolfo_ii = {
 	republican_tradition = 0.125
 }
 
+# Mission Events! (not Astolfo II anymore :D) 
+
 zeven_provincies_crisis_1 = {
 	diplomatic_annexation_cost = -0.075
 	reduced_liberty_desire = 10
@@ -146,7 +148,7 @@ republican_guards_buff_2_ZVP = {	# second buff - militarized guard units (add as
 
 }
 
-rolling_out_republican_guards_police_astolfo_ii = {	# the people fight against tyranny (police)
+rolling_out_republican_guards_police_astolfo_ii = {	# the people fight against tyranny (police) # Also FUCK! Astolfo II is back...
 	stability_cost_modifier = -0.25
 	global_unrest = 5
 	global_rebel_suppression_efficiency = 0.25

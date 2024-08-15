@@ -453,8 +453,10 @@ country_event = {
 
 	option = {
 		name = nederlands_flavour_mega.13.a
+		custom_tooltip = united_zeven_provincies_event_tt
 		add_government_reform = united_zeven_provincies_republic_reform
 		change_government_reform_progress = 100
 	}
 
 }
+
