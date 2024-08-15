@@ -42,8 +42,9 @@ akaman_slot_1_missions = {
 		}
 		effect = {
 			add_country_modifier = {
-				colonists = 1
-				range = 0.5
+				add_country_modifier = {
+				name = "aka_colon_buff"
+				duration = -1
 			}
 		}
 	}
