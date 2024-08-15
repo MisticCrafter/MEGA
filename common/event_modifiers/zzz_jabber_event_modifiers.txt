@@ -335,9 +335,12 @@ tigranic_council_militarywages_modifier = {
 }
 
 tigranic_council_sappers_modifier = { #LOWKEY WHEN YOU SEE THIS TALK TO ME, WE SHOULD CHANGE SIEGE ABILITY TO FORT ASSAULT ABILITY AND MAKE THEM TERCIO BUFFS WITH A DOWNSIDE OF TERCIO FRACTION
-    siege_ability = 0.15
-    land_forcelimit_modifier = -0.15
-    land_maintenance_modifier = -0.10
+    assault_fort_ability = 0.25
+    is_tercio_modifier = yes
+}
+
+tigranic_council_sappers_modifier2 = { #needed this to lower tercio fraction... I think so at least since I cant tack it on in the modifier above
+    allowed_tercio_fraction = -0.15
 }
 
 tigranic_council_cavalry_modifier = {
