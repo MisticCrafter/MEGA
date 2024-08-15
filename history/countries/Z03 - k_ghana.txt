@@ -3,7 +3,7 @@ add_government_reform = feudalism_reform
 government_rank = 2
 technology_group = sub_saharan
 religion = catholic
-primary_culture = senegambian
+primary_culture = mali
 capital = 2246
 set_country_flag = ZZZ_generated_converter_nation
 1444.11.11= {
@@ -16,7 +16,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		birth_date = 1425.3.20
 		female = yes
 		religion = catholic
-		culture = senegambian
+		culture = mali
 	}
 	add_ruler_personality = pious_personality
 	add_ruler_personality = zealot_personality
@@ -30,7 +30,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		birth_date = 1403.3.21
 		death_date = 1463.3.21
 		religion = catholic
-		culture = senegambian
+		culture = mali
 	}
 	add_queen_personality = tactical_genius_personality
 	add_queen_personality = tolerant_personality
