@@ -1,0 +1,820 @@
+swiss_slot_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = SWI } 
+
+	swiss_cathay = {
+		icon = mission_alliances
+		position = 1
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_porcelain = {
+		icon = mission_alliances
+		position = 2
+		required_missions = { swiss_cathay } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_verona = {
+		icon = mission_alliances
+		position = 5
+		required_missions = { swiss_italy_territories } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_roman_rival = {
+		icon = mission_assemble_an_army
+		position = 6
+		required_missions = { swiss_verona } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_etruria = {
+		icon = mission_assemble_an_army
+		position = 7
+		required_missions = { swiss_roman_rival } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_roman_fire = {
+		icon = mission_unite_home_region
+		position = 8
+		required_missions = { swiss_etruria } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_trinacria_homelands = {
+		icon = mission_conquer_50_development
+		position = 9
+		required_missions = { swiss_roman_fire } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_western_isles = {
+		icon = mission_empire
+		position = 16
+		required_missions = {
+			swiss_roussillon
+			swiss_trinacria_homelands
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_switzerlake = {
+		icon = mission_ne_great_lakes_conquest
+		position = 27
+		required_missions = {
+			swiss_western_isles
+			swiss_true_navy
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+swiss_slot_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = SWI } 
+
+	swiss_modena = {
+		icon = mission_have_manufactories
+		position = 5
+		required_missions = { swiss_italy_territories } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_verona_integrate = {
+		icon = mission_empire
+		position = 6
+		required_missions = { swiss_verona } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_broadcloth = {
+		icon = mission_have_manufactories
+		position = 8
+		required_missions = { swiss_lombardy_integration } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_trevisani_uni = {
+		icon = mission_early_modern_university
+		position = 9
+		required_missions = { swiss_lombardy_integration } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_brocade = {
+		icon = mission_war_chest
+		position = 10
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_aquitaine = {
+		icon = mission_empire
+		position = 13
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_marches = {
+		icon = mission_conquer_50_development
+		position = 14
+		required_missions = { swiss_aquitaine } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_roussillon = {
+		icon = mission_unite_home_region
+		position = 15
+		required_missions = { swiss_marches } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_navarra = {
+		icon = mission_assemble_an_army
+		position = 16
+		required_missions = { swiss_roussillon } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_biscay = {
+		icon = mission_war_chest
+		position = 17
+		required_missions = { swiss_navarra } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_alsatian_claims = {
+		icon = mission_unite_home_region
+		position = 18
+		required_missions = { swiss_free_county } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_swabia = {
+		icon = control_swabia
+		position = 19
+		required_missions = { swiss_alsatian_claims } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_dockyards = {
+		icon = toulon_dockyards
+		position = 25
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_true_navy = {
+		icon = mission_galleys_in_port
+		position = 26
+		required_missions = { swiss_dockyards } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_self_rule = {
+		icon = mission_have_two_subjects
+		position = 30
+		required_missions = { swiss_unity } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+swiss_slot_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = SWI } 
+
+	swiss_best_friend = {
+		icon = friends_in_high_places
+		position = 1
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_unholy_alliance = {
+		icon = give_him_back_his_legions
+		position = 2
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_italy_territories = {
+		icon = mission_have_two_subjects
+		position = 4
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_lombard = {
+		icon = mission_dominate_home_trade_node
+		position = 5
+		required_missions = { swiss_italy_territories } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_regency = {
+		icon = mission_empire
+		position = 6
+		required_missions = {
+			swiss_modena
+			swiss_lombard
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_lombardy_integration = {
+		icon = mission_have_two_subjects
+		position = 7
+		required_missions = {
+			swiss_verona_integrate
+			swiss_regency
+			swiss_dissolve_league
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_venice_crystal = {
+		icon = mission_have_manufactories
+		position = 11
+		required_missions = { swiss_lombardy_integration } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_auvergne = {
+		icon = mission_unite_home_region
+		position = 14
+		required_missions = { swiss_aquitaine } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_occitan = {
+		icon = mission_alliances
+		position = 15
+		required_missions = {
+			swiss_marches
+			swiss_auvergne
+			swiss_arpitian
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_free_county = {
+		icon = mission_alliances
+		position = 17
+		required_missions = { swiss_occitan } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_mad_king = {
+		icon = mission_monarch_in_throne_room
+		position = 18
+		required_missions = { swiss_free_county } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_french_crown = {
+		icon = mission_empire
+		position = 19
+		required_missions = { swiss_mad_king } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_genevan_sky = {
+		icon = sway_geneva
+		position = 21
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_troposphere = {
+		icon = mission_alliances
+		position = 22
+		required_missions = { swiss_genevan_sky } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_stratosphere = {
+		icon = mission_alliances
+		position = 23
+		required_missions = { swiss_troposphere } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_mesosphere = {
+		icon = mission_alliances
+		position = 24
+		required_missions = { swiss_stratosphere } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_thermosphere = {
+		icon = mission_alliances
+		position = 25
+		required_missions = { swiss_mesosphere } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_exosphere = {
+		icon = mission_alliances
+		position = 26
+		required_missions = { swiss_thermosphere } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_moon = {
+		icon = mission_alliances
+		position = 27
+		required_missions = { swiss_exosphere } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_beyond_stars = {
+		icon = mission_alliances
+		position = 28
+		required_missions = { swiss_moon } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_babel = {
+		icon = mission_alliances
+		position = 29
+		required_missions = {
+			swiss_beyond_stars
+			swiss_3thousand_degrees
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_romansh = {
+		icon = mission_have_two_subjects
+		position = 30
+		required_missions = { swiss_unity } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_arrow = {
+		icon = mission_have_two_subjects
+		position = 31
+		required_missions = {
+			swiss_romansh
+			swiss_self_rule
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_ascendant = {
+		icon = mission_monarch_in_throne_room
+		position = 32
+		required_missions = { swiss_arrow } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+swiss_slot_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = SWI } 
+
+	swiss_genoa = {
+		icon = mission_alliances
+		position = 5
+		required_missions = { swiss_italy_territories } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_dissolve_league = {
+		icon = mission_empire
+		position = 6
+		required_missions = {
+			swiss_genoa
+			swiss_venice
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_optics = {
+		icon = mission_have_manufactories
+		position = 8
+		required_missions = { swiss_lombardy_integration } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_tuscan_win = {
+		icon = mission_have_manufactories
+		position = 9
+		required_missions = { swiss_lombardy_integration } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_abbeys = {
+		icon = mission_european_church
+		position = 10
+		required_missions = { swiss_lombardy_integration } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_arpitian = {
+		icon = mission_have_two_subjects
+		position = 14
+		required_missions = { swiss_aquitaine } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_tyrol = {
+		icon = mission_empire
+		position = 18
+		required_missions = { swiss_free_county } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_vienna = {
+		icon = boh_humiliate_austria
+		position = 19
+		required_missions = { swiss_tyrol } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_pylons = {
+		icon = mission_early_game_buildings
+		position = 24
+		required_missions = { swiss_stratosphere } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_iron = {
+		icon = mission_iron_and_copper
+		position = 26
+		required_missions = { swiss_thermosphere } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_factories = {
+		icon = mission_have_manufactories
+		position = 27
+		required_missions = {
+			swiss_exosphere
+			swiss_iron
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_3thousand_degrees = {
+		icon = mission_rb_build_furnaces
+		position = 28
+		required_missions = {
+			swiss_moon
+			swiss_factories
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_arpitan_wine = {
+		icon = mission_wine_monopolies
+		position = 30
+		required_missions = { swiss_unity } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_apple = {
+		icon = mission_dominate_persian_gulf
+		position = 31
+		required_missions = {
+			swiss_arpitan_wine
+			swiss_padanian
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+swiss_slot_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = SWI } 
+
+	swiss_indies = {
+		icon = mission_sail_to_the_east_indies
+		position = 1
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_kannur = {
+		icon = mission_rb_colonise_spice_islands
+		position = 2
+		required_missions = { swiss_indies } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_venice = {
+		icon = mission_alliances
+		position = 5
+		required_missions = { swiss_italy_territories } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_seperate = {
+		icon = mission_high_income
+		position = 23
+		required_missions = { swiss_lombardy_integration } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_glories = {
+		icon = mission_empire
+		position = 26
+		required_missions = { swiss_seperate } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_unity = {
+		icon = mission_empire
+		position = 29
+		required_missions = { swiss_glories } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	swiss_padanian = {
+		icon = enlightened_absolutism
+		position = 30
+		required_missions = { swiss_unity } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
