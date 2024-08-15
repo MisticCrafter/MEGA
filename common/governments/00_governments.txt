@@ -349,6 +349,7 @@ monarchy = {
 				russian_mercenary_guard_reform 
 				#hi
 				three_branches_reform
+				sic_palatini_reform
 			}
 		}
 		deliberative_assembly = {
@@ -865,6 +866,7 @@ republic = {
 				russian_mercenary_guard_reform 
 				#helo
 				three_branches_reform
+				sic_palatini_reform
 			}
 		}
 		parliamentary_vs_presidential = {
@@ -1443,6 +1445,7 @@ theocracy = {
 				russian_mercenary_guard_reform 
 				#doubtful
 				three_branches_reform
+				sic_palatini_reform
 			}
 		}
 		secularization = {
