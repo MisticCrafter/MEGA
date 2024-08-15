@@ -1306,9 +1306,9 @@ country_decisions = {
 		effect = {
 			SWI = {
 				add_treasury = 1
-				#country_event = {
-					#id = ez.russia.events.y.3
-				#}
+				country_event = {
+					id = ez.russia.events.y.2
+				}
 			}
 		}
 
