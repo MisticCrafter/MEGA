@@ -13,4 +13,14 @@ spriteTypes = {
         name = "GFX_great_project_nebrissa"
         texturefile = "gfx//interface//great_projects//great_project_nebrissa.dds"
     }
+
+    spriteType = {
+        name = "GFX_great_project_golden_mosque"
+        texturefile = "gfx//interface//great_projects//great_project_golden_mosque.dds"
+    }
+
+    spriteType = {
+        name = "GFX_great_project_lighthouse_of_akkra"
+        texturefile = "gfx//interface//great_projects//great_project_lighthouse_of_akkra.dds"
+    }
 }

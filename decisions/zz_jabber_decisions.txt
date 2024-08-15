@@ -75,7 +75,7 @@ country_decisions = {
     }
 
     andalos_exarchate_mauretania_decision = {
-        major = yes
+        color = { 0 128 128 }
         potential = {
             tag = ADU
             custom_trigger_tooltip = {
@@ -176,7 +176,7 @@ country_decisions = {
     }
 
     andalos_exarchate_africa_decision = {
-        major = yes
+        color = { 0 128 128 }
         potential = {
             tag = ADU
             custom_trigger_tooltip = {
@@ -266,7 +266,7 @@ country_decisions = {
     }
 
     andalos_exarchate_italy_decision = {
-        major = yes
+        color = { 0 128 128 }
         potential = {
             tag = ADU
             custom_trigger_tooltip = {
@@ -339,7 +339,7 @@ country_decisions = {
     }
 
     andalos_exarchate_france_decision = {
-        major = yes
+        color = { 0 128 128 }
         potential = {
             tag = ADU
             custom_trigger_tooltip = {
