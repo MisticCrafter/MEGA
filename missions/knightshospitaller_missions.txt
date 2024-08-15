@@ -36,11 +36,27 @@ Super_Cool_Holy_Cities = {
 			kni_fort_rosetta
 			kni_holy_alexandria
 		}
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
+		provinces_to_highlight = {
+			province_id = 361 
+		}
+		trigger = {
+			361 = { 
+				owned_by = ROOT 
+				OR = {
+					num_of_times_improved = 8
+					num_of_buildings_in_province = 3
+				}
+			}
+		}
+		effect = {
+			361 = { 
+				add_center_of_trade_level = 1 
+				add_province_modifier = {
+					name = "kni_cairo_citadel"
+					duration = -1
+				}
+			}
+		}
 	}
 
 	kni_pearl_mediterranean = {
@@ -150,14 +166,14 @@ knidiplomatic = {
 	}
 }
 kniforts = {
-	slot = 3
+	slot = 2
 	generic = no
 	ai = yes
 	has_country_shield = yes
 	potential = { tag = KNI } 
 
 	kni_three_castles = {
-		icon = fortify_malta
+		icon = fortress_of_belgrade
 		position = 4
 		provinces_to_highlight = {  } 
 
@@ -167,7 +183,7 @@ kniforts = {
 	}
 
 	kni_cyrenaica = {
-		icon = fortress_of_belgrade
+		icon = fortify_malta
 		position = 5
 		provinces_to_highlight = {  } 
 
@@ -219,6 +235,7 @@ kninaval = {
 	kni_sea_knights = {
 		icon = crusader_fleet
 		position = 2
+		required_missions = { kni_struggle_mediterranean } 
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
@@ -264,6 +281,17 @@ kninaval = {
 	kni_outremer_eastern_fleets = {
 		icon = crusader_fleet
 		position = 7
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kni_rules_the_waves = {
+		icon = mission_empire
+		position = 1
+		required_missions = { kni_masters_mediterranean } 
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 

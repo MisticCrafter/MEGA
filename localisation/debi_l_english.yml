@@ -26,7 +26,7 @@
  kni_crusader_kings_title:0 "Crusader Kings"
  kni_crusader_kings_desc:0 ""
 
- kni_three_castles_title:0 "Wall of Three Castles"
+ kni_three_castles_title:0 "Three Castles"
  kni_three_castles_desc:0 ""
 
  kni_cyrenaica_title:0 "Cyrenaica Citadeks"
@@ -38,7 +38,7 @@
  kni_sea_knights_title:0 "Knights of the Sea"
  kni_sea_knights_desc:0 ""
 
- kni_militant_order_title:0 "Navy With an Order"
+ kni_militant_order_title:0 "Navy With An Order"
  kni_militant_order_desc:0 ""
 
  kni_masters_mediterranean_title:0 "Masters of the Mediterranean"
@@ -49,6 +49,9 @@
 
  kni_outremer_eastern_fleets_title:0 "Outremer Fleets"
  kni_outremer_eastern_fleets_desc:0 ""
+
+ kni_rules_the_waves_title:0 "An Order Rules the Waves"
+ kni_rules_the_waves_desc:0 ""
 
  kni_landfall_venice_title:0 "Landfall in Venice;"
  kni_landfall_venice_desc:0 ""

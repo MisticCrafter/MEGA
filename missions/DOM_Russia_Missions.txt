@@ -2001,66 +2001,6 @@ mos_rus_russian_consolidation = {
 			factor = 250
 		}
 	}
-
-	mos_rus_found_the_russian_tsardom = {	#Custom localization for republics/monarchies/theocracies
-		icon = mission_the_russian_tsardom
-		required_missions = {  }
-		position = 9
-		provinces_to_highlight = {
-			if = {
-				limit = { exists = RUS }
-				owned_by = RUS
-			}
-			else = {
-				OR = {
-					province_id = 295			# Moskva
-					province_id = 310			# Novgorod
-					AND = {
-						province_id = 294
-						ROOT = { NOT = { owns_core_province = 308 } }
-					}
-					AND = {
-						province_id = 308
-						ROOT = { NOT = { owns_core_province = 294 } }
-					}
-					AND = {
-						province_id = 301
-						ROOT = { NOT = { owns_core_province = 293 } }
-					}
-					AND = {
-						province_id = 293
-						ROOT = { NOT = { owns_core_province = 301 } }
-					}
-					AND = {
-						province_id = 306
-						ROOT = { NOT = { owns_core_province = 307 } }
-					}
-					AND = {
-						province_id = 307
-						ROOT = { NOT = { owns_core_province = 306 } }
-					}
-				}
-				OR = {
-					NOT = { owned_by = ROOT }
-					NOT = { is_core = ROOT }
-				}
-			}
-		}
-		trigger = {
-			tag = RUS
-		}
-		effect = {
-			remove_country_modifier = centralization_modifier
-			add_country_modifier = {
-				name = rus_the_realm_of_the_rus
-				duration = 7300
-			}
-		}
-
-		ai_weight = {
-			factor = 250
-		}
-	}
 }
 
 #Slot 4
@@ -2540,6 +2480,288 @@ ukr_invest_in_the_army = {
 		}
 	}
 }
+
+ukr_roman_herritage_slot_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential_on_load = {
+		has_dlc = "Domination"
+	}
+	potential = {
+		was_tag = UKR
+		tag = RUS
+		has_dlc = "Domination"
+	}
+	ukr_roman_engineeering = {
+		icon = mission_early_game_buildings
+		required_missions = {  }
+		position = 9
+		
+			trigger = {
+			has_idea_group = infrastructure_ideas
+		
+			workshop = 20
+			barracks = 15
+			num_of_owned_provinces_with = {
+				value = 10
+				has_manufactory_trigger = yes
+			}
+			num_of_owned_provinces_with = {
+				value = 15
+				has_fort_building_trigger = yes
+				}
+	}
+	effect = {
+		add_country_modifier = {
+			name = roman_engineering
+			duration = 3650
+			}
+		}	
+	}
+	
+	ukr_secure_the_strait = {
+			icon = mission_control_the_black_sea
+			required_missions = { ukr_solidify_claim_to_rome }
+			position = 12
+
+			trigger ={
+				is_core = 151
+				thrace_area = {
+					type = all 
+					owned_by = root
+				}
+				navy_size_percentage = 1
+			}
+			effect ={
+				hudavendigar_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_claim = ROOT
+				}
+		}	
+	}
+}
+
+
+ukr_roman_herritage_slot_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential_on_load = {
+		has_dlc = "Domination"
+	}
+	potential = {
+		was_tag = UKR
+		tag = RUS
+		has_dlc = "Domination"
+	}
+	
+	ukr_roman_thinking = {
+		icon = bibliotheca_corviana
+		required_missions = {  }
+		position = 9
+		
+			trigger = {
+				has_idea_group = innovativeness_ideas
+				adm_tech = 14
+				dip_tech = 14
+				mil_tech = 14
+				treasury = 1500
+		}
+		
+			effect = {	
+				add_country_modifier = {
+					name = roman_thinking
+					duration = 3650
+			}
+				33 = {
+					add_building = university
+				}
+				280 = {
+					add_building = university
+				}	
+				add_treasury = -1500
+		}
+	}
+
+	ukr_host_roman_advisors = {
+		icon = friends_in_high_places
+		required_missions = { ukr_roman_thinking  }
+		position = 10
+		
+		trigger = {
+			has_opinion = {
+				who = SIC
+				value = 100
+			}
+			treasury = 300
+		}
+
+		effect = {
+			if = {
+
+				limit = {
+					exists = SIC
+				}
+				SIC = {
+					country_event = {
+						id = ME_Sicily_Events.5
+					}
+				}
+			}
+			else_if = {
+				limit = { 
+					exists = ITA
+				}
+				ITA = {
+					country_event = {
+						id = ME_Sicily_Events.5
+					}
+				}
+			}
+		}
+	}
+	
+	ukr_maintain_the_theodosian_walls = {
+		icon = byz_reinforce_constantinople
+		required_missions = { ukr_solidify_claim_to_rome }
+		position = 12
+
+		trigger = {
+			is_core = 151
+			
+			151 = {
+				has_great_project = {
+					type = theodosian_walls
+					tier = 2
+				}
+			}
+			151 = {
+				has_building = fort_17th
+			}
+			151 = {
+				has_building = training_fields
+			}
+		}
+			effect = {
+				151 = {
+					add_great_project_tier = {
+						type = theodosian_walls
+						tier = 1
+					}
+				}
+			}
+		}
+	}
+
+ukr_roman_herritage_slot_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential_on_load = {
+		has_dlc = "Domination"
+	}
+	potential = {
+		was_tag = UKR
+		tag = RUS
+		has_dlc = "Domination"
+	}
+		ukr_claim_roman_heritage = {
+			icon = a_roman_empire
+			required_missions = {
+				ukr_roman_engineeering
+				ukr_roman_thinking
+		}
+			position = 10
+				trigger = {
+					2410 = {
+						trade_share = { 
+							country = ROOT
+							share = 25
+					}
+				}
+					NOT = {
+						alliance_with = RMN
+						alliance_with = BUL
+					}
+					NOT = {
+						truce_with = RMN
+						truce_with = BUL
+					}
+					
+			}
+				effect = {
+					
+					moldavia_area = {
+						limit = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+						}
+						add_claim = ROOT
+					}
+					silistria_area = {
+						limit = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+						}
+				}	
+			}
+		}	
+		
+		ukr_solidify_claim_to_rome = {
+			icon = mission_the_bospborus
+			required_missions = { ukr_claim_roman_heritage }
+			position = 11
+
+			trigger = {
+				moldavia_area = {		
+					type = all 
+					owned_by = root
+				}
+				silistria_area = {
+					type = all 
+					owned_by = root
+				}
+			}
+			effect ={
+				thrace_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_claim = ROOT
+			}	
+				add_country_modifier ={
+						name = visions_of_rome
+						duration = 1825
+				}
+			}
+		}
+		ukr_proclaim_fourth_rome = {
+			icon = mission_the_third_rome
+			required_missions = { ukr_solidify_claim_to_rome }
+			position = 12
+
+			trigger = {
+				is_core = 151
+			}
+
+			effect = {
+				country_event = {
+					id = flavor_rus.2001
+				}
+			}
+		}	
+	}	
+
+
+
 #Russian Minor
 rmi_rus_power = {
 	slot = 5
@@ -3104,7 +3326,7 @@ rus_russian_bureaucracy = {
 	rus_enact_the_sudebnik = {
 		icon = mission_the_sudebnik
 		required_missions = { mos_rus_found_the_russian_tsardom }
-		position = 10
+		position = 14
 		provinces_to_highlight = {
 			OR = {
 				province_id = 274
@@ -3156,7 +3378,7 @@ rus_russian_bureaucracy = {
 	rus_book_of_royal_degrees = {
 		icon = mission_book_of_royal_degrees
 		required_missions = { rus_enact_the_sudebnik }
-		position = 11
+		position = 15
 		provinces_to_highlight = {
 		}
 		trigger = {
@@ -3214,7 +3436,7 @@ rus_russian_nobility = {
 	rus_handle_the_boyars = {
 		icon = mission_unite_the_princes
 		required_missions = { mos_rus_found_the_russian_tsardom }
-		position = 10
+		position = 14
 		provinces_to_highlight = {
 		}
 		trigger = {
@@ -3257,7 +3479,7 @@ rus_russian_nobility = {
 	rus_the_mestnichestvo = {
 		icon = mission_abolish_mestnichestvo
 		required_missions = { rus_handle_the_boyars }
-		position = 11
+		position = 15
 		provinces_to_highlight = {
 		}
 		trigger = {
@@ -3297,7 +3519,7 @@ rus_russian_nobility = {
 			rus_book_of_royal_degrees
 			rus_the_mestnichestvo
 		}
-		position = 12
+		position = 16
 		provinces_to_highlight = {
 			owned_by = ROOT
 			NOT = { has_courthouse_building_trigger = yes }
@@ -3410,11 +3632,72 @@ rus_russian_disaster = {
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
-	
+
+	mos_rus_found_the_russian_tsardom = {	#Custom localization for republics/monarchies/theocracies
+		icon = mission_the_russian_tsardom
+		required_missions = {  }
+		position = 13
+		provinces_to_highlight = {
+			if = {
+				limit = { exists = RUS }
+				owned_by = RUS
+			}
+			else = {
+				OR = {
+					province_id = 295			# Moskva
+					province_id = 310			# Novgorod
+					AND = {
+						province_id = 294
+						ROOT = { NOT = { owns_core_province = 308 } }
+					}
+					AND = {
+						province_id = 308
+						ROOT = { NOT = { owns_core_province = 294 } }
+					}
+					AND = {
+						province_id = 301
+						ROOT = { NOT = { owns_core_province = 293 } }
+					}
+					AND = {
+						province_id = 293
+						ROOT = { NOT = { owns_core_province = 301 } }
+					}
+					AND = {
+						province_id = 306
+						ROOT = { NOT = { owns_core_province = 307 } }
+					}
+					AND = {
+						province_id = 307
+						ROOT = { NOT = { owns_core_province = 306 } }
+					}
+				}
+				OR = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+			}
+		}
+		trigger = {
+			tag = RUS
+		}
+		effect = {
+			remove_country_modifier = centralization_modifier
+			add_country_modifier = {
+				name = rus_the_realm_of_the_rus
+				duration = 7300
+			}
+		}
+
+		ai_weight = {
+			factor = 250
+		}
+	}
+
+
 	rus_the_vodka_monopoly = {
 		icon = mission_vodka_monopoly
 		required_missions = { mos_rus_found_the_russian_tsardom }
-		position = 10
+		position = 14
 		provinces_to_highlight = {
 			trade_goods = grain
 			owned_by = ROOT
@@ -3450,7 +3733,7 @@ rus_russian_disaster = {
 	rus_the_time_of_troubles = {
 		icon = mission_weather_the_troubles
 		required_missions = {  }
-		position = 11
+		position = 15
 		provinces_to_highlight = {
 		}
 		trigger = {
@@ -3487,7 +3770,7 @@ rus_russian_disaster = {
 			rus_show_russian_superiority
 			rus_increase_absolute_rule
 		}
-		position = 13
+		position = 17
 		provinces_to_highlight = {
 		}
 		trigger = {
@@ -3539,7 +3822,7 @@ rus_russian_streltsy = {
 	rus_the_streltsy = {
 		icon = mission_recruit_streltsy
 		required_missions = { mos_rus_found_the_russian_tsardom }
-		position = 10
+		position = 14
 		provinces_to_highlight = {
 		}
 		trigger = {
@@ -3576,7 +3859,7 @@ rus_russian_streltsy = {
 	rus_solidify_serfdom = {
 		icon = mission_serfdom
 		required_missions = { rus_the_vodka_monopoly }
-		position = 11
+		position = 15
 		provinces_to_highlight = {
 		}
 		trigger = {
@@ -3693,7 +3976,7 @@ rus_russian_streltsy = {
 			rus_solidify_serfdom
 			rus_the_courts_direction
 		}
-		position = 12
+		position = 16
 		provinces_to_highlight = {
 		}
 		trigger = {
@@ -3795,7 +4078,7 @@ rus_court_and_church = {
 	rus_role_of_the_church = {
 		icon = mission_autocephalous_archbishopric
 		required_missions = { mos_rus_found_the_russian_tsardom }
-		position = 10
+		position = 14
 		provinces_to_highlight = {
 		}
 		trigger = {
@@ -3835,7 +4118,7 @@ rus_court_and_church = {
 			rus_the_streltsy
 			rus_role_of_the_church
 		}
-		position = 11
+		position = 15
 		provinces_to_highlight = {
 			is_capital = yes
 			has_discovered = ROOT
@@ -3922,7 +4205,7 @@ rus_russian_navy = {
 	rus_establish_the_russian_navy = {
 		icon = mission_russian_navy
 		required_missions = { rus_the_empire_of_russia }
-		position = 14
+		position = 18
 		provinces_to_highlight = {
 		}
 		trigger = {
@@ -3946,7 +4229,7 @@ rus_russian_navy = {
 	rus_monopolize_novgorod = {
 		icon = reform_the_state
 		required_missions = { rus_establish_the_russian_navy }
-		position = 15
+		position = 19
 		provinces_to_highlight = {
 			OR = {
 				province_id = 1652
@@ -4030,7 +4313,7 @@ rus_russian_government = {
 	rus_establish_the_governing_senate = {
 		icon = mission_the_governing_senate
 		required_missions = { rus_the_empire_of_russia }
-		position = 14
+		position = 18
 		provinces_to_highlight = {
 		}
 		trigger = {
@@ -4062,7 +4345,7 @@ rus_russian_government = {
 	rus_pass_issues_in_the_senate = {
 		icon = mission_eastern_european_city
 		required_missions = { rus_establish_the_governing_senate }
-		position = 15
+		position = 19
 		provinces_to_highlight = {
 		}
 		trigger = {
@@ -4148,7 +4431,7 @@ rus_russian_religion_serfdom = {
 	rus_most_holy_synod = {
 		icon = mission_most_holy_synod
 		required_missions = { rus_the_empire_of_russia }
-		position = 14
+		position = 18
 		provinces_to_highlight = {
 		}
 		trigger = {
@@ -4375,7 +4658,7 @@ rus_russian_religion_serfdom = {
 	rus_early_industrialization = {
 		icon = mission_state_manufactories
 		required_missions = { rus_establish_the_governing_senate }
-		position = 15
+		position = 19
 		provinces_to_highlight = {
 			owned_by = ROOT
 			has_manufactory_no_custom_tooltip_trigger = yes
@@ -4435,7 +4718,7 @@ rus_russian_religion_serfdom = {
 			rus_reform_the_military
 			rus_peters_reforms
 		}
-		position = 16
+		position = 20
 		provinces_to_highlight = {
 		}
 		trigger = {
@@ -4490,7 +4773,7 @@ rus_russian_military = {
 	rus_dissolve_the_streltsy = {
 		icon = mission_handle_the_streltsy
 		required_missions = { rus_the_empire_of_russia }
-		position = 14
+		position = 18
 		provinces_to_highlight = {
 		}
 		trigger = {
@@ -4555,7 +4838,7 @@ rus_russian_military = {
 	rus_reform_the_military = {
 		icon = mission_assemble_an_army
 		required_missions = { rus_dissolve_the_streltsy }
-		position = 15
+		position = 19
 		provinces_to_highlight = {
 		}
 		trigger = {
@@ -4624,7 +4907,7 @@ rus_russian_westernization = {
 	rus_control_fur_trade = {
 		icon = mission_control_fur_trade
 		required_missions = { rus_the_empire_of_russia }
-		position = 14
+		position = 18
 		provinces_to_highlight = {
 		}
 		trigger = {
@@ -4657,7 +4940,7 @@ rus_russian_westernization = {
 	rus_peters_reforms = {
 		icon = mission_table_of_ranks
 		required_missions = { rus_control_fur_trade }
-		position = 15
+		position = 19
 		provinces_to_highlight = {
 		}
 		trigger = {
@@ -4698,7 +4981,7 @@ rus_education = {
 	rus_educational_reform = {
 		icon = mission_early_modern_university
 		required_missions = { rus_the_age_of_revolution }
-		position = 17
+		position = 21
 		provinces_to_highlight = {
 		}
 		trigger = {
@@ -4753,7 +5036,7 @@ rus_revolution = {
 			rus_educational_reform
 			rus_abolish_the_serfdom
 		}
-		position = 18
+		position = 22
 		provinces_to_highlight = {
 		}
 		trigger = {
@@ -4826,7 +5109,7 @@ rus_abolish_serfdom = {
 	rus_abolish_the_serfdom = {
 		icon = mission_peasantry
 		required_missions = { rus_the_age_of_revolution }
-		position = 17
+		position = 21
 		provinces_to_highlight = {
 		}
 		trigger = {
@@ -4854,143 +5137,3 @@ rus_abolish_serfdom = {
 
 
 
-ukr_roman_herritage_slot_2 = {
-	slot = 2
-	generic = no
-	ai = yes
-	has_country_shield = yes
-	potential = {
-		was_tag = UKR
-		tag = RUS
-	}
-	ukr_roman_engineeering = {
-		icon = mission_early_game_buildings
-		required_missions = {  }
-		position = 19
-		
-			trigger = {
-			has_idea_group = infrastructure_ideas
-		
-			workshop = 20
-			barracks = 15
-			num_of_owned_provinces_with = {
-				value = 10
-				has_manufactory_trigger = yes
-			}
-			num_of_owned_provinces_with = {
-				value = 15
-				has_fort_building_trigger = yes
-				}
-
-	}
-	effect = {
-		add_country_modifier = {
-			name = roman_engineering
-			duration = 3650
-			}
-		}	
-	}
-
-}
-
-ukr_roman_herritage_slot_4 = {
-	slot = 4
-	generic = no
-	ai = yes
-	has_country_shield = yes
-	potential = {
-		was_tag = UKR
-		tag = RUS
-	}
-	
-	ukr_roman_thinking = {
-		icon = bibliotheca_corviana
-		required_missions = {  }
-		position = 19
-		
-			trigger = {
-				has_idea_group = innovativeness_ideas
-				adm_tech = 14
-				dip_tech = 14
-				mil_tech = 14
-				treasury = 1500
-		}
-		
-			effect = {	
-				add_country_modifier = {
-					name = roman_thinking
-					duration = 3650
-			}
-				33 = {
-					add_building = university
-				}
-				280 = {
-					add_building = university
-				}	
-				add_treasury = -1500
-		}
-	}
-
-	ukr_host_roman_advisors = {
-		icon = friends_in_high_places
-		required_missions = { ukr_roman_thinking  }
-		position = 20
-		
-	}
-}
-
-
-ukr_roman_herritage_slot_3 = {
-	slot = 3
-	generic = no
-	ai = yes
-	has_country_shield = yes
-	potential = {
-		was_tag = UKR
-		tag = RUS
-	}
-		ukr_claim_roman_heritage = {
-			icon = a_roman_empire
-			required_missions = {
-				ukr_roman_engineeering
-				ukr_roman_thinking
-		}
-			position = 20
-
-				trigger = {
-					2410 = {
-						trade_share = { 
-							country = ROOT
-							share = 25
-					}
-				}
-					NOT = {
-						alliance_with = RMN
-						alliance_with = BUL
-					}
-					NOT = {
-						truce_with = RMN
-						truce_with = BUL
-					}
-					
-			}
-				effect = {
-					
-					moldavia_area = {
-						limit = {
-							NOT = { is_core = ROOT }
-							NOT = { is_permanent_claim = ROOT }
-						}
-						add_claim = ROOT
-					}
-					silistria_area = {
-						limit = {
-							NOT = { is_core = ROOT }
-							NOT = { is_permanent_claim = ROOT }
-						}
-						add_claim = ROOT
-
-					}	
-				}
-			}	
-		}
