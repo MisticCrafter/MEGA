@@ -1086,3 +1086,7 @@ AE2 = "countries/ExarchateMauretania.txt"
 AE3 = "countries/ExarchateAfrica.txt"
 AE4 = "countries/ExarchateItalia.txt"
 AE5 = "countries/ExarchateGallia.txt"
+
+AK1 = "countries/ExarchateCongo.txt"
+AK2 = "countries/ExarchateOyoman.txt"
+AK3 = "countries/ExarchateMali.txt"

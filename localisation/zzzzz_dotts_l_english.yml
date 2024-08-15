@@ -13,8 +13,13 @@ out_jap_warning_tt:0 "§RCompleting this mission will swap out our current missi
 #great project
 dutch_colonial_office:0 "Dutch Colonial Office"
 theodosian_walls:0 "Theodosian Walls"
+colosseum:0 "The Colosseum"
 #merc....
 out_volunteers:0 "Crusade Volunteers"
+merc_gladiators:0 "Gladiators"
+#belgian
+confed_frontier_tt:0 "§G5§! random colonies in §YColonial Eastern America§! or §YColonial Louisiana§! will gain §G300§! settlers"
+confed_expel_natives_tt:0 "Up to §G10§! owned §YNon Dutch§! provinces change to §YDutch§! culture alongside the following modifier:"
 #modifiers
 out_kni_ally:0 "Alliance With Hospitallers"
 out_lae_ally:0 "Alliance With Latin Empire"
@@ -34,6 +39,12 @@ out_catholic_missionaries:0 "Catholic Missionaries"
 out_crusade:0 "Japanese Crusade"
 out_eternal_crusade:0 "Eternal Crusade"
 out_papal_puppet:0 "Papal Puppet"
+out_suez_profit:0 "Split Suez Profits"
+out_suez_halfprofit:0 "Split Suez Profits"
+confed_frontier:0 "A New Frontier"
+confed_plantations:0 "Confederacy Plantations"
+confed_urban_populace:0 "Rapid Population Growth"
+confed_major_city:0 "Major City"
 #ideas - jabber is a homo
 z00_idea_1:0 "Culture Hybridization"
 z00_idea_1_desc:0 ""

@@ -42,7 +42,7 @@ lessons_orator = {
     is_blessing = yes
 
     modifier = {
-        power_projection_from_insults = 0.10
+        power_projection_from_insults = 0.50
     }
 
     ai_will_do = {

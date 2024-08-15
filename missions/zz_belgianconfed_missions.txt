@@ -1,0 +1,547 @@
+confed_west_coast = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = VRM } 
+
+	confed_american_frontier = {
+		icon = mission_settlers_north_america
+		position = 1
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			if = {
+				limit = {
+					colonial_eastern_america = {
+						type = all
+						owned_by = ROOT
+					}
+				}
+				colonial_eastern_america = {
+					type = all
+					owned_by = ROOT
+				}
+			}
+			else = {
+				num_of_provinces_owned_or_owned_by_subjects_with = {
+					value = 5
+					is_colony = yes
+					colonial_region = colonial_eastern_america
+					
+				}
+			}	
+		} 
+
+		effect = {
+			if = {
+				limit = {
+					num_of_provinces_owned_or_owned_by_subjects_with = {
+						value = 5
+						is_colony = yes
+						colonial_region = colonial_eastern_america
+						
+					}
+				}
+				custom_tooltip = confed_frontier_tt
+				hidden_effect = {
+					random_owned_province = {
+						limit = {
+							is_colony = yes
+						}
+						add_colonysize = 300
+					}
+					random_owned_province = {
+						limit = {
+							is_colony = yes
+						}
+						add_colonysize = 300
+					}
+					random_owned_province = {
+						limit = {
+							is_colony = yes
+						}
+						add_colonysize = 300
+					}
+					random_owned_province = {
+						limit = {
+							is_colony = yes
+						}
+						add_colonysize = 300
+					}
+					random_owned_province = {
+						limit = {
+							is_colony = yes
+						}
+						add_colonysize = 300
+					}
+					add_reform_progress_small_effect = yes
+				}
+			}
+			else = {
+				add_adm_power = 100
+				add_mil_power = 100
+				add_dip_power = 100
+			}
+			add_country_modifier = {
+				name = confed_frontier
+				duration = 5475
+			}
+		} 
+	}
+
+	confed_expel_natives = {
+		icon = mission_native_dev_capital
+		position = 2
+		required_missions = { confed_american_frontier } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			OR = {
+				num_of_provinces_owned_or_owned_by_subjects_with = {
+					value = 8
+					OR = {
+						culture_group = eastern_algonquian
+						culture_group = iroquoian
+						culture_group = muskogean
+						culture_group = central_algonquian
+					}
+				}
+				num_of_provinces_owned_or_owned_by_subjects_with = {
+					value = 50
+					NOT = {
+						OR = {
+							culture_group = eastern_algonquian
+							culture_group = iroquoian
+							culture_group = muskogean
+							culture_group = central_algonquian
+						}
+					}
+				}
+			}
+			
+		} 
+
+		effect = {
+			if = {
+				limit = {
+					num_of_provinces_owned_or_owned_by_subjects_with = {
+						value = 50
+						NOT = {
+							OR = {
+								culture_group = eastern_algonquian
+								culture_group = iroquoian
+								culture_group = muskogean
+								culture_group = central_algonquian
+							}
+						}
+					}
+				}
+				add_adm_power = 150
+				add_dip_power = 150
+				add_mil_power = 150
+			}
+			else = {
+				tooltip = {
+					custom_tooltip = confed_expel_natives_tt
+					add_province_modifier = {
+						name = expelled_minority
+						duration = 3650
+					}
+				}
+				hidden_effect = {
+					random_owned_province = {
+						add_province_modifier = {
+							name = expelled_minority
+							duration = 3650
+						}
+						change_culture = ROOT
+					}
+					random_owned_province = {
+						add_province_modifier = {
+							name = expelled_minority
+							duration = 3650
+						}
+						change_culture = ROOT
+					}
+					random_owned_province = {
+						add_province_modifier = {
+							name = expelled_minority
+							duration = 3650
+						}
+						change_culture = ROOT
+					}
+					random_owned_province = {
+						add_province_modifier = {
+							name = expelled_minority
+							duration = 3650
+						}
+						change_culture = ROOT
+					}
+					random_owned_province = {
+						add_province_modifier = {
+							name = expelled_minority
+							duration = 3650
+						}
+						change_culture = ROOT
+					}
+				}
+			}
+			mississippi_region = {
+				limit = {
+					OR = {
+						NOT = {
+							owned_by = ROOT
+						}
+						NOT = {
+							owned_by_subject_of = ROOT
+						}
+					}
+				}
+				add_claim = ROOT
+			}
+		} 
+	}
+
+	confed_cali = {
+		icon = mission_colonize_california
+		position = 3
+		required_missions = { confed_expel_natives } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			any_owned_province = {
+				region = california_region
+			}
+		} 
+
+		effect = {
+			california_region = {
+				limit = {
+					OR = {
+						NOT = {
+							owned_by = ROOT
+						}
+						NOT = {
+							owned_by_subject_of = ROOT
+						}
+					}
+				}
+				add_claim = ROOT
+			}
+			add_prestige = 30
+			unlock_estate_privilege = {
+				estate_privilege = estate_burghers_control_over_the_mint
+			}
+		} 
+	}
+}
+confed_east_coast = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = VRM } 
+
+	confed_tobacco_plantations = {
+		icon = mission_peasantry
+		position = 1
+		provinces_to_highlight = {
+			owned_by = ROOT
+			trade_goods = tobacco
+			NOT = {
+				base_production = 6
+			}
+		} 
+
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 10
+				trade_goods = tobacco
+				base_production = 6
+			}
+		} 
+
+		effect = {
+			random_owned_province = {
+				limit = {
+					base_production = 6
+					trade_goods = tobacco
+					NOT = {
+						has_province_modifier = confed_plantations
+					}
+				}
+				add_province_modifier = {
+					name = confed_plantations
+					duration = -1
+				}
+				add_province_modifier = {
+					name = confed_urban_populace
+					duration = 7300
+				}
+			}
+			random_owned_province = {
+				limit = {
+					base_production = 6
+					trade_goods = tobacco
+					NOT = {
+						has_province_modifier = confed_plantations
+					}
+				}
+				add_province_modifier = {
+					name = confed_plantations
+					duration = -1
+				}
+				add_province_modifier = {
+					name = confed_urban_populace
+					duration = 7300
+				}
+			}
+			random_owned_province = {
+				limit = {
+					base_production = 6
+					trade_goods = tobacco
+					NOT = {
+						has_province_modifier = confed_plantations
+					}
+				}
+				add_province_modifier = {
+					name = confed_plantations
+					duration = -1
+				}
+				add_province_modifier = {
+					name = confed_urban_populace
+					duration = 7300
+				}
+			}
+			add_years_of_income = 0.5
+		} 
+	}
+
+	confed_five_cities = {
+		icon = mission_colonial
+		position = 2
+		provinces_to_highlight = {
+			owned_by = ROOT
+			AND = {
+				NOT = {
+					development = 20
+				}
+				NOT = {
+					num_of_times_expanded_infrastructure = 1
+				}
+				NOT = {
+					num_of_buildings_in_province = 3
+				}
+			}
+			
+		} 
+
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 5
+				development = 20
+				num_of_times_expanded_infrastructure = 1
+				num_of_buildings_in_province = 3
+			}
+		} 
+
+		effect = {
+			random_owned_province = {
+				limit = {
+					development = 20
+					num_of_times_expanded_infrastructure = 1
+					num_of_buildings_in_province = 3
+					NOT = {
+						has_province_modifier = confed_urban_populace
+					}
+				}
+				add_province_modifier = {
+					name = confed_urban_populace
+					duration = 7300
+				}
+			}
+			random_owned_province = {
+				limit = {
+					development = 20
+					num_of_times_expanded_infrastructure = 1
+					num_of_buildings_in_province = 3
+					NOT = {
+						has_province_modifier = confed_urban_populace
+					}
+				}
+				add_province_modifier = {
+					name = confed_urban_populace
+					duration = 7300
+				}
+			}
+			random_owned_province = {
+				limit = {
+					development = 20
+					num_of_times_expanded_infrastructure = 1
+					num_of_buildings_in_province = 3
+					NOT = {
+						has_province_modifier = confed_urban_populace
+					}
+				}
+				add_province_modifier = {
+					name = confed_urban_populace
+					duration = 7300
+				}
+			}
+			if = {
+				limit = { 
+					any_owned_province = {
+						development = 20
+						num_of_times_expanded_infrastructure = 1
+						num_of_buildings_in_province = 3
+						has_province_modifier = confed_urban_populace
+					}
+				}
+				random_owned_province = {
+					limit = {
+						development = 20
+						num_of_times_expanded_infrastructure = 1
+						num_of_buildings_in_province = 3
+						has_province_modifier = confed_urban_populace
+					}
+					remove_province_modifier = confed_urban_populace
+					add_province_modifier = {
+						name = confed_major_city
+						duration = -1
+					}
+				}
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						development = 20
+						num_of_times_expanded_infrastructure = 1
+						num_of_buildings_in_province = 3
+						NOT = {
+							has_province_modifier = confed_urban_populace
+						}
+					}
+					add_province_modifier = {
+						name = confed_urban_populace
+						duration = 7300
+					}
+				}
+			}
+			if = {
+				limit = { 
+					any_owned_province = {
+						development = 20
+						num_of_times_expanded_infrastructure = 1
+						num_of_buildings_in_province = 3
+						has_province_modifier = confed_urban_populace
+					}
+				}
+				random_owned_province = {
+					limit = {
+						development = 20
+						num_of_times_expanded_infrastructure = 1
+						num_of_buildings_in_province = 3
+						has_province_modifier = confed_urban_populace
+					}
+					remove_province_modifier = confed_urban_populace
+					add_province_modifier = {
+						name = confed_major_city
+						duration = -1
+					}
+				}
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						development = 20
+						num_of_times_expanded_infrastructure = 1
+						num_of_buildings_in_province = 3
+						NOT = {
+							has_province_modifier = confed_urban_populace
+						}
+					}
+					add_province_modifier = {
+						name = confed_urban_populace
+						duration = 7300
+					}
+				}
+			}
+		} 
+	}
+
+	confed_forest_expansion = {
+		icon = mission_expand_into_the_forest
+		position = 3
+		provinces_to_highlight = {
+			owned_by = ROOT
+			OR = {
+				has_terrain = forest
+				has_terrain = woods
+			}
+		} 
+
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 8
+				development = 10
+				num_of_times_expanded_infrastructure = 1
+				OR = {
+					has_terrain = forest
+					has_terrain = woods
+				}
+				
+			}
+			treasury = 750
+		} 
+
+		effect = {
+			add_treasury = -750
+			unlock_estate_privilege = {
+				estate_privilege = estate_burghers_forest_expansion
+			}
+			random_owned_province = {
+				limit = {
+					development = 10
+					num_of_times_expanded_infrastructure = 1
+					OR = {
+						has_terrain = forest
+						has_terrain = woods
+					}
+				}
+				add_province_modifier = {
+					name = confed_urban_populace
+					duration = 7300
+				}
+			}
+			random_owned_province = {
+				limit = {
+					development = 10
+					num_of_times_expanded_infrastructure = 1
+					OR = {
+						has_terrain = forest
+						has_terrain = woods
+					}
+				}
+				add_province_modifier = {
+					name = confed_urban_populace
+					duration = 7300
+				}
+			}
+			random_owned_province = {
+				limit = {
+					development = 10
+					num_of_times_expanded_infrastructure = 1
+					OR = {
+						has_terrain = forest
+						has_terrain = woods
+					}
+				}
+				add_province_modifier = {
+					name = confed_urban_populace
+					duration = 7300
+				}
+			}
+		} 
+	}
+}

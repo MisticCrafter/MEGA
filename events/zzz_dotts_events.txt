@@ -131,16 +131,46 @@ country_event = {
 		Z00 = {
 			add_treasury = -1000
 		}
+		add_country_modifier = {
+			name = out_suez_profit
+			duration = -1
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				NOT = {
+					has_opinion = {
+						who = Z00
+						value = 100
+					}
+				}
+			}
+			modifier = {
+				factor = 25
+				alliance_with = Z00
+			}
+			modifier = {
+				factor = 25
+				has_opinion = {
+					who = Z00
+					value = 180
+				}
+			}
+		}
 	}
 	option = {
 		name = dotts_events.2.b
 		4316 = {
-			add_core = Z00
+			add_permanent_claim = Z00
 		}
 		2315 = {
-			add_core = Z00
+			add_permanent_claim = Z00
 		}
 		add_prestige = 20
+		ai_chance = {
+			factor = 50
+		}
 	}
 }
 country_event = { #suez
@@ -159,13 +189,43 @@ country_event = { #suez
 		Z00 = {
 			add_treasury = -500
 		}
+		add_country_modifier = {
+			name = out_suez_halfprofit
+			duration = -1
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				NOT = {
+					has_opinion = {
+						who = Z00
+						value = 100
+					}
+				}
+			}
+			modifier = {
+				factor = 25
+				alliance_with = Z00
+			}
+			modifier = {
+				factor = 25
+				has_opinion = {
+					who = Z00
+					value = 180
+				}
+			}
+		}
 	}
 	option = {
 		name = dotts_events.2.b
 		2315 = {
-			add_core = Z00
+			add_permanent_claim  = Z00
 		}
 		add_prestige = 10
+		ai_chance = {
+			factor = 50
+		}
 	}
 }
 country_event = { #pelusia 
@@ -184,13 +244,43 @@ country_event = { #pelusia
 		Z00 = {
 			add_treasury = -500
 		}
+		add_country_modifier = {
+			name = out_suez_halfprofit
+			duration = -1
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				NOT = {
+					has_opinion = {
+						who = Z00
+						value = 100
+					}
+				}
+			}
+			modifier = {
+				factor = 25
+				alliance_with = Z00
+			}
+			modifier = {
+				factor = 25
+				has_opinion = {
+					who = Z00
+					value = 180
+				}
+			}
+		}
 	}
 	option = {
 		name = dotts_events.2.b
 		4316 = {
-			add_core = Z00
+			add_permanent_claim = Z00
 		}
 		add_prestige = 10
+		ai_chance = {
+			factor = 50
+		}
 	}
 }
 country_event = { #persia fix

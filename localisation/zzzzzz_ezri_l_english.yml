@@ -5,9 +5,29 @@
  ukr_invest_in_the_army_desc:0 "The Grand Army of Ruthenia will defend out lands"
  ukr_roman_engineeering_title:0 "Roman Engineering"
  ukr_roman_engineeering_desc:0 "Mlem" 
-
+ ukr_roman_thinking_title:0 "Roman Thinking"
+ ukr_roman_thinking_desc:0 "Mlem2"
+ ukr_claim_roman_heritage_title:0 "Claim Roman Heritage"
+ ukr_claim_roman_heritage_desc:0 "Melm3"
+ ukr_host_roman_advisors_title:0 "Host Roman Advisors"
+ ukr_host_roman_advisors_desc:0 "Mlem4"
+ ukr_solidify_claim_to_rome_title:0 "Solidify Claim to Rome"
+ ukr_solidify_claim_to_rome_desc:0 "Mlem5"
+ ukr_proclaim_fourth_rome_title:0 "Proclaim Fourth Rome"
+ ukr_proclaim_fourth_rome_desc:0 "Mlem6"
+ ukr_maintain_the_theodosian_walls_title:0 "Theodosian Repairs"
+ ukr_maintain_the_theodosian_walls_desc:0 "Mlem7"
+ ukr_secure_the_strait_title:0 "Secure the Strait"
+ ukr_secure_the_strait_desc:0 "Mlem8"
 
  #Modifiers
- invested_army:0 "Invested in the army"
+ invested_army_title:0 "Invested in the army"
+ invested_army_desc:0 "Mlemdecision"
  invested_army_training:0 "Army training investment"
  roman_engineering:0 "Roman Engineering"
+ roman_thinking:0 "Roman Thinking"
+
+#Fourth Rome Localization
+FRE:0 "Fourth Rome"
+FRE_ADJ:0 "Roman"
+FRE_ideas:0 "Fouth Rome Ideas"

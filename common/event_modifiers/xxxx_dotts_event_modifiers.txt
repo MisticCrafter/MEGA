@@ -60,6 +60,30 @@ out_eternal_crusade = {
 out_papal_puppet = {
 	liberty_desire = -50
 }
+out_suez_profit = {
+	global_tax_income = 50
+}
+out_suez_halfprofit = {
+	global_tax_income = 25
+}
+#confed
+confed_frontier = {
+	colony_cost_modifier = -0.20
+}
+expelled_minority = {
+	local_unrest = 6
+}
+confed_plantations = {
+	trade_goods_size = 1.5
+}
+confed_urban_populace = {
+	local_development_cost = -0.10
+	production_efficiency = 0.20
+}
+confed_major_city = {
+	local_development_cost = -0.15
+	production_efficiency = 0.33
+}
 #sicily
 #1
 sic_subjucation_spanyards = {

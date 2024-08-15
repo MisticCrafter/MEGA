@@ -2836,3 +2836,34 @@ out_volunteers = {
 	}
 	counts_towards_force_limit = no
 }
+#funnything -dotts
+merc_gladiators = {
+	mercenary_desc_key = FREE_OF_FORCELIMIT_COST
+	regiments_per_development = 0.04
+
+	cost_modifier = 0.75
+	home_province = 118
+
+	cavalry_weight = 0
+	artillery_weight = 0
+
+	sprites = {
+		dlc006_byz_sprite_pack
+	}
+
+	trigger = {
+		owns = 118
+		118 = {
+			has_great_project = {
+				type = colosseum
+				tier = 3
+			}
+		}
+	}
+
+	modifier = {
+		shock_damage = 0.15
+		morale_damage_received = 0.1
+	}
+	counts_towards_force_limit = no
+}
