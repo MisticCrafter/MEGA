@@ -6,7 +6,6 @@ akaman_slot_1_missions = {
 		
 	}
 	potential = {
-	
 		tag = Z01
 		NOT = { map_setup = map_setup_random }
 		is_random_new_world = no
@@ -42,7 +41,6 @@ akaman_slot_1_missions = {
 		}
 		effect = {
 			add_country_modifier = {
-				add_country_modifier = {
 				name = "aka_colon_buff"
 				duration = -1
 			}
@@ -144,7 +142,7 @@ akaman_slot_1_missions = {
 
 	aka_yucatan_colonies = {
 		icon = mission_establish_high_seas_navy
-		required_missions = { aka_go_westward }
+		required_missions = { aka_bandeirantes }
 		completed_by = 1540.1.1
 		
 		provinces_to_highlight = {
@@ -167,13 +165,13 @@ akaman_slot_1_missions = {
 				duration = 7300
 			}
 			define_conquistador = {
-				name = "Francisco Pizarro"
+				name = "Valen McSpiegel"
 				fire = 4
 				shock = 4
 				manuever = 5
 				siege = 1
 			}
-			peru_region = {
+			kongo_region = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
