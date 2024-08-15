@@ -38,3 +38,7 @@ developing_farmlands = {
 	supply_limit = 2
 	development_cost_modifier = -0.05
 }
+crimean_shipyards = {
+	development_cost_modifier = -0.05
+	ship_recruit_speed = -0.25
+}

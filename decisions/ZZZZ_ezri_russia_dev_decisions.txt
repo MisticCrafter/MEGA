@@ -23,28 +23,86 @@ country_decisions = {
 			}
 		}
 		effect = {
-			1944 ={
-				change_trade_goods = grain
-			}
 			1942 = {
 				add_province_modifier = {
 					name = developing_farmlands
 					duration = -1
 				}
+				add_building = farm_estate
 			}
 			1944 = {
+				change_trade_goods = grain
+
 				add_province_modifier = {
 					name = developing_farmlands
 					duration = -1
 				}
+				add_building = farm_estate
 			}
 			4542 = {
 				add_province_modifier = {
 					name = developing_farmlands
 					duration = -1
 				}
+				add_building = farm_estate
+			}	
+				add_treasury = -500
+		}
+	}
+
+	develop_sevastapol = {
+		potential = {
+			tag = RUS
+		}
+		allow = {
+			adm_tech = 11
+			treasury = 500
+			crimea_area = {
+				type = all
+				owned_by = root
+			}
+			owns = 286
+			2410 = {
+				base_production = 9	
+			} 
+			2447 = {
+				base_production = 6
+			}
+			286 = {
+				base_production = 6
+			}
+		}
+
+		effect = {
+			2410 = {
+				change_trade_goods = naval_supplies
+				add_province_modifier = {
+					name = crimean_shipyards
+					duration = -1
+				}
+				add_building = shipyard
+			}
+			2447 = {
+				change_trade_goods = naval_supplies
+				add_province_modifier = {
+					name = crimean_shipyards
+					duration = -1
+				}
+				add_building = shipyard
+			}
+			286 = {
+				change_trade_goods = naval_supplies
+				add_province_modifier = {
+					name = crimean_shipyards
+					duration = -1
+				}
+				add_building = shipyard
+			}
+			285 = {
+				change_trade_goods = naval_supplies
 			}
 			add_treasury = -500
 		}
 	}
+
 }

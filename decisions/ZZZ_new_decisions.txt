@@ -1286,3 +1286,58 @@ country_decisions = {
 		}
 	}
 }
+
+#Crimean Purchase
+#	ZZZ_crimean_purchase = {
+#		potential = {
+#			has_global_flag = crimean_purchase
+#				any_owned_province = {
+#					limit = {
+#						region = crimea_region
+#					}
+#				}
+#				is_neighbor_of = {
+#					OR = {
+#						tag = VEN
+#						tag = SWI
+#				}
+#				}
+#				is_tribal = no
+#				total_development = 350
+#		}	
+#			provinces_to_highlight = {
+#				OR = {
+#					owned_by = VEN
+#					owned_by = SWI
+#				}
+#					region = crimea_region
+#			}
+#
+#			allow = {
+#				Treasury = 100000
+#			}
+#
+#			effect = {
+#				SWI = {
+#					add_treasury = 1
+#						country_event = {
+#						name = ez.russia.events.y.3
+#				}	
+#			}
+#		}
+#
+#		ai_will_do = {
+#			factor = 1
+#			modifier = {
+#				NOT = {
+#					owns_core_province ={
+#						is_neighbor_of = {
+#							OR = {
+#							tag = SWI
+#						}
+#					}
+#				}
+#			}
+#		}
+#	}
+#}
