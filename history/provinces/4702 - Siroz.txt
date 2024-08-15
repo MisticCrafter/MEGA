@@ -1,6 +1,6 @@
 owner = LAE
 controller = LAE
-capital = "Serres"
+capital = "Kristoupolis"
 is_city = yes
 culture = greek
 religion = catholic
