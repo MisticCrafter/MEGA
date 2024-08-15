@@ -19,7 +19,7 @@ akaman_slot_1_missions = {
 	}
 	has_country_shield = yes
 
-	ZO1_go_westward = {
+	aka_go_westward = {
 		icon = mission_establish_high_seas_navy
 		position = 2
 		completed_by = 1501.1.1
@@ -48,9 +48,9 @@ akaman_slot_1_missions = {
 		}
 	}
 
-	ZO1_brazil_colonies = {
+	aka_brazil_colonies = {
 		icon = mission_iberian_conquistador
-		required_missions = { ZO1_go_westward }
+		required_missions = { aka_go_westward }
 		completed_by = 1540.1.1
 		
 		provinces_to_highlight = {
@@ -69,15 +69,15 @@ akaman_slot_1_missions = {
 		
 		effect = {
 			add_country_modifier = {
-				name = "ZO1_brazil_buff"
+				name = "aka_brazil_buff"
 				duration = 7300
 			}
 		}
 	}
 
-	ZO1_bandeirantes = {
+	aka_bandeirantes = {
 		icon = mission_brazilian_bandeirantes
-		required_missions = { ZO1_brazil_colonies }
+		required_missions = { aka_brazil_colonies }
 		
 		provinces_to_highlight = {
 			OR = {
@@ -143,21 +143,21 @@ akaman_slot_1_missions = {
 		}
 	}
 
-	ZO1_ucatan_colonies = {
+	aka_yucatan_colonies = {
 		icon = mission_establish_high_seas_navy
-		required_missions = { adu_bandeirantes }
+		required_missions = { aka_bandeirantes }
 		completed_by = 1540.1.1
 		
 		provinces_to_highlight = {
-			colonial_region = colonial_colombia
+			region = central_america_region
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
 		
 		trigger = { 
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 10
-				colonial_region = colonial_colombia
+				value = 9
+				region = central_america_region
 				is_city = yes
 			}
 		}

@@ -1,0 +1,210 @@
+country_decisions = {
+    akan_exarchate_kongo_decision = {
+        major = yes
+        potential = {
+            tag = Z01
+            custom_trigger_tooltip = {
+				tooltip = aka_exarchates_enabled_tt
+				has_country_flag = aka_exarchates_enabled
+			}
+            NOT = { exists = AK1 } #Kongo (akan exarchate 1)
+        }
+
+        provinces_to_highlight = {
+            NOT = { owned_by = Z01 }
+            OR = {
+                region = kongo_region
+                region = central_africa_region
+            }
+        }
+
+        allow = {
+            NOT = { exists = AK1 } #Kongo
+            num_of_owned_provinces_with = {
+                value = 5
+                OR = {
+                    region = kongo_region
+                    region = central_africa_region
+                }
+            }
+            OR = {
+                owns = 1170 #Mpemba
+                owns = 1167 #Luanda
+            }
+        }
+
+        effect = {
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        region = kongo_region
+                        region = central_africa_region
+                    }
+                }
+                remove_core = ROOT
+                add_core = AK1
+                cede_province = AK1
+            }
+            
+            if = {
+                limit = {
+                    AK1 = { owns = 1170 } #Mpemba
+                }
+                AK1 = { set_capital = 1170 }
+            }
+            else_if = {
+                limit = {
+                    AK1 = { owns = 1167 } #Luanda
+                }
+                AK1 = { set_capital = 1167 }
+            }
+
+            create_subject = {
+                who = AK1
+                subject_type = vassal
+            }
+
+            AK1 = {
+                change_technology_group = western
+                change_primary_culture = kongolese
+                change_religion = tigranic
+
+                add_government_reform = andal_exarchate_reform
+            }
+        }
+    }
+
+    akan_exarchate_oyaman_decision = {
+        major = yes
+        potential = {
+            tag = Z01
+            custom_trigger_tooltip = {
+				tooltip = aka_exarchates_enabled_tt
+				has_country_flag = aka_exarchates_enabled
+			}
+            NOT = { exists = AK2 } #Oyaman (akan exarchate 2)
+        }
+
+        provinces_to_highlight = {
+            NOT = { owned_by = Z01 }
+            province_group = oyaman
+        }
+
+        allow = {
+            NOT = { exists = AK2 } #Oyaman
+            num_of_owned_provinces_with = {
+                value = 6
+                OR = {
+                    province_group = oyaman
+                }
+            }
+            OR = {
+                owns = 1147 #Benin
+            }
+        }
+
+        effect = {
+            every_owned_province = {
+                limit = {
+                    province_group = oyaman
+                }
+                remove_core = ROOT
+                add_core = AK2
+                cede_province = AK2
+            }
+            
+            if = {
+                limit = {
+                    AK2 = { owns = 1147 } #Benin
+                }
+                AK2 = { set_capital = 1147 }
+            }
+
+            create_subject = {
+                who = AK2
+                subject_type = vassal
+            }
+
+            AK2 = {
+                change_technology_group = western
+                change_primary_culture = yorumba
+                change_religion = tigranic
+
+                add_government_reform = andal_exarchate_reform
+            }
+        }
+    }
+
+    akan_exarchate_mali_decision = {
+        major = yes
+        potential = {
+            tag = Z01
+            custom_trigger_tooltip = {
+				tooltip = aka_exarchates_enabled_tt
+				has_country_flag = aka_exarchates_enabled
+			}
+            NOT = { exists = AK3 } #Mali (akan exarchate 3)
+        }
+
+        provinces_to_highlight = {
+            NOT = { owned_by = Z01 }
+            OR = {
+                area = massina_area
+                area = jenne_area
+                area = manding_area
+            }
+        }
+
+        allow = {
+            NOT = { exists = AK3 } #Mali
+            num_of_owned_provinces_with = {
+                value = 6
+                OR = {
+                    area = massina_area
+                    area = jenne_area
+                    area = manding_area
+                }
+            }
+            OR = {
+                owns = 1134 #Jenne
+            }
+        }
+
+        effect = {
+            every_owned_province = {
+                limit = {
+                    OR = {
+                        area = massina_area
+                        area = jenne_area
+                        area = manding_area
+                    }
+                }
+                remove_core = ROOT
+                add_core = AK3
+                cede_province = AK3
+            }
+            
+            if = {
+                limit = {
+                    AK3 = { owns = 1134 } #Jenne
+                }
+                AK3 = { set_capital = 1134 }
+            }
+
+            create_subject = {
+                who = AK3
+                subject_type = vassal
+            }
+
+            AK3 = {
+                change_technology_group = western
+                change_primary_culture = mali
+                change_religion = abyss_mystic
+
+                add_government_reform = andal_exarchate_reform
+            }
+        }
+    }
+
+
+}

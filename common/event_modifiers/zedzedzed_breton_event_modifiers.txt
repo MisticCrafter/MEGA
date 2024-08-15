@@ -1,10 +1,13 @@
-ZO1_brazil_buff = {
+aka_brazil_buff = {
     global_tariffs = 0.35
     reduced_liberty_desire_on_other_continent = 10
     global_colonial_growth = 25
 }
 
-ZO1_yucatan_buff = {
+aka_yucatan_buff = {
+    global_trade_goods_size_modifier = 0.1
+    trade_steering = 0.1
+    
     global_tariffs = 0.25
     reduced_liberty_desire_on_other_continent = 10
     global_colonial_growth = 15

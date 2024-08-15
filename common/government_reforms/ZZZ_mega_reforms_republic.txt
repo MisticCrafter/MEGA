@@ -278,8 +278,10 @@ andal_exarchate_reform = {
 	icon = "andal_subject"
 	allow_normal_conversion = no
 	potential = {
-		culture_group = iberian
-        is_subject_of = ADU
+		OR = {
+			is_subject_of = ADU
+			is_subject_of = Z01
+		}
 	}
 	nation_designer_trigger = {
 		culture_group = iberian
