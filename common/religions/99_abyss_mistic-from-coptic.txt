@@ -34,7 +34,7 @@ christian = {
 }
 		
 	
-		holy_sites = { 2769 1134 358 1234 1211 379 2313 118 }
+		holy_sites = { 2769 1134 360 1234 358 1211 379 118 }
 
 		blessings = { 
 			lessons_empress
