@@ -15,6 +15,10 @@ adu_caribbean_buff = {
     trade_steering = 0.1
 }
 
+adu_gold_buff = {
+    trade_goods_size = 2
+}
+
 adu_malabar_buff = {
     placed_merchant_power = 5
     global_ship_trade_power = 0.3
