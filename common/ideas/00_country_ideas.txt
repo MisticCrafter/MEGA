@@ -15864,7 +15864,7 @@ ADU_ideas = {
 		artillery_fire = 1
 	}
 	adu_idea_7 = {
-        max_absolutism = 20
+        max_absolutism = 10 #wayyy too fucking much abso
 	}
 }
 

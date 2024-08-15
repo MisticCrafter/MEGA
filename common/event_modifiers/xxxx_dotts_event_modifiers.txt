@@ -85,6 +85,49 @@ confed_major_city = {
 	production_efficiency = 0.33
 }
 #sicily
+palatini_regiments = {
+	morale_damage_received = -0.10
+	assault_fort_ability = -0.25
+	fire_damage_received = 0.10
+	shock_damage_received = 0.10
+	land_maintenance_modifier = 0.50
+	is_janissary_modifier = yes
+}
+italy_legion_modifier = {
+	land_forcelimit = -5
+	yearly_corruption = 0.02
+	nobles_influence_modifier = 0.05
+}
+africa_legion_modifier = {
+	land_forcelimit = -5
+	yearly_corruption = 0.02
+	nobles_influence_modifier = 0.05
+}
+balkan_legion_modifier = {
+	land_forcelimit = -5
+	yearly_corruption = 0.02
+	nobles_influence_modifier = 0.05
+}
+egypt_legion_modifier = {
+	land_forcelimit = -5
+	yearly_corruption = 0.02
+	nobles_influence_modifier = 0.05
+}
+iberia_legion_modifier = {
+	land_forcelimit = -5
+	yearly_corruption = 0.02
+	nobles_influence_modifier = 0.05
+}
+france_legion_modifier = {
+	land_forcelimit = -5
+	yearly_corruption = 0.02
+	nobles_influence_modifier = 0.05
+}
+jerusalem_legion_modifier = {
+	land_forcelimit = -5
+	yearly_corruption = 0.02
+	nobles_influence_modifier = 0.05
+}
 #1
 sic_subjucation_spanyards = {
 	global_trade_power = 0.20

@@ -1,5 +1,13 @@
 #knights
 kni_citadel_of_rosetta = {
 	local_defensiveness = 0.10
-	trade_value = 2
+	trade_value = 10
 }   
+kni_cairo_citadel = {
+	local_defensiveness = 0.33
+	allowed_num_of_manufactories = 1
+	monthly_splendor = 1
+}
+kni_friendship_pope = {
+	curia_powers_cost = -0.10
+}	

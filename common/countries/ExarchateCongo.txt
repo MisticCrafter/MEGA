@@ -1,0 +1,50 @@
+ck2_converter_generated = yes
+graphical_culture = easterngfx
+color = { 255 25 77 } #{ 0 88 80 }
+revolutionary_colors = { 9 0 9 }
+historical_idea_groups = {
+	exploration_ideas
+	expansion_ideas
+	trade_ideas
+	quality_ideas
+	economic_ideas
+	offensive_ideas
+	quantity_ideas
+	defensive_ideas
+}
+historical_units = {
+	austrian_grenzer
+	austrian_hussar
+	austrian_jaeger
+	austrian_tercio
+	austrian_white_coat
+	mixed_order_infantry
+	napoleonic_lancers
+	napoleonic_square
+	open_order_cavalry
+	spanish_tercio
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+}
+monarch_names = {
+	"Bangben #1" = 10
+	"Bi Awur´bi #0" = 0
+	"Flomo #1" = 10
+	"Gyem Che #0" = 0
+	"Kwesi #0" = 0
+	"Mardea #0" = -1
+	"Nimene #1" = 10
+	"Okonfo #0" = 0
+	"Ovlur #0" = 0
+	"Pereko #0" = 0
+	"Togba #1" = 10
+}
+
+army_names = {
+	"Exarchal Army"
+	"Army of $PROVINCE$"
+}
+fleet_names = {
+	"Exarchal Fleet"
+}

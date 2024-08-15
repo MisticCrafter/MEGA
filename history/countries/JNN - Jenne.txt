@@ -3,8 +3,10 @@ add_government_reform = feudalism_reform
 government_rank = 2
 technology_group = sub_saharan
 religion = catholic
-primary_culture = mali
+primary_culture = songhai
 capital = 1134
+add_accepted_culture = mali
+add_accepted_culture = soninke
 1444.11.11= {
 	monarch = {
 		name = "(Regency Council)"
@@ -14,7 +16,7 @@ capital = 1134
 		birth_date = 1.1.1
 		regent = yes
 		religion = catholic
-		culture = mali
+		culture = songhai
 	}
 	heir = {
 		name = "Tandian"
@@ -26,7 +28,7 @@ capital = 1134
 		death_date = 1499.6.11
 		claim = 89
 		religion = catholic
-		culture = mali
+		culture = songhai
 	}
 }
 1444.11.11= {

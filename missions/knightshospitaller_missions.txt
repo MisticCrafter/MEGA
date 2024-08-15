@@ -36,11 +36,27 @@ Super_Cool_Holy_Cities = {
 			kni_fort_rosetta
 			kni_holy_alexandria
 		}
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = { province_id = 361 } 
 
-		trigger = {  } 
+		trigger = {
+			361 = {
+				owned_by = ROOT
+				OR = {
+					num_of_times_improved = 8
+					num_of_buildings_in_province = 3
+				}
+			}
+		}
 
-		effect = {  } 
+		effect = {
+			361 = {
+				add_center_of_trade_level = 1
+				add_province_modifier = {
+					name = "kni_cairo_citadel"
+					duration = -1
+				}
+			}
+		}
 	}
 
 	kni_pearl_mediterranean = {
@@ -133,9 +149,37 @@ knidiplomatic = {
 		position = 1
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {
+			OR = {
+				PAP = {
+					AND = {
+						has_opinion = {
+							who = ROOT
+							value = 150
+						}
+						trust = {
+							who = ROOT
+							value = 60
+						}
+					}
+				}
+				hidden_trigger = { NOT = { exists = PAP }  } 
+			}
+		}
 
-		effect = {  } 
+		effect = {
+			if = {
+				limit = { NOT = { alliance_with = PAP }  } 
+				create_alliance = PAP
+			}
+			add_historical_friend = PAP
+			add_papal_influence = 30
+			PAP = { add_historical_friend = ROOT } 
+			add_country_modifier = {
+				name = "kni_friendship_pope"
+				duration = -1
+			}
+		}
 	}
 
 	kni_crusader_kings = {
@@ -148,16 +192,27 @@ knidiplomatic = {
 
 		effect = {  } 
 	}
+
+	kni_our_place = {
+		icon = knights_of_the_new_world
+		position = 1
+		required_missions = { kni_crusader_kings } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
 }
 kniforts = {
-	slot = 3
+	slot = 2
 	generic = no
 	ai = yes
 	has_country_shield = yes
 	potential = { tag = KNI } 
 
 	kni_three_castles = {
-		icon = fortify_malta
+		icon = fortress_of_belgrade
 		position = 4
 		provinces_to_highlight = {  } 
 
@@ -167,8 +222,18 @@ kniforts = {
 	}
 
 	kni_cyrenaica = {
-		icon = fortress_of_belgrade
+		icon = fortify_malta
 		position = 5
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kni_country_of_castles = {
+		icon = mission_castle_construction
+		position = 1
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
@@ -219,6 +284,7 @@ kninaval = {
 	kni_sea_knights = {
 		icon = crusader_fleet
 		position = 2
+		required_missions = { kni_struggle_mediterranean } 
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
@@ -270,8 +336,29 @@ kninaval = {
 
 		effect = {  } 
 	}
+
+	kni_rules_the_waves = {
+		icon = mission_empire
+		position = 1
+		required_missions = { kni_masters_mediterranean } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kni_victoria = {
+		icon = mission_reign_of_women
+		position = 8
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
 }
-Landfall_Italy = {
+landfall_italy = {
 	slot = 1
 	generic = no
 	ai = yes
@@ -330,7 +417,7 @@ landfall_sicily = {
 		effect = {  } 
 	}
 }
-Reconquista = {
+reconquista = {
 	slot = 1
 	generic = no
 	ai = yes

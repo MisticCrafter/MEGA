@@ -14,3 +14,31 @@ roman_engineering = {
 roman_thinking = {
 	technology_cost = -0.05
 }
+visions_of_rome = {
+	land_morale = 0.05
+}
+fourth_rome_modifier = {
+	legitimacy = 1
+	local_manpower = 0.5
+	local_development_cost = -0.20
+	local_defensiveness = 0.33
+	local_tax_modifier = 0.5
+	local_production_efficiency = 0.20
+}
+roman_visions_realized = {
+	land_morale = 0.10
+}
+hosting_roman_advisors = {
+	advisor_cost = -0.15
+}
+roman_acceptance_epic = {
+	num_accepted_cultures = 1
+}
+developing_farmlands = {
+	supply_limit = 2
+	development_cost_modifier = -0.05
+}
+crimean_shipyards = {
+	development_cost_modifier = -0.05
+	ship_recruit_speed = -0.25
+}

@@ -1,0 +1,118 @@
+country_decisions = {
+	develop_the_dnipro = {
+		potential = {
+			tag = RUS
+			NOT = {
+				has_country_flag = dnipro_developed
+			}
+		}
+
+		allow = {
+			adm_tech = 11
+			treasury = 500
+			owns = 1942
+			owns = 1944
+			owns = 4542
+
+			1942 = {
+				base_production = 9
+			}
+			
+			1944 = {
+				base_production = 7
+			}
+			4542 = {
+				base_production = 10
+			}
+		}
+		effect = {
+			1942 = {
+				add_province_modifier = {
+					name = developing_farmlands
+					duration = -1
+				}
+				add_building = farm_estate
+			}
+			1944 = {
+				change_trade_goods = grain
+
+				add_province_modifier = {
+					name = developing_farmlands
+					duration = -1
+				}
+				add_building = farm_estate
+			}
+			4542 = {
+				add_province_modifier = {
+					name = developing_farmlands
+					duration = -1
+				}
+				add_building = farm_estate
+			}	
+				add_treasury = -500
+				RUS = {
+					set_country_flag = dnipro_developed
+				}
+		}
+	}
+
+	develop_sevastapol = {
+		potential = {
+			tag = RUS
+			NOT = {
+				has_country_flag = crimea_developed
+			}
+		}
+		allow = {
+			adm_tech = 11
+			treasury = 500
+			crimea_area = {
+				type = all
+				owned_by = root
+			}
+			owns = 286
+			2410 = {
+				base_production = 9	
+			} 
+			2447 = {
+				base_production = 6
+			}
+			286 = {
+				base_production = 6
+			}
+		}
+
+		effect = {
+			2410 = {
+				change_trade_goods = naval_supplies
+				add_province_modifier = {
+					name = crimean_shipyards
+					duration = -1
+				}
+				add_building = shipyard
+			}
+			2447 = {
+				change_trade_goods = naval_supplies
+				add_province_modifier = {
+					name = crimean_shipyards
+					duration = -1
+				}
+				add_building = shipyard
+			}
+			286 = {
+				change_trade_goods = naval_supplies
+				add_province_modifier = {
+					name = crimean_shipyards
+					duration = -1
+				}
+				add_building = shipyard
+			}
+			285 = {
+				change_trade_goods = naval_supplies
+			}
+			add_treasury = -500
+			set_country_flag = crimea_developed
+		}
+	}
+
+}

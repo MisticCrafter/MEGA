@@ -259,5 +259,362 @@ country_decisions = {
 			factor = 1
 		}
 	}
-
+	#legion decisions
+	sic_italian_legion_raise = {
+		potential = {
+			OR = {
+				tag = SIC
+				tag = TTS
+				tag = ITA
+			}
+			has_reform = dollarstore_roman_republic_government
+			NOT = {
+				has_country_modifier = italy_legion_modifier
+			}
+		}
+		provinces_to_highlight = {
+			region = italy_region
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		allow = {
+			num_of_owned_provinces_with = {
+				value = 40
+				region = italy_region
+			}
+			owns_core_province = 118
+			treasury = 750
+		}
+		effect = {
+			add_army_tradition = 10
+			custom_tooltip = legion_unlock_tt
+			add_treasury = -750
+			add_country_modifier = {
+				name = italy_legion_modifier
+				duration = -1
+			}
+		}
+	}
+	sic_italian_legion_disband = {
+		potential = {
+			has_country_modifier = italy_legion_modifier
+		}
+		allow = {
+			has_country_modifier = italy_legion_modifier
+			stability = 1
+		}
+		effect = {
+			add_army_tradition = -20
+			add_stability = -1
+			custom_tooltip = legion_disband_tt
+			remove_country_modifier = italy_legion_modifier
+		}
+	}
+	sic_african_legion_raise = {
+		potential = {
+			OR = {
+				tag = SIC
+				tag = TTS
+				tag = ITA
+			}
+			has_reform = dollarstore_roman_republic_government
+			NOT = {
+				has_country_modifier = africa_legion_modifier
+			}
+		}
+		provinces_to_highlight = {
+			region = maghreb_region
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		allow = {
+			num_of_owned_provinces_with = {
+				value = 25
+				region = maghreb_region
+			}
+			owns_core_province = 340
+			treasury = 750
+		}
+		effect = {
+			add_army_tradition = 10
+			custom_tooltip = legion_unlock_tt
+			add_treasury = -750
+			add_country_modifier = {
+				name = africa_legion_modifier
+				duration = -1
+			}
+		}
+	}
+	sic_african_legion_disband = {
+		potential = {
+			has_country_modifier = africa_legion_modifier
+		}
+		allow = {
+			has_country_modifier = africa_legion_modifier
+			stability = 1
+		}
+		effect = {
+			add_army_tradition = -20
+			add_stability = -1
+			custom_tooltip = legion_disband_tt
+			remove_country_modifier = africa_legion_modifier
+		}
+	}
+	sic_balkan_legion_raise = {
+		potential = {
+			OR = {
+				tag = SIC
+				tag = TTS
+				tag = ITA
+			}
+			has_reform = dollarstore_roman_republic_government
+			NOT = {
+				has_country_modifier = balkan_legion_modifier
+			}
+		}
+		provinces_to_highlight = {
+			region = balkan_region
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		allow = {
+			num_of_owned_provinces_with = {
+				value = 25
+				region = balkan_region
+			}
+			owns_core_province = 4704
+			treasury = 750
+		}
+		effect = {
+			add_army_tradition = 10
+			custom_tooltip = legion_unlock_tt
+			add_treasury = -750
+			add_country_modifier = {
+				name = balkan_legion_modifier
+				duration = -1
+			}
+		}
+	}
+	sic_balkan_legion_disband = {
+		potential = {
+			has_country_modifier = balkan_legion_modifier
+		}
+		allow = {
+			has_country_modifier = balkan_legion_modifier
+			stability = 1
+		}
+		effect = {
+			add_army_tradition = -20
+			add_stability = -1
+			custom_tooltip = legion_disband_tt
+			remove_country_modifier = balkan_legion_modifier
+		}
+	}
+	sic_egypt_legion_raise = {
+		potential = {
+			OR = {
+				tag = SIC
+				tag = TTS
+				tag = ITA
+			}
+			has_reform = dollarstore_roman_republic_government
+			NOT = {
+				has_country_modifier = egypt_legion_modifier
+			}
+		}
+		provinces_to_highlight = {
+			region = egypt_region
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		allow = {
+			num_of_owned_provinces_with = {
+				value = 20
+				region = egypt_region
+			}
+			owns_core_province = 358
+			treasury = 750
+		}
+		effect = {
+			add_army_tradition = 10
+			custom_tooltip = legion_unlock_tt
+			add_treasury = -750
+			add_country_modifier = {
+				name = egypt_legion_modifier
+				duration = -1
+			}
+		}
+	}
+	sic_egypt_legion_disband = {
+		potential = {
+			has_country_modifier = egypt_legion_modifier
+		}
+		allow = {
+			has_country_modifier = egypt_legion_modifier
+			stability = 1
+		}
+		effect = {
+			add_army_tradition = -20
+			add_stability = -1
+			custom_tooltip = legion_disband_tt
+			remove_country_modifier = egypt_legion_modifier
+		}
+	}
+	sic_iberian_legion_raise = {
+		potential = {
+			OR = {
+				tag = SIC
+				tag = TTS
+				tag = ITA
+			}
+			has_reform = dollarstore_roman_republic_government
+			NOT = {
+				has_country_modifier = iberia_legion_modifier
+			}
+		}
+		provinces_to_highlight = {
+			region = iberia_region
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		allow = {
+			num_of_owned_provinces_with = {
+				value = 30
+				region = iberia_region
+			}
+			owns_core_province = 208
+			treasury = 750
+		}
+		effect = {
+			add_army_tradition = 10
+			custom_tooltip = legion_unlock_tt
+			add_treasury = -750
+			add_country_modifier = {
+				name = iberia_legion_modifier
+				duration = -1
+			}
+		}
+	}
+	sic_iberian_legion_disband = {
+		potential = {
+			has_country_modifier = iberia_legion_modifier
+		}
+		allow = {
+			has_country_modifier = iberia_legion_modifier
+			stability = 1
+		}
+		effect = {
+			add_army_tradition = -20
+			add_stability = -1
+			custom_tooltip = legion_disband_tt
+			remove_country_modifier = iberia_legion_modifier
+		}
+	}
+	sic_france_legion_raise = {
+		potential = {
+			OR = {
+				tag = SIC
+				tag = TTS
+				tag = ITA
+			}
+			has_reform = dollarstore_roman_republic_government
+			NOT = {
+				has_country_modifier = france_legion_modifier
+			}
+		}
+		provinces_to_highlight = {
+			region = france_region
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		allow = {
+			num_of_owned_provinces_with = {
+				value = 30
+				region = france_region
+			}
+			owns_core_province = 75
+			treasury = 750
+		}
+		effect = {
+			add_army_tradition = 10
+			custom_tooltip = legion_unlock_tt
+			add_treasury = -750
+			add_country_modifier = {
+				name = france_legion_modifier
+				duration = -1
+			}
+		}
+	}
+	sic_france_legion_disband = {
+		potential = {
+			has_country_modifier = france_legion_modifier
+		}
+		allow = {
+			has_country_modifier = france_legion_modifier
+			stability = 1
+		}
+		effect = {
+			add_army_tradition = -20
+			add_stability = -1
+			custom_tooltip = legion_disband_tt
+			remove_country_modifier = france_legion_modifier
+		}
+	}
+	sic_jerusalem_legion_raise = {
+		potential = {
+			OR = {
+				tag = SIC
+				tag = TTS
+				tag = ITA
+			}
+			has_reform = dollarstore_roman_republic_government
+			NOT = {
+				has_country_modifier = jerusalem_legion_modifier
+			}
+		}
+		provinces_to_highlight = {
+			region = mashriq_region
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		allow = {
+			num_of_owned_provinces_with = {
+				value = 20
+				region = mashriq_region
+			}
+			owns_core_province = 379
+			treasury = 750
+		}
+		effect = {
+			add_army_tradition = 10
+			custom_tooltip = legion_unlock_tt
+			add_treasury = -750
+			add_country_modifier = {
+				name = jerusalem_legion_modifier
+				duration = -1
+			}
+		}
+	}
+	sic_jerusalem_legion_disband = {
+		potential = {
+			has_country_modifier = jerusalem_legion_modifier
+		}
+		allow = {
+			has_country_modifier = jerusalem_legion_modifier
+			stability = 1
+		}
+		effect = {
+			add_army_tradition = -20
+			add_stability = -1
+			custom_tooltip = legion_disband_tt
+			remove_country_modifier = jerusalem_legion_modifier
+		}
+	}
 }
