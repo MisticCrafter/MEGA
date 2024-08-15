@@ -19,8 +19,7 @@ capital = 224
 		religion = tigranic
 		culture = andal
 	}
-	add_ruler_personality = strict_personality
-	add_ruler_personality = zealot_personality
+	add_ruler_personality = expansionist_personality
 	queen = {
 		name = "Mariana"
 		dynasty = "de Sintra"
