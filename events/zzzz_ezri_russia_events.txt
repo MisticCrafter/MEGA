@@ -17,7 +17,7 @@ country_event = {
 			total_development = 350
 		}
 		trigger = {
-			is_year = 1445
+			is_year = 1510
 			tag = SWI
 			OR ={
 				owns = 2410
@@ -37,21 +37,10 @@ country_event = {
 	desc = ez.russia.events.y.2.d
 	picture = CORRUPTION_eventPicture
 		
-		trigger = {
-			any_owned_province = {
-				region = crimea_region
-			}
-				is_neighbor_of = {
-					OR = {
-						tag = VEN
-						tag = SWI
-					}
-				}
-		}
+	is_triggered_only = yes
 
 		option = {
 			name = ez.russia.events.y.2.opt1
 
 			}
 		}
-

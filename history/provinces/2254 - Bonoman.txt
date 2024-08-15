@@ -11,6 +11,7 @@ base_production = 4
 base_manpower = 3
 add_core = ASH
 add_core = MSI
+add_core = Z01
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian
