@@ -16,12 +16,12 @@ tigranic_crusade_overlord = {
         }
     }
 
-    manpower_in_true_faith_provinces = 0.3
-    morale_damage = 0.1
+    manpower_in_true_faith_provinces = 0.2 #lowered manpower (you already get 10% local manpower for being tigranic, stop breeding so much bro) and removed the morale damage, a bit harsh I think? (update I just lowered it instead)
+    morale_damage = 0.05
     church_power_modifier = 0.1
     prestige = 1
 }
-
+#side note although you don't care, I debated doing this same sort of thing with me vs ashikaga
 tigranic_crusade_subject = {
     potential = {
         religion = tigranic
@@ -42,8 +42,7 @@ tigranic_crusade_subject = {
         }
     }
 
-    manpower_in_true_faith_provinces = 0.15
-    morale_damage = 0.05
+    manpower_in_true_faith_provinces = 0.15 #removed morale damage from this entirely
     church_power_modifier = 0.05
     prestige = 0.5
 }

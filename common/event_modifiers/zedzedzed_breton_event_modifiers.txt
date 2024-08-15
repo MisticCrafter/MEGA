@@ -21,6 +21,11 @@ aka_yucatan_buff = {
     global_colonial_growth = 15
 }
 
+aka_colon_buff = {
+    range = 0.5
+    colonists = 1
+}
+
 ###
 
 tigranic_global_cooldown_modifier = {

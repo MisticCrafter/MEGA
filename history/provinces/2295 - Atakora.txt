@@ -1,6 +1,6 @@
 owner = MSI
 controller = MSI
-capital = "Sansanné Mango"
+capital = "Sansannï¿½ Mango"
 is_city = yes
 culture = aka
 religion = catholic
@@ -10,6 +10,7 @@ base_production = 2
 base_manpower = 1
 add_core = ASH
 add_core = MSI
+add_core = Z01
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

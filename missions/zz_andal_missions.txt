@@ -61,102 +61,9 @@ andalos_slot_1_missions = {
 			else = { add_adm_power = 50 }
 		}
 	}
-	adu_brazil_colonies = {
+	adu_colombia_colonies = {
 		icon = mission_iberian_conquistador
 		required_missions = { adu_go_westward }
-		completed_by = 1540.1.1
-		
-		provinces_to_highlight = {
-			colonial_region = colonial_brazil
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-			has_discovered = ROOT
-		}
-		
-		trigger = { 
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 10
-				colonial_region = colonial_brazil
-				is_city = yes
-			}
-		}
-		
-		effect = {
-			add_country_modifier = {
-				name = "adu_brazil_buff"
-				duration = 7300
-			}
-		}
-	}
-	adu_bandeirantes = {
-		icon = mission_brazilian_bandeirantes
-		required_missions = { adu_brazil_colonies }
-		
-		provinces_to_highlight = {
-			OR = {
-				area = minas_gerais_area
-				area = rio_de_janeiro_area
-				area = sao_paolo_area
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		
-		trigger = {
-			if = {
-				limit = {
-					has_dlc = "Dharma"
-				}
-				763 = {
-					province_has_center_of_trade_of_level = 2
-				}
-			}
-			else = {
-				763 = {
-					OR = {
-						has_building = marketplace
-						has_building = trade_depot
-						has_building = stock_exchange
-					}
-				}
-			}
-			minas_gerais_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			rio_de_janeiro_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			sao_paolo_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		effect = {
-			if = {
-				limit = {
-					765 = {
-						NOT = {
-							trade_goods = gold
-						}
-					}
-				}
-				765 = {
-					change_trade_goods = gold
-				}
-			}
-			765 = {
-				add_province_modifier = {
-					name = "por_minas_gerais"
-					duration = -1
-				}
-			}
-			set_country_flag = por_bandeirantes_flag
-			custom_tooltip = por_bandeirantes_tooltip
-		}
-	}
-	adu_colombia_colonies = {
-		icon = mission_establish_high_seas_navy
-		required_missions = { adu_bandeirantes }
 		completed_by = 1540.1.1
 		
 		provinces_to_highlight = {
@@ -443,6 +350,69 @@ andalos_slot_1_missions = {
 				name = adu_reformed_paladins
 				duration = -1 
 			}
+		}
+	}
+
+	adu_colonial_paladins = {
+		icon = mission_brazilian_bandeirantes
+		required_missions = { adu_reform_paladins }
+		
+		provinces_to_highlight = {
+			OR = {
+				area = mexico_area
+				area = zacatecas_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			if = {
+				limit = {
+					has_dlc = "Dharma"
+				}
+				852 = {
+					province_has_center_of_trade_of_level = 2
+				}
+			}
+			else = {
+				852 = {
+					OR = {
+						has_building = marketplace
+						has_building = trade_depot
+						has_building = stock_exchange
+					}
+				}
+			}
+			mexico_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			zacatecas_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					856 = {
+						NOT = {
+							trade_goods = gold
+						}
+					}
+				}
+				856 = {
+					change_trade_goods = gold
+				}
+			}
+			856 = {
+				add_province_modifier = {
+					name = "adu_gold_buff"
+					duration = -1
+				}
+			}
+			set_country_flag = por_bandeirantes_flag
+			custom_tooltip = por_bandeirantes_tooltip
 		}
 	}
 }
@@ -1613,11 +1583,9 @@ andalos_slot_3_missions_b = {
 				tier = 1
 			}
 
-			227 = {
-				add_province_modifier = {
-					name = "adu_silver_citadel"
-					duration = -1
-				}
+			add_great_project_tier = {
+				type = belem_tower
+				tier = 1
 			}
 		}
 	}
@@ -2104,7 +2072,7 @@ andalos_slot_4_missions = {
 				}
 				add_country_modifier = {
 					name = swi_andal_alliance_modifier
-					duration = 14600
+					duration = 5475 #40 years to 15, literally the most free morale ever
 				}
 			}
 			valencia_area = {
@@ -2137,7 +2105,7 @@ andalos_slot_4_missions = {
 			}
 			add_country_modifier = {
 				name = por_struggle_for_iberia_modifier 
-				duration = 14600
+				duration = 5475 #forgot this bit LOL
 			}
 		}
 	}
