@@ -40,6 +40,12 @@ akaman_slot_1_missions = {
 				}
 			}
 		}
+		effect = {
+			add_country_modifier = {
+				colonists = 1
+				range = 0.5
+			}
+		}
 	}
 
 	aka_brazil_colonies = {
@@ -201,18 +207,11 @@ akaman_slot_1_missions = {
 					}
 				}
 			}
-			minas_gerais_area = {
+			central_america_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			rio_de_janeiro_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			sao_paolo_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+
 		}
 		effect = {
 			if = {
@@ -229,7 +228,7 @@ akaman_slot_1_missions = {
 			}
 			765 = {
 				add_province_modifier = {
-					name = "por_minas_gerais"
+					name = "cacao_plantations"
 					duration = -1
 				}
 			}
