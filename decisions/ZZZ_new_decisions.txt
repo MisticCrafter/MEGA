@@ -1285,4 +1285,43 @@ country_decisions = {
 			}
 		}
 	}
+	ZZZ_crimean_purchase = {
+		potential = {
+			has_global_flag = crimean_purchase
+			any_owned_province = {
+				region = crimea_region
+			}
+			OR = {
+				is_neighbor_of = VEN
+				is_neighbor_of = SWI
+			}
+			is_tribal = no
+			total_development = 350
+		}
+
+		allow = {
+			Treasury = 1000
+		}
+
+		effect = {
+			SWI = {
+				add_treasury = 1
+				country_event = {
+					id = ez.russia.events.y.2
+				}
+			}
+		}
+
+		ai_will_do = { #ai wont do the decision if they're in deficit or debt - Dotts
+			factor = 1
+			modifier = {
+				factor = 0
+				is_in_deficit = yes
+			}
+			modifier = {
+				factor = 0
+				is_in_large_debt = yes
+			}
+		}
+	}
 }
