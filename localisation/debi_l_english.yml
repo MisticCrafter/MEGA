@@ -26,11 +26,17 @@
  kni_crusader_kings_title:0 "Crusader Kings"
  kni_crusader_kings_desc:0 ""
 
+ kni_our_place_title:0 "Our Place in the World"
+ kni_our_place_desc:0 ""
+
  kni_three_castles_title:0 "Three Castles"
  kni_three_castles_desc:0 ""
 
  kni_cyrenaica_title:0 "Cyrenaica Citadeks"
  kni_cyrenaica_desc:0 ""
+
+ kni_country_of_castles_title:0 "Country of Castles"
+ kni_country_of_castles_desc:0 ""
 
  kni_struggle_mediterranean_title:0 "Struggle for the Mediterranean"
  kni_struggle_mediterranean_desc:0 ""
@@ -50,8 +56,11 @@
  kni_outremer_eastern_fleets_title:0 "Outremer Fleets"
  kni_outremer_eastern_fleets_desc:0 ""
 
- kni_rules_the_waves_title:0 "An Order Rules the Waves"
+ kni_rules_the_waves_title:0 "Order Rules the Waves"
  kni_rules_the_waves_desc:0 ""
+
+ kni_victoria_title:0 "Victoria III"
+ kni_victoria_desc:0 ""
 
  kni_landfall_venice_title:0 "Landfall in Venice;"
  kni_landfall_venice_desc:0 ""

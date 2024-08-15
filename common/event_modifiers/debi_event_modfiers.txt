@@ -8,3 +8,6 @@ kni_cairo_citadel = {
 	allowed_num_of_manufactories = 1
 	monthly_splendor = 1
 }
+kni_friendship_pope = {
+	curia_powers_cost = -0.10
+}	
