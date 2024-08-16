@@ -700,6 +700,10 @@ country_event = {
 			name = "tigranic_council_sappers_modifier"
 			duration = 7300
 		}
+		add_country_modifier = {
+			name = "tigranic_council_sappers_modifier2"
+			duration = 7300
+		}
 	}
 
 	# Numidian Cavalry

@@ -1,7 +1,13 @@
 country_decisions = {
 	develop_the_dnipro = {
+		color = {
+			201 170 42
+		}
 		potential = {
 			tag = RUS
+			NOT = {
+				has_country_flag = dnipro_developed
+			}
 		}
 
 		allow = {
@@ -23,28 +29,123 @@ country_decisions = {
 			}
 		}
 		effect = {
-			1944 ={
-				change_trade_goods = grain
-			}
 			1942 = {
 				add_province_modifier = {
 					name = developing_farmlands
 					duration = -1
 				}
+				add_building = farm_estate
 			}
 			1944 = {
+				change_trade_goods = grain
+
 				add_province_modifier = {
 					name = developing_farmlands
 					duration = -1
 				}
+				add_building = farm_estate
 			}
 			4542 = {
 				add_province_modifier = {
 					name = developing_farmlands
 					duration = -1
 				}
-			}
-			add_treasury = -500
+				add_building = farm_estate
+			}	
+				add_treasury = -500
+				root = {
+					set_country_flag = dnipro_developed
+				}	
 		}
 	}
+
+	develop_sevastapol = {
+		color = {
+			201 170 42
+		}
+		potential = {
+			tag = RUS
+			NOT = {
+				has_country_flag = crimea_developed
+			}
+		}
+		allow = {
+			adm_tech = 11
+			treasury = 500
+			crimea_area = {
+				type = all
+				owned_by = root
+			}
+			owns = 286
+			2410 = {
+				base_production = 9	
+			} 
+			2447 = {
+				base_production = 6
+			}
+			286 = {
+				base_production = 6
+			}
+		}
+
+		effect = {
+			2410 = {
+				change_trade_goods = naval_supplies
+				add_province_modifier = {
+					name = crimean_shipyards
+					duration = -1
+				}
+				add_building = shipyard
+			}
+			2447 = {
+				change_trade_goods = naval_supplies
+				add_province_modifier = {
+					name = crimean_shipyards
+					duration = -1
+				}
+				add_building = shipyard
+			}
+			286 = {
+				change_trade_goods = naval_supplies
+				add_province_modifier = {
+					name = crimean_shipyards
+					duration = -1
+				}
+				add_building = shipyard
+			}
+			285 = {
+				change_trade_goods = naval_supplies
+			}
+			add_treasury = -500
+			root = {
+				set_country_flag = crimea_developed
+			}	
+			
+		}
+	}
+
+	promote_renaissance_thinking_ukr = {
+		potential = {
+			tag = UKR
+		}
+
+		allow = {
+			has_unembraced_institution = renaissance
+			is_institution_enabled = renaissance
+			monthly_adm = 10
+			num_of_owned_provinces_with = {
+				value = 4
+				has_tax_building_trigger = yes
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = ukr_renaissance
+				duration = -1
+			}
+		}
+
+	}
+
 }

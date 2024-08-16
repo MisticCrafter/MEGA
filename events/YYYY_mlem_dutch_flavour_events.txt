@@ -119,6 +119,8 @@ country_event = {		# Astolfo II - adm mana penalty
 			tag = NED
 			has_ruler_flag = has_the_tyrant_astolfo_ii
 			NOT = { has_country_modifier = executed_local_administration_astolfo_ii }
+			NOT = { has_ruler_modifier = tyranny_of_astolfo_ii_cooldown }
+			NOT = { has_ruler_modifier = astolfo_ii_purge_cooldown }
 		}
 	}
 
@@ -137,6 +139,11 @@ country_event = {		# Astolfo II - adm mana penalty
 			hidden = yes
 			duration = 365
 		}
+		add_ruler_modifier = {
+			name = astolfo_ii_purge_cooldown
+			hidden = yes
+			duration = 1825
+		}
 	}
 }
 
@@ -151,6 +158,8 @@ country_event = {		# Astolfo II - dip mana penalty
 			tag = NED
 			has_ruler_flag = has_the_tyrant_astolfo_ii
 			NOT = { has_country_modifier = assassinated_court_diplomats_astolfo_ii }
+			NOT = { has_ruler_modifier = tyranny_of_astolfo_ii_cooldown }
+			NOT = { has_ruler_modifier = astolfo_ii_purge_cooldown }
 		}
 	}
 
@@ -169,6 +178,11 @@ country_event = {		# Astolfo II - dip mana penalty
 			hidden = yes
 			duration = 365
 		}
+		add_ruler_modifier = {
+			name = astolfo_ii_purge_cooldown
+			hidden = yes
+			duration = 1825
+		}
 	}
 }
 
@@ -184,6 +198,7 @@ country_event = {		# Astolfo II - mil mana penalty
 			has_ruler_flag = has_the_tyrant_astolfo_ii
 			NOT = { has_country_modifier = purged_general_staff_astolfo_ii }
 			NOT = { has_ruler_modifier = tyranny_of_astolfo_ii_cooldown }
+			NOT = { has_ruler_modifier = astolfo_ii_purge_cooldown }
 		}
 	}
 
@@ -201,6 +216,11 @@ country_event = {		# Astolfo II - mil mana penalty
 			name = tyranny_of_astolfo_ii_cooldown
 			hidden = yes
 			duration = 365
+		}
+		add_ruler_modifier = {
+			name = astolfo_ii_purge_cooldown
+			hidden = yes
+			duration = 1825
 		}
 	}
 
@@ -453,8 +473,10 @@ country_event = {
 
 	option = {
 		name = nederlands_flavour_mega.13.a
+		custom_tooltip = united_zeven_provincies_event_tt
 		add_government_reform = united_zeven_provincies_republic_reform
 		change_government_reform_progress = 100
 	}
 
 }
+

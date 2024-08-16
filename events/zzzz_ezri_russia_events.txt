@@ -1,0 +1,64 @@
+namespace = ez_russia_events_y
+
+#Crimea Unprofitable
+country_event = {
+	id = ez_russia_events_y.1
+	title = ez_russia_events_y.1.t
+	desc = ez_russia_events_y.1.d
+	picture = BANKRUPTCY_eventPicture
+
+	fire_only_once = yes
+		major = yes
+		major_trigger = {
+			any_owned_province = {
+				region = crimea_region
+			}
+			is_tribal = no
+			total_development = 350
+		}
+		trigger = {
+			is_year = 1445
+			tag = SWI
+			OR ={
+				owns = 2410
+				subject_owns = 2410
+			}
+		}
+			option = {
+				name = ez_russia_events_y.1.opt1
+				set_global_flag = crimean_purchase
+			}
+	}
+
+#Crimean Purchace
+country_event = {
+	id = ez_russia_events_y.2
+	title = ez_russia_events_y.2.t
+	desc = ez_russia_events_y.2.d
+	picture = CORRUPTION_eventPicture
+		
+	is_triggered_only = yes
+
+		option = {
+			name = ez_russia_events_y.2.opt1
+			clr_global_flag = crimean_purchase
+				from = {
+					add_treasury = -1000
+				}
+				SWI = {
+					add_treasury = 1000
+				}
+				crimea_region = {
+					limit = {
+						OR = {
+							owned_by = VEN
+							owned_by = SWI
+						}
+					}
+					cede_province = from			
+				}
+			}
+		option = {
+			name = ez_russia_events_y.2.opt2
+		}
+	}

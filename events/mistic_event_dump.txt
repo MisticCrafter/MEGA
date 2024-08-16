@@ -1,10 +1,10 @@
-namespace = flavor_new_swiss
+namespace = flavor_mistic_swiss
 
 # Murder in Milan: 1450
 country_event = {
-    id = flavor_new_swiss.1
-    title = flavor_new_swiss.1.t
-    desc = flavor_new_swiss.1.d
+    id = flavor_mistic_swiss.1
+    title = flavor_mistic_swiss.1.t
+    desc = flavor_mistic_swiss.1.d
     picture = ANGRY_MOB_eventPicture
 
     fire_only_once = yes
@@ -80,16 +80,16 @@ country_event = {
     }
 
     option = {
-        name = flavor_new_swiss.1.a
+        name = flavor_mistic_swiss.1.a
         add_prestige = -30
     }
 }
 
 # Madness in Modena: 1460
 country_event = {
-    id = flavor_new_swiss.2
-    title = flavor_new_swiss.2.t
-    desc = flavor_new_swiss.2.d
+    id = flavor_mistic_swiss.2
+    title = flavor_mistic_swiss.2.t
+    desc = flavor_mistic_swiss.2.d
     picture = ANGRY_MOB_eventPicture
 
     fire_only_once = yes
@@ -149,16 +149,16 @@ country_event = {
     }
 
     option = {
-        name = flavor_new_swiss.2.a
+        name = flavor_mistic_swiss.2.a
         add_prestige = -30
 	}
 }
 
 # Violence in Verona: 1470
 country_event = {
-    id = flavor_new_swiss.3
-    title = flavor_new_swiss.3.t
-    desc = flavor_new_swiss.3.d
+    id = flavor_mistic_swiss.3
+    title = flavor_mistic_swiss.3.t
+    desc = flavor_mistic_swiss.3.d
     picture = ANGRY_MOB_eventPicture
     
     fire_only_once = yes
@@ -270,16 +270,16 @@ country_event = {
     }
 
     option = {
-        name = "flavor_new_swiss.3.a"
+        name = "flavor_mistic_swiss.3.a"
         add_prestige = -30
     }
 }
 
 # Lawlessness in Liguria: 1480
 country_event = {
-    id = flavor_new_swiss.4
-    title = flavor_new_swiss.4.t
-    desc = flavor_new_swiss.4.d
+    id = flavor_mistic_swiss.4
+    title = flavor_mistic_swiss.4.t
+    desc = flavor_mistic_swiss.4.d
     picture = ANGRY_MOB_eventPicture
     
     fire_only_once = yes
@@ -351,16 +351,16 @@ country_event = {
     }
 
     option = {
-        name = flavor_new_swiss.4.a
+        name = flavor_mistic_swiss.4.a
         add_prestige = -30
     }
 }
 
 # Tyranny in Trieste: 1490
 country_event = {
-    id = flavor_new_swiss.5
-    title = flavor_new_swiss.5.t
-    desc = flavor_new_swiss.5.d
+    id = flavor_mistic_swiss.5
+    title = flavor_mistic_swiss.5.t
+    desc = flavor_mistic_swiss.5.d
     picture = ANGRY_MOB_eventPicture
     
     fire_only_once = yes
@@ -490,16 +490,16 @@ country_event = {
     }
 
     option = {
-        name = flavor_new_swiss.5.a
+        name = flavor_mistic_swiss.5.a
         add_prestige = -30
     }
 }
 
 # Tuscany, Tarnished: 1500
 country_event = {
-    id = flavor_new_swiss.6
-    title = flavor_new_swiss.6.t
-    desc = flavor_new_swiss.6.d
+    id = flavor_mistic_swiss.6
+    title = flavor_mistic_swiss.6.t
+    desc = flavor_mistic_swiss.6.d
     picture = ANGRY_MOB_eventPicture
     
     fire_only_once = yes
@@ -596,16 +596,16 @@ country_event = {
     }
 
     option = {
-        name = flavor_new_swiss.6.a
+        name = flavor_mistic_swiss.6.a
         add_prestige = -30
     }
 }
 
 # Revanchism in Ravenna: 1500
 country_event = {
-    id = flavor_new_swiss.7
-    title = flavor_new_swiss.7.t
-    desc = flavor_new_swiss.7.d
+    id = flavor_mistic_swiss.7
+    title = flavor_mistic_swiss.7.t
+    desc = flavor_mistic_swiss.7.d
     picture = ANGRY_MOB_eventPicture
     
     fire_only_once = yes
@@ -682,16 +682,16 @@ country_event = {
     }
 
     option = {
-        name = flavor_new_swiss.7.a
+        name = flavor_mistic_swiss.7.a
         add_prestige = -30
     }
 }
 
 # Sickness in Spoleto: 1500
 country_event = {
-    id = flavor_new_swiss.8
-    title = flavor_new_swiss.8.t
-    desc = flavor_new_swiss.8.d
+    id = flavor_mistic_swiss.8
+    title = flavor_mistic_swiss.8.t
+    desc = flavor_mistic_swiss.8.d
     picture = ANGRY_MOB_eventPicture
     
     fire_only_once = yes
@@ -787,16 +787,16 @@ country_event = {
     }
 
     option = {
-        name = flavor_new_swiss.8.a
+        name = flavor_mistic_swiss.8.a
         add_prestige = -30
     }
 }
 
 # Venice, Vanquished: 1500
 country_event = {
-    id = flavor_new_swiss.9
-    title = flavor_new_swiss.9.t
-    desc = flavor_new_swiss.9.d
+    id = flavor_mistic_swiss.9
+    title = flavor_mistic_swiss.9.t
+    desc = flavor_mistic_swiss.9.d
     picture = ANGRY_MOB_eventPicture
     
     fire_only_once = yes
@@ -871,11 +871,11 @@ country_event = {
     }
     
     option = {
-        name = flavor_new_swiss.9.a
+        name = flavor_mistic_swiss.9.a
         add_prestige = -30
     }
 }
 
-# Lombardei breaks away!
+# Lombardei breaks away, 1520
 
-# Occitania unifies!
+# Occitania becomes a problem, 1475
