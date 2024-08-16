@@ -11,3 +11,7 @@ kni_cairo_citadel = {
 kni_friendship_pope = {
 	curia_powers_cost = -0.05
 }	
+kni_defense_of_the_faith = {
+	army_tradition = 1
+	defensiveness = 0.15
+}
