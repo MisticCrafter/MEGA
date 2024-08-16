@@ -8,6 +8,7 @@ capital = 379
 set_country_flag = ZZZ_generated_converter_nation
 set_country_flag = enable_holy_orders_flag 
 add_historical_friend = SIC
+add_historical_friend = PAP
 1444.11.11= {
 	monarch = {
 		name = "Pedro"

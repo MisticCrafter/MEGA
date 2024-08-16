@@ -196,7 +196,10 @@ knidiplomatic = {
 	kni_our_place = {
 		icon = knights_of_the_new_world
 		position = 1
-		required_missions = { kni_crusader_kings } 
+		required_missions = {
+			kni_crusader_kings
+			kni_entrenched_authority
+		}
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
@@ -211,6 +214,49 @@ kniforts = {
 	has_country_shield = yes
 	potential = { tag = KNI } 
 
+	kni_fortify_south = {
+		icon = mission_castle_construction
+		position = 1
+		provinces_to_highlight = {
+			province_id = 4319
+			province_id = 1231
+			province_id = 1233
+			province_id = 360
+		}
+
+		trigger = {
+			army_size_percentage = 0.75
+			1231 = {
+				has_fort_building_trigger = yes
+				grown_by_development = 1
+			}
+			OR = {
+				4319 = { has_fort_building_trigger = yes } 
+				1233 = { has_fort_building_trigger = yes } 
+				360 = { has_fort_building_trigger = yes } 
+			}
+		}
+
+		effect = { 
+			add_country_modifier = {
+				name = "kni_defense_of_the_faith"
+				duration = 18262
+			}
+		}
+	}
+
+
+	kni_entrenched_authority = {
+		icon = mission_knight
+		position = 1
+		required_missions = { kni_fortify_south } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
 	kni_three_castles = {
 		icon = fortress_of_belgrade
 		position = 4
@@ -224,16 +270,6 @@ kniforts = {
 	kni_cyrenaica = {
 		icon = fortify_malta
 		position = 5
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
-	}
-
-	kni_country_of_castles = {
-		icon = mission_castle_construction
-		position = 1
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
@@ -410,23 +446,6 @@ landfall_sicily = {
 	kni_landfall_sicily = {
 		icon = mission_break_sicily
 		position = 7
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
-	}
-}
-reconquista = {
-	slot = 1
-	generic = no
-	ai = yes
-	has_country_shield = yes
-	potential = { tag = KNI } 
-
-	kni_reconquista = {
-		icon = mission_arabian_sea_trade
-		position = 6
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 

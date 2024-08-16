@@ -21,6 +21,8 @@ rationalist_gender_equality = {
 # Astolfo II, the Tyrant: Modifiers
 tyranny_of_astolfo_ii_cooldown = { }
 
+astolfo_ii_purge_cooldown = { }
+
 executed_local_administration_astolfo_ii = {
 	monthly_reform_progress_modifier = 0.20
 	stability_cost_modifier = -0.25
@@ -172,4 +174,15 @@ elite_national_guard_ZVP = {		# mix of previous buffs
 	morale_damage = 0.05
 	morale_damage_received = -0.10
 	military_tactics = 0.1
+}
+
+
+
+
+
+# Misc Modifiers (for vassals and stuff)
+amended_laws_of_settlement_moi = {
+	monthly_mandate_authority_militancy = -0.40
+	global_unrest = -4
+	development_cost = -0.05
 }

@@ -1,0 +1,315 @@
+zeven_provincies_republic_reform = {				# Starting reform for my nation, is modeled off of the burgundian state and french feudalism reforms/mechanics.
+	icon = "seven_provinces_reform"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			AND = {
+				tag = NED
+				NOT = { map_setup = map_setup_random }
+			}
+			have_had_reform = zeven_provincies_republic_reform
+		}
+	}
+
+	royal_marriage = yes
+	lock_level_when_selected = yes
+
+	modifiers = {
+		diplomatic_upkeep = 3
+		reduced_liberty_desire_on_same_continent = 10
+		max_absolutism = -20
+		has_voc_indiamen = yes
+	}
+
+	removed_effect = {
+		if = {
+			# Monarchs seize power
+			limit = { government = monarchy }
+			country_event = { id = dutch_republic.33 }
+		}
+	}
+
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+		has_dutch_election = yes
+		has_appanages = yes
+		nobility_loyalty_hit_on_integration = yes
+		locked_government_type = yes
+	}
+	conditional = {
+		allow = {
+			OR = {
+				has_dlc = "Res Publica"
+				has_dlc = "Winds of Change"
+			}
+		}
+		states_general_mechanic = {
+			statists = {
+				naval_forcelimit_modifier = 0.10
+				manpower_recovery_speed = 0.15
+				republican_tradition = -1
+			}
+
+			orangists = {
+				reduced_liberty_desire_on_same_continent = 5
+				diplomatic_reputation = 1
+				republican_tradition = -1
+			}
+		}
+	}
+	conditional = {
+		allow = {
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
+		}
+		has_parliament = yes
+	}
+	duration = 4
+	fixed_rank = 2
+}
+
+reformed_nederlands_republic_reform = {				# reform after you first remove all the appenages, is going to be modeled on dutch republic normally.
+	icon = "support_state_reform"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			has_reform = reformed_nederlands_republic_reform
+			AND = {
+				has_country_flag = revoked_zeven_provincies_autonomy_flag
+				has_reform = zeven_provincies_republic_reform
+			}
+		}
+	}
+
+	trigger = {
+		has_reform = reformed_nederlands_republic_reform
+		have_had_reform = reformed_nederlands_republic_reform
+	}
+
+	royal_marriage = yes
+	duration = 5
+	lock_level_when_selected = yes
+
+	modifiers = {
+		range = 0.15
+		global_trade_power = 0.1
+		reduced_liberty_desire_on_other_continent = 5
+		has_voc_indiamen = yes
+		allowed_voc_indiamen_fraction = 0.1
+	}
+	
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+		has_dutch_election = yes
+		locked_government_type = yes
+	}
+
+	conditional = {
+		allow = {
+			OR = {
+				has_dlc = "Res Publica"
+				has_dlc = "Winds of Change"
+			}
+		}
+		states_general_mechanic = {
+			statists = {
+				monthly_reform_progress_modifier = 0.25
+				manpower_recovery_speed = 0.25
+				republican_tradition = -0.75
+			}
+
+			orangists = {
+				trade_efficiency = 0.10
+				global_trade_goods_size_modifier = 0.05
+				republican_tradition = -0.25
+			}
+		}
+	}
+
+	effect = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_port = yes
+				}
+				add_province_modifier = {
+					name = gov_coastal_government
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+
+	removed_effect = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = gov_coastal_government
+				}
+				remove_province_modifier = gov_coastal_government
+			}
+		}
+		
+	}
+	conditional = {
+		allow = {
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
+		}
+		has_parliament = yes
+	}
+
+}
+
+united_zeven_provincies_republic_reform = {			# after you reunify Zeven Provincies (two crowns), you have to be at least tech 18 to even unlock these mechanics, let me know if you suggest any changes :3
+	icon = "orangist_stadholders_reform"
+	allow_normal_conversion = no
+	potential = {
+		OR = { 
+				OR = { 
+					AND = {
+					has_country_flag = reunify_the_zeven_provincies_flag
+					has_reform = zeven_provincies_republic_reform
+					}
+					AND = {
+						has_country_flag = reunify_the_zeven_provincies_flag
+						has_reform = reformed_nederlands_republic_reform
+					}
+				}
+				has_reform = united_zeven_provincies_republic_reform
+			}
+		}
+
+	trigger = {
+		AND = {
+			has_reform = united_zeven_provincies_republic_reform
+			have_had_reform = united_zeven_provincies_republic_reform
+		}
+	}
+
+
+	royal_marriage = yes
+	lock_level_when_selected = yes
+
+	modifiers = {
+		max_absolutism = 20
+		reduced_liberty_desire_on_other_continent = 15
+		heavy_ship_power = 0.1
+		has_voc_indiamen = yes
+		allowed_voc_indiamen_fraction = 0.25
+	}
+
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+		has_dutch_election = yes
+		locked_government_type = yes
+	}
+
+	conditional = {
+		allow = {
+			OR = {
+				has_dlc = "Res Publica"
+				has_dlc = "Winds of Change"
+			}
+		}
+		states_general_mechanic = {
+			statists = {
+				all_power_cost = -0.025
+				global_manpower_modifier = 0.15
+				republican_tradition = -1.25
+			}
+
+			orangists = {
+				trade_efficiency = 0.10
+				global_trade_goods_size_modifier = 0.05
+				republican_tradition = 0.5
+			}
+		}
+	}
+
+	effect = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_port = yes
+				}
+				add_province_modifier = {
+					name = gov_coastal_government
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+
+	removed_effect = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = gov_coastal_government
+				}
+				remove_province_modifier = gov_coastal_government
+			}
+		}
+	}
+
+	conditional = {
+		allow = {
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
+		}
+		has_parliament = yes
+	}
+	duration = 8
+	fixed_rank = 3
+}
+
+
+# Vassal Governments
+
+mandate_of_ierland_republic_reform = {
+	icon = ""
+
+	potential = {
+		OR = { 
+			tag = IRE
+			have_had_reform = mandate_of_ierland_republic_reform
+		}
+	}
+
+	trigger = {
+		OR = { 
+			tag = IRE
+			have_had_reform = mandate_of_ierland_republic_reform
+		}
+	}
+
+	lock_level_when_selected = yes
+
+	modifiers = {
+		monarch_military_power = 1
+		global_autonomy = -0.05
+		max_absolutism = 30
+		num_accepted_cultures = -10
+		fort_maintenance_modifier = -0.5
+		global_monthly_devastation = 0.125
+	}
+
+	custom_attributes = {
+		cannot_become_dictatorship = yes
+	}
+
+	duration = 8
+	republican_name = no
+	maintain_dynasty = yes
+}

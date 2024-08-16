@@ -27,13 +27,17 @@
  roman_engineering:0 "Roman Engineering"
  roman_thinking:0 "Roman Thinking"
 
- #dev_decisions
+ #decisions
  develop_the_dnipro_title:0 "Develop the Dnipro River"
  develop_the_dnipro_desc:0 "Develop the Dnipro river and the surounding lands"
  develop_sevastapol_title:0 "Develop the Sevastapol Area"
  develop_sevastapol_desc:0 "Develop the the Crimean penninsula and Rostov-on-don"
- ukr_renaissance_title:0 "Promote Renaissance Thinking"
- ukr_renaissance_desc:0 "Mlem"
+ promote_renaissance_thinking_ukr_title:0 "Promote Renaissance Thinking"
+ promote_renaissance_thinking_ukr_desc:0 "Mlem"
+ unify_the_ruthenian_people_title:0 "Unify the Ruthenian people"
+ unify_the_ruthenian_people_desc:0 "It is timed we reunited with our lost brothers and sisters of Galicia-Volhynia"
+ develop_the_bashkiria_mine_title:0 "Uralan Gold"
+ develop_the_bashkiria_mine_desc:0 "Theres gold in them thar hills"
 
  #events
  ez_russia_events_y.1.t:0 "Crimea is too Unprofitable"
@@ -43,3 +47,6 @@
  ez_russia_events_y.2.d:0 "A lesser nation offers tribute for Crimea."
  ez_russia_events_y.2.opt1:0 "Grant them the land."
  ez_russia_events_y.2.opt2:0 "No."
+
+ #crimea desicion
+ ZZZ_crimean_purchase_title:0 ""
