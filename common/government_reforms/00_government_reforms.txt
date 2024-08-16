@@ -1158,6 +1158,7 @@ monastic_order_government = {
 	modifiers = {
     	governing_capacity = 150
 		tolerance_own = 1
+		has_mamluks = yes
 		fort_maintenance_modifier = -0.2
 	}
 
