@@ -273,3 +273,43 @@ united_zeven_provincies_republic_reform = {			# after you reunify Zeven Provinci
 	duration = 8
 	fixed_rank = 3
 }
+
+
+# Vassal Governments
+
+mandate_of_ierland_republic_reform = {
+	icon = ""
+
+	potential = {
+		OR = { 
+			tag = IRE
+			have_had_reform = mandate_of_ierland_republic_reform
+		}
+	}
+
+	trigger = {
+		OR = { 
+			tag = IRE
+			have_had_reform = mandate_of_ierland_republic_reform
+		}
+	}
+
+	lock_level_when_selected = yes
+
+	modifiers = {
+		monarch_military_power = 1
+		global_autonomy = -0.05
+		max_absolutism = 30
+		num_accepted_cultures = -10
+		fort_maintenance_modifier = -0.5
+		global_monthly_devastation = 0.125
+	}
+
+	custom_attributes = {
+		cannot_become_dictatorship = yes
+	}
+
+	duration = 8
+	republican_name = no
+	maintain_dynasty = yes
+}
