@@ -196,7 +196,10 @@ knidiplomatic = {
 	kni_our_place = {
 		icon = knights_of_the_new_world
 		position = 1
-		required_missions = { kni_crusader_kings } 
+		required_missions = {
+			kni_crusader_kings
+			kni_entrenched_authority
+		}
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
@@ -231,9 +234,20 @@ kniforts = {
 		effect = {  } 
 	}
 
-	kni_country_of_castles = {
+	kni_fortify_south = {
 		icon = mission_castle_construction
 		position = 1
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kni_entrenched_authority = {
+		icon = mission_knight
+		position = 1
+		required_missions = { kni_fortify_south } 
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
