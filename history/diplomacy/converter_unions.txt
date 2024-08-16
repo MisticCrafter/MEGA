@@ -6,6 +6,13 @@ dependency = {
 	end_date="1836.1.1"
 }
 
+vassal = {
+	first = "NOV"
+	second = "PSK"
+	start_date="769.1.1"
+	end_date="1836.1.1"
+}
+
 union=
 {
 	first="Z1H"
