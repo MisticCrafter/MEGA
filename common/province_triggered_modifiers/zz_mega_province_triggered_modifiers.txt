@@ -1,0 +1,53 @@
+catholic_madragal = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {	
+		owner = {
+            religion = catholic
+		}
+        religion = catholic
+	}
+
+    missionaries = 1
+	prestige = 0.5
+	papal_influence = 2
+    land_morale = 0.05
+}
+
+catholic_canterbury = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {	
+		owner = {
+            religion = catholic
+		}
+        religion = catholic
+	}
+
+    missionaries = 1
+	prestige = 0.5
+	papal_influence = 2
+    land_morale = 0.05
+}
+
+catholic_geneva = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {	
+		owner = {
+            religion = catholic
+		}
+        religion = catholic
+	}
+
+    missionaries = 1
+	prestige = 0.5
+	papal_influence = 2
+    land_morale = 0.05
+}

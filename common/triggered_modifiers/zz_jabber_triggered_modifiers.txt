@@ -46,3 +46,66 @@ tigranic_crusade_subject = {
     church_power_modifier = 0.05
     prestige = 0.5
 }
+
+heresy_crushed_tigranic = {
+    potential = {
+        religion = catholic
+    }
+
+    trigger = {
+        all_known_country = {
+            NOT = { religion = tigranic }
+        }
+    }
+
+    technology_cost = -0.1
+    institution_spread_from_true_faith = 0.1
+    curia_powers_cost = -0.1
+}
+
+heresy_crushed_thibaultine = {
+    potential = {
+        religion = catholic
+    }
+
+    trigger = {
+        all_known_country = {
+            NOT = { religion = thibaultine }
+        }
+    }
+
+    global_spy_defence = 0.25
+    spy_action_cost_modifier = -0.25
+    monarch_lifespan = 0.25
+}
+
+heresy_crushed_rationalist = {
+    potential = {
+        religion = catholic
+    }
+
+    trigger = {
+        all_known_country = {
+            NOT = { religion = rationalist }
+        }
+    }
+
+    land_morale = 0.1
+    same_religion_advisor_cost = -0.1
+    church_loyalty_modifier = 0.1
+}
+
+heresy_crushed_catholic = {
+    potential = {
+        religion_group = christian
+        NOT = { religion = catholic }
+    }
+
+    trigger = {
+        all_known_country = {
+            NOT = { religion = catholic }
+        }
+    }
+
+    all_power_cost = -0.5
+}
