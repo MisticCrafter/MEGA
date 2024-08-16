@@ -2679,7 +2679,7 @@ SIC_ideas = {
 		same_culture_advisor_cost = -0.1
 	}
 	tri_idea_2 = {
-		papal_influence = 1
+		papal_influence = 2
 		curia_powers_cost = -0.1
 	}
 	tri_idea_3 = {
