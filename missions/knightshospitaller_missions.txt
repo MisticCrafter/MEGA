@@ -231,7 +231,7 @@ kniforts = {
 				grown_by_development = 1
 			}
 			OR = {
-				1231 = {
+				4319 = {
 					has_fort_building_trigger = yes
 				1233 = {
 					has_fort_building_trigger = yes
