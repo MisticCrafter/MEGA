@@ -8,6 +8,7 @@ capital = 410
 fixed_capital = 410
 add_army_professionalism = 0.10
 add_accepted_culture = babylonian
+add_historical_friend = Z00
 1389.10.15= {
 	monarch = {
 		name = "Bonifatius IX"

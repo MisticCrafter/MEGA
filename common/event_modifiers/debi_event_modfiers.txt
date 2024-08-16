@@ -9,5 +9,5 @@ kni_cairo_citadel = {
 	monthly_splendor = 1
 }
 kni_friendship_pope = {
-	curia_powers_cost = -0.10
+	curia_powers_cost = -0.05
 }	

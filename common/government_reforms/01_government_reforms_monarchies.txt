@@ -3420,6 +3420,7 @@ negusa_nagast = {
 		move_capital_cost_modifier = -0.75
 		global_unrest = -1
 		stability_cost_modifier = -0.1
+		may_recruit_female_generals = yes
 	}
 
 	conditional = {
@@ -3464,6 +3465,7 @@ solomonic_empire = {
 		max_absolutism = 20
 		global_unrest = -2
 		amount_of_cawa = 1
+		may_recruit_female_generals = yes
 	}
 
 	conditional = {

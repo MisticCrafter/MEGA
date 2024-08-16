@@ -166,9 +166,9 @@ outremer_missions_slot1 = {
 					owned_by_subject_of = ROOT
 				}			
 				has_production_building_trigger = yes
-				development = 20
+				development = 15
 				has_fort_building_trigger = yes
-				has_shipyard_building_trigger = yes
+				has_dock_building_trigger = yes
 			}
 		} 
 
@@ -290,11 +290,7 @@ outremer_missions_slot2 = {
 				}
 				create_alliance = PAP
 			}
-			add_historical_friend = PAP
-			add_papal_influence = 30
-			PAP = {
-				add_historical_friend = ROOT
-			}
+			add_papal_influence = 45
 			luristan_area = {
 				limit = {
 					NOT = {
@@ -817,8 +813,8 @@ outremer_missions_slot2 = {
 		} 
 
 		trigger = {
-			num_of_owned_provinces_with = {
-				value = 15
+			num_of_owned_provinces_with = { #Chat is it over for me as a person
+				value = 8
 				has_dock_building_trigger = yes
 			}
 			has_naval_doctrine = any
@@ -1814,15 +1810,14 @@ outremer_missions_slot4 = {
 		trigger = {
 			379 = {
 				owned_by = ROOT
-				grown_by_development = 10
-				num_of_buildings_in_province = 3
-				num_of_times_expanded_infrastructure = 1
+				grown_by_development = 5
+				num_of_buildings_in_province = 2
 			}
 		} 
 
 		effect = {
 			379 = {
-				add_random_development = 3
+				add_random_development = 3 #My life is cooked
 				add_or_upgrade_production_building = yes
 				add_great_project_tier = {
 					type = holy_city_jerusalem
@@ -1892,7 +1887,7 @@ outremer_missions_slot4 = {
 				base_production = 6
 				has_trade_building_trigger = yes
 				has_production_building_trigger = yes
-				NOT = {local_autonomy = 1}
+				NOT = {local_autonomy = 5}
 			}
 		} 
 
@@ -2026,7 +2021,7 @@ outremer_missions_slot4 = {
 				}
 			}
 			else = {
-				treasury = 5000
+				treasury = 2000
 			}
 			
 		} 
@@ -2044,7 +2039,7 @@ outremer_missions_slot4 = {
 				add_adm_power = 100
 			}
 			else = {
-				add_treasury = -5000
+				add_treasury = -2000
 				4316 = {
 					add_province_modifier = {
 						name = out_charting
@@ -2070,7 +2065,7 @@ outremer_missions_slot4 = {
 						type = suez_canal
 					}
 				}
-				treasury = 5000
+				treasury = 2000
 			}
 			4316 = {
 				NOT = {
@@ -2093,7 +2088,7 @@ outremer_missions_slot4 = {
 				add_adm_power = 150
 			}
 			else = {
-				add_treasury = -5000
+				add_treasury = -2000
 				country_event = {
 					id = flavor_mam.115
 				}
@@ -2109,7 +2104,7 @@ outremer_missions_slot4 = {
 
 		trigger = {
 			num_of_owned_provinces_with = {
-				value = 6
+				value = 3
 				has_manpower_building_trigger = yes
 			}
 			army_reformer = 3
@@ -2117,7 +2112,7 @@ outremer_missions_slot4 = {
 		} 
 
 		effect = {
-			add_army_professionalism = 0.05
+			add_army_professionalism = 0.1
 			add_mil_power = 50
 			add_estate_loyalty = {
 				estate = estate_nobles

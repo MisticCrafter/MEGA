@@ -21,6 +21,8 @@ rationalist_gender_equality = {
 # Astolfo II, the Tyrant: Modifiers
 tyranny_of_astolfo_ii_cooldown = { }
 
+astolfo_ii_purge_cooldown = { }
+
 executed_local_administration_astolfo_ii = {
 	monthly_reform_progress_modifier = 0.20
 	stability_cost_modifier = -0.25
