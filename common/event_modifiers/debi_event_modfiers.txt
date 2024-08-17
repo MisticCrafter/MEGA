@@ -15,3 +15,13 @@ kni_defense_of_the_faith = {
 	army_tradition = 1
 	defensiveness = 0.15
 }
+kni_country_of_castles = {
+	defensiveness = 0.15
+	garrison_size = 0.15
+	fort_maintenance_modifier = -0.10
+}
+kni_grandmasters_of_egypt = {
+	enemy_core_creation = 0.5
+	garrison_damage = 0.10
+	governing_capacity = 50
+}
