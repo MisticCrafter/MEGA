@@ -175,3 +175,14 @@ elite_national_guard_ZVP = {		# mix of previous buffs
 	morale_damage_received = -0.10
 	military_tactics = 0.1
 }
+
+
+
+
+
+# Misc Modifiers (for vassals and stuff)
+amended_laws_of_settlement_moi = {
+	monthly_mandate_authority_militancy = -0.40
+	global_unrest = -4
+	development_cost = -0.05
+}
