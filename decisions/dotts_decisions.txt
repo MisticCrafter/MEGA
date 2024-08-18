@@ -1,0 +1,156 @@
+country_decisions = {
+	#sister holy order decisions
+	order_of_caltrava_holy_order = {
+		major = yes
+		potential = {
+			has_country_flag = enabled_sister_orders
+		}
+		allow = {
+			OR = {
+				AND = {
+					betsimasaraka_area = {
+						type = all
+						OR = {
+							owned_by = ROOT
+							owned_by_subject_of = ROOT
+						}
+					}
+					madagascar_highlands_area = {
+						type = all
+						OR = {
+							owned_by = ROOT
+							owned_by_subject_of = ROOT
+						}
+					}
+				}
+				AND = {
+					southern_madagascar = {
+						type = all
+						OR = {
+							owned_by = ROOT
+							owned_by_subject_of = ROOT
+						}
+					}
+					sakalava_area = {
+						type = all
+						OR = {
+							owned_by = ROOT
+							owned_by_subject_of = ROOT
+						}
+					}
+				}
+			}		
+		}
+		effect = {
+			custom_tooltip = order_of_caltrava_holy_order_tt
+			hidden_effect = {
+				betsimasaraka_area = {
+					limit = {
+						OR = {
+							owned_by = ROOT
+							owned_by_subject_of = ROOT
+						}
+					}
+					cede_province = KCL
+					add_core = KCL
+				}
+				madagascar_highlands_area = {
+					limit = {
+						OR = {
+							owned_by = ROOT
+							owned_by_subject_of = ROOT
+						}
+					}
+					cede_province = KCL
+					add_core = KCL
+				}
+				southern_madagascar = {
+					limit = {
+						OR = {
+							owned_by = ROOT
+							owned_by_subject_of = ROOT
+						}
+					}
+					cede_province = KCL
+					add_core = KCL
+				}
+				sakalava_area = {
+					limit = {
+						OR = {
+							owned_by = ROOT
+							owned_by_subject_of = ROOT
+						}
+					}
+					cede_province = KCL
+					add_core = KCL
+				}
+			}		
+			create_subject = {
+				subject_type = sister_holy_order
+				subject = KCL
+			}
+		}
+	}
+
+	order_of_santiago_holy_order = {
+		major = yes
+		potential = {
+			has_country_flag = enabled_sister_orders
+		}
+		allow = {
+			OR = {
+				AND = {
+					south_lanka_area = {
+						type = all
+						OR = {
+							owned_by = ROOT
+							owned_by_subject_of = ROOT
+						}
+					}
+					lanka_area = {
+						type = all
+						OR = {
+							owned_by = ROOT
+							owned_by_subject_of = ROOT
+						}
+					}
+				}
+				AND = {
+					madura_area = {
+						type = all
+						OR = {
+							owned_by = ROOT
+							owned_by_subject_of = ROOT
+						}
+					}
+					tanjore_area = {
+						type = all
+						OR = {
+							owned_by = ROOT
+							owned_by_subject_of = ROOT
+						}
+					}
+				}
+			}		
+		}
+		effect = {
+			custom_tooltip = order_of_santiago_holy_order_tt
+			hidden_effect = {
+				coromandel_region = {
+					limit = {
+						OR = {
+							owned_by = ROOT
+							owned_by_subject_of = ROOT
+						}
+					}
+					cede_province = KOS
+					add_core = KOS
+				}
+			}		
+			create_subject = {
+				subject_type = sister_holy_order
+				subject = KOS
+			}
+		}
+	}
+}

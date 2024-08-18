@@ -878,6 +878,7 @@ outremer_missions_slot2 = {
 					north_sumatra_area = {
 						type = all
 						OR = {
+							is_empty = yes
 							owned_by = ROOT
 							owned_by_subject_of = ROOT
 						}
@@ -885,6 +886,7 @@ outremer_missions_slot2 = {
 					batak_area = {
 						type = all
 						OR = {
+							is_empty = yes
 							owned_by = ROOT
 							owned_by_subject_of = ROOT
 						}
@@ -892,6 +894,7 @@ outremer_missions_slot2 = {
 					central_sumatra_area = {
 						type = all
 						OR = {
+							is_empty = yes
 							owned_by = ROOT
 							owned_by_subject_of = ROOT
 						}
@@ -901,6 +904,7 @@ outremer_missions_slot2 = {
 					jambi_area = {
 						type = all
 						OR = {
+							is_empty = yes
 							owned_by = ROOT
 							owned_by_subject_of = ROOT
 						}
@@ -908,6 +912,7 @@ outremer_missions_slot2 = {
 					south_sumatra_area = {
 						type = all
 						OR = {
+							is_empty = yes
 							owned_by = ROOT
 							owned_by_subject_of = ROOT
 						}
@@ -915,6 +920,7 @@ outremer_missions_slot2 = {
 					minangkabau_area = {
 						type = all
 						OR = {
+							is_empty = yes
 							owned_by = ROOT
 							owned_by_subject_of = ROOT
 						}
@@ -926,63 +932,21 @@ outremer_missions_slot2 = {
 		} 
 
 		effect = {
-			north_sumatra_area = {
-				limit = {
-					OR = {
-						owned_by = ROOT
-						owned_by_subject_of = ROOT
+			custom_tooltip = out_teutons_tt
+			hidden_effect = {
+				malaya_region = {
+					limit = {
+						OR = {
+							owned_by = ROOT
+							owned_by_subject_of = ROOT
+						}
 					}
-					
+					cede_province = TEU
+					add_core = TEU
 				}
-				cede_province = TEU
-			}
-			batak_area = {
-				limit = {
-					OR = {
-						owned_by = ROOT
-						owned_by_subject_of = ROOT
-					}
-				}
-				cede_province = TEU
-			}
-			central_sumatra_area = {
-				limit = {
-					OR = {
-						owned_by = ROOT
-						owned_by_subject_of = ROOT
-					}
-				}
-				cede_province = TEU
-			}
-			jambi_area = {
-				limit = {
-					OR = {
-						owned_by = ROOT
-						owned_by_subject_of = ROOT
-					}
-				}
-				cede_province = TEU
-			}
-			south_sumatra_area = {
-				limit = {
-					OR = {
-						owned_by = ROOT
-						owned_by_subject_of = ROOT
-					}
-				}
-				cede_province = TEU
-			}
-			minangkabau_area = {
-				limit = {
-					OR = {
-						owned_by = ROOT
-						owned_by_subject_of = ROOT
-					}
-				}
-				cede_province = TEU
 			}
 			create_subject = {
-				subject_type = commercial_enterprise
+				subject_type = sister_holy_order
 				subject = TEU
 			}
 			TEU = {
@@ -996,6 +960,8 @@ outremer_missions_slot2 = {
 					culture = prussian
 				}
 			}
+			set_country_flag = enabled_sister_orders
+			custom_tooltip = out_teutons_tt_2
 		} 
 	}
 
