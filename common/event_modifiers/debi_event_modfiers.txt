@@ -25,3 +25,10 @@ kni_grandmasters_of_egypt = {
 	garrison_damage = 0.10
 	governing_capacity = 50
 }
+kni_building_a_navy = {
+	global_ship_recruit_speed = -0.20
+	global_ship_cost = -0.1
+}
+kni_city_of_god = {
+	
+}
