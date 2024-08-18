@@ -86,11 +86,15 @@ confed_major_city = {
 }
 #sicily
 palatini_regiments = {
-	morale_damage_received = -0.10
 	assault_fort_ability = -0.25
 	fire_damage_received = 0.10
 	shock_damage_received = 0.10
 	land_maintenance_modifier = 0.50
+	is_janissary_modifier = yes
+}
+palatini_regiments2 = {
+	assault_fort_ability = 0.25
+	morale_damage_received = -0.10
 	is_janissary_modifier = yes
 }
 italy_legion_modifier = {

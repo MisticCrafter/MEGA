@@ -3,6 +3,7 @@
 dollarstore_roman_republic_government = {
 	icon = "roman_empire"
 	allow_normal_conversion = no
+	lock_level_when_selected = yes
 	nation_designer_trigger = {
 		primary_culture = roman
 	}
@@ -27,6 +28,9 @@ dollarstore_roman_republic_government = {
 		culture_conversion_cost = -0.25
 		culture_conversion_time = -0.1
 		num_of_parliament_issues = 1
+
+		can_recruit_janissaries = yes
+		allow_janissaries_from_own_faith = yes
 	}
 	conditional = {
 		allow = {
@@ -37,13 +41,29 @@ dollarstore_roman_republic_government = {
 		}
 		has_parliament = yes
 		custom_attributes = {
+			locked_government_type = yes
+			cannot_become_dictatorship = yes
 			gain_rt_from_parliament = yes
 		}
 	}
 
+	effect = {
+		hidden_effect = {
+			add_country_modifier = {
+				name = palatini_regiments
+				duration = -1
+				hidden = yes
+			}
+		}
+	}#lowkey these are kinda useless with the hidden event but meh
+	removed_effect = { 
+		hidden_effect = {
+			remove_country_modifier = palatini_regiments
+		}
+	}
+
 	custom_attributes = {
-		enables_plutocratic_idea_group = yes
-		enables_aristocratic_idea_group = no
+		enables_estate_janissaries = yes
 	}
 	conditional = {
 		allow = { has_dlc = "King of Kings" }
@@ -252,22 +272,24 @@ sic_palatini_reform = {
 			tag = SIC
 			tag = ITA
 		}
-		
+		has_reform = dollarstore_roman_republic_government
 	}
 	trigger = {
 		OR = {
 			tag = SIC
 			tag = ITA
 		}	
+		has_reform = dollarstore_roman_republic_government
 	}
 	modifiers = {
-		can_recruit_janissaries = yes
-		allow_janissaries_from_own_faith = yes
+		janissaries_loyalty_modifier  = 0.05
+		janissaries_privilege_slots = 1
+		janissaries_influence_modifier = 0.1
 	}
 	effect = {
 		hidden_effect = {
 			add_country_modifier = {
-				name = palatini_regiments
+				name = palatini_regiments2
 				duration = -1
 				hidden = yes
 			}
@@ -275,7 +297,7 @@ sic_palatini_reform = {
 	}
 	removed_effect = {
 		hidden_effect = {
-			remove_country_modifier = palatini_regiments
+			remove_country_modifier = palatini_regiments2
 		}
 	}
 }
