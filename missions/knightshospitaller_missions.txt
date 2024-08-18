@@ -59,10 +59,63 @@ Super_Cool_Holy_Cities = {
 		}
 	}
 
-	kni_city_of_god = {
+	kni_city_of_god_one = {
 		icon = mission_the_golden_city
 		position = 1
 		required_missions = { kni_thousand_towers } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			any_owned_province = {
+				development = 25
+				grown_by_development = 10
+				has_fort_building_trigger = yes
+				num_of_times_expanded_infrastructure = 1
+			}
+		}
+
+		effect = {
+			custom_tooltip = kni_city_of_god_tooltip
+			random_owned_province = {
+				limit = {
+					development = 25
+					grown_by_development = 10
+					has_fort_building_trigger = yes
+				}
+				add_province_modifier = {
+					name = "kni_city_of_god"
+					duration = -1
+				}
+			}
+		}
+	}
+
+	kni_city_of_god_two = {
+		icon = mission_the_golden_city
+		position = 1
+		required_missions = { kni_city_of_god_one } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			any_owned_province = {
+				development = 50
+				grown_by_development = 25
+				has_fort_building_trigger = yes
+				num_of_times_expanded_infrastructure = 2
+				has_province_modifier = "kni_city_of_god"
+			}
+		}
+		
+		effect = {  
+			remove_province_modifier = "kni_city_of_god"
+			add_province_modifier = "kni_city_of_god_II"
+		} 
+	}
+
+	kni_of_the_worlds_desire = {
+		icon = byz_city_of_worlds_desire
+		position = 1
+		required_missions = { kni_city_of_god_two } 
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
@@ -188,9 +241,78 @@ knidiplomatic = {
 		required_missions = { kni_sway_pope } 
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {
+			any_ally = {
+				OR = {
+					has_reform = mauretanian_crusader_reform
+					has_reform = crusading_kingdom_reform
+					has_reform = holy_state_reform
+					has_reform = monastic_order_reform
+				}
+			}
+		} 
 
-		effect = {  } 
+		effect = {
+			custom_tooltip = kni_crusader_king_tt
+			hidden_effect = {
+				if = {
+					limit = {
+						any_ally = {
+							tag = Z00
+						}
+					}
+					add_country_modifier = {
+						name = kni_out_ally
+						duration = -1
+					}
+				}
+				if = {
+					limit = {
+						any_ally = {
+							tag = Z00
+						}
+					}
+					add_country_modifier = {
+						name = out_lae_ally
+						duration = -1
+					}
+				}
+				if = {
+					limit = {
+						any_ally = {
+							tag = NAX
+						}
+					}
+					add_country_modifier = {
+						name = out_nax_ally
+						duration = -1
+					}
+				}
+				if = {
+					limit = {
+						any_ally = {
+							tag = MOR
+						}
+					}
+					add_country_modifier = {
+						name = out_mor_ally
+						duration = -1
+					}
+				}
+				if = {
+					limit = {
+						any_ally = {
+							tag = TEM
+						}
+					}
+					add_country_modifier = {
+						name = out_tem_ally
+						duration = -1
+					}
+				}
+			}
+			add_papal_influence = 20
+		} 
 	}
 
 	kni_our_place = {
@@ -334,9 +456,16 @@ kninaval = {
 				add_or_upgrade_shipyard_building = yes
 				add_base_production = 2
 			}
-			321 = {
-				add_or_upgrade_shipyard_building = yes
-				add_base_production = 2
+			add_country_modifier = {
+				name = "kni_building_a_navy"
+				duration = 3652
+			}
+			if = {
+				limit = { owns_core_province = 321 } 
+				321 = {
+					add_or_upgrade_shipyard_building = yes
+					add_base_production = 2
+				}
 			}
 		}
 	}
