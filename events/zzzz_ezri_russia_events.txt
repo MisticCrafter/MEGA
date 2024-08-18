@@ -17,7 +17,7 @@ country_event = {
 			total_development = 350
 		}
 		trigger = {
-			is_year = 1445
+			is_year = 1500
 			tag = SWI
 			OR ={
 				owns = 2410

@@ -43,6 +43,14 @@ crimean_shipyards = {
 	ship_recruit_speed = -0.25
 }
 ukr_renaissance = {
-	institution_growth = 0.10
+	institution_growth = 10
 	embracement_cost = -0.05
+}
+ruthenians_united = {
+	prestige = 1
+	manpower_in_own_culture_provinces = 0.05
+}
+Ural_gold_mine = {
+	local_gold_depletion_chance_modifier = -0.20
+	local_production_efficiency = 0.05
 }

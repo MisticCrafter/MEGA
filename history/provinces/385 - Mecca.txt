@@ -19,4 +19,3 @@ discovered_by = ottoman
 discovered_by = sub_saharan
 discovered_by = western
 add_province_triggered_modifier = christian_mecca
-add_province_triggered_modifier = religious_center
