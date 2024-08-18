@@ -59,26 +59,34 @@ Super_Cool_Holy_Cities = {
 		}
 	}
 
-	kni_city_of_god = {
+	kni_city_of_god_one = {
 		icon = mission_the_golden_city
 		position = 1
 		required_missions = { kni_thousand_towers } 
 		provinces_to_highlight = {  } 
 
-		trigger = { 
+		trigger = {
 			any_owned_province = {
 				development = 25
-				grown_by_development 10
-				has_building = 4
+				grown_by_development = 10
+				has_fort_building_trigger = yes
+				num_of_times_expanded_infrastructure = 1
 			}
-		 } 
+		}
 
-		effect = { 
-			add_province_modifier = {
-				name = "kni_city_of_god"
-				duration = -1
+		effect = {
+			random_owned_province = {
+				limit = {
+					development = 25
+					grown_by_development = 10
+					has_fort_building_trigger = yes
+				}
+				add_province_modifier = {
+					name = "kni_city_of_god"
+					duration = -1
+				}
 			}
-		 } 
+		}
 	}
 
 	kni_granary = {
@@ -95,6 +103,28 @@ Super_Cool_Holy_Cities = {
 		icon = mission_pol_breadbasket_europe
 		position = 5
 		required_missions = { kni_granary } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kni_city_of_god_two = {
+		icon = mission_the_golden_city
+		position = 1
+		required_missions = { kni_city_of_god_one } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kni_city_of_god_three = {
+		icon = mission_the_golden_city
+		position = 1
+		required_missions = { kni_city_of_god_two } 
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
@@ -350,13 +380,11 @@ kninaval = {
 				duration = 3652
 			}
 			if = {
-				limit = {
-					owns_core_province = 321
-				}
+				limit = { owns_core_province = 321 } 
 				321 = {
 					add_or_upgrade_shipyard_building = yes
 					add_base_production = 2
-				}		
+				}
 			}
 		}
 	}

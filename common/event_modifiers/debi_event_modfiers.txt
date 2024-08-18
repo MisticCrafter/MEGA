@@ -30,5 +30,24 @@ kni_building_a_navy = {
 	global_ship_cost = -0.1
 }
 kni_city_of_god = {
-	
+	monthly_splendor = 1
+	prestige = 1
+	local_development_cost = -0.1
+	allowed_num_of_manufactories = 1
+}
+kni_city_of_god_II = {
+	monthly_splendor = 2
+	prestige = 2
+	local_development_cost = -0.15
+	local_development_cost_modifier = -0.10
+	allowed_num_of_manufactories = 1
+	local_tax_modifier = 0.50
+}
+kni_city_of_god_III = {
+	monthly_splendor = 3
+	prestige = 3
+	local_development_cost = -0.15
+	local_development_cost_modifier = -0.10
+	allowed_num_of_manufactories = 2	
+	local_tax_modifier = 0.100
 }

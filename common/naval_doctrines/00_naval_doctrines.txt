@@ -687,7 +687,6 @@ mamluk_warships_doctrine = {
 
 mamluk_transports_doctrine = {
 	can_select = {
-		has_country_flag = mam_unlock_transports_doctrine_flag
 		tag = KNI
 	}
 	

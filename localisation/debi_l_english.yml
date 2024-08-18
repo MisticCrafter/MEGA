@@ -5,14 +5,20 @@
  kni_thousand_towers_title:0 "A Thousand Towers"
  kni_thousand_towers_desc:0 ""
 
- kni_city_of_god_title:0 "City of God"
- kni_city_of_god_desc:0 ""
+ kni_city_of_god_one_title:0 "City of God"
+ kni_city_of_god_one_desc:0 ""
 
  kni_granary_title:0 "Granary of the Mediterranean"
  kni_granary_desc:0 ""
 
  kni_breadbasket_title:0 "Breadbasket of the World"
  kni_breadbasket_desc:0 ""
+
+ kni_city_of_god_two_title:0 "City of God II"
+ kni_city_of_god_two_desc:0 ""
+
+ kni_city_of_god_three_title:0 "City of God III"
+ kni_city_of_god_three_desc:0 ""
 
  kni_fort_rosetta_title:0 "Citadel of Rosetta"
  kni_fort_rosetta_desc:0 ""
