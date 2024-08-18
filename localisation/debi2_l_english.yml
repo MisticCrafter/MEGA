@@ -10,3 +10,7 @@
   kni_building_a_navy:0 "Building A Navy"
   kni_city_of_god_tooltip:0 "§GThe province that fulfills the following requirments will recieve a significant modifier, as fitting of its magnificence!§!"
   kni_city_of_god:0 "City of God"
+ kni_crusader_king_tt:0 "Completing this mission while allied to the following countries will give the following effects for as long as we stay allied: \n§OOutremer§!: §G+10%§! Shock Damage \n§YLatin Empire§!: §G+5%§! Infantry Combat Ability \n§YAntioch§!: §G+15%§! Fort Defense \n§YMorocco§!: §G+20%§! Privateer Efficiency \n§YKnights Templar§!: §G+5%§! Cavalry Combat Ability"
+  kni_out_ally:0 "Allies With Outremer"
+  kni_city_of_god_II:0 "City of God II"
+  kni_city_of_god_III: "City of the World's Desire"
