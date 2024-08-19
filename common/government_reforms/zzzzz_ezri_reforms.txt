@@ -7,7 +7,7 @@ depressed_orthodox_church = {
 		tag = OON
 	}
 
-	#lock_level_when_selected = yes
+	lock_level_when_selected = yes
 
 	modifiers = {
 		nobles_influence_modifier = 0.10
@@ -29,9 +29,9 @@ Knightly_Order = {
 	potential = {
 		tag = OON
 	}
-	#trigger = {
-	#	mission_completed = oon_destroy_trikai
-	#}
+	trigger = {
+		mission_completed = oon_destroy_trikai
+	}
 
 	lock_level_when_selected = yes
 	duration = 5

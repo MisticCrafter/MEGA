@@ -133,7 +133,7 @@ Survive = {
 				}
 			}
 			effect = {
-				
+				add_government_reform = Knightly_Order
 			}
 		}
 	}
