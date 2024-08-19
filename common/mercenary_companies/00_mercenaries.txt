@@ -3068,7 +3068,7 @@ vaquero_knights = {
 	home_province = 4323
 
 	cavalry_weight = 0.9
-	artillery_weight = 0.1
+	artillery_weight = 0.2
 
 	trigger = {
 		owns = 4323

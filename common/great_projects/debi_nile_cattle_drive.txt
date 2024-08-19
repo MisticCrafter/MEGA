@@ -89,7 +89,7 @@ nile_cattle_drive = {
 	tier_1 = {
 		# Time it takes to upgrade the project
         upgrade_time = {
-            months = 120
+            months = 60
         }
 
         # Cost to upgrade the project
@@ -126,7 +126,7 @@ nile_cattle_drive = {
 	tier_2 = {
 		# Time it takes to upgrade the project
         upgrade_time = {
-            months = 240
+            months = 200
         }
 
         # Cost to upgrade the project
@@ -165,7 +165,7 @@ nile_cattle_drive = {
 	tier_3 = {
 		# Time it takes to upgrade the project
         upgrade_time = {
-            months = 480
+            months = 320
         }
 
         # Cost to upgrade the project
