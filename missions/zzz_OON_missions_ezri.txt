@@ -9,20 +9,29 @@ Survive = {
 		icon = mission_impaled_soldies
 		required_missions = { }
 		position = 1
+		provinces_to_highlight = {
+			OR = {
+				area = curonia_area
+				area = livonia_area
+				province_id = 40
+				province_id = 271
+				province_id = 4543
+			}		
+		}
 		trigger = {
 			is_year = 1450
-			root = {
+			ROOT = {
 				owns = 40
 				owns = 271
 				owns = 4543
 			}
 			curonia_area = {
 				type = all
-				owned_by = root
+				owned_by = ROOT
 			}
 			livonia_area = {
 				type = all
-				owned_by = root
+				owned_by = ROOT
 			}
 		}
 		effect = {
@@ -32,9 +41,8 @@ Survive = {
 			}
 			add_country_modifier = {
 				name = OON_survival
-				duration = -1
+				duration = 1825
 			}
-
 		}
 	}
 	
@@ -44,23 +52,36 @@ Survive = {
 			oon_survive
 		}
 		position = 2
+		provinces_to_highlight = {
+			OR = {
+				area = curonia_area
+				area = livonia_area
+				province_id = 40
+				province_id = 271
+				province_id = 4543
+			}
+		}
 		trigger = {
 			is_year = 1455
-			root = {
+			ROOT = {
 				owns = 40
 				owns = 271
 				owns = 4543
 			}
 			curonia_area = {
 				type = all
-				owned_by = root
+				owned_by = ROOT
 			}
 			livonia_area = {
 				type = all
-				owned_by = root
+				owned_by = ROOT
 			}
 		}
 		effect = {
+			hidden_effect = {
+				remove_country_modifier = OON_survival
+				remove_country_modifier = smoldering_hope
+			}	
 			add_country_modifier = {
 				name = smoldering_hope
 				duration = 7300
@@ -82,38 +103,60 @@ Survive = {
 			oon_prove_them_wrong
 		}
 		position = 3
+		provinces_to_highlight = {
+			OR = {
+				area = curonia_area
+				area = livonia_area
+				province_id = 40
+				province_id = 271
+				province_id = 4543
+			}
+		}
 		trigger = {
 			is_year = 1465
-			root = {
+			ROOT = {
 				owns = 40
 				owns = 271
 				owns = 4543
 			}
 			curonia_area = {
 				type = all
-				owned_by = root
+				owned_by = ROOT
 			}
 			livonia_area = {
 				type = all
-				owned_by = root
+				owned_by = ROOT
 			}
 		}
-			effect = {
-				add_country_modifier = {
-					name = OON_reduced_atoms
-					duration = 1825
-				}
-				change_estate_land_share = {
-					estate = estate_nobles
-					share = -90
-				}
+		effect = {
+			hidden_effect = {
+				remove_country_modifier = OON_proved_them_wrong
+				remove_country_modifier = smoldering_hope
+			}
+			add_country_modifier = {
+				name = OON_reduced_atoms
+				duration = 1825
+			}
+			change_estate_land_share = {
+				estate = estate_nobles
+				share = -90
 			}
 		}
+	}
 
 		oon_destroy_trikai = {
 			icon = mission_have_two_subjects
 			required_missions = {
 				oon_settle_the_score
+			}
+			provinces_to_highlight = {
+				OR = {
+					area = curonia_area
+					area = livonia_area
+					province_id = 40
+					province_id = 271
+					province_id = 4543
+				}
 			}
 			position = 4
 			trigger = {
@@ -133,6 +176,9 @@ Survive = {
 				}
 			}
 			effect = {
+				hidden_effect = {
+					remove_country_modifier = OON_reduced_atoms
+				}
 				add_government_reform = Knightly_Order
 			}
 		}
@@ -150,10 +196,16 @@ branch_2 = {
 		icon = mission_conquer_sweden
 		required_missions = { oon_eliminate_estonia }
 		position = 2
+		provinces_to_highlight = {
+			area = livonia_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
 		trigger = {
 			livonia_area = {
 				type = all
-				owned_by = root
+				owned_by = ROOT
 			}
 			army_size_percentage = 0.9
 		}
@@ -181,11 +233,17 @@ branch_2 = {
 		required_missions = {
 			oon_dominate_scandinavia
 		}
+		provinces_to_highlight = {
+			area = ostra_svealand_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
 		position = 3
 		trigger = {
 			ostra_svealand_area = {
 				type = all
-				owned_by = root
+				owned_by = ROOT
 			}
 		}
 		effect = {
@@ -199,6 +257,9 @@ branch_2 = {
 		icon = mission_plc_cross_wild_field
 		required_missions = {
 			oon_scandinavia_presence	
+		}
+		provinces_to_highlight = {
+			province_id = 40
 		}
 		position = 4
 		trigger = {
@@ -229,14 +290,23 @@ branch_2 = {
 			oon_focus_on_poland
 		}
 		position = 5
+		provinces_to_highlight = {
+			OR = {
+				area = east_prussia_area
+				area = mazovia_area
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
 		trigger = {
 			east_prussia_area = {
 				type = all
-				owned_by = root
+				owned_by = ROOT
 			}
 			mazovia_area = {
 				type = all
-				owned_by = root
+				owned_by = ROOT
 			}
 		}
 		effect = {
@@ -253,6 +323,9 @@ branch_2 = {
 			oon_victory_over_poland
 		}
 		position = 6
+		provinces_to_highlight = {
+			province_id = 1841
+		}
 		trigger = {
 			owns = 1841
 			army_size_percentage = 0.90
@@ -282,6 +355,9 @@ branch_2 = {
 			oon_claim_pomerania
 		}
 		position = 7
+		provinces_to_highlight = {
+			province_id = 1858
+		}
 		trigger = {
 			owns = 1858
 			army_size_percentage = 0.9
@@ -304,10 +380,16 @@ branch_2 = {
 			oon_claim_copenhagen
 		}
 		position = 8
+		provinces_to_highlight = {
+			area = denmark_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
 		trigger = {
 			denmark_area = {
 				type = all
-				owned_by = root
+				owned_by = ROOT
 			}
 		}
 		effect = {
@@ -351,18 +433,22 @@ branch_3 = {
 		required_missions = {
 			oon_eliminate_estonia
 		}
+		provinces_to_highlight = {
+			province_id = 38
+		}
 		position = 2
 		trigger = {
 			NOT = {
 				estonia_ingria_area = {
 					type = any
-					owned_by = OON
+					owned_by = ROOT
 				}
 			}
 			estonia_ingria_area = {
 				type = all
 				owned_by = NOV
 			}
+			owns = 38
 			stability = 2
 			adm_power = 100
 			dip_power = 100
@@ -377,12 +463,10 @@ branch_3 = {
 			}
 			38 = {
 				change_religion = orthodox
-				add_base_tax = 4
-				add_base_production = 4
-				add_base_manpower = 4
-				add_building = marketplace
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 2
 				add_building = dock
-				add_building = shipyard
 				add_province_modifier = {
 					name = OON_riga_tradeport
 					duration = -1
@@ -404,6 +488,9 @@ branch_3 = {
 			oon_a_new_home
 		}
 		position = 3
+		provinces_to_highlight = {
+			province_id = 38
+		}
 		trigger = {
 			stability = 2
 			mil_power = 150
@@ -414,7 +501,6 @@ branch_3 = {
 		effect = {
 			38 = {
 				add_building = fort_16th
-				add_building = barracks
 				add_base_manpower = 2
 				add_province_modifier = {
 					name = OON_riga_castle
@@ -441,8 +527,6 @@ branch_3 = {
 		effect = {
 			38 = {
 				add_building = cathedral
-				add_building = courthouse
-				add_base_tax = 2
 				add_province_modifier = {
 					name = OON_riga_cathedral
 					duration = -1
@@ -537,28 +621,35 @@ branch_4 = {
 		required_missions = {
 			oon_eliminate_estonia
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1935
+				province_id = 35
+				province_id = 39
+			}		
+		}
 		position = 2
 		trigger = {
 			treasury = 350
 			mil_power = 25
 			dip_power = 25
 			adm_power = 25
+			owns = 1935
+			owns = 35
+			owns = 39
 		}
 
 		effect = {
 			1935 = {
 				add_base_manpower = 1
-				add_base_production = 1
 				add_or_upgrade_production_building = yes
 			}
 			35 = {
 				add_base_manpower = 1
-				add_base_production = 1
 				add_or_upgrade_production_building = yes
 			}
 			39 = {
 				add_base_manpower = 1
-				add_base_production = 1
 			}
 			add_treasury = -350
 			add_mil_power = -25
@@ -572,6 +663,19 @@ branch_4 = {
 		icon = mission_sailor_boat
 		required_missions = {
 			oon_develop_curonia
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 40
+				province_id = 39
+				AND = {
+					trade_goods = naval_supplies
+					owned_by = ROOT
+					NOT = {
+						base_production = 6
+					}
+				}
+			}
 		}
 		position = 3
 		trigger = {
@@ -596,6 +700,20 @@ branch_4 = {
 		required_missions = {
 			oon_focus_on_naval_supplies
 		}
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					owned_by = ROOT
+					trade_goods = naval_supplies
+					NOT = {
+						base_production = 10
+					}
+				}
+				province_id = 35
+				province_id = 40
+				province_id = 1935
+			}		
+		}
 		position = 4
 		trigger = {
 			any_owned_province = {
@@ -603,6 +721,9 @@ branch_4 = {
 				base_production = 10
 			}
 			treasury = 150
+			owns = 35
+			owns = 40
+			owns = 1935
 		}
 		effect = {
 			35 = {
@@ -623,6 +744,13 @@ branch_4 = {
 		required_missions = {
 			oon_enhance_the_naval_industry
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 35
+				province_id = 39
+				province_id = 38
+			}			
+		}
 		position = 5
 		trigger = {
 			owns = 35
@@ -641,15 +769,12 @@ branch_4 = {
 		}
 		effect = {
 			35 = {
-				add_base_production = 1
 				add_or_upgrade_trade_building = yes
 			}
 			38 = {
-				add_base_production = 1
 				add_or_upgrade_trade_building = yes
 			}
 			39 = {
-				add_base_production = 1
 				add_or_upgrade_trade_building = yes
 			}
 			add_treasury = -1000
@@ -660,6 +785,17 @@ branch_4 = {
 		required_missions = {
 			oon_invest_in_tradeports
 		}
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					area = east_prussia_area
+					NOT = {
+						base_production = 5
+					}
+				}
+				province_id = 41
+			}		
+		}
 		position = 6
 		trigger = {
 			#mission_completed = aquire_prussia
@@ -667,10 +803,12 @@ branch_4 = {
 			east_prussia_area = {
 				base_production = 5
 			}
+			owns = 41
 		}
 		effect = {
 			every_owned_province = {
 				limit = {
+					area = east_prussia_area
 					trade_goods = naval_supplies
 				}
 				add_province_modifier = {
@@ -687,13 +825,21 @@ branch_4 = {
 		icon = mission_lit_harness_steppes
 		required_missions = { }
 		position = 7
+		provinces_to_highlight = {
+			OR = {
+				province_id = 271
+				province_id = 4534
+			}			
+		}
 		trigger = {
 			treasury = 750
 			271 = {
-				base_tax = 5
+				owned_by = ROOT
+				base_manpower = 5
 			}
 			4534 = {
-				base_tax = 5
+				owned_by = ROOT
+				base_manpower = 5
 			}
 		}
 		effect = {
@@ -712,29 +858,38 @@ branch_4 = {
 		required_missions = {
 			oon_develop_the_baltic_farmland
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 271
+				province_id = 4534
+				province_id = 4545
+			}		
+		}
 		position = 8
 		trigger = {
 			treasury = 750
 			271 = {
+				owned_by = ROOT
 				base_tax = 7
 			}
 			4534 = {
+				owned_by = ROOT
 				base_tax = 7
 			}
 			4535 = {
+				owned_by = ROOT
 				base_tax = 7
 			}
 		}
 		effect = {
 			271 = {
-				add_base_production = 2
+				add_base_production = 1
 			}
 			4534 = {
-				add_base_production = 2
+				add_base_production = 1
 			}
 			4535 = {
-				add_base_production = 2
-				add_building = farm_estate
+				add_base_production = 1
 				change_trade_goods = grain
 			}
 		}
@@ -744,28 +899,32 @@ branch_4 = {
 		required_missions = {
 			oon_new_farming_technologies
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 43
+				province_id = 1841
+			}			
+		}
 		position = 9
 		trigger = {
 			treasury = 1500
-			owns = 43
-			owns = 1841
 			43 = {
+				owned_by = ROOT
 				base_production = 5
 				has_building = workshop
 			}
 			1841 = {
+				owned_by = ROOT
 				base_production = 5
 				has_building = workshop
 			}
 		}
 		effect = {
 			43 = {
-				add_base_production = 3
-				add_or_upgrade_production_building = yes
+				add_base_production = 2
 			}
 			1841 = {
-				add_base_production = 3
-				add_or_upgrade_production_building = yes
+				add_base_production = 1
 			}
 			add_treasury = -1500
 		}

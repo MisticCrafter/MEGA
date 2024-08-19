@@ -18461,22 +18461,23 @@ oon_ideas = {
 	free = yes
 
 	oon_1 = {
-		production_efficiency = 0.15
+		build_time = -0.15	
 	}
 	oon_2 = {
-		global_trade_power = 0.20
-	}
-	oon_3 = {
 		siege_ability = 0.15
 	}
+	oon_3 = {
+		heavy_ship_power = 0.10	
+	}
 	oon_4 = {
-		heavy_ship_power = 0.10
+		global_trade_power = 0.20
+		
 	}
 	oon_5 = {
 		development_cost_modifier = -0.10
 	}
 	oon_6 = {
-		build_time = 0.10
+		production_efficiency = 0.15
 	}
 	oon_7 = {
 		artillery_power = 0.10
