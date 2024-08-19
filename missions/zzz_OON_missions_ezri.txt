@@ -666,8 +666,8 @@ branch_4 = {
 		}
 		provinces_to_highlight = {
 			OR = {
+				province_id = 35
 				province_id = 40
-				province_id = 39
 				AND = {
 					trade_goods = naval_supplies
 					owned_by = ROOT

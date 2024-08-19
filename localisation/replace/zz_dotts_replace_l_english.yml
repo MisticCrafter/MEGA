@@ -4,6 +4,11 @@ VRM:0 "Belgian Confederacy"
 VRM_ADJ:0 "Confederate"
 VRM_ideas:0 "Confederacy Ideas"
 vermont_nation_title:0 "Form Belgian Confederacy"
+#baghdad modifiers
+catholic_rome:0 "Occupation of Baghdad"
+desc_catholic_rome:0 "To occupy Baghdad as a Catholic, could do nothing other than elicit general outrage."
+non_catholic_rome:0 "The Conquest of Baghdad"
+desc_non_catholic_rome:0 "The ancient city of Baghdad, the seat of the head of the Catholic church, is a fine target for conquest."
 #Mamluk Units things
  mamluks:0 "Order Knights"
  MAMLUKS_NAME:0 "Order Knights $NAME$"
