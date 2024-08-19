@@ -54,3 +54,192 @@ Ural_gold_mine = {
 	local_gold_depletion_chance_modifier = -0.20
 	local_production_efficiency = 0.05
 }
+
+#OON
+appeased_trikai_family = {
+	local_tax_modifier = -0.10
+	nobles_exclusive_influence_modifier = 0.02
+	nobles_loyalty_modifier = -0.05
+}
+
+angered_trikai_family = {
+	nobles_influence_modifier = -0.05
+	nobles_loyalty_modifier = -0.10
+}
+recently_raided_treasury = {
+}
+granduer_ruined = {
+	nobles_influence_modifier = 0.10
+	development_cost_modifier = 0.05
+	nobles_loyalty_modifier = -0.05
+}
+enraged_triakai_family = {
+	nobles_influence_modifier = -0.15
+	nobles_loyalty_modifier = -0.15
+}
+melancholic_millenium = {
+	own_territory_dice_roll_bonus = -1
+	infantry_cost = 0.75
+	cavalry_cost = 0.50
+	artillery_cost = 0.25
+	discipline = -0.10
+	movement_speed = -0.35
+	fire_damage_received = 0.10
+	shock_damage_received = 0.15
+	mercenary_cost = 0.75
+	global_tax_modifier = -0.50
+	production_efficiency = -0.30
+	global_trade_goods_size_modifier = -0.20
+	interest = 4
+	spy_offence = -0.50
+	global_prosperity_growth = -0.20
+	stability_cost_modifier = 0.25
+	country_admin_power = -2
+	tolerance_own = -3
+}
+
+smoldering_hope = {
+	global_attacker_dice_roll_bonus = 1
+	land_morale = 0.10
+	land_maintenance_modifier = -0.50
+	reinforce_cost_modifier = -0.50
+	global_manpower_modifier = 0.15
+	siege_ability = 0.20
+	core_creation = -0.20
+	country_diplomatic_power = 1
+	country_military_power = 1
+}
+
+estonia_conqured = {
+	manpower_in_accepted_culture_provinces = 0.10
+	global_tax_modifier = 0.05
+	shock_damage_received = -0.02
+	global_trade_goods_size_modifier = 0.02
+	church_loyalty_modifier = 0.05
+	church_influence_modifier = 0.05
+	nobles_loyalty_modifier = 0.05
+	nobles_influence_modifier = -0.10
+	burghers_loyalty_modifier = 0.05
+	burghers_influence_modifier = 0.05
+}
+
+OON_a_new_home = {
+	global_missionary_strength = 0.25
+	missionaries = 1
+	missionary_maintenance_cost = -0.25
+	global_prosperity_growth = 0.10
+	global_tax_modifier = 0.10
+	production_efficiency = 0.05
+	interest = -1
+}
+
+OON_riga_tradeport = {
+	trade_goods_size = 3
+	province_trade_power_value = 5
+	naval_forcelimit = 20
+	local_sailors = 5000
+	burghers_loyalty_modifier = 0.10
+	burghers_influence_modifier = 0.05
+}
+
+OON_riga_castle = {
+	local_manpower = 6
+	land_forcelimit = 10
+	local_fort_maintenance_modifier = -0.90
+	local_defensiveness = 0.50
+	nobles_loyalty_modifier = 0.10
+}
+
+OON_riga_cathedral = {
+	local_development_cost_modifier = 0.25
+	tax_income = 60
+	governing_cost = -0.25
+	church_loyalty_modifier = 0.10
+	tolerance_own = 1
+}
+
+OON_survival = {
+	nobles_influence_modifier = -0.20
+	nobles_loyalty_modifier = -0.05
+	global_missionary_strength = 0.25
+	global_trade_goods_size_modifier = 0.10
+	interest = -1
+	country_admin_power = 1
+}
+
+OON_proved_them_wrong = {
+	nobles_influence_modifier = -0.20
+	nobles_loyalty_modifier = -0.05
+	global_missionary_strength = 0.25
+	global_trade_goods_size_modifier = 0.10
+	interest = -1
+	country_admin_power = 1
+	movement_speed = 0.15
+	fire_damage_received = -0.05
+	shock_damage_received = -0.10
+	production_efficiency = 0.15
+	spy_offence = 0.25
+
+}
+
+OON_reduced_atoms = {
+	nobles_influence_modifier = -0.90
+	nobles_loyalty_modifier = -0.30
+	production_efficiency = 0.15
+	innovativeness_gain = 0.33
+	tolerance_own = 1
+	country_admin_power = 2
+	burghers_influence_modifier = 0.10
+	church_influence_modifier = 0.10
+	
+}
+
+OON_naval_industry_booming = {
+	development_cost_modifier = -0.10
+}
+
+OON_scandinavia_dev = {
+	development_cost_modifier = -0.10
+}
+
+OON_scandinavian_presence = {
+	trade_value_modifier = 0.10
+	local_missionary_strength = 0.10 
+}
+
+OON_polish_funny = {
+	land_morale = 0.10
+	infantry_power = 0.05
+}
+
+OON_baltic_trade = {
+	global_own_trade_power = 0.20
+}
+
+OON_swedish_arms_industry = {
+	local_production_efficiency = 0.10
+}
+
+mil_tech_focus = {
+	mil_tech_cost_modifier = -0.10
+	infantry_cost = 0.10
+	cavalry_cost = 0.10
+	artillery_cost = 0.10
+}
+
+mil_dev_focus = {
+	mil_tech_cost_modifier = 0.10
+	infantry_cost = -0.10
+	cavalry_cost = -0.10
+	artillery_cost = -0.10
+}
+
+dip_tech_focus = {
+	dip_tech_cost_modifier = -0.10
+	production_efficiency = -0.10
+}
+
+dip_dev_focus = {
+	dip_tech_cost_modifier = 0.10
+	production_efficiency = 0.10
+}

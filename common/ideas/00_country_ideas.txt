@@ -18444,3 +18444,41 @@ voc_ideas = {
 		land_forcelimit_modifier = 0.1
 	}
 }
+
+oon_ideas = {
+	start = {
+		yearly_patriarch_authority = 0.01
+		manpower_in_true_faith_provinces = 0.20
+	}
+	bonus = {
+		warscore_cost_vs_other_religion = -0.10
+	}
+
+	trigger = {
+		tag = OON
+	}
+
+	free = yes
+
+	oon_1 = {
+		production_efficiency = 0.15
+	}
+	oon_2 = {
+		global_trade_power = 0.20
+	}
+	oon_3 = {
+		siege_ability = 0.15
+	}
+	oon_4 = {
+		heavy_ship_power = 0.10
+	}
+	oon_5 = {
+		development_cost_modifier = -0.10
+	}
+	oon_6 = {
+		build_time = 0.10
+	}
+	oon_7 = {
+		artillery_power = 0.10
+	}
+}
