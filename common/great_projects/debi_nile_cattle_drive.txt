@@ -18,7 +18,7 @@ nile_cattle_drive = {
     type = monument
 
 	time = {
-		months = 60
+		months = 45
 	}
 
     # Conditions to build the project
@@ -131,7 +131,7 @@ nile_cattle_drive = {
 
         # Cost to upgrade the project
         cost_to_upgrade = {
-            factor = 2500
+            factor = 2250
         }
 
         # What modifiers are given to the province the project is located in
@@ -170,7 +170,7 @@ nile_cattle_drive = {
 
         # Cost to upgrade the project
         cost_to_upgrade = {
-            factor = 5000
+            factor = 4000
         }
 
         # What modifiers are given to the province the project is located in
