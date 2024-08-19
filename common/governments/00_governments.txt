@@ -1292,6 +1292,9 @@ theocracy = {
 				#Egypt
 				egyptian_government_reform
 				blood_theocracy_reform
+				#Lithuania
+				depressed_orthodox_church
+				Knightly_Order
 				#Hi it's me dotto again smile
 				outremer_government_reform
 				stardust_crusaders_reform

@@ -1,0 +1,782 @@
+Survive = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = OON } 
+
+	oon_survive = {
+		icon = mission_impaled_soldies
+		required_missions = { }
+		position = 1
+		trigger = {
+			is_year = 1450
+			root = {
+				owns = 40
+				owns = 271
+				owns = 4543
+			}
+			curonia_area = {
+				type = all
+				owned_by = root
+			}
+			livonia_area = {
+				type = all
+				owned_by = root
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = smoldering_hope
+				duration = 1825
+			}
+			add_country_modifier = {
+				name = OON_survival
+				duration = -1
+			}
+
+		}
+	}
+	
+	oon_prove_them_wrong = {
+		icon = ned_friesland
+		required_missions = {
+			oon_survive
+		}
+		position = 2
+		trigger = {
+			is_year = 1455
+			root = {
+				owns = 40
+				owns = 271
+				owns = 4543
+			}
+			curonia_area = {
+				type = all
+				owned_by = root
+			}
+			livonia_area = {
+				type = all
+				owned_by = root
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = smoldering_hope
+				duration = 7300
+			}
+			add_country_modifier = {
+				name = OON_proved_them_wrong
+				duration = 7300
+			}
+			change_estate_land_share = {
+				estate = estate_nobles
+				share = -20
+			}
+		}
+	}
+
+	oon_settle_the_score = {
+		icon = mission_unite_home_region
+		required_missions = {
+			oon_prove_them_wrong
+		}
+		position = 3
+		trigger = {
+			is_year = 1465
+			root = {
+				owns = 40
+				owns = 271
+				owns = 4543
+			}
+			curonia_area = {
+				type = all
+				owned_by = root
+			}
+			livonia_area = {
+				type = all
+				owned_by = root
+			}
+		}
+			effect = {
+				add_country_modifier = {
+					name = OON_reduced_atoms
+					duration = 1825
+				}
+				change_estate_land_share = {
+					estate = estate_nobles
+					share = -90
+				}
+			}
+		}
+
+		oon_destroy_trikai = {
+			icon = mission_have_two_subjects
+			required_missions = {
+				oon_settle_the_score
+			}
+			position = 4
+			trigger = {
+				is_year = 1466
+				root = {
+					owns = 40
+					owns = 271
+					owns = 4543
+				}
+				curonia_area = {
+					type = all
+					owned_by = root
+				}
+				livonia_area = {
+					type = all
+					owned_by = root
+				}
+			}
+			effect = {
+				add_government_reform = Knightly_Order
+			}
+		}
+	}
+
+
+branch_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = OON } 
+
+	oon_dominate_scandinavia = {
+		icon = mission_conquer_sweden
+		required_missions = { oon_eliminate_estonia }
+		position = 2
+		trigger = {
+			livonia_area = {
+				type = all
+				owned_by = root
+			}
+			army_size_percentage = 0.9
+		}
+		effect ={
+			ostra_svealand_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_claim = ROOT
+			}
+			svealand_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_claim = ROOT
+			}
+			add_claim = 2
+			add_claim = 25
+		}	
+	}
+	oon_scandinavia_presence = {
+		icon = mission_lit_march_west
+		required_missions = {
+			oon_dominate_scandinavia
+		}
+		position = 3
+		trigger = {
+			ostra_svealand_area = {
+				type = all
+				owned_by = root
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = OON_scandinavian_presence
+				duration = 1825
+			}
+		}
+	}
+	oon_focus_on_poland = {
+		icon = mission_plc_cross_wild_field
+		required_missions = {
+			oon_scandinavia_presence	
+		}
+		position = 4
+		trigger = {
+			owns = 40
+			army_size_percentage = 0.9
+		}
+		effect = {
+			east_prussia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_claim = ROOT	
+			}
+			mazovia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_claim = ROOT
+			}
+		}
+	}
+
+	oon_victory_over_poland = {
+		icon = mission_partition_poland
+		required_missions = {
+			oon_focus_on_poland
+		}
+		position = 5
+		trigger = {
+			east_prussia_area = {
+				type = all
+				owned_by = root
+			}
+			mazovia_area = {
+				type = all
+				owned_by = root
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = OON_polish_funny
+				duration = 3650
+			}
+		}
+	}
+
+	oon_claim_pomerania = {
+		icon = mission_protect_albania
+		required_missions = {
+			oon_victory_over_poland
+		}
+		position = 6
+		trigger = {
+			owns = 1841
+			army_size_percentage = 0.90
+			navy_size_percentage = 0.50
+		}
+		effect = {
+			west_prussia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_claim = ROOT	
+			}
+			hinter_pommern_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_claim = ROOT	
+			}
+			add_claim = 1858
+		}
+	}
+	oon_claim_copenhagen = {
+		icon = mission_danish_flag
+		required_missions = {
+			oon_claim_pomerania
+		}
+		position = 7
+		trigger = {
+			owns = 1858
+			army_size_percentage = 0.9
+			navy_size_percentage = 0.75
+		}
+		effect = {
+			denmark_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_claim = ROOT	
+			}
+		add_claim = 4142
+		}
+	}
+	oon_ruler_of_the_baltic = {
+		icon = mission_conquer_baltic_region
+		required_missions = {
+			oon_claim_copenhagen
+		}
+		position = 8
+		trigger = {
+			denmark_area = {
+				type = all
+				owned_by = root
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = OON_baltic_trade
+				duration = -1
+			}
+		}
+	}
+}
+
+branch_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = OON } 
+
+	oon_eliminate_estonia = {
+		icon = mission_the_livonians
+		required_missions = { }
+		position = 1
+		trigger = {
+			livonia_area = {
+				type = all
+				owned_by = root
+			}
+		}
+		effect = {
+			add_stability = 1
+			
+			add_country_modifier = {
+				name = estonia_conqured
+				duration = -1
+			}
+		}
+	}
+
+	oon_a_new_home = {
+		icon = develop_our_capital
+		required_missions = {
+			oon_eliminate_estonia
+		}
+		position = 2
+		trigger = {
+			NOT = {
+				estonia_ingria_area = {
+					type = any
+					owned_by = OON
+				}
+			}
+			estonia_ingria_area = {
+				type = all
+				owned_by = NOV
+			}
+			stability = 2
+			adm_power = 100
+			dip_power = 100
+			mil_power = 100
+		}
+		
+		effect = {
+			set_capital = 38
+			add_patriarch_authority = 0.20
+			set_defender_of_the_faith = {
+				who = root
+			}
+			38 = {
+				change_religion = orthodox
+				add_base_tax = 4
+				add_base_production = 4
+				add_base_manpower = 4
+				add_building = marketplace
+				add_building = dock
+				add_building = shipyard
+				add_province_modifier = {
+					name = OON_riga_tradeport
+					duration = -1
+				}
+			}
+			add_country_modifier = {
+				name = OON_a_new_home
+				duration = -1
+			}
+			add_adm_power = -100
+			add_dip_power = -100
+			add_mil_power = -100
+		}
+	}
+
+	oon_riga_castle = {
+		icon = mission_castle_construction
+		required_missions = {
+			oon_a_new_home
+		}
+		position = 3
+		trigger = {
+			stability = 2
+			mil_power = 150
+			treasury = 250
+			owns = 38
+		}
+
+		effect = {
+			38 = {
+				add_building = fort_16th
+				add_building = barracks
+				add_base_manpower = 2
+				add_province_modifier = {
+					name = OON_riga_castle
+					duration = -1
+				}
+			}
+			add_treasury = -250
+		}
+	}
+
+	oon_riga_cathedral = {
+		icon = mission_cathedral_cities
+		required_missions = {
+			oon_riga_castle
+		}
+		position = 3
+		trigger = {
+			stability = 2
+			adm_power = 150
+			treasury = 250
+			owns = 38
+		}
+
+		effect = {
+			38 = {
+				add_building = cathedral
+				add_building = courthouse
+				add_base_tax = 2
+				add_province_modifier = {
+					name = OON_riga_cathedral
+					duration = -1
+				}		
+			}
+			add_treasury = -250
+			set_country_flag = can_use_propagate_religion
+			custom_tooltip = can_use_propagate_religion_tt
+		}
+	}
+
+	oon_integrate_sweden = {
+		icon = mission_swedish_great_power
+		required_missions = {
+			oon_enhance_the_naval_industry
+		}
+		trigger = {
+			owns = 1
+			owns = 2
+			owns = 3
+			owns = 4
+			owns = 8
+			treasury = 500
+		}
+		effect = {
+			unlock_estate_privilege = {
+				estate_privilege = estate_burghers_forest_expansion
+			}
+			scandinavia_region = {
+				add_province_modifier = {
+					name = OON_scandinavia_dev
+					duration = 1825
+				}
+			}
+		}
+	}
+
+	oon_develop_swedish_arms = {
+		icon = mission_iron_and_copper
+		required_missions = {
+			oon_integrate_sweden
+		}
+		trigger = {
+			owns = 4
+			owns = 5
+			owns = 1985
+			4 = {
+				base_production = 5
+				base_manpower = 7
+			}
+			5 = {
+				base_production = 5
+				base_manpower = 7
+			}
+			1985 = {
+				base_production = 5
+				base_manpower = 7
+			}
+		}
+		effect = {
+			4 = {
+				add_province_modifier = {
+					name = OON_swedish_arms_industry
+					duration = 3650
+				}
+			}
+			5 = {
+				add_province_modifier = {
+					name = OON_swedish_arms_industry
+					duration = 3650
+				}
+			}
+			1985 = {
+				add_province_modifier = {
+					name = OON_swedish_arms_industry
+					duration = 3650
+				}
+			}
+			set_country_flag = no_mil_focus_set
+		}
+	}
+}
+branch_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = OON } 
+
+	oon_develop_curonia = {
+		icon = mission_pol_revival_krakow  
+		required_missions = {
+			oon_eliminate_estonia
+		}
+		position = 2
+		trigger = {
+			treasury = 350
+			mil_power = 25
+			dip_power = 25
+			adm_power = 25
+		}
+
+		effect = {
+			1935 = {
+				add_base_manpower = 1
+				add_base_production = 1
+				add_or_upgrade_production_building = yes
+			}
+			35 = {
+				add_base_manpower = 1
+				add_base_production = 1
+				add_or_upgrade_production_building = yes
+			}
+			39 = {
+				add_base_manpower = 1
+				add_base_production = 1
+			}
+			add_treasury = -350
+			add_mil_power = -25
+			add_dip_power = -25
+			add_adm_power = -25
+		}
+
+		
+	}
+	oon_focus_on_naval_supplies = {
+		icon = mission_sailor_boat
+		required_missions = {
+			oon_develop_curonia
+		}
+		position = 3
+		trigger = {
+			any_owned_province = {
+				trade_goods = naval_supplies
+				base_production = 6
+			}
+			owns = 40
+			owns = 35
+		}
+		effect = {
+			40 = {
+				change_trade_goods = naval_supplies
+			}
+			35 = {
+				change_trade_goods = naval_supplies
+			}
+		}
+	}
+	oon_enhance_the_naval_industry = {
+		icon = mission_norwegian_ship
+		required_missions = {
+			oon_focus_on_naval_supplies
+		}
+		position = 4
+		trigger = {
+			any_owned_province = {
+				trade_goods = naval_supplies
+				base_production = 10
+			}
+			treasury = 150
+		}
+		effect = {
+			35 = {
+				add_or_upgrade_production_building = yes
+			}
+			40 = {
+				add_or_upgrade_production_building = yes
+			}
+			1935 = {
+				add_or_upgrade_production_building = yes
+			}
+			add_treasury = -150
+			set_country_flag = no_dip_focus_set
+		}
+	}
+	oon_invest_in_tradeports = {
+		icon = mission_trade_with_cathay
+		required_missions = {
+			oon_enhance_the_naval_industry
+		}
+		position = 5
+		trigger = {
+			owns = 35
+			owns = 38
+			owns = 39
+			treasury = 1000
+			35 = {
+				base_production = 4
+			}
+			39 = {
+				base_production = 5
+			}
+			38 = {
+				base_production = 8
+			}
+		}
+		effect = {
+			35 = {
+				add_base_production = 1
+				add_or_upgrade_trade_building = yes
+			}
+			38 = {
+				add_base_production = 1
+				add_or_upgrade_trade_building = yes
+			}
+			39 = {
+				add_base_production = 1
+				add_or_upgrade_trade_building = yes
+			}
+			add_treasury = -1000
+		}
+	}
+	oon_all_in_navy_supplies ={
+		icon = mission_expanded_leidang
+		required_missions = {
+			oon_invest_in_tradeports
+		}
+		position = 6
+		trigger = {
+			#mission_completed = aquire_prussia
+			treasury = 1000
+			east_prussia_area = {
+				base_production = 5
+			}
+		}
+		effect = {
+			every_owned_province = {
+				limit = {
+					trade_goods = naval_supplies
+				}
+				add_province_modifier = {
+				name = OON_naval_industry_booming
+				duration = -1
+				}
+			}
+			41 = {
+				change_trade_goods = naval_supplies
+			}		
+		}
+	}	
+	oon_develop_the_baltic_farmland = {
+		icon = mission_lit_harness_steppes
+		required_missions = { }
+		position = 7
+		trigger = {
+			treasury = 750
+			271 = {
+				base_tax = 5
+			}
+			4534 = {
+				base_tax = 5
+			}
+		}
+		effect = {
+			271 = {
+				change_trade_goods = grain
+				add_building = farm_estate
+			}
+			4534 = {
+				change_trade_goods = grain
+				add_building = farm_estate
+			}
+		}
+	}
+	oon_new_farming_technologies = {
+		icon = mission_rb_conquer_wales
+		required_missions = {
+			oon_develop_the_baltic_farmland
+		}
+		position = 8
+		trigger = {
+			treasury = 750
+			271 = {
+				base_tax = 7
+			}
+			4534 = {
+				base_tax = 7
+			}
+			4535 = {
+				base_tax = 7
+			}
+		}
+		effect = {
+			271 = {
+				add_base_production = 2
+			}
+			4534 = {
+				add_base_production = 2
+			}
+			4535 = {
+				add_base_production = 2
+				add_building = farm_estate
+				change_trade_goods = grain
+			}
+		}
+	}
+	oon_develop_danzig = {
+		icon = mission_pol_breadbasket_europe
+		required_missions = {
+			oon_new_farming_technologies
+		}
+		position = 9
+		trigger = {
+			treasury = 1500
+			owns = 43
+			owns = 1841
+			43 = {
+				base_production = 5
+				has_building = workshop
+			}
+			1841 = {
+				base_production = 5
+				has_building = workshop
+			}
+		}
+		effect = {
+			43 = {
+				add_base_production = 3
+				add_or_upgrade_production_building = yes
+			}
+			1841 = {
+				add_base_production = 3
+				add_or_upgrade_production_building = yes
+			}
+			add_treasury = -1500
+		}
+	}
+}
+branch_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = OON } 
+
+	
+}	
