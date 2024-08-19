@@ -45,7 +45,6 @@ nile_cattle_drive = {
 
     # Conditions for if the project will be destroyed when conquered
     keep_trigger = {
-       
     }
 
     # Tiers
@@ -179,7 +178,7 @@ nile_cattle_drive = {
 
         # What modifiers are given to the area of the province the project is located in
         area_modifier = {
-            trade_value = 1
+            trade_value = 10
             trade_goods_size = 1
             local_production_efficiency = 0.20
             supply_limit_modifier = -0.30
@@ -198,7 +197,6 @@ nile_cattle_drive = {
 
         # What happens when the upgrade is complete
         on_upgraded = {
-            #<do stuff> #For example; add_prestige = 25
         }
 	}
 }
