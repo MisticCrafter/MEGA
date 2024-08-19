@@ -1,4 +1,25 @@
 ﻿l_english:
+ kni_sway_pope_title:0 "Influence the Pope"
+ kni_sway_pope_desc:0 ""
+
+ kni_crusader_kings_title:0 "Crusader Kings"
+ kni_crusader_kings_desc:0 ""
+
+ kni_our_place_title:0 "Our Place in the World"
+ kni_our_place_desc:0 ""
+
+ kni_fortify_south_title:0 "Fortify the South"
+ kni_fortify_south_desc:0 ""
+
+ kni_entrenched_authority_title:0 "Entrenched Authority"
+ kni_entrenched_authority_desc:0 ""
+
+ kni_three_castles_title:0 "Three Castles"
+ kni_three_castles_desc:0 ""
+
+ kni_cyrenaica_title:0 "Cyrenaica Citadeks"
+ kni_cyrenaica_desc:0 ""
+
  kni_holy_alexandria_title:0 "Holy City of Alexandria"
  kni_holy_alexandria_desc:0 ""
 
@@ -25,27 +46,6 @@
 
  kni_legion_white_cross_title:0 "Legion of the White Cross"
  kni_legion_white_cross_desc:0 ""
-
- kni_sway_pope_title:0 "Influence the Pope"
- kni_sway_pope_desc:0 ""
-
- kni_crusader_kings_title:0 "Crusader Kings"
- kni_crusader_kings_desc:0 ""
-
- kni_our_place_title:0 "Our Place in the World"
- kni_our_place_desc:0 ""
-
- kni_fortify_south_title:0 "Fortify the South"
- kni_fortify_south_desc:0 ""
-
- kni_entrenched_authority_title:0 "Entrenched Authority"
- kni_entrenched_authority_desc:0 ""
-
- kni_three_castles_title:0 "Three Castles"
- kni_three_castles_desc:0 ""
-
- kni_cyrenaica_title:0 "Cyrenaica Citadeks"
- kni_cyrenaica_desc:0 ""
 
  kni_struggle_mediterranean_title:0 "Struggle for the Mediterranean"
  kni_struggle_mediterranean_desc:0 ""
@@ -89,20 +89,16 @@
  kni_landfall_venice_title:0 "Landfall in Venice"
  kni_landfall_venice_desc:0 ""
 
+ kni_landfall_sicily_title:0 "Landfall in Sicily"
+ kni_landfall_sicily_desc:0 ""
+
  kni_rome_title:0 "Restorer of the Universe"
  kni_rome_desc:0 ""
 
  kni_europe_title:0 "Europa Universalis"
  kni_europe_desc:0 ""
 
- kni_landfall_sicily_title:0 "Landfall in Sicily"
- kni_landfall_sicily_desc:0 ""
 
-
- kni_city_of_god_one_title:0 "City of God"
- kni_city_of_god_one_desc:0 ""
- kni_city_of_god_two_title:0 "City of God II"
- kni_city_of_god_two_desc:0 ""
  kni_city_of_god_three_title:0 "Of the World's Desire"
  kni_city_of_god_three_desc:0 ""
  kni_cairo_god_title:0 "City of God"

@@ -42,15 +42,17 @@ kni_city_of_god_II = {
 	local_development_cost_modifier = -0.10
 	allowed_num_of_manufactories = 1
 	local_tax_modifier = 0.50
+	local_defensiveness = 0.25
 }
 kni_city_of_god_III = {
 	monthly_splendor = 3
-	prestige = 3
-	local_development_cost = -0.20
-	local_development_cost_modifier = -0.20
+	prestige = 2
+	country_admin_power = 1
+	local_development_cost = -0.30
+	local_development_cost_modifier = -0.30
 	allowed_num_of_manufactories = 2	
 	local_tax_modifier = 0.100
-	local_production_efficiency = 0.33
+	local_production_efficiency = 0.20
 	local_defensiveness = 0.5
 }
 kni_out_ally = {
