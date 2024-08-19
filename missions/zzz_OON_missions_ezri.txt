@@ -457,7 +457,7 @@ branch_3 = {
 	oon_integrate_sweden = {
 		icon = mission_swedish_great_power
 		required_missions = {
-			oon_invest_in_tradeports
+			oon_enhance_the_naval_industry
 		}
 		trigger = {
 			owns = 1
@@ -621,7 +621,7 @@ branch_4 = {
 	oon_invest_in_tradeports = {
 		icon = mission_trade_with_cathay
 		required_missions = {
-			oon_focus_on_naval_supplies
+			oon_enhance_the_naval_industry
 		}
 		position = 5
 		trigger = {
