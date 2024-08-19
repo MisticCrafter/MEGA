@@ -478,30 +478,3 @@ country_event = {
 		override_country_name = ARI
 	}
 }
-#check for palatini units thignynninga
-country_event = {
-	id = dotts_events.9
-	title = dotts_events.1.t
-	desc = dotts_events.1.d
-	picture = DIPLOMACY_eventPicture
-	hidden = yes
-	trigger = {
-		OR = {
-			tag = SIC
-			tag = TTS
-			tag = ITA
-		}
-		has_reform = dollarstore_roman_republic_government
-		NOT = {
-			has_country_modifier = palatini_regiments
-		}
-	}
-	option = {
-		name = dotts_events.1.a
-		add_country_modifier = {
-			name = palatini_regiments
-			duration = -1
-			hidden = yes
-		}
-	}
-}

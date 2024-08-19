@@ -84,6 +84,21 @@ confed_major_city = {
 	local_development_cost = -0.15
 	production_efficiency = 0.33
 }
+# Subject Type: Crusader State
+sister_holy_order_vassal_modifier = {
+	global_missionary_strength = 0.02
+	discipline = 0.05
+	manpower_recovery_speed = 0.1
+}
+
+sister_holy_order_vassal_overlord_is_papal_controller_modifier = {
+	liberty_desire = -10
+}
+
+sister_holy_order_vassal_overlord_modifier = {
+	global_missionary_strength = 0.01
+	papal_influence = 2
+}
 #sicily
 palatini_regiments = {
 	assault_fort_ability = -0.25

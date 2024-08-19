@@ -97,16 +97,18 @@ vassal = {
 	end_date="1836.1.1"
 }
 
-vassal = {
-	first = "PAP"
-	second = "ASY"
-	start_date="1444.11.11"
+dependency = {
+	subject_type="sister_holy_order"
+	first="PAP"
+	second="ASY"
+	start_date="769.1.1"
 	end_date="1836.1.1"
 }
 
-vassal = {
-	first = "PAP"
-	second = "TEM"
+dependency = {
+	subject_type="sister_holy_order"
+	first="PAP"
+	second="TEM"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
