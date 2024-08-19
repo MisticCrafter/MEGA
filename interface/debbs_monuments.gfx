@@ -3,4 +3,8 @@ spriteTypes = {
         name = "GFX_great_project_triacastra"	
         texturefile = "gfx//interface//great_projects//great_project_triacastra.dds"
     }
+    spriteType = {
+        name = "GFX_great_project_nile_cattle_drive"	
+        texturefile = "gfx//interface//great_projects//great_project_nile_cattle_drive.dds"
+    }
 }
