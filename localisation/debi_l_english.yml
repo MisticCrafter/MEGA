@@ -77,6 +77,12 @@
  kni_mercantile_relationships_title:0 "Mercantile Relationships"
  kni_mercantile_relationships_desc:0 ""
 
+ kni_port_of_damietta_title:0 "Port of Damietta"
+ kni_port_of_damietta_desc:0 ""
+
+ kni_port_of_pelusia_title:0 "Port of Pelusia"
+ kni_port_of_pelusia_desc:0 ""
+
  kni_establish_merchant_escorts_title:0 "Merchant Escorts"
  kni_establish_merchant_escorts_desc:0 ""
 
