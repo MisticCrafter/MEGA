@@ -57,14 +57,14 @@ Ural_gold_mine = {
 
 #OON
 appeased_trikai_family = {
-	local_tax_modifier = -0.10
-	nobles_exclusive_influence_modifier = 0.02
+	global_tax_modifier = -0.35
+	nobles_influence_modifier = 0.10
 	nobles_loyalty_modifier = -0.05
 }
 
 angered_trikai_family = {
 	nobles_influence_modifier = -0.05
-	nobles_loyalty_modifier = -0.10
+	nobles_loyalty_modifier = -0.15
 }
 recently_raided_treasury = {
 }
@@ -101,10 +101,10 @@ melancholic_millenium = {
 smoldering_hope = {
 	global_attacker_dice_roll_bonus = 1
 	land_morale = 0.10
-	land_maintenance_modifier = -0.50
-	reinforce_cost_modifier = -0.50
+	land_maintenance_modifier = -0.45
+	reinforce_cost_modifier = -0.45
 	global_manpower_modifier = 0.15
-	siege_ability = 0.20
+	siege_ability = 0.15
 	core_creation = -0.20
 	country_diplomatic_power = 1
 	country_military_power = 1
@@ -112,9 +112,6 @@ smoldering_hope = {
 
 estonia_conqured = {
 	manpower_in_accepted_culture_provinces = 0.10
-	global_tax_modifier = 0.05
-	shock_damage_received = -0.02
-	global_trade_goods_size_modifier = 0.02
 	church_loyalty_modifier = 0.05
 	church_influence_modifier = 0.05
 	nobles_loyalty_modifier = 0.05
@@ -124,45 +121,36 @@ estonia_conqured = {
 }
 
 OON_a_new_home = {
-	global_missionary_strength = 0.25
+	global_missionary_strength = 0.02
 	missionaries = 1
-	missionary_maintenance_cost = -0.25
+	missionary_maintenance_cost = -0.20
 	global_prosperity_growth = 0.10
-	global_tax_modifier = 0.10
-	production_efficiency = 0.05
-	interest = -1
+	interest = -0.50
 }
 
 OON_riga_tradeport = {
-	trade_goods_size = 3
 	province_trade_power_value = 5
-	naval_forcelimit = 20
+	naval_forcelimit = 15
 	local_sailors = 5000
 	burghers_loyalty_modifier = 0.10
 	burghers_influence_modifier = 0.05
 }
 
 OON_riga_castle = {
-	local_manpower = 6
-	land_forcelimit = 10
-	local_fort_maintenance_modifier = -0.90
-	local_defensiveness = 0.50
-	nobles_loyalty_modifier = 0.10
+	land_forcelimit = 5
+	local_fort_maintenance_modifier = -0.50
+	local_defensiveness = 0.33
 }
 
 OON_riga_cathedral = {
-	local_development_cost_modifier = 0.25
-	tax_income = 60
-	governing_cost = -0.25
-	church_loyalty_modifier = 0.10
-	tolerance_own = 1
+	local_development_cost_modifier = -0.15
+	tax_income = 45
+	governing_cost = -0.20
 }
 
 OON_survival = {
 	nobles_influence_modifier = -0.20
-	nobles_loyalty_modifier = -0.05
-	global_missionary_strength = 0.25
-	global_trade_goods_size_modifier = 0.10
+	nobles_loyalty_modifier = -0.10
 	interest = -1
 	country_admin_power = 1
 }
@@ -170,14 +158,10 @@ OON_survival = {
 OON_proved_them_wrong = {
 	nobles_influence_modifier = -0.20
 	nobles_loyalty_modifier = -0.05
-	global_missionary_strength = 0.25
-	global_trade_goods_size_modifier = 0.10
 	interest = -1
 	country_admin_power = 1
 	movement_speed = 0.15
-	fire_damage_received = -0.05
-	shock_damage_received = -0.10
-	production_efficiency = 0.15
+	production_efficiency = 0.10
 	spy_offence = 0.25
 
 }
@@ -185,10 +169,10 @@ OON_proved_them_wrong = {
 OON_reduced_atoms = {
 	nobles_influence_modifier = -0.90
 	nobles_loyalty_modifier = -0.30
-	production_efficiency = 0.15
+	production_efficiency = 0.10
 	innovativeness_gain = 0.33
 	tolerance_own = 1
-	country_admin_power = 2
+	country_admin_power = 1
 	burghers_influence_modifier = 0.10
 	church_influence_modifier = 0.10
 	
@@ -213,7 +197,7 @@ OON_polish_funny = {
 }
 
 OON_baltic_trade = {
-	global_own_trade_power = 0.20
+	global_own_trade_power = 0.15
 }
 
 OON_swedish_arms_industry = {
