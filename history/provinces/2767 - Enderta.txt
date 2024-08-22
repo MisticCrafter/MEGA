@@ -9,7 +9,6 @@ base_tax = 3
 base_production = 7
 base_manpower = 1
 add_core = ETH
-add_core = MED
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

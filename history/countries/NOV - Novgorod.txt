@@ -6,6 +6,7 @@ religion = orthodox
 primary_culture = novgorodian
 capital = 310
 add_accepted_culture = russian
+add_historical_friend = OON
 1444.11.11= {
 	monarch = {
 		name = "Stepan"

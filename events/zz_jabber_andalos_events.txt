@@ -654,6 +654,16 @@ country_event = {
 		name = flavor_andalos.13.a
 		ai_chance = { factor = 75 }
 		change_religion = tigranic
+		every_owned_province = {
+			limit = {
+				development = 10
+			}
+			change_religion = tigranic
+		}
+		add_country_modifier = {
+			name = "tigranic_more_missionaries"
+			duration = 7300
+		}
 		add_country_modifier = {
 			name = "religious_zeal"
 			duration = 7300
@@ -710,6 +720,14 @@ country_event = {
 		name = flavor_andalos.14.a
 		custom_tooltip = hellenic_refugees_andal_tt
 		hidden_effect = {
+			ADU = {
+				add_prestige = 10
+				add_adm_power = -50
+				add_country_modifier = {
+					name = "adu_hellenic_refugees"
+					duration = 7300
+				}
+			}
 			every_known_country = {
 				limit = {
 					primary_culture = andal

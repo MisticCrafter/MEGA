@@ -347,6 +347,9 @@ monarchy = {
 				#1.37 Bohemia
 				vozove_hradby_reform
 				russian_mercenary_guard_reform 
+				#hi
+				three_branches_reform
+				sic_palatini_reform
 			}
 		}
 		deliberative_assembly = {
@@ -628,6 +631,7 @@ republic = {
 		protectorate_parliament_legacy
 		prussian_republic
 		united_cantons_legacy
+		mandate_of_ierland_republic_reform
 	}
 	reform_levels = {
 		oligarchy_merchant_class_noble_elite = {
@@ -861,6 +865,9 @@ republic = {
 				#1.37 Bohemia
 				vozove_hradby_reform
 				russian_mercenary_guard_reform 
+				#helo
+				three_branches_reform
+				sic_palatini_reform
 			}
 		}
 		parliamentary_vs_presidential = {
@@ -1285,6 +1292,9 @@ theocracy = {
 				#Egypt
 				egyptian_government_reform
 				blood_theocracy_reform
+				#Lithuania
+				depressed_orthodox_church
+				Knightly_Order
 				#Hi it's me dotto again smile
 				outremer_government_reform
 				stardust_crusaders_reform
@@ -1437,6 +1447,9 @@ theocracy = {
 				#1.37 Bohemia
 				vozove_hradby_reform
 				russian_mercenary_guard_reform 
+				#doubtful
+				three_branches_reform
+				sic_palatini_reform
 			}
 		}
 		secularization = {

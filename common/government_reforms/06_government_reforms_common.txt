@@ -2968,7 +2968,11 @@ condottieri_contracts_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		has_dlc = "Domination"
-		culture_group = latin
+		OR = {
+			culture_group = latin
+			culture_group = roman_group
+		}
+		
 	}
 	trigger = {
 		if = {

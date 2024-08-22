@@ -1,0 +1,238 @@
+akaman_slot_1_missions = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential_on_load = {
+		
+	}
+	potential = {
+		tag = Z01
+		NOT = { map_setup = map_setup_random }
+		is_random_new_world = no
+	}
+	has_country_shield = yes
+
+	aka_go_westward = {
+		icon = mission_establish_high_seas_navy
+		position = 2
+		completed_by = 1501.1.1
+		
+		provinces_to_highlight = {
+			province = 1098ss
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		
+		trigger = { 
+			custom_trigger_tooltip = {
+				tooltip = miss_discover_sthelena
+				1098 = {
+					has_discovered = ROOT
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = miss_colonize_sthelena
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 1
+					province = 1098
+					is_city = yes
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "aka_colon_buff"
+				duration = -1
+			}
+		}
+	}
+
+	aka_brazil_colonies = {
+		icon = mission_iberian_conquistador
+		required_missions = { aka_go_westward }
+		completed_by = 1540.1.1
+		
+		provinces_to_highlight = {
+			colonial_region = colonial_brazil
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		
+		trigger = { 
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 10
+				colonial_region = colonial_brazil
+				is_city = yes
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "aka_brazil_buff"
+				duration = 7300
+			}
+		}
+	}
+
+	aka_bandeirantes = {
+		icon = mission_brazilian_bandeirantes
+		required_missions = { aka_brazil_colonies }
+		
+		provinces_to_highlight = {
+			OR = {
+				area = minas_gerais_area
+				area = rio_de_janeiro_area
+				area = sao_paolo_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			if = {
+				
+				763 = {
+					province_has_center_of_trade_of_level = 2
+				}
+			}
+			else = {
+				763 = {
+					OR = {
+						has_building = marketplace
+						has_building = trade_depot
+						has_building = stock_exchange
+					}
+				}
+			}
+			minas_gerais_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			rio_de_janeiro_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			sao_paolo_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					765 = {
+						NOT = {
+							trade_goods = gold
+						}
+					}
+				}
+				765 = {
+					change_trade_goods = gold
+				}
+			}
+			765 = {
+				add_province_modifier = {
+					name = "por_minas_gerais"
+					duration = -1
+				}
+			}
+			set_country_flag = por_bandeirantes_flag
+			custom_tooltip = por_bandeirantes_tooltip
+		}
+	}
+
+	aka_yucatan_colonies = {
+		icon = mission_establish_high_seas_navy
+		required_missions = { aka_bandeirantes }
+		completed_by = 1540.1.1
+		
+		provinces_to_highlight = {
+			region = central_america_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		
+		trigger = { 
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 9
+				region = central_america_region
+				is_city = yes
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "aka_yucatan_buff"
+				duration = 7300
+			}
+			define_conquistador = {
+				name = "Valen McSpiegel"
+				fire = 4
+				shock = 4
+				manuever = 5
+				siege = 1
+			}
+			kongo_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	aka_cacao_plantations = {
+		icon = mission_brazilian_bandeirantes
+		required_missions = { aka_yucatan_colonies }
+		
+		provinces_to_highlight = {
+			region = central_america_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		
+		trigger = {
+			if = {
+				
+				763 = {
+					province_has_center_of_trade_of_level = 2
+				}
+			}
+			else = {
+				763 = {
+					OR = {
+						has_building = marketplace
+						has_building = trade_depot
+						has_building = stock_exchange
+					}
+				}
+			}
+			central_america_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+
+		}
+		effect = {
+			if = {
+				limit = {
+					765 = {
+						NOT = {
+							trade_goods = cacao
+						}
+					}
+				}
+				765 = {
+					change_trade_goods = cacao
+				}
+			}
+			765 = {
+				add_province_modifier = {
+					name = "cacao_plantations"
+					duration = -1
+				}
+			}
+			set_country_flag = cacao_plantation_flag
+			custom_tooltip = cacao_plantation_tooltip
+		}
+	}
+}

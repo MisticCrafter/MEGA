@@ -1,5 +1,5 @@
-owner = POL
-controller = POL
+owner = MAZ
+controller = MAZ
 capital = "Plock"
 is_city = yes
 culture = polish
@@ -9,6 +9,7 @@ fort_15th = yes
 base_tax = 6
 base_production = 4
 base_manpower = 4
+add_core = MAZ
 add_core = POL
 discovered_by = east_african
 discovered_by = eastern

@@ -6,6 +6,7 @@ religion = catholic
 primary_culture = mare-roman
 capital = 125
 set_country_flag = ZZZ_generated_converter_nation
+add_historical_friend = Z00
 1444.11.11= {
 	monarch = {
 		name = "Cassia"
@@ -49,6 +50,11 @@ set_country_flag = ZZZ_generated_converter_nation
 	}
 	add_heir_personality = obsessive_perfectionist_personality
 	add_heir_personality = pious_personality
+}
+add_country_modifier = {
+	name = palatini_regiments
+	duration = -1
+	hidden = yes
 }
 1444.11.11= {
 	add_prestige = 127

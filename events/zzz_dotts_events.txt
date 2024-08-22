@@ -1,0 +1,480 @@
+namespace = dotts_events
+
+country_event = {
+	id = dotts_events.1
+	title = dotts_events.1.t
+	desc = dotts_events.1.d
+	picture = DIPLOMACY_eventPicture
+	hidden = yes
+	trigger = {
+		OR = {
+			AND = {
+				has_country_modifier = kni_out_ally
+				NOT = {
+					Z00 = {
+						alliance_with = ROOT
+					}
+				}
+			}
+			AND = {
+				has_country_modifier = out_kni_ally
+				NOT = {
+					KNI = {
+						alliance_with = ROOT
+					}
+				}
+			}
+			AND = {
+				has_country_modifier = out_lae_ally
+				NOT = {
+					LAE = {
+						alliance_with = ROOT
+					}
+				}
+			}
+			AND = {
+				has_country_modifier = out_nax_ally
+				NOT = {
+					NAX = {
+						alliance_with = ROOT
+					}
+				}
+			}
+			AND = {
+				has_country_modifier = out_mor_ally
+				NOT = {
+					MOR = {
+						alliance_with = ROOT
+					}
+				}
+			}
+			AND = {
+				has_country_modifier = out_tem_ally
+				NOT = {
+					TEM = {
+						alliance_with = ROOT
+					}
+				}
+			}
+		}
+		
+	}
+	option = {
+		if = {
+			limit = {
+				has_country_modifier = out_kni_ally
+				NOT = {
+					KNI = {
+						alliance_with = ROOT
+					}
+				}
+			}
+			remove_country_modifier = out_kni_ally
+		}
+		if = {
+			limit = {
+				has_country_modifier = out_lae_ally
+				NOT = {
+					LAE = {
+						alliance_with = ROOT
+					}
+				}
+			}
+			remove_country_modifier = out_lae_ally
+		}
+		if = {
+			limit = {
+				has_country_modifier = out_nax_ally
+				NOT = {
+					NAX = {
+						alliance_with = ROOT
+					}
+				}
+			}
+			remove_country_modifier = out_nax_ally
+		}
+		if = {
+			limit = {
+				has_country_modifier = out_mor_ally
+				NOT = {
+					MOR = {
+						alliance_with = ROOT
+					}
+				}
+			}
+			remove_country_modifier = out_mor_ally
+		}
+		if = {
+			limit = {
+				has_country_modifier = out_tem_ally
+				NOT = {
+					TEM = {
+						alliance_with = ROOT
+					}
+				}
+			}
+			remove_country_modifier = out_tem_ally
+		}
+	}
+}
+
+#purchase of both provinces
+country_event = {
+	id = dotts_events.2
+	title = dotts_events.2.t
+	desc = dotts_events.2.d
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = dotts_events.2.a
+		4316 = {
+			cede_province = Z00
+			add_core = Z00
+		}
+		2315 = {
+			cede_province = Z00
+			add_core = Z00
+		}
+		add_treasury = 1000
+		Z00 = {
+			add_treasury = -1000
+		}
+		add_country_modifier = {
+			name = out_suez_profit
+			duration = -1
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				NOT = {
+					has_opinion = {
+						who = Z00
+						value = 100
+					}
+				}
+			}
+			modifier = {
+				factor = 25
+				alliance_with = Z00
+			}
+			modifier = {
+				factor = 25
+				has_opinion = {
+					who = Z00
+					value = 180
+				}
+			}
+		}
+	}
+	option = {
+		name = dotts_events.2.b
+		4316 = {
+			add_permanent_claim = Z00
+		}
+		2315 = {
+			add_permanent_claim = Z00
+		}
+		add_prestige = 20
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+country_event = { #suez
+	id = dotts_events.3
+	title = dotts_events.3.t
+	desc = dotts_events.3.d
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = dotts_events.2.a
+		2315 = {
+			cede_province = Z00
+			add_core = Z00
+		}
+		add_treasury = 500
+		Z00 = {
+			add_treasury = -500
+		}
+		add_country_modifier = {
+			name = out_suez_halfprofit
+			duration = -1
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				NOT = {
+					has_opinion = {
+						who = Z00
+						value = 100
+					}
+				}
+			}
+			modifier = {
+				factor = 25
+				alliance_with = Z00
+			}
+			modifier = {
+				factor = 25
+				has_opinion = {
+					who = Z00
+					value = 180
+				}
+			}
+		}
+	}
+	option = {
+		name = dotts_events.2.b
+		2315 = {
+			add_permanent_claim  = Z00
+		}
+		add_prestige = 10
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+country_event = { #pelusia 
+	id = dotts_events.4
+	title = dotts_events.4.t
+	desc = dotts_events.4.d
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = dotts_events.2.a
+		4316 = {
+			cede_province = Z00
+			add_core = Z00
+		}
+		add_treasury = 500
+		Z00 = {
+			add_treasury = -500
+		}
+		add_country_modifier = {
+			name = out_suez_halfprofit
+			duration = -1
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				NOT = {
+					has_opinion = {
+						who = Z00
+						value = 100
+					}
+				}
+			}
+			modifier = {
+				factor = 25
+				alliance_with = Z00
+			}
+			modifier = {
+				factor = 25
+				has_opinion = {
+					who = Z00
+					value = 180
+				}
+			}
+		}
+	}
+	option = {
+		name = dotts_events.2.b
+		4316 = {
+			add_permanent_claim = Z00
+		}
+		add_prestige = 10
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+country_event = { #persia fix
+	id = dotts_events.5
+	title = flavor_per.18.t
+	desc = flavor_per.18.desc
+	picture = CITY_VIEW_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_per.18.a
+		trigger = {
+			OR = {
+				has_country_flag = per_shia_missions
+				has_country_flag = per_sunni_missions
+				has_country_flag = per_zoroastrian_missions
+			}
+		}
+		select_current_missions = { key = PER }
+		ai_chance = { factor = 0 }
+		add_adm_power = 20000
+	}
+	
+	option = {
+		name = flavor_per.18.c
+		trigger = { NOT = { has_country_flag = per_shia_missions } }
+		set_country_flag = per_shia_missions
+		clr_country_flag = per_sunni_missions
+		clr_country_flag = per_zoroastrian_missions
+		swap_non_generic_missions = yes
+		custom_tooltip = per_preview_muslim_missions
+		ai_chance = { factor = 0 }
+	}
+	
+	option = {
+		name = flavor_per.18.c
+		trigger = { NOT = { has_country_flag = per_sunni_missions } }
+		clr_country_flag = per_shia_missions
+		set_country_flag = per_sunni_missions
+		clr_country_flag = per_zoroastrian_missions
+		swap_non_generic_missions = yes
+		custom_tooltip = per_preview_muslim_missions
+		ai_chance = { factor = 0 }
+	}
+	
+	option = {
+		name = flavor_per.18.d
+		trigger = { NOT = { has_country_flag = per_zoroastrian_missions } }
+		clr_country_flag = per_shia_missions
+		clr_country_flag = per_sunni_missions
+		set_country_flag = per_zoroastrian_missions
+		swap_non_generic_missions = yes
+		custom_tooltip = per_preview_zoroastrian_missions
+		ai_chance = { factor = 0 }
+	}
+	
+	option = {
+		name = flavor_per.18.e
+		custom_tooltip = BYZ_nothing_will_occur
+		ai_chance = {
+			factor = 0
+		}
+	}
+
+	#AI section
+	option = {
+		trigger = {
+			ai = yes
+		}
+		random_list = {
+			60 = { set_country_flag = per_catholic clr_country_flag = per_zoroastrian_missions }
+			40 = { clr_country_flag = per_catholic set_country_flag = per_zoroastrian_missions }
+		}
+		swap_non_generic_missions = yes
+		select_current_missions = { key = PER }
+		trigger_switch = {
+			on_trigger = has_country_flag
+			per_catholic = { add_adm_power = 50 add_dip_power = 50 add_mil_power = 50 }
+			per_zoroastrian_missions = { country_event = { id = flavor_per.35 } }
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+#check for if owning dutch colonial office 
+country_event = {
+	id = dotts_events.6
+	title = dotts_events.6.t
+	desc = dotts_events.6.d
+	picture = DIPLOMACY_eventPicture
+	hidden = yes
+
+	trigger = {
+		owns = 965
+		primary_culture = dutch
+		OR = {
+			is_former_colonial_nation = yes
+			is_colonial_nation = yes
+		}
+		965 = {
+			has_great_project = {
+				type = dutch_colonial_office
+				tier = 3
+			}
+		}
+	}
+	option = {
+		set_country_flag = mesoamerica_american_frontiers_flag
+		set_country_flag = ned_colonial_office
+	}
+}
+#check for if has dutch colonial office frontier but not owning it because fucking blahablablahblah cant set flags with that kinda shit fuck you whoever is reading this, shit for brains.
+country_event = {
+	id = dotts_events.7
+	title = dotts_events.7.t
+	desc = dotts_events.7.d
+	picture = DIPLOMACY_eventPicture
+	hidden = yes
+
+	trigger = {
+		NOT = {owns = 965}
+		has_country_flag = ned_colonial_office
+	}
+	option = {
+		clr_country_flag = mesoamerica_american_frontiers_flag
+		clr_country_flag = ned_colonial_office
+	}
+}
+
+country_event = {
+	id = dotts_events.8
+	title = dotts_events.8.t
+	desc = dotts_events.8.d
+	picture = DIPLOMACY_eventPicture
+	hidden = yes
+
+	trigger = {
+		OR = {
+			AND = {
+				tag = ITA
+				has_country_flag = formed_aragon_italy
+				NOT = {
+					num_of_owned_provinces_with = {
+						value = 3
+						area = aragon_area
+					}
+				}
+			}
+			AND = {
+				tag = ITA
+				NOT = {has_country_flag = formed_aragon_italy}
+				num_of_owned_provinces_with = {
+					value = 3
+					area = aragon_area
+				}
+			}
+		}
+		
+	}
+	option = {
+		trigger = {
+			tag = ITA
+			has_country_flag = formed_aragon_italy
+			
+		}
+		clr_country_flag = formed_aragon_italy
+		restore_country_name = yes
+		restore_country_color = yes
+	}
+	option = {
+		trigger = {
+			tag = ITA
+			NOT = {has_country_flag = formed_aragon_italy}
+			num_of_owned_provinces_with = {
+				value = 3
+				area = aragon_area
+			}
+		}
+		change_country_color = {
+			color = {
+				136 103 58
+			}
+		}
+		set_country_flag = formed_aragon_italy
+		override_country_name = ARI
+	}
+}

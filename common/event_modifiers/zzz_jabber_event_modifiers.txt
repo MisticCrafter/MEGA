@@ -15,6 +15,10 @@ adu_caribbean_buff = {
     trade_steering = 0.1
 }
 
+adu_gold_buff = {
+    trade_goods_size = 2
+}
+
 adu_malabar_buff = {
     placed_merchant_power = 5
     global_ship_trade_power = 0.3
@@ -62,8 +66,7 @@ swi_andal_alliance_modifier = {
 
 adu_ascendancy = {
     max_absolutism_effect = 0.2
-    diplomatic_reputation = 2
-    land_morale = 0.15
+    diplomatic_reputation = 2 #removed morale, honestly the absol effect should offset it once you get absolutism going
 }
 
 adu_circumnavigation_modifier = {
@@ -131,8 +134,64 @@ adu_rejected_faith_union = {
 
 adu_hellenic_refugees = {
     idea_cost = -0.05
-    global_colonial_growth = 25
-    state_maintenance_modifier = 0.25
+    global_colonial_growth = 20 #lowered setller growth a bit, but reduced state maint debuf
+    state_maintenance_modifier = 0.20
+}
+
+adu_adopting_paladins = {
+    reinforce_speed = -0.3
+    land_maintenance_modifier = 0.6
+    land_morale = -0.3
+    is_tercio_modifier = yes
+}
+
+
+adu_reformed_paladins = {
+    allowed_tercio_fraction = 0.20 #you will see my side note below, this modifier right here is an exception, too much tercios.... menolike
+    drill_gain_modifier = 0.33
+	reinforce_speed = 0.25
+	is_tercio_modifier = yes
+}
+
+adu_galleons = {
+	allowed_galleon_fraction = 0.2
+	has_galleon = yes
+	navy_tradition = 0.25
+}
+
+adu_caravels = {
+    allowed_caravel_fraction = 0.2
+    has_caravel = yes
+    navy_tradition = 0.25
+}
+
+adu_adopting_galleons = {
+    global_ship_cost = 0.3
+    naval_maintenance_modifier = 0.6
+    naval_morale = -0.3
+    is_galleon_modifier = yes
+}
+
+adu_adopting_caravels = {
+    global_ship_cost = 0.3
+    naval_maintenance_modifier = 0.6
+    naval_morale = -0.3
+    is_caravel_modifier = yes
+}
+
+adu_reformed_galleons = {
+    movement_speed_in_fleet_modifier = 1
+    is_galleon_modifier = yes
+}
+
+adu_reformed_caravels = {
+    can_transport_units = yes
+    is_caravel_modifier = yes
+}
+#side note again, these caravel, galleon, and paladin ones are perfect, ty 
+adu_new_fleets = {
+    allowed_galleon_fraction = 0.1
+    allowed_caravel_fraction = 0.1
 }
 
 ###
@@ -162,11 +221,11 @@ tigranic_divination_dip_modifier = {
 }
 
 tigranic_divination_mil_modifier = {
-    land_morale = 0.1
+    land_morale = 0.1 
     global_tax_modifier = -0.1
     church_influence_modifier = 0.1
 }
-
+#I love these divination thingies, although more morale man wtf? keeping it as normal though
 tigranic_festival_modifier = {
     reduced_liberty_desire = 10
     improve_relation_modifier = 0.15
@@ -192,31 +251,31 @@ tigranic_warsongs_modifier = {
 
 tigranic_fertility_modifier = {
     heir_chance = 0.5
-    advisor_cost = 0.33
+    advisor_cost = 0.25 #lowkey misread a minus here, 33% more cost is BASED, buffing it for you though cause god damn man, keep breeding tho fr
 }
 
 tigranic_feedland_modifier = {
-    local_development_cost = -0.1
-    local_manpower_modifier = 0.5
+    local_development_cost = -0.05
+    local_manpower_modifier = 0.20 #what the sigma dude. lowered it to 20% (considering your crusade manpower buffs, you ideas, and the 10% local from religion) and you can keep the dev cost smhsmh
 }
 
 tigranic_exploitland_modifier = {
-    trade_goods_size_modifier = 0.25
+    local_development_cost = -0.05
+    trade_goods_size_modifier = 0.15 #No. but you can get dev cost with it now 25% > 15%
 }
 
 tigranic_buildlessons_modifier = {
-    build_cost = -0.25
+    build_cost = -0.15 #I dislike that much build cost man 25% > 15%
     global_prosperity_growth = 0.25
 }
 
 tigranic_techlessons_modifier = {
-    technology_cost = -0.1
-    yearly_innovativeness = 0.3
+    technology_cost = -0.1 #this is... a lot of reduction, but I think it's *FINE?* lowered inno gain from 33% to 20%
+    yearly_innovativeness = 0.20
 }
 
 tigranic_colonylessons_modifier = {
-    colony_development_boost = 1
-    colony_cost_modifier = -0.25
+    global_colonial_growth = 30 #noticed you changed this, thank you heart heart
 }
 
 tigranic_hellenic_refugees = {
@@ -230,12 +289,12 @@ tigranic_council_ministries_modifier = {
 }
 
 tigranic_council_innovations_modifier = {
-    technology_cost = -0.15
+    technology_cost = -0.1 #lowered to 10% that plus tech lessions is SO MUCH BRO
     church_loyalty_modifier = -0.15
 }
 
 tigranic_council_colonial_modifier = {
-    global_colonial_growth = 25
+    global_colonial_growth = 20 #25 > 20, tax and loyalty means NOTHIGN 
     colonist_placement_chance = 0.1
     global_tax_modifier = -0.25
     nobles_loyalty_modifier = -0.1
@@ -253,7 +312,7 @@ tigranic_council_diplomats_modifier = {
 }
 
 tigranic_council_merchantnavy_modifier = {
-    global_ship_trade_power = 0.3
+    global_ship_trade_power = 0.15 # 30% to 15%, you get a lot of ship trade power, you get that and trade steering here
     trade_steering = 0.1
     mercantilism_cost = 1
     admiral_cost = 1
@@ -269,7 +328,7 @@ tigranic_council_ordinances_modifier = {
 tigranic_council_charters_modifier = {
     placed_merchant_power = 5
     global_foreign_trade_power = 0.1
-    global_own_trade_power = -0.1
+    global_own_trade_power = -0.1 #this means nothing when you own all of iberia :( won't nerf but this makes me upset
     trade_company_governing_cost = 0.1
 }
 
@@ -279,10 +338,13 @@ tigranic_council_militarywages_modifier = {
     global_tax_modifier = -0.1
 }
 
-tigranic_council_sappers_modifier = {
-    siege_ability = 0.15
-    land_forcelimit_modifier = -0.15
-    land_maintenance_modifier = -0.10
+tigranic_council_sappers_modifier = { #LOWKEY WHEN YOU SEE THIS TALK TO ME, WE SHOULD CHANGE SIEGE ABILITY TO FORT ASSAULT ABILITY AND MAKE THEM TERCIO BUFFS WITH A DOWNSIDE OF TERCIO FRACTION
+    assault_fort_ability = 0.25
+    is_tercio_modifier = yes
+}
+
+tigranic_council_sappers_modifier2 = { #needed this to lower tercio fraction... I think so at least since I cant tack it on in the modifier above
+    allowed_tercio_fraction = -0.15
 }
 
 tigranic_council_cavalry_modifier = {
@@ -291,8 +353,15 @@ tigranic_council_cavalry_modifier = {
     nobles_loyalty_modifier = -0.15
 }
 
-tigranic_council_tercio_modifier = {
+tigranic_council_tercio_modifier = { #this one is cool I like it
     allowed_tercio_fraction = 0.2
     land_forcelimit_modifier = -0.2
     land_maintenance_modifier = -0.2
 }
+
+tigranic_more_missionaries = {
+    missionaries = 1
+    missionary_maintenance_cost = -0.5
+}
+
+#sorry if any of these comments make you like, tear up and cry, sob even... I just wanted to write comments smile

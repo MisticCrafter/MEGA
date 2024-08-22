@@ -1,0 +1,620 @@
+country_decisions = {
+
+	italian_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			NOT = { has_country_flag = formed_italy_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+			NOT = { exists = ITA }
+			NOT = { tag = PAP }
+			NOT = { tag = HLR }
+			OR = {
+				culture_group = latin
+				culture_group = roman_group
+			}
+			
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 15
+				}
+			}
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					region = italy_region
+					root = {
+						NOT = {
+							num_of_owned_provinces_with = {
+								value = 20
+								region = italy_region
+								is_core = root
+							}
+						}
+						owns_core_province = 101	
+						owns_core_province = 104	
+						owns_core_province = 116	
+						owns_core_province = 118	
+					}
+				}
+				province_id = 101	# Genoa
+				province_id = 104	# Milan
+				province_id = 116	# Firenze
+				province_id = 118	# Roma
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			adm_tech = 10
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns_core_province = 101	# Genoa
+			owns_core_province = 104	# Milan
+			owns_core_province = 116	# Firenze
+			owns_core_province = 118	# Roma
+			num_of_owned_provinces_with = {
+				value = 20
+				region = italy_region
+				is_core = root
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					is_part_of_hre = yes
+					is_elector = no
+					is_emperor = no
+				}
+				emperor = {
+					add_opinion = {
+						who = root
+						modifier = opinion_left_empire
+					}
+				}
+				set_in_empire = no
+				emperor = {
+					country_event = { id = hre_event.5 }
+				}
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				hidden_effect = {
+					set_in_empire = no
+				}
+				if = {
+					limit = {
+						NOT = { is_part_of_hre = yes } #for tooltip purposes
+					}
+					set_government_rank = 2
+				}
+			}
+			change_tag = ITA
+			on_change_tag_effect = yes
+			if = {
+				limit = {
+					aragon_area = {
+						type = all
+						owned_by = ROOT
+					}
+				}
+				override_country_name = ARI #They call me the best ever... they don't, but I think people should start doing that
+				hidden_effect = {
+					change_country_color = {
+						color = {
+							136 103 58
+						}
+					}
+					set_country_flag = formed_aragon_italy
+				}			
+			}
+			#this is so that a tier 1 reform is always selected, preventing the user from just never selecting one and enjoying loads of absolutism
+			if = {
+				limit = {
+					NOT = { has_reform_on_level = 0 }
+				}
+				add_government_reform = signoria_reform
+			}
+			italy_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ITA
+			}
+			add_prestige = 25
+			ITA = {
+				set_capital = 118
+			}
+			country_event = { id = ideagroups.1 } #Swap Ideas
+			swap_non_generic_missions = yes
+			set_country_flag = formed_italy_flag
+			set_global_flag = formed_italy_flag_global # for german mission
+		}
+		ai_will_do = {
+			factor = 400
+			modifier = {
+				factor = 0
+				NOT = {
+					calc_true_if = {
+						owns_core_province = 101	# Genoa
+						owns_core_province = 104	# Milan
+						owns_core_province = 116	# Firenze
+						owns_core_province = 118	# Roma
+						amount = 3
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					num_of_cities = 10
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = { adm_tech = 8 }
+			}
+		}
+	}
+
+	gods_kingdom = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+			NOT = { exists = ITA }
+			tag = PAP
+			NOT = { has_country_flag = is_kingdom_of_god_flag }
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 15
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 101	# Genoa
+				province_id = 103	# Torino
+				province_id = 104	# Milano
+				province_id = 106	# Modena
+				province_id = 110	# Trento
+				province_id = 111	# Udine / Aquileia
+				province_id = 112	# Venice
+				province_id = 114	# Bologna + Ravenna
+				province_id = 116	# Firenze
+				province_id = 115	# Pisa
+				province_id = 119	# Ancona + Fermo
+				province_id = 2976	# Perugia
+				province_id = 2977	# Pesaro
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			is_at_war = no
+			#Ecclesiastical provinces of Northern Italy
+			owns_core_province = 101	# Genoa
+			owns_core_province = 103	# Torino
+			owns_core_province = 104	# Milano
+			owns_core_province = 106	# Modena
+			owns_core_province = 110	# Trento
+			owns_core_province = 111	# Udine / Aquileia
+			owns_core_province = 112	# Venice
+			owns_core_province = 114	# Bologna + Ravenna
+			owns_core_province = 116	# Firenze
+			owns_core_province = 115	# Pisa
+			owns_core_province = 119	# Ancona + Fermo
+			owns_core_province = 2976	# Perugia
+			owns_core_province = 2977	# Pesaro
+		}
+		effect = {
+			country_event  = { id = catholic_flavor.2 }
+			every_province = {
+				limit = {
+					region = italy_region
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			override_country_name = KINGDOM_OF_GOD
+			set_country_flag = is_kingdom_of_god_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#legion decisions
+	sic_italian_legion_raise = {
+		potential = {
+			OR = {
+				tag = SIC
+				tag = TTS
+				tag = ITA
+			}
+			has_reform = dollarstore_roman_republic_government
+			NOT = {
+				has_country_modifier = italy_legion_modifier
+			}
+		}
+		provinces_to_highlight = {
+			region = italy_region
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		allow = {
+			num_of_owned_provinces_with = {
+				value = 40
+				region = italy_region
+			}
+			owns_core_province = 118
+			treasury = 750
+		}
+		effect = {
+			add_army_tradition = 10
+			custom_tooltip = legion_unlock_tt
+			add_treasury = -750
+			add_country_modifier = {
+				name = italy_legion_modifier
+				duration = -1
+			}
+		}
+	}
+	sic_italian_legion_disband = {
+		potential = {
+			has_country_modifier = italy_legion_modifier
+		}
+		allow = {
+			has_country_modifier = italy_legion_modifier
+			stability = 1
+		}
+		effect = {
+			add_army_tradition = -20
+			add_stability = -1
+			custom_tooltip = legion_disband_tt
+			remove_country_modifier = italy_legion_modifier
+		}
+	}
+	sic_african_legion_raise = {
+		potential = {
+			OR = {
+				tag = SIC
+				tag = TTS
+				tag = ITA
+			}
+			has_reform = dollarstore_roman_republic_government
+			NOT = {
+				has_country_modifier = africa_legion_modifier
+			}
+		}
+		provinces_to_highlight = {
+			region = maghreb_region
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		allow = {
+			num_of_owned_provinces_with = {
+				value = 25
+				region = maghreb_region
+			}
+			owns_core_province = 340
+			treasury = 750
+		}
+		effect = {
+			add_army_tradition = 10
+			custom_tooltip = legion_unlock_tt
+			add_treasury = -750
+			add_country_modifier = {
+				name = africa_legion_modifier
+				duration = -1
+			}
+		}
+	}
+	sic_african_legion_disband = {
+		potential = {
+			has_country_modifier = africa_legion_modifier
+		}
+		allow = {
+			has_country_modifier = africa_legion_modifier
+			stability = 1
+		}
+		effect = {
+			add_army_tradition = -20
+			add_stability = -1
+			custom_tooltip = legion_disband_tt
+			remove_country_modifier = africa_legion_modifier
+		}
+	}
+	sic_balkan_legion_raise = {
+		potential = {
+			OR = {
+				tag = SIC
+				tag = TTS
+				tag = ITA
+			}
+			has_reform = dollarstore_roman_republic_government
+			NOT = {
+				has_country_modifier = balkan_legion_modifier
+			}
+		}
+		provinces_to_highlight = {
+			region = balkan_region
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		allow = {
+			num_of_owned_provinces_with = {
+				value = 25
+				region = balkan_region
+			}
+			owns_core_province = 4704
+			treasury = 750
+		}
+		effect = {
+			add_army_tradition = 10
+			custom_tooltip = legion_unlock_tt
+			add_treasury = -750
+			add_country_modifier = {
+				name = balkan_legion_modifier
+				duration = -1
+			}
+		}
+	}
+	sic_balkan_legion_disband = {
+		potential = {
+			has_country_modifier = balkan_legion_modifier
+		}
+		allow = {
+			has_country_modifier = balkan_legion_modifier
+			stability = 1
+		}
+		effect = {
+			add_army_tradition = -20
+			add_stability = -1
+			custom_tooltip = legion_disband_tt
+			remove_country_modifier = balkan_legion_modifier
+		}
+	}
+	sic_egypt_legion_raise = {
+		potential = {
+			OR = {
+				tag = SIC
+				tag = TTS
+				tag = ITA
+			}
+			has_reform = dollarstore_roman_republic_government
+			NOT = {
+				has_country_modifier = egypt_legion_modifier
+			}
+		}
+		provinces_to_highlight = {
+			region = egypt_region
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		allow = {
+			num_of_owned_provinces_with = {
+				value = 20
+				region = egypt_region
+			}
+			owns_core_province = 358
+			treasury = 750
+		}
+		effect = {
+			add_army_tradition = 10
+			custom_tooltip = legion_unlock_tt
+			add_treasury = -750
+			add_country_modifier = {
+				name = egypt_legion_modifier
+				duration = -1
+			}
+		}
+	}
+	sic_egypt_legion_disband = {
+		potential = {
+			has_country_modifier = egypt_legion_modifier
+		}
+		allow = {
+			has_country_modifier = egypt_legion_modifier
+			stability = 1
+		}
+		effect = {
+			add_army_tradition = -20
+			add_stability = -1
+			custom_tooltip = legion_disband_tt
+			remove_country_modifier = egypt_legion_modifier
+		}
+	}
+	sic_iberian_legion_raise = {
+		potential = {
+			OR = {
+				tag = SIC
+				tag = TTS
+				tag = ITA
+			}
+			has_reform = dollarstore_roman_republic_government
+			NOT = {
+				has_country_modifier = iberia_legion_modifier
+			}
+		}
+		provinces_to_highlight = {
+			region = iberia_region
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		allow = {
+			num_of_owned_provinces_with = {
+				value = 30
+				region = iberia_region
+			}
+			owns_core_province = 208
+			treasury = 750
+		}
+		effect = {
+			add_army_tradition = 10
+			custom_tooltip = legion_unlock_tt
+			add_treasury = -750
+			add_country_modifier = {
+				name = iberia_legion_modifier
+				duration = -1
+			}
+		}
+	}
+	sic_iberian_legion_disband = {
+		potential = {
+			has_country_modifier = iberia_legion_modifier
+		}
+		allow = {
+			has_country_modifier = iberia_legion_modifier
+			stability = 1
+		}
+		effect = {
+			add_army_tradition = -20
+			add_stability = -1
+			custom_tooltip = legion_disband_tt
+			remove_country_modifier = iberia_legion_modifier
+		}
+	}
+	sic_france_legion_raise = {
+		potential = {
+			OR = {
+				tag = SIC
+				tag = TTS
+				tag = ITA
+			}
+			has_reform = dollarstore_roman_republic_government
+			NOT = {
+				has_country_modifier = france_legion_modifier
+			}
+		}
+		provinces_to_highlight = {
+			region = france_region
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		allow = {
+			num_of_owned_provinces_with = {
+				value = 30
+				region = france_region
+			}
+			owns_core_province = 75
+			treasury = 750
+		}
+		effect = {
+			add_army_tradition = 10
+			custom_tooltip = legion_unlock_tt
+			add_treasury = -750
+			add_country_modifier = {
+				name = france_legion_modifier
+				duration = -1
+			}
+		}
+	}
+	sic_france_legion_disband = {
+		potential = {
+			has_country_modifier = france_legion_modifier
+		}
+		allow = {
+			has_country_modifier = france_legion_modifier
+			stability = 1
+		}
+		effect = {
+			add_army_tradition = -20
+			add_stability = -1
+			custom_tooltip = legion_disband_tt
+			remove_country_modifier = france_legion_modifier
+		}
+	}
+	sic_jerusalem_legion_raise = {
+		potential = {
+			OR = {
+				tag = SIC
+				tag = TTS
+				tag = ITA
+			}
+			has_reform = dollarstore_roman_republic_government
+			NOT = {
+				has_country_modifier = jerusalem_legion_modifier
+			}
+		}
+		provinces_to_highlight = {
+			region = mashriq_region
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		allow = {
+			num_of_owned_provinces_with = {
+				value = 20
+				region = mashriq_region
+			}
+			owns_core_province = 379
+			treasury = 750
+		}
+		effect = {
+			add_army_tradition = 10
+			custom_tooltip = legion_unlock_tt
+			add_treasury = -750
+			add_country_modifier = {
+				name = jerusalem_legion_modifier
+				duration = -1
+			}
+		}
+	}
+	sic_jerusalem_legion_disband = {
+		potential = {
+			has_country_modifier = jerusalem_legion_modifier
+		}
+		allow = {
+			has_country_modifier = jerusalem_legion_modifier
+			stability = 1
+		}
+		effect = {
+			add_army_tradition = -20
+			add_stability = -1
+			custom_tooltip = legion_disband_tt
+			remove_country_modifier = jerusalem_legion_modifier
+		}
+	}
+}

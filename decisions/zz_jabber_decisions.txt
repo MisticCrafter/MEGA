@@ -75,7 +75,7 @@ country_decisions = {
     }
 
     andalos_exarchate_mauretania_decision = {
-        major = yes
+        color = { 0 128 128 }
         potential = {
             tag = ADU
             custom_trigger_tooltip = {
@@ -176,7 +176,7 @@ country_decisions = {
     }
 
     andalos_exarchate_africa_decision = {
-        major = yes
+        color = { 0 128 128 }
         potential = {
             tag = ADU
             custom_trigger_tooltip = {
@@ -266,7 +266,7 @@ country_decisions = {
     }
 
     andalos_exarchate_italy_decision = {
-        major = yes
+        color = { 0 128 128 }
         potential = {
             tag = ADU
             custom_trigger_tooltip = {
@@ -339,7 +339,7 @@ country_decisions = {
     }
 
     andalos_exarchate_france_decision = {
-        major = yes
+        color = { 0 128 128 }
         potential = {
             tag = ADU
             custom_trigger_tooltip = {
@@ -408,6 +408,119 @@ country_decisions = {
 
                 add_government_reform = andal_exarchate_reform
             }
+        }
+    }
+
+    crush_tigranic_heresy_decision = {
+        color = { 255 215 0 }
+        potential = {
+            total_development = 200
+            religion = catholic
+            any_known_country = {
+                religion = tigranic
+            }
+        }
+
+        provinces_to_highlight = {
+            has_discovered = ROOT
+            owner = {
+                religion = tigranic
+            }
+        }
+
+        allow = {
+            all_known_country = {
+                NOT = { religion = tigranic }
+            }
+        }
+
+        effect = {
+            custom_tooltip = crush_tigranic_heresy_success_tt
+        }
+    }
+
+    crush_thibaultine_heresy_decision = {
+        color = { 255 215 0 }
+        potential = {
+            total_development = 200
+            religion = catholic
+            any_known_country = {
+                religion = thibaultine
+            }
+        }
+
+        provinces_to_highlight = {
+            has_discovered = ROOT
+            owner = {
+                religion = thibaultine
+            }
+        }
+
+        allow = {
+            all_known_country = {
+                NOT = { religion = thibaultine }
+            }
+        }
+
+        effect = {
+            custom_tooltip = crush_thibaultine_heresy_success_tt
+        }
+    }
+
+    crush_rationalist_heresy_decision = {
+        color = { 255 215 0 }
+        potential = {
+            total_development = 200
+            religion = catholic
+            any_known_country = {
+                religion = rationalist
+            }
+        }
+
+        provinces_to_highlight = {
+            has_discovered = ROOT
+            owner = {
+                religion = rationalist
+            }
+        }
+
+        allow = {
+            all_known_country = {
+                NOT = { religion = rationalist }
+            }
+        }
+
+        effect = {
+            custom_tooltip = crush_rationalist_heresy_success_tt
+        }
+    }
+
+    crush_catholic_heresy_decision = {
+        color = { 102 2 60 }
+        potential = {
+            total_development = 200
+            religion_group = christian
+            NOT = { religion = catholic }
+            any_known_country = {
+                religion = catholic
+            }
+        }
+
+        provinces_to_highlight = {
+            has_discovered = ROOT
+            owner = {
+                religion = catholic
+            }
+        }
+
+        allow = {
+            all_known_country = {
+                NOT = { religion = catholic }
+            }
+        }
+
+        effect = {
+            custom_tooltip = crush_catholic_heresy_success_tt
         }
     }
 }

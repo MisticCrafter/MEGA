@@ -1,0 +1,39 @@
+akan_ideas = {
+	start = {
+		range = 0.35
+		gold_depletion_chance_modifier = -0.25
+	}
+	
+	bonus = {
+		province_trade_power_modifier = 0.50
+	}
+	
+	trigger = {
+		tag = Z01
+	}
+	free = yes		#will be added at load.
+	
+	Z01_colonial_zeal = {
+		global_colonial_growth = 25
+	}
+	Z01_roman_army = {
+		infantry_power = 0.15
+		yearly_army_professionalism = 0.005
+	}
+	Z01_work_ethic = { #effect in SAV_ideas
+		production_efficiency = 0.10
+	}
+	Z01_acceptance = {
+		reduced_liberty_desire_on_other_continent = 10
+		relation_with_other_culture = 10
+	}
+	Z01_ingenuity = {
+		technology_cost = -0.10
+	}
+	Z01_production = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	Z01_hot_cocoa = {
+		monarch_lifespan = 0.33
+	}
+}

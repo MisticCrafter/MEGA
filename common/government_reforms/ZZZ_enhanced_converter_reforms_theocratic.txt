@@ -72,6 +72,8 @@ prussian_theocratic_reform = {
 		max_absolutism = 10
 		manpower_in_true_faith_provinces = 0.15
 		governing_capacity_modifier = -0.5
+		has_mamluks = yes
+		allowed_mamluks_fraction = 0.2
 	}
 	
 	conditional = {

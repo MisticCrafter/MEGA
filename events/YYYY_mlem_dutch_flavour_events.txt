@@ -52,8 +52,16 @@ country_event = {
 		}
 		add_ruler_personality = cruel_personality
 		add_ruler_personality = reformist_personality
+		hidden_effect = {
+			set_dynasty = "van Paradyx"
+		}
 		add_ruler_modifier = {
 			name = rule_of_the_tyrant_astolfo_ii
+		}
+		add_ruler_modifier = {
+			name = tyranny_of_astolfo_ii_cooldown
+			hidden = yes
+			duration = 365
 		}
 		set_ruler_flag = has_the_tyrant_astolfo_ii
 		change_statists_vs_orangists = 1
@@ -88,7 +96,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 30
+		days = 180
 	}
 	
 	option = {
@@ -99,3 +107,376 @@ country_event = {
 		}
 	}
 }
+
+country_event = {		# Astolfo II - adm mana penalty
+	id = nederlands_flavour_mega.4
+	title = nederlands_flavour_mega.4.title
+	desc = nederlands_flavour_mega.4.desc
+	picture = ""
+
+	trigger = {
+		AND = {
+			tag = NED
+			has_ruler_flag = has_the_tyrant_astolfo_ii
+			NOT = { has_country_modifier = executed_local_administration_astolfo_ii }
+			NOT = { has_ruler_modifier = tyranny_of_astolfo_ii_cooldown }
+			NOT = { has_ruler_modifier = astolfo_ii_purge_cooldown }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1825
+	}
+
+	option = {
+		name = nederlands_flavour_mega.4.a
+		add_country_modifier = {
+			name = executed_local_administration_astolfo_ii
+			duration = 3650
+		}
+		add_ruler_modifier = {
+			name = tyranny_of_astolfo_ii_cooldown
+			hidden = yes
+			duration = 365
+		}
+		add_ruler_modifier = {
+			name = astolfo_ii_purge_cooldown
+			hidden = yes
+			duration = 1825
+		}
+	}
+}
+
+country_event = {		# Astolfo II - dip mana penalty
+	id = nederlands_flavour_mega.5
+	title = nederlands_flavour_mega.5.title
+	desc = nederlands_flavour_mega.5.desc
+	picture = ""
+
+	trigger = {
+		AND = {
+			tag = NED
+			has_ruler_flag = has_the_tyrant_astolfo_ii
+			NOT = { has_country_modifier = assassinated_court_diplomats_astolfo_ii }
+			NOT = { has_ruler_modifier = tyranny_of_astolfo_ii_cooldown }
+			NOT = { has_ruler_modifier = astolfo_ii_purge_cooldown }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1825
+	}
+
+	option = {
+		name = nederlands_flavour_mega.5.a
+		add_country_modifier = {
+			name = assassinated_court_diplomats_astolfo_ii
+			duration = 3650
+		}
+		add_ruler_modifier = {
+			name = tyranny_of_astolfo_ii_cooldown
+			hidden = yes
+			duration = 365
+		}
+		add_ruler_modifier = {
+			name = astolfo_ii_purge_cooldown
+			hidden = yes
+			duration = 1825
+		}
+	}
+}
+
+country_event = {		# Astolfo II - mil mana penalty
+	id = nederlands_flavour_mega.6
+	title = nederlands_flavour_mega.6.title
+	desc = nederlands_flavour_mega.6.desc
+	picture = ""
+
+	trigger = {
+		AND = {
+			tag = NED
+			has_ruler_flag = has_the_tyrant_astolfo_ii
+			NOT = { has_country_modifier = purged_general_staff_astolfo_ii }
+			NOT = { has_ruler_modifier = tyranny_of_astolfo_ii_cooldown }
+			NOT = { has_ruler_modifier = astolfo_ii_purge_cooldown }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1825
+	}
+
+	option = {
+		name = nederlands_flavour_mega.6.a
+		add_country_modifier = {
+			name = purged_general_staff_astolfo_ii
+			duration = 3650
+		}
+		add_ruler_modifier = {
+			name = tyranny_of_astolfo_ii_cooldown
+			hidden = yes
+			duration = 365
+		}
+		add_ruler_modifier = {
+			name = astolfo_ii_purge_cooldown
+			hidden = yes
+			duration = 1825
+		}
+	}
+
+}
+
+country_event = {			# Astolfo II - Kathrijne's Skull
+	id = nederlands_flavour_mega.7
+	title = nederlands_flavour_mega.7.title
+	desc = nederlands_flavour_mega.7.desc
+	picture = ""
+
+	trigger = {
+		AND = {
+			tag = NED
+			has_ruler_flag = has_the_tyrant_astolfo_ii
+			NOT = { has_ruler_modifier = tyranny_of_astolfo_ii_cooldown }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1825
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = nederlands_flavour_mega.7.a
+		hire_advisor = {
+			type = statesman
+			name = "Kathrijne's Skull"
+			cost_multiplier = 0
+			culture = swiss
+			skill = 2
+			female = yes
+			age = 23
+		}
+		add_country_modifier = {
+			name = kathrijnes_skull_astolfo_ii
+			duration = 3650
+		}
+		add_ruler_modifier = {
+			name = tyranny_of_astolfo_ii_cooldown
+			hidden = yes
+			duration = 365
+		}
+	}
+}
+
+
+country_event = {			# Astolfo II - mercantile regulation
+	id = nederlands_flavour_mega.8
+	title = nederlands_flavour_mega.8.title
+	desc = nederlands_flavour_mega.8.desc
+	picture = ""
+
+	trigger = {
+		AND = {
+			tag = NED
+			has_ruler_flag = has_the_tyrant_astolfo_ii
+			NOT = { has_country_modifier = regulation_of_mercantile_trade_astolfo_ii }
+			NOT = { has_country_modifier = unregulated_mercantile_activities_astolfo_ii }
+			NOT = { has_ruler_modifier = tyranny_of_astolfo_ii_cooldown }
+		}
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 1825
+	}
+
+	option = {
+		name = nederlands_flavour_mega.8.a
+		add_country_modifier = {
+			name = regulation_of_mercantile_trade_astolfo_ii
+			duration = -1
+		}
+		add_mercantilism = 10
+		add_ruler_modifier = {
+			name = tyranny_of_astolfo_ii_cooldown
+			hidden = yes
+			duration = 365
+		}
+	}
+
+	option = {
+		name = nederlands_flavour_mega.8.b
+		add_mercantilism = -10
+		add_country_modifier = {
+			name = unregulated_mercantile_activities_astolfo_ii
+			duration = -1
+		}
+		add_ruler_modifier = {
+			name = tyranny_of_astolfo_ii_cooldown
+			hidden = yes
+			duration = 365
+		}
+	}
+}
+
+country_event = {			# Astolfo II - road networks
+	id = nederlands_flavour_mega.9
+	title = nederlands_flavour_mega.9.title
+	desc = nederlands_flavour_mega.9.desc
+	picture = ""
+
+	trigger = {
+		AND = {
+			tag = NED
+			has_ruler_flag = has_the_tyrant_astolfo_ii
+			NOT = { has_country_modifier = compromise_on_road_networks_astolfo_ii }
+			NOT = { has_country_modifier = standardized_road_networks_astolfo_ii }
+			NOT = { has_ruler_modifier = tyranny_of_astolfo_ii_cooldown }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1825
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = nederlands_flavour_mega.9.a
+		add_country_modifier = {
+			name = standardized_road_networks_astolfo_ii
+			duration = -1
+		}
+		add_years_of_income = -1
+		add_ruler_modifier = {
+			name = tyranny_of_astolfo_ii_cooldown
+			hidden = yes
+			duration = 365
+		}
+	}
+
+	option = {
+		name = nederlands_flavour_mega.9.b
+		add_country_modifier = {
+			name = compromise_on_road_networks_astolfo_ii
+			duration = 3650
+		}
+		add_years_of_income = -0.5
+		add_ruler_modifier = {
+			name = tyranny_of_astolfo_ii_cooldown
+			hidden = yes
+			duration = 365
+		}
+	}
+
+}
+
+country_event = {			# Astolfo II - stadhouder residency I
+	id = nederlands_flavour_mega.10
+	title = nederlands_flavour_mega.10.title
+	desc = nederlands_flavour_mega.10.desc
+	picture = ""
+
+	trigger = {
+		AND = {
+			tag = NED
+			has_ruler_flag = has_the_tyrant_astolfo_ii
+			NOT = { has_country_modifier = compromise_on_road_networks_astolfo_ii }
+			NOT = { has_country_modifier = standardized_road_networks_astolfo_ii }
+			NOT = { has_ruler_modifier = tyranny_of_astolfo_ii_cooldown }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1825
+	}
+
+	option = {
+		name = nederlands_flavour_mega.10.a	
+		add_country_modifier = {
+			name = building_stadhouder_residency_astolfo_ii
+			duration = 1825
+		}
+		set_country_flag = ned_building_stadhouder_residency_flag
+		add_ruler_modifier = {
+			name = tyranny_of_astolfo_ii_cooldown
+			hidden = yes
+			duration = 365
+		}
+	}
+}
+
+
+
+country_event = {			# Astolfo II - stadhouder residency II
+	id = nederlands_flavour_mega.11
+	title = nederlands_flavour_mega.11.title
+	desc = nederlands_flavour_mega.11.desc
+	picture = ""
+
+	trigger = {
+		AND = {
+			tag = NED
+			has_ruler_flag = has_the_tyrant_astolfo_ii
+			NOT = { has_country_modifier = building_stadhouder_residency_astolfo_ii }
+			has_country_flag = ned_building_stadhouder_residency_flag
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = nederlands_flavour_mega.11.a	
+		add_country_modifier = {
+			name = stadhouder_residency_astolfo_ii
+			duration = -1
+		}
+		clr_country_flag = ned_building_stadhouder_residency_flag
+		add_power_projection = {
+			type = 10_permanent_power_projection
+			amount = 10
+		}
+	}
+
+}
+
+country_event = {
+	id = nederlands_flavour_mega.12
+	title = nederlands_flavour_mega.12.title
+	desc = nederlands_flavour_mega.12.desc
+	picture = ""
+
+	is_triggered_only = yes
+
+	option = {
+		name = nederlands_flavour_mega.12.a
+		add_government_reform = reformed_nederlands_republic_reform
+		change_government_reform_progress = 100
+	}
+
+}
+
+country_event = {
+	id = nederlands_flavour_mega.13
+	title = nederlands_flavour_mega.13.title
+	desc = nederlands_flavour_mega.13.desc
+	picture = ""
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = nederlands_flavour_mega.13.a
+		custom_tooltip = united_zeven_provincies_event_tt
+		add_government_reform = united_zeven_provincies_republic_reform
+		change_government_reform_progress = 100
+	}
+
+}
+

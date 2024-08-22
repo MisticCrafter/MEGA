@@ -1,0 +1,14 @@
+spriteTypes = { 
+    spriteType = {
+        name = "GFX_great_project_dutch_colonial_office"	
+        texturefile = "gfx//interface//great_projects//great_project_dutch_colonial_office.dds"
+    }
+    spriteType = {
+        name = "GFX_great_project_theodosian_walls"	
+        texturefile = "gfx//interface//great_projects//great_project_theodosian_walls.dds"
+    }
+    spriteType = {
+        name = "GFX_great_project_colosseum"	
+        texturefile = "gfx//interface//great_projects//great_project_colosseum.dds"
+    }
+}

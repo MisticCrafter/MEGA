@@ -1,0 +1,87 @@
+namespace = flavor_akan
+
+# Jabber's Note: yes I know this is probably a very inefficient way to do this, however I don't have that much time left and I really need to hurry this 
+#(cede provinces to exarchates)
+country_event = {
+	id = flavor_akan.1
+	title = flavor_akan.15.title
+	desc = flavor_akan.15.desc
+	picture = EUROPEAN_REFUGEES_eventPicture
+
+	hidden = yes
+
+	trigger = {
+		tag = Z01
+		any_owned_province = {
+			OR = {
+				# belongs to Kongo AND the right Exarchate exists
+				AND = {
+					exists = AK1
+					OR = {
+						region = kongo_region
+                        region = central_africa_region
+					}
+				}
+				# belongs to Oyoman AND the right Exarchate exists
+				AND = {
+					exists = AK2
+					province_group = oyoman
+				}
+				# belongs to Mali AND the right Exarchate exists
+				AND = {
+					exists = AK3
+					OR = {
+                        area = massina_area
+                        area = jenne_area
+                        area = manding_area
+                    }
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = flavor_akan.15.a
+
+		# cede to Kongo
+		every_owned_province = {
+			limit = {
+				exists = AK1
+				OR = {
+					region = kongo_region
+                    region = central_africa_region
+				}
+			}
+			remove_core = ROOT
+			cede_province = AK1
+		}
+
+		# cede to Oyoman
+		every_owned_province = {
+			limit = {
+				exists = AK2
+				province_group = oyoman
+			}
+			remove_core = ROOT
+			cede_province = AK2
+		}
+
+		# cede to Mali
+		every_owned_province = {
+			limit = {
+				exists = AK3
+				OR = {
+                    area = massina_area
+                    area = jenne_area
+                    area = manding_area
+                }
+			}
+			remove_core = ROOT
+			cede_province = AK3
+		}
+	}
+}

@@ -1,6 +1,6 @@
-owner = Z01
-controller = Z01
-capital = "Sansanné Mango"
+owner = MSI
+controller = MSI
+capital = "Sansannï¿½ Mango"
 is_city = yes
 culture = aka
 religion = catholic
@@ -9,6 +9,7 @@ base_tax = 2
 base_production = 2
 base_manpower = 1
 add_core = ASH
+add_core = MSI
 add_core = Z01
 discovered_by = east_african
 discovered_by = eastern

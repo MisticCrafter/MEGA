@@ -1,0 +1,65 @@
+mandate_ierland_authority_mechanic = {
+	powers = {
+		mandate_authority_militancy = {
+			gui = militarization_frame
+			max = 100	#Monarchy direction
+			base_monthly_growth = 0.5
+			scaled_modifier = {
+				modifier = {
+					global_unrest = 10
+					manpower_recovery_speed = -0.33
+					culture_conversion_cost = -0.25
+					culture_conversion_time = -0.25
+					morale_damage = 0.15
+					monthly_mandate_authority_militancy = -0.65
+				}
+			}
+		}
+	}
+
+	interactions = {
+		empower_stratocratic_appointments_MoI = {
+			gui = hessian_militarization_increase_button
+			cost_type = mandate_authority_militancy
+			center = no
+			
+			trigger = {
+				mil_power_cost = 100
+				NOT = {
+					has_government_power = {
+						mechanic_type = mandate_ierland_authority_mechanic
+						power_type = mandate_authority_militancy
+						value = 100
+					}
+				}
+			}
+
+			effect = {
+				mil_power_cost = 100
+				add_government_power = {
+					mechanic_type = mandate_ierland_authority_mechanic
+					power_type = mandate_authority_militancy
+					value = 10
+				}
+				add_yearly_manpower = 0.1
+			}
+		}
+
+		amend_laws_of_settlement_MoI = {
+			gui = militarization_rewrite_military_manual_button
+			cost_type = mandate_authority_militancy
+			cost = 20
+			center = no
+
+			effect = {
+				add_country_modifier = {
+					name = amended_laws_of_settlement_moi
+					duration = 1825
+				}
+			}
+		}
+
+		
+
+	}
+}

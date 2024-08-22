@@ -102,6 +102,7 @@ gaelic = {
 }
 
 iberian = {
+	province = { local_has_caravel = yes local_has_galleon = yes }
 	andal = {
 		male_names = { "Adrianos" "Akakios" "Alexandros" "Alexios" "Anastasios" "Anatolios" "Andreas" "Andronikos" "Anthemios" "Anthimos" "Antiokhos" "Antonios" "Apollonios" "Arsenios" "Artemios" "Athanasios" "Bardas" "Bartholomaios" "Basileios" "Belisarios" "Boethios" "Bosporios" "Khristophoros" "Khrysanthos" "Khrysogonos" "Damianos" "Daniel" "David" "Demetrios" "Diogenes" "Dionysios" "Dorotheos" "Eirenaios" "Eudoxios" "Eustratios" "Eugenios" "Euphemios" "Eusebios" "Eustathios" "Evangelos" "Gabriel" "Gennadios" "Georgios" "Gerasimos" "Germanos" "Gregoras" "Gregorios" "Hektorios" "Helias" "Herakleios" "Hierotheos" "Himerios" "Konstantinos" "Pavlos" "Nikolaos" "Aineias" "Alexeios" "Ambrosios" "Dionysos" "Elpidios" "Hektor" "Kastor" "Manouel" "Matthaios" "Nestor" "Nikomedes" "Orestes" "Palaimon" "Pelagios" "Petros" "Philemon" "Philippos" "Skantarios" "Stefanos" "Theodoros" "Thomas" "Prokopios" "Ioannes" "Iason" }
 		female_names = { "Alexandra" "Adriane" "Agathe" "Agne" "Agnes" "Aikaterine" "Alexeia" "Anastasia" "Anna" "Anthe" "Anthousa" "Antipatra" "Antonia" "Apollonia" "Athanasia" "Barbara" "Basillike" "Chrysogone" "Damiane" "Demetra" "Dionysia" "Dorothea" "Aigidia" "Eirene" "Elaiodora" "Epiphania" "Eudokia" "Eudoxia" "Eugenia" "Eulalia" "Eunike" "Euphemia" "Euphrasia" "Euphrosyne" "Eupraxia" "Eusebia" "Eustathia" "Evanthia" "Gabrielia" "Garyphallia" "Georgia" "Gregoria" "Helene" "Ioanna" "Ioulia" "Iouliana" "Ioustina" "Kale" "Konstantia" "Konstantine" "Kyra" "Kyriake" "Hypatia" "Zoe" }
@@ -298,6 +299,7 @@ crusader_group = {
 
 	crusader_levantine = {
 		primary_culture = Z00
+		province = { local_has_caravel = yes local_has_galleon = yes }
 		dynasty_names = {
 			Thinis Memphis Abydos Herakleopolis Thebes Itjtawy Avaris Bubastis Sais
 		}
@@ -314,6 +316,7 @@ crusader_group = {
 
 	crusader_egyptian = {
 		primary_culture = KNI
+		province = { local_has_caravel = yes local_has_galleon = yes }
 		dynasty_names = {
 			Thinis Memphis Abydos Herakleopolis Thebes Itjtawy Avaris Bubastis Sais
 		}
@@ -330,6 +333,7 @@ crusader_group = {
 
 	crusader_antiochene = {
 		primary_culture = NAX
+		province = { local_has_caravel = yes local_has_galleon = yes }
 		dynasty_names = {
 			Thinis Memphis Abydos Herakleopolis Thebes Itjtawy Avaris Bubastis Sais
 		}
@@ -346,6 +350,7 @@ crusader_group = {
 
 	crusader_mesopotamian = {
 		primary_culture = PAP
+		province = { local_has_caravel = yes local_has_galleon = yes }
 		dynasty_names = {
 			Thinis Memphis Abydos Herakleopolis Thebes Itjtawy Avaris Bubastis Sais
 		}
@@ -362,6 +367,7 @@ crusader_group = {
 
 	crusader_arabic = {
 		primary_culture = Z00
+		province = { local_has_caravel = yes local_has_galleon = yes }
 		dynasty_names = {
 			Thinis Memphis Abydos Herakleopolis Thebes Itjtawy Avaris Bubastis Sais
 		}
@@ -378,6 +384,7 @@ crusader_group = {
 
 	crusader_persian = {
 		primary_culture = Z00
+		province = { local_has_caravel = yes local_has_galleon = yes }
 		dynasty_names = {
 			Thinis Memphis Abydos Herakleopolis Thebes Itjtawy Avaris Bubastis Sais
 		}
@@ -394,6 +401,7 @@ crusader_group = {
 
 	crusader_ethiopian = {
 		primary_culture = Z1C
+		province = { local_has_caravel = yes local_has_galleon = yes }
 		dynasty_names = {
 			Thinis Memphis Abydos Herakleopolis Thebes Itjtawy Avaris Bubastis Sais
 		}
@@ -410,6 +418,7 @@ crusader_group = {
 
 	crusader_greek = {
 		primary_culture = LAE
+		province = { local_has_caravel = yes local_has_galleon = yes }
 		dynasty_names = {
 			Thinis Memphis Abydos Herakleopolis Thebes Itjtawy Avaris Bubastis Sais
 		}

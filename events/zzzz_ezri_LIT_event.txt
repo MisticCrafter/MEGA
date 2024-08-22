@@ -1,0 +1,101 @@
+namespace = ez_knights_events
+	#angered trikai
+	country_event = {
+		id = ez_knights_events.1
+		title = ez_knights_events.1.t
+		desc = ez_knights_events.1.d
+		picture = NOBLE_ESTATE_eventPicture
+
+		is_triggered_only = yes
+
+		option = {
+			name = ez_knights_events.1.opt1
+			add_country_modifier = {
+				name = appeased_trikai_family
+				duration = 360
+			}
+		}	
+
+		option = {
+			name = ez_knights_events.1.opt2
+			add_country_modifier = {
+				name = angered_trikai_family
+				duration = 730
+			}
+		}
+	}
+	#demanding trikai
+	country_event = {
+		id = ez_knights_events.2
+		title = ez_knights_events.2.t
+		desc = ez_knights_events.2.d
+		picture = NOBLE_ESTATE_DEMANDS_eventPicture
+
+		is_triggered_only = yes
+
+		option = {
+			name = ez_knights_events.2.opt1
+			add_country_modifier = {
+				name = granduer_ruined
+				duration = 730
+			}
+			
+		}
+
+		option = {
+			name = ez_knights_events.2.opt2
+			add_country_modifier = {
+				name = enraged_triakai_family
+				duration = 730
+			}
+			
+	}
+}
+	country_event = {
+		id = ez_knights_events.3
+		title = ez_knights_events.3.t
+		desc = ez_knights_events.3.d
+		picture = INVENTION_eventPicture
+
+		is_triggered_only = yes
+
+		option = {
+			name = ez_knights_events.3.opt1
+			add_country_modifier = {
+				name = mil_tech_focus
+				duration = 1825
+			}
+		}
+
+		option = {
+			name = ez_knights_events.3.opt2
+			add_country_modifier = {
+				name = mil_dev_focus
+				duration = 1825
+			}
+		}
+	}
+	country_event = {
+		id = ez_knights_events.4
+		title = ez_knights_events.4.t
+		desc = ez_knights_events.4.d
+		picture = INVENTION_eventPicture
+
+		is_triggered_only = yes
+
+		option = {
+			name = ez_knights_events.4.opt1
+			add_country_modifier = {
+				name = dip_tech_focus
+				duration = 1825
+			}
+		}
+
+		option = {
+			name = ez_knights_events.4.opt2
+			add_country_modifier = {
+				name = dip_dev_focus
+				duration = 1825
+			}
+		}
+	}

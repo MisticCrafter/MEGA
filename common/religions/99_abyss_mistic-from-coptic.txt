@@ -4,21 +4,14 @@ christian = {
 		icon =  177
 		country = {
  
-		technology_cost = -0.1
-	
+		technology_cost = -0.05
 
-		heir_chance = 1
-	
-
-		discipline = 0.05
-	
-
-		heir_chance = 0.25
+		interest = -0.25
 	
 }
 		country_as_secondary = {
  
-		technology_cost = -0.05
+		technology_cost = -0.025
 	
 
 		heir_chance = 1
@@ -33,6 +26,19 @@ christian = {
 	
 }
 		
+	
+		holy_sites = { 2769 1134 360 1234 358 1211 379 118 }
+
+		blessings = { 
+			lessons_empress
+			lessons_builder
+			lessons_karnak
+			lessons_orator
+			lessons_scholar
+			lessons_shaman
+			lessons_traveller
+			lessons_widow
+
 	flags_with_emblem_percentage = 20
 	flag_emblem_index_range = { 1 4 }
 	heretic = { ZAMIKAELITES STEPHANITES EUSTATHIANS }

@@ -1,0 +1,244 @@
+country_decisions = {
+	develop_the_dnipro = {
+		color = { 201 170 42 }
+		potential = {
+			tag = RUS
+			NOT = {
+				has_country_flag = dnipro_developed
+			}
+		}
+		provinces_to_highlight = {
+			province_id = 1942
+			province_id = 1944
+			province_id = 4542
+		}
+
+		allow = {
+			adm_tech = 11
+			treasury = 500
+			owns = 1942
+			owns = 1944
+			owns = 4542
+
+			1942 = {
+				base_production = 9
+			}
+			
+			1944 = {
+				base_production = 7
+			}
+			4542 = {
+				base_production = 10
+			}
+		}
+		effect = {
+			1942 = {
+				add_province_modifier = {
+					name = developing_farmlands
+					duration = -1
+				}
+				add_building = farm_estate
+			}
+			1944 = {
+				change_trade_goods = grain
+
+				add_province_modifier = {
+					name = developing_farmlands
+					duration = -1
+				}
+				add_building = farm_estate
+			}
+			4542 = {
+				add_province_modifier = {
+					name = developing_farmlands
+					duration = -1
+				}
+				add_building = farm_estate
+			}	
+				add_treasury = -500
+				add_dip_power = 100
+				root = {
+					set_country_flag = dnipro_developed
+				}	
+		}
+	}
+
+	develop_sevastapol = {
+		color = { 201 170 42 }
+		potential = {
+			tag = RUS
+			NOT = {
+				has_country_flag = crimea_developed
+			}
+		}
+		provinces_to_highlight = {
+			area = crimea_area
+			province_id = 286
+		}
+		allow = {
+			adm_tech = 11
+			treasury = 500
+			crimea_area = {
+				type = all
+				owned_by = root
+			}
+			owns = 286
+			2410 = {
+				base_production = 9	
+			} 
+			2447 = {
+				base_production = 6
+			}
+			286 = {
+				base_production = 6
+			}
+		}
+
+		effect = {
+			2410 = {
+				change_trade_goods = naval_supplies
+				add_province_modifier = {
+					name = crimean_shipyards
+					duration = -1
+				}
+				add_building = shipyard
+			}
+			2447 = {
+				change_trade_goods = naval_supplies
+				add_province_modifier = {
+					name = crimean_shipyards
+					duration = -1
+				}
+				add_building = shipyard
+			}
+			286 = {
+				change_trade_goods = naval_supplies
+				add_province_modifier = {
+					name = crimean_shipyards
+					duration = -1
+				}
+				add_building = shipyard
+			}
+			285 = {
+				change_trade_goods = naval_supplies
+			}
+			add_treasury = -500
+			add_dip_power = 100
+			root = {
+				set_country_flag = crimea_developed
+			}	
+			
+		}
+	}
+
+	promote_renaissance_thinking_ukr = {
+		potential = {
+			tag = UKR
+			is_institution_enabled = renaissance
+			NOT = {
+				has_country_flag = ukr_ren_thonking
+			}
+		}
+
+		allow = {
+			is_institution_enabled = renaissance
+			monthly_adm = 10
+			num_of_owned_provinces_with = {
+				value = 4
+				has_tax_building_trigger = yes
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = ukr_renaissance
+				duration = -1
+			}
+			set_country_flag = ukr_ren_thonking
+		}
+
+	}
+
+	unify_the_ruthenian_people = {
+		color = { 58 115 54 }
+		potential = {
+			OR = {
+				tag = RUS
+				tag = UKR
+			}
+			NOT = {
+				has_country_flag = ruthenians_unified
+			}
+		}
+		provinces_to_highlight = {
+			area = west_dniepr_area
+			area = volhynia_area
+			area = podlasie_area
+			area = pripyat_area
+			province_id = 4540
+			province_id = 281
+		}
+		allow = {
+			west_dniepr_area = {
+				type = all
+				owned_by = root	
+				
+			}
+			volhynia_area = {
+				type = all
+				owned_by = root
+			}
+			podlasie_area = {
+				type = all
+				owned_by = root
+			}
+			pripyat_area = {
+				type = all
+				owned_by = root
+			}
+			owns = 4540
+			owns = 281
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = ruthenians_united
+				duration = 3650
+			}
+			set_country_flag = ruthenians_unified
+		}
+	}
+
+	develop_the_bashkiria_mine = {
+		color = { 201 170 42 }
+		potential = {
+			OR ={
+				tag = RUS
+				tag = UKR
+			}
+			owns = 2444
+			NOT = {
+				has_country_flag = ural_mine_developed
+			}
+		}
+		provinces_to_highlight = {
+			province_id = 2444
+		}
+		allow = {
+			2444 = {
+				base_production = 6
+				has_building = workshop
+			}
+			
+		}
+		effect = {
+			2444 = {
+				add_province_modifier = {
+					name = Ural_gold_mine
+					duration = -1
+				}
+			}
+			set_country_flag = ural_mine_developed
+		}
+	}
+}

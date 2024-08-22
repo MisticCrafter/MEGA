@@ -1,0 +1,86 @@
+three_branches = {
+	available = {
+		has_reform = three_branches_reform
+	}
+	powers = {
+		unallocated_funds = {
+			max = 100
+			gui = hessian_militarization_gov_mech
+			reset_on_new_ruler = no
+			default = 0
+			base_monthly_growth = 0.5
+			development_scaled_monthly_growth = 0
+			monarch_power = mil
+			scaled_modifier = {
+				start_value = 0
+				end_value = 100
+				modifier = { land_maintenance_modifier = -0.15 }
+				modifier = { naval_maintenance_modifier = -0.15 }
+			}
+			scaled_modifier = {
+				start_value = 0
+				end_value = 100
+				trigger = {
+					NOT = { has_country_modifier = vrm_navy_focus }
+					NOT = { has_country_modifier = vrmmc_focus_modifier }
+					NOT = { has_country_modifier = vrm_army_focus }
+				}
+				modifier = { land_morale = -0.05 }
+				modifier = { naval_morale = -0.05 }
+			}
+			is_good = yes
+		}		
+	}
+	interactions = {
+		siphon_funds = {
+			gui = hessian_militarization_gov_mech
+			center = no
+			cost_type = unallocated_funds
+			trigger = {
+				NOT = {
+					has_government_power = {
+						mechanic_type = three_branches
+						power_type = unallocated_funds
+						value = 100
+					}
+				}
+				years_of_income = 0.1
+			}
+			effect = {
+				add_years_of_income = -0.1
+				add_corruption = 0.1
+				add_government_power = {
+					mechanic_type = three_branches
+					power_type = unallocated_funds
+					value = 5
+				}
+			}
+			ai_chance = {
+				factor = 10
+				modifier = {
+					factor = 0
+					is_at_war = no
+				}
+				modifier = {
+					factor = 0
+					is_in_deficit = yes
+					num_of_loans = 3
+				}
+				modifier = {
+					factor = 0
+					NOT = { years_of_income = 0.25 }
+				}
+				modifier = {
+					factor = 0
+					NOT = {
+						has_government_power = {
+							mechanic_type = three_branches
+							power_type = unallocated_funds
+							value = 90
+						}
+					}
+				}
+			}
+		}
+	}
+}

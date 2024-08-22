@@ -232,6 +232,8 @@ holy_state_legacy = {
 		cb_on_religious_enemies = yes
 		manpower_recovery_speed = 0.15
 		global_autonomy = -0.2
+		has_mamluks = yes
+		allowed_mamluks_fraction = 0.2
 	}
 }
 
@@ -1158,6 +1160,7 @@ monastic_order_government = {
 	modifiers = {
     	governing_capacity = 150
 		tolerance_own = 1
+		has_mamluks = yes
 		fort_maintenance_modifier = -0.2
 	}
 
@@ -1193,6 +1196,8 @@ holy_state_theocracy = {
 		# cb_on_religious_enemies = yes
 		manpower_recovery_speed = 0.15
 		global_autonomy = -0.2
+		has_mamluks = yes
+		allowed_mamluks_fraction = 0.2
 	}
 	
 	conditional = {

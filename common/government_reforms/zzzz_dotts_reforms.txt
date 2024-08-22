@@ -3,6 +3,7 @@
 dollarstore_roman_republic_government = {
 	icon = "roman_empire"
 	allow_normal_conversion = no
+	lock_level_when_selected = yes
 	nation_designer_trigger = {
 		primary_culture = roman
 	}
@@ -18,6 +19,7 @@ dollarstore_roman_republic_government = {
 				tag = SIC
 				tag = ROM
 				tag = BYZ
+				tag = ITA
 				is_playing_custom_nation = yes
 			}
 		}
@@ -26,6 +28,9 @@ dollarstore_roman_republic_government = {
 		culture_conversion_cost = -0.25
 		culture_conversion_time = -0.1
 		num_of_parliament_issues = 1
+
+		can_recruit_janissaries = yes
+		allow_janissaries_from_own_faith = yes
 	}
 	conditional = {
 		allow = {
@@ -36,13 +41,29 @@ dollarstore_roman_republic_government = {
 		}
 		has_parliament = yes
 		custom_attributes = {
+			locked_government_type = yes
+			cannot_become_dictatorship = yes
 			gain_rt_from_parliament = yes
 		}
 	}
 
+	effect = {
+		hidden_effect = {
+			add_country_modifier = {
+				name = palatini_regiments
+				duration = -1
+				hidden = yes
+			}
+		}
+	}#lowkey these are kinda useless with the hidden event but meh
+	removed_effect = { 
+		hidden_effect = {
+			remove_country_modifier = palatini_regiments
+		}
+	}
+
 	custom_attributes = {
-		enables_plutocratic_idea_group = yes
-		enables_aristocratic_idea_group = no
+		enables_estate_janissaries = yes
 	}
 	conditional = {
 		allow = { has_dlc = "King of Kings" }
@@ -77,6 +98,8 @@ outremer_government_reform = {
 		movement_speed = 0.1
 		cavalry_cost = -0.15
 		warscore_cost_vs_other_religion = -0.1
+		has_mamluks = yes
+		allowed_mamluks_fraction = 0.2
 	}
 	rulers_can_be_generals = yes
 	heirs_can_be_generals = yes
@@ -121,7 +144,7 @@ stardust_crusaders_reform = {
 		cb_on_religious_enemies = yes
 		movement_speed = 0.1
 		cavalry_cost = -0.15
-		allowed_samurai_fraction = 0.1
+		allowed_samurai_fraction = 0.15
 	}
 	
 	government_abilities = {
@@ -186,8 +209,9 @@ swiss_fed = {
 		monarch_admin_power = -2
 		monarch_diplomatic_power = -2
 		monarch_military_power = -2
-		diplomatic_upkeep = 2
+		diplomatic_upkeep = 3
 		mercenary_manpower = 0.5
+		reduced_liberty_desire = 30
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
@@ -219,3 +243,61 @@ reformed_swiss_fed = {
 	}
 }
 
+#Belgian Confed. tier 5 reform
+three_branches_reform = {
+	icon = "new_order_regiments"
+	potential = {
+		tag = VRM
+	}
+	trigger = {
+		tag = VRM	
+	}
+	modifiers = {
+		yearly_army_professionalism = 0.003
+		drill_gain_modifier = 0.50
+		army_tradition = 0.50
+	}
+	government_abilities = {
+		vrm_hidden_three_branches_mechanic
+	}
+	government_abilities = {
+		three_branches
+	}
+}
+#Palatini Reform
+sic_palatini_reform = {
+	icon = "sparapet_office"
+	potential = {
+		OR = {
+			tag = SIC
+			tag = ITA
+		}
+		has_reform = dollarstore_roman_republic_government
+	}
+	trigger = {
+		OR = {
+			tag = SIC
+			tag = ITA
+		}	
+		has_reform = dollarstore_roman_republic_government
+	}
+	modifiers = {
+		janissaries_loyalty_modifier  = 0.05
+		janissaries_privilege_slots = 1
+		janissaries_influence_modifier = 0.1
+	}
+	effect = {
+		hidden_effect = {
+			add_country_modifier = {
+				name = palatini_regiments2
+				duration = -1
+				hidden = yes
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			remove_country_modifier = palatini_regiments2
+		}
+	}
+}

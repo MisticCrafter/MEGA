@@ -1,0 +1,61 @@
+#knights
+kni_citadel_of_rosetta = {
+	local_defensiveness = 0.10
+	trade_value = 10
+}   
+kni_cairo_citadel = {
+	local_defensiveness = 0.33
+	allowed_num_of_manufactories = 1
+	monthly_splendor = 1
+}
+kni_friendship_pope = {
+	curia_powers_cost = -0.05
+}	
+kni_defense_of_the_faith = {
+	army_tradition = 1
+	defensiveness = 0.15
+}
+kni_country_of_castles = {
+	defensiveness = 0.15
+	garrison_size = 0.15
+	fort_maintenance_modifier = -0.10
+}
+kni_grandmasters_of_egypt = {
+	enemy_core_creation = 0.5
+	garrison_damage = 0.10
+	governing_capacity = 50
+}
+kni_building_a_navy = {
+	global_ship_recruit_speed = -0.25
+	navy_tradition = 1
+}
+kni_city_of_god = {
+	monthly_splendor = 1
+	prestige = 1
+	local_development_cost = -0.1
+	local_tax_modifier = 0.33
+}
+kni_city_of_god_II = {
+	monthly_splendor = 2
+	prestige = 2
+	local_development_cost = -0.15
+	local_development_cost_modifier = -0.10
+	allowed_num_of_manufactories = 1
+	local_tax_modifier = 0.75
+	local_defensiveness = 0.25
+}
+kni_city_of_god_III = {
+	monthly_splendor = 3
+	prestige = 2
+	country_admin_power = 1
+	local_development_cost = -0.35
+	local_development_cost_modifier = -0.35
+	allowed_num_of_manufactories = 2	
+	local_tax_modifier = 0.150
+	tax_income = 24
+	local_production_efficiency = 0.20
+	local_defensiveness = 0.5
+}
+kni_out_ally = {
+	shock_damage = 0.10
+}
