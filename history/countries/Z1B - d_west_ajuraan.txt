@@ -19,7 +19,7 @@ set_country_flag = ZZZ_generated_converter_nation
 	}
 	heir = {
 		name = "Hamalmal"
-		dynasty = "Maalim-Baydhabo"
+		dynasty = "Maalim"
 		adm = 5
 		dip = 4
 		mil = 4
