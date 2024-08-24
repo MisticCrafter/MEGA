@@ -184,12 +184,12 @@ triacastra = {
 
         # What modifiers are given to the nation that owns the monument
         country_modifiers = {
-            army_tradition = 0.5
+            army_tradition = 0.15
         }
 
         # What modifiers are given to the region of the province the project is located in
         region_modifier = {
-            #<modifiers>
+            local_defensiveness = 0.33
         }
 
         # What happens when the upgrade is complete

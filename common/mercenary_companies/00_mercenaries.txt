@@ -3083,7 +3083,7 @@ vaquero_knights = {
 	modifier = {
 		fire_damage = 0.10
 		movement_speed = 0.25
-		discipline = 0.025
+		discipline = 0.05
 	}
 
 	min_size = 4
@@ -3110,7 +3110,7 @@ knights_of_the_lasso = {
 	modifier = {
 		cavalry_fire = 0.5
 		movement_speed = 0.33
-		discipline = 0.025
+		discipline = 0.05
 	}
 
 	min_size = 4

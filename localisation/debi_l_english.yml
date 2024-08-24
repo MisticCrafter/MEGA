@@ -8,6 +8,12 @@
  kni_our_place_title:0 "Our Place in the World"
  kni_our_place_desc:0 ""
 
+ kni_defend_brothers_title:0 "Defend Our Brothers"
+ kni_defend_brothers_desc:0 ""
+
+ kni_knights_republic_title:0 "The Knights Council"
+ kni_knights_republic_desc:0 ""
+
  kni_fortify_south_title:0 "Fortify the South"
  kni_fortify_south_desc:0 ""
 
@@ -32,8 +38,11 @@
  kni_city_of_god_two_title:0 "City of God II"
  kni_city_of_god_two_desc:0 ""
 
- kni_of_the_worlds_desire_title:0 "Of the World's Desire"
- kni_of_the_worlds_desire_desc:0 ""
+ kni_greatest_city_in_the_world_title:0 "Greatest City in the World"
+ kni_greatest_city_in_the_world_desc:0 ""
+
+ kni_the_second_city_title:0 "The Second City"
+ kni_the_second_city_desc:0 ""
 
  kni_granary_title:0 "Granary of the Mediterranean"
  kni_granary_desc:0 ""
@@ -59,20 +68,29 @@
  kni_masters_mediterranean_title:0 "Masters of the Mediterranean"
  kni_masters_mediterranean_desc:0 ""
 
- kni_pirate_crusaders_title:0 "Pirate Crusaders"
- kni_pirate_crusaders_desc:0 ""
-
  kni_rules_the_waves_title:0 "Order Rules the Waves"
  kni_rules_the_waves_desc:0 ""
 
- kni_outremer_eastern_fleets_title:0 "Outremer Fleets"
- kni_outremer_eastern_fleets_desc:0 ""
+ kni_pirate_crusaders_title:0 "Pirate Crusaders"
+ kni_pirate_crusaders_desc:0 ""
 
- kni_victoria_title:0 "Victoria III"
+ kni_privateering_fleet_title:0 "Privateering Fleet"
+ kni_privateering_fleet_desc:0 ""
+
+ kni_scourge_of_the_mediterranean_title:0 "Scourge of the Mediterranean"
+ kni_scourge_of_the_mediterranean_desc:0 ""
+
+ kni_galleon_and_caravel_title:0 "Galleon and Caravel"
+ kni_galleon_and_caravel_desc:0 ""
+
+ kni_victoria_title:0 "Victoria the III"
  kni_victoria_desc:0 ""
 
  kni_alexandrian_trade_title:0 "Alexandrian Trade"
  kni_alexandrian_trade_desc:0 ""
+
+ kni_cairo_merchants_title:0 "Cairo Merchants"
+ kni_cairo_merchants_desc:0 ""
 
  kni_mercantile_relationships_title:0 "Mercantile Relationships"
  kni_mercantile_relationships_desc:0 ""
@@ -91,6 +109,9 @@
 
  kni_pearl_mediterranean_title:0 "Pearl of the Mediterannean"
  kni_pearl_mediterranean_desc:0 ""
+
+ kni_crossroads_of_the_world_title:0 "Crossroads of the World"
+ kni_crossroads_of_the_world_desc:0 ""
 
  kni_landfall_venice_title:0 "Landfall in Venice"
  kni_landfall_venice_desc:0 ""

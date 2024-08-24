@@ -46,7 +46,7 @@ knidiplomatic = {
 	kni_crusader_kings = {
 		icon = mission_united_knight_order
 		position = 2
-		required_missions = { kni_sway_pope } 
+		required_missions = { kni_defend_brothers } 
 		provinces_to_highlight = {  } 
 
 		trigger = {
@@ -107,7 +107,7 @@ knidiplomatic = {
 		icon = knights_of_the_new_world
 		position = 1
 		required_missions = {
-			kni_crusader_kings
+			kni_defend_brothers
 			kni_entrenched_authority
 		}
 		provinces_to_highlight = {  } 
@@ -125,6 +125,28 @@ knidiplomatic = {
 			}
 			add_dip_power = 100
 		}
+	}
+
+	kni_defend_brothers = {
+		icon = protectors_of_christendom
+		position = 1
+		required_missions = { kni_sway_pope } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kni_knights_republic = {
+		icon = mission_united_knight_order
+		position = 1
+		required_missions = { kni_our_place } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
 }
 kniforts = {
@@ -167,7 +189,7 @@ kniforts = {
 
 	kni_entrenched_authority = {
 		icon = mission_knight
-		position = 1
+		position = 3
 		required_missions = { kni_fortify_south } 
 		provinces_to_highlight = {  } 
 
@@ -334,12 +356,23 @@ Super_Cool_Holy_Cities = {
 				}
 			}
 		}
-	} #me mewing
+	}
 
-	kni_of_the_worlds_desire = {
-		icon = byz_city_of_worlds_desire
+	kni_greatest_city_in_the_world = {
+		icon = mission_control_venice
 		position = 5
 		required_missions = { kni_city_of_god_two } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kni_the_second_city = {
+		icon = mission_constantinople
+		position = 1
+		required_missions = { kni_greatest_city_in_the_world } 
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
@@ -487,19 +520,9 @@ kninaval = {
 	}
 
 	kni_masters_mediterranean = {
-		icon = mission_establish_high_seas_navy
+		icon = overshadow_venice
 		position = 5
 		required_missions = { kni_militant_order } 
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
-	}
-
-	kni_pirate_crusaders = {
-		icon = mission_pirate_fleet
-		position = 11
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
@@ -518,6 +541,52 @@ kninaval = {
 		effect = {  } 
 	}
 }
+kni_pirate = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = KNI } 
+
+	kni_pirate_crusaders = {
+		icon = mission_pirate_fleet
+		position = 9
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			home_trade_node = {
+				privateer_power = {
+					country = KNI
+					share = 25
+				}
+			}
+		}
+
+		effect = { unlock_decision = { type = kni_coastal_raiding }  } 
+	}
+
+	kni_privateering_fleet = {
+		icon = mission_pirate_flag
+		position = 1
+		required_missions = { kni_pirate_crusaders } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kni_scourge_of_the_mediterranean = {
+		icon = mission_pirate_havens
+		position = 1
+		required_missions = { kni_privateering_fleet } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
 kninavalalternative = {
 	slot = 4
 	generic = no
@@ -525,8 +594,8 @@ kninavalalternative = {
 	has_country_shield = yes
 	potential = { tag = KNI } 
 
-	kni_outremer_eastern_fleets = {
-		icon = crusader_fleet
+	kni_galleon_and_caravel = {
+		icon = mission_launch_a_flagship
 		position = 7
 		provinces_to_highlight = {  } 
 
@@ -592,6 +661,17 @@ knitrade = {
 			}
 			else = { add_years_of_estate_land_income = 0.25 } 
 		}
+	}
+
+	kni_cairo_merchants = {
+		icon = mission_subjugate_the_merchants
+		position = 10
+		required_missions = { kni_alexandrian_trade } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
 }
 kni_trade_diplomatic = {
@@ -883,6 +963,17 @@ kninavaltrade = {
 		icon = mission_conquer_alexandria
 		position = 12
 		required_missions = { kni_port_of_berenice } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kni_crossroads_of_the_world = {
+		icon = mission_royal_roads
+		position = 1
+		required_missions = { kni_pearl_mediterranean } 
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 

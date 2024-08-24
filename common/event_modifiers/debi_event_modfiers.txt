@@ -38,8 +38,7 @@ kni_city_of_god = {
 kni_city_of_god_II = {
 	monthly_splendor = 2
 	prestige = 2
-	local_development_cost = -0.15
-	local_development_cost_modifier = -0.10
+	local_development_cost = -0.2
 	allowed_num_of_manufactories = 1
 	local_tax_modifier = 0.75
 	local_defensiveness = 0.25
@@ -48,14 +47,22 @@ kni_city_of_god_III = {
 	monthly_splendor = 3
 	prestige = 2
 	country_admin_power = 1
-	local_development_cost = -0.35
-	local_development_cost_modifier = -0.35
-	allowed_num_of_manufactories = 2	
-	local_tax_modifier = 0.150
+	local_development_cost = -0.5
+	allowed_num_of_manufactories = 1
 	tax_income = 24
-	local_production_efficiency = 0.20
+	local_manpower_modifier = 0.33
 	local_defensiveness = 0.5
 }
 kni_out_ally = {
 	shock_damage = 0.10
+}
+kni_coastal_raiding_modifier = {
+	may_perform_slave_raid = yes
+	privateer_efficiency = 0.33
+	country_diplomatic_power = -1
+	country_military_power = -1
+}
+kni_increasing_development = {
+	development_cost = -0.05
+	build_cost = -0.05
 }
