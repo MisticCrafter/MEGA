@@ -2,14 +2,14 @@
  kni_sway_pope_title:0 "Influence the Pope"
  kni_sway_pope_desc:0 ""
 
+ kni_defend_brothers_title:0 "Defend Our Brothers"
+ kni_defend_brothers_desc:0 ""
+
  kni_crusader_kings_title:0 "Crusader Kings"
  kni_crusader_kings_desc:0 ""
 
  kni_our_place_title:0 "Our Place in the World"
  kni_our_place_desc:0 ""
-
- kni_defend_brothers_title:0 "Defend Our Brothers"
- kni_defend_brothers_desc:0 ""
 
  kni_knights_republic_title:0 "The Knights Council"
  kni_knights_republic_desc:0 ""
@@ -43,6 +43,9 @@
 
  kni_the_second_city_title:0 "The Second City"
  kni_the_second_city_desc:0 ""
+
+ kni_megalopolis_title:0 "Megalopolis"
+ kni_megalopolis_desc:0 ""
 
  kni_granary_title:0 "Granary of the Mediterranean"
  kni_granary_desc:0 ""
@@ -92,8 +95,20 @@
  kni_cairo_merchants_title:0 "Cairo Merchants"
  kni_cairo_merchants_desc:0 ""
 
+ kni_river_of_life_title:0 "River of Life"
+ kni_river_of_life_desc:0 ""
+
  kni_mercantile_relationships_title:0 "Mercantile Relationships"
  kni_mercantile_relationships_desc:0 ""
+
+ kni_the_grain_trade_title:0 "The Grain Trade"
+ kni_the_grain_trade_desc:0 ""
+
+ kni_fish_and_power_title:0 "Fish and Power"
+ kni_fish_and_power_desc:0 ""
+
+ kni_naval_supplies_title:0 "Naval Supplies"
+ kni_naval_supplies_desc:0 ""
 
  kni_port_of_damietta_title:0 "Port of Damietta"
  kni_port_of_damietta_desc:0 ""

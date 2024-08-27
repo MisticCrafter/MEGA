@@ -5,14 +5,14 @@ kni_citadel_of_rosetta = {
 }   
 kni_cairo_citadel = {
 	local_defensiveness = 0.33
-	allowed_num_of_manufactories = 1
+	local_defender_dice_roll_bonus = 1
 	monthly_splendor = 1
 }
 kni_friendship_pope = {
 	curia_powers_cost = -0.05
 }	
 kni_defense_of_the_faith = {
-	army_tradition = 1
+	army_tradition_decay = -0.01
 	defensiveness = 0.15
 }
 kni_country_of_castles = {
@@ -34,27 +34,43 @@ kni_city_of_god = {
 	prestige = 1
 	local_development_cost = -0.1
 	local_tax_modifier = 0.33
+	trade_value = 10
 }
 kni_city_of_god_II = {
 	monthly_splendor = 2
 	prestige = 2
-	local_development_cost = -0.2
+	local_development_cost = -0.25
 	allowed_num_of_manufactories = 1
 	local_tax_modifier = 0.75
+	local_manpower_modifier = 0.25
 	local_defensiveness = 0.25
+	trade_value = 20
 }
 kni_city_of_god_III = {
-	monthly_splendor = 3
+	monthly_splendor = 2
 	prestige = 2
-	country_admin_power = 1
+	local_production_efficiency = 0.10
 	local_development_cost = -0.5
 	allowed_num_of_manufactories = 1
-	tax_income = 24
+	local_tax_modifier = 1.50
 	local_manpower_modifier = 0.33
 	local_defensiveness = 0.5
+	trade_value = 40
+}
+kni_city_of_god_IV = {
+	monthly_splendor = 3
+	prestige = 3
+	local_production_efficiency = 0.20
+	local_development_cost = -1
+	allowed_num_of_manufactories = 2
+	local_tax_modifier = 3.00
+	local_manpower_modifier = 0.66
+	local_defensiveness = 1
+	trade_value = 80
+
 }
 kni_out_ally = {
-	shock_damage = 0.10
+	shock_damage = 0.05
 }
 kni_coastal_raiding_modifier = {
 	may_perform_slave_raid = yes
@@ -65,4 +81,23 @@ kni_coastal_raiding_modifier = {
 kni_increasing_development = {
 	development_cost = -0.05
 	build_cost = -0.05
+}
+kni_citadel_of_triacastra = {
+	local_defensiveness = 0.33
+	local_development_cost = -0.10
+}
+kni_de_jure_hospitaller = {
+	local_defensiveness = 0.25
+	local_core_creation = 0.25
+	local_warscore_modifier = 0.25
+}
+kni_cyrene_fortifications = {
+	local_defensiveness = 0.25
+	hostile_fleet_attrition = 5
+	local_hostile_attrition = 1
+	max_attrition = 1
+}
+kni_sisterhoods = {
+	may_recruit_female_generals = yes
+	leader_cost = -0.25
 }

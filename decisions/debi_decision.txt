@@ -1,12 +1,12 @@
 country_decisions = {
-	#coastla raiding
+	#coastal raiding
 	kni_coastal_raiding = {
 		major = yes
 		potential = {
-			has_country_flag = enabled_sister_orders
+			tag = KNI
 		}
 		allow = { 
-			tag = KNI
+			has_country_flag = kni_coastal_raiding_decision
 		}
 		effect = {
 			add_country_modifier = {

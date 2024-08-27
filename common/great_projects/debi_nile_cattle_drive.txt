@@ -104,7 +104,7 @@ nile_cattle_drive = {
         area_modifier = {
             trade_value = 5
             trade_goods_size = 0.4
-            hostile_attrition = 0.5
+            local_hostile_attrition = 0.5
         }
 
         # What modifiers are given to the nation that owns the monument
@@ -141,8 +141,8 @@ nile_cattle_drive = {
         area_modifier = {
             trade_value = 7.5
             trade_goods_size = 0.6
-            hostile_attrition = 0.5
-            max_hostile_attrition = 0.5
+            local_hostile_attrition = 0.5
+            max_attrition = 0.5
         }
 
         # What modifiers are given to the nation that owns the monument
@@ -180,16 +180,16 @@ nile_cattle_drive = {
         # What modifiers are given to the area of the province the project is located in
         area_modifier = {
             trade_value = 10
-            trade_goods_size = 0.8
-            local_production_efficiency = 0.10
-            hostile_attrition = 1
-            max_hostile_attrition = 1
+            trade_goods_size = 0.80
+            local_hostile_attrition = 1
+            max_attrition = 1
         }
 
         # What modifiers are given to the nation that owns the monument
         country_modifiers = {
-            cavalry_power = 0.25
+            cavalry_power = 0.10
             army_tradition = 0.25
+            shock_damage = 0.10
         }
 
         # What modifiers are given to the region of the province the project is located in

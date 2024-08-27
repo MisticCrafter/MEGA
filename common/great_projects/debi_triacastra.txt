@@ -180,6 +180,7 @@ triacastra = {
         # What modifiers are given to the area of the province the project is located in
         area_modifier = {
             local_garrison_size = 0.33
+            local_defensiveness = 0.33
         }
 
         # What modifiers are given to the nation that owns the monument
@@ -189,7 +190,6 @@ triacastra = {
 
         # What modifiers are given to the region of the province the project is located in
         region_modifier = {
-            local_defensiveness = 0.33
         }
 
         # What happens when the upgrade is complete
