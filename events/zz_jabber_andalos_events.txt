@@ -875,6 +875,7 @@ country_event = {
 			}
 			remove_core = ROOT
 			cede_province = AE5
+			add_prestige = 5
 		}
 	}
 }
