@@ -6,6 +6,8 @@
  rationalist_rebels_name:3 "$RELIGION$ Rebels"
  rationalist_rebels_title:3 "Rationalists"
  rationalist_religion_desc:3 "Extolling a radical doctrine of ultra-violent, anti-religious, cannibalistic humanism. The Cult of Reason and their Rationalists spread the beliefs of King Parajox I of the Netherlands. Through the use of the Courts of Justice, the Rationalists repurpose the generic 'temples and churches' of the god-worshipping unenlightened folk, they conduct meetings preaching equality for all and humanity first beliefs. While others think they are created in a gods image, we know that all humans are virtuous."
+ irreligious:0 "Irreligious"
+ ICONOCLAST_CAMPAIGN:0 "Iconoclast Campaign"
 # Government Reforms
  zeven_provincies_republic_reform:0 "Zeven Provincies Confederal Queendom"
  zeven_provincies_republic_reform_desc:0 "Under the reign of Queen Astolfo I, the Confederation of the Zeven Provincies was established. Formed through conquest of the isles, and forced replacement of local dynasties with members of the van Paradyx dynasty. The confederation is a nominal republic lead under the rulership of local kingdoms of our dynasty, highly decentralized and contesting with each other. The republic stands at a danger of collapsing, but should we succeed, the creation of a true nederlandische republic is possible."
