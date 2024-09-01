@@ -77,10 +77,8 @@ reformed_nederlands_republic_reform = {				# reform after you first remove all t
 	potential = {
 		OR = {
 			has_reform = reformed_nederlands_republic_reform
-			AND = {
-				has_country_flag = revoked_zeven_provincies_autonomy_flag
-				has_reform = zeven_provincies_republic_reform
-			}
+			has_country_flag = revoked_zeven_provincies_autonomy_flag
+			
 		}
 	}
 
@@ -172,24 +170,16 @@ united_zeven_provincies_republic_reform = {			# after you reunify Zeven Provinci
 	icon = "orangist_stadholders_reform"
 	allow_normal_conversion = no
 	potential = {
-		OR = { 
-				OR = { 
-					AND = {
-					has_country_flag = reunify_the_zeven_provincies_flag
-					has_reform = zeven_provincies_republic_reform
-					}
-					AND = {
-						has_country_flag = reunify_the_zeven_provincies_flag
-						has_reform = reformed_nederlands_republic_reform
-					}
-				}
-				has_reform = united_zeven_provincies_republic_reform
-			}
+		OR = {
+				has_country_flag = reunify_the_zeven_provincies_flag
+				have_had_reform = united_zeven_provincies_republic_reform
 		}
+	}
+	
 
 	trigger = {
-		AND = {
-			has_reform = united_zeven_provincies_republic_reform
+		OR = {
+			has_country_flag = reunify_the_zeven_provincies_flag
 			have_had_reform = united_zeven_provincies_republic_reform
 		}
 	}
@@ -278,7 +268,8 @@ united_zeven_provincies_republic_reform = {			# after you reunify Zeven Provinci
 # Vassal Governments
 
 mandate_of_ierland_republic_reform = {
-	icon = ""
+	icon = war_map
+	allow_normal_conversion = yes
 
 	potential = {
 		OR = { 
@@ -304,6 +295,10 @@ mandate_of_ierland_republic_reform = {
 		fort_maintenance_modifier = -0.5
 		global_monthly_devastation = 0.125
 	}
+
+	# government_mechanic = {
+	#       game crashed when i added this, fix later. }
+	
 
 	custom_attributes = {
 		cannot_become_dictatorship = yes

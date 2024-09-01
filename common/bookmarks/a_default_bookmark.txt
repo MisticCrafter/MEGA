@@ -11,16 +11,20 @@ bookmark = {
 	country = Z00
 	country = ADU
 	country = NED
+	country = HAB
 	country = ETH
+
 	country = ENG
 	country = KNI
 	country = OON
 	country = ARM
+	country = RJP
 
 	easy_country = SWI
 	easy_country = SIC
 	easy_country = Z00
 	easy_country = ADU
 	easy_country = NED
+	easy_country = HAB
 	easy_country = ETH
 }

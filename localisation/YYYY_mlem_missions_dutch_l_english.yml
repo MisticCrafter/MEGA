@@ -23,7 +23,7 @@
  NED_militarized_guard_units_title:0 "Civil Gendarmerie"
  NED_militarized_guard_units_desc:0 "The threats of revolution and revolt in our republic have resulted in the stadhouder and the royal family being terrified for their lives. They have championed the creation of the Civil Gendarmrie regiments in the Republican Guard. They are fighters of bandits, would-be assassins, and anti-republican rebels. The people despise the view of the military having a unit directly to arrest and execute civil dissent, but they are very effective."
  NED_found_the_republican_guard_title:0 "Found the Republican Guard"
- NED_found_the_republican_guard_desc:0 "The Republican Guard are units that exist to protect the republic from foreign conquest. They are an experimental regiment system, ones where the army stays at arms, or is a standing military, and exists to protect against sudden invasion from anywhere. They will be highly efficient, although some view them as anti-democratic and have the potential to overturn republicanism with martial force."
+ NED_found_the_republican_guard_desc:0 "The Republican Guard are units that exist to protect the republic from foreign conquest. They are an experimental regiment system, ones where the army stays at arms, or is a standing military, and exists to protect against sudden invasion from anywhere. They will be under direct orders of the stadhouder, although some view this as anti-democratic and has the potential to overturn republicanism with martial force."
  republican_guards_founded_ZVP:0 "Republican Guard Regiments"
  desc_republican_guards_founded_ZVP:0 "We have established the standing land army of the republic; the Republican Guard."
  republican_guards_buff_2_ZVP:0 "Militarized Civil Gendarmerie"

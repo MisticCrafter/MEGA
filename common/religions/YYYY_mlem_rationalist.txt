@@ -1,4 +1,8 @@
-christian = {
+irreligious = {
+
+	crusade_name = ICONOCLAST_CAMPAIGN
+	can_form_personal_unions = yes
+
 	rationalist = {
 		color = { 18 64 18 }
 		icon =  178

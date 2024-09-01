@@ -3,21 +3,19 @@ bookmark = {
 	desc = bookmark_heresies_desc
 	date = "1444.11.11"
 
-	center = 172
+	center = 174
 	default = no
 
 	country = SWI
 	country = ADU
-	country = NED
 	country = SWE
+	
 	country = SAV
 	country = CAS
-	country = ENG
 	country = OON
 	country = EST
 
 	easy_country = SWI
 	easy_country = ADU
-	easy_country = NED
 	easy_country = SWE
 }
