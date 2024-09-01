@@ -2530,6 +2530,15 @@
  fervor_stability_buffed_short:0 "Stability"
  fervor_diplomacy_buffed_short:0 "Diplomacy"
  
+ fervor_stability_t:1 "Fervant focus on Stability"
+ fervor_diplomacy_t:1 "Fervant focus on Diplomacy"
+ fervor_trade_t:1 "Fervent focus on Trade"
+ fervor_war_t:1 "Fervent focus on War"
+ fervor_stability_t_short:0 "Stability"
+ fervor_diplomacy_t_short:0 "Diplomacy"
+ fervor_trade_t_short:0 "Trade"
+ fervor_war_t_short:0 "War"
+ 
  #Great Projects:
  amsterdam_bourse:0 "Amsterdam Bourse"
  golden_kremnica:1 "The Golden City"
