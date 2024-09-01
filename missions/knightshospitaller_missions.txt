@@ -1,142 +1,3 @@
-Super_Cool_Holy_Cities = {
-	slot = 3
-	generic = no
-	ai = yes
-	has_country_shield = yes
-	potential = { tag = KNI } 
-
-	kni_holy_alexandria = {
-		icon = mission_galleys_in_port
-		position = 1
-		provinces_to_highlight = { province_id = 358 } 
-
-		trigger = {
-			358 = {
-				owned_by = ROOT
-				grown_by_development = 10
-				num_of_buildings_in_province = 3
-				num_of_times_expanded_infrastructure = 1
-			}
-		}
-
-		effect = {
-			358 = {
-				add_base_tax = 2
-				add_base_production = 2
-				add_or_upgrade_tax_building = yes
-				add_center_of_trade_level = 1
-			}
-		}
-	}
-
-	kni_thousand_towers = {
-		icon = mission_the_golden_city
-		position = 2
-		required_missions = {
-			kni_fort_rosetta
-			kni_holy_alexandria
-		}
-		provinces_to_highlight = { province_id = 361 } 
-
-		trigger = {
-			361 = {
-				owned_by = ROOT
-				OR = {
-					num_of_times_improved = 8
-					num_of_buildings_in_province = 3
-				}
-			}
-		}
-
-		effect = {
-			361 = {
-				add_center_of_trade_level = 1
-				add_province_modifier = {
-					name = "kni_cairo_citadel"
-					duration = -1
-				}
-			}
-		}
-	}
-
-	kni_pearl_mediterranean = {
-		icon = mission_conquer_alexandria
-		position = 3
-		required_missions = { kni_thousand_towers } 
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
-	}
-
-	kni_granary = {
-		icon = mission_control_the_barbary_coast
-		position = 4
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
-	}
-
-	kni_breadbasket = {
-		icon = mission_pol_breadbasket_europe
-		position = 5
-		required_missions = { kni_granary } 
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
-	}
-}
-kni_army = {
-	slot = 4
-	generic = no
-	ai = yes
-	has_country_shield = yes
-	potential = { tag = KNI } 
-
-	kni_fort_rosetta = {
-		icon = mission_conquer_50_development
-		position = 1
-		provinces_to_highlight = { province_id = 362 } 
-
-		trigger = {
-			362 = {
-				owned_by = ROOT
-				grown_by_development = 10
-				has_manpower_building_trigger = yes
-				has_fort_building_trigger = yes
-				num_of_times_expanded_infrastructure = 1
-			}
-		}
-
-		effect = {
-			362 = {
-				add_or_upgrade_fort_building = yes
-				add_base_production = 1
-				add_base_manpower = 3
-				add_province_modifier = {
-					name = "kni_citadel_of_rosetta"
-					duration = -1
-				}
-			}
-		}
-	}
-
-	kni_legion_white_cross = {
-		icon = mission_modern_knight_army
-		position = 3
-		required_missions = { kni_fort_rosetta } 
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
-	}
-}
 knidiplomatic = {
 	slot = 1
 	generic = no
@@ -182,9 +43,9 @@ knidiplomatic = {
 		}
 	}
 
-	kni_crusader_kings = {
-		icon = mission_united_knight_order
-		position = 2
+	kni_defend_brothers = {
+		icon = protectors_of_christendom
+		position = 1
 		required_missions = { kni_sway_pope } 
 		provinces_to_highlight = {  } 
 
@@ -193,13 +54,97 @@ knidiplomatic = {
 		effect = {  } 
 	}
 
+	kni_crusader_kings = {
+		icon = mission_united_knight_order
+		position = 2
+		required_missions = { kni_defend_brothers } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			any_ally = {
+				OR = {
+					has_reform = mauretanian_crusader_reform
+					has_reform = crusading_kingdom_reform
+					has_reform = holy_state_reform
+					has_reform = monastic_order_reform
+				}
+			}
+		}
+
+		effect = {
+			custom_tooltip = kni_crusader_king_tt
+			hidden_effect = {
+				if = {
+					limit = { any_ally = { tag = Z00 }  } 
+					add_country_modifier = {
+						name = "kni_out_ally"
+						duration = -1
+					}
+				}
+				if = {
+					limit = { any_ally = { tag = Z00 }  } 
+					add_country_modifier = {
+						name = "out_lae_ally"
+						duration = -1
+					}
+				}
+				if = {
+					limit = { any_ally = { tag = NAX }  } 
+					add_country_modifier = {
+						name = "out_nax_ally"
+						duration = -1
+					}
+				}
+				if = {
+					limit = { any_ally = { tag = MOR }  } 
+					add_country_modifier = {
+						name = "out_mor_ally"
+						duration = -1
+					}
+				}
+				if = {
+					limit = { any_ally = { tag = TEM }  } 
+					add_country_modifier = {
+						name = "out_tem_ally"
+						duration = -1
+					}
+				}
+			}
+			add_papal_influence = 20
+		}
+	}
+
 	kni_our_place = {
 		icon = knights_of_the_new_world
 		position = 1
 		required_missions = {
-			kni_crusader_kings
+			kni_defend_brothers
 			kni_entrenched_authority
 		}
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			is_great_power = yes
+			NOT = { great_power_rank = 6 } 
+			is_year = 1500
+		}
+
+		effect = {
+			every_owned_province = {
+				limit = { has_fort_building_trigger = yes } 
+				add_province_modifier = {
+					name = "kni_de_jure_hospitaller"
+					duration = -1
+				}
+			}
+			add_dip_power = 100
+		}
+	}
+
+	kni_knights_republic = {
+		icon = mission_united_knight_order
+		position = 1
+		required_missions = { kni_our_place } 
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
@@ -237,39 +182,459 @@ kniforts = {
 			}
 		}
 
-		effect = { 
+		effect = {
 			add_country_modifier = {
 				name = "kni_defense_of_the_faith"
-				duration = 18262
+				duration = 18250
 			}
 		}
 	}
 
-
 	kni_entrenched_authority = {
 		icon = mission_knight
-		position = 1
+		position = 3
 		required_missions = { kni_fortify_south } 
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {
+			stability = 2
+			1234 = { controlled_by = ROOT } 
+			prestige = 50
+			is_year = 1490
+			num_of_owned_provinces_with = {
+				fort_level = 2
+				value = 12
+			}
+		}
 
-		effect = {  } 
+		effect = {
+			add_mil_power = 75
+			add_country_modifier = {
+				name = "kni_country_of_castles"
+				duration = -1
+			}
+		}
 	}
 
 	kni_three_castles = {
 		icon = fortress_of_belgrade
+		position = 7
+		provinces_to_highlight = { province_id = 360 } 
+
+		trigger = {
+			360 = {
+				owned_by = ROOT
+				grown_by_development = 10
+				num_of_times_expanded_infrastructure = 1
+				has_great_project = {
+					type = triacastra
+					tier = 2
+				}
+			}
+		}
+
+		effect = {
+			unlock_estate_privilege = { estate_privilege = estate_burghers_hydraulic_rights } 
+			custom_tooltip = ITA_upgrade_the_expand_the_fortifications_privilege
+			set_country_flag = ITA_upgrade_the_expand_the_fortifications_privilege_flag
+		}
+	}
+
+	kni_cyrenaica = {
+		icon = fortify_malta
+		position = 8
+		provinces_to_highlight = {
+			province_id = 356
+			province_id = 357
+			province_id = 2326
+			province_id = 2325
+		}
+
+		trigger = {
+			356 = {
+				owned_by = ROOT
+				has_fort_building_trigger = yes
+			}
+			357 = {
+				owned_by = ROOT
+				has_fort_building_trigger = yes
+			}
+			2326 = {
+				owned_by = ROOT
+				has_fort_building_trigger = yes
+			}
+			2325 = {
+				owned_by = ROOT
+				has_fort_building_trigger = yes
+			}
+		}
+
+		effect = {
+			356 = {
+				add_province_modifier = {
+					name = "kni_cyrene_fortifications"
+					duration = -1
+				}
+			}
+			357 = {
+				add_province_modifier = {
+					name = "kni_cyrene_fortifications"
+					duration = -1
+				}
+			}
+			2326 = {
+				add_province_modifier = {
+					name = "kni_cyrene_fortifications"
+					duration = -1
+				}
+			}
+			2325 = {
+				add_province_modifier = {
+					name = "kni_cyrene_fortifications"
+					duration = -1
+				}
+			}
+		}
+	}
+}
+Super_Cool_Holy_Cities = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = KNI } 
+
+	kni_holy_alexandria = {
+		icon = mission_galleys_in_port
+		position = 1
+		provinces_to_highlight = { province_id = 358 } 
+
+		trigger = {
+			358 = {
+				owned_by = ROOT
+				grown_by_development = 10
+				num_of_buildings_in_province = 3
+				num_of_times_expanded_infrastructure = 1
+			}
+		}
+
+		effect = {
+			add_dip_power = 100
+			add_country_modifier = {
+				name = "kni_increasing_development"
+				duration = 1825
+			}
+			358 = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_or_upgrade_tax_building = yes
+				add_center_of_trade_level = 1
+			}
+		}
+	}
+
+	kni_thousand_towers = {
+		icon = mission_found_the_city_of_agra
+		position = 2
+		required_missions = {
+			kni_fort_rosetta
+			kni_holy_alexandria
+		}
+		provinces_to_highlight = { province_id = 361 } 
+
+		trigger = {
+			361 = {
+				owned_by = ROOT
+				OR = {
+					num_of_times_improved = 8
+					num_of_buildings_in_province = 3
+				}
+			}
+		}
+
+		effect = {
+			custom_tooltip = add_5_crown_land_share
+			hidden_effect = {
+				change_estate_land_share = {
+					estate = all
+					share = -5
+				}
+			}
+			add_country_modifier = {
+				name = "kni_increasing_development"
+				duration = 1825
+			}
+			361 = {
+				add_center_of_trade_level = 1
+				add_province_modifier = {
+					name = "kni_cairo_citadel"
+					duration = -1
+				}
+			}
+		}
+	}
+
+	kni_city_of_god_one = {
+		icon = mission_the_golden_city
+		position = 3
+		required_missions = { kni_thousand_towers } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			any_owned_province = {
+				development = 25
+				grown_by_development = 10
+				has_fort_building_trigger = yes
+				num_of_times_expanded_infrastructure = 1
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "kni_increasing_development"
+				duration = 1825
+			}
+			custom_tooltip = kni_city_of_god_tooltip
+			random_owned_province = {
+				limit = {
+					development = 25
+					grown_by_development = 10
+					has_fort_building_trigger = yes
+				}
+				add_province_modifier = {
+					name = "kni_city_of_god"
+					duration = -1
+				}
+			}
+		}
+	}
+
+	kni_city_of_god_two = {
+		icon = mission_the_golden_city
 		position = 4
+		required_missions = { kni_city_of_god_one } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			any_owned_province = {
+				development = 50
+				grown_by_development = 25
+				has_fort_building_trigger = yes
+				num_of_times_expanded_infrastructure = 2
+				has_province_modifier = kni_city_of_god
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "kni_increasing_development"
+				duration = 1825
+			}
+			custom_tooltip = kni_city_of_god_tooltip
+			random_owned_province = {
+				limit = {
+					development = 50
+					grown_by_development = 10
+					has_fort_building_trigger = yes
+					has_province_modifier = kni_city_of_god
+				}
+				remove_province_modifier = kni_city_of_god
+				add_province_modifier = {
+					name = "kni_city_of_god_II"
+					duration = -1
+				}
+			}
+		}
+	}
+
+	kni_greatest_city_in_the_world = {
+		icon = mission_control_venice
+		position = 5
+		required_missions = { kni_city_of_god_two } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			any_owned_province = {
+				development = 75
+				grown_by_development = 50
+				has_fort_building_trigger = yes
+				num_of_times_expanded_infrastructure = 3
+				has_province_modifier = kni_city_of_god_II
+			}
+		}
+
+		effect = {
+			custom_tooltip = kni_city_of_god_tooltip
+			custom_tooltip = add_5_crown_land_share
+			hidden_effect = {
+				change_estate_land_share = {
+					estate = all
+					share = -5
+				}
+			}
+			add_country_modifier = {
+				name = "kni_increasing_development"
+				duration = 1825
+			}
+			random_owned_province = {
+				limit = {
+					development = 75
+					grown_by_development = 20
+					has_fort_building_trigger = yes
+					has_province_modifier = kni_city_of_god_III
+				}
+				remove_province_modifier = kni_city_of_god_II
+				add_province_modifier = {
+					name = "kni_city_of_god_III"
+					duration = -1
+				}
+			}
+		}
+	}
+}
+kni_second_city_branch = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = AAA } 
+
+	kni_the_second_city = {
+		icon = mission_constantinople
+		position = 6
+		required_missions = { kni_greatest_city_in_the_world } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			any_owned_province = {
+				development = 75
+				grown_by_development = 50
+				has_fort_building_trigger = yes
+				num_of_times_expanded_infrastructure = 3
+			}
+		}
+
+		effect = {
+			custom_tooltip = kni_city_of_god_tooltip
+			add_adm_power = 100
+			add_mil_power = 100
+			add_dip_power = 100
+			add_country_modifier = {
+				name = "kni_increasing_development"
+				duration = 1825
+			}
+			random_owned_province = {
+				limit = {
+					development = 75
+					grown_by_development = 20
+					has_fort_building_trigger = yes
+					NOT = { has_province_modifier = kni_city_of_god_III } 
+				}
+				add_province_modifier = {
+					name = "kni_city_of_god_II"
+					duration = -1
+				}
+			}
+		}
+	}
+}
+kni_regiopolis_brach = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = KNI } 
+
+	kni_megalopolis = {
+		icon = mission_crown_of_wenceslas
+		position = 1
+		required_missions = { kni_greatest_city_in_the_world } 
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
 
 		effect = {  } 
 	}
+}
+kni_granary_branch = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = KNI } 
 
-	kni_cyrenaica = {
-		icon = fortify_malta
-		position = 5
+	kni_granary = {
+		icon = mission_control_the_barbary_coast
+		position = 7
+		provinces_to_highlight = {  } 
+
+		trigger = { farm_estate = 5 } 
+
+		effect = {
+			if = {
+				limit = { has_estate = estate_burghers } 
+				set_estate_privilege = estate_burghers_khmer_irrigation
+			}
+			else = { add_dip_power = 100 } 
+			custom_tooltip = enable_export_grain_dip_action_tt
+			set_country_flag = enable_export_grain_dip_action_flag
+		}
+	}
+
+	kni_breadbasket = {
+		icon = mission_pol_breadbasket_europe
+		position = 8
+		required_missions = { kni_granary } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+kni_army = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = KNI } 
+
+	kni_fort_rosetta = {
+		icon = mission_conquer_50_development
+		position = 1
+		provinces_to_highlight = { province_id = 362 } 
+
+		trigger = {
+			362 = {
+				owned_by = ROOT
+				grown_by_development = 10
+				has_manpower_building_trigger = yes
+				has_fort_building_trigger = yes
+				num_of_times_expanded_infrastructure = 1
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "kni_increasing_development"
+				duration = 1825
+			}
+			362 = {
+				add_or_upgrade_fort_building = yes
+				add_base_production = 1
+				add_base_manpower = 3
+				add_province_modifier = {
+					name = "kni_citadel_of_rosetta"
+					duration = -1
+				}
+			}
+		}
+	}
+
+	kni_legion_white_cross = {
+		icon = mission_modern_knight_army
+		position = 2
+		required_missions = { kni_fort_rosetta } 
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
@@ -310,40 +675,25 @@ kninaval = {
 				add_or_upgrade_shipyard_building = yes
 				add_base_production = 2
 			}
-			321 = {
-				add_or_upgrade_shipyard_building = yes
-				add_base_production = 2
+			add_country_modifier = {
+				name = "kni_building_a_navy"
+				duration = 3652
+			}
+			if = {
+				limit = { owns_core_province = 321 } 
+				321 = {
+					add_or_upgrade_shipyard_building = yes
+					add_base_production = 2
+				}
 			}
 		}
 	}
 
 	kni_sea_knights = {
 		icon = crusader_fleet
-		position = 2
-		required_missions = { kni_struggle_mediterranean } 
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
-	}
-
-	kni_militant_order = {
-		icon = imperial_navy
 		position = 3
-		required_missions = { kni_sea_knights } 
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
-	}
-
-	kni_masters_mediterranean = {
-		icon = mission_establish_high_seas_navy
-		position = 4
 		required_missions = {
-			kni_militant_order
+			kni_struggle_mediterranean
 			kni_legion_white_cross
 		}
 		provinces_to_highlight = {  } 
@@ -353,9 +703,10 @@ kninaval = {
 		effect = {  } 
 	}
 
-	kni_pirate_crusaders = {
-		icon = mission_pirate_fleet
-		position = 6
+	kni_militant_order = {
+		icon = imperial_navy
+		position = 4
+		required_missions = { kni_sea_knights } 
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
@@ -363,9 +714,10 @@ kninaval = {
 		effect = {  } 
 	}
 
-	kni_outremer_eastern_fleets = {
-		icon = crusader_fleet
-		position = 7
+	kni_masters_mediterranean = {
+		icon = overshadow_venice
+		position = 5
+		required_missions = { kni_militant_order } 
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
@@ -374,9 +726,75 @@ kninaval = {
 	}
 
 	kni_rules_the_waves = {
-		icon = mission_empire
-		position = 1
+		icon = mission_naval_kingdom
+		position = 6
 		required_missions = { kni_masters_mediterranean } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+kni_pirate = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = KNI } 
+
+	kni_pirate_crusaders = {
+		icon = mission_pirate_fleet
+		position = 9
+		provinces_to_highlight = { province_id = 1298 } 
+
+		trigger = {
+			1298 = {
+				privateer_power = {
+					country = ROOT
+					share = 25
+				}
+			}
+		}
+
+		effect = {
+			set_country_flag = kni_coastal_raiding_decision
+			custom_tooltip = zzz_kni_coastal_raiding_reward
+		}
+	}
+
+	kni_privateering_fleet = {
+		icon = mission_pirate_flag
+		position = 1
+		required_missions = { kni_pirate_crusaders } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kni_scourge_of_the_mediterranean = {
+		icon = mission_pirate_havens
+		position = 1
+		required_missions = { kni_privateering_fleet } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+kninavalalternative = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = KNI } 
+
+	kni_galleon_and_caravel = {
+		icon = mission_launch_a_flagship
+		position = 7
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
@@ -389,72 +807,206 @@ kninaval = {
 		position = 8
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
-
-		effect = {  } 
-	}
-}
-landfall_italy = {
-	slot = 1
-	generic = no
-	ai = yes
-	has_country_shield = yes
-	potential = { tag = KNI } 
-
-	kni_landfall_venice = {
-		icon = mission_raid_on_venice
-		position = 7
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
-	}
-
-	kni_rome = {
-		icon = mission_fall_of_third_rome
-		position = 8
-		required_missions = {
-			kni_landfall_venice
-			kni_landfall_sicily
+		trigger = {
+			navy_size_percentage = 1
+			innovativeness = 50
 		}
-		provinces_to_highlight = {  } 
 
-		trigger = {  } 
-
-		effect = {  } 
-	}
-
-	kni_europe = {
-		icon = mission_knight
-		position = 9
-		required_missions = { kni_rome } 
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
+		effect = {
+			define_admiral = {
+				name = "Victoria the III"
+				shock = 4
+				fire = 4
+				manuever = 4
+				siege = 8
+				trait = naval_cannoneer
+			}
+			add_country_modifier = {
+				name = "kni_sisterhoods"
+				duration = -1
+			}
+		}
 	}
 }
-landfall_sicily = {
-	slot = 2
+knitrade = {
+	slot = 3
 	generic = no
 	ai = yes
 	has_country_shield = yes
 	potential = { tag = KNI } 
 
-	kni_landfall_sicily = {
-		icon = mission_break_sicily
-		position = 7
+	kni_alexandrian_trade = {
+		icon = mission_conquer_alexandria
+		position = 9
+		provinces_to_highlight = {
+			OR = {
+				province_id = 358
+				province_id = 362
+				province_id = 363
+			}
+			OR = {
+				NOT = { owned_by = ROOT } 
+				has_trade_building_trigger = no
+			}
+		}
+
+		trigger = {
+			358 = {
+				owned_by = ROOT
+				has_trade_building_trigger = yes
+			}
+			362 = {
+				owned_by = ROOT
+				has_trade_building_trigger = yes
+			}
+			363 = {
+				owned_by = ROOT
+				has_trade_building_trigger = yes
+			}
+		}
+
+		effect = {
+			custom_tooltip = mam_indebted_privilege_no_merc_loss_tt
+			set_country_flag = no_mercantilism_loss_estate_privilege_flag
+			if = {
+				limit = { has_dlc = "Mandate of Heaven" } 
+				custom_tooltip = mam_trade_building_prosperity_tt
+				set_country_flag = mam_trade_building_prosperity_flag
+			}
+			else = { add_years_of_estate_land_income = 0.25 } 
+		}
+	}
+
+	kni_cairo_merchants = {
+		icon = mission_subjugate_the_merchants
+		position = 10
+		required_missions = { kni_alexandrian_trade } 
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
 
 		effect = {  } 
 	}
+
+	kni_river_of_life = {
+		icon = mission_se_along_the_river
+		position = 1
+		required_missions = { kni_cairo_merchants } 
+		provinces_to_highlight = {
+			OR = {
+				province_id = 362
+				province_id = 363
+				province_id = 2316
+				province_id = 361
+				province_id = 359
+				area = vostani_area
+				area = said_area
+			}
+			owned_by = ROOT
+			if = {
+				limit = { has_dlc = "Mandate of Heaven" } 
+				OR = {
+					is_prosperous = no
+					NOT = { num_of_times_improved = 1 } 
+					NOT = { num_of_buildings_in_province = 1 } 
+				}
+			}
+			else = {
+				OR = {
+					NOT = { num_of_times_improved = 1 } 
+					NOT = { num_of_buildings_in_province = 1 } 
+				}
+			}
+		}
+
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = mam_every_province_nile_tt
+				362 = {
+					owned_by = ROOT
+					OR = {
+						num_of_buildings_in_province = 1
+						num_of_times_improved = 1
+						is_prosperous = yes
+					}
+				}
+				363 = {
+					owned_by = ROOT
+					OR = {
+						num_of_buildings_in_province = 1
+						num_of_times_improved = 1
+						is_prosperous = yes
+					}
+				}
+				2316 = {
+					owned_by = ROOT
+					OR = {
+						num_of_buildings_in_province = 1
+						num_of_times_improved = 1
+						is_prosperous = yes
+					}
+				}
+				361 = {
+					owned_by = ROOT
+					OR = {
+						num_of_buildings_in_province = 1
+						num_of_times_improved = 1
+						is_prosperous = yes
+					}
+				}
+				359 = {
+					owned_by = ROOT
+					OR = {
+						num_of_buildings_in_province = 1
+						num_of_times_improved = 1
+						is_prosperous = yes
+					}
+				}
+				vostani_area = {
+					owned_by = ROOT
+					type = all
+					OR = {
+						num_of_buildings_in_province = 1
+						num_of_times_improved = 1
+						is_prosperous = yes
+					}
+				}
+				said_area = {
+					owned_by = ROOT
+					type = all
+					OR = {
+						num_of_buildings_in_province = 1
+						num_of_times_improved = 1
+						is_prosperous = yes
+					}
+				}
+			}
+		}
+
+		effect = {
+			custom_tooltip = mam_every_province_across_nile_tt
+			unlock_estate_privilege = { estate_privilege = estate_burghers_nile_goods_transport } 
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						OR = {
+							province_id = 362
+							province_id = 363
+							province_id = 2316
+							province_id = 361
+							province_id = 359
+							area = vostani_area
+							area = said_area
+						}
+					}
+					add_base_production = 1
+				}
+			}
+		}
+	}
 }
-knimediterranean = {
-	slot = 3
+kni_trade_diplomatic = {
+	slot = 2
 	generic = no
 	ai = yes
 	has_country_shield = yes
@@ -462,7 +1014,8 @@ knimediterranean = {
 
 	kni_mercantile_relationships = {
 		icon = mam_mercantile_relationship
-		position = 6
+		position = 10
+		required_missions = { kni_alexandrian_trade } 
 		provinces_to_highlight = {  } 
 
 		trigger = {
@@ -653,10 +1206,102 @@ knimediterranean = {
 		}
 	}
 
+	kni_the_grain_trade = {
+		icon = invest_in_the_rich_trades
+		position = 1
+		required_missions = { kni_mercantile_relationships } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kni_fish_and_power = {
+		icon = mission_fish_markets
+		position = 1
+		required_missions = { kni_the_grain_trade } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kni_naval_supplies = {
+		icon = mission_naval_dominance
+		position = 1
+		required_missions = { kni_fish_and_power } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+kni_portcities = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = KNI } 
+
+	kni_port_of_damietta = {
+		icon = mission_secure_hajj_ports
+		position = 1
+		required_missions = { kni_port_of_berenice } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+kni_portcities_ii = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = KNI } 
+
+	kni_port_of_pelusia = {
+		icon = mission_portuguese_malacca
+		position = 1
+		required_missions = { kni_port_of_berenice } 
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			4316 = {
+				owned_by = ROOT
+				grown_by_development = 20
+				has_fort_building_trigger = yes
+				num_of_times_expanded_infrastructure = 1
+			}
+		}
+
+		effect = {
+			add_dip_power = 100
+			add_mil_power = 100
+			add_mercantilism = 5
+			4316 = { add_or_upgrade_fort_building = yes } 
+			add_country_modifier = {
+				name = "kni_increasing_development"
+				duration = 1825
+			}
+		}
+	}
+}
+kninavaltrade = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = KNI } 
+
 	kni_establish_merchant_escorts = {
 		icon = mission_arabian_sea_trade
-		position = 2
-		required_missions = { kni_mercantile_relationships } 
+		position = 10
+		required_missions = { kni_alexandrian_trade } 
 		provinces_to_highlight = {
 			owned_by = ROOT
 			num_free_building_slots = 1
@@ -682,53 +1327,103 @@ knimediterranean = {
 			create_admiral = { tradition = 70 } 
 		}
 	}
+
+	kni_port_of_berenice = {
+		icon = capture_adriatic_ports
+		position = 11
+		required_missions = { kni_establish_merchant_escorts } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kni_pearl_mediterranean = {
+		icon = mission_conquer_alexandria
+		position = 12
+		required_missions = { kni_port_of_berenice } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kni_crossroads_of_the_world = {
+		icon = mission_royal_roads
+		position = 1
+		required_missions = { kni_pearl_mediterranean } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
 }
-knitrade = {
-	slot = 1
+landfall_venice = {
+	slot = 4
 	generic = no
 	ai = yes
 	has_country_shield = yes
 	potential = { tag = KNI } 
 
-	kni_alexandrian_trade = {
-		icon = mission_conquer_alexandria
-		position = 10
-		provinces_to_highlight = {
-			OR = {
-				province_id = 358
-				province_id = 362
-				province_id = 363
-			}
-			OR = {
-				NOT = { owned_by = ROOT } 
-				has_trade_building_trigger = no
-			}
-		}
+	kni_landfall_venice = {
+		icon = mission_raid_on_venice
+		position = 15
+		provinces_to_highlight = {  } 
 
-		trigger = {
-			358 = {
-				owned_by = ROOT
-				has_trade_building_trigger = yes
-			}
-			362 = {
-				owned_by = ROOT
-				has_trade_building_trigger = yes
-			}
-			363 = {
-				owned_by = ROOT
-				has_trade_building_trigger = yes
-			}
-		}
+		trigger = {  } 
 
-		effect = {
-			custom_tooltip = mam_indebted_privilege_no_merc_loss_tt
-			set_country_flag = no_mercantilism_loss_estate_privilege_flag
-			if = {
-				limit = { has_dlc = "Mandate of Heaven" } 
-				custom_tooltip = mam_trade_building_prosperity_tt
-				set_country_flag = mam_trade_building_prosperity_flag
-			}
-			else = { add_years_of_estate_land_income = 0.25 } 
+		effect = {  } 
+	}
+}
+landfall_sicily = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = KNI } 
+
+	kni_landfall_sicily = {
+		icon = mission_break_sicily
+		position = 15
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+landfall_italy = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = KNI } 
+
+	kni_rome = {
+		icon = mission_fall_of_third_rome
+		position = 16
+		required_missions = {
+			kni_landfall_venice
+			kni_landfall_sicily
 		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kni_europe = {
+		icon = mission_knight
+		position = 17
+		required_missions = { kni_rome } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
 }

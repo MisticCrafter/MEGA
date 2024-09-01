@@ -134,7 +134,7 @@ adu_rejected_faith_union = {
 
 adu_hellenic_refugees = {
     idea_cost = -0.05
-    global_colonial_growth = 15 #lowered setller growth a bit, but reduced state maint debuf
+    global_colonial_growth = 20 #lowered setller growth a bit, but reduced state maint debuf
     state_maintenance_modifier = 0.20
 }
 
@@ -357,6 +357,11 @@ tigranic_council_tercio_modifier = { #this one is cool I like it
     allowed_tercio_fraction = 0.2
     land_forcelimit_modifier = -0.2
     land_maintenance_modifier = -0.2
+}
+
+tigranic_more_missionaries = {
+    missionaries = 1
+    missionary_maintenance_cost = -0.5
 }
 
 #sorry if any of these comments make you like, tear up and cry, sob even... I just wanted to write comments smile

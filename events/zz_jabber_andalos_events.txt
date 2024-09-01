@@ -396,7 +396,7 @@ country_event = {
 		set_global_flag = columbus_happened
 		add_years_of_income = -0.10
 		define_explorer = {
-			name = "Cristóvão Colombo"
+			name = "Cristï¿½vï¿½o Colombo"
 			fire = 2
 			shock = 2
 			manuever = 6
@@ -654,6 +654,16 @@ country_event = {
 		name = flavor_andalos.13.a
 		ai_chance = { factor = 75 }
 		change_religion = tigranic
+		every_owned_province = {
+			limit = {
+				development = 10
+			}
+			change_religion = tigranic
+		}
+		add_country_modifier = {
+			name = "tigranic_more_missionaries"
+			duration = 7300
+		}
 		add_country_modifier = {
 			name = "religious_zeal"
 			duration = 7300
@@ -710,6 +720,14 @@ country_event = {
 		name = flavor_andalos.14.a
 		custom_tooltip = hellenic_refugees_andal_tt
 		hidden_effect = {
+			ADU = {
+				add_prestige = 10
+				add_adm_power = -50
+				add_country_modifier = {
+					name = "adu_hellenic_refugees"
+					duration = 7300
+				}
+			}
 			every_known_country = {
 				limit = {
 					primary_culture = andal
@@ -857,6 +875,160 @@ country_event = {
 			}
 			remove_core = ROOT
 			cede_province = AE5
+			add_prestige = 5
+		}
+	}
+}
+
+# One More Crown (Aragon)
+country_event = {
+	id = flavor_andalos.16
+	title = flavor_andalos.16.title
+	desc = flavor_andalos.16.desc
+	picture = FEAST_eventPicture
+
+	major = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = ADU
+		all_known_province = {
+			limit = {
+				area = aragon_area
+			}
+			owned_by = ADU
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		id = flavor_andalos.16.a
+		every_owned_province = {
+			limit = {
+				area = aragon_area
+			}
+			remove_core = ADU
+			add_core = ARA
+			cede_province = ARA
+		}
+
+		create_subject = {
+			who = ARA
+			type = appanage
+		}
+
+		ARA = {
+			add_government_reform = andal_subject_reform
+			define_ruler = {
+				dynasty = ROOT
+				culture = ROOT
+				religion = ROOT
+			}
+		}
+	}
+}
+
+# One More Crown (Catalonia)
+country_event = {
+	id = flavor_andalos.17
+	title = flavor_andalos.17.title
+	desc = flavor_andalos.17.desc
+	picture = FEAST_eventPicture
+
+	major = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = ADU
+		all_known_province = {
+			limit = {
+				area = catalonia_area
+			}
+			owned_by = ADU
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		id = flavor_andalos.16.a
+		every_owned_province = {
+			limit = {
+				area = catalonia_area
+			}
+			remove_core = ADU
+			add_core = CAT
+			cede_province = CAT
+		}
+
+		create_subject = {
+			who = CAT
+			type = appanage
+		}
+
+		CAT = {
+			add_government_reform = andal_subject_reform
+			define_ruler = {
+				dynasty = ROOT
+				culture = ROOT
+				religion = ROOT
+			}
+		}
+	}
+}
+
+# One More Crown (Mallorca)
+country_event = {
+	id = flavor_andalos.18
+	title = flavor_andalos.18.title
+	desc = flavor_andalos.18.desc
+	picture = FEAST_eventPicture
+
+	major = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = ADU
+		all_known_province = {
+			limit = {
+				area = baleares_area
+			}
+			owned_by = ADU
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		id = flavor_andalos.18.a
+		every_owned_province = {
+			limit = {
+				area = baleares_area
+			}
+			remove_core = ADU
+			add_core = MJO
+			cede_province = MJO
+		}
+
+		create_subject = {
+			who = MJO
+			type = appanage
+		}
+
+		MJO = {
+			add_government_reform = andal_subject_reform
+			define_ruler = {
+				dynasty = ROOT
+				culture = ROOT
+				religion = ROOT
+			}
 		}
 	}
 }

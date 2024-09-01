@@ -1,0 +1,20 @@
+government = theocracy
+add_government_reform = depressed_orthodox_church
+government_rank = 1
+technology_group = western
+religion = orthodox
+primary_culture = lithuanian
+add_accepted_culture = latvian
+add_accepted_culture = estonian
+unit_type = western
+add_historical_friend = NOV
+create_alliance = NOV
+add_country_modifier = {
+	name = smoldering_hope
+	duration = 1825
+}
+add_country_modifier = {
+	name = melancholic_millenium
+	duration = -1
+}
+capital = 40

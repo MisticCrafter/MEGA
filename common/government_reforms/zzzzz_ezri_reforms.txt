@@ -1,0 +1,89 @@
+#depressed orthodox church
+
+depressed_orthodox_church = {
+	icon = "crown_highlighted"
+	allow_normal_conversion = no
+	potential = {
+		tag = OON
+	}
+
+	lock_level_when_selected = yes
+
+	modifiers = {
+		nobles_influence_modifier = 0.10
+		nobles_loyalty_modifier = -0.10
+		church_influence_modifier = -0.10
+		global_missionary_strength = -1
+		fort_maintenance_modifier = -0.25
+		can_not_build_buildings = yes
+		land_forcelimit = 10
+		missionary_maintenance_cost = 0.50
+		female_advisor_chance = 1.0
+		may_recruit_female_generals = yes
+	}
+}
+
+Knightly_Order = {
+	icon = "black_market_consortium"
+	allow_normal_conversion = no
+	potential = {
+		tag = OON
+	}
+	trigger = {
+		mission_completed = oon_destroy_trikai
+	}
+
+	lock_level_when_selected = yes
+	duration = 5
+	has_term_election = yes
+	
+	modifiers = {
+		leader_land_fire = 1
+		global_missionary_strength = 0.02
+		interest = -0.50
+		church_loyalty_modifier = 0.10
+		female_advisor_chance = 1
+		may_recruit_female_generals = yes
+	}
+
+	custom_attributes = {
+		is_merchant_republic = yes
+		has_devotion = yes
+		
+		has_parliament = yes
+		can_form_trade_league = yes
+		rulers_can_generals = yes
+	}
+
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
+			has_dlc = "Mare Nostrum"
+		 }
+		 can_use_trade_post = yes
+		 can_form_trade_league = yes
+		 trade_city_reform = trading_city
+	}
+
+	conditional = {
+        allow = { has_dlc = "Res Publica" }
+        heir = no
+        election_on_death = yes
+        duration = 4
+        has_term_election = yes
+        is_eligible_for_hre_emperor = no
+        states_general_mechanic = {
+            militarists = {
+                manpower_recovery_speed = 0.2
+                warscore_cost_vs_other_religion = -0.15
+                army_tradition_from_battle = 0.5
+            }
+
+            theocrats = {
+                tolerance_own = 2
+                global_missionary_strength = 0.02
+                devotion = 0.5
+            }
+        }
+    }
+}

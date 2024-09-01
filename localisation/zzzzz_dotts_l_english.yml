@@ -10,6 +10,10 @@ out_trade_cities_tt:0 "\n Up to §G3§! provinces with level 3 trade centers and
 out_bedouin_tt:0 "All §YBedouin§! have less than 10% autonomy and less than 2 unrest"
 unlock_out_volunteers_tt:0 "Unlock access to the §YCrusade Volunteers§!"
 out_jap_warning_tt:0 "§RCompleting this mission will swap out our current mission tree§!"
+out_teutons_tt:0 "Cede all Malaya provinces to §YTeutonic Order§!"
+out_teutons_tt_2:0 "Enables §YEstablish Sister Holy Order§! Decisions"
+order_of_caltrava_holy_order_tt:0 "Cede all Madagascar provinces to the §YOrder of Calatrava§!"
+order_of_santiago_holy_order_tt:0 "Cede all Coromandel provinces to the §YKnights of Santiago!"
 #great project
 dutch_colonial_office:0 "Dutch Colonial Office"
 theodosian_walls:0 "Theodosian Walls"
@@ -110,6 +114,15 @@ dotts_events.3.t:0 "Offer for Suezza"
 dotts_events.3.d:0 "Early this morning diplomats from the Outremer Kingdom came before us to broker a deal for the transfer of the province of Suezza to them, a total of 500 ducats eventually being determinded, all that is left is for us to sign the papers."
 dotts_events.4.t:0 "Offer for Pelusia"
 dotts_events.4.d:0 "Early this morning diplomats from the Outremer Kingdom came before us to broker a deal for the transfer of the province of Pelusia to them, a total of 500 ducats eventually being determinded, all that is left is for us to sign the papers."
+#Subject type
+ sister_holy_order: "Sister Holy Order"
+ sister_holy_order_title:0 "Sister Holy Order"
+ sister_holy_order_title_plural: "Sister Holy Orders"
+ sister_holy_order_is_our: "§Y$NAME$§! is our Sister Holy Order."
+ sister_holy_order_long_desc: "A Sister Holy Order is a mixture of a vassal and a march. It receives bonuses to discipline, manpower, and missionary strength. Furthermore, it increases its overlord's papal influence and missionary strength. It cannot be annexed. A country can only have §Y3§! Sister Holy Order at the same time.\n"
+ sister_holy_order_no_overlord_dow: "You cannot declare war on your own Sister Holy Order."
+ sister_holy_order_overlord_title: "Overlord"
+
 #sicily stuff
 #Event
  ME_Sicily_Events.1.T: "Civitas Invitissima"

@@ -3061,3 +3061,58 @@ jerusalem_legion = {
 		morale_damage_received = -0.10
 	}
 }
+vaquero_knights = {
+	regiments_per_development = 0.04
+
+	cost_modifier = 0.80
+	home_province = 4323
+
+	cavalry_weight = 0.9
+	artillery_weight = 0.2
+
+	trigger = {
+		owns = 4323
+		4323 = {
+			has_great_project = {
+				type = nile_cattle_drive
+				tier = 2
+			}
+		}
+	}
+
+	modifier = {
+		fire_damage = 0.10
+		movement_speed = 0.25
+		discipline = 0.05
+	}
+
+	min_size = 4
+	max_size = 5
+}
+knights_of_the_lasso = {
+	regiments_per_development = 0.04
+
+	cost_modifier = 1
+	home_province = 4323
+
+	cavalry_weight = 1
+
+	trigger = {
+		owns = 4323
+		4323 = {
+			has_great_project = {
+				type = nile_cattle_drive
+				tier = 3
+			}
+		}
+	}
+
+	modifier = {
+		cavalry_fire = 0.5
+		movement_speed = 0.33
+		discipline = 0.05
+	}
+
+	min_size = 4
+	max_size = 4
+}

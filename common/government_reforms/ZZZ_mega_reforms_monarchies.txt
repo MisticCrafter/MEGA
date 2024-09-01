@@ -114,6 +114,8 @@ mauretanian_crusader_reform = {
 		cav_to_inf_ratio = 0.33
 		cavalry_power = 0.10
 		land_morale = 0.10
+		has_mamluks = yes
+		allowed_mamluks_fraction = 0.2
 	}
 	ai = {
 		factor = 1

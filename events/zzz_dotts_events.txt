@@ -9,6 +9,14 @@ country_event = {
 	trigger = {
 		OR = {
 			AND = {
+				has_country_modifier = kni_out_ally
+				NOT = {
+					Z00 = {
+						alliance_with = ROOT
+					}
+				}
+			}
+			AND = {
 				has_country_modifier = out_kni_ally
 				NOT = {
 					KNI = {
@@ -470,4 +478,3 @@ country_event = {
 		override_country_name = ARI
 	}
 }
-

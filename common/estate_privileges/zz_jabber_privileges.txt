@@ -56,7 +56,7 @@ estate_nobles_andal_strong_duchies = {
         yearly_corruption = 0.1
 	}
 	benefits = {
-		diplomatic_upkeep = 3
+		diplomatic_upkeep = 4
 		vassal_manpower_bonus = 0.1
 	}
 	conditional_modifier = {

@@ -57,6 +57,8 @@ monastic_order_reform = {
 	modifiers = {
 		fort_maintenance_modifier = -0.25
 		army_tradition = 0.25
+		has_mamluks = yes
+		allowed_mamluks_fraction = 0.2
 	}
 	rulers_can_be_generals = yes
 	heirs_can_be_generals = yes
@@ -95,6 +97,8 @@ crusading_kingdom_reform = {
 		global_missionary_strength = 0.01
 		army_tradition_from_battle = 0.25
 		discipline = 0.025
+		has_mamluks = yes
+		allowed_mamluks_fraction = 0.2
 	}
 	monastic = yes
 	custom_attributes = {
@@ -122,6 +126,8 @@ teutonic_bishopric_reform = {
 		war_exhaustion = -0.02
 		church_loyalty_modifier = 0.1
 		manpower_in_true_faith_provinces = 0.1
+		has_mamluks = yes
+		allowed_mamluks_fraction = 0.2
 	}
 	rulers_can_be_generals = yes
 	heirs_can_be_generals = yes
@@ -197,6 +203,8 @@ prussian_theocratic_reform = {
 		max_absolutism = 10
 		manpower_in_true_faith_provinces = 0.15
 		governing_capacity_modifier = -0.5
+		has_mamluks = yes
+		allowed_mamluks_fraction = 0.2
 	}
 	
 	conditional = {
@@ -233,6 +241,8 @@ militarized_crusader_order_reform = {
 		cb_on_religious_enemies = yes
 		tolerance_own = 2
 		governing_capacity_modifier = -0.5
+		has_mamluks = yes
+		allowed_mamluks_fraction = 0.2
 	}
 	
 	conditional = {
@@ -299,6 +309,8 @@ holy_horde_reform = {
 		movement_speed = 0.1
 		missionaries = 1
 		global_missionary_strength = 0.02
+		has_mamluks = yes
+		allowed_mamluks_fraction = 0.2
 	}
 	rulers_can_be_generals = yes
 	heirs_can_be_generals = yes
@@ -487,6 +499,8 @@ papacy_reform = {
 		prestige_per_development_from_conversion = 0.33
 		tolerance_own = 1
 		church_influence_modifier = 0.2
+		has_mamluks = yes
+		allowed_mamluks_fraction = 0.2
 	}
 	valid_for_nation_designer = no
 	icon = "papacy"
@@ -768,6 +782,8 @@ fifth_monarchists_reform = {
 		tolerance_heretic = -6
 		tolerance_heathen = -6
 		missionaries = 1
+		has_mamluks = yes
+		allowed_mamluks_fraction = 0.5
 	}
 	effect = {
 		custom_tooltip = world_crusade_tt
@@ -810,6 +826,8 @@ millennialistic_theocracy_reform = {
 		enforce_religion_cost = -0.25
 		morale_damage = 0.1
 		devotion = -2
+		has_mamluks = yes
+		allowed_mamluks_fraction = 0.25
 	}
 	conditional = {
 		allow = {
@@ -944,6 +962,8 @@ sisterhood_of_jeanne_darc_reform = {
 		female_advisor_chance = 1.0
 		fire_damage = 0.1
 		discipline = 0.05
+		has_mamluks = yes
+		allowed_mamluks_fraction = 0.2
 	}
 	rulers_can_be_generals = yes
 	heirs_can_be_generals = yes
