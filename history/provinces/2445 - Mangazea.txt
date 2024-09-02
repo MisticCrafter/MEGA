@@ -1,7 +1,11 @@
+owner = YUG
+controller = YUG
+add_core = YUG
 capital = "Mangazea"
 culture = samoyed
 religion = tengri_pagan
 trade_goods = fur
+is_city = yes
 base_tax = 3
 base_production = 3
 base_manpower = 1

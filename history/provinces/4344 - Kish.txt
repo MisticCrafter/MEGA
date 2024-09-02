@@ -1,5 +1,5 @@
-owner = Z1P
-controller = Z1P
+owner = BUK
+controller = BUK
 capital = "Shahrisabz"
 is_city = yes
 culture = sogdian
@@ -8,7 +8,7 @@ trade_goods = wool
 base_tax = 5
 base_production = 7
 base_manpower = 5
-add_core = Z1P
+add_core = BUK
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian
