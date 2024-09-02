@@ -1,5 +1,5 @@
-owner = ZOH
-controller = ZOH
+owner = Z0H
+controller = Z0H
 capital = "Kokand"
 is_city = yes
 culture = sogdian
@@ -9,7 +9,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 3
 add_core = SHY
-add_core = ZOH
+add_core = Z0H
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian
