@@ -1057,7 +1057,7 @@ mecklenburg_area = { #5
 ########################################
 
 macedonia_area = { #5 (Macedonia)
-	 1853 3001 4780 
+	 1853 3001 4780 148 4702
 }
 
 morea_area = { #4 Central Greece & Crete
@@ -1069,19 +1069,18 @@ northern_greece_area = { #3 #Northern Greece
 }
 
 western_thrace_area = { #3 #Northern Greece
-	4705 4702 148
 }
 
 thrace_area = { #5
-	149 151 1764 4779 
+	149 151 1764 4779 4705
 }
 
 bulgaria_area = { #5
-	150 1765 2746 2750 4703 4704
+	150 1765 2746 2750 4703
 }
 
 silistria_area = {
-	4706 159
+	4706 159 4704
 }
 
 wallachia_area = { #5
@@ -1581,16 +1580,16 @@ bunyoro_area = { #3
 }
 
 kasai_area = { #5
-	4083 4087 4091 4092 4093
+	4091 4092 4093 4088
 }
 
 sankuru_area = { #3
-	4089 4090 4096
+	4090 4096
 }
 
 lower_kasai = { #4
 	color = { 66 114 224 }
-	4081 4085 4086 4088
+	4081 4085 4086 4087 4089
 }
 
 ogaden_area = { #5
@@ -1792,7 +1791,7 @@ cap_verde_area = { #2
 }
 
 jolof_area = { #4
-	1112 1113 1116 2239
+	1112 1113 1116
 }
 
 tekrur_area = { #4
@@ -1804,11 +1803,15 @@ baghena_area = { #4
 }
 
 manding_area = { #4
-    1120 1121 1124 2248
+    1120 1124 2248
 }
 
 futa_jallon_area = { #3
-    1114 1117 2238
+	1117 1121 4083
+}
+
+kaabu_area = {
+	2239 1114 2238
 }
 
 massina_area = { #4

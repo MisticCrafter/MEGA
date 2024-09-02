@@ -1,5 +1,5 @@
-owner = NDO
-controller = NDO
+owner = KON
+controller = KON
 capital = "Matamba"
 is_city = yes
 culture = mbundu
@@ -8,6 +8,6 @@ trade_goods = slaves
 base_tax = 2
 base_production = 2
 base_manpower = 2
-add_core = NDO
+add_core = KON
 discovered_by = central_african
 discovered_by = sub_saharan

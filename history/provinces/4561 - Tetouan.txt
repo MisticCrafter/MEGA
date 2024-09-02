@@ -1,5 +1,5 @@
-owner = ADU
-controller = ADU
+owner = MOR
+controller = MOR
 capital = "Tamuda"
 is_city = yes
 culture = andal
@@ -8,7 +8,7 @@ trade_goods = grain
 base_tax = 2
 base_production = 3
 base_manpower = 3
-add_core = ADU
+add_core = MOR
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

@@ -1,5 +1,5 @@
-owner = BSH
-controller = BSH
+owner = PRM
+controller = PRM
 capital = "Usolye Kamskoye"
 is_city = yes
 culture = bashkirian
@@ -8,7 +8,7 @@ trade_goods = salt
 base_tax = 2
 base_production = 1
 base_manpower = 1
-add_core = BSH
+add_core = PRM
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

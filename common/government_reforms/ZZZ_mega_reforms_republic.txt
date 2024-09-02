@@ -16,7 +16,7 @@ andal_exarchate_reform = {
 		land_morale = 0.1
 		infantry_power = 0.1
 		allowed_tercio_fraction = 0.25
-		liberty_desire_from_subject_development = -0.25
+		liberty_desire_from_subject_development = -1
 	}
 	ai = {
 		factor = 1
