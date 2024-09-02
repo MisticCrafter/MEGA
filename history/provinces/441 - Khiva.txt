@@ -1,5 +1,5 @@
-owner = Z1I
-controller = Z1I
+owner = KHI
+controller = KHI
 capital = "Khiva"
 is_city = yes
 culture = oghuz
@@ -10,7 +10,7 @@ base_production = 5
 base_manpower = 4
 extra_cost = 8
 center_of_trade = 1
-add_core = Z1I
+add_core = KHI
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian
