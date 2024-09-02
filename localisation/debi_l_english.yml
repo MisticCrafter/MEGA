@@ -1,33 +1,24 @@
 ﻿l_english:
- kni_sway_pope_title:0 "Influence the Pope"
- kni_sway_pope_desc:0 ""
-
  kni_defend_brothers_title:0 "Defend Our Brothers"
  kni_defend_brothers_desc:0 ""
 
  kni_crusader_kings_title:0 "Crusader Kings"
  kni_crusader_kings_desc:0 ""
 
- kni_our_place_title:0 "Our Place in the World"
- kni_our_place_desc:0 ""
-
  kni_knights_republic_title:0 "The Knights Council"
  kni_knights_republic_desc:0 ""
 
- kni_fortify_south_title:0 "Fortify the South"
- kni_fortify_south_desc:0 ""
-
- kni_entrenched_authority_title:0 "Entrenched Authority"
- kni_entrenched_authority_desc:0 ""
-
- kni_three_castles_title:0 "Three Castles"
- kni_three_castles_desc:0 ""
-
- kni_cyrenaica_title:0 "Cyrenaica Citadeks"
- kni_cyrenaica_desc:0 ""
+ kni_mend_relations_title:0 "Mend Relations"
+ kni_mend_relations_desc:0 ""
 
  kni_holy_alexandria_title:0 "Holy City of Alexandria"
  kni_holy_alexandria_desc:0 ""
+
+ kni_alexandrian_spices_title:0 "Alexandrian Spices"
+ kni_alexandrian_spices_desc:0 ""
+
+ kni_capital_of_castles_title:0 "Capital of Castles"
+ kni_capital_of_castles_desc:0 ""
 
  kni_thousand_towers_title:0 "A Thousand Towers"
  kni_thousand_towers_desc:0 ""
@@ -41,11 +32,17 @@
  kni_greatest_city_in_the_world_title:0 "Greatest City in the World"
  kni_greatest_city_in_the_world_desc:0 ""
 
- kni_the_second_city_title:0 "The Second City"
- kni_the_second_city_desc:0 ""
+ kni_fort_rosetta_title:0 "Citadel of Rosetta"
+ kni_fort_rosetta_desc:0 ""
 
- kni_megalopolis_title:0 "Megalopolis"
- kni_megalopolis_desc:0 ""
+ kni_fortify_south_title:0 "Fortify the South"
+ kni_fortify_south_desc:0 ""
+
+ kni_entrenched_authority_title:0 "Entrenched Authority"
+ kni_entrenched_authority_desc:0 ""
+
+ kni_sword_or_shield_title:0 "Sword or Shield"
+ kni_sword_or_shield_desc:0 ""
 
  kni_granary_title:0 "Granary of the Mediterranean"
  kni_granary_desc:0 ""
@@ -53,14 +50,11 @@
  kni_breadbasket_title:0 "Breadbasket of the World"
  kni_breadbasket_desc:0 ""
 
- kni_fort_rosetta_title:0 "Citadel of Rosetta"
- kni_fort_rosetta_desc:0 ""
+ kni_struggle_mediterranean_title:0 "Struggle for the Mediterranean"
+ kni_struggle_mediterranean_desc:0 ""
 
  kni_legion_white_cross_title:0 "Legion of the White Cross"
  kni_legion_white_cross_desc:0 ""
-
- kni_struggle_mediterranean_title:0 "Struggle for the Mediterranean"
- kni_struggle_mediterranean_desc:0 ""
 
  kni_sea_knights_title:0 "Knights of the Sea"
  kni_sea_knights_desc:0 ""
@@ -74,6 +68,18 @@
  kni_rules_the_waves_title:0 "Order Rules the Waves"
  kni_rules_the_waves_desc:0 ""
 
+ kni_megalopolis_title:0 "Megalopolis"
+ kni_megalopolis_desc:0 ""
+
+ kni_the_second_city_title:0 "The Second City"
+ kni_the_second_city_desc:0 ""
+
+ kni_victoria_title:0 "Victoria the III"
+ kni_victoria_desc:0 ""
+
+ kni_galleon_and_caravel_title:0 "Galleon and Caravel"
+ kni_galleon_and_caravel_desc:0 ""
+
  kni_pirate_crusaders_title:0 "Pirate Crusaders"
  kni_pirate_crusaders_desc:0 ""
 
@@ -83,11 +89,14 @@
  kni_scourge_of_the_mediterranean_title:0 "Scourge of the Mediterranean"
  kni_scourge_of_the_mediterranean_desc:0 ""
 
- kni_galleon_and_caravel_title:0 "Galleon and Caravel"
- kni_galleon_and_caravel_desc:0 ""
+ kni_our_place_title:0 "Our Place in the World"
+ kni_our_place_desc:0 ""
 
- kni_victoria_title:0 "Victoria the III"
- kni_victoria_desc:0 ""
+ kni_cyrenaica_title:0 "Cyrenaica Citadeks"
+ kni_cyrenaica_desc:0 ""
+
+ kni_three_castles_title:0 "Three Castles"
+ kni_three_castles_desc:0 ""
 
  kni_alexandrian_trade_title:0 "Alexandrian Trade"
  kni_alexandrian_trade_desc:0 ""
@@ -109,6 +118,9 @@
 
  kni_naval_supplies_title:0 "Naval Supplies"
  kni_naval_supplies_desc:0 ""
+
+ kni_in_search_of_iron_title:0 "In Search of Iron"
+ kni_in_search_of_iron_desc:0 ""
 
  kni_port_of_damietta_title:0 "Port of Damietta"
  kni_port_of_damietta_desc:0 ""
@@ -139,6 +151,12 @@
 
  kni_europe_title:0 "Europa Universalis"
  kni_europe_desc:0 ""
+
+ kni_sway_pope_title:0 "Influence the Pope"
+ kni_sway_pope_desc:0 ""
+
+ kni_no_more_muslims_title:0 "No More Muslims"
+ kni_no_more_muslims_desc:0 ""
 
 
  kni_city_of_god_three_title:0 "Of the World's Desire"

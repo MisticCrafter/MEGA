@@ -101,3 +101,13 @@ kni_sisterhoods = {
 	may_recruit_female_generals = yes
 	leader_cost = -0.25
 }
+kni_benefits_of_the_canal = {
+	local_tax_modifier = 0.10
+	local_development_cost = -0.05
+	trade_goods_size_modifier = 0.05
+}
+kni_life_on_the_sea = {
+	naval_tradition_from_trade = 0.50
+	light_ship_power = 0.33
+	privateer_efficiency = 0.25
+}
