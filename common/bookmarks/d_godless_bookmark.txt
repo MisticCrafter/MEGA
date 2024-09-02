@@ -1,0 +1,19 @@
+bookmark = {
+    name = bookmark_godless_name
+	desc = bookmark_godless_desc
+	date = "1444.11.11"
+
+	center = 1269
+	default = no
+
+	country = NED
+    country = ENG
+    country = SCO
+    country = WLS
+    country = IRE
+    country = FLA
+    country = LUX
+
+    easy_country = NED
+	easy_country = ENG
+}

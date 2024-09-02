@@ -460,6 +460,7 @@ guinea_region = {
 		futa_jallon_area
 		west_africa_coast_area
 		jolof_area
+		kaabu_area
 		sao_tome_area
 	}
 	monsoon = {

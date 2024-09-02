@@ -1,0 +1,24 @@
+bookmark = {
+	name = bookmark_catholics_name
+	desc = bookmark_catholics_desc
+	date = "1444.11.11"
+
+	center = 410
+	default = no
+
+	country = PAP
+	country = SIC
+	country = Z00
+    country = HAB
+
+	country = KNI
+	country = OON
+	country = MOR
+	country = AFR
+	country = PER
+
+    easy_country = PAP
+	easy_country = SIC
+	easy_country = Z00
+    easy_country = HAB
+}

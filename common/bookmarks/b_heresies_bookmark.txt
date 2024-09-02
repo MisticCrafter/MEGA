@@ -1,0 +1,21 @@
+bookmark = {
+	name = bookmark_heresies_name
+	desc = bookmark_heresies_desc
+	date = "1444.11.11"
+
+	center = 174
+	default = no
+
+	country = SWI
+	country = ADU
+	country = SWE
+	
+	country = SAV
+	country = CAS
+	country = OON
+	country = EST
+
+	easy_country = SWI
+	easy_country = ADU
+	easy_country = SWE
+}

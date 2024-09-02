@@ -705,7 +705,14 @@ kni_pirate = {
 		position = 11
 		provinces_to_highlight = { province_id = 1298 } 
 
-		trigger = { num_of_light_ship = 20 } 
+		trigger = {
+			1298 = {
+				privateer_power = {
+					country = ROOT
+					share = 25
+				}
+			}
+		}
 
 		effect = {
 			set_country_flag = kni_coastal_raiding_decision

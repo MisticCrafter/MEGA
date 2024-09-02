@@ -769,6 +769,10 @@ country_event = {
 	major = yes
 	is_triggered_only = yes
 
+	major_trigger = {
+		religion = tigranic
+	}
+
 	trigger = {
 		religion = tigranic
 	}

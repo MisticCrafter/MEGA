@@ -396,7 +396,7 @@ country_event = {
 		set_global_flag = columbus_happened
 		add_years_of_income = -0.10
 		define_explorer = {
-			name = "Cristï¿½vï¿½o Colombo"
+			name = "Cristóvão Colombo"
 			fire = 2
 			shock = 2
 			manuever = 6
@@ -433,6 +433,7 @@ country_event = {
 	option = {
         # Hire Vasco da Gama
 		name = flavor_andalos.8.a
+		ai_chance = { factor = 1 }
 		add_years_of_income = -0.25
 		define_explorer = {
 			name = "Vasco da Gama"
@@ -647,7 +648,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 1
+		months = 20
 	}
 
 	option = {
@@ -880,23 +881,20 @@ country_event = {
 	}
 }
 
-# One More Crown (Aragon)
+# The Crown of Aragon
 country_event = {
 	id = flavor_andalos.16
 	title = flavor_andalos.16.title
 	desc = flavor_andalos.16.desc
 	picture = FEAST_eventPicture
 
-	major = yes
 	fire_only_once = yes
 
 	trigger = {
 		tag = ADU
-		all_known_province = {
-			limit = {
-				area = aragon_area
-			}
-			owned_by = ADU
+		aragon_area = {
+			NOT = { province_id = 4550 }
+			owned_by = ROOT
 		}
 	}
 
@@ -905,49 +903,89 @@ country_event = {
 	}
 
 	option = {
-		id = flavor_andalos.16.a
-		every_owned_province = {
-			limit = {
-				area = aragon_area
+		name = flavor_andalos.16.a
+		ai_chance = { factor = 33 }
+		highlight = yes
+		trigger = {
+			has_estate_privilege = estate_nobles_andal_strong_duchies
+		}
+
+		custom_tooltip = feudal_andalos_cede_to_aragon_tt
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					area = aragon_area
+					NOT = { province_id = 4550 }
+				}
+				remove_core = ADU
+				add_core = ARA
+				cede_province = ARA
 			}
-			remove_core = ADU
-			add_core = ARA
-			cede_province = ARA
+
+			create_subject = {
+				subject = ARA
+				subject_type = appanage
+			}
+
+			ARA = {
+				add_government_reform = andal_subject_reform
+				define_ruler = {
+					dynasty = ROOT
+					culture = ROOT
+					religion = ROOT
+				}
+			}	
+		}
+	}
+
+	option = {
+		name = flavor_andalos.16.b
+		ai_chance = { factor = 33 }
+		highlight = yes
+		trigger = {
+			exists = AE1
 		}
 
-		create_subject = {
-			who = ARA
-			type = appanage
-		}
-
-		ARA = {
-			add_government_reform = andal_subject_reform
-			define_ruler = {
-				dynasty = ROOT
-				culture = ROOT
-				religion = ROOT
+		custom_tooltip = andalos_cede_aragon_to_exarchate_tt
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					area = aragon_area
+					NOT = { province_id = 4550 }
+				}
+				remove_core = ADU
+				add_core = AE1
+				cede_province = AE1
 			}
 		}
 	}
+
+	option = {
+		name = flavor_andalos.16.c
+		ai_chance = { factor = 33 }
+		highlight = yes
+		trigger = {
+			has_reform = absolutist_andalos_reform
+		}
+
+		add_prestige_or_monarch_power = 15
+	}
 }
 
-# One More Crown (Catalonia)
+# The Crown of Catalonia
 country_event = {
 	id = flavor_andalos.17
 	title = flavor_andalos.17.title
 	desc = flavor_andalos.17.desc
 	picture = FEAST_eventPicture
 
-	major = yes
 	fire_only_once = yes
 
 	trigger = {
 		tag = ADU
-		all_known_province = {
-			limit = {
-				area = catalonia_area
-			}
-			owned_by = ADU
+		catalonia_area = {
+			type = all
+			owned_by = ROOT
 		}
 	}
 
@@ -956,49 +994,89 @@ country_event = {
 	}
 
 	option = {
-		id = flavor_andalos.16.a
-		every_owned_province = {
-			limit = {
-				area = catalonia_area
+		name = flavor_andalos.17.a
+		ai_chance = { factor = 33 }
+		highlight = yes
+		trigger = {
+			has_estate_privilege = estate_nobles_andal_strong_duchies
+		}
+
+		custom_tooltip = feudal_andalos_cede_to_catalonia_tt
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					area = catalonia_area
+				}
+				remove_core = ADU
+				add_core = CAT
+				cede_province = CAT
 			}
-			remove_core = ADU
-			add_core = CAT
-			cede_province = CAT
-		}
 
-		create_subject = {
-			who = CAT
-			type = appanage
-		}
+			create_subject = {
+				subject = CAT
+				subject_type = appanage
+			}
 
-		CAT = {
-			add_government_reform = andal_subject_reform
-			define_ruler = {
-				dynasty = ROOT
-				culture = ROOT
-				religion = ROOT
+			CAT = {
+				add_government_reform = andal_subject_reform
+				define_ruler = {
+					dynasty = ROOT
+					culture = ROOT
+					religion = ROOT
+				}
 			}
 		}
 	}
+
+	option = {
+		name = flavor_andalos.17.b
+		ai_chance = { factor = 33 }
+		highlight = yes
+		trigger = {
+			exists = AE1
+		}
+
+		custom_tooltip = andalos_cede_catalonia_to_exarchate_tt
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					area = catalonia_area
+				}
+				remove_core = ADU
+				add_core = AE1
+				cede_province = AE1
+			}
+		}
+	}
+
+	option = {
+		name = flavor_andalos.17.c
+		ai_chance = { factor = 33 }
+		highlight = yes
+		trigger = {
+			has_reform = absolutist_andalos_reform
+		}
+		add_prestige_or_monarch_power = 15
+	}
 }
 
-# One More Crown (Mallorca)
+# The Crown of Majorca
 country_event = {
 	id = flavor_andalos.18
 	title = flavor_andalos.18.title
 	desc = flavor_andalos.18.desc
 	picture = FEAST_eventPicture
 
-	major = yes
 	fire_only_once = yes
 
 	trigger = {
 		tag = ADU
-		all_known_province = {
-			limit = {
-				area = baleares_area
-			}
-			owned_by = ADU
+		baleares_area = {
+			type = all
+			owned_by = ROOT
+		}
+		4550 = {
+			owned_by = ROOT
 		}
 	}
 
@@ -1007,28 +1085,117 @@ country_event = {
 	}
 
 	option = {
-		id = flavor_andalos.18.a
-		every_owned_province = {
-			limit = {
-				area = baleares_area
-			}
-			remove_core = ADU
-			add_core = MJO
-			cede_province = MJO
+		name = flavor_andalos.18.a
+		ai_chance = { factor = 33 }
+		highlight = yes
+		trigger = {
+			has_estate_privilege = estate_nobles_andal_strong_duchies
 		}
 
-		create_subject = {
-			who = MJO
-			type = appanage
-		}
+		custom_tooltip = feudal_andalos_cede_to_majorca_tt
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						area = baleares_area
+						province_id = 4550
+					}
+				}
+				remove_core = ADU
+				add_core = MJO
+				cede_province = MJO
+			}
 
-		MJO = {
-			add_government_reform = andal_subject_reform
-			define_ruler = {
-				dynasty = ROOT
-				culture = ROOT
-				religion = ROOT
+			create_subject = {
+				subject = MJO
+				subject_type = appanage
+			}
+
+			MJO = {
+				add_government_reform = andal_subject_reform
+				define_ruler = {
+					dynasty = ROOT
+					culture = ROOT
+					religion = ROOT
+				}
 			}
 		}
+	}
+
+	option = {
+		name = flavor_andalos.18.b
+		ai_chance = { factor = 33 }
+		highlight = yes
+		trigger = {
+			exists = AE1
+		}
+
+		custom_tooltip = andalos_cede_majorca_to_exarchate_tt
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						area = baleares_area
+						province_id = 4550
+					}
+				}
+				remove_core = ADU
+				add_core = AE1
+				cede_province = AE1
+			}
+		}
+	}
+
+	option = {
+		name = flavor_andalos.18.c
+		ai_chance = { factor = 33 }
+		highlight = yes
+		trigger = {
+			has_reform = absolutist_andalos_reform
+		}
+		
+		add_prestige_or_monarch_power = 15
+	}
+}
+
+# Kingdom of the Andals (Start event)
+country_event = {
+	id = flavor_andalos.19
+	title = flavor_andalos.19.title
+	desc = flavor_andalos.19.desc
+	picture = HRE_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = ADU
+	}
+
+	option = {
+		name = flavor_andalos.19.a
+		country_event = { id = flavor_andalos.20 }
+		custom_tooltip = andalos_intro_tt
+	}
+}
+
+# Dusk of an Empire
+country_event = {
+	id = flavor_andalos.20
+	title = flavor_andalos.20.title
+	desc = flavor_andalos.20.desc
+	picture = muslimgfx_RAMADAN_eventPicture
+
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = ADU
+	}
+
+	option = {
+		name = flavor_andalos.20.a
+		custom_tooltip = andalos_intro_tt
 	}
 }

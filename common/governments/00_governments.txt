@@ -631,7 +631,6 @@ republic = {
 		protectorate_parliament_legacy
 		prussian_republic
 		united_cantons_legacy
-		mandate_of_ierland_republic_reform
 	}
 	reform_levels = {
 		oligarchy_merchant_class_noble_elite = {
@@ -687,6 +686,7 @@ republic = {
 				dollarstore_roman_republic_government
 				swiss_cantonate
 				andal_exarchate_reform
+				mandate_of_ierland_republic_reform
 			}
 		}
 		republican_virtues = {
