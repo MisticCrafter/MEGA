@@ -10,6 +10,8 @@
  AE4_ADJ: "Italic"
  AE5: "Gallia"
  AE5_ADJ: "Gallic"
+ # Cultures
+ balearic: "Balearic"
  # Gov. Reforms
  andal_crown_reform: "Andal Crown"
  andal_crown_reform_desc: "Nearly four centuries ago, Auria Cintranos, known thereafter as 'the Dreamer', foresaw a most terrible fate for her people and her house, then only Dukes of Hellas. Few believed her in the Azure Court, yet it took very little time for the young oracle to be proven right. So we acted. We fled first to Sardinia, then to islamic 'Isbiliya' and founded here a realm mightier than Auria could've ever foreseen."
@@ -255,6 +257,12 @@
  crush_rationalist_heresy_success_tt: "Every §YCatholic§! nation will get '§YThe Cult of Reason, Extinguished§!' so long as no §YRationalist§! nation exists, giving the following effects:\n   Morale of Armies: §G+10.0%§!\n   Cost of Advisors with Ruler's Religion: §G-10.0%§!\n   Clergy Loyalty Equilibrium: §G+10.0§!"
  crush_catholic_heresy_success_tt: "Every §Ynon-Catholic Christian§! nation will get '§YThe Catholic Church, Extinguished§!' so long as no §YCatholic§! nation exists, giving the following effects:\n   All Power Costs: §G-10.0%§!"
  andalos_intro_tt: "§GEvent Insight:§!\nThe '§YEventide§!' disaster will fire."
+ feudal_andalos_cede_to_aragon_tt: "§YAragon§! will be released as a §YWardenship§! under Andalos and granted all of their historical lands. They will follow the §YTigranic§! religion, be of §YAragonese§! culture and be ruled by a member of the §YHouse of Sintra§!."
+ feudal_andalos_cede_to_catalonia_tt: "§YCatalonia§! will be released as a §YWardenship§! under Andalos and granted all of their historical lands. They will follow the §YTigranic§! religion, be of §YCatalan§! culture and be ruled by a member of the §YHouse of Sintra§!."
+ feudal_andalos_cede_to_majorca_tt: "§YMajorca§! will be released as a §YWardenship§! under Andalos and granted all of their historical lands. They will follow the §YTigranic§! religion, be of §YBalearic§! culture and be ruled by a member of the §YHouse of Sintra§!."
+ andalos_cede_aragon_to_exarchate_tt: "All de jure lands of the §YCrown of Aragon§! will be ceded to our Exarchate, §YHesperia§!."
+ andalos_cede_catalonia_to_exarchate_tt: "All de jure lands of the §YCrown of Catalonia§! will be ceded to our Exarchate, §YHesperia§!."
+ andalos_cede_majorca_to_exarchate_tt: "All de jure lands of the §YCrown of Majorca§! will be ceded to our Exarchate, §YHesperia§!."
  # Events (Andalos)
  flavor_andalos.1.title: "The Purchase of Macau"
  flavor_andalos.1.desc: "A most interesting petitioner found his way to our halls today: he was pale of skin, bore strange, cumbersome clothes and walked beyond a set of teal banners. He claims to be an envoy from a faraway kingdom, that of 'Andalos', situated further west than any of our maps know. He bows politely and makes a most intriguing request: his liege would purchase the land of Macau in exchange for a great deal of coin, and possibly a military partnership. A most brave foreigner, to request territory of all things from us, but his request is still worth pondering."
