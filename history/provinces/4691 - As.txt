@@ -1,8 +1,11 @@
+owner = SIB
+controller = SIB
+add_core = SIB
 capital = "As"
-is_city = no
+is_city = yes
 culture = ostyaki
 religion = vajrayana
-trade_goods = unknown
+trade_goods = fur
 base_tax = 1
 base_production = 2
 base_manpower = 1
