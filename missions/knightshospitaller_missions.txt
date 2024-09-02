@@ -749,7 +749,7 @@ kni_pirate = {
 		provinces_to_highlight = { province_id = 1298 } 
 
 		trigger = {
-			1298 = {
+			any_trade_node = {
 				privateer_power = {
 					country = ROOT
 					share = 25
