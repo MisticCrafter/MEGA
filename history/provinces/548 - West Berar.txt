@@ -1,5 +1,5 @@
-owner = KRK
-controller = KRK
+owner = MLW
+controller = MLW
 capital = "Illichpur"
 is_city = yes
 culture = gondi
@@ -9,7 +9,7 @@ base_tax = 5
 base_production = 4
 base_manpower = 3
 add_core = GDW
-add_core = KRK
+add_core = MLW
 add_core = MAR
 discovered_by = chinese
 discovered_by = east_african

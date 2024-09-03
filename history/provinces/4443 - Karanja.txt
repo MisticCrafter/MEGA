@@ -1,5 +1,5 @@
-owner = MLW
-controller = MLW
+owner = KRK
+controller = KRK
 capital = "Karanja"
 is_city = yes
 culture = gondi
@@ -9,7 +9,7 @@ base_tax = 7
 base_production = 4
 base_manpower = 5
 add_core = GDW
-add_core = MLW
+add_core = KRK
 discovered_by = chinese
 discovered_by = east_african
 discovered_by = eastern

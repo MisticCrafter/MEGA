@@ -52,4 +52,10 @@ capital = 429
 1444.11.11= {
 	add_prestige = 104
 	add_treasury = 70
+	persia_region = {
+		add_permanent_claim = ROOT
+	}
+	khorasan_region = {
+		add_permanent_claim = ROOT
+	}
 }
