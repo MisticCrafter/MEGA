@@ -1,5 +1,5 @@
-owner = BAL
-controller = BAL
+owner = KHO
+controller = KHO
 capital = "Ferah"
 is_city = yes
 culture = afghani
@@ -8,7 +8,7 @@ trade_goods = livestock
 base_tax = 2
 base_production = 4
 base_manpower = 1
-add_core = BAL
+add_core = KHO
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

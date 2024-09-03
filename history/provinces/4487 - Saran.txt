@@ -1,5 +1,5 @@
-owner = ORI
-controller = ORI
+owner = TRT
+controller = TRT
 capital = "Saran"
 is_city = yes
 culture = avadhi
@@ -9,7 +9,7 @@ base_tax = 4
 base_production = 2
 base_manpower = 1
 add_core = ODH
-add_core = ORI
+add_core = TRT
 discovered_by = chinese
 discovered_by = east_african
 discovered_by = eastern

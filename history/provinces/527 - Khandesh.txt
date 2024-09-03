@@ -1,5 +1,5 @@
-owner = KRK
-controller = KRK
+owner = MLW
+controller = MLW
 capital = "Burhanpur"
 is_city = yes
 culture = gondi
@@ -11,7 +11,7 @@ base_manpower = 3
 extra_cost = 16
 center_of_trade = 2
 add_core = GDW
-add_core = KRK
+add_core = MLW
 add_core = MAR
 discovered_by = chinese
 discovered_by = east_african

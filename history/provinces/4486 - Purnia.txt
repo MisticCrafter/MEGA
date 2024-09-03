@@ -1,5 +1,5 @@
-owner = NPL
-controller = NPL
+owner = TRT
+controller = TRT
 capital = "Purnia"
 is_city = yes
 culture = kochi
@@ -8,7 +8,7 @@ trade_goods = silk
 base_tax = 3
 base_production = 3
 base_manpower = 1
-add_core = NPL
+add_core = TRT
 discovered_by = chinese
 discovered_by = east_african
 discovered_by = eastern
