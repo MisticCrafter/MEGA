@@ -1,5 +1,5 @@
-owner = Z0H
-controller = Z0H
+owner = AFG
+controller = AFG
 capital = "Munjan"
 is_city = yes
 culture = afghani
@@ -9,7 +9,7 @@ base_tax = 4
 base_production = 5
 base_manpower = 3
 add_core = TRS
-add_core = Z0H
+add_core = AFG
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

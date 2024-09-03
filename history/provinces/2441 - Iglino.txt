@@ -1,5 +1,5 @@
-owner = Z04
-controller = Z04
+owner = Z16
+controller = Z16
 capital = "Iglino"
 is_city = yes
 culture = bashkirian
@@ -9,7 +9,7 @@ base_tax = 2
 base_production = 1
 base_manpower = 1
 add_core = NOG
-add_core = Z04
+add_core = Z16
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

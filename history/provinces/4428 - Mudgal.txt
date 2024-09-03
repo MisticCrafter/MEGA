@@ -1,5 +1,5 @@
-owner = TLG
-controller = TLG
+owner = KRK
+controller = KRK
 capital = "Mudgal"
 is_city = yes
 culture = kannada
@@ -9,7 +9,7 @@ base_tax = 6
 base_production = 3
 base_manpower = 2
 add_core = GOC
-add_core = TLG
+add_core = KRK
 discovered_by = chinese
 discovered_by = east_african
 discovered_by = eastern

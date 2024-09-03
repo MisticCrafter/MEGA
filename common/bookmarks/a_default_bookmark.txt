@@ -17,6 +17,7 @@ bookmark = {
 	country = ENG
 	country = KNI
 	country = OON
+	country = Z01
 	country = ARM
 	country = RJP
 
