@@ -1,6 +1,6 @@
 owner = AFR
 controller = AFR
-capital = "Adramenta"
+capital = "Ammadeia"
 is_city = yes
 culture = tunisian
 religion = catholic
