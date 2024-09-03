@@ -322,28 +322,62 @@ NED_1 = {
 				AND = {
 					is_institution_enabled = renaissance
 					NOT = { has_institution = renaissance }
-					
 				}
 			}
 			
+			OR = {
+				philosopher = 1
+				artist = 1
+				theologian = 2
+			}
 		}
 
 		effect = {
+			235 = {
+				add_province_modifier = {
+					name = ZVP_humanistic_centers_of_education
+					duration = -1
+				}	
+			}
+
+			85 = {
+				add_province_modifier = {
+					name = ZVP_humanistic_centers_of_education
+					duration = -1
+				}
+			}
+
 			complex_dynamic_effect = {
 				first_custom_tooltip = ""
 				first_limit = "
-
+					is_institution_enabled = renaissance
+					NOT = { has_institution = renaissance }
 				"
 				first_effect = "
-				
+						235 = {
+						add_institution_embracement = {
+							which = renaissance
+							value = 90
+						}
+					}
+
+					85 = {
+						add_institution_embracement = {
+							which = renaissance
+							value = 90
+						}
+					}
 				"
 
 				second_custom_tooltip = ""
 				second_limit = "
-				
+					has_institution = renaissance
 				"
 				second_effect = "
-				
+					add_country_modifier = {
+						name = ZVP_center_of_humanistic_studies
+						duration = 3650
+					}
 				"
 
 			}
@@ -2194,6 +2228,33 @@ NED_5_1 = {
 				amount = 10
 			}
 		} 
+	}
+
+	NED_reformation_of_civil_ethics = {
+		icon = ""
+		position = 11
+
+		trigger = {
+			OR = {
+				AND = {
+					NOT = { current_age = age_of_discovery }
+					religion = rationalist
+				}
+				hidden_trigger = {
+					has_country_flag = ZVP_in_the_reformation_age_flag	
+				}
+				custom_trigger_tooltip = {
+					tooltip = ZVP_time_of_ethical_troubles_tt
+				}
+			}
+
+			always = no # doing for now, as working on the mission tree makes me want to kill myself xP
+		}
+
+		effect = {
+			
+		}
+
 	}
 
 

@@ -1090,3 +1090,6 @@ AE5 = "countries/ExarchateGallia.txt"
 AK1 = "countries/ExarchateCongo.txt"
 AK2 = "countries/ExarchateOyoman.txt"
 AK3 = "countries/ExarchateMali.txt"
+
+# c: mlemmer :3
+FNT = "countries/Fontaine.txt"
