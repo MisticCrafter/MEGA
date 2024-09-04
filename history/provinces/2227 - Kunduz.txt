@@ -1,5 +1,5 @@
-owner = KHO
-controller = KHO
+owner = AFG
+controller = AFG
 capital = "Kunduz"
 is_city = yes
 culture = afghani
@@ -8,7 +8,7 @@ trade_goods = cotton
 base_tax = 5
 base_production = 8
 base_manpower = 5
-add_core = KHO
+add_core = AFG
 
 discovered_by = east_african
 discovered_by = eastern
