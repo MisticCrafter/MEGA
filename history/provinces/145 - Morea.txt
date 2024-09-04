@@ -9,6 +9,7 @@ base_tax = 3
 base_production = 4
 base_manpower = 1
 add_core = GRE
+add_permanent_claim = LAE
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

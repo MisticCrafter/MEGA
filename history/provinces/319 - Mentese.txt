@@ -1,5 +1,5 @@
-owner = Z02
-controller = Z02
+owner = ANA
+controller = ANA
 capital = "Halikarnassos"
 is_city = yes
 culture = greek
@@ -9,7 +9,7 @@ fort_15th = yes
 base_tax = 4
 base_production = 4
 base_manpower = 2
-add_core = Z02
+add_core = ANA
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

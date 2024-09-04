@@ -1,4 +1,4 @@
-capital = "Panama"
+capital = "Maenorra"
 culture = muisca
 religion = animism
 trade_goods = unknown

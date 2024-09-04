@@ -1,4 +1,4 @@
-capital = "Darien"
+capital = "Daryanna"
 culture = muisca
 religion = animism
 trade_goods = unknown

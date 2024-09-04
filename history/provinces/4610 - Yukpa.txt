@@ -1,10 +1,11 @@
-capital = "Yukpa"
+capital = "Thena"
 culture = guajiro
 religion = animism
 trade_goods = unknown
-base_tax = 1
-base_production = 2
-base_manpower = 1
+base_tax = 4
+base_production = 4
+base_manpower = 3
+center_of_trade = 1
 discovered_by = MCA
 discovered_by = south_american
 native_size = 15
