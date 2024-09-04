@@ -30,6 +30,7 @@ historical_units = {
 monarch_names = {
 	"Aaron #1" = 10
 	"Abianos #1" = 10
+	"Aius #1" = 10
 	"Abu Mansur al-Nizar #1" = 10
 	"Ahmad #1" = 10
 	"Alicia #1" = -1
@@ -38,6 +39,7 @@ monarch_names = {
 	"Bashir #2" = 10
 	"Berenguel #0" = 0
 	"Bernardo #1" = 10
+	"Alucio #1" = 10
 	"Danyal #1" = 10
 	"Georgios #1" = 10
 	"Goto #0" = -1
@@ -48,9 +50,11 @@ monarch_names = {
 	"Yazid #1" = 10
 	"al-Hakim #1" = 10
 	"al-Mustansir #1" = 10
+	"August #1" = 10
 	"az-Zahir #1" = 10
 }
 leader_names = {
+	"August"
 	"Caracciolo"
 	"Carafa"
 	"Cotoner"
@@ -112,5 +116,5 @@ ship_names = {
 	"The Blessed Gerard"
 }
 army_names = {
-	"Knights of $PROVINCE$"
+	"Knights de $PROVINCE$"
 }

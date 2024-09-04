@@ -252,6 +252,7 @@ ETH = "countries/Ethiopia.txt"
 ETO = "countries/Etowah.txt"
 ETR = "countries/Etruria.txt"
 FAD = "countries/Fadl.txt"
+KNM = "countries/KnightsTermina.txt"
 FEO = "countries/Theodoro.txt"
 FER = "countries/Ferrara.txt"
 FEZ = "countries/Fez.txt"
@@ -1080,15 +1081,25 @@ ZUL = "countries/Zulu.txt"
 ZUN = "countries/Zunghar.txt"
 ZZZ = "countries/Zazzau.txt"
 
-#Added by megacampaing
+### MEGACAMPAIGN ###
+
+# Exarchates for Andalos
 AE1 = "countries/ExarchateHesperia.txt"
 AE2 = "countries/ExarchateMauretania.txt"
 AE3 = "countries/ExarchateAfrica.txt"
 AE4 = "countries/ExarchateItalia.txt"
 AE5 = "countries/ExarchateGallia.txt"
 
+# Exarchates for Akaaman
 AK1 = "countries/ExarchateCongo.txt"
 AK2 = "countries/ExarchateOyoman.txt"
 AK3 = "countries/ExarchateMali.txt"
 
+# Jabber stuff
 DUR = "countries/Durazzo.txt"
+
+# c: mlemmer :3
+FNT = "countries/Fontaine.txt"
+CWD = "countries/Cynwyd.txt"
+
+###

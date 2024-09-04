@@ -1,4 +1,7 @@
 ﻿l_english:
+ kni_mend_relations_title:0 "Mend Relations"
+ kni_mend_relations_desc:0 ""
+
  kni_defend_brothers_title:0 "Defend Our Brothers"
  kni_defend_brothers_desc:0 ""
 
@@ -7,9 +10,6 @@
 
  kni_knights_republic_title:0 "The Knights Council"
  kni_knights_republic_desc:0 ""
-
- kni_mend_relations_title:0 "Mend Relations"
- kni_mend_relations_desc:0 ""
 
  kni_holy_alexandria_title:0 "Holy City of Alexandria"
  kni_holy_alexandria_desc:0 ""
@@ -68,11 +68,11 @@
  kni_rules_the_waves_title:0 "Order Rules the Waves"
  kni_rules_the_waves_desc:0 ""
 
- kni_megalopolis_title:0 "Megalopolis"
- kni_megalopolis_desc:0 ""
-
  kni_the_second_city_title:0 "The Second City"
  kni_the_second_city_desc:0 ""
+
+ kni_megalopolis_title:0 "Megalopolis"
+ kni_megalopolis_desc:0 ""
 
  kni_victoria_title:0 "Victoria the III"
  kni_victoria_desc:0 ""

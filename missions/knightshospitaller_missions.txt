@@ -5,6 +5,16 @@ knidiplomatic = {
 	has_country_shield = yes
 	potential = { tag = KNI } 
 
+	kni_mend_relations = {
+		icon = personal_diplomacy
+		position = 1
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
 	kni_defend_brothers = {
 		icon = mission_crusade_for_varna
 		position = 2
@@ -79,16 +89,6 @@ knidiplomatic = {
 		icon = republican_yearnings
 		position = 1
 		required_missions = { kni_crusader_kings } 
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
-	}
-
-	kni_mend_relations = {
-		icon = personal_diplomacy
-		position = 1
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
@@ -586,24 +586,6 @@ kninaval = {
 		effect = {  } 
 	}
 }
-kni_regiopolis_brach = {
-	slot = 4
-	generic = no
-	ai = yes
-	has_country_shield = yes
-	potential = { tag = KNI } 
-
-	kni_megalopolis = {
-		icon = mission_crown_of_wenceslas
-		position = 7
-		required_missions = { kni_greatest_city_in_the_world } 
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
-	}
-}
 kni_second_city_branch = {
 	slot = 2
 	generic = no
@@ -648,6 +630,24 @@ kni_second_city_branch = {
 				}
 			}
 		}
+	}
+}
+kni_regiopolis_brach = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = KNI } 
+
+	kni_megalopolis = {
+		icon = mission_crown_of_wenceslas
+		position = 7
+		required_missions = { kni_greatest_city_in_the_world } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
 }
 kninavalalternative = {
@@ -705,7 +705,7 @@ kni_pirate = {
 		position = 11
 		provinces_to_highlight = { province_id = 1298 } 
 
-		trigger = { num_of_light_ship = 25 }
+		trigger = { num_of_light_ship = 25 } 
 
 		effect = {
 			set_country_flag = kni_coastal_raiding_decision
