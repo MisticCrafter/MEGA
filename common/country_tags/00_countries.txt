@@ -1094,3 +1094,4 @@ AK3 = "countries/ExarchateMali.txt"
 
 # c: mlemmer :3
 FNT = "countries/Fontaine.txt"
+CWD = "countries/Cynwyd.txt"
