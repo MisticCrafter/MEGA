@@ -66,13 +66,14 @@ TEM_ideas = {
 		shock_damage = 0.20
 	}
 	TEM_army_with_an_order = {
-		special_unit_forcelimit = 0.10
+		special_unit_forcelimit = 0.15
 	}
 	TEM_of_high_armenia = {
 		defensiveness = 0.15
 	}
 	TEM_shield = {
 		garrison_damage = 0.25
+		infantry_power = 0.10
 	}
 }
 
