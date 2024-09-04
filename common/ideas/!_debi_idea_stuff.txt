@@ -35,17 +35,17 @@ antioch_ideas = {
 		fort_maintenance_modifier = -0.10
 	}
 	antioch_crossroads_of_the_world = {
-		province_trade_power_modifier = 0.25
+		trade_steering = 0.25
 	}
 }
 TEM_ideas = {
 	start = {
-		garrison_size = 0.25
+		garrison_size = 0.20
 		discipline = 0.05
 	}
 	
 	bonus = {
-		discipline = 0.05
+		mercenary_discipline = 0.05
 	}
 	
 	trigger = {
@@ -55,27 +55,24 @@ TEM_ideas = {
 	
 	TEM_sword = {
 		leader_land_shock = 2
-		morale_damage = 0.10
 	}
 	TEM_legacy_of_the_crusade = {
 		army_tradition_decay = -0.01
 	}
 	TEM_knights_of_outremer = { 
-		cavalry_power = 0.33
-		cav_to_inf_ratio = 0.50
+		cavalry_power = 0.25
 	}
 	TEM_deliver_unto_evil = {
 		shock_damage = 0.20
 	}
 	TEM_army_with_an_order = {
-		special_unit_forcelimit = 0.20
+		special_unit_forcelimit = 0.10
 	}
 	TEM_of_high_armenia = {
 		defensiveness = 0.15
 	}
 	TEM_shield = {
-		garrison_damage = 0.33
-		devotion = 1
+		garrison_damage = 0.25
 	}
 }
 
