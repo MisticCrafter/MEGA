@@ -1,4 +1,4 @@
-capital = "Cartagena"
+capital = "Cintragena"
 culture = guajiro
 religion = animism
 trade_goods = unknown

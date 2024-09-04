@@ -1,5 +1,5 @@
-owner = Z02
-controller = Z02
+owner = ANA
+controller = ANA
 capital = "Adana"
 is_city = yes
 culture = armeniac
@@ -10,7 +10,7 @@ base_production = 4
 base_manpower = 5
 extra_cost = 8
 center_of_trade = 1
-add_core = Z02
+add_core = ANA
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian
