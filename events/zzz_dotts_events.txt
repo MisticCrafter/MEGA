@@ -143,6 +143,48 @@ country_event = {
 			name = out_suez_profit
 			duration = -1
 		}
+		362 = {
+			add_province_modifier = {
+				name = "kni_benefits_of_the_canal"
+				duration = 9130
+			}
+		}
+		363 = {
+			add_province_modifier = {
+				name = "kni_benefits_of_the_canal"
+				duration = 9130
+			}
+		}
+		2316 = {
+			add_province_modifier = {
+				name = "kni_benefits_of_the_canal"
+				duration = 9130
+			}
+		}
+		361 = {
+			add_province_modifier = {
+				name = "kni_benefits_of_the_canal"
+				duration = 9130
+			}
+		}
+		358	= {
+			add_province_modifier = {
+				name = "kni_benefits_of_the_canal"
+				duration = 9130
+			}
+		}
+		4316 = {
+			add_province_modifier = {
+				name = "kni_benefits_of_the_canal"
+				duration = 9130
+			}	
+		}	
+		2315 = {
+			add_province_modifier = {
+				name = "kni_benefits_of_the_canal"
+				duration = 9130
+			}
+		}
 		ai_chance = {
 			factor = 50
 			modifier = {

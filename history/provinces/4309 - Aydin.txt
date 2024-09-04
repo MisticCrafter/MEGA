@@ -1,5 +1,5 @@
-owner = Z02
-controller = Z02
+owner = ANA
+controller = ANA
 capital = "Sardeis"
 is_city = yes
 culture = anatolian
@@ -9,7 +9,7 @@ base_tax = 5
 base_production = 9
 base_manpower = 3
 add_core = BYZ
-add_core = Z02
+add_core = ANA
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

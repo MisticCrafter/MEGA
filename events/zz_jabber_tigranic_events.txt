@@ -646,7 +646,7 @@ country_event = {
 			num_of_owned_provinces_with = {
 				value = 5
 				is_overseas = yes
-				center_of_trade = 1
+				province_has_center_of_trade_of_level = 1
 				NOT = { 
 					OR = {
 						continent = north_america
@@ -768,6 +768,10 @@ country_event = {
 
 	major = yes
 	is_triggered_only = yes
+
+	major_trigger = {
+		religion = tigranic
+	}
 
 	trigger = {
 		religion = tigranic

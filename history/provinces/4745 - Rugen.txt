@@ -1,5 +1,5 @@
-owner = MKL
-controller = MKL
+owner = RUG
+controller = RUG
 capital = "Bergen auf Rügen"
 is_city = yes
 culture = old_pommeranian
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 1
 base_production = 1
 base_manpower = 2
-add_core = MKL
+add_core = RUG
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

@@ -1,0 +1,19 @@
+government = republic
+add_government_reform = merchants_reform
+government_rank = 1
+technology_group = eastern
+religion = catholic
+primary_culture = dalmatian
+capital = 4174
+fixed_capital = 4174
+mercantilism = 25
+add_accepted_culture = bulgarian
+1444.11.11= {
+      monarch = {
+           name = "Andronio"
+           adm = 6
+           dip = 6
+           mil = 6
+           regent = yes
+      }
+}

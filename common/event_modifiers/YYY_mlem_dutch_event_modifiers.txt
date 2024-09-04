@@ -176,8 +176,17 @@ elite_national_guard_ZVP = {		# mix of previous buffs
 	military_tactics = 0.1
 }
 
+ZVP_humanistic_centers_of_education = {
+	local_development_cost = -0.1
+	local_institution_spread = 0.20
+	institution_growth = 0.5
 
+}
 
+ZVP_center_of_humanistic_studies = {
+	technology_cost = -0.1
+	idea_cost = -0.05
+}
 
 
 # Misc Modifiers (for vassals and stuff)

@@ -312,115 +312,79 @@ NED_1 = {
 		} 
 	}
 
-	NED_organizing_the_church = {
-		icon = control_the_church
+	NED_the_glint_of_the_future= {
+		icon = mission_devastate_christianity
 		position = 11
 
-		trigger = {  
-			if = {
-				limit = {
-					has_estate = estate_church
-				}
-				estate_loyalty = {
-					estate = estate_church
-					loyalty = 60
-				}
-				OR = {
-					NOT = {
-						estate_influence = {
-							estate = estate_church
-							influence = 50
-						}
-					}
-					num_of_estate_privileges = {
-						estate = estate_church
-						value = 4
-					}
+		trigger = {
+			OR = {
+				has_institution = renaissance
+				AND = {
+					is_institution_enabled = renaissance
+					NOT = { has_institution = renaissance }
 				}
 			}
-			else = {
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					has_tax_building_trigger = yes
-					value = 5
-				}
-			}
-		} 
-
-		effect = {  
-			simple_dynamic_effect_without_alternative = {
-				first_custom_tooltip = NED_IF_INFLUENCE
-				first_limit = "
-					OR = {
-						NOT = {
-							estate_influence = {
-								estate = estate_church
-								influence = 50
-							}
-						}
-						NOT = { has_estate = estate_church }
-					}
-				"
-				first_effect = "
-					change_estate_land_share = { estate = estate_church share = -5 }
-					add_years_of_income = 0.5
-				"
-				second_custom_tooltip = NED_IF_PRIVILEGES
-				second_limit = "
-					num_of_estate_privileges = {
-						estate = estate_church
-						value = 4
-					}
-				"
-				second_effect = "
-					add_adm_power = 100
-					add_estate_loyalty = {
-						estate = estate_church
-						loyalty = 10
-					}
-				"
-			}
-		} 
-	}
-
-	NED_religious_immigrants = {
-		icon = mission_cope_with_refugees
-		position = 13
-		required_missions = { NED_humanism } 
-		
-		provinces_to_highlight = {
-			region = low_countries_region
-			owned_by = ROOT
-			NOT = {
-				development = 35
+			
+			OR = {
+				philosopher = 1
+				artist = 1
+				theologian = 2
 			}
 		}
-	
-		trigger = {  
-			OR = {
-				full_idea_group = humanist_ideas
-				theologian = 3
+
+		effect = {
+			235 = {
+				add_province_modifier = {
+					name = ZVP_humanistic_centers_of_education
+					duration = -1
+				}	
 			}
-			any_owned_province = {
-				region = low_countries_region
-				development = 35
+
+			85 = {
+				add_province_modifier = {
+					name = ZVP_humanistic_centers_of_education
+					duration = -1
+				}
 			}
-		} 
-	
-		effect = {  
-			distribute_development = {
-				type = production
-				amount = 5
+
+			complex_dynamic_effect = {
+				first_custom_tooltip = ""
+				first_limit = "
+					is_institution_enabled = renaissance
+					NOT = { has_institution = renaissance }
+				"
+				first_effect = "
+						235 = {
+						add_institution_embracement = {
+							which = renaissance
+							value = 90
+						}
+					}
+
+					85 = {
+						add_institution_embracement = {
+							which = renaissance
+							value = 90
+						}
+					}
+				"
+
+				second_custom_tooltip = ""
+				second_limit = "
+					has_institution = renaissance
+				"
+				second_effect = "
+					add_country_modifier = {
+						name = ZVP_center_of_humanistic_studies
+						duration = 3650
+					}
+				"
+
 			}
-			distribute_development = {
-				type = tax
-				amount = 5
-			}
-			add_innovativeness_small_effect = yes
-			custom_tooltip = " "
-			custom_tooltip = NED_NO_INTERFAITH_DIALOG_CLERGY_MALUS
-			set_country_flag = ned_buff_interfaith_dialog_clergy_loyalty_flag
-		} 
+
+		}
 	}
+
 
 	NED_carribean_colonies = {
 		icon = mission_colonize_the_caribbean
@@ -556,6 +520,7 @@ NED_2 = {
 
 		effect = {
 			custom_tooltip = zeven_provincies_crisis_explain_tt
+
 			hidden_effect = {
 				if = {
 					limit = {
@@ -976,89 +941,6 @@ NED_2_1 = {
 		} 
 	}
 
-	NED_humanism = {
-		icon = mission_european_church
-		position = 12
-		required_missions = {
-			NED_universities
-			NED_organizing_the_church
-		}
-
-		trigger = {  
-			OR = {
-				full_idea_group = humanist_ideas
-				ruler_has_personality = tolerant_personality
-				theologian = 3
-			}
-			monthly_adm = 8
-		} 
-
-		effect = {  
-			add_country_modifier = {
-				name = ned_land_of_many_values
-				duration = 5475
-			}
-			add_innovativeness_small_effect = yes
-		} 
-	}
-
-	NED_erasmus = {
-		icon = ned_erasmus
-		position = 14
-		required_missions = {
-			NED_unified_confession
-			NED_religious_immigrants
-		}
-
-		trigger = {  
-			religious_unity = 1
-			theologian = 3
-			OR = {
-				full_idea_group = humanist_ideas
-				monthly_adm = 11
-			}
-			stability = 3
-			if = {
-				limit = {
-					uses_fervor = yes
-				}
-				fervor = 100
-			}
-		} 
-
-		effect = {  
-			complex_dynamic_effect = {
-				first_custom_tooltip = NED_IF_REFORMED
-				first_limit = "
-					religion = reformed
-				"
-				first_effect = "
-					hidden_effect = {
-						set_country_flag = ned_buff_fervor_actions
-						update_fervor_effects = yes
-					}
-					custom_tooltip = NED_BUFF_FERVOR_ACTIONS_BY_50
-				"
-				second_custom_tooltip = NED_IF_NOT_REFORMED
-				second_limit = "
-					NOT = { religion = reformed }
-					has_estate = estate_church
-				"
-				second_effect = "
-					set_country_flag = ned_buff_clerical_studies
-					custom_tooltip = NED_BUFF_CLERICAL_STUDIES_PRIVILEGE
-				"
-				third_custom_tooltip = NED_IF_NO_CLERGY
-				third_limit = "
-					NOT = { has_estate = estate_church }
-				"
-				third_effect = "
-					add_stability_or_adm_power = yes
-				"
-			}
-		} 
-	}
-
 	NED_west_indies_company = {
 		icon = charter_the_wic
 		position = 16
@@ -1412,147 +1294,7 @@ NED_3_1 = {
 		} 
 	}
 
-	NED_universities = {
-		icon = mission_early_modern_university
-		position = 11
-		provinces_to_highlight = { 
-			region = low_countries_region
-			OR = {
-				NOT = { development = 20 }
-				NOT = { num_of_buildings_in_province = 3 }
-			}
-		} 
 	
-		trigger = {  
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				region = low_countries_region
-				development = 20
-				num_of_buildings_in_province = 3
-				value = 3
-			}
-			if = {
-				limit = {
-					has_dlc = "Rule Britannia"
-				}
-				innovativeness = 15
-			}
-		} 
-	
-		effect = {  
-			add_dip_power = 50
-			add_mil_power = 50
-			add_adm_power = 50
-			custom_tooltip = NED_GRANT_UNIVERSITY_IN_MOST_DEVELOPED_PROVINCE
-			hidden_effect = {
-				pick_best_provinces = {
-					scope = every_owned_province
-					scale = higher_development_than
-					1 = yes
-					event_target_name = "low_countries_university_target"
-					global_trigger = "
-						region = low_countries_region
-					"
-				}
-				if = {
-					limit = {
-						has_saved_event_target = low_countries_university_target_1
-					}
-					event_target:low_countries_university_target_1 = {
-						add_or_upgrade_university_building = yes
-					}
-				}
-			}
-		}
-	}
-
-	NED_leiden_university = {
-		icon = leiden_university
-		position = 12
-		required_missions = { NED_universities }
-		provinces_to_highlight = {
-			province_id = 4383
-			OR = {
-				NOT = { country_or_non_sovereign_subject_holds = ROOT }
-				NOT = { development = 30 }
-			}
-		}
-		trigger = {  
-			4383 = {
-				country_or_non_sovereign_subject_holds = ROOT
-				development = 30
-			}
-			if = {
-				limit = {
-					has_dlc = "Rule Britannia"
-				}
-				innovativeness = 50
-			}
-			else = {
-				has_adm_advisor_3 = yes
-				has_dip_advisor_3 = yes
-				has_mil_advisor_3 = yes
-			}
-		} 
-
-		effect = {
-			set_country_flag = ned_unlocks_leiden_university
-			country_event_with_effect_insight = {
-				id = flavor_hol.1
-				effect = "
-					add_years_of_income = -0.25
-					add_prestige = 5
-					4383 = {
-						add_or_upgrade_university_building = yes
-					}
-					add_innovativeness_small_effect = yes
-				"
-			}
-		} 
-	}
-
-	NED_unified_confession = {
-		icon = religious_resolution
-		position = 13
-		required_missions = {
-			NED_humanism
-			NED_patronage_of_arts
-		}
-
-		trigger = {  
-			religious_unity = 0.9
-			if = {
-				limit = {
-					has_estate = estate_church
-				}
-				estate_loyalty = {
-					estate = estate_church
-					loyalty = 65
-				}
-			}
-			OR = {
-				has_estate_privilege = estate_burghers_enforced_interfaith_dialogue
-				num_of_converted_provinces = { amount = 15 }
-			}
-		} 
-
-		effect = {  
-			custom_tooltip = NED_BUFF_INTERFAITH_DIALOG
-			set_country_flag = ned_buff_interfaith_dialog_grant_tolerance_heretics_flag
-			custom_tooltip = " "
-			complex_dynamic_effect = {
-				first_custom_tooltip = NED_IF_REFORMED
-				first_limit = "
-					religion = reformed
-				"
-				first_effect = "
-					custom_tooltip = NED_ADD_100_FERVOR
-					hidden_effect = {
-						add_fervor = 100
-					}
-				"
-			}
-		} 
-	}
 
 	NED_start_exploration = {
 		icon = mission_explore_the_world
@@ -2095,89 +1837,6 @@ NED_4_1 = {
 		} 
 	}
 
-	NED_patronage_of_arts = {
-		icon = sponsor_the_arts
-		position = 12
-		required_missions = {
-			NED_northern_renaissance
-			NED_universities
-		}
-
-		trigger = {  
-			prestige = 50
-			if = {
-				limit = {
-					has_estate = estate_burghers
-				}
-				estate_loyalty = {
-					estate = estate_burghers
-					loyalty = 65
-				}
-			}
-		} 
-
-		effect = {  
-			add_splendor = 200
-			custom_tooltip = " "
-			custom_tooltip = NED_BUFF_PATRONAGE_OF_ARTS_PRIVILEGE
-			set_country_flag = ned_patronage_buff_flag
-			custom_tooltip = " "
-			capital_scope = {
-				add_next_institution_embracement = 50
-			}
-		} 
-	}
-
-	NED_golden_age = {
-		icon = ned_golden_age
-		position = 14
-		required_missions = {
-			NED_unified_confession
-			NED_dutch_architecture
-		}
-	
-		trigger = {  
-			total_development = 700
-			prestige = 90
-			if = {
-				limit = {
-					OR = {
-						has_dlc = "Rights of Man"
-						has_dlc = "Emperor"
-					}
-				}
-				NOT = {
-					great_power_rank = 2
-				}
-				monthly_income = 400
-			}
-			else = {
-				monthly_income = 600
-			}
-			has_adm_advisor_3 = yes
-			has_dip_advisor_3 = yes
-			has_mil_advisor_3 = yes
-		} 
-	
-		effect = {  
-			add_country_modifier = {
-				name = ned_dutch_golden_age
-				duration = -1
-			}
-			if = { 
-				limit = { has_dlc = "Mandate of Heaven" }
-				custom_tooltip = pol_if_used_ge_rest_else_30_years_extension_tt 
-				if = {
-					limit = { has_had_golden_age = yes } 
-					reset_golden_age = yes 
-				}
-				else_if = {
-					limit = { in_golden_age = yes } 
-					extend_golden_age = 600
-				}
-			}
-		} 
-	}
 
 	NED_founding_the_voc = {
 		icon = chater_the_voc
@@ -2322,24 +1981,12 @@ NED_5 = {
 		position = 1
 		
 		trigger = {
-			OR = {
 				AND = {
-					republican_tradition = 95
-					statists_vs_orangists = 1
-				}
-
-				AND = {
-					NOT = { republican_tradition = 85 }
-					statists_vs_orangists = 0.75
-				}
-
-				AND = {
-					NOT = { republican_tradition = 75 }
-					statists_vs_orangists = 0.5
+					army_professionalism = 0.1
+					government_reform_progress = 50
+					republican_tradition = 90
 				}
 			}
-
-		}
 
 		effect = {
 			add_country_modifier = {
@@ -2351,6 +1998,7 @@ NED_5 = {
 				duration = -1
 			}
 			add_republican_tradition = -20
+			change_government_reform_progress = -50
 		}
 	}
 
@@ -2408,6 +2056,8 @@ NED_5 = {
 					}
 				}
 				num_of_marines = 50
+				mil_tech = 15
+				adm_tech = 15
 				custom_trigger_tooltip = {
 					tooltip = NED_national_guard_requirements_ZVP_tt
 				}
@@ -2580,76 +2230,33 @@ NED_5_1 = {
 		} 
 	}
 
-	NED_northern_renaissance = {
-		icon = florentine_renaissance
+	NED_reformation_of_civil_ethics = {
+		icon = ""
 		position = 11
 
-		trigger = {  
-			has_adm_advisor = yes
-			has_dip_advisor = yes
-			has_mil_advisor = yes
-			has_institution = renaissance
-		} 
-
-		effect = {  
-			country_event_with_effect_insight = {
-				id = dutch_mission_events.8
-				effect = "
-					add_country_modifier = {
-						name = ned_seat_of_many_artists
-						duration = 7300
-					}
-					define_advisor = {
-						type = artist
-						skill = 2
-						cost_multiplier = 0.25
-						name = \"Jheronimus Bosch\"
-					}
-				"
+		trigger = {
+			OR = {
+				AND = {
+					NOT = { current_age = age_of_discovery }
+					religion = rationalist
+				}
+				hidden_trigger = {
+					has_country_flag = ZVP_in_the_reformation_age_flag	
+				}
+				custom_trigger_tooltip = {
+					tooltip = ZVP_time_of_ethical_troubles_tt
+				}
 			}
-		} 
-	}
 
-	NED_dutch_architecture = {
-		icon = dutch_architecture
-		position = 13
-		required_missions = { NED_patronage_of_arts }
-		
-		provinces_to_highlight = {
-			region = low_countries_region
-			country_or_non_sovereign_subject_holds = ROOT
-			NOT = { num_of_buildings_in_province = 5 }
+			always = no # doing for now, as working on the mission tree makes me want to kill myself xP
 		}
-	
-		trigger = {  
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				region = low_countries_region
-				num_of_buildings_in_province = 5
-				value = 10
-			}
-			development_in_provinces = {
-				value = 200
-				region = low_countries_region
-			}
-		} 
-	
-		effect = {  
-			custom_tooltip = NED_BUFF_ARTIST_ADVISOR
-			set_country_flag = ned_artist_is_architect_flag
-			custom_tooltip = " "
-			country_event_with_effect_insight = {
-				id = dutch_mission_events.9
-				effect = "
-					define_advisor = {
-						type = artist
-						skill = 3
-						cost_multiplier = 0.25
-						name = \"Pieter Post\"
-					}
-				"
-			}
-		} 
+
+		effect = {
+			
+		}
+
 	}
+
 
 	NED_cape_of_good_hope = {
 		icon = colonize_the_cape

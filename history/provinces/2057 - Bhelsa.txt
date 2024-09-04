@@ -1,5 +1,5 @@
-owner = ORI
-controller = ORI
+owner = MLW
+controller = MLW
 capital = "Bhelsa"
 is_city = yes
 culture = gondi
@@ -9,7 +9,7 @@ base_tax = 5
 base_production = 3
 base_manpower = 2
 add_core = GDW
-add_core = ORI
+add_core = MLW
 discovered_by = chinese
 discovered_by = east_african
 discovered_by = eastern

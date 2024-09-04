@@ -1,0 +1,31 @@
+bookmark = {
+	name = bookmark_megacampaign_name
+	desc = bookmark_megacampaign_desc
+	date = "1444.11.11"
+
+	center = 112
+	default = yes
+
+	country = SWI
+	country = SIC
+	country = Z00
+	country = ADU
+	country = NED
+	country = HAB
+	country = ETH
+
+	country = ENG
+	country = KNI
+	country = OON
+	country = Z01
+	country = ARM
+	country = RJP
+
+	easy_country = SWI
+	easy_country = SIC
+	easy_country = Z00
+	easy_country = ADU
+	easy_country = NED
+	easy_country = HAB
+	easy_country = ETH
+}

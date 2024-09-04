@@ -7359,6 +7359,8 @@ crusader_nobility_reform = {
 		warscore_cost_vs_other_religion = -0.1
 		nobles_loyalty_modifier = 0.1
 		nobles_influence_modifier = 0.1
+		has_mamluks = yes
+		amount_of_mamluks = 6
 	}
 
 	custom_attributes = {

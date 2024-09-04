@@ -1,0 +1,41 @@
+country_decisions = {
+	#coastal raiding
+	kni_coastal_raiding = {
+		major = yes
+		potential = {
+			tag = KNI
+		}
+		allow = { 
+			has_country_flag = kni_coastal_raiding_decision
+		}
+		effect = {
+			add_country_modifier = {
+				name = kni_coastal_raiding_modifier
+				duration = 1825
+			}
+		}
+	}
+}
+country_decisions = {
+	kni_found_termina = {
+		major = yes
+		potential = {
+			tag = KNI
+		}
+		allow = { 
+			tag = KNI
+		}
+		effect = {
+			KNM = {
+				add_core = 2787
+				add_core = 2766
+				add_core = 1227
+				add_core = 2771
+				add_core = 2772
+				add_core = 1223
+				add_core = 1224
+				add_core = 121
+			}
+		}
+	}
+}

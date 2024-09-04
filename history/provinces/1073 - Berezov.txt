@@ -1,14 +1,14 @@
 owner = YUG
 controller = YUG
+add_core = YUG
 capital = "Berezov"
 is_city = yes
 culture = samoyed
 religion = catholic
-trade_goods = unknown
+trade_goods = fur
 base_tax = 2
 base_production = 1
 base_manpower = 1
-add_core = YUG
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

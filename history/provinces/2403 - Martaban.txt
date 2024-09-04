@@ -1,5 +1,5 @@
-owner = AVA
-controller = AVA
+owner = AYU
+controller = AYU
 capital = "Moulmein"
 is_city = yes
 culture = mon
@@ -8,7 +8,7 @@ trade_goods = chinaware
 base_tax = 5
 base_production = 5
 base_manpower = 4
-add_core = AVA
+add_core = AYU
 add_core = PEG
 discovered_by = chinese
 discovered_by = east_african

@@ -19,7 +19,7 @@ add_accepted_culture = latvian
 	}
 	heir = {
 		name = "Gedigaudas"
-		dynasty = "Pomesania-Trakai"
+		dynasty = "Pomesania"
 		adm = 6
 		dip = 4
 		mil = 4

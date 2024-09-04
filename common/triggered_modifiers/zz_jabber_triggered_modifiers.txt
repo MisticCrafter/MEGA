@@ -107,5 +107,5 @@ heresy_crushed_catholic = {
         }
     }
 
-    all_power_cost = -0.5
+    all_power_cost = -0.1
 }

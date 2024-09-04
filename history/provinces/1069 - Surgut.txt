@@ -1,7 +1,11 @@
+owner = YUG
+controller = YUG
+add_core = YUG
 capital = "Sörgüt"
 culture = samoyed
 religion = tengri_pagan
-trade_goods = unknown
+is_city = yes
+trade_goods = fur
 base_tax = 1
 base_production = 1
 base_manpower = 1

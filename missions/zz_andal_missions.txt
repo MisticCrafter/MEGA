@@ -522,7 +522,7 @@ andalos_slot_2_missions = {
 	
 		effect = {
 			define_explorer = {
-				name = "Diogo Cão"
+				name = "Diogo Cï¿½o"
 				shock = 2
 				fire = 2
 				manuever = 4
@@ -848,7 +848,7 @@ andalos_slot_2_missions_c = {
 					}
 				}
 				AND = {
-					owned_by = Z0E
+					owned_by = CYN
 				owned_by = VAL
 				NOT = { owned_by = ROOT }
 				}
@@ -856,7 +856,7 @@ andalos_slot_2_missions_c = {
 		}
 		
 		trigger = {
-			NOT = { exists = Z0E }
+			NOT = { exists = CYN }
 			NOT = { exists = VAL }
 			capital_scope = { 
 				num_of_times_improved = 8 

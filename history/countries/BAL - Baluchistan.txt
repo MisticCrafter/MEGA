@@ -1,11 +1,12 @@
-government = monarchy
-add_government_reform = english_monarchy
+government = tribal
+add_government_reform = tribal_federation
 government_rank = 2
 technology_group = muslim
 religion = catholic
-primary_culture = baluchi
-capital = 2232
+primary_culture = crusader_baluchi
+capital = 2220
 add_accepted_culture = afghani
+add_accepted_culture = baluchi
 add_accepted_culture = turko_iranian
 1444.11.11= {
 	monarch = {

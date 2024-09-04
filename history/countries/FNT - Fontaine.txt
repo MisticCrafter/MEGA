@@ -1,0 +1,7 @@
+government = republic
+add_government_reform = united_zeven_provincies_republic_reform
+government_rank = 3
+technology_group = western
+religion = rationalist
+primary_culture = nederlandische_ZVP
+capital = 235
