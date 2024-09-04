@@ -6,7 +6,7 @@ christian = {
  
 		technology_cost = -0.05
 
-		interest = -0.25
+		discipline = 0.05
 	
 }
 		country_as_secondary = {
