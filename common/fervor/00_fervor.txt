@@ -251,7 +251,7 @@ fervor_diplomacy_buffed = {
 }
 
 # thibaultine shit
-fervor_trade_t = {
+fervor_birth_t = {
 	cost = 8
 	potential = {
 		FROM = {
@@ -262,9 +262,8 @@ fervor_trade_t = {
 	trigger = {
 	}
 	effect = {
-		global_trade_power = 0.1
-		trade_efficiency = 0.1
-		global_trade_goods_size_modifier = 0.05
+		global_trade_goods_size_modifier = 0.1
+		heir_chance = 1
 		may_explore = yes
 	}
 	ai_will_do = {
@@ -293,7 +292,7 @@ fervor_trade_t = {
 	}
 }
 
-fervor_war_t = {
+fervor_death_t = {
 	cost = 8
 	potential = {
 		FROM = {
@@ -321,7 +320,7 @@ fervor_war_t = {
 	}	
 }
 
-fervor_stability_t = {
+fervor_emulation_t = {
 	cost = 8
 	potential = {
 		FROM = {
@@ -332,10 +331,9 @@ fervor_stability_t = {
 	trigger = {
 	}
 	effect = {
-		development_cost = -0.1
-		global_unrest = -2
+		development_cost_in_primary_culture = -0.2
 		can_revoke_parliament_seats = yes
-		allow_free_estate_privilege_revocation = yes
+		reduced_stab_impacts = yes
 	}
 	ai_will_do = {
 		factor = 1
@@ -353,34 +351,5 @@ fervor_stability_t = {
 			NOT = { num_of_rebel_controlled_provinces = 1 }
 			has_active_fervor = no
 		}
-	}	
-}
-
-fervor_diplomacy_t = {
-	cost = 8
-	potential = {
-		FROM = {
-			NOT = { has_country_flag = ned_buff_fervor_actions }
-			religion = thibaultine
-		}
-	}
-	trigger = {
-	}
-	effect = {
-		diplomatic_reputation = 2
-		improve_relation_modifier = 0.25
-		spy_action_cost_modifier = -0.25
-	}
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 1.25
-			is_at_war = no
-		}
-		modifier = {
-			factor = 0
-			NOT = { fervor = 50 }
-			has_active_fervor = no
-		}	
 	}	
 }

@@ -3,9 +3,8 @@ christian = {
 		color = { 146 75 75 }
 		icon =  179
 		country = {
-	
 			no_stability_loss_on_monarch_death = yes
-			spy_offence = 0.5	
+			spy_offence = 0.5
 		}
 		country_as_secondary = {
 			no_stability_loss_on_monarch_death = yes
