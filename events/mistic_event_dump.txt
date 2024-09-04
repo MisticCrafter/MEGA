@@ -101,6 +101,7 @@ country_event = {
         105 = { country_or_non_sovereign_subject_holds = ROOT }
         106 = { country_or_non_sovereign_subject_holds = ROOT }
         109 = { country_or_non_sovereign_subject_holds = ROOT }
+        NOT = { mission_completed = swiss_modena }
     }
 
     immediate = {
@@ -146,6 +147,7 @@ country_event = {
                 add_devastation = 25
             }
         }
+        ROOT = { set_country_flag = modena_purged }
     }
 
     option = {
@@ -172,6 +174,7 @@ country_event = {
         108 = { country_or_non_sovereign_subject_holds = ROOT }
         109 = { country_or_non_sovereign_subject_holds = ROOT }
         110 = { country_or_non_sovereign_subject_holds = ROOT }
+        NOT = { mission_completed = swiss_verona }
     }
 
     immediate = {

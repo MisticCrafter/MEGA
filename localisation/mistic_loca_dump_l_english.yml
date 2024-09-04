@@ -1,4 +1,5 @@
-﻿l_english:
+﻿# Lombardei Theft Events
+l_english:
   flavor_mistic_swiss.1.t: "Murder in Milan"
   flavor_mistic_swiss.1.d: "Some guys in Milan are getting got. Lombardei authorities refuse to investigate."
   flavor_mistic_swiss.1.a: "Ghastly."
@@ -26,4 +27,20 @@
   flavor_mistic_swiss.9.t: "Venice, Vanquished"
   flavor_mistic_swiss.9.d: "RIP Venice"
   flavor_mistic_swiss.9.a: "We must do *SOMETHING* about this. The regency has gone too far!"
+
+# Swiss MT Events
+l_english:
   flavor_mistic_swiss_missions.1: "Purchase of Aynam"
+
+# Swiss Custom Tooltips
+l_english:
+  SWISS_MONOPOLY_INCOME_CHINA_DESC: "We will gain one year of income from every province that is either in the South China Region or that produces Chinaware"
+  verona_immune_to_lombardei: "If this mission is completed while Verona still exists, then Lombardei will be unable to force our hand in Verona."
+  modena_immune_to_lombardei: "If this mission is completed before Lombardei sacks Modena, then Modena will be too developed for the planned purge to succeed."
+  milan_immune_to_lombardei: "Our embedded agents will prevent Lombardei from razing Milan"
+  merchants_immune_to_lombardei: "The newly-loyal merchants and their Maritime Cities will no longer have to fear invasion or partition by Lombardei"
+  lombardei_regency_abolished: "With the end of the treasonous Lombardei Regency, our italian subjects will no longer have to fear violent assimilation."
+  SWI_failed_verona: "We failed to protect Verona from our own errant subjects. There is no reward, and we live in shame."
+  SWI_failed_merchants: "We failed to protect the Maritime Republics from our own errant subjects. There is no reward, and we live in shame."
+  SWI_failed_lombardei_all: "We failed to rein in Lombardei before they could slip from our grasp. There is no reward, and we live in shame."
+  SWI_alsace: "All countries in the German Confederation will lose 20 Aggressive Expansion Opinion of us."
