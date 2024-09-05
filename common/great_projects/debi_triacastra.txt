@@ -135,7 +135,7 @@ triacastra = {
         province_modifiers = {
             local_defender_dice_roll_bonus = 1
             local_hostile_attrition = 1
-            max_hostile_attrition = 1
+            max_attrition = 1
         }
 
         # What modifiers are given to the area of the province the project is located in
@@ -173,7 +173,6 @@ triacastra = {
         province_modifiers = {
             local_defender_dice_roll_bonus = 1
             local_hostile_attrition = 1
-            max_hostile_attrition = 1
             local_manpower_modifier = 0.33
         }
 
@@ -185,7 +184,7 @@ triacastra = {
 
         # What modifiers are given to the nation that owns the monument
         country_modifiers = {
-            army_tradition = 0.15
+            max_attrition = 1
         }
 
         # What modifiers are given to the region of the province the project is located in

@@ -128,3 +128,156 @@ country_event = {
 country_event = {
     id = flavor_mistic_swiss_missions.6
 }
+
+# Burn Rome
+country_event = {
+	id = flavor_mistic_swiss_missions.7
+	title = flavor_mistic_swiss_missions.7.t
+	desc = flavor_mistic_swiss_missions.7.d
+	picture = BONFIRE_OF_THE_VANITIES_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_mistic_swiss_missions.7.a
+		
+		ai_chance = {
+			factor = 0
+		}
+		
+		118 = {
+			custom_tooltip = BYZ_this_province_will_lose_development
+			
+			custom_tooltip = " "
+			
+			hidden_effect = {
+				export_to_variable = {
+					which = SWI_amount_of_dev
+					value = trigger_value:development
+				}
+				multiply_variable = {
+					which = SWI_amount_of_dev
+					value = 0.75
+				}
+				while = {
+					limit = {
+						check_variable = {
+							which = SWI_amount_of_dev
+							value = 1
+						}
+						OR = {
+							base_tax = 2
+							base_production = 2
+							base_manpower = 2
+						}
+					}
+					random_list = {
+						1 = {
+							trigger = {
+								base_tax = 2
+							}
+							add_base_tax = -1
+							ROOT = { add_treasury = 75 }
+						}
+						1 = {
+							trigger = {
+								base_production = 2
+							}
+							add_base_production = -1
+							ROOT = { add_treasury = 75 }
+						}
+						1 = {
+							trigger = {
+								base_manpower = 2
+							}
+							add_base_manpower = -1
+							ROOT = { add_treasury = 75 }
+						}
+					}
+					change_variable = {
+						which = SWI_amount_of_dev
+						value = -1
+					}
+				}
+				set_variable = {
+					which = SWI_amount_of_dev
+					value = 0
+				}
+			}
+			owner = {
+				country_event = {
+					flavor_mistic_swiss_missions.8
+				}
+			}
+			add_devastation = 100
+			remove_building = fort_18th
+			remove_building = fort_17th
+			remove_building = fort_16th
+			remove_building = fort_15th
+		}
+	}
+
+	option = {
+		name = flavor_mistic_swiss_missions.7.a
+
+		SWI = {
+			add_country_modifier = {
+				name = SWI_did_not_burn_rome
+				duration = 3650
+			}
+			add_prestige = 20
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+# Rome owner informed of burning
+country_event = {
+	id = flavor_mistic_swiss_missions.8
+	title = flavor_mistic_swiss_missions.8.t
+	desc = flavor_mistic_swiss_missions.8.d
+	picture = BONFIRE_OF_THE_VANITIES_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_mistic_swiss_missions.8.a
+		add_prestige = -30
+	}
+}
+
+# TODO Fate of the Palermo Senate
+country_event = {
+	id = flavor_mistic_swiss_missions.9
+	title = flavor_mistic_swiss_missions.9.t
+	desc = flavor_mistic_swiss_missions.9.d
+	picture = SEJM_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_mistic_swiss_missions.9.a
+		add_prestige = 1
+	}
+}
+
+# TODO Return of the Catalonians
+country_event = {
+	id = flavor_mistic_swiss_missions.10
+	title = flavor_mistic_swiss_missions.10.t 
+	desc = flavor_mistic_swiss_missions.10.d 
+	picture = INFANTES_ARAGON_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_mistic_swiss_missions.10.a
+		add_prestige = 1
+	}
+}

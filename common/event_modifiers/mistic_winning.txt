@@ -1,0 +1,43 @@
+SWI_did_not_burn_rome = {
+    core_creation = -0.1
+    ae_impact = -0.1
+}
+
+SWI_rule_the_med = {
+    global_naval_engagement_modifier = 0.1
+    galley_power = 0.2
+    own_coast_naval_combat_bonus = 1.0
+}
+
+SWI_aquitaine_crown = {
+    reduced_liberty_desire_on_same_continent = 15
+    reform_progress_growth = 0.1
+}
+
+SWI_pyrenees_forts = {
+    local_defensiveness = 0.2
+}
+
+SWI_crown_of_aragon = {
+    trade_efficiency = 0.15
+}
+
+SWI_crown_of_navarra = {
+    global_sailors_modifier = 0.15
+    range = 0.5
+}
+
+SWI_biscay_monopoly = {
+    merchants = 1
+    trade_steering = 0.15
+}
+
+SWI_hohenstaufen_memories = {
+    state_governing_cost = -0.15
+    ae_impact = -0.15
+}
+
+influx_of_lombard_notables_modifier = {
+    local_tax_modifier = 0.1
+    local_institution_spread = 0.1
+}

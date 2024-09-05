@@ -1,0 +1,297 @@
+graphical_culture = westerngfx
+color = { 120 106 183 }
+revolutionary_colors = { 15 0 8	}
+religion = catholic
+government = theocracy
+add_government_reform = monastic_order
+historical_idea_groups = {
+	trade_ideas
+	defensive_ideas
+	infrastructure_ideas
+	offensive_ideas
+	maritime_ideas
+	humanist_ideas
+	court_ideas
+	quality_ideas
+}
+historical_units = {
+	anglofrench_line
+	french_caracolle
+	french_dragoon
+	mixed_order_infantry
+	napoleonic_lancers
+	napoleonic_square
+	open_order_cavalry
+	prussian_frederickian
+	prussian_uhlan
+	swiss_landsknechten
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+}
+monarch_names = {
+	"Aaron #1" = 10
+	"Abianos #1" = 10
+	"Aius #1" = 10
+	"Abel #1" = 10
+	"Amera #1" = 10
+	"Abu Mansur al-Nizar #1" = 10
+	"Ahmad #1" = 10
+	"Alicia #1" = -1
+	"Ashraf #1" = 10
+	"Asim #1" = 10
+	"Bashir #2" = 10
+	"Berenguel #0" = 0
+	"Bernardo #1" = 10
+	"Alucio #1" = 10
+	"Danyal #1" = 10
+	"Desta #1" = 10
+	"Georgios #1" = 10
+	"Goto #0" = -1
+	"Juan #1" = 10
+	"Leonor #0" = -1
+	"Nasir #0" = 0
+	"Nassib #0" = 0
+	"Yazid #1" = 10
+	"al-Hakim #1" = 10
+	"al-Mustansir #1" = 10
+	"August #1" = 10
+	"az-Zahir #1" = 10
+}
+leader_names = {
+	"August"
+	"Caracciolo"
+	"Carafa"
+	"Cotoner"
+	"Despuig"
+	"Garzez"
+	"Orsini"
+	"Perellos y Roccaful"
+	"Zacosta"
+	"Zondadari"
+	"d'Amboise"
+	"d'Aubusson"
+	"de Blanchefort"
+	"de Clermont-Gessant"
+	"de Corneillan"
+	"de Fonseca"
+	"de Gozon"
+	"de Heredia"
+	"de Homedes"
+	"de Juilliac"
+	"de L'Isle-Adam"
+	"de La Vallette-Parisot"
+	"de Lascaris-Castellar"
+	"de Lastic"
+	"de Milly"
+	"de Naillac"
+	"de Paule"
+	"de Pins"
+	"de Redin"
+	"de Rohan-Polduc"
+	"de Saint-Jaille"
+	"de Texada"
+	"de Vasconcellos"
+	"de Verdala"
+	"de Vilhena"
+	"de Villaret"
+	"de Wignacourt"
+	"de la Cassi�re"
+	"de la Riv�re"
+	"de la Sengle"
+	"del Carretto"
+	"del Monte"
+	"del Ponte"
+	"von Hormpesch"
+}
+ship_names = {
+	"Alfonse of Portugal"
+	"Arnaud de Comps"
+	"Auger de Balben"
+	"Garnier de Naplous"
+	"Gastone de Murols"
+	"Geoffrey le Rat"
+	"Geoffroy de Donjon"
+	"Gilbert d'Aissailly"
+	"Gilbert of Syria"
+	"Hermangard d'Asp"
+	"H�lion de Villeneuve"
+	"Raymond du Puy de Provence"
+	"Roger de Moulins"
+	"The Blessed Gerard"
+	"Gamo"
+	"Garzota"
+	"Gavil?n"
+	"Genovesa"
+	"Gibraltar"
+	"Giganta"
+	"Gineto"
+	"Gitano"
+	"Gloria"
+	"Glorioso"
+	"Golondrina"
+	"Gran Princesa de los Cielos"
+	"Grana"
+	"Griega"
+	"Guerrero"
+	"Guipuscoana"
+	"Gusana"
+	"Halc?n"
+	"Hermione"
+	"Hermosa Mariana"
+	"Hidra"
+	"Hur?n"
+	"H?ctor"
+	"H?rcules"
+	"H?roe"
+	"Iberia"
+	"Ibicenco"
+	"Ifigenia"
+	"Impomenes"
+	"Incendio"
+	"Indagadora"
+	"Industria"
+	"Infanta Amalia"
+	"Infanta Carlotta"
+	"Infante"
+	"Infante Don Carlos"
+	"Infante Don Pelayo"
+	"Intr?pido"
+	"Invencible"
+	"Iris"
+	"Isabel"
+	"Isabel II"
+	"Isabela"
+	"Jard?n de Trit?n"
+	"Jas?n"
+	"Jos?"
+	"Juliana"
+	"Juno"
+	"Justica"
+	"Justina"
+	"J?piter"
+	"La Duquesa"
+	"La Ferme"
+	"La ?nimas Sola"
+	"Lealtad"
+	"Lebrel"
+	"Le?n"
+	"Le?n Coronado"
+	"Le?n de Oro"
+	"Libra"
+	"Liebre"
+	"Ligera"
+	"Los Dos Azares"
+	"Los Magalianes"
+	"Luisa"
+	"Luisa Fernanda"
+	"Magn?nimo"
+	"Mahonesa"
+	"Mallorqu?n"
+	"Malta"
+	"Marte"
+	"Mar?a"
+	"Mar?a Francisca"
+	"Mar?a Isabel"
+	"Mazerredo"
+	"Medea"
+	"Medusa"
+	"Mejicano"
+	"Menorqu?n"
+	"Mercedes"
+	"Mercurio"
+	"Minerva"
+	"Minno"
+	"Monarca"
+	"Montanes"
+	"Murciano"
+	"M?gica"
+	"Neptuno"
+	"Neptuno Dios de Las Mares"
+	"Nereida"
+	"Ntra. Sra. Del Pueblo"
+	"Ntra. Sra. de Aranzaz?"
+	"Ntra. Sra. de Asunci?n"
+	"Ntra. Sra. de Atocha"
+	"Ntra. Sra. de Begonna"
+	"Ntra. Sra. de Bel?n"
+	"Ntra. Sra. de Bignonia"
+	"Ntra. Sra. de Buenos Aires y San Juan Nepumeceno"
+	"Ntra. Sra. de Choro"
+	"Ntra. Sra. de Covadonga"
+	"Ntra. Sra. de Gracia"
+	"Ntra. Sra. de Guadalupe"
+	"Ntra. Sra. de Loreto"
+	"Ntra. Sra. de Misericordia"
+	"Ntra. Sra. de Oilar"
+	"Ntra. Sra. de Regia"
+	"Ntra. Sra. de l'Oves"
+	"Ntra. Sra. de la Almudena"
+	"Ntra. Sra. de la Almudena y San Cayetano"
+	"Ntra. Sra. de la Anunciaci?n"
+	"Ntra. Sra. de la Candelaria"
+	"Ntra. Sra. de la Caridad"
+	"Ntra. Sra. de la Concepci?n"
+	"Ntra. Sra. de la Concepci?n y las ?nimas"
+	"Ntra. Sra. de la Esclavitud"
+	"Ntra. Sra. de la Gu?a"
+	"Ntra. Sra. de la Humildad"
+	"Ntra. Sra. de la O"
+	"Ntra. Sra. de la Paz"
+	"Ntra. Sra. de la Piedad"
+	"Ntra. Sra. de la Presentaci?n"
+	"Ntra. Sra. de la Soledad"
+	"Ntra. Sra. de las Mercedes"
+	"Ntra. Sra. de las Vinas"
+	"Ntra. Sra. de los Buenos Aires"
+	"Ntra. Sra. de los Dolores"
+	"Ntra. Sra. de ?frica"
+	"Ntra. Sra. del Carmen"
+	"Ntra. Sra. del Carmen la Confianza"
+	"Ntra. Sra. del Carmen y San Antonio"
+	"Ntra. Sra. del Carmen y las ?nimas"
+	"Ntra. Sra. del Carmino"
+	"Ntra. Sra. del Corlylas"
+	"Ntra. Sra. del Pilar"
+	"Ntra. Sra. del Pilar y ?nimas"
+	"Ntra. Sra. del Pueblo"
+	"Ntra. Sra. del Rosario"
+	"Ntra. Sra. y San Jos?"
+	"Ntra. Sra.del Puerto San Buenaventura"
+	"Nueva Espa?a"
+	"Nueva ?frica"
+	"Nuevo Invencible"
+	"Numancia"
+	"Oriente"
+	"Orquijo"
+	"Pacto de Familia"
+	"Palas"
+	"Paloma India"
+	"Palomo"
+	"Patag?n"
+	"Patriota"
+	"Patrona"
+	"Paz"
+	"Pena"
+	"Peregrina"
+	"Perfecta"
+	"Perla"
+	"Perla Vizca?na"
+	"Perla de Espa?a"
+	"Peruano"
+	"Pezuela"
+	"Pe?ada"
+	"Pinque Pintado"
+	"Pinque Volante"
+	"Piuma"
+	"Poder"
+	"Poderoso"
+	"Porto Coeli"
+}
+army_names = {
+	"Knights de $PROVINCE$"
+}
+fleet_names = {
+	"Order Armada de $PROVINCE$"
+}
+
