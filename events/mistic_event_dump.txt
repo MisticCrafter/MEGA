@@ -566,36 +566,6 @@ country_event = {
                 add_devastation = 25
                 change_culture = piedmontese 
             }
-		}
-        if = {
-            limit = {
-                130 = {
-                    NOT = { culture = piedmontese }
-                    country_or_non_sovereign_subject_holds = ROOT
-                }
-            }
-            130 = {
-                add_base_tax = -1
-			    add_base_production = -1
-			    add_base_manpower = -1
-                add_devastation = 25
-                change_culture = piedmontese 
-            }
-        }
-        if = {
-            limit = {
-                136 = {
-                    culture_group = latin
-                    country_or_non_sovereign_subject_holds = ROOT
-                }
-            }
-            136 = {
-                add_base_tax = -1
-			    add_base_production = -1
-			    add_base_manpower = -1
-                add_devastation = 25
-                change_culture = piedmontese 
-            }
         }
         1774 = {
             cede_province = SAV
@@ -611,30 +581,26 @@ country_event = {
         }
         if = {
             limit = {
-                130 = { country_or_non_sovereign_subject_holds = ROOT }
-            }
-            130 = {
-                cede_province = SAV
-                add_core = SAV
-            }
-        }
-        if = {
-            limit = {
-                136 = { country_or_non_sovereign_subject_holds = ROOT }
-            }
-            136 = {
-                cede_province = SAV
-                add_core = SAV
-            }
-        }
-        if = {
-            limit = {
                 1769 = { country_or_non_sovereign_subject_holds = ROOT }
             }
             1769 = {
-                cede_province = HAB
-                add_core = HAB
+                cede_province = SAV
+                add_core = SAV
             }
+        }
+        europe = {
+            limit = {
+                country_or_non_sovereign_subject_holds = ROOT
+                culture_group = italian
+                NOT = { region = italy_region}
+            }
+            add_base_tax = -1
+		    add_base_production = -1
+    	    add_base_manpower = -1
+            add_devastation = 25
+            change_culture = piedmontese 
+            cede_province = SAV
+            add_core = SAV
         }
     }
 
