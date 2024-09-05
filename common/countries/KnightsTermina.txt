@@ -3,7 +3,7 @@ color = { 120 106 183 }
 revolutionary_colors = { 15 0 8	}
 religion = catholic
 government = theocracy
-government_reform = monastic_order
+add_government_reform = monastic_order
 historical_idea_groups = {
 	trade_ideas
 	defensive_ideas
@@ -96,8 +96,8 @@ leader_names = {
 	"de Vilhena"
 	"de Villaret"
 	"de Wignacourt"
-	"de la Cassière"
-	"de la Rivère"
+	"de la Cassiï¿½re"
+	"de la Rivï¿½re"
 	"de la Sengle"
 	"del Carretto"
 	"del Monte"
@@ -115,7 +115,7 @@ ship_names = {
 	"Gilbert d'Aissailly"
 	"Gilbert of Syria"
 	"Hermangard d'Asp"
-	"Hélion de Villeneuve"
+	"Hï¿½lion de Villeneuve"
 	"Raymond du Puy de Provence"
 	"Roger de Moulins"
 	"The Blessed Gerard"

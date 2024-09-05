@@ -1,0 +1,8 @@
+﻿l_english:
+# Cynwyd c:
+ CWD:0 "Cynwyd"
+ CWD_ADJ:0 "Exiled"
+ CWD_ADJ2:0 "Exiled"
+# Cynwyd Modifiers
+ CWD_exiles_landing_paper_mill:0 "Exile's Landing Paper Mill"
+ desc_CWD_exiles_landing_paper_mill:0 "A paper mill on the isle of Exile's Landing, first established by exodus Lollards from Wales during the Paradoxian Purges."

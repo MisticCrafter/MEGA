@@ -1,0 +1,4 @@
+CWD_exiles_landing_paper_mill = {
+	trade_goods_size = 0.5	
+	picture = "global_trade_goods_size"
+}
