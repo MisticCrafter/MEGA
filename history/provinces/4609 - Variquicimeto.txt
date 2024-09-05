@@ -1,4 +1,4 @@
-capital = "Variquicimeto"
+capital = "Mantessa"
 culture = guajiro
 religion = animism
 trade_goods = unknown

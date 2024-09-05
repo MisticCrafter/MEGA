@@ -82,6 +82,47 @@ country_event = {
     option = {
         name = flavor_mistic_swiss.1.a
         add_prestige = -30
+        hidden_effect = {
+            italy_region = {
+                limit = {
+                    controlled_by = owner
+                    OR = {
+                        province_has_center_of_trade_of_level = 2
+                        province_trade_power = 15
+                    }
+                    development = 15
+                    owner = {
+                        NOT = { tag = SWI } #Switzerland
+                        NOT = { is_subject_of = SWI } #Switzerland
+                    }
+                }
+                add_province_modifier = {
+                    name = "influx_of_lombard_notables_modifier"
+                    duration = 7300
+                }
+            }
+            south_german_region = {
+                limit = {
+                    controlled_by = owner
+                    OR = {
+                        province_has_center_of_trade_of_level = 2
+                        province_trade_power = 15
+                    }
+                    development = 15
+                    owner = {
+                        NOT = { tag = SWI } #Switzerland
+                        NOT = { is_subject_of = SWI } #Switzerland
+                    }
+                }
+                add_province_modifier = {
+                    name = "influx_of_lombard_notables_modifier"
+                    duration = 7300
+                }
+            }
+        }
+        custom_tooltip = sovvertimento_milan_death_tt
+        custom_tooltip = sovvertimento_milan_diaspora_tt
+        custom_tooltip = sovvertimento_insight_tt
     }
 }
 
@@ -101,6 +142,7 @@ country_event = {
         105 = { country_or_non_sovereign_subject_holds = ROOT }
         106 = { country_or_non_sovereign_subject_holds = ROOT }
         109 = { country_or_non_sovereign_subject_holds = ROOT }
+        NOT = { mission_completed = swiss_modena }
     }
 
     immediate = {
@@ -146,6 +188,7 @@ country_event = {
                 add_devastation = 25
             }
         }
+        ROOT = { set_country_flag = modena_purged }
     }
 
     option = {
@@ -172,6 +215,7 @@ country_event = {
         108 = { country_or_non_sovereign_subject_holds = ROOT }
         109 = { country_or_non_sovereign_subject_holds = ROOT }
         110 = { country_or_non_sovereign_subject_holds = ROOT }
+        NOT = { mission_completed = swiss_verona }
     }
 
     immediate = {

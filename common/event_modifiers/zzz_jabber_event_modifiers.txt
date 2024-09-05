@@ -194,6 +194,11 @@ adu_new_fleets = {
     allowed_caravel_fraction = 0.1
 }
 
+adu_house_united = {
+    legitimacy = 0.5
+    prestige_decay = -0.01
+}
+
 ###
 
 tigranic_global_cooldown_modifier = {
@@ -362,6 +367,12 @@ tigranic_council_tercio_modifier = { #this one is cool I like it
 tigranic_more_missionaries = {
     missionaries = 1
     missionary_maintenance_cost = -0.5
+}
+
+estate_burghers_tigranic_autonomy_modifier = {
+	religion = yes
+	local_religious_unity_contribution = -1
+	local_missionary_strength = -1
 }
 
 #sorry if any of these comments make you like, tear up and cry, sob even... I just wanted to write comments smile

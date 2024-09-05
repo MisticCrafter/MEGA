@@ -1179,7 +1179,7 @@ country_event = {
 	}
 }
 
-# Dusk of an Empire
+# Dusk of an Empire (WIP)
 country_event = {
 	id = flavor_andalos.20
 	title = flavor_andalos.20.title
@@ -1197,5 +1197,55 @@ country_event = {
 	option = {
 		name = flavor_andalos.20.a
 		custom_tooltip = andalos_intro_tt
+	}
+}
+
+# The Subjugation of Hellas
+country_event = {
+	id = flavor_andalos.21
+	title = flavor_andalos.21.title
+	desc = flavor_andalos.21.desc
+	picture = COURT_eventPicture
+
+	major = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = ADU
+		ADU = {
+			dynasty = "de Sintra"
+		}
+		GRE = {
+			is_subject = yes
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = flavor_andalos.21.a
+		GRE = {
+			override_country_name = ATTICA
+			define_ruler = {
+				dynasty = "Skleros"
+				culture = greek
+				religion = catholic
+			}
+			define_heir = {
+				dynasty = "Skleros"
+				culture = greek
+				religion = catholic
+			}
+			custom_tooltip = hellas_skleros_take_power_tt
+		}
+		ADU = {
+			add_prestige_or_monarch_power = 10
+			add_country_modifier = {
+				name = "adu_house_united"
+				duration = 7300
+			}
+		}
 	}
 }

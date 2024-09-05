@@ -3404,7 +3404,7 @@ ETH_ideas = {
 	}
 	
 	bonus = {
-		discipline = 0.05
+		interest = -0.25
 	}
 	
 	trigger = {

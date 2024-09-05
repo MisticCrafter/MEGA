@@ -15,6 +15,16 @@ spriteTypes = {
     }
 
     spriteType = {
+        name = "GFX_great_project_seat_of_primarchs"
+        texturefile = "gfx//interface//great_projects//great_project_seat_of_primarchs.dds"
+    }
+
+    spriteType = {
+        name = "GFX_great_project_athens_basilica"
+        texturefile = "gfx//interface//great_projects//great_project_athens_basilica.dds"
+    }
+
+    spriteType = {
         name = "GFX_great_project_golden_mosque"
         texturefile = "gfx//interface//great_projects//great_project_golden_mosque.dds"
     }

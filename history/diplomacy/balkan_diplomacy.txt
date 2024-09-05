@@ -1,0 +1,13 @@
+guarantee = {
+	first = BUL
+	second = RAG
+	start_date = 1444.1.1
+	end_date = 1468.1.1
+}
+
+guarantee = {
+	first = CRO
+	second = DUR
+	start_date = 1444.1.1
+	end_date = 1468.1.1
+}

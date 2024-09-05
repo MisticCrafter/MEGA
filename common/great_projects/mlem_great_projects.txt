@@ -287,7 +287,8 @@ colosseum = {
 		upgrade_time = { months = 120 }
 		cost_to_upgrade = { factor = 500 }
 		province_modifiers = {
-			tax_income = 50
+			tax_income = 8
+			local_tax_modifier = 0.33
 		}
 		area_modifier = {
 			local_unrest = -1
@@ -300,7 +301,8 @@ colosseum = {
 		upgrade_time = { months = 240 }
 		cost_to_upgrade = { factor = 750 }
 		province_modifiers = {
-			tax_income = 75
+			tax_income = 12
+			local_tax_modifier = 0.50
 		}
 		area_modifier = {
 			supply_limit_modifier = 0.20
@@ -319,7 +321,8 @@ colosseum = {
 		upgrade_time = { months = 480 }
 		cost_to_upgrade = { factor = 1500 }
 		province_modifiers = {
-			tax_income = 75
+			tax_income = 12
+			local_tax_modifier = 1
 		}
 		area_modifier = {
 			supply_limit_modifier = 0.20

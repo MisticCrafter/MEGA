@@ -586,8 +586,8 @@
  hsn_prevent_leader_trait:0 "Permanently prevents our rulers and heirs from having §YCruel§! (§R+2§! National Unrest) and §YCraven§! (§R-5%§! Morale of Armies) personality traits."
  unlock_ayyubid_high_command_tt:1 "Unlock the '§YAyyubid High Command§!' Tier 5 government reform, giving the following effects:\n§G-10.0%§! General Cost\n§G+2.00§! Land Leader(s) Without Upkeep\n§G+2.00§! Max General Shock\n\nThe reform also includes the following government mechanic:\nRecruiting §YGenerals§! grants §G+0.5§! Army Tradition."
  hsn_scaling_advisors_tt:0 "All §YMilitary Advisors§! gain a scaling bonus of §G-0.3%§! Yearly Army Tradition Decay per level, and we will also gain the following modifier:"
- hsn_unlock_anatolian_conquest:0 "Preview the §YConquest§! option of the §OAnatolian Branching Missions§!."
- hsn_unlock_anatolian_alliance:0 "Preview the §YDiplomatic§! option of the §OAnatolian Branching Missions§!."
+ hsn_unlocAnatolian_conquest:0 "Preview the §YConquest§! option of the §OAnatolian Branching Missions§!."
+ hsn_unlocAnatolian_alliance:0 "Preview the §YDiplomatic§! option of the §OAnatolian Branching Missions§!."
  hsn_unlock_persian_conquest:0 "Preview the §YConquest§! option of the §OPersian Branching Missions§!."
  hsn_unlock_persian_alliance:0 "Preview the §YDiplomatic§! option of the §OPersian Branching Missions§!."
  hsn_clerical_council_tt:1 "\n'§YClerical Advisory Council§!' [Root.GetChurchOrFallbackName] estate privilege no longer gives §R+10.0%§! Stability Cost Modifier."
@@ -2530,14 +2530,13 @@
  fervor_stability_buffed_short:0 "Stability"
  fervor_diplomacy_buffed_short:0 "Diplomacy"
  
- fervor_stability_t:1 "Fervant focus on Stability"
- fervor_diplomacy_t:1 "Fervant focus on Diplomacy"
- fervor_trade_t:1 "Fervent focus on Trade"
- fervor_war_t:1 "Fervent focus on War"
- fervor_stability_t_short:0 "Stability"
- fervor_diplomacy_t_short:0 "Diplomacy"
- fervor_trade_t_short:0 "Trade"
- fervor_war_t_short:0 "War"
+ # Thibaultine Fervor
+ fervor_emulation_t:1 "Fervant focus on Emulation"
+ fervor_emulation_t_short:0 "Emulation"
+ fervor_birth_t:1 "Fervent focus on Birth"
+ fervor_birth_t_short:0 "Birth"
+ fervor_death_t:1 "Fervent focus on Death"
+ fervor_death_t_short:0 "Death"
  
  #Great Projects:
  amsterdam_bourse:0 "Amsterdam Bourse"
