@@ -32,6 +32,13 @@ l_english:
 l_english:
   flavor_mistic_swiss_missions.1: "Purchase of Aynam"
 
+# Swiss Province Modifiers (Mistic, feel free to reorganize this however you see fit c:)
+l_english:
+  influx_of_lombard_notables_modifier: "Influx of Lombard Notables"
+  influx_of_lombard_notables_modifier_desc: "As a result of the genocidal '§YSovvertimento§!', a considerable number of Lombard notables have made these lands their new home."
+
+# §§§
+
 # Swiss Custom Tooltips
 l_english:
   SWISS_MONOPOLY_INCOME_CHINA_DESC: "We will gain one year of income from every province that is either in the South China Region or that produces Chinaware"
@@ -44,3 +51,6 @@ l_english:
   SWI_failed_merchants: "We failed to protect the Maritime Republics from our own errant subjects. There is no reward, and we live in shame."
   SWI_failed_lombardei_all: "We failed to rein in Lombardei before they could slip from our grasp. There is no reward, and we live in shame."
   SWI_alsace: "All countries in the German Confederation will lose 20 Aggressive Expansion Opinion of us."
+  sovvertimento_milan_death_tt: "\nAll §YLombard§! provinces owned by §YLombardei§! will become §YPiedmontese§!, lose a significant amount of §Ydevelopment§! and gain §R25.0§! devastation."
+  sovvertimento_milan_diaspora_tt: "All eligible provinces in the §YItaly§! and §YSouth Germany§! regions will get '§YInflux of Lombard Notables§!', giving the following effects:\n   Local Tax Modifier: §G+10.0%§!\n   Local Institution Spread: §G+10.0%§!"
+  sovvertimento_insight_tt: "\n§GInsight§!\nUnless stopped by its overlord, §YLombardei§! will carry out egregious acts against the peoples of Italy §Yevery decade§!, causing many of its §Ynotables§! to flee elsewhere.\nA province is eligible to receive an influx of §YItalian notables§! if it:\n - Is not occupied.\n - Has a §Ylevel 2§! Center of Trade OR has at least §Y15§! Trade Power.\n - Has at least §Y15§! development.\n - Is not owned by §YSwitzerland§!, or a §Ysubject§! of Switzerland."

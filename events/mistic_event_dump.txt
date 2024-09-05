@@ -82,6 +82,47 @@ country_event = {
     option = {
         name = flavor_mistic_swiss.1.a
         add_prestige = -30
+        hidden_effect = {
+            italy_region = {
+                limit = {
+                    controlled_by = owner
+                    OR = {
+                        province_has_center_of_trade_of_level = 2
+                        province_trade_power = 15
+                    }
+                    development = 15
+                    owner = {
+                        NOT = { tag = SWI } #Switzerland
+                        NOT = { is_subject_of = SWI } #Switzerland
+                    }
+                }
+                add_province_modifier = {
+                    name = "influx_of_lombard_notables_modifier"
+                    duration = 7300
+                }
+            }
+            south_german_region = {
+                limit = {
+                    controlled_by = owner
+                    OR = {
+                        province_has_center_of_trade_of_level = 2
+                        province_trade_power = 15
+                    }
+                    development = 15
+                    owner = {
+                        NOT = { tag = SWI } #Switzerland
+                        NOT = { is_subject_of = SWI } #Switzerland
+                    }
+                }
+                add_province_modifier = {
+                    name = "influx_of_lombard_notables_modifier"
+                    duration = 7300
+                }
+            }
+        }
+        custom_tooltip = sovvertimento_milan_death_tt
+        custom_tooltip = sovvertimento_milan_diaspora_tt
+        custom_tooltip = sovvertimento_insight_tt
     }
 }
 

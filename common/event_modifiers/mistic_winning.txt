@@ -36,3 +36,8 @@ SWI_hohenstaufen_memories = {
     state_governing_cost = -0.15
     ae_impact = -0.15
 }
+
+influx_of_lombard_notables_modifier = {
+    local_tax_modifier = 0.1
+    local_institution_spread = 0.1
+}
