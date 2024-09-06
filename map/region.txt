@@ -45,6 +45,8 @@ scandinavia_region = {
 		laponia_area
 		vastra_gotaland_area
 		ostra_svealand_area
+		north_karelia
+		pomor_area
 	}
 }
 
@@ -141,11 +143,9 @@ russia_region = {
 		novgorod_area
 		pskov_area
 		beloozero_area
-		pomor_area
 		karelia_area
 		ryazan_area
 		tambov_area
-		north_karelia
 		tver_area
 		yaroslavl_area
 		vladimir_area
