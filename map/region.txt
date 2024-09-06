@@ -47,6 +47,7 @@ scandinavia_region = {
 		ostra_svealand_area
 		north_karelia
 		pomor_area
+		arkhangelsk_area
 	}
 }
 
@@ -150,8 +151,9 @@ russia_region = {
 		yaroslavl_area
 		vladimir_area
 		oka_area
-		arkhangelsk_area
 		vologda_area
+		saratov_area
+		samara_area
 	}
 }
 
@@ -162,10 +164,8 @@ ural_region = {
 		perm_area
 		kazan_area
 		galich_area
-		saratov_area
 		kama_area
 		bashkiria_area
-		samara_area
 		volga_area
 	}
 }
