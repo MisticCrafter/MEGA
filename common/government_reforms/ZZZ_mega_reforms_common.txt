@@ -384,3 +384,42 @@ doppelsoldner_reform = {											# elite mercs, to include not cynwyd.
 		factor = 1
 	}
 }
+
+mercenary_leadership_reform = {
+	icon = "war_economy"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			NOT = { has_dlc = "Domination" }
+			NOT = { full_idea_group = mercenary_ideas }
+			NOT = { primary_culture = swiss }
+			NOT = { tag = CWD }
+		}
+	}
+	trigger = {
+		if = {
+			limit = { has_modifier_locking_military_tier = yes }
+			OR = {
+				has_reform = mercenary_leadership_reform
+				has_not_modifier_locking_military_tier = yes
+			}
+		}
+	}
+	modifiers = {
+		mercenary_cost = -0.1
+		possible_condottieri = 0.5
+	}
+	
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				has_global_modifier_value = {
+					which = mercenary_discipline
+					value = 0.05
+				}
+			}
+		}
+	}
+}
