@@ -310,7 +310,7 @@ fervor_death_t = {
 	ai_will_do = {
 		factor = 1
 		modifier = {
-			factor = 0
+			factor = 1
 			is_at_war = no
 		}
 		modifier = {

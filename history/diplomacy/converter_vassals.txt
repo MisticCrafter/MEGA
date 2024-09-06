@@ -71,7 +71,7 @@ vassal=
 
 vassal = {
 	first = "PER"
-	second = "KRY"
+	second = "KHO"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }

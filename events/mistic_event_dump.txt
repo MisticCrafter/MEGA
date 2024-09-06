@@ -194,6 +194,29 @@ country_event = {
     option = {
         name = flavor_mistic_swiss.2.a
         add_prestige = -30
+        hidden_effect = {
+            italy_region = {
+                limit = {
+                    controlled_by = owner
+                    OR = {
+                        province_has_center_of_trade_of_level = 2
+                        province_trade_power = 15
+                    }
+                    development = 15
+                    owner = {
+                        NOT = { tag = SWI } #Switzerland
+                        NOT = { is_subject_of = SWI } #Switzerland
+                    }
+                }
+                add_province_modifier = {
+                    name = "influx_of_romagnol_notables_modifier"
+                    duration = 7300
+                }
+            }
+        }
+        custom_tooltip = sovvertimento_modena_death_tt
+        custom_tooltip = sovvertimento_modena_diaspora_tt
+        custom_tooltip = sovvertimento_insight_tt
 	}
 }
 
@@ -316,6 +339,47 @@ country_event = {
     option = {
         name = "flavor_mistic_swiss.3.a"
         add_prestige = -30
+        hidden_effect = {
+            italy_region = {
+                limit = {
+                    controlled_by = owner
+                    OR = {
+                        province_has_center_of_trade_of_level = 2
+                        province_trade_power = 15
+                    }
+                    development = 15
+                    owner = {
+                        NOT = { tag = SWI } #Switzerland
+                        NOT = { is_subject_of = SWI } #Switzerland
+                    }
+                }
+                add_province_modifier = {
+                    name = "influx_of_venetian_notables_modifier"
+                    duration = 7300
+                }
+            }
+            iberia_region = {
+                limit = {
+                    controlled_by = owner
+                    OR = {
+                        province_has_center_of_trade_of_level = 2
+                        province_trade_power = 15
+                    }
+                    development = 15
+                    owner = {
+                        NOT = { tag = SWI } #Switzerland
+                        NOT = { is_subject_of = SWI } #Switzerland
+                    }
+                }
+                add_province_modifier = {
+                    name = "influx_of_venetian_notables_modifier"
+                    duration = 7300
+                }
+            }
+        }
+        custom_tooltip = sovvertimento_verona_death_tt
+        custom_tooltip = sovvertimento_verona_diaspora_tt
+        custom_tooltip = sovvertimento_insight_tt
     }
 }
 
@@ -397,6 +461,47 @@ country_event = {
     option = {
         name = flavor_mistic_swiss.4.a
         add_prestige = -30
+        hidden_effect = {
+            italy_region = {
+                limit = {
+                    controlled_by = owner
+                    OR = {
+                        province_has_center_of_trade_of_level = 2
+                        province_trade_power = 15
+                    }
+                    development = 15
+                    owner = {
+                        NOT = { tag = SWI } #Switzerland
+                        NOT = { is_subject_of = SWI } #Switzerland
+                    }
+                }
+                add_province_modifier = {
+                    name = "influx_of_ligurian_notables_modifier"
+                    duration = 7300
+                }
+            }
+            low_countries_region = {
+                limit = {
+                    controlled_by = owner
+                    OR = {
+                        province_has_center_of_trade_of_level = 2
+                        province_trade_power = 15
+                    }
+                    development = 15
+                    owner = {
+                        NOT = { tag = SWI } #Switzerland
+                        NOT = { is_subject_of = SWI } #Switzerland
+                    }
+                }
+                add_province_modifier = {
+                    name = "influx_of_ligurian_notables_modifier"
+                    duration = 7300
+                }
+            }
+        }
+        custom_tooltip = sovvertimento_liguria_death_tt
+        custom_tooltip = sovvertimento_liguria_diaspora_tt
+        custom_tooltip = sovvertimento_insight_tt
     }
 }
 
@@ -461,36 +566,6 @@ country_event = {
                 add_devastation = 25
                 change_culture = piedmontese 
             }
-		}
-        if = {
-            limit = {
-                130 = {
-                    NOT = { culture = piedmontese }
-                    country_or_non_sovereign_subject_holds = ROOT
-                }
-            }
-            130 = {
-                add_base_tax = -1
-			    add_base_production = -1
-			    add_base_manpower = -1
-                add_devastation = 25
-                change_culture = piedmontese 
-            }
-        }
-        if = {
-            limit = {
-                136 = {
-                    culture_group = latin
-                    country_or_non_sovereign_subject_holds = ROOT
-                }
-            }
-            136 = {
-                add_base_tax = -1
-			    add_base_production = -1
-			    add_base_manpower = -1
-                add_devastation = 25
-                change_culture = piedmontese 
-            }
         }
         1774 = {
             cede_province = SAV
@@ -506,36 +581,73 @@ country_event = {
         }
         if = {
             limit = {
-                130 = { country_or_non_sovereign_subject_holds = ROOT }
-            }
-            130 = {
-                cede_province = SAV
-                add_core = SAV
-            }
-        }
-        if = {
-            limit = {
-                136 = { country_or_non_sovereign_subject_holds = ROOT }
-            }
-            136 = {
-                cede_province = SAV
-                add_core = SAV
-            }
-        }
-        if = {
-            limit = {
                 1769 = { country_or_non_sovereign_subject_holds = ROOT }
             }
             1769 = {
-                cede_province = HAB
-                add_core = HAB
+                cede_province = SAV
+                add_core = SAV
             }
+        }
+        europe = {
+            limit = {
+                country_or_non_sovereign_subject_holds = ROOT
+                culture_group = italian
+                NOT = { region = italy_region}
+            }
+            add_base_tax = -1
+		    add_base_production = -1
+    	    add_base_manpower = -1
+            add_devastation = 25
+            change_culture = piedmontese 
+            cede_province = SAV
+            add_core = SAV
         }
     }
 
     option = {
         name = flavor_mistic_swiss.5.a
         add_prestige = -30
+        hidden_effect = {
+            egypt_region = {
+                limit = {
+                    controlled_by = owner
+                    OR = {
+                        province_has_center_of_trade_of_level = 2
+                        province_trade_power = 15
+                    }
+                    development = 15
+                    owner = {
+                        NOT = { tag = SWI } #Switzerland
+                        NOT = { is_subject_of = SWI } #Switzerland
+                    }
+                }
+                add_province_modifier = {
+                    name = "influx_of_venetian_notables_modifier"
+                    duration = 7300
+                }
+            }
+            balkan_region = {
+                limit = {
+                    controlled_by = owner
+                    OR = {
+                        province_has_center_of_trade_of_level = 2
+                        province_trade_power = 15
+                    }
+                    development = 15
+                    owner = {
+                        NOT = { tag = SWI } #Switzerland
+                        NOT = { is_subject_of = SWI } #Switzerland
+                    }
+                }
+                add_province_modifier = {
+                    name = "influx_of_venetian_notables_modifier"
+                    duration = 7300
+                }
+            }
+        }
+        custom_tooltip = sovvertimento_trieste_death_tt
+        custom_tooltip = sovvertimento_trieste_diaspora_tt
+        custom_tooltip = sovvertimento_insight_tt
     }
 }
 
@@ -642,6 +754,47 @@ country_event = {
     option = {
         name = flavor_mistic_swiss.6.a
         add_prestige = -30
+        hidden_effect = {
+            north_german_region = {
+                limit = {
+                    controlled_by = owner
+                    OR = {
+                        province_has_center_of_trade_of_level = 2
+                        province_trade_power = 15
+                    }
+                    development = 15
+                    owner = {
+                        NOT = { tag = SWI } #Switzerland
+                        NOT = { is_subject_of = SWI } #Switzerland
+                    }
+                }
+                add_province_modifier = {
+                    name = "influx_of_tuscan_notables_modifier"
+                    duration = 7300
+                }
+            }
+            france_region = {
+                limit = {
+                    controlled_by = owner
+                    OR = {
+                        province_has_center_of_trade_of_level = 2
+                        province_trade_power = 15
+                    }
+                    development = 15
+                    owner = {
+                        NOT = { tag = SWI } #Switzerland
+                        NOT = { is_subject_of = SWI } #Switzerland
+                    }
+                }
+                add_province_modifier = {
+                    name = "influx_of_tuscan_notables_modifier"
+                    duration = 7300
+                }
+            }
+        }
+        custom_tooltip = sovvertimento_tuscany_death_tt
+        custom_tooltip = sovvertimento_tuscany_diaspora_tt
+        custom_tooltip = sovvertimento_insight_tt
     }
 }
 
@@ -728,6 +881,47 @@ country_event = {
     option = {
         name = flavor_mistic_swiss.7.a
         add_prestige = -30
+        hidden_effect = {
+            british_isles_region = {
+                limit = {
+                    controlled_by = owner
+                    OR = {
+                        province_has_center_of_trade_of_level = 2
+                        province_trade_power = 15
+                    }
+                    development = 15
+                    owner = {
+                        NOT = { tag = SWI } #Switzerland
+                        NOT = { is_subject_of = SWI } #Switzerland
+                    }
+                }
+                add_province_modifier = {
+                    name = "influx_of_romagnol_notables_modifier"
+                    duration = 7300
+                }
+            }
+            baltic_region = {
+                limit = {
+                    controlled_by = owner
+                    OR = {
+                        province_has_center_of_trade_of_level = 2
+                        province_trade_power = 15
+                    }
+                    development = 15
+                    owner = {
+                        NOT = { tag = SWI } #Switzerland
+                        NOT = { is_subject_of = SWI } #Switzerland
+                    }
+                }
+                add_province_modifier = {
+                    name = "influx_of_romagnol_notables_modifier"
+                    duration = 7300
+                }
+            }
+        }
+        custom_tooltip = sovvertimento_ravenna_death_tt
+        custom_tooltip = sovvertimento_ravenna_diaspora_tt
+        custom_tooltip = sovvertimento_insight_tt
     }
 }
 
@@ -833,6 +1027,47 @@ country_event = {
     option = {
         name = flavor_mistic_swiss.8.a
         add_prestige = -30
+        hidden_effect = {
+            mashriq_region = {
+                limit = {
+                    controlled_by = owner
+                    OR = {
+                        province_has_center_of_trade_of_level = 2
+                        province_trade_power = 15
+                    }
+                    development = 15
+                    owner = {
+                        NOT = { tag = SWI } #Switzerland
+                        NOT = { is_subject_of = SWI } #Switzerland
+                    }
+                }
+                add_province_modifier = {
+                    name = "influx_of_umbrian_notables_modifier"
+                    duration = 7300
+                }
+            }
+            anatolia_region = {
+                limit = {
+                    controlled_by = owner
+                    OR = {
+                        province_has_center_of_trade_of_level = 2
+                        province_trade_power = 15
+                    }
+                    development = 15
+                    owner = {
+                        NOT = { tag = SWI } #Switzerland
+                        NOT = { is_subject_of = SWI } #Switzerland
+                    }
+                }
+                add_province_modifier = {
+                    name = "influx_of_umbrian_notables_modifier"
+                    duration = 7300
+                }
+            }
+        }
+        custom_tooltip = sovvertimento_spoletto_death_tt
+        custom_tooltip = sovvertimento_spoletto_diaspora_tt
+        custom_tooltip = sovvertimento_insight_tt
     }
 }
 
@@ -917,6 +1152,27 @@ country_event = {
     option = {
         name = flavor_mistic_swiss.9.a
         add_prestige = -30
+        hidden_effect = {
+            set_global_flag = sovvertimento_rip_venice
+            every_country = {
+                limit = {
+                    primary_culture = venetian
+                    capital = {
+                        OR = {
+                            continent = north_america
+                            continent = south_america
+                        }
+                    }
+                }
+                add_country_modifier = {
+                    name = "sovvertimento_venetians_flee_modifier"
+                    duration = 14600
+                }
+            }
+        }
+        custom_tooltip = sovvertimento_venice_death_tt
+        custom_tooltip = sovvertimento_venice_diaspora_tt
+        custom_tooltip = sovvertimento_venice_insight_tt
     }
 }
 

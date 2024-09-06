@@ -17,8 +17,6 @@ france_region = {
 		languedoc_area
 		massif_central_area
 		savoy_dauphine_area
-		lorraine_area
-		picardy_area
 		champagne_area
 		ile_de_france_area
 		loire_area
@@ -47,6 +45,9 @@ scandinavia_region = {
 		laponia_area
 		vastra_gotaland_area
 		ostra_svealand_area
+		north_karelia
+		pomor_area
+		arkhangelsk_area
 	}
 }
 
@@ -59,6 +60,7 @@ low_countries_region = {
 		frisia_area
 		brabant_area
 		north_brabant_area
+		artesie_area
 	}
 
 }
@@ -131,6 +133,7 @@ south_german_region = {
 		romandie_area
 		palatinate_area
 		alsace_area
+		lorraine_area
 	}
 }
 
@@ -141,17 +144,16 @@ russia_region = {
 		novgorod_area
 		pskov_area
 		beloozero_area
-		pomor_area
 		karelia_area
 		ryazan_area
 		tambov_area
-		north_karelia
 		tver_area
 		yaroslavl_area
 		vladimir_area
 		oka_area
-		arkhangelsk_area
 		vologda_area
+		saratov_area
+		samara_area
 	}
 }
 
@@ -162,10 +164,8 @@ ural_region = {
 		perm_area
 		kazan_area
 		galich_area
-		saratov_area
 		kama_area
 		bashkiria_area
-		samara_area
 		volga_area
 	}
 }
