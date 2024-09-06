@@ -17,7 +17,6 @@ france_region = {
 		languedoc_area
 		massif_central_area
 		savoy_dauphine_area
-		lorraine_area
 		champagne_area
 		ile_de_france_area
 		loire_area
@@ -131,6 +130,7 @@ south_german_region = {
 		romandie_area
 		palatinate_area
 		alsace_area
+		lorraine_area
 	}
 }
 

@@ -330,16 +330,12 @@ savoy_dauphine_area = { #3 Savoy and Dauphiné, Upper Burgundy
 	203 204 205 4719
 }
 
-lorraine_area = { #4
-	187 188 189 4766
-}
-
 ile_de_france_area = { #4
 	182 183 185 4388
 }
 
-champagne_area = { #3
-	181 186 4390
+champagne_area = { #4
+	186 4390 187
 }
 
 loire_area = { #5
@@ -900,6 +896,10 @@ silesia_area = { #4
 
 bohemia_area = { #5
 	 266 2968 2970 4725 4724
+}
+
+lorraine_area = { #4
+	181 188 189 4766
 }
 
 erzgebirge_area = { #3
