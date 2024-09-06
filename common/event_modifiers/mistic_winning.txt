@@ -38,6 +38,42 @@ SWI_hohenstaufen_memories = {
 }
 
 influx_of_lombard_notables_modifier = {
-    local_tax_modifier = 0.1
+    province_trade_power_value = 5
     local_institution_spread = 0.1
+    local_manpower_modifier = 0.15
+}
+
+influx_of_romagnol_notables_modifier = {
+    province_trade_power_value = 5
+    local_institution_spread = 0.1
+    local_production_efficiency = 0.15
+}
+
+influx_of_venetian_notables_modifier = {
+    province_trade_power_value = 5
+    local_institution_spread = 0.1
+    local_ship_cost = -0.15
+}
+
+influx_of_ligurian_notables_modifier = {
+    province_trade_power_value = 5
+    local_institution_spread = 0.1
+    local_ship_cost = -0.15
+}
+
+influx_of_tuscan_notables_modifier = {
+    province_trade_power_value = 5
+    local_institution_spread = 0.1
+    local_build_cost = 0.15
+}
+
+influx_of_umbrian_notables_modifier = {
+    province_trade_power_value = 5
+    local_institution_spread = 0.1
+    local_tax_modifier = 0.15
+}
+
+sovvertimento_venetians_flee_modifier = {
+    tax_income = 72
+    global_colonial_growth = 50
 }
