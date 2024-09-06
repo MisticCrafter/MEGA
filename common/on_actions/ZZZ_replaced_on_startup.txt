@@ -36,4 +36,32 @@ on_startup = {
 		}
 		country_event = { id = flavor_andalos.19 }
 	}
+
+	cote_nord_area = {
+		discover_country = CWD
+	}
+	newfoundland_area = {
+		discover_country = CWD
+	}
+	notre_dame_mountains_area = {
+		discover_country = CWD
+	}
+	upper_acadia_area = {
+		discover_country = CWD
+	}
+	lower_acadia_area = {
+		discover_country = CWD
+	}
+	labrador_area = {
+		discover_country = CWD
+	}
+	sea_of_labrador_area = {
+		discover_country = CWD
+	}
+	gulf_of_st_lawrence_area = {
+		discover_country = CWD
+	}
+	1484 = {
+		undiscover_country = CWD
+	}
 }
