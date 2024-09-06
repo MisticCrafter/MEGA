@@ -687,6 +687,7 @@ republic = {
 				swiss_cantonate
 				andal_exarchate_reform
 				mandate_of_ierland_republic_reform
+				social_banditry_republic_reform
 			}
 		}
 		republican_virtues = {
@@ -727,6 +728,8 @@ republic = {
 				german_other_reform
 				#1.37
 				support_state_reform
+				# added with megacampaign
+				teachings_of_saint_robyn_hwd_reform
 			}
 		}
 		frequent_elections_vs_consolidation_of_power = {
@@ -793,6 +796,8 @@ republic = {
 				the_humanistic_principle_of_rationalism_reform
 				maintain_balance_between_the_courts_and_humanists_reform
 				curtail_power_of_the_rationalists_reform
+				# added with mega campaign
+				the_lollard_church_of_the_exiles_reform
 			}
 		}
 		military_doctrines = {
@@ -868,6 +873,8 @@ republic = {
 				#helo
 				three_branches_reform
 				sic_palatini_reform
+				# added with mod
+				the_band_of_the_exiles_reform
 			}
 		}
 		parliamentary_vs_presidential = {
@@ -891,6 +898,9 @@ republic = {
 				enforced_autocracy_reform
 				#1.37
 				seven_provinces_reform
+				# added with mod
+				iron_crowned_captain_of_war_reform
+				the_business_of_social_banditry_reform
 			}
 		}
 		federalism_vs_unitarism_vs_confederacy = {
@@ -996,6 +1006,8 @@ republic = {
 				scourge_of_the_seven_sea_reform
 				#1.35
 				peters_government_reform
+				#added with mod
+				the_dragon_republic_reform
 			}
 		}
 	}

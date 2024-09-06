@@ -1,4 +1,4 @@
-FNT_ideas = {
+FNT_ideas = {		# Fontaine Ideas
 	start = {
 		trade_efficiency = 0.15
 		inflation_reduction = 0.1
@@ -49,6 +49,56 @@ FNT_ideas = {
 		legitimacy = 0.5
 		devotion = 0.5
 		# put other religion options here
+	}
+
+}
+
+CWD_ideas = {		# Cynwyd Ideas
+	start = {
+		land_morale = 0.1
+		prestige = 1
+	}
+
+	bonus = {
+		state_governing_cost = -0.25
+	}
+
+	trigger = {
+		tag = CWD
+	}
+	free = yes
+
+	communal_ownership_i1 = {
+		build_cost = -0.1
+	}
+
+	lollard_church_i2 = {
+		monthly_fervor_increase = 1
+		tolerance_own = 1
+	}
+
+	legacy_of_the_paradyxian_purges_i3 = {
+		naval_forcelimit_modifier = 0.15
+		naval_attrition = -0.25
+	}
+
+	piracy_of_the_exiles_i4 = {
+		privateer_efficiency = 0.25
+		capture_ship_chance = 0.1
+	}
+
+	mercenary_and_privateers_i5 = {
+		mercenary_manpower = 0.5
+		merc_maintenance_modifier = -0.1
+	}
+
+	last_remnants_of_the_dragon_duchy_i6 = { 
+		culture_conversion_cost = -0.20
+		culture_conversion_time = -0.1
+	}
+
+	city_of_faith_and_loot_i7 = {
+		available_province_loot = 0.5
 	}
 
 }
