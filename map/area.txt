@@ -1427,8 +1427,8 @@ north_saharan_area = { #5
 	2456 2457 2472
 }
 
-tafilalt_area = { #3
-	346 349 2460
+tafilalt_area = { #4
+	346 349 2460 1127
 }
 
 sus_area = { #4
@@ -1781,8 +1781,8 @@ te_waipounamu_area = { #3
 # West Africa					       #
 ########################################
 
-western_sahara_area = { #5
-    1127 1128 1129 1130 2271
+western_sahara_area = { #4
+    1128 1129 1130 2271
 }
 
 cap_verde_area = { #2 
@@ -3216,7 +3216,7 @@ massachusetts_bay_area = { #4
 }
 
 connecticut_valley_area = { #3
-    967 2010 2560
+    967 2010 2560 
 }
 
 hudson_valley_area = { #4
