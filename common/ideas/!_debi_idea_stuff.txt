@@ -9,7 +9,7 @@ antioch_ideas = {
 	}
 	
 	trigger = {
-		tag = NAX
+		tag = ANC
 	}
 	free = yes
 	
