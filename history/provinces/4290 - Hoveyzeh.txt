@@ -1,5 +1,5 @@
-owner = PAP
-controller = PAP
+owner = PER
+controller = PER
 capital = "Pashime"
 is_city = yes
 culture = crusader_persian
@@ -9,7 +9,7 @@ base_tax = 4
 base_production = 5
 base_manpower = 3
 
-add_core = PAP
+add_core = PER
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

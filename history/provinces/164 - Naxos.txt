@@ -1,5 +1,5 @@
-owner = ANA
-controller = ANA
+owner = NAX
+controller = NAX
 capital = "Naxos"
 is_city = yes
 culture = greek
@@ -8,7 +8,7 @@ trade_goods = wine
 base_tax = 5
 base_production = 4
 base_manpower = 2
-add_core = ANA
+add_core = NAX
 add_permanent_claim = LAE
 discovered_by = east_african
 discovered_by = eastern

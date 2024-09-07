@@ -1219,15 +1219,15 @@ karaman_area = { #4
 
 cukurova_area = { #3
 	color = { 50 177 200 }
-	321 327 2302
+	321 327 2302 4270
 }
 
 aleppo_area = { #4
-	377 1849 2313 4298
+	377 1849 2313 4298 2308
 }
 
 syria_area = { #4
-	378 382 1855 4297
+	378 382 1855 4297 4271
 }
 
 trans_jordan_area = { #3
@@ -1240,7 +1240,7 @@ palestine_area = { #3
 
 dulkadir_area = { # 4
 	color = { 184 54 72 }
-	332 2303 2308 4310
+	332 2303 4310
 }
 
 iraq_arabi_area = { #5 Lower Mesopotamia
@@ -1252,11 +1252,11 @@ basra_area = { #4
 }
 
 luristan_area = { #4
-	413 414 2209 2210
+	413 414 2209 2210 2211
 }
 
 north_kurdistan_area = { #5
-	418 2306 2307 4295 4296
+	418 2306 2307 4296
 }
 
 khuzestan_area = { #5
@@ -1265,12 +1265,12 @@ khuzestan_area = { #5
 
 shahrizor_area = {	#4
 	color = { 152 102 102 }
-	415 2211 4293 4294
+	415 4293 4294 411
 }
 
 al_jazira_area = { #5
 	color = { 92 200 92 }
-	407 411 2309 2314 4292
+	2309 4292 4295
 }
 
 
@@ -1344,13 +1344,13 @@ oman_area = { #3 (Oman Proper)
 	403 4285 4287  
 }
 
-mascat_area = { #3 (Batinah and Muscat coast
+mascat_area = { #3 (Batinah and Muscat coast)
 	399 400 4286
 }
 
 syrian_desert_area = { #3
 	color = { 219 30 57 }
-	405 4270 4271
+	405 407 2314
 }
 
 ########################################
