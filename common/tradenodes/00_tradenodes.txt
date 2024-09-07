@@ -1357,7 +1357,7 @@ crimea={
 constantinople={
 	location=1320
 	color={
-		149 45 102 
+		136 37 120 
 	}
 	outgoing={
 		name="aegean_islands"
