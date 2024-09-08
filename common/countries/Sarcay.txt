@@ -1,6 +1,6 @@
 ck2_converter_generated = yes
 graphical_culture = westerngfx
-color = { 0 102 102 } #{ 0 88 80 }
+color = { 94 74 120 } #{ 66 99 120 } #{ 0 88 80 }
 revolutionary_colors = { 9 0 9 }
 historical_idea_groups = {
 	exploration_ideas
@@ -63,21 +63,21 @@ monarch_names = {
 	"Adrameno #0" = 5
 	"Cathelo #0" = 0
 	"Isra #0" = -1
-	"An·i #0" = 0
+	"An√°i #0" = 0
 	"Mirata #0" = -1
-	"BÈatriz #0" = -1
+	"B√©atriz #0" = -1
 	"Saviana #0" = -1
 }
 leader_names = {
 	"de Sintra"
 	"Corterreal"
-	"M˚ndaneros"
-	"D˚nedanos"
+	"M√ªndaneros"
+	"D√ªnedanos"
 	"de Gades"
 	"de Braganza"
 	"de Cartagena"
-	"da C‚mara"
-	"¡lvares Cabral"
+	"da C√¢mara"
+	"√Ålvares Cabral"
 	"de Almeida"
 	"Albuquerque"
 	"Vaz Mardel"
@@ -88,11 +88,11 @@ leader_names = {
 	"da Sardenha"
 	"de Vilhena"
 	"de Penamacor"
-	"de Trast·mara"
+	"de Trast√°mara"
 	"Cintranos"
 	"Teles de Mindano"
 	"Teles da Guerra"
-	"Teles d'AlcÙr"
+	"Teles d'Alc√¥r"
 	"de Rivia"
 	"de Tauros"
 }

@@ -124,6 +124,27 @@ iberian = {
 			Montserrat Nùria Octùvia Prudùncia Roberta Rodolfa
 		}
 	}
+	valencian = {
+		dynasty_names = {
+			"d'Aragù" "de Borja" "de Luna" "d'Urgell" "Folc de Cardona"
+			#CK2
+			"de Menezes" "de Mendoza" "de Niebla" "de Silva" "de Alba" "de Borja"  
+			"de Medinaceli" "de Castro" "de Haro" "Santcliment" "de Altamira" Osorio
+			Zùùiga "de Villahermosa" Vilafermosa Garmendia "de Rocamora" "de Goyeneche"
+			"de Cabrera" "de Villena"
+		}
+		male_names = {
+			Aarù Aaron Abelard Abraham Absalù Abundi Adalbert Adam Adriù Alaric Albù Albù Aleix ùlvar ùngel Antoni Arnau 
+			Artur Blai Carles Cecili Conrad Dari Dionùs Emili Enric Felip Ferran Francùs Francesc Fructuùs Germù 
+			Gonùal Guillem Guiu Ignasi Israel Joan Jordi Josep Josep Maria Lleù Lluc Lluùs Macedoni Mùrius Martù Miquel 
+			Octavi ùscar Pau Pere Pol Pompeu Prùsper Prudenci Prudenciù Quirze Rafael Ramir Raùl Reginald Ricard Robert Roc 
+			Rubùn Sergi Simù Teodor Tomùs Vicenù Vicent Xavier
+		}
+		female_names = {
+			ùgata ùgueda Aina Anna Antùnia Caterina Cecùlia Cristina Dolors Francesca Genoveva Isabel Joana Justina Laia 
+			Montserrat Nùria Octùvia Prudùncia Roberta Rodolfa
+		}
+	}
 	andal = {
 		male_names = { "Adrianos" "Akakios" "Alexandros" "Alexios" "Anastasios" "Anatolios" "Andreas" "Andronikos" "Anthemios" "Anthimos" "Antiokhos" "Antonios" "Apollonios" "Arsenios" "Artemios" "Athanasios" "Bardas" "Bartholomaios" "Basileios" "Belisarios" "Boethios" "Bosporios" "Khristophoros" "Khrysanthos" "Khrysogonos" "Damianos" "Daniel" "David" "Demetrios" "Diogenes" "Dionysios" "Dorotheos" "Eirenaios" "Eudoxios" "Eustratios" "Eugenios" "Euphemios" "Eusebios" "Eustathios" "Evangelos" "Gabriel" "Gennadios" "Georgios" "Gerasimos" "Germanos" "Gregoras" "Gregorios" "Hektorios" "Helias" "Herakleios" "Hierotheos" "Himerios" "Konstantinos" "Pavlos" "Nikolaos" "Aineias" "Alexeios" "Ambrosios" "Dionysos" "Elpidios" "Hektor" "Kastor" "Manouel" "Matthaios" "Nestor" "Nikomedes" "Orestes" "Palaimon" "Pelagios" "Petros" "Philemon" "Philippos" "Skantarios" "Stefanos" "Theodoros" "Thomas" "Prokopios" "Ioannes" "Iason" }
 		female_names = { "Alexandra" "Adriane" "Agathe" "Agne" "Agnes" "Aikaterine" "Alexeia" "Anastasia" "Anna" "Anthe" "Anthousa" "Antipatra" "Antonia" "Apollonia" "Athanasia" "Barbara" "Basillike" "Chrysogone" "Damiane" "Demetra" "Dionysia" "Dorothea" "Aigidia" "Eirene" "Elaiodora" "Epiphania" "Eudokia" "Eudoxia" "Eugenia" "Eulalia" "Eunike" "Euphemia" "Euphrasia" "Euphrosyne" "Eupraxia" "Eusebia" "Eustathia" "Evanthia" "Gabrielia" "Garyphallia" "Georgia" "Gregoria" "Helene" "Ioanna" "Ioulia" "Iouliana" "Ioustina" "Kale" "Konstantia" "Konstantine" "Kyra" "Kyriake" "Hypatia" "Zoe" }

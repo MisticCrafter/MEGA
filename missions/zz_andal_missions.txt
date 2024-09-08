@@ -849,7 +849,7 @@ andalos_slot_2_missions_c = {
 				}
 				AND = {
 					owned_by = CYN
-				owned_by = VAL
+				owned_by = SRQ
 				NOT = { owned_by = ROOT }
 				}
 			}
@@ -857,7 +857,7 @@ andalos_slot_2_missions_c = {
 		
 		trigger = {
 			NOT = { exists = CYN }
-			NOT = { exists = VAL }
+			NOT = { exists = SRQ }
 			capital_scope = { 
 				num_of_times_improved = 8 
 			}

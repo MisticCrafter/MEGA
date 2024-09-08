@@ -147,12 +147,12 @@
  cainitism_religion_desc:0 "Caine was the first victim of the Evil of the Demiurge, creator of all physical matter. Since matter and bodies are evil, bodies must be defiled and destroyed through sinfulness, so that the true human soul within can be freed."
 
  #Pagan
- kushitism_pagan:1 "Kushitism"
+ kushitism_pagan: "Kushitism"
  kushitism_pagan_religion_desc:0 "Veneration of the ancient gods remains strong here, as does the veneration of the boundary between life and death."
  kushitism_pagan_reformed:0 "Reformed Kushite"
  kushitism_pagan_reformed_religion_desc:0 "The reinvigorated Kushite faith traces its history back thousands of years to the ancient Egyptian empires of old."
- magyar_pagan:2 "Uralic"
- magyar_pagan_religion_desc:1 "In this faith each Táltos, or priest, is chosen by the gods prior to their birth. Endowed with superhuman strength, wisdom, and powers, Uralics entrust these Táltos with protecting their communities and leading them to prosperity."
+ magyar_pagan: "Uralic"
+ magyar_pagan_religion_desc: "In this faith each Táltos, or priest, is chosen by the gods prior to their birth. Endowed with superhuman strength, wisdom, and powers, Uralics entrust these Táltos with protecting their communities and leading them to prosperity."
  magyar_pagan_reformed:0 "Reformed Uralic"
  magyar_pagan_reformed_religion_desc:0 "United in a common belief, those belonging to the Reformed Uralic church believe in the Táltos, or priests, who chosen by the gods prior to their birth. Endowed with superhuman strength, wisdom, and powers, Uralics entrust these Táltos with protecting their communities and leading them to prosperity."
  siberian_pagan:0 "Turumism"
