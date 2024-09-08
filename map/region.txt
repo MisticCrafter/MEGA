@@ -342,6 +342,7 @@ mashriq_region = {
 		trans_jordan_area
 		syrian_desert_area
 		aleppo_area
+		shahrizor_area
 	}
 }
 
@@ -374,7 +375,6 @@ persia_region = {
 		persian_gulf_coast
 		tabriz_area
 		khuzestan_area
-		shahrizor_area
 		mogostan_area
 	}
 }

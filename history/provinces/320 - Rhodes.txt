@@ -1,5 +1,5 @@
-owner = ANA
-controller = ANA
+owner = ATX
+controller = ATX
 capital = "Rodos"
 is_city = yes
 culture = greek
@@ -8,7 +8,7 @@ trade_goods = fish
 base_tax = 4
 base_production = 4
 base_manpower = 3
-add_core = ANA
+add_core = ATX
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

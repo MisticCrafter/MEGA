@@ -33,9 +33,9 @@ country_event = {
 				}
 			}
 			AND = {
-				has_country_modifier = out_nax_ally
+				has_country_modifier = out_anc_ally
 				NOT = {
-					NAX = {
+					ANC = {
 						alliance_with = ROOT
 					}
 				}
@@ -84,14 +84,14 @@ country_event = {
 		}
 		if = {
 			limit = {
-				has_country_modifier = out_nax_ally
+				has_country_modifier = out_anc_ally
 				NOT = {
-					NAX = {
+					ANC = {
 						alliance_with = ROOT
 					}
 				}
 			}
-			remove_country_modifier = out_nax_ally
+			remove_country_modifier = out_anc_ally
 		}
 		if = {
 			limit = {

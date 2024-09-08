@@ -105,23 +105,23 @@ iberian = {
 	province = { local_has_caravel = yes local_has_galleon = yes }
 	balearic = {
 		dynasty_names = {
-			"d'Aragó" "de Borja" "de Luna" "d'Urgell" "Folc de Cardona"
+			"d'Arag" "de Borja" "de Luna" "d'Urgell" "Folc de Cardona"
 			#CK2
 			"de Menezes" "de Mendoza" "de Niebla" "de Silva" "de Alba" "de Borja"  
 			"de Medinaceli" "de Castro" "de Haro" "Santcliment" "de Altamira" Osorio
-			Zúñiga "de Villahermosa" Vilafermosa Garmendia "de Rocamora" "de Goyeneche"
+			Ziga "de Villahermosa" Vilafermosa Garmendia "de Rocamora" "de Goyeneche"
 			"de Cabrera" "de Villena"
 		}
 		male_names = {
-			Aaró Aaron Abelard Abraham Absaló Abundi Adalbert Adam Adrià Alaric Albà Albí Aleix Àlvar Àngel Antoni Arnau 
-			Artur Blai Carles Cecili Conrad Dari Dionís Emili Enric Felip Ferran Francés Francesc Fructuós Germà 
-			Gonçal Guillem Guiu Ignasi Israel Joan Jordi Josep Josep Maria Lleó Lluc Lluís Macedoni Màrius Martí Miquel 
-			Octavi Òscar Pau Pere Pol Pompeu Pròsper Prudenci Prudencià Quirze Rafael Ramir Raül Reginald Ricard Robert Roc 
-			Rubèn Sergi Simó Teodor Tomàs Vicenç Vicent Xavier
+			Aar Aaron Abelard Abraham Absal Abundi Adalbert Adam Adri Alaric Alb Alb Aleix lvar ngel Antoni Arnau 
+			Artur Blai Carles Cecili Conrad Dari Dions Emili Enric Felip Ferran Francs Francesc Fructus Germ 
+			Gonal Guillem Guiu Ignasi Israel Joan Jordi Josep Josep Maria Lle Lluc Llus Macedoni Mrius Mart Miquel 
+			Octavi scar Pau Pere Pol Pompeu Prsper Prudenci Prudenci Quirze Rafael Ramir Ral Reginald Ricard Robert Roc 
+			Rubn Sergi Sim Teodor Toms Vicen Vicent Xavier
 		}
 		female_names = {
-			Àgata Àgueda Aina Anna Antònia Caterina Cecília Cristina Dolors Francesca Genoveva Isabel Joana Justina Laia 
-			Montserrat Núria Octàvia Prudència Roberta Rodolfa
+			gata gueda Aina Anna Antnia Caterina Ceclia Cristina Dolors Francesca Genoveva Isabel Joana Justina Laia 
+			Montserrat Nria Octvia Prudncia Roberta Rodolfa
 		}
 	}
 	andal = {
@@ -354,7 +354,7 @@ crusader_group = {
 	}
 
 	crusader_antiochene = {
-		primary = NAX
+		primary = ANC
 		province = { local_has_caravel = yes local_has_galleon = yes }
 		dynasty_names = {
 			Thinis Memphis Abydos Herakleopolis Thebes Itjtawy Avaris Bubastis Sais

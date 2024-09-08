@@ -237,6 +237,10 @@ teachings_of_saint_robyn_hwd_reform = {		# the_pirate_ways replacement
 		morale_damage = 0.1
 	}
 	
+
+	ai = {
+		factor = 100
+	}
 }
 
 the_lollard_church_of_the_exiles_reform = {	# establish_religious_institutions replacement
@@ -271,6 +275,9 @@ the_lollard_church_of_the_exiles_reform = {	# establish_religious_institutions r
 		remove_country_modifier = gov_improved_defender_of_faith_mod
 	}
 
+	ai = {
+		factor = 100
+	}
 }
 
 the_dragon_republic_reform = {			# unified_piratical_confederacy replacement
@@ -286,6 +293,10 @@ the_dragon_republic_reform = {			# unified_piratical_confederacy replacement
 		state_governing_cost = -0.125
 		reelection_cost = -0.1
 		pr_buccaneers_influence = 0.1
+	}
+
+	ai = {
+		factor = 100
 	}
 }
 
@@ -305,6 +316,10 @@ iron_crowned_captain_of_war_reform = {	# the_pirate_king replacement
 
 	custom_attributes = {
 		legendary_cynwyd_captains_elections = yes
+	}
+
+	ai = {
+		factor = 75
 	}
 }
 
@@ -332,7 +347,11 @@ the_business_of_social_banditry_reform = {	# black_market_consortium replacement
 		}
 		can_use_trade_post = yes
 	}
-}
+
+	ai = {
+		factor = 100
+	}
+}	
 
 the_band_of_the_exiles_reform = {
 	icon = "mercenaries"
@@ -357,5 +376,39 @@ the_band_of_the_exiles_reform = {
 	}
 	custom_attributes = {
 		mercs_do_not_cost_army_professionalism = yes
+	}
+
+	ai = {
+		factor = 100
+	}
+}
+
+principle_of_the_bandit_republic_reform = {
+	icon = ""
+	potential = {
+		has_government_attribute = is_pirate_republic_reform
+		has_government_attribute = is_cynwyd_social_banditry_republic 
+	}
+
+	modifiers = {
+		monthly_governmental_power = 0.125
+		candidate_random_bonus = 1
+		max_absolutism = 10
+	}
+
+	effect = {
+		hidden_effect = {
+			if = {
+				limit = { has_government_mechanic = hessian_militarization_mechanic }
+				set_country_flag = ven_condottieri_flag
+			}
+		}
+	}
+	post_removed_effect = {
+		clr_country_flag = ven_condottieri_flag
+	}
+
+	ai = {
+		factor = 100
 	}
 }

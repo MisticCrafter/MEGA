@@ -71,13 +71,6 @@ vassal=
 
 vassal = {
 	first = "PER"
-	second = "KHO"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-vassal = {
-	first = "PER"
 	second = "BAL"
 	start_date="1444.11.11"
 	end_date="1836.1.1"

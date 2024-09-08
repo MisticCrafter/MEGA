@@ -1,5 +1,5 @@
-owner = NAX
-controller = NAX
+owner = ANC
+controller = ANC
 capital = "Antiochia"
 is_city = yes
 culture = crusader_antiochene
@@ -8,7 +8,7 @@ trade_goods = cloth
 base_tax = 4
 base_production = 5
 base_manpower = 2
-add_core = NAX
+add_core = ANC
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

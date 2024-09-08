@@ -34,7 +34,7 @@ knidiplomatic = {
 		trigger = {
 			any_ally = {
 				OR = {
-					has_reform = mauretanian_crusader_reform
+					has_reform = crusader_kingdom_reform
 					has_reform = crusading_kingdom_reform
 					has_reform = holy_state_reform
 					has_reform = monastic_order_reform
@@ -60,9 +60,9 @@ knidiplomatic = {
 					}
 				}
 				if = {
-					limit = { any_ally = { tag = NAX }  } 
+					limit = { any_ally = { tag = ANC }  } 
 					add_country_modifier = {
-						name = "out_nax_ally"
+						name = "out_anc_ally"
 						duration = -1
 					}
 				}
