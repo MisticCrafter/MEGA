@@ -1,7 +1,7 @@
 #knights
 kni_citadel_of_rosetta = {
 	local_defensiveness = 0.10
-	trade_value = 10
+	allowed_num_of_manufactories = 1
 }   
 kni_cairo_citadel = {
 	local_defensiveness = 0.33
