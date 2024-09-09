@@ -4,7 +4,7 @@ social_banditry_republic_reform = {
 	allow_normal_conversion = no
 	lock_level_when_selected = yes
 	modifiers = {
-		republican_tradition = -1
+		republican_tradition = -0.75
 		candidate_random_bonus = 1
 		max_absolutism = 10
 		naval_forcelimit_modifier = 0.5
@@ -15,10 +15,7 @@ social_banditry_republic_reform = {
 		max_terms = 2
 	}
 	trigger = {
-		OR = {
-			has_government_attribute = is_pirate_republic_reform
-			crown_stronger_than_estate = { estate = all }
-		}
+			tag = CWD
 	}
 	valid_for_nation_designer = no
 	can_form_trade_league = no
@@ -70,12 +67,7 @@ social_banditry_republic_reform = {
 				value = 1
 			}
 		}
-		clr_ruler_focus_modifiers = yes
-	}
-	post_removed_effect = {
-		clr_ruler_focus_modifiers = yes
-	}
-	
+	}	
 }
 
 unified_piratical_confederacy_reform = {							# Reworked to make Cynwyd not get it.
@@ -384,14 +376,14 @@ the_band_of_the_exiles_reform = {
 }
 
 principle_of_the_bandit_republic_reform = {
-	icon = ""
+	icon = "new_order_regiments"
 	potential = {
 		has_government_attribute = is_pirate_republic_reform
 		has_government_attribute = is_cynwyd_social_banditry_republic 
 	}
 
 	modifiers = {
-		monthly_governmental_power = 0.125
+		monthly_hessian_militarization = 0.125
 		candidate_random_bonus = 1
 		max_absolutism = 10
 	}
