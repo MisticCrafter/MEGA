@@ -3,8 +3,8 @@ andal_exarchate_reform = {
 	allow_normal_conversion = no
 	potential = {
 		OR = {
-			is_subject_of = ADU
-			is_subject_of = Z01
+			is_subject_of = ARC #Andalos
+			is_subject_of = Z01 #Akaaman
 		}
 	}
 	nation_designer_trigger = {

@@ -46,7 +46,7 @@ country_event = {
 				cede_province = FROM
 				add_core = FROM
                 add_province_modifier = {
-                    name = "adu_feitoria"
+                    name = "ARC_feitoria"
                     duration = -1
                 }
 			}
@@ -111,7 +111,7 @@ country_event = {
 				add_core = FROM
                 center_of_trade = 1
                 add_province_modifier = {
-                    name = "adu_feitoria"
+                    name = "ARC_feitoria"
                     duration = -1
                 }
 			}
@@ -176,7 +176,7 @@ country_event = {
 				add_core = FROM
                 center_of_trade = 1
                 add_province_modifier = {
-                    name = "adu_feitoria"
+                    name = "ARC_feitoria"
                     duration = -1
                 }
 			}
@@ -207,10 +207,10 @@ country_event = {
 		OR = {
 			AND = {
 				NOT = { has_dlc = "Golden Century" }
-				tag = POR
+				tag = ARC
 				has_country_modifier = india_trade_co
 			}
-			has_country_flag = adu_casa_da_india_flag
+			has_country_flag = andal_east_india_company_flag
 		}
 	}
 
@@ -223,7 +223,7 @@ country_event = {
 		name = flavor_andalos.4.a
 		add_mercantilism = 10
 		add_country_modifier = {
-			name = adu_east_india_company_modifier
+			name = ARC_east_india_company_modifier
 			duration = -1
 		}
 	}
@@ -257,9 +257,9 @@ country_event = {
 			}
 		}
 		2030 = { 
-            cede_province = ADU
+            cede_province = ARC
             add_province_modifier = {
-                name = "adu_feitoria"
+                name = "ARC_feitoria"
                 duration = -1
             }
         }
@@ -310,9 +310,9 @@ country_event = {
 			}
 		}
 		568 = { 
-            cede_province = ADU
+            cede_province = ARC
             add_province_modifier = {
-                name = "adu_feitoria"
+                name = "ARC_feitoria"
                 duration = -1
             }
         }
@@ -345,7 +345,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = ADU
+		tag = ARC
 		exploration_ideas = 2
 		NOT = { has_global_flag = columbus_happened }
 		is_year = 1460
@@ -416,7 +416,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		tag = ADU
+		tag = ARC
 		exploration_ideas = 2
 		1460 = {
             has_discovered = ROOT
@@ -445,7 +445,7 @@ country_event = {
 	}
 }
 
-# Men of Andalos (for african nation)
+# Men of Andalos (for guinean nation)
 country_event = {
     id = flavor_andalos.9
     title = flavor_andalos.9.title
@@ -457,7 +457,7 @@ country_event = {
     is_triggered_only = yes
 
     trigger = {
-        NOT = { has_country_flag = andal_african_alliance }
+        NOT = { has_country_flag = ARC_is_guinean_friend_flag }
     }
 
     option = {
@@ -467,7 +467,7 @@ country_event = {
         create_alliance = FROM
 		add_historical_friend = FROM
         add_country_modifier = {
-            name = "adu_african_alliance"
+            name = "ARC_guinean_alliance"
             duration = 7300
         }
 		1466 = {
@@ -487,16 +487,16 @@ country_event = {
                 add_base_production = 2
                 add_base_manpower = 2
                 add_province_modifier = {
-                    name = "adu_feitoria"
+                    name = "ARC_feitoria"
                     duration = -1
                 }
             }
         }
         FROM = { 
 			add_historical_friend = ROOT
-			set_country_flag = adu_has_guinean_friend_flag
+			set_country_flag = ARC_has_guinean_friend_flag
 		}
-		set_country_flag = adu_guinean_friend
+		set_country_flag = ARC_is_guinean_friend_flag
     }
 
     option = {
@@ -540,7 +540,7 @@ country_event = {
 			cede_province = ROOT
 			add_core = ROOT
             add_province_modifier = {
-                name = "adu_feitoria"
+                name = "ARC_feitoria"
                 duration = -1
             }
 		}
@@ -581,7 +581,7 @@ country_event = {
 			add_core = ROOT
             center_of_trade = 1
             add_province_modifier = {
-                name = "adu_feitoria"
+                name = "ARC_feitoria"
                 duration = -1
             }
 		}
@@ -623,7 +623,7 @@ country_event = {
 			add_core = ROOT
             center_of_trade = 1
             add_province_modifier = {
-                name = "adu_feitoria"
+                name = "ARC_feitoria"
                 duration = -1
             }
 		}
@@ -641,10 +641,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		ADU = {
-			has_country_flag = adu_has_guinean_friend_flag
+		ARC = {
+			has_country_flag = ARC_has_guinean_friend_flag
 		}
-		has_country_flag = adu_guinean_friend
+		has_country_flag = ARC_is_guinean_friend_flag
 	}
 
 	mean_time_to_happen = {
@@ -683,11 +683,11 @@ country_event = {
 		ai_chance = { factor = 25 }
 		add_prestige = 10
 		add_country_modifier = {
-			name = "adu_rejected_faith_union"
+			name = "ARC_rejected_faith_union"
 			duration = 7300
 		}
 		reverse_add_opinion = {
-			who = ADU
+			who = ARC
 			modifier = renounced_as_heretics
 		}
 	}
@@ -704,7 +704,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = ADU
+		tag = ARC
 		GRE = {
 			OR = {
 				NOT = { primary_culture = greek }
@@ -721,11 +721,11 @@ country_event = {
 		name = flavor_andalos.14.a
 		custom_tooltip = hellenic_refugees_andal_tt
 		hidden_effect = {
-			ADU = {
+			ARC = {
 				add_prestige = 10
 				add_adm_power = -50
 				add_country_modifier = {
-					name = "adu_hellenic_refugees"
+					name = "ARC_hellenic_refugees"
 					duration = 7300
 				}
 			}
@@ -736,7 +736,7 @@ country_event = {
 				add_prestige = 10
 				add_adm_power = -50
 				add_country_modifier = {
-					name = "adu_hellenic_refugees"
+					name = "ARC_hellenic_refugees"
 					duration = 7300
 				}
 			}
@@ -770,7 +770,7 @@ country_event = {
 	hidden = yes
 
 	trigger = {
-		tag = ADU
+		tag = ARC
 		any_owned_province = {
 			OR = {
 				# belongs to Mauretania AND the right Exarchate exists
@@ -891,7 +891,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = ADU
+		tag = ARC
 		aragon_area = {
 			NOT = { province_id = 4550 }
 			owned_by = ROOT
@@ -910,14 +910,14 @@ country_event = {
 			has_estate_privilege = estate_nobles_andal_strong_duchies
 		}
 
-		custom_tooltip = feudal_andalos_cede_to_aragon_tt
+		custom_tooltip = ARC_cede_aragon_to_wardenship_tt
 		hidden_effect = {
 			every_owned_province = {
 				limit = {
 					area = aragon_area
 					NOT = { province_id = 4550 }
 				}
-				remove_core = ADU
+				remove_core = ARC
 				add_core = ARA
 				cede_province = ARA
 			}
@@ -946,14 +946,14 @@ country_event = {
 			exists = AE1
 		}
 
-		custom_tooltip = andalos_cede_aragon_to_exarchate_tt
+		custom_tooltip = ARC_cede_aragon_to_exarchate_tt
 		hidden_effect = {
 			every_owned_province = {
 				limit = {
 					area = aragon_area
 					NOT = { province_id = 4550 }
 				}
-				remove_core = ADU
+				remove_core = ARC
 				add_core = AE1
 				cede_province = AE1
 			}
@@ -982,7 +982,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = ADU
+		tag = ARC
 		catalonia_area = {
 			type = all
 			owned_by = ROOT
@@ -1001,13 +1001,13 @@ country_event = {
 			has_estate_privilege = estate_nobles_andal_strong_duchies
 		}
 
-		custom_tooltip = feudal_andalos_cede_to_catalonia_tt
+		custom_tooltip = ARC_cede_catalonia_to_wardenship_tt
 		hidden_effect = {
 			every_owned_province = {
 				limit = {
 					area = catalonia_area
 				}
-				remove_core = ADU
+				remove_core = ARC
 				add_core = CAT
 				cede_province = CAT
 			}
@@ -1036,13 +1036,13 @@ country_event = {
 			exists = AE1
 		}
 
-		custom_tooltip = andalos_cede_catalonia_to_exarchate_tt
+		custom_tooltip = ARC_cede_catalonia_to_exarchate_tt
 		hidden_effect = {
 			every_owned_province = {
 				limit = {
 					area = catalonia_area
 				}
-				remove_core = ADU
+				remove_core = ARC
 				add_core = AE1
 				cede_province = AE1
 			}
@@ -1070,7 +1070,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = ADU
+		tag = ARC
 		baleares_area = {
 			type = all
 			owned_by = ROOT
@@ -1092,7 +1092,7 @@ country_event = {
 			has_estate_privilege = estate_nobles_andal_strong_duchies
 		}
 
-		custom_tooltip = feudal_andalos_cede_to_majorca_tt
+		custom_tooltip = ARC_cede_majorca_to_wardenship_tt
 		hidden_effect = {
 			every_owned_province = {
 				limit = {
@@ -1101,7 +1101,7 @@ country_event = {
 						province_id = 4550
 					}
 				}
-				remove_core = ADU
+				remove_core = ARC
 				add_core = MJO
 				cede_province = MJO
 			}
@@ -1130,7 +1130,7 @@ country_event = {
 			exists = AE1
 		}
 
-		custom_tooltip = andalos_cede_majorca_to_exarchate_tt
+		custom_tooltip = ARC_cede_majorca_to_exarchate_tt
 		hidden_effect = {
 			every_owned_province = {
 				limit = {
@@ -1139,7 +1139,7 @@ country_event = {
 						province_id = 4550
 					}
 				}
-				remove_core = ADU
+				remove_core = ARC
 				add_core = AE1
 				cede_province = AE1
 			}
@@ -1169,13 +1169,13 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		tag = ADU
+		tag = ARC
 	}
 
 	option = {
 		name = flavor_andalos.19.a
 		country_event = { id = flavor_andalos.20 }
-		custom_tooltip = andalos_intro_tt
+		custom_tooltip = ARC_intro_tt
 	}
 }
 
@@ -1191,12 +1191,12 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		tag = ADU
+		tag = ARC
 	}
 
 	option = {
 		name = flavor_andalos.20.a
-		custom_tooltip = andalos_intro_tt
+		custom_tooltip = ARC_intro_tt
 	}
 }
 
@@ -1211,8 +1211,8 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = ADU
-		ADU = {
+		tag = ARC
+		ARC = {
 			dynasty = "de Sintra"
 		}
 		GRE = {
@@ -1240,10 +1240,10 @@ country_event = {
 			}
 			custom_tooltip = hellas_skleros_take_power_tt
 		}
-		ADU = {
+		ARC = {
 			add_prestige_or_monarch_power = 10
 			add_country_modifier = {
-				name = "adu_house_united"
+				name = "ARC_house_united"
 				duration = 7300
 			}
 		}

@@ -162,9 +162,9 @@ golden_citadel = {
 
 		#what effects happen when this tier is achieved
 		on_upgraded = {
-            custom_tooltip = adu_exarchates_activate_tt
+            custom_tooltip = unlocked_exarchates_tt
 			owner = {
-				set_country_flag = adu_exarchates_enabled
+				set_country_flag = unlocked_exarchates_flag
 			}
 		}
 	}
@@ -1054,7 +1054,7 @@ mascagar = {
 	build_trigger = {
 		custom_trigger_tooltip = {
 			tooltip = COMPLETED_SPECIAL_MISSION_THAT_UNLOCKS_GREAT_PROJECT
-			owner = { has_country_flag = adu_can_use_mascagar }
+			owner = { has_country_flag = unlocked_mascagar_flag }
 		}
 	}
 
@@ -1070,7 +1070,7 @@ mascagar = {
 	can_use_modifiers_trigger = {
 		custom_trigger_tooltip = {
 			tooltip = COMPLETED_SPECIAL_MISSION_THAT_UNLOCKS_GREAT_PROJECT
-			owner = { has_country_flag = adu_can_use_mascagar }
+			owner = { has_country_flag = unlocked_mascagar_flag }
 		}
 	}
 
@@ -1078,7 +1078,7 @@ mascagar = {
 	can_upgrade_trigger = {
 		custom_trigger_tooltip = {
 			tooltip = COMPLETED_SPECIAL_MISSION_THAT_UNLOCKS_GREAT_PROJECT
-			owner = { has_country_flag = adu_can_use_mascagar }
+			owner = { has_country_flag = unlocked_mascagar_flag }
 		}
 	}
 
@@ -1140,15 +1140,32 @@ mascagar = {
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			yearly_army_professionalism = 0.001
-			drill_gain_modifier = 0.1
-			astari_loyalty_modifier = 0.1
-			astari_influence_modifier = 0.1
 			allowed_tercio_fraction = 0.05
 			has_tercio = yes
+		}
+		conditional_modifier = {
+			trigger = {
+				owner = {
+					OR = {
+						has_reform = auxiliary_astari_reform
+						has_reform = astarostratha_reform
+					} 
+				}
+			}
+			modifier = {
+				drill_gain_modifier = 0.1
+				is_tercio_modifier = yes
+			}
 		}
 
 		#what effects happen when this tier is achieved
 		on_upgraded = {
+			owner = {
+				add_estate_loyalty = {
+					estate = estate_astari
+					loyalty = 5
+				}
+			}
 		}
 	}
 
@@ -1176,15 +1193,33 @@ mascagar = {
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			yearly_army_professionalism = 0.0025
-			drill_gain_modifier = 0.2
-			astari_loyalty_modifier = 0.15
-			astari_influence_modifier = 0.15
 			allowed_tercio_fraction = 0.1
 			has_tercio = yes
+		}
+		conditional_modifier = {
+			trigger = {
+				owner = {
+					OR = {
+						has_reform = auxiliary_astari_reform
+						has_reform = astarostratha_reform
+					} 
+				}
+			}
+			modifier = {
+				discipline = 0.025
+				drill_gain_modifier = 0.2
+				is_tercio_modifier = yes
+			}
 		}
 
 		#what effects happen when this tier is achieved
 		on_upgraded = {
+			owner = {
+				add_estate_loyalty = {
+					estate = estate_astari
+					loyalty = 10
+				}
+			}
 		}
 	}
 
@@ -1212,15 +1247,33 @@ mascagar = {
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			yearly_army_professionalism = 0.005
-			drill_gain_modifier = 0.33
-            astari_loyalty_modifier = 0.2
-			astari_influence_modifier = 0.2
 			allowed_tercio_fraction = 0.2
 			has_tercio = yes
+		}
+		conditional_modifier = {
+			trigger = {
+				owner = {
+					OR = {
+						has_reform = auxiliary_astari_reform
+						has_reform = astarostratha_reform
+					} 
+				}
+			}
+			modifier = {
+				discipline = 0.05
+				drill_gain_modifier = 0.33
+				is_tercio_modifier = yes
+			}
 		}
 
 		#what effects happen when this tier is achieved
 		on_upgraded = {
+			owner = {
+				add_estate_loyalty = {
+					estate = estate_astari
+					loyalty = 15
+				}
+			}
 		}
 	}
 }

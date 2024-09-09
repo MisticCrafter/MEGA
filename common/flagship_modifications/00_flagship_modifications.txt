@@ -483,7 +483,7 @@ captains_log = {
 
 andal_navigators = {
     trigger = {
-		tag = ADU
+		tag = ARC
         normal_or_historical_nations = yes
     }
 	modifier = {
@@ -494,7 +494,7 @@ andal_navigators = {
         factor = 1
         modifier = {
             factor = 10
-            tag = ADU
+            tag = ARC
         }
     }
     ai_war_score = {
@@ -504,7 +504,7 @@ andal_navigators = {
 
 andal_trade_route_map = {
     trigger = {
-		tag = ADU
+		tag = ARC
         normal_or_historical_nations = yes
     }
 	modifier = {
@@ -515,7 +515,7 @@ andal_trade_route_map = {
         factor = 1
         modifier = {
             factor = 10
-            tag = ADU
+            tag = ARC
         }
     }
     ai_war_score = {
@@ -525,7 +525,7 @@ andal_trade_route_map = {
 
 andal_mass_load_cannons = {
     trigger = {
-        tag = ADU
+        tag = ARC
         normal_or_historical_nations = yes
     }
 	modifier = {
@@ -539,7 +539,7 @@ andal_mass_load_cannons = {
         factor = 1
         modifier = {
             factor = 10
-            tag = ADU
+            tag = ARC
         }
     }
 }

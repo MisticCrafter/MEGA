@@ -27,7 +27,7 @@ andal_subject_reform = {
 	allow_normal_conversion = no
 	potential = {
 		culture_group = iberian
-        is_subject_of = ADU
+        is_subject_of = ARC
 	}
 	nation_designer_trigger = {
 		culture_group = iberian
@@ -53,7 +53,7 @@ absolutist_andalos_reform = {
 		has_dlc = "Domination" 
 		OR = {
 			AND = { 
-				tag = ADU 
+				tag = ARC 
 				OR = {
 					has_reform = absolutist_andalos_reform
 					have_had_reform = absolutist_andalos_reform
@@ -64,13 +64,13 @@ absolutist_andalos_reform = {
 				is_playing_custom_nation = yes
 				have_had_reform = absolutist_andalos_reform
 			}
-			mission_completed = adu_revoke_privileges
+			mission_completed = andalos_revoke_privileges
 		}
 	}
 	trigger = {
 		OR = {
 			AND = { 
-				tag = ADU 
+				tag = ARC 
 				OR = {
 					has_reform = absolutist_andalos_reform
 					have_had_reform = absolutist_andalos_reform

@@ -9381,7 +9381,7 @@ el_escorial = {
 	build_trigger = {
 		custom_trigger_tooltip = {
 			tooltip = COMPLETED_SPECIAL_MISSION_THAT_UNLOCKS_GREAT_PROJECT
-			owner = { has_country_flag = adu_can_use_meralinea }
+			owner = { has_country_flag = unlocked_meralinea_flag }
 		}
 		OR = {
 			AND = {
@@ -9409,7 +9409,7 @@ el_escorial = {
 	can_use_modifiers_trigger = {
 		custom_trigger_tooltip = {
 			tooltip = COMPLETED_SPECIAL_MISSION_THAT_UNLOCKS_GREAT_PROJECT
-			owner = { has_country_flag = adu_can_use_meralinea }
+			owner = { has_country_flag = unlocked_meralinea_flag }
 		}
 		OR = {
 			AND = {
@@ -9427,7 +9427,7 @@ el_escorial = {
 	can_upgrade_trigger = {
 		custom_trigger_tooltip = {
 			tooltip = COMPLETED_SPECIAL_MISSION_THAT_UNLOCKS_GREAT_PROJECT
-			owner = { has_country_flag = adu_can_use_meralinea }
+			owner = { has_country_flag = unlocked_meralinea_flag }
 		}
 		OR = {
 			AND = {

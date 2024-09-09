@@ -7,7 +7,7 @@ bookmark = {
 	default = no
 
 	country = SWI
-	country = ADU
+	country = ARC
 	country = SWE
 	
 	country = SAV
@@ -16,6 +16,6 @@ bookmark = {
 	country = EST
 
 	easy_country = SWI
-	easy_country = ADU
+	easy_country = ARC
 	easy_country = SWE
 }
