@@ -172,7 +172,8 @@ albion_cultural_ideas = {
 	bonus = { privateer_efficiency = 0.15 }					#francis drake
 
 	trigger = {
-		culture_group = british							#Mostly for independent duchies in Britain
+		culture_group = british	#Mostly for independent duchies in Britain
+		NOT = { tag = CWD }
 	}
 	free = yes
 
