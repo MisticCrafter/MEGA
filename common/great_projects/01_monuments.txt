@@ -4800,192 +4800,192 @@ taj_mahal = {
 	}
 }
 
-alhambra = {
-	# province it starts in
-	start = 223
-	
-	# date built in real life (so anything built during game time will be there if you start a game after that date)
-	date = 1333.01.01 #Yusuf I
-	
-	#time to build
-	time = {
-		months = 0
-	}
-	
-	#how much to build one
-	build_cost = 0
-	
-	#can we move it?
-	can_be_moved = no
-	
-	#time to move the project one unit of distance, in days
-	move_days_per_unit_distance = 1
-	
-	#tier that the project starts at when first placed in the game (be that at game start or when built by a country as the game progresses)
-	starting_tier = 1
-	
-	#project type
-	type = monument
-
-	#can we build it?
-	build_trigger = {
-	}
-
-	#what to do when it's built
-	on_built = {
-		show_ambient_object = alhambra 
-	}
-	
-	#what to do when it's destroyed
-	on_destroyed = {
-		hide_ambient_object = alhambra 
-	}
-
-	#can our country use it?
-	can_use_modifiers_trigger = {
-	}
-
-	#can our country upgrade it?
-	can_upgrade_trigger = {
-	}
-
-	#can our country keep it or is it destroyed when we get hold of it?
-	keep_trigger = {
-	}
-
-	#tier data
-	tier_0 = {
-		#time to upgrade to this level (0 for tier 0)
-		upgrade_time = {
-			months = 0
-		}
-
-		#cost to upgrade to this level (0 for tier 0)
-		cost_to_upgrade = {
-			factor = 0
-		}
-
-		#what modifiers are added to the province when we have this project here on this tier
-		province_modifiers = {
-		}
-
-		#what modifiers are added to the provinces in the map area when we have this project here on this tier
-		area_modifier = {
-		}
-
-		#what modifiers are added to the country when we have this project here on this tier
-		country_modifiers = {
-		}
-
-		#what effects happen when this tier is achieved
-		on_upgraded = {
-		}
-	}
-
-	tier_1 = {
-		#time to upgrade to this level (0 for tier 0)
-		upgrade_time = {
-			months = 120
-		}
-
-		#cost to upgrade to this level (0 for tier 0)
-		cost_to_upgrade = {
-			factor = 1000
-		}
-
-		#what modifiers are added to the province when we have this project here on this tier
-		province_modifiers = {
-		}
-
-		#what modifiers are added to the provinces in the map area when we have this project here on this tier
-		area_modifier = {
-		}
-
-		#what modifiers are added to the country when we have this project here on this tier
-		country_modifiers = {
-			vassal_income = 0.1
-			reduced_liberty_desire = 5
-		}
-
-		#what effects happen when this tier is achieved
-		on_upgraded = {
-		}
-	}
-
-	tier_2 = {
-		#time to upgrade to this level (0 for tier 0)
-		upgrade_time = {
-			months = 240
-		}
-
-		#cost to upgrade to this level (0 for tier 0)
-		cost_to_upgrade = {
-			factor = 2500
-		}
-
-		#what modifiers are added to the province when we have this project here on this tier
-		province_modifiers = {
-		}
-
-		#what modifiers are added to the provinces in the map area when we have this project here on this tier
-		area_modifier = {
-		}
-
-		#what modifiers are added to the country when we have this project here on this tier
-		country_modifiers = {
-			vassal_income = 0.1
-			reduced_liberty_desire = 5
-			diplomatic_reputation = 1
-		}
-
-		#what effects happen when this tier is achieved
-		on_upgraded = {
-		}
-	}
-
-	tier_3 = {
-		#time to upgrade to this level (0 for tier 0)
-		upgrade_time = {
-			months = 480
-		}
-
-		#cost to upgrade to this level (0 for tier 0)
-		cost_to_upgrade = {
-			factor = 5000
-		}
-
-		#what modifiers are added to the province when we have this project here on this tier
-		province_modifiers = {
-		}
-
-		#what modifiers are added to the provinces in the map area when we have this project here on this tier
-		area_modifier = {
-		}
-
-		#what modifiers are added to the country when we have this project here on this tier
-		country_modifiers = {
-			administrative_efficiency = 0.05
-			vassal_income = 0.1
-			reduced_liberty_desire = 10
-			diplomatic_reputation = 1
-		}
-		
-		conditional_modifier = {
-			trigger = {
-				owner = {
-					mission_completed = ARB_across_the_strait
-				}
-			}
-			modifier = {
-				diplomatic_annexation_cost = -0.05
-			}
-		}
-
-		#what effects happen when this tier is achieved
-		on_upgraded = {	
-		}
-	}
-}
+#alhambra = {
+#	# province it starts in
+#	start = 223
+#	
+#	# date built in real life (so anything built during game time will be there if you start a game after that date)
+#	date = 1333.01.01 #Yusuf I
+#	
+#	#time to build
+#	time = {
+#		months = 0
+#	}
+#	
+#	#how much to build one
+#	build_cost = 0
+#	
+#	#can we move it?
+#	can_be_moved = no
+#	
+#	#time to move the project one unit of distance, in days
+#	move_days_per_unit_distance = 1
+#	
+#	#tier that the project starts at when first placed in the game (be that at game start or when built by a country as the game progresses)
+#	starting_tier = 1
+#	
+#	#project type
+#	type = monument
+#
+#	#can we build it?
+#	build_trigger = {
+#	}
+#
+#	#what to do when it's built
+#	on_built = {
+#		show_ambient_object = alhambra 
+#	}
+#	
+#	#what to do when it's destroyed
+#	on_destroyed = {
+#		hide_ambient_object = alhambra 
+#	}
+#
+#	#can our country use it?
+#	can_use_modifiers_trigger = {
+#	}
+#
+#	#can our country upgrade it?
+#	can_upgrade_trigger = {
+#	}
+#
+#	#can our country keep it or is it destroyed when we get hold of it?
+#	keep_trigger = {
+#	}
+#
+#	#tier data
+#	tier_0 = {
+#		#time to upgrade to this level (0 for tier 0)
+#		upgrade_time = {
+#			months = 0
+#		}
+#
+#		#cost to upgrade to this level (0 for tier 0)
+#		cost_to_upgrade = {
+#			factor = 0
+#		}
+#
+#		#what modifiers are added to the province when we have this project here on this tier
+#		province_modifiers = {
+#		}
+#
+#		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+#		area_modifier = {
+#		}
+#
+#		#what modifiers are added to the country when we have this project here on this tier
+#		country_modifiers = {
+#		}
+#
+#		#what effects happen when this tier is achieved
+#		on_upgraded = {
+#		}
+#	}
+#
+#	tier_1 = {
+#		#time to upgrade to this level (0 for tier 0)
+#		upgrade_time = {
+#			months = 120
+#		}
+#
+#		#cost to upgrade to this level (0 for tier 0)
+#		cost_to_upgrade = {
+#			factor = 1000
+#		}
+#
+#		#what modifiers are added to the province when we have this project here on this tier
+#		province_modifiers = {
+#		}
+#
+#		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+#		area_modifier = {
+#		}
+#
+#		#what modifiers are added to the country when we have this project here on this tier
+#		country_modifiers = {
+#			vassal_income = 0.1
+#			reduced_liberty_desire = 5
+#		}
+#
+#		#what effects happen when this tier is achieved
+#		on_upgraded = {
+#		}
+#	}
+#
+#	tier_2 = {
+#		#time to upgrade to this level (0 for tier 0)
+#		upgrade_time = {
+#			months = 240
+#		}
+#
+#		#cost to upgrade to this level (0 for tier 0)
+#		cost_to_upgrade = {
+#			factor = 2500
+#		}
+#
+#		#what modifiers are added to the province when we have this project here on this tier
+#		province_modifiers = {
+#		}
+#
+#		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+#		area_modifier = {
+#		}
+#
+#		#what modifiers are added to the country when we have this project here on this tier
+#		country_modifiers = {
+#			vassal_income = 0.1
+#			reduced_liberty_desire = 5
+#			diplomatic_reputation = 1
+#		}
+#
+#		#what effects happen when this tier is achieved
+#		on_upgraded = {
+#		}
+#	}
+#
+#	tier_3 = {
+#		#time to upgrade to this level (0 for tier 0)
+#		upgrade_time = {
+#			months = 480
+#		}
+#
+#		#cost to upgrade to this level (0 for tier 0)
+#		cost_to_upgrade = {
+#			factor = 5000
+#		}
+#
+#		#what modifiers are added to the province when we have this project here on this tier
+#		province_modifiers = {
+#		}
+#
+#		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+#		area_modifier = {
+#		}
+#
+#		#what modifiers are added to the country when we have this project here on this tier
+#		country_modifiers = {
+#			administrative_efficiency = 0.05
+#			vassal_income = 0.1
+#			reduced_liberty_desire = 10
+#			diplomatic_reputation = 1
+#		}
+#		
+#		conditional_modifier = {
+#			trigger = {
+#				owner = {
+#					mission_completed = ARB_across_the_strait
+#				}
+#			}
+#			modifier = {
+#				diplomatic_annexation_cost = -0.05
+#			}
+#		}
+#
+#		#what effects happen when this tier is achieved
+#		on_upgraded = {	
+#		}
+#	}
+#}
 
 the_grand_palace = {
 	# province it starts in
@@ -8355,6 +8355,8 @@ kiev_pechersk_lavra = {
 	# }
 # }
 
+### EDITED BY MEGACAMPAIGN ###
+
 belem_tower = {
 	# province it starts in
 	start = 227
@@ -8462,11 +8464,17 @@ belem_tower = {
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
 			local_sailors_modifier = 0.25
+			local_has_caravel = yes
+			local_has_galleon = yes
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			global_naval_engagement_modifier = 0.05
+			allowed_galleon_fraction = 0.10
+			allowed_caravel_fraction = 0.10
+			has_caravel = yes
+			has_galleon = yes
 		}
 
 		#what effects happen when this tier is achieved
@@ -8495,11 +8503,17 @@ belem_tower = {
 		area_modifier = {
 			local_sailors_modifier = 0.5
 			ship_recruit_speed = -0.15
+			local_has_caravel = yes
+			local_has_galleon = yes
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			global_naval_engagement_modifier = 0.05
+			allowed_galleon_fraction = 0.20
+			allowed_caravel_fraction = 0.20
+			has_caravel = yes
+			has_galleon = yes
 		}
 
 		#what effects happen when this tier is achieved
@@ -8529,11 +8543,17 @@ belem_tower = {
 		area_modifier = {
 			local_sailors_modifier = 1
 			ship_recruit_speed = -0.33
+			local_has_caravel = yes
+			local_has_galleon = yes
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			global_naval_engagement_modifier = 0.1
+			allowed_galleon_fraction = 0.30
+			allowed_caravel_fraction = 0.30
+			has_caravel = yes
+			has_galleon = yes
 		}
 
 		#what effects happen when this tier is achieved
@@ -8541,6 +8561,8 @@ belem_tower = {
 		}
 	}
 }
+
+###
 
 sankin_kotai_palaces = {
 	# province it starts in
@@ -9326,6 +9348,8 @@ versailles = {
 	}
 }
 
+### ADDED BY MEGACAMPAIGN ###
+
 el_escorial = {
 	# province it starts in
 	start = 219
@@ -9355,6 +9379,10 @@ el_escorial = {
 
 	#can we build it?
 	build_trigger = {
+		custom_trigger_tooltip = {
+			tooltip = COMPLETED_SPECIAL_MISSION_THAT_UNLOCKS_GREAT_PROJECT
+			owner = { has_country_flag = adu_can_use_meralinea }
+		}
 		OR = {
 			AND = {
 				culture_group = iberian
@@ -9379,6 +9407,10 @@ el_escorial = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
+		custom_trigger_tooltip = {
+			tooltip = COMPLETED_SPECIAL_MISSION_THAT_UNLOCKS_GREAT_PROJECT
+			owner = { has_country_flag = adu_can_use_meralinea }
+		}
 		OR = {
 			AND = {
 				culture_group = iberian
@@ -9393,6 +9425,10 @@ el_escorial = {
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
+		custom_trigger_tooltip = {
+			tooltip = COMPLETED_SPECIAL_MISSION_THAT_UNLOCKS_GREAT_PROJECT
+			owner = { has_country_flag = adu_can_use_meralinea }
+		}
 		OR = {
 			AND = {
 				culture_group = iberian
@@ -9534,6 +9570,8 @@ el_escorial = {
 		}
 	}
 }
+
+###
 
 potosi = {
 	# province it starts in

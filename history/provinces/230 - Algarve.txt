@@ -1,6 +1,6 @@
 owner = CYN
 controller = CYN
-capital = "Balsa"
+capital = "Silveza"
 is_city = yes
 culture = andal
 religion = tigranic
