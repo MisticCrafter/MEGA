@@ -23,14 +23,23 @@
  kni_thousand_towers_title:0 "A Thousand Towers"
  kni_thousand_towers_desc:0 ""
 
- kni_city_of_god_one_title:0 "City of God"
+ kni_city_of_god_one_title:0 "Unus Construir"
  kni_city_of_god_one_desc:0 ""
 
- kni_city_of_god_two_title:0 "City of God II"
+ kni_city_of_god_two_title:0 "Duo Construir"
  kni_city_of_god_two_desc:0 ""
 
- kni_greatest_city_in_the_world_title:0 "Greatest City in the World"
- kni_greatest_city_in_the_world_desc:0 ""
+ kni_city_of_god_three_title:0 "Trēs Construir"
+ kni_city_of_god_three_desc:0 ""
+
+ kni_city_of_god_four_title:0 "Quattuor Construir"
+ kni_city_of_god_four_desc:0 ""
+
+ kni_city_of_god_five_title:0 "Quīnque Construir"
+ kni_city_of_god_five_desc:0 ""
+
+ kni_city_of_god_six_title:0 "City of God"
+ kni_city_of_god_six_desc:0 ""
 
  kni_fort_rosetta_title:0 "Citadel of Rosetta"
  kni_fort_rosetta_desc:0 ""
@@ -50,20 +59,20 @@
  kni_breadbasket_title:0 "Breadbasket of the World"
  kni_breadbasket_desc:0 ""
 
- kni_struggle_mediterranean_title:0 "Struggle for the Mediterranean"
- kni_struggle_mediterranean_desc:0 ""
-
  kni_legion_white_cross_title:0 "Legion of the White Cross"
  kni_legion_white_cross_desc:0 ""
 
  kni_sea_knights_title:0 "Knights of the Sea"
  kni_sea_knights_desc:0 ""
 
+ kni_reform_the_navy_title:0 "Reform the Navy"
+ kni_reform_the_navy_desc:0 ""
+
  kni_militant_order_title:0 "Navy With An Order"
  kni_militant_order_desc:0 ""
 
- kni_masters_mediterranean_title:0 "Masters of the Mediterranean"
- kni_masters_mediterranean_desc:0 ""
+ kni_masters_seas_title:0 "Masters of All Seas"
+ kni_masters_seas_desc:0 ""
 
  kni_rules_the_waves_title:0 "Order Rules the Waves"
  kni_rules_the_waves_desc:0 ""
@@ -76,9 +85,6 @@
 
  kni_victoria_title:0 "Victoria the III"
  kni_victoria_desc:0 ""
-
- kni_galleon_and_caravel_title:0 "Galleon and Caravel"
- kni_galleon_and_caravel_desc:0 ""
 
  kni_pirate_crusaders_title:0 "Pirate Crusaders"
  kni_pirate_crusaders_desc:0 ""
@@ -140,6 +146,9 @@
  kni_crossroads_of_the_world_title:0 "Crossroads of the World"
  kni_crossroads_of_the_world_desc:0 ""
 
+ kni_struggle_mediterranean_title:0 "Struggle for the Mediterranean"
+ kni_struggle_mediterranean_desc:0 ""
+
  kni_landfall_venice_title:0 "Landfall in Venice"
  kni_landfall_venice_desc:0 ""
 
@@ -159,7 +168,5 @@
  kni_no_more_muslims_desc:0 ""
 
 
- kni_city_of_god_three_title:0 "Of the World's Desire"
- kni_city_of_god_three_desc:0 ""
  kni_cairo_god_title:0 "City of God"
  kni_cairo_god_desc:0 ""

@@ -97,15 +97,13 @@ absolutist_andalos_reform = {
 	}
 }
 
-mauretanian_crusader_reform = {
+crusader_kingdom_reform = {
 	icon = "holy_state_reform"
 	allow_normal_conversion = no
 	potential = {
-		culture_group = maghrebi
 		religion_group = christian
 	}
 	nation_designer_trigger = {
-		culture_group = maghrebi
 		religion_group = christian
 	}
 	valid_for_nation_designer = yes

@@ -48,7 +48,7 @@ dependency = {
 
 alliance = {
 	first = CYN
-	second = VAL
+	second = SRQ
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }

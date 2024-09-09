@@ -1,5 +1,5 @@
-owner = Z00
-controller = Z00
+owner = PAP
+controller = PAP
 capital = "Apollogena"
 is_city = yes
 culture = crusader_mesopotamian
@@ -11,8 +11,7 @@ base_production = 5
 base_manpower = 2
 extra_cost = 18
 center_of_trade = 1
-add_core = IRQ
-add_core = Z00
+add_core = PAP
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

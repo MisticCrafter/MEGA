@@ -105,23 +105,44 @@ iberian = {
 	province = { local_has_caravel = yes local_has_galleon = yes }
 	balearic = {
 		dynasty_names = {
-			"d'AragÛ" "de Borja" "de Luna" "d'Urgell" "Folc de Cardona"
+			"d'Aragù" "de Borja" "de Luna" "d'Urgell" "Folc de Cardona"
 			#CK2
 			"de Menezes" "de Mendoza" "de Niebla" "de Silva" "de Alba" "de Borja"  
 			"de Medinaceli" "de Castro" "de Haro" "Santcliment" "de Altamira" Osorio
-			Z˙Òiga "de Villahermosa" Vilafermosa Garmendia "de Rocamora" "de Goyeneche"
+			Zùùiga "de Villahermosa" Vilafermosa Garmendia "de Rocamora" "de Goyeneche"
 			"de Cabrera" "de Villena"
 		}
 		male_names = {
-			AarÛ Aaron Abelard Abraham AbsalÛ Abundi Adalbert Adam Adri‡ Alaric Alb‡ AlbÌ Aleix ¿lvar ¿ngel Antoni Arnau 
-			Artur Blai Carles Cecili Conrad Dari DionÌs Emili Enric Felip Ferran FrancÈs Francesc FructuÛs Germ‡ 
-			GonÁal Guillem Guiu Ignasi Israel Joan Jordi Josep Josep Maria LleÛ Lluc LluÌs Macedoni M‡rius MartÌ Miquel 
-			Octavi “scar Pau Pere Pol Pompeu PrÚsper Prudenci Prudenci‡ Quirze Rafael Ramir Ra¸l Reginald Ricard Robert Roc 
-			RubËn Sergi SimÛ Teodor Tom‡s VicenÁ Vicent Xavier
+			Aarù Aaron Abelard Abraham Absalù Abundi Adalbert Adam Adriù Alaric Albù Albù Aleix ùlvar ùngel Antoni Arnau 
+			Artur Blai Carles Cecili Conrad Dari Dionùs Emili Enric Felip Ferran Francùs Francesc Fructuùs Germù 
+			Gonùal Guillem Guiu Ignasi Israel Joan Jordi Josep Josep Maria Lleù Lluc Lluùs Macedoni Mùrius Martù Miquel 
+			Octavi ùscar Pau Pere Pol Pompeu Prùsper Prudenci Prudenciù Quirze Rafael Ramir Raùl Reginald Ricard Robert Roc 
+			Rubùn Sergi Simù Teodor Tomùs Vicenù Vicent Xavier
 		}
 		female_names = {
-			¿gata ¿gueda Aina Anna AntÚnia Caterina CecÌlia Cristina Dolors Francesca Genoveva Isabel Joana Justina Laia 
-			Montserrat N˙ria Oct‡via PrudËncia Roberta Rodolfa
+			ùgata ùgueda Aina Anna Antùnia Caterina Cecùlia Cristina Dolors Francesca Genoveva Isabel Joana Justina Laia 
+			Montserrat Nùria Octùvia Prudùncia Roberta Rodolfa
+		}
+	}
+	valencian = {
+		dynasty_names = {
+			"d'Aragù" "de Borja" "de Luna" "d'Urgell" "Folc de Cardona"
+			#CK2
+			"de Menezes" "de Mendoza" "de Niebla" "de Silva" "de Alba" "de Borja"  
+			"de Medinaceli" "de Castro" "de Haro" "Santcliment" "de Altamira" Osorio
+			Zùùiga "de Villahermosa" Vilafermosa Garmendia "de Rocamora" "de Goyeneche"
+			"de Cabrera" "de Villena"
+		}
+		male_names = {
+			Aarù Aaron Abelard Abraham Absalù Abundi Adalbert Adam Adriù Alaric Albù Albù Aleix ùlvar ùngel Antoni Arnau 
+			Artur Blai Carles Cecili Conrad Dari Dionùs Emili Enric Felip Ferran Francùs Francesc Fructuùs Germù 
+			Gonùal Guillem Guiu Ignasi Israel Joan Jordi Josep Josep Maria Lleù Lluc Lluùs Macedoni Mùrius Martù Miquel 
+			Octavi ùscar Pau Pere Pol Pompeu Prùsper Prudenci Prudenciù Quirze Rafael Ramir Raùl Reginald Ricard Robert Roc 
+			Rubùn Sergi Simù Teodor Tomùs Vicenù Vicent Xavier
+		}
+		female_names = {
+			ùgata ùgueda Aina Anna Antùnia Caterina Cecùlia Cristina Dolors Francesca Genoveva Isabel Joana Justina Laia 
+			Montserrat Nùria Octùvia Prudùncia Roberta Rodolfa
 		}
 	}
 	andal = {
@@ -354,7 +375,7 @@ crusader_group = {
 	}
 
 	crusader_antiochene = {
-		primary = NAX
+		primary = ANC
 		province = { local_has_caravel = yes local_has_galleon = yes }
 		dynasty_names = {
 			Thinis Memphis Abydos Herakleopolis Thebes Itjtawy Avaris Bubastis Sais

@@ -1,6 +1,6 @@
 antioch_ideas = {
 	start = {
-		defensiveness = 0.50
+		defensiveness = 0.33
 		discipline = 0.05
 	}
 	
@@ -9,7 +9,7 @@ antioch_ideas = {
 	}
 	
 	trigger = {
-		tag = NAX
+		tag = ANC
 	}
 	free = yes
 	
@@ -40,7 +40,7 @@ antioch_ideas = {
 }
 TEM_ideas = {
 	start = {
-		garrison_size = 0.20
+		num_accepted_cultures = 1
 		discipline = 0.05
 	}
 	
@@ -60,10 +60,11 @@ TEM_ideas = {
 		army_tradition_decay = -0.01
 	}
 	TEM_knights_of_outremer = { 
-		cavalry_power = 0.25
+		cavalry_power = 0.20
 	}
 	TEM_deliver_unto_evil = {
-		shock_damage = 0.20
+		shock_damage = 0.15
+		morale_damage = .05
 	}
 	TEM_army_with_an_order = {
 		special_unit_forcelimit = 0.15
@@ -73,7 +74,7 @@ TEM_ideas = {
 	}
 	TEM_shield = {
 		garrison_damage = 0.25
-		infantry_power = 0.10
+		diplomatic_upkeep = 1
 	}
 }
 

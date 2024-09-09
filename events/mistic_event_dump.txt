@@ -1157,7 +1157,7 @@ country_event = {
             every_country = {
                 limit = {
                     primary_culture = venetian
-                    capital = {
+                    capital_scope = {
                         OR = {
                             continent = north_america
                             continent = south_america
@@ -1173,6 +1173,41 @@ country_event = {
         custom_tooltip = sovvertimento_venice_death_tt
         custom_tooltip = sovvertimento_venice_diaspora_tt
         custom_tooltip = sovvertimento_venice_insight_tt
+    }
+}
+
+# The Venetians of [Root.Capital.GetName]
+# (Removes all 'Influx of Venetian Notables' modifiers in a country, replacing them with the 'Venetian Quarters' building)
+country_event = {
+    id = flavor_mistic_swiss.10
+    title = flavor_mistic_swiss.10.t
+    desc = flavor_mistic_swiss.10.d
+    picture = CITY_VIEW_eventPicture
+
+    fire_only_once = yes
+
+    trigger = {
+        has_country_flag = has_venetian_community
+        capital_scope = {
+            NOT = { has_building = venetian_quarters }
+        }
+    }
+
+    mean_time_to_happen = {
+        months = 60
+    }
+
+    option = {
+        name = flavor_mistic_swiss.10
+        every_owned_province = {
+            limit = {
+                has_province_modifier = influx_of_venetian_notables_modifier
+            }
+            remove_province_modifier = influx_of_venetian_notables_modifier
+        }
+        capital_scope = {
+            add_building = venetian_quarters
+        }
     }
 }
 

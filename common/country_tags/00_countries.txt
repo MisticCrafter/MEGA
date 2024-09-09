@@ -1097,6 +1097,10 @@ AK3 = "countries/ExarchateMali.txt"
 
 # Jabber stuff
 DUR = "countries/Durazzo.txt"
+ANC = "countries/Antioch.txt"
+EDE = "countries/Edessa.txt"
+ATX = "countries/Artaxacerta.txt"
+SRQ = "countries/Sarcay.txt"
 
 # c: mlemmer :3
 FNT = "countries/Fontaine.txt"

@@ -5,7 +5,7 @@ out_kni_ally = {
 out_lae_ally = {
 	infantry_power = 0.05
 }
-out_nax_ally = {
+out_anc_ally = {
 	defensiveness = 0.20
 }
 out_mor_ally = {

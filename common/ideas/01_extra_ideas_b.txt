@@ -332,7 +332,8 @@ levantine_christian_cultural_ideas = {
 	trigger = {
 		NOT = {
 			tag = Z00
-			tag = NAX
+			tag = ANC
+			tag = EDE
 		}
 		OR = {
 			culture_group = turko_semitic

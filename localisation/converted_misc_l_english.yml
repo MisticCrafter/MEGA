@@ -67,4 +67,9 @@
  desc_wonder_house_of_wisdom:0 "A grand university, housing much of the worlds knowledge."
  wonder_underground_city_petra:0 "Petra"
  desc_wonder_underground_city_petra:0 "The great desert city of Petra has existed for hundreds of years"
+ # formerly in culture_shenanigans_l_english.yml
+ string_human_era: "the Human Times"
+ string_praefectus: "Praefectus"
+ string_tanner: "Tanner"
+ libyan: "Libyan"
  

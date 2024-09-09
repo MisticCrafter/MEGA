@@ -1,5 +1,5 @@
-owner = NAX
-controller = NAX
+owner = EDE
+controller = EDE
 capital = "Edessa"
 is_city = yes
 culture = crusader_antiochene
@@ -8,7 +8,7 @@ trade_goods = wool
 base_tax = 3
 base_production = 4
 base_manpower = 2
-add_core = NAX
+add_core = EDE
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

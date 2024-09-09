@@ -1,15 +1,15 @@
-owner = Z00
-controller = Z00
-capital = "Castro Azuro"
+owner = ATX
+controller = ATX
+capital = "Artaxacerta"
 is_city = yes
-culture = crusader_levantine
+culture = armeniac
 religion = catholic
-trade_goods = livestock
-base_tax = 2
-base_production = 4
-base_manpower = 1
+trade_goods = glass
+base_tax = 4
+base_production = 5
+base_manpower = 3
 
-add_core = Z00
+add_core = ATX
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

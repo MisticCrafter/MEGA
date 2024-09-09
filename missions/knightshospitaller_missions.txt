@@ -34,7 +34,7 @@ knidiplomatic = {
 		trigger = {
 			any_ally = {
 				OR = {
-					has_reform = mauretanian_crusader_reform
+					has_reform = crusader_kingdom_reform
 					has_reform = crusading_kingdom_reform
 					has_reform = holy_state_reform
 					has_reform = monastic_order_reform
@@ -60,9 +60,9 @@ knidiplomatic = {
 					}
 				}
 				if = {
-					limit = { any_ally = { tag = NAX }  } 
+					limit = { any_ally = { tag = ANC }  } 
 					add_country_modifier = {
-						name = "out_nax_ally"
+						name = "out_anc_ally"
 						duration = -1
 					}
 				}
@@ -203,7 +203,7 @@ kni_country_of_castles_branch = {
 	}
 
 	kni_city_of_god_one = {
-		icon = mission_the_golden_city
+		icon = mission_early_game_buildings
 		position = 4
 		required_missions = { kni_thousand_towers } 
 		provinces_to_highlight = {  } 
@@ -238,7 +238,7 @@ kni_country_of_castles_branch = {
 	}
 
 	kni_city_of_god_two = {
-		icon = mission_the_golden_city
+		icon = mission_early_game_buildings
 		position = 5
 		required_missions = { kni_city_of_god_one } 
 		provinces_to_highlight = {  } 
@@ -275,8 +275,8 @@ kni_country_of_castles_branch = {
 		}
 	}
 
-	kni_greatest_city_in_the_world = {
-		icon = mission_control_venice
+	kni_city_of_god_three = {
+		icon = mission_early_game_buildings
 		position = 6
 		required_missions = { kni_city_of_god_two } 
 		provinces_to_highlight = {  } 
@@ -318,6 +318,39 @@ kni_country_of_castles_branch = {
 				}
 			}
 		}
+	}
+
+	kni_city_of_god_four = {
+		icon = mission_early_game_buildings
+		position = 1
+		required_missions = { kni_city_of_god_three } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kni_city_of_god_five = {
+		icon = mission_castle_construction
+		position = 1
+		required_missions = { kni_city_of_god_four } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kni_city_of_god_six = {
+		icon = mission_the_golden_city
+		position = 1
+		required_missions = { kni_city_of_god_five } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
 }
 kni_country_of_castles_rosetta = {
@@ -369,7 +402,7 @@ kni_south_and_africa = {
 
 	kni_fortify_south = {
 		icon = mission_castle_construction
-		position = 9
+		position = 10
 		provinces_to_highlight = {
 			province_id = 4319
 			province_id = 1231
@@ -443,7 +476,7 @@ kni_ethiopia = {
 	}
 }
 kni_granary_branch = {
-	slot = 3
+	slot = 2
 	generic = no
 	ai = yes
 	has_country_shield = yes
@@ -452,6 +485,7 @@ kni_granary_branch = {
 	kni_granary = {
 		icon = mission_control_the_barbary_coast
 		position = 7
+		required_missions = { kni_city_of_god_three } 
 		provinces_to_highlight = {  } 
 
 		trigger = { farm_estate = 5 } 
@@ -485,46 +519,6 @@ kninaval = {
 	has_country_shield = yes
 	potential = { tag = KNI } 
 
-	kni_struggle_mediterranean = {
-		icon = mission_rb_mediterranean_authority
-		position = 1
-		provinces_to_highlight = {  } 
-
-		trigger = {
-			OR = {
-				full_idea_group = naval_ideas
-				full_idea_group = maritime_ideas
-				owns_core_province = 321
-			}
-		}
-
-		effect = {
-			363 = {
-				add_or_upgrade_shipyard_building = yes
-				add_base_production = 2
-			}
-			362 = {
-				add_or_upgrade_shipyard_building = yes
-				add_base_production = 2
-			}
-			358 = {
-				add_or_upgrade_shipyard_building = yes
-				add_base_production = 2
-			}
-			add_country_modifier = {
-				name = "kni_building_a_navy"
-				duration = 3652
-			}
-			if = {
-				limit = { owns_core_province = 321 } 
-				321 = {
-					add_or_upgrade_shipyard_building = yes
-					add_base_production = 2
-				}
-			}
-		}
-	}
-
 	kni_legion_white_cross = {
 		icon = mission_modern_knight_army
 		position = 3
@@ -539,29 +533,90 @@ kninaval = {
 	kni_sea_knights = {
 		icon = crusader_fleet
 		position = 4
-		required_missions = {
-			kni_struggle_mediterranean
-			kni_legion_white_cross
-		}
+		required_missions = { kni_legion_white_cross } 
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
 
 		effect = {  } 
+	}
+
+	kni_reform_the_navy = {
+		icon = mission_launch_a_flagship
+		position = 8
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			num_of_owned_provinces_with = {
+				has_shipyard_building_trigger = yes
+				value = 6
+			}
+			OR = {
+				navy_tradition = 65
+				navy_size = 60
+			}
+		}
+
+		effect = {
+			if = {
+				limit = { has_dlc = "Domination" } 
+				add_country_modifier = {
+					name = "por_reform_navy_1_modifier"
+					duration = -1
+				}
+			}
+			else = {
+				define_advisor = {
+					type = naval_reformer
+					skill = 3
+					cost_multiplier = 0.25
+				}
+				add_navy_tradition = 25
+			}
+		}
 	}
 
 	kni_militant_order = {
 		icon = imperial_navy
-		position = 5
-		required_missions = { kni_sea_knights } 
+		position = 9
+		required_missions = { kni_reform_the_navy } 
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
-
-		effect = {  } 
+		trigger = {
+			num_of_owned_provinces_with = {
+				has_shipyard_building_trigger = yes
+				value = 10
+			}
+			OR = {
+				navy_tradition = 75
+				navy_size = 80
+			}
+		}
+		effect = { 
+			add_country_modifier = {
+				name = kni_crusader_fleet
+				duration = -1
+			}
+			add_country_modifier = {
+				name = "kni_building_a_navy"
+				duration = 3652
+			}
+			363 = {
+				add_or_upgrade_shipyard_building = yes
+				add_base_production = 2
+			}
+			362 = {
+				add_or_upgrade_shipyard_building = yes
+				add_base_production = 2
+			}
+			358 = {
+				add_or_upgrade_shipyard_building = yes
+				add_base_production = 2
+			}
+		 } 
 	}
 
-	kni_masters_mediterranean = {
+	kni_masters_seas = {
 		icon = overshadow_venice
 		position = 6
 		required_missions = { kni_militant_order } 
@@ -576,7 +631,7 @@ kninaval = {
 		icon = mission_naval_kingdom
 		position = 8
 		required_missions = {
-			kni_masters_mediterranean
+			kni_masters_seas
 			kni_megalopolis
 		}
 		provinces_to_highlight = {  } 
@@ -595,8 +650,8 @@ kni_second_city_branch = {
 
 	kni_the_second_city = {
 		icon = mission_constantinople
-		position = 7
-		required_missions = { kni_greatest_city_in_the_world } 
+		position = 10
+		required_missions = { kni_city_of_god_six } 
 		provinces_to_highlight = {  } 
 
 		trigger = {
@@ -642,7 +697,7 @@ kni_regiopolis_brach = {
 	kni_megalopolis = {
 		icon = mission_crown_of_wenceslas
 		position = 7
-		required_missions = { kni_greatest_city_in_the_world } 
+		required_missions = { kni_city_of_god_six } 
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
@@ -660,6 +715,7 @@ kninavalalternative = {
 	kni_victoria = {
 		icon = mission_reign_of_women
 		position = 8
+		required_missions = { kni_city_of_god_four } 
 		provinces_to_highlight = {  } 
 
 		trigger = {
@@ -682,16 +738,6 @@ kninavalalternative = {
 			}
 		}
 	}
-
-	kni_galleon_and_caravel = {
-		icon = mission_launch_a_flagship
-		position = 9
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
-	}
 }
 kni_pirate = {
 	slot = 5
@@ -702,7 +748,7 @@ kni_pirate = {
 
 	kni_pirate_crusaders = {
 		icon = mission_pirate_fleet
-		position = 11
+		position = 13
 		provinces_to_highlight = { province_id = 1298 } 
 
 		trigger = { num_of_light_ship = 25 } 
@@ -778,7 +824,7 @@ kniforts = {
 
 	kni_cyrenaica = {
 		icon = fortify_malta
-		position = 8
+		position = 11
 		provinces_to_highlight = {
 			province_id = 356
 			province_id = 357
@@ -866,7 +912,7 @@ knitrade = {
 
 	kni_alexandrian_trade = {
 		icon = mission_conquer_alexandria
-		position = 11
+		position = 13
 		provinces_to_highlight = {
 			OR = {
 				province_id = 358
@@ -1397,6 +1443,53 @@ kninavaltrade = {
 		effect = {  } 
 	}
 }
+kni_mediterranean_naval_branch = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = KNI } 
+
+	kni_struggle_mediterranean = {
+		icon = mission_rb_mediterranean_authority
+		position = 19
+		provinces_to_highlight = {  } 
+
+		trigger = {
+			OR = {
+				full_idea_group = naval_ideas
+				full_idea_group = maritime_ideas
+				owns_core_province = 321
+			}
+		}
+
+		effect = {
+			363 = {
+				add_or_upgrade_shipyard_building = yes
+				add_base_production = 2
+			}
+			362 = {
+				add_or_upgrade_shipyard_building = yes
+				add_base_production = 2
+			}
+			358 = {
+				add_or_upgrade_shipyard_building = yes
+				add_base_production = 2
+			}
+			add_country_modifier = {
+				name = "kni_building_a_navy"
+				duration = 3652
+			}
+			if = {
+				limit = { owns_core_province = 321 } 
+				321 = {
+					add_or_upgrade_shipyard_building = yes
+					add_base_production = 2
+				}
+			}
+		}
+	}
+}
 landfall_venice = {
 	slot = 4
 	generic = no
@@ -1406,7 +1499,7 @@ landfall_venice = {
 
 	kni_landfall_venice = {
 		icon = mission_raid_on_venice
-		position = 18
+		position = 19
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
@@ -1423,7 +1516,7 @@ landfall_sicily = {
 
 	kni_landfall_sicily = {
 		icon = mission_break_sicily
-		position = 18
+		position = 19
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
@@ -1472,7 +1565,7 @@ kni_papal_relations = {
 
 	kni_sway_pope = {
 		icon = sway_the_pope
-		position = 21
+		position = 22
 		provinces_to_highlight = {  } 
 
 		trigger = {

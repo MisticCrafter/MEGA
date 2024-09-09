@@ -1,0 +1,19 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_venetian_quarters"
+        texturefile = "gfx//interface//buildings//venetian_quarters.tga"
+        loadType = "INGAME"
+    }
+
+    spriteType = {
+        name = "GFX_ligurian_quarters"
+        texturefile = "gfx//interface//buildings//ligurian_quarters.tga"
+        loadType = "INGAME"
+    }
+
+    spriteType = {
+        name = "GFX_tuscan_quarters"
+        texturefile = "gfx//interface//buildings//tuscan_quarters.tga"
+        loadType = "INGAME"
+    }
+}
