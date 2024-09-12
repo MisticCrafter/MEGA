@@ -15786,7 +15786,7 @@ ASU_ideas = {
 	}
 }
 
-ADU_ideas = {
+ARC_ideas = {
 	start = {
 		infantry_power = 0.1
 		naval_forcelimit_modifier = 0.25 
@@ -15797,33 +15797,33 @@ ADU_ideas = {
 	}
     
 	trigger = {
-		tag = ADU
+		tag = ARC
 	}
 	free = yes        #will be added at load.
     
-	adu_idea_1 = {
+	ARC_idea_1 = {
         naval_morale = 0.10
 		range = 0.20
 	}
-	adu_idea_2 = {
+	ARC_idea_2 = {
 		idea_cost = -0.05
 		church_power_modifier = 0.1
 	}
-	adu_idea_3 = {
+	ARC_idea_3 = {
         global_ship_trade_power = 0.25
 		treasure_fleet_income = 0.3
     }
-	adu_idea_4 = {
+	ARC_idea_4 = {
 		colonists = 1
     }
-	adu_idea_5 = {
+	ARC_idea_5 = {
 		global_manpower_modifier = 0.1
 		core_creation = -0.1
 	}
-	adu_idea_6 = {
+	ARC_idea_6 = {
 		artillery_fire = 1
 	}
-	adu_idea_7 = {
+	ARC_idea_7 = {
         max_absolutism = 10 #wayyy too fucking much abso
 	}
 }

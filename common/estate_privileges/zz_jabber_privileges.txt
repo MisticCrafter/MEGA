@@ -9,7 +9,7 @@ estate_nobles_andal_strong_duchies = {
 		OR = {
 			has_estate_privilege = estate_nobles_andal_strong_duchies
 			AND = {
-				tag = ADU
+				tag = ARC
 				NOT = { has_estate_privilege = estate_nobles_strong_duchies }
 			}
 		}

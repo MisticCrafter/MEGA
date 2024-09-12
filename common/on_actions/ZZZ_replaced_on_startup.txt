@@ -32,7 +32,7 @@ on_startup = {
 	# Added by megacampaign.
 	if = {
 		limit = {
-			tag = ADU
+			tag = ARC
 		}
 		country_event = { id = flavor_andalos.19 }
 	}

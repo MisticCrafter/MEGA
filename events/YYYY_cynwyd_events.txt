@@ -1,0 +1,19 @@
+namespace = flavour_cwd
+
+country_event = {
+	id = flavour_cwd.1
+	title = flavour_cwd.1.title
+	desc = flavour_cwd.1.desc
+	picture = ""
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = flavour_cwd.1.a	
+		
+		add_government_reform = social_banditry_republic_reform
+	}
+
+}
+
