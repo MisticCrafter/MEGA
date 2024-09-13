@@ -1113,7 +1113,7 @@ trade_company_armenia = {
 		name = "TRADE_COMPANY_ARMENIA_Root_Culture_GetName"
 	}
 	names = {
-		name = "TRADE_COMPANY_ARMENIA_Near_East_Trade_Company"
+		name = "TRADE_COMPANY_ARMENIA_European_Trade_Company"
 	}
 }
 
