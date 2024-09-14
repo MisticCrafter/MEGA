@@ -1,6 +1,6 @@
 dependency = {
 	subject_type = appanage
-	first = ADU 
+	first = ARC 
 	second = POR 
 	start_date="1444.11.11"
 	end_date="1836.1.1"
@@ -8,7 +8,7 @@ dependency = {
 
 dependency = {
 	subject_type = appanage
-	first = ADU 
+	first = ARC 
 	second = CAS 
 	start_date="1444.11.11"
 	end_date="1836.1.1"
@@ -16,7 +16,7 @@ dependency = {
 
 dependency = {
 	subject_type = appanage
-	first = ADU 
+	first = ARC 
 	second = GAL 
 	start_date="1444.11.11"
 	end_date="1836.1.1"
@@ -24,7 +24,7 @@ dependency = {
 
 dependency = {
 	subject_type = appanage
-	first = ADU 
+	first = ARC 
 	second = ASU 
 	start_date="1444.11.11"
 	end_date="1836.1.1"
@@ -32,7 +32,7 @@ dependency = {
 
 dependency = {
 	subject_type = appanage
-	first = ADU 
+	first = ARC 
 	second = LON 
 	start_date="1444.11.11"
 	end_date="1836.1.1"
@@ -40,7 +40,7 @@ dependency = {
 
 dependency = {
 	subject_type = appanage
-	first = ADU 
+	first = ARC 
 	second = NAV 
 	start_date="1444.11.11"
 	end_date="1836.1.1"

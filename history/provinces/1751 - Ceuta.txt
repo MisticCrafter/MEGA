@@ -1,5 +1,5 @@
-owner = ADU
-controller = ADU
+owner = ARC
+controller = ARC
 capital = "Septa"
 is_city = yes
 culture = andal
@@ -9,7 +9,7 @@ base_tax = 4
 base_production = 5
 base_manpower = 2
 center_of_trade = 1
-add_core = ADU
+add_core = ARC
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

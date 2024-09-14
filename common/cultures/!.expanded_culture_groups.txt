@@ -85,15 +85,15 @@ germanic = {
 			"von Colmar" "von Gebweiler" "von M�lhausen" "von Rappoltsweiler" "von Thann"
 		}
 	}
-	sudeten = {
-		primary = SUD
-		dynasty_names = {
-			"von Prag" Pilsner "von Karlsbad" "von Aussig" "von Reichenberg" "von K�niggr�tz"
-			"von Pardubitz" "von Iglau" Budweiser "von Br�nn" Olm�tzer "von Ostrau" Zliner Pre�burger
-			"von Pre�burg" "von Tyrnau" "von Trentschin" Laugaricio "von Neutra" "von Sillein"
-			Solna "von Neusohl" "von Eperies" Fragopolis "von Kaschau"
-		}
-	}
+	#sudeten = {
+	#	primary = SUD
+	#	dynasty_names = {
+	#		"von Prag" Pilsner "von Karlsbad" "von Aussig" "von Reichenberg" "von K�niggr�tz"
+	#		"von Pardubitz" "von Iglau" Budweiser "von Br�nn" Olm�tzer "von Ostrau" Zliner Pre�burger
+	#		"von Pre�burg" "von Tyrnau" "von Trentschin" Laugaricio "von Neutra" "von Sillein"
+	#		Solna "von Neusohl" "von Eperies" Fragopolis "von Kaschau"
+	#	}
+	#}
 	hilfsvolk = {
 		primary = HAB
 	}
@@ -110,10 +110,10 @@ germanic = {
 		primary = HAB
 	}
 	
-	jerusalemer = { primary = KOJ }
-	kurlander = { primary = KUR }
-	lothringian = { primary = LOT }
-	new_english = { primary = GER }
+	#jerusalemer = { primary = KOJ }
+	#kurlander = { primary = KUR }
+	#lothringian = { primary = LOT }
+	#new_english = { primary = GER }
 }
 scandinavian = {
 	norse = { #Moves it from Lost Cultures to here, added in "Lions of the North" to vanilla
@@ -843,48 +843,48 @@ baltic = {
 	}
 }
 byzantine = {
-	hellenistic = {
-		primary = BYZ
-	}
+	#hellenistic = {
+	#	primary = BYZ
+	#}
 	anatolian = {
-		primary = BYZ
+		primary = ANA
 	}
-	bactrian = {
-		primary = TRS
-	}
-	empurian = {
-		primary = SPA
-	}
-	histrian = {
-		primary = RMN
-	}
+	#bactrian = {
+	#	primary = TRS
+	#}
+	#empurian = {
+	#	primary = SPA
+	#}
+	#histrian = {
+	#	primary = RMN
+	#}
 	kyrenaikan = {
 		primary = TRP
 	}
-	leucaethiopian = {
-		primary = ETH
-	}
-	magnagreek = {
-		primary = BYZ
-	}
-	messalian = {
-		primary = PRO
-	}
-	ptolemaic = {
-		primary = EGY
-	}
-	pulian = {
-		primary = CLI
-	}
-	seleucian = {
-		primary = PER
-	}
-	tylosi = {
-		primary = ARB
-	}
-	yavana = {
-		primary = AFG
-	}
+	#leucaethiopian = {
+	#	primary = ETH
+	#}
+	#magnagreek = {
+	#	primary = BYZ
+	#}
+	#messalian = {
+	#	primary = PRO
+	#}
+	#ptolemaic = {
+	#	primary = EGY
+	#}
+	#pulian = {
+	#	primary = CLI
+	#}
+	#seleucian = {
+	#	primary = PER
+	#}
+	#tylosi = {
+	#	primary = ARB
+	#}
+	#yavana = {
+	#	primary = AFG
+	#}
 }
 caucasian = {
 	alan = {

@@ -1096,11 +1096,12 @@ AK2 = "countries/ExarchateOyoman.txt"
 AK3 = "countries/ExarchateMali.txt"
 
 # Jabber stuff
-DUR = "countries/Durazzo.txt"
+ARC = "countries/Andalos.txt"
+SRQ = "countries/Sarcay.txt"
 ANC = "countries/Antioch.txt"
 EDE = "countries/Edessa.txt"
 ATX = "countries/Artaxacerta.txt"
-SRQ = "countries/Sarcay.txt"
+DUR = "countries/Durazzo.txt"
 
 # c: mlemmer :3
 FNT = "countries/Fontaine.txt"

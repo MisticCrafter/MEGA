@@ -311,7 +311,7 @@ monarchy = {
 				ahmudan_system_reform
 				ghazi_reform
 				the_cawa_regiments_reform
-				tercio_reform
+				#tercio_reform
 				fuero_militar_reform
 				ordennancas_reform
 				revive_the_almogavars_reform
@@ -334,7 +334,7 @@ monarchy = {
 				qollar_aghasi_regiments_reform
 				manrent_reform
 				merchant_arsenal_reform
-				tercios_reform
+				#tercios_reform
 				expanded_black_army_reform
 				theme_system_reform
 				#1.36
@@ -348,10 +348,15 @@ monarchy = {
 				cuman_lancers_reform
 				#1.37 Bohemia
 				vozove_hradby_reform
-				russian_mercenary_guard_reform 
-				#hi
+				russian_mercenary_guard_reform
+
+				### ADDED BY MEGACAMPAIGN
 				three_branches_reform
 				sic_palatini_reform
+
+				auxiliary_astari_reform
+				astarostratha_reform
+				###
 			}
 		}
 		deliberative_assembly = {
@@ -835,7 +840,7 @@ republic = {
 				ahmudan_system_reform
 				ghazi_reform
 				the_cawa_regiments_reform
-				tercio_reform
+				#tercio_reform
 				fuero_militar_reform
 				ordennancas_reform
 				revive_the_almogavars_reform
@@ -858,7 +863,7 @@ republic = {
 				qollar_aghasi_regiments_reform
 				manrent_reform
 				merchant_arsenal_reform
-				tercios_reform
+				#tercios_reform
 				expanded_black_army_reform
 				#1.36
 				sparapet_office
@@ -871,12 +876,17 @@ republic = {
 				cuman_lancers_reform
 				#1.37 Bohemia
 				vozove_hradby_reform
-				russian_mercenary_guard_reform 
-				#helo
+				russian_mercenary_guard_reform
+
+				### ADDED BY MEGACAMPAIGN ###
 				three_branches_reform
 				sic_palatini_reform
-				# added with mod
+				
 				the_band_of_the_exiles_reform
+
+				auxiliary_astari_reform
+				astarostratha_reform
+				###
 			}
 		}
 		parliamentary_vs_presidential = {
@@ -1150,7 +1160,7 @@ tribal = {
 				ahmudan_system_reform
 				ghazi_reform
 				the_cawa_regiments_reform
-				tercio_reform
+				#tercio_reform
 				fuero_militar_reform
 				ordennancas_reform
 				revive_the_almogavars_reform
@@ -1173,7 +1183,7 @@ tribal = {
 				qollar_aghasi_regiments_reform
 				manrent_reform
 				merchant_arsenal_reform
-				tercios_reform
+				#tercios_reform
 				expanded_black_army_reform
 				#1.36
 				sparapet_office
@@ -1187,6 +1197,11 @@ tribal = {
 				#1.37 Bohemia
 				vozove_hradby_reform
 				russian_mercenary_guard_reform 
+
+				### ADDED BY MEGACAMPAIGN ###
+				auxiliary_astari_reform
+				astarostratha_reform
+				###
 			}
 		}
 		tribal_modernization = {
@@ -1425,7 +1440,7 @@ theocracy = {
 				ahmudan_system_reform
 				ghazi_reform
 				the_cawa_regiments_reform
-				tercio_reform
+				#tercio_reform
 				fuero_militar_reform
 				ordennancas_reform
 				revive_the_almogavars_reform
@@ -1448,7 +1463,7 @@ theocracy = {
 				qollar_aghasi_regiments_reform
 				manrent_reform
 				merchant_arsenal_reform
-				tercios_reform
+				#tercios_reform
 				expanded_black_army_reform
 				#1.36
 				sparapet_office
@@ -1461,10 +1476,15 @@ theocracy = {
 				cuman_lancers_reform
 				#1.37 Bohemia
 				vozove_hradby_reform
-				russian_mercenary_guard_reform 
-				#doubtful
+				russian_mercenary_guard_reform
+
+				### ADDED BY MEGACAMPAIGN ###
 				three_branches_reform
 				sic_palatini_reform
+
+				auxiliary_astari_reform
+				astarostratha_reform
+				###
 			}
 		}
 		secularization = {

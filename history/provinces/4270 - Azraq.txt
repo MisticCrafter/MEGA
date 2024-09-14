@@ -8,6 +8,7 @@ trade_goods = glass
 base_tax = 4
 base_production = 5
 base_manpower = 3
+center_of_trade = 2
 
 add_core = ATX
 discovered_by = east_african

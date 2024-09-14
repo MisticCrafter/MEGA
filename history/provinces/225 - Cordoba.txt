@@ -1,5 +1,5 @@
-owner = ADU
-controller = ADU
+owner = ARC
+controller = ARC
 capital = "Madragal"
 is_city = yes
 culture = andal
@@ -9,7 +9,7 @@ base_tax = 6
 base_production = 10
 base_manpower = 3
 center_of_trade = 2
-add_core = ADU
+add_core = ARC
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian
