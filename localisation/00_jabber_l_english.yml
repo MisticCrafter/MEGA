@@ -355,6 +355,8 @@
  # (Tooltips) for Great Projects
  unlocked_exarchates_tt: "Has unlocked §YExarchates§!."
  unlocks_exarchates_tt: "Unlocks the creation of §YExarchates§!."
+ unlocks_meralinea_tt: "Unlocks the great project '§YMeralinéa, the Old Citadel§!'."
+ unlocks_mascagar_tt: "Unlocks the great ptoject '§YMascagar, the Bladegarden§!'."
  province_is_or_accepts_tigranic_tt: "The religion of §Y[Root.GetName]§! is §YTigranic§! and is either the State or the Syncretic Religion of the owner."
  athens_basilica_catholic_trigger_tt: "The religion of §Y[Root.GetName]§! is §YTigranic§! or §YOrthodox§! and this community has been granted §Yreligious autonomy§!."
 

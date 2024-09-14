@@ -162,9 +162,13 @@ golden_citadel = {
 
 		#what effects happen when this tier is achieved
 		on_upgraded = {
-            custom_tooltip = unlocked_exarchates_tt
+            custom_tooltip = unlocks_exarchates_tt
+			custom_tooltip = unlocks_meralinea_tt
+			custom_tooltip = unlocks_mascagar_tt
 			owner = {
 				set_country_flag = unlocked_exarchates_flag
+				set_country_flag = unlocked_meralinea_flag
+				set_country_flag = unlocked_mascagar_flag
 			}
 		}
 	}
