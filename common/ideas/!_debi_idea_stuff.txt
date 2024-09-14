@@ -77,4 +77,45 @@ TEM_ideas = {
 		diplomatic_upkeep = 1
 	}
 }
-
+Z09_ideas = {
+	start = {
+		defensiveness = 0.15
+		army_tradition_decay = -0.01
+	}
+	
+	bonus = {
+		leader_land_shock = 1
+		leader_land_manuever = 1
+	}
+	
+	trigger = {
+		tag = Z09
+	}
+	free = yes
+	
+	Z09_all_is_one = {
+		missionaries = 1
+	}
+	Z09_antler_crown = {
+		devotion = 1
+		legitimacy = 1
+		horde_unity = 1
+	}
+	Z09_knights_of_the_steppe = { 
+		cavalry_power = 0.25
+	}
+	Z09_life_of_steppe_warrior = {
+		land_attrition = -0.10
+		movement_speed = 0.10
+	}
+	Z09_east_and_west = {
+		core_creation = -0.20
+	}
+	Z09_onward_christian_soldiers = {
+		army_tradition = 0.5
+		army_tradition_from_battle = .5
+	}
+	Z09_one_is_all = {
+		fire_damage_received = -0.10
+	}
+}

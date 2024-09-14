@@ -210,7 +210,8 @@ pagan = {
 			local_missionary_strength = 0.02
 		}
 		country_as_secondary = {
-			army_tradition_decay = -0.1
+			colonists = 1
+			cav_to_inf_ratio = 0.20
 			raze_power_gain = 0.15
 		}
 		can_have_secondary_religion = yes

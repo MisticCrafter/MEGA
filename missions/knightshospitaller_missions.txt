@@ -402,7 +402,7 @@ kni_south_and_africa = {
 
 	kni_fortify_south = {
 		icon = mission_castle_construction
-		position = 10
+		position = 11
 		provinces_to_highlight = {
 			province_id = 4319
 			province_id = 1231
@@ -592,9 +592,10 @@ kninaval = {
 				navy_size = 80
 			}
 		}
-		effect = { 
+
+		effect = {
 			add_country_modifier = {
-				name = kni_crusader_fleet
+				name = "kni_crusader_fleet"
 				duration = -1
 			}
 			add_country_modifier = {
@@ -613,7 +614,7 @@ kninaval = {
 				add_or_upgrade_shipyard_building = yes
 				add_base_production = 2
 			}
-		 } 
+		}
 	}
 
 	kni_masters_seas = {
@@ -694,23 +695,16 @@ kni_regiopolis_brach = {
 	has_country_shield = yes
 	potential = { tag = KNI } 
 
-	kni_megalopolis = {
-		icon = mission_crown_of_wenceslas
-		position = 7
-		required_missions = { kni_city_of_god_six } 
+	kni_cairo_merchants = {
+		icon = mission_subjugate_the_merchants
+		position = 1
+		required_missions = { kni_city_of_god_three } 
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
 
 		effect = {  } 
 	}
-}
-kninavalalternative = {
-	slot = 4
-	generic = no
-	ai = yes
-	has_country_shield = yes
-	potential = { tag = KNI } 
 
 	kni_victoria = {
 		icon = mission_reign_of_women
@@ -737,6 +731,17 @@ kninavalalternative = {
 				duration = -1
 			}
 		}
+	}
+
+	kni_megalopolis = {
+		icon = mission_crown_of_wenceslas
+		position = 7
+		required_missions = { kni_city_of_god_six } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
 }
 kni_pirate = {
@@ -912,7 +917,7 @@ knitrade = {
 
 	kni_alexandrian_trade = {
 		icon = mission_conquer_alexandria
-		position = 13
+		position = 14
 		provinces_to_highlight = {
 			OR = {
 				province_id = 358
@@ -952,24 +957,10 @@ knitrade = {
 		}
 	}
 
-	kni_cairo_merchants = {
-		icon = mission_subjugate_the_merchants
-		position = 12
-		required_missions = { kni_alexandrian_trade } 
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
-	}
-
 	kni_river_of_life = {
 		icon = mission_se_along_the_river
 		position = 14
-		required_missions = {
-			kni_cairo_merchants
-			kni_port_of_berenice
-		}
+		required_missions = { kni_port_of_berenice } 
 		provinces_to_highlight = {
 			OR = {
 				province_id = 362
@@ -1081,6 +1072,17 @@ knitrade = {
 				}
 			}
 		}
+	}
+
+	kni_crossroads_of_the_world = {
+		icon = mission_royal_roads
+		position = 1
+		required_missions = { kni_river_of_life } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
 }
 kni_trade_diplomatic = {
@@ -1431,17 +1433,6 @@ kninavaltrade = {
 
 		effect = {  } 
 	}
-
-	kni_crossroads_of_the_world = {
-		icon = mission_royal_roads
-		position = 15
-		required_missions = { kni_pearl_mediterranean } 
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
-	}
 }
 kni_mediterranean_naval_branch = {
 	slot = 3
@@ -1499,7 +1490,7 @@ landfall_venice = {
 
 	kni_landfall_venice = {
 		icon = mission_raid_on_venice
-		position = 19
+		position = 20
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
@@ -1516,7 +1507,7 @@ landfall_sicily = {
 
 	kni_landfall_sicily = {
 		icon = mission_break_sicily
-		position = 19
+		position = 20
 		provinces_to_highlight = {  } 
 
 		trigger = {  } 
@@ -1565,7 +1556,7 @@ kni_papal_relations = {
 
 	kni_sway_pope = {
 		icon = sway_the_pope
-		position = 22
+		position = 24
 		provinces_to_highlight = {  } 
 
 		trigger = {
@@ -1599,16 +1590,5 @@ kni_papal_relations = {
 				duration = -1
 			}
 		}
-	}
-
-	kni_no_more_muslims = {
-		icon = per_build_the_fire_temples
-		position = 1
-		required_missions = { kni_sway_pope } 
-		provinces_to_highlight = {  } 
-
-		trigger = {  } 
-
-		effect = {  } 
 	}
 }

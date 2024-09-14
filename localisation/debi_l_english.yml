@@ -29,7 +29,7 @@
  kni_city_of_god_two_title:0 "Duo Construir"
  kni_city_of_god_two_desc:0 ""
 
- kni_city_of_god_three_title:0 "Trēs Construir"
+ kni_city_of_god_three_title:0 "Tres Construir"
  kni_city_of_god_three_desc:0 ""
 
  kni_city_of_god_four_title:0 "Quattuor Construir"
@@ -80,11 +80,14 @@
  kni_the_second_city_title:0 "The Second City"
  kni_the_second_city_desc:0 ""
 
- kni_megalopolis_title:0 "Megalopolis"
- kni_megalopolis_desc:0 ""
+ kni_cairo_merchants_title:0 "Cairo Merchants"
+ kni_cairo_merchants_desc:0 ""
 
  kni_victoria_title:0 "Victoria the III"
  kni_victoria_desc:0 ""
+
+ kni_megalopolis_title:0 "Megalopolis"
+ kni_megalopolis_desc:0 ""
 
  kni_pirate_crusaders_title:0 "Pirate Crusaders"
  kni_pirate_crusaders_desc:0 ""
@@ -107,11 +110,11 @@
  kni_alexandrian_trade_title:0 "Alexandrian Trade"
  kni_alexandrian_trade_desc:0 ""
 
- kni_cairo_merchants_title:0 "Cairo Merchants"
- kni_cairo_merchants_desc:0 ""
-
  kni_river_of_life_title:0 "River of Life"
  kni_river_of_life_desc:0 ""
+
+ kni_crossroads_of_the_world_title:0 "Crossroads of the World"
+ kni_crossroads_of_the_world_desc:0 ""
 
  kni_mercantile_relationships_title:0 "Mercantile Relationships"
  kni_mercantile_relationships_desc:0 ""
@@ -125,7 +128,7 @@
  kni_naval_supplies_title:0 "Naval Supplies"
  kni_naval_supplies_desc:0 ""
 
- kni_in_search_of_iron_title:0 "In Search of Iron"
+ kni_in_search_of_iron_title:0 "In Search of Metal"
  kni_in_search_of_iron_desc:0 ""
 
  kni_port_of_damietta_title:0 "Port of Damietta"
@@ -142,9 +145,6 @@
 
  kni_pearl_mediterranean_title:0 "Pearl of the Mediterannean"
  kni_pearl_mediterranean_desc:0 ""
-
- kni_crossroads_of_the_world_title:0 "Crossroads of the World"
- kni_crossroads_of_the_world_desc:0 ""
 
  kni_struggle_mediterranean_title:0 "Struggle for the Mediterranean"
  kni_struggle_mediterranean_desc:0 ""
@@ -163,9 +163,6 @@
 
  kni_sway_pope_title:0 "Influence the Pope"
  kni_sway_pope_desc:0 ""
-
- kni_no_more_muslims_title:0 "No More Muslims"
- kni_no_more_muslims_desc:0 ""
 
 
  kni_cairo_god_title:0 "City of God"
