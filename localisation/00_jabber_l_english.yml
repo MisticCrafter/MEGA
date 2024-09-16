@@ -360,6 +360,12 @@
  province_is_or_accepts_tigranic_tt: "The religion of §Y[Root.GetName]§! is §YTigranic§! and is either the State or the Syncretic Religion of the owner."
  athens_basilica_catholic_trigger_tt: "The religion of §Y[Root.GetName]§! is §YTigranic§! or §YOrthodox§! and this community has been granted §Yreligious autonomy§!."
 
+ # (Tooltips) for Estate Modifiers
+ EST_VAL_HAS_NO_NOBILITY: "Abolished the Old Nobility: §G$VAL$§!"
+ EST_VAL_IS_RULED_BY_SINTRAS: "House of Sintra: §G$VAL$§!"
+ EST_VAL_IS_ANDAL: "Andal Realm: §G$VAL$§!"
+ EST_VAL_HAS_ASTARI: "Astari Order: §R$VAL$§!"
+
  # (Tooltips) for Estate Privileges
  unlock_privilege_estate_burghers_tigranic_tolerance_tt: "Enable the [Root.GetBurghersOrFallbackName] privilege '§YGrant Tigranic Autonomy§!'."
  estate_burghers_tigranic_tolerance_effect_tooltip: "Every owned province of §YTigranic§! faith gains:\nLocal Missionary Strength: §R-100%§!\nLocal Religious Unity Contribution: §G-100%§!"
@@ -648,7 +654,35 @@
  tigranic_call_the_banners: "§JCall the Banners§!"
  desc_tigranic_call_the_banners: "Our monarch will call for all of their banners in the name of their shared faith - those who join will gain the '§YTigranic Crusade§!' modifier so long as they are in a war against our religious enemies."
  ###
+
+ ### OTHER FAITHS ###
+
+ # (Abyss Mystic) Blessings
+ lessons_empress: "Lessons of Seramida, the Empress"
+ lessons_scholar: "Lessons of Ithrilvar, the Scholar"
+ lessons_traveller: "Lessons of Athaz, the Traveller"
+ lessons_orator: "Lessons of Havi, the Orator"
+ lessons_widow: "Lessons of Swiggan, the Widow"
+ lessons_shaman: "Lessons of Thylacine, the Shaman"
+ lessons_builder: "Lessons of Executioner, the Builder"
+ lessons_karnak: "Lessons of Khara-Mera"
+
+ ###
+
+ ### ESTATES ###
+
+ estate_knights: "Knights"
+ estate_knights_desc: "This estate represents the knightly orders operating in your country. Formed in the bygone Age of Crusades to aid the adventurous rulers of Europe in their arduous efforts to seize the Sword Coast, their privileges are guaranteed by centuries-old contracts and agreements, as well as entrenched concessions. In that age, their primary duty was to participate in the eponymous Crusades. But that age is long gone, and many are uncertain as to what the future holds for these orders."
+ estate_astari: "Astari"
+ estate_astari_desc: "Before the fall of Byzantium, it was not uncommon for disgraced nobles to find new purpose in the Crusades; as a result, there was hardly ever a shortage of noble households crossing the Aegean eastwards. Some opted to stop in Greece, either to simply rest and resupply; or to accrue some glory and gold by making good on deals struck with local lords. One such campaign led a Crusader army, battered and weak, to request aid and shelter within the walls of Athens, then our seat of power. They were lead by Raymond de Lusignan, who had fought with the then-Duke of Hellas on prior wars against common enemies in Anatolia and beyond. Recognizing his old brother-in-arms, the Duke welcomed the crusaders.\n\nHaving fled the political fires of Aquitania, Raymond made Hellas his new home, and his crusaders followed suit. Emboldened by his new liege, he began to shape his troops into a peculiar order: initially mere retainers and palace guards, the 'Astari' - as they were henceforth named - grew in importance and favor as the Dukes grew ever wearier of their feudal subjects' reliability, culminating in their establishment as the Dukes' personal, permanent military; the first of its kind.\n\nEver since then, the Astari Order has grown tenfold, incorporating both wayward crusaders and youthful greeks, never suffering in its legendary prowess and loyalty for it. Their unparalleled prestige has earned them both the favour of Archons and the distate of nobles in equal measure, who see their continued patronage as a threat to their positions and titles..."
  
+ country_estate_knights_name: "[This.GetKnightsName]"
+
+ estate_knights_ownership: "[Country.GetKnightsName] Land Ownership"
+ knights_loyalty_modifier: "[Country.GetKnightsName] Loyalty Equilibrium"
+ knights_influence_modifier: "[Country.GetKnightsName] Influence"
+ knights_absolutism_loyalty_modifier: "[Country.GetKnightsName] Loyalty Equilibrium Negator"
+ mechanic_no_knights_loyalty_loss_from_absolutism_yes: "Absolutism no longer reduces §Y[Country.GetKnightsName]§! loyalty."
 
  ### ESTATE PRIVILEGES ###
 
@@ -661,18 +695,22 @@
  estate_burghers_tigranic_tolerance_desc: "The Tigranic Rite might be foreign to our own Christian values, but unlike other heresies they do not seek to spread their faith within our realm. By granting them a degree of autonomy in their religious practices we can ensure their loyalty to our state."
  estate_burghers_tigranic_tolerance_effect_tooltip: "Every owned province of §YTigranic§! faith gains:\nLocal Missionary Strength: §R-100%§!\nLocal Religious Unity Contribution: §G-100%§!"
  estate_burghers_tigranic_tolerance_revoke_effect_tooltip: "The modifier '§YGranted Tigranic Autonomy§!' is removed from all owned §YTigranic§! provinces."
+
+ # Knights, Astari (Privileges)
+ estate_astari_arcagarda: "Arcagarda"
+ estate_astari_arcagarda_desc: "aaa"
  ###
  
  ### GREAT PROJECTS ###
 
- # Andal (Great Projects)
+ # (Great Projects) in Andalos
  golden_citadel: "The Summer Court"
  cathedral_madragal: "Temple-Cathedral of Madragal"
  nebrissa: "Nebrissa, Port of Emperors"
  seat_of_primarchs: "Seat of the Primarch"
  mascagar: "Mascagar"
 
- # Misc. (Great Projects)
+ # (Great Projects) in Other Lands
  athens_basilica: "Basilica of the Gilded Eye"
 
  ###
@@ -691,6 +729,8 @@
 
 
  ### DYNAMIC LOCALIZATION ###
+
+ # For dynamic estate names/descriptions, see the ESTATES section
 
  # Colonial Nation Names
  ATTICA: "Attica"

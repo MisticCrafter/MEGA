@@ -1806,7 +1806,7 @@ manding_area = { #4
 }
 
 futa_jallon_area = { #3
-	1117 1121 4083
+	1117 1121
 }
 
 kaabu_area = {
@@ -1918,7 +1918,7 @@ kongo_area = { #5
 }
 
 angola_namibia_area = { #5
-	1098 1167 1171 1172 1174 
+	1098 1167 1171 1172 1174 4083
 }
 
 cape_of_good_hope_area = { #5
