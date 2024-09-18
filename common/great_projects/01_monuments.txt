@@ -5580,7 +5580,7 @@ registan_square = {
 	#can we build it?
 	build_trigger = {
 		province_is_or_accepts_religion_group = {
-			religion_group = muslim
+			religion_group = christian
 		}
 	}
 
@@ -5597,14 +5597,14 @@ registan_square = {
 	#can our country use it?
 	can_use_modifiers_trigger = {
 		province_is_or_accepts_religion_group = {
-			religion_group = muslim
+			religion_group = christian
 		}
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
 		province_is_or_accepts_religion_group = {
-			religion_group = muslim
+			religion_group = christian
 		}
 	}
 
@@ -9927,9 +9927,6 @@ kaaba = {
 	#can our country use it?
 	can_use_modifiers_trigger = {
 		OR = {
-			province_is_or_accepts_religion_group = {
-				religion_group = muslim
-			}
 			owner = {
 				custom_trigger_tooltip = {
 					tooltip = BYZ_may_use_kaaba 
@@ -9942,9 +9939,6 @@ kaaba = {
 	#can our country upgrade it?
 	can_upgrade_trigger = {
 		OR = {
-			province_is_or_accepts_religion_group = {
-				religion_group = muslim
-			}
 			owner = {
 				custom_trigger_tooltip = {
 					tooltip = BYZ_may_use_kaaba 
@@ -10235,9 +10229,6 @@ holy_city_jerusalem = {
 	build_trigger = {
 		OR = {
 			province_is_or_accepts_religion_group = {
-				religion_group = muslim
-			}
-			province_is_or_accepts_religion_group = {
 				religion_group = christian
 			}
 			province_is_or_accepts_religion = {
@@ -10260,9 +10251,6 @@ holy_city_jerusalem = {
 	can_use_modifiers_trigger = {
 		OR = {
 			province_is_or_accepts_religion_group = {
-				religion_group = muslim
-			}
-			province_is_or_accepts_religion_group = {
 				religion_group = christian
 			}
 			province_is_or_accepts_religion = {
@@ -10274,9 +10262,6 @@ holy_city_jerusalem = {
 	#can our country upgrade it?
 	can_upgrade_trigger = {
 		OR = {
-			province_is_or_accepts_religion_group = {
-				religion_group = muslim
-			}
 			province_is_or_accepts_religion_group = {
 				religion_group = christian
 			}
@@ -10806,7 +10791,7 @@ baiturrahman_grand_mosque = {
 
 	build_trigger = {
 		province_is_or_accepts_religion_group = {
-			religion_group = muslim
+			religion_group = dharmic
 		}
 	}
 
@@ -10818,13 +10803,13 @@ baiturrahman_grand_mosque = {
 
 	can_use_modifiers_trigger = {
 		province_is_or_accepts_religion_group = {
-			religion_group = muslim
+			religion_group = dharmic
 		}
 	}
 
 	can_upgrade_trigger = {
 		province_is_or_accepts_religion_group = {
-			religion_group = muslim
+			religion_group = dharmic
 		}
 	}
 
@@ -13456,7 +13441,7 @@ holy_city_kairouan = {
 
 	build_trigger = {
 		province_is_or_accepts_religion_group = {
-			religion_group = muslim
+			religion_group = christian
 		}
 	}
 
@@ -13468,13 +13453,13 @@ holy_city_kairouan = {
 
 	can_use_modifiers_trigger = {
 		province_is_or_accepts_religion_group = {
-			religion_group = muslim
+			religion_group = christian
 		}
 	}
 
 	can_upgrade_trigger = {
 		province_is_or_accepts_religion_group = {
-			religion_group = muslim
+			religion_group = christian
 		}
 	}
 
@@ -14168,8 +14153,17 @@ maidan-e_naqsh-e_jahan = {
 	type = monument
 
 	build_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = muslim
+		{
+			AND = {
+				culture_group = crusader_group
+				}
+				province_is_or_accepts_culture = yes
+			AND = {
+				OR = {
+					culture_group = iranian
+				}
+				province_is_or_accepts_culture = yes
+			}
 		}
 	}
 
@@ -14180,14 +14174,32 @@ maidan-e_naqsh-e_jahan = {
 	}
 
 	can_use_modifiers_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = muslim
+		OR = {
+			AND = {
+				culture_group = crusader_group
+				}
+				province_is_or_accepts_culture = yes
+			AND = {
+				OR = {
+					culture_group = iranian
+				}
+				province_is_or_accepts_culture = yes
+			}
 		}
 	}
 
 	can_upgrade_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = muslim
+		{
+			AND = {
+				culture_group = crusader_group
+				}
+				province_is_or_accepts_culture = yes
+			AND = {
+				OR = {
+					culture_group = iranian
+				}
+				province_is_or_accepts_culture = yes
+			}
 		}
 	}
 
@@ -15650,9 +15662,7 @@ spiral_minaret_samarra = {
 	type = monument
 
 	build_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = muslim
-		}
+		is_or_was_tag = { tag = PAP }
 	}
 
 	on_built = {
@@ -15662,15 +15672,11 @@ spiral_minaret_samarra = {
 	}
 
 	can_use_modifiers_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = muslim
-		}
+		is_or_was_tag = { tag = PAP }
 	}
 
 	can_upgrade_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = muslim
-		}
+		is_or_was_tag = { tag = PAP }
 	}
 
 	keep_trigger = {
