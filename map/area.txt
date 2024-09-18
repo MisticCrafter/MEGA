@@ -589,7 +589,7 @@ east_anglia_area = { #3
 ########################################
 
 jutland_area = { #4
-	15 1984 4142 4149
+	15 1984 4142 4149 13
 }
 
 denmark_area = { #4 +Bornholm
@@ -1040,8 +1040,8 @@ weser_area = { #4
 	54 55 1874 4771
 }
 
-holstein_area = { #3
-	13 1775 4141 
+holstein_area = { #2
+	1775 4141 
 }
 
 lower_saxony_area = { #4
