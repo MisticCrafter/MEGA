@@ -1404,11 +1404,11 @@ djerba_area = { #3
 }
 
 algiers_area = { #3
-	336 2465 4562
+	336 2465 4562 337
 }
 
 barbary_coast_area = { #3
-	337 2461 338
+	2461 338
 }
 
 kabylia_area = { #3
@@ -1416,7 +1416,7 @@ kabylia_area = { #3
 }
 
 hautes_plaines_area = { #3
-	350 2459 2462 2463 
+	2459 2462 2463 2461 338
 }
 
 ouled_nail_area = { #3
@@ -1424,7 +1424,7 @@ ouled_nail_area = { #3
 }
 
 north_saharan_area = { #5
-	2456 2457 2472
+	2456 2457 2472 350
 }
 
 tafilalt_area = { #4

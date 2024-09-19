@@ -298,7 +298,6 @@ carpathia_region = {
 
 egypt_region = {
 	areas = {
-		lower_nubia_area
 		cyrenaica_area
 		gulf_of_arabia_area
 		al_wahat_area
@@ -508,6 +507,7 @@ horn_of_africa_region = {
 		damot_area
 		aussa_area
 		shewa_area
+		lower_nubia_area
 	}
 }
 
