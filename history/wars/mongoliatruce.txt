@@ -1,0 +1,19 @@
+
+
+name = "truces"           # Name of the war in the war screen
+war_goal = {
+    type = take_claim       # The wargoal to use from 00_wargoals.txt
+    casus_belli = cb_conquest    # The cb to use from 00_cb_types.txt
+    province = 716
+}
+
+# Used to start the war at the specified date
+1443.11.11 = {
+    add_attacker = KHA    # Adds a country to the attackers side
+    add_defender = Z09    # Adds a country to the defenders side
+}
+# Used to end the war at the specified date
+1444.11.10 = {
+    rem_attacker = KHA    # Removes a country to the attackers side
+    rem_defender = Z09    # Removes a country to the defenders side
+}
