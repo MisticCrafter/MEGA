@@ -207,7 +207,7 @@ theodosian_walls = {
 	}
 	tier_1 = {
 		upgrade_time = { months = 120 }
-		cost_to_upgrade = { factor = 500 }
+		cost_to_upgrade = { factor = 1000 }
 		province_modifiers = {
 			local_defensiveness = 0.25
 			fort_level = 1
@@ -223,7 +223,7 @@ theodosian_walls = {
 	}
 	tier_2 = {
 		upgrade_time = { months = 240 }
-		cost_to_upgrade = { factor = 750 }
+		cost_to_upgrade = { factor = 2500 }
 		province_modifiers = {
 			local_defensiveness = 0.45
 			fort_level = 1
@@ -241,7 +241,7 @@ theodosian_walls = {
 	}
 	tier_3 = {
 		upgrade_time = { months = 480 }
-		cost_to_upgrade = { factor = 1500 }
+		cost_to_upgrade = { factor = 5000 }
 		province_modifiers = {
 			local_defensiveness = 0.65
 			fort_level = 2
@@ -365,7 +365,7 @@ parramentu_sicilianu = {
 	}
 	tier_1 = {
 		upgrade_time = { months = 120 }
-		cost_to_upgrade = { factor = 500 }
+		cost_to_upgrade = { factor = 1000 }
 		province_modifiers = {
 			
 		}
@@ -375,12 +375,13 @@ parramentu_sicilianu = {
 		region_modifier = { }
 		country_modifiers = {
 			num_of_parliament_issues = 1
+		    parliament_backing_chance = 0.05
 		 }
 		on_upgraded = { }
 	}
 	tier_2 = {
 		upgrade_time = { months = 240 }
-		cost_to_upgrade = { factor = 750 }
+		cost_to_upgrade = { factor = 2500 }
 		province_modifiers = {
 			
 		}
@@ -392,12 +393,13 @@ parramentu_sicilianu = {
 		}
 		country_modifiers = {
 			num_of_parliament_issues = 2
+			parliament_backing_chance = 0.10
 		}
 		on_upgraded = { }
 	}
 	tier_3 = {
 		upgrade_time = { months = 480 }
-		cost_to_upgrade = { factor = 1500 }
+		cost_to_upgrade = { factor = 5000 }
 		province_modifiers = {
 			
 		}
@@ -409,6 +411,8 @@ parramentu_sicilianu = {
 		}
 		country_modifiers = {
 			num_of_parliament_issues = 3
+			parliament_backing_chance = 0.15
+			election_cycle = -1
 		}
 		on_upgraded = { }
 	}
