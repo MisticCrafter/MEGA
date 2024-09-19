@@ -13557,7 +13557,7 @@ imam_hussein_al-abbas = {
 
 	build_trigger = {
 		province_is_or_accepts_religion = {
-			religion = shiite
+			religion = catholic
 		}
 	}
 
@@ -13569,13 +13569,13 @@ imam_hussein_al-abbas = {
 
 	can_use_modifiers_trigger = {
 		province_is_or_accepts_religion = {
-			religion = shiite
+			religion = catholic
 		}
 	}
 
 	can_upgrade_trigger = {
 		province_is_or_accepts_religion = {
-			religion = shiite
+			religion = catholic
 		}
 	}
 
@@ -15650,7 +15650,9 @@ spiral_minaret_samarra = {
 	type = monument
 
 	build_trigger = {
-		is_or_was_tag = { tag = PAP }
+		owner = {
+		is_or_was_tag = { tag = PAP } 
+		}
 	}
 
 	on_built = {
@@ -15660,13 +15662,16 @@ spiral_minaret_samarra = {
 	}
 
 	can_use_modifiers_trigger = {
+	owner = {
 		is_or_was_tag = { tag = PAP }
+	    }
 	}
 
 	can_upgrade_trigger = {
+		owner = {
 		is_or_was_tag = { tag = PAP }
+	       }
 	}
-
 	keep_trigger = {
 	}
 
