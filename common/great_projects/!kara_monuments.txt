@@ -103,6 +103,7 @@ karnak_temple = {
         # What modifiers are given to the province the project is located in
         province_modifiers = {
             local_defensiveness = 0.10
+            local_defender_dice_roll_bonus = 1
         }
 
         # What modifiers are given to the area of the province the project is located in
@@ -112,7 +113,7 @@ karnak_temple = {
 
         # What modifiers are given to the nation that owns the monument
         country_modifiers = {
-            all_power_cost = -0.01
+            defensiveness = 0.1
         }
 
         # What modifiers are given to the region of the province the project is located in
@@ -140,6 +141,7 @@ karnak_temple = {
         # What modifiers are given to the province the project is located in
         province_modifiers = {
             local_defensiveness = 0.15
+            local_defender_dice_roll_bonus = 1
         }
 
         # What modifiers are given to the area of the province the project is located in
@@ -149,7 +151,7 @@ karnak_temple = {
 
         # What modifiers are given to the nation that owns the monument
         country_modifiers = {
-            all_power_cost = -0.025
+            defensiveness = 0.2
         }
 
         # What modifiers are given to the region of the province the project is located in
@@ -177,6 +179,7 @@ karnak_temple = {
         # What modifiers are given to the province the project is located in
         province_modifiers = {
             local_defensiveness = 0.10
+            local_defender_dice_roll_bonus = 1
         }
 
         # What modifiers are given to the area of the province the project is located in
@@ -186,7 +189,7 @@ karnak_temple = {
 
         # What modifiers are given to the nation that owns the monument
         country_modifiers = {
-            all_power_cost = -0.05
+            defensiveness = 0.4
         }
 
         # What modifiers are given to the region of the province the project is located in
