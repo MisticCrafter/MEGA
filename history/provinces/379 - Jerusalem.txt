@@ -21,3 +21,4 @@ discovered_by = sub_saharan
 discovered_by = western
 add_province_triggered_modifier = jerusalem_held
 add_province_triggered_modifier = promised_land_modifier
+add_cardinal = yes

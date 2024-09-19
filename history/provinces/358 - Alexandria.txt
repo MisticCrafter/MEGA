@@ -21,3 +21,4 @@ discovered_by = ottoman
 discovered_by = sub_saharan
 discovered_by = western
 add_province_triggered_modifier = coptic_alexandria
+add_cardinal = yes
