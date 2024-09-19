@@ -1,15 +1,11 @@
-owner = DAR
-controller = DAR
 capital = "Al-Junaynahr"
-is_city = yes
 culture = daju
 religion = abyss_mystic
 trade_goods = wool
 fort_15th = yes
 base_tax = 1
-base_production = 2
-base_manpower = 2
-add_core = DAR
+base_production = 1
+base_manpower = 1
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian
