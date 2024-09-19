@@ -348,12 +348,12 @@ parramentu_sicilianu = {
 	starting_tier = 1
 	type = monument
 	can_be_moved = no
-	build_trigger = { }
+	build_trigger = {is_capital = yes }
 	on_built = { }
 	on_destroyed = { }
-	can_use_modifiers_trigger = { }
-	can_upgrade_trigger = { }
-	keep_trigger = { }
+	can_use_modifiers_trigger = {is_capital = yes }
+	can_upgrade_trigger = { is_capital = yes}
+	keep_trigger = {}
 	tier_0 = {
 		upgrade_time = { months = 0	}
 		cost_to_upgrade = {	factor = 0 }
