@@ -1,0 +1,27 @@
+CRU_convert_to_crusader_culture = { #It's here in case I want to add anatolian-themed cultures.
+	if = {
+		limit = {
+			OR = {
+				area = kerman_area
+				area = mogostan_area
+                area = makran_area
+                area = persian_gulf_coast
+			}
+		}
+		change_culture = crusader_baluchi
+	}
+	else_if = {
+		limit = {
+			area = kabulistan_area
+            area = ghor_area
+            area = balkh_area
+            area = sistan_area
+            area = herat_area
+            area = merv_area
+		}
+		change_culture = crusader_afghan
+	}
+	else = {
+		change_culture = crusader_persian
+	}
+}
