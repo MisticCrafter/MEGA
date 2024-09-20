@@ -132,8 +132,6 @@ kni_out_ally = {
 kni_coastal_raiding_modifier = {
 	may_perform_slave_raid = yes
 	privateer_efficiency = 0.33
-	country_diplomatic_power = -1
-	country_military_power = -1
 }
 kni_increasing_development = {
 	development_cost = -0.05

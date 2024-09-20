@@ -64,7 +64,7 @@ TEM_ideas = {
 	}
 	TEM_deliver_unto_evil = {
 		shock_damage = 0.15
-		morale_damage = .05
+		morale_damage = 0.05
 	}
 	TEM_army_with_an_order = {
 		special_unit_forcelimit = 0.15
