@@ -1,0 +1,56 @@
+namespace = crusader_conversion  
+
+province_event = {
+	id = crusader_conversion.1
+	title = crusader_conversion.1.t
+	desc = crusader_conversion.1.d
+	picture = FARMING_eventPicture
+	
+	trigger = {
+		owner = {
+			culture_group = crusader_group
+			has_country_flag = CRUS_conversion
+		}
+		culture_group = iranian 
+        culture_group = chaldean
+		CRUS_eligible_province_for_culture_conversion = yes
+	}
+	
+	goto = ROOT
+	
+	mean_time_to_happen = {
+		months = 240
+		modifier = {
+			factor = 10
+			NOT = {
+				OR = {
+					region = persia_region
+					region = khorasan_region
+                    area = iraq_arabi_area
+                    area = basra_area
+                    area = al_jazira_area
+                    area = shahrizor_area
+				}
+			}
+		}
+		modifier = {
+			factor = 0.50
+			owner = {
+				has_country_flag = CRUSADER_EFFORTS
+			}
+		}
+	}
+	
+	option = {
+		name = crusader_conversion.1.a
+		
+		ai_chance = {
+			factor = 1
+		}
+		
+		CRU_convert_to_crusader_culture = yes
+	}
+}
+
+
+

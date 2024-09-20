@@ -3,7 +3,7 @@ add_government_reform = holy_horde_reform
 government_rank = 2
 technology_group = western
 religion = catholic
-primary_culture = ostyaki
+primary_culture = crusader_siberian
 capital = 4688
 set_country_flag = ZZZ_generated_converter_nation
 1444.11.11= {
@@ -15,7 +15,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		mil = 4
 		birth_date = 1406.1.22
 		religion = catholic
-		culture = crusader_levantine
+		culture = crusader_siberian
 	}
 	add_ruler_personality = bold_fighter_personality
 	add_ruler_personality = tactical_genius_personality
@@ -30,7 +30,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		death_date = 1478.1.25
 		female = yes
 		religion = catholic
-		culture = crusader_levantine
+		culture = crusader_siberian
 	}
 	add_queen_personality = drunkard_personality
 	add_queen_personality = zealot_personality

@@ -321,7 +321,7 @@ colosseum = {
 		upgrade_time = { months = 480 }
 		cost_to_upgrade = { factor = 1500 }
 		province_modifiers = {
-			tax_income = 12
+			tax_income = 24
 			local_tax_modifier = 1
 		}
 		area_modifier = {
