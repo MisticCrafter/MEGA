@@ -730,7 +730,7 @@ country_event = {
 		name = flavor_tigranic.21.d
 		highlight = yes
 		trigger = {
-			has_reform = astarostratha_reform
+			has_reform = themata_reform
 		}
 
 		country_event = { id = flavor_tigranic.22 }

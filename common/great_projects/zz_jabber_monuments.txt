@@ -1152,7 +1152,7 @@ mascagar = {
 				owner = {
 					OR = {
 						has_reform = auxiliary_astari_reform
-						has_reform = astarostratha_reform
+						has_reform = themata_reform
 					} 
 				}
 			}
@@ -1205,7 +1205,7 @@ mascagar = {
 				owner = {
 					OR = {
 						has_reform = auxiliary_astari_reform
-						has_reform = astarostratha_reform
+						has_reform = themata_reform
 					} 
 				}
 			}
@@ -1259,7 +1259,7 @@ mascagar = {
 				owner = {
 					OR = {
 						has_reform = auxiliary_astari_reform
-						has_reform = astarostratha_reform
+						has_reform = themata_reform
 					} 
 				}
 			}

@@ -35,11 +35,16 @@
  # Modifiers
  guadiana_estuary_modifier: "Tarthes Estuary"
  desc_guadiana_estuary_modifier: "Controlling the important river estuary of Tarthes strengthens our hold of the trade in the region."
+ # Missionsv
+ eth_eliminate_the_semien_rebels_title: "Uncontested Hegemony"
+ eth_eliminate_the_semien_rebels_desc: "For centuries, the Crown has been troubled by pests. Mad crusaders here, treacherous Nubians there, opportunistic nobles elsewhere - all of them came pecking at our feet, snatching swaths of land in our darkest moments. Enough is enough." 
+ eth_find_other_christians_title: "Contact with Andalos"
+ eth_find_other_christians_desc: "Due to the fervor and zeal of Christian Europe, our kingdom - which had for centuries remained isolated and separated from the heart of Christianity - restablished ancient connections with the likes of Italia, Achaia and Anatolia. Initially, we were ecstatic at seeing our christian brethren once again, but this would not last. Perceiving our rites as 'heretical', they seized the opportunity and pounced upon our shores, snatching Zeila, Aussa and Maida. We have since recovered, but the wound has not yet healed.\n\nIn recent years, queer merchants have turned up on our ports, claiming to be as Christian as we are, though not a crusader by any means, finding the mere notion of that disturbing - they claim to hail from 'Andalos', a kingdom in faraway Iberia, and say that their king - archon? - is quite interested in accessing our spice-rich trade routes. The premise of a Christian ally opposed to the crusader vermin is a tempting one, but we must not rush ourselves into ruin once again."
  # Misc
  auxiliary_astari_reform: "Auxiliary Astarians"
  auxiliary_astari_reform_desc: "The Lords Astarii have more than proved their mettle, and much of Great Andalos' military success can be laid solely at their feet. Despite their origins, they have come to be famously and staunchly loyal to their Andal lords. They are, however, still men - and men can be flexible when circumstances are right. Let us persuade some of these warriors to fight under our banners, so that we may share in the glory of their prowess."
- astarostratha_reform: "Astarostratha"
- astarostratha_reform_desc: "\n\nEver since then, the Astari Order has grown tenfold, incorporating both wayward crusaders and youthful greeks, never suffering in its legendary prowess and loyalty for it: they have defended the House of Sintra a thousand times and now, as a part and parcel of the Archon's armies, will do so for Andalos entire."
+ themata_reform: "The Seven Themata"
+ themata_reform_desc: "With the abolition of the nobility, the duties and responsibilities traditionally attributed to the aristocracy were split between the Templars and the Knights Astari: though exact charges varied over the centuries, the Templars were generally entrusted with civil administration of the land, whereas the Knights Astari were tasked with enforcing the law and composing local armies which could be called upon in times of need.\n\nThese were the legendary 'Themata', named as such after their spiritual byzantine predecessors and modelled after the renowned legions of Imperial Rome. Each was led by a Grandmaster, numbering seven in total, who was in turn elected by senior members of the army every five years."
  TERCIO_NAME: "$NUM$$ORDER$ Astarotagma of $HOME$"
  MODIFIER_ALLOWED_TERCIO_FRACTION: "Astari Force Limit Fraction"
  MODIFIER_LOCAL_HAS_TERCIO: "Province Allows Astari Infantry"

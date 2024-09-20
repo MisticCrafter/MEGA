@@ -245,6 +245,7 @@
 
  # (Modifiers) from Andalos Events
  ARC_african_alliance: "Andal Weaponry"
+ ARC_abyssinia_alliance: "Andal Weaponry"
  ARC_hellenic_refugees: "Hellenic Refugees"
  ARC_house_united: "A House United"
 
@@ -745,4 +746,28 @@
  ### BUILDINGS ###
  building_venetian_quarters: "Venetian Quarters"
  building_venetian_quarters_desc: "A modest district of the realm's capital gifted to the newly-established Venetian community. Despite the acts committed against them, the Venetians still hold onto much of their old lives, namely their skills and connections, both of which have enhanced our own fortunes significantly."
+ ###
+
+ ### SUBJECT TYPES ###
+ 
+ # Vicerroyalty
+ vicerroyalty: "Vicerroyalty"
+ vicerroyalty_long_desc: "Vicerroyalties are autonomous dependencies of sovereign monarchies, often emerging as concessions made following the conquest or annexation of other kingdoms. They are tasked with enforcing their overlord's rule and law on their lands and must follow their overlord to war, but receive considerable financial support in return."
+ vicerroyalty_is_our: "§Y$NAME$§! is our Vicerroyalty."
+ vicerroyalty_title: "Vicerroyalty"
+ vicerroyalty_title_plural: "Vicerroyalties"
+ is_vicerroyalty: "Is a Vicerroyalty"
+ vicerroyalty_overlord: "Vicerroyalty Overlord"
+ vicerroyalty_subject: "Vicerroyalty Subject"
+
+ # Dominion
+ dominion: "Dominion"
+ dominion_long_desc: "Dominions are autonomous regions of sovereign nations. They have greater control over their revenues and incomes, but are generally engineered and structured so as to provide a greater fighting force for their overlord than what could be mustered via direct rule."
+ dominion_is_our: "§Y$NAME$§! is our Dominion."
+ dominion_title: "Dominion"
+ dominion_title_plural: "Dominions"
+ is_dominion: "Is a Dominion."
+ dominion_overlord: "Dominion Overlord"
+ dominion_subject: "Dominion Subject"
+
  ###

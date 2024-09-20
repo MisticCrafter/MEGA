@@ -355,7 +355,7 @@ monarchy = {
 				sic_palatini_reform
 
 				auxiliary_astari_reform
-				astarostratha_reform
+				themata_reform
 				###
 			}
 		}
@@ -885,7 +885,7 @@ republic = {
 				the_band_of_the_exiles_reform
 
 				auxiliary_astari_reform
-				astarostratha_reform
+				themata_reform
 				###
 			}
 		}
@@ -1200,7 +1200,7 @@ tribal = {
 
 				### ADDED BY MEGACAMPAIGN ###
 				auxiliary_astari_reform
-				astarostratha_reform
+				themata_reform
 				###
 			}
 		}
@@ -1483,7 +1483,7 @@ theocracy = {
 				sic_palatini_reform
 
 				auxiliary_astari_reform
-				astarostratha_reform
+				themata_reform
 				###
 			}
 		}

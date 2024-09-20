@@ -1,5 +1,5 @@
 dependency = {
-	subject_type = appanage
+	subject_type = "vicerroyalty"
 	first = ARC 
 	second = POR 
 	start_date="1444.11.11"
@@ -7,7 +7,7 @@ dependency = {
 }
 
 dependency = {
-	subject_type = appanage
+	subject_type = "vicerroyalty"
 	first = ARC 
 	second = CAS 
 	start_date="1444.11.11"
@@ -15,7 +15,7 @@ dependency = {
 }
 
 dependency = {
-	subject_type = appanage
+	subject_type = "vicerroyalty"
 	first = ARC 
 	second = GAL 
 	start_date="1444.11.11"
@@ -23,7 +23,7 @@ dependency = {
 }
 
 dependency = {
-	subject_type = appanage
+	subject_type = "vicerroyalty"
 	first = ARC 
 	second = ASU 
 	start_date="1444.11.11"
@@ -31,7 +31,7 @@ dependency = {
 }
 
 dependency = {
-	subject_type = appanage
+	subject_type = "vicerroyalty"
 	first = ARC 
 	second = LON 
 	start_date="1444.11.11"
@@ -39,7 +39,7 @@ dependency = {
 }
 
 dependency = {
-	subject_type = appanage
+	subject_type = "vicerroyalty"
 	first = ARC 
 	second = NAV 
 	start_date="1444.11.11"

@@ -20,14 +20,14 @@ estate_astari_arcagarda = {
         has_estate = estate_nobles
     }
     can_revoke = {
-        has_reform = astarostratha_reform
+        has_reform = themata_reform
     }
     penalties = {
         nobles_loyalty_modifier = -0.2
         nobles_influence_modifier = -0.1
     }
     benefits = {
-        allowed_tercio_fraction = 0.05
+        amount_of_tercio = 14
         has_tercio = yes
     }
     ai_will_do = {

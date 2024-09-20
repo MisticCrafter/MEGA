@@ -249,6 +249,11 @@ estate_burghers = {
 				religion_group = pagan
 				religion_group = jewish_group
 				religion_group = zoroastrian_group
+				primary_culture = andal
+				AND = {
+					religion = tigranic
+					NOT = { culture_group = iberian }
+				}
 			}
 		}
 	}

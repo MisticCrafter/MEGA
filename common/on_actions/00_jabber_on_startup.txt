@@ -17,10 +17,10 @@ on_startup = {
 		limit = {
 			tag = PAP
 			tag = PER
-			tag = KHO
+			#tag = KHO
 			tag = BAL
 			tag = AFG
-			tag = Z09
+			tag = KRY
 		}
 		set_country_flag = CRUS_conversion
 	}
