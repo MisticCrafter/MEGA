@@ -21,6 +21,15 @@ CRU_convert_to_crusader_culture = { #It's here in case I want to add anatolian-t
 		}
 		change_culture = crusader_afghan
 	}
+    else_if = {
+		limit = {
+		    area = iraq_arabi_area
+            area = basra_area
+            area = al_jazira_area
+            area = shahrizor_area
+		}
+		change_culture = crusader_mesopotamian
+	}
 	else = {
 		change_culture = crusader_persian
 	}

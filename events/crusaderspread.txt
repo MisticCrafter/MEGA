@@ -12,6 +12,7 @@ province_event = {
 			has_country_flag = CRUS_conversion
 		}
 		culture_group = iranian 
+        culture_group = chaldean
 		CRUS_eligible_province_for_culture_conversion = yes
 	}
 	
@@ -25,6 +26,10 @@ province_event = {
 				OR = {
 					region = persia_region
 					region = khorasan_region
+                    area = iraq_arabi_area
+                    area = basra_area
+                    area = al_jazira_area
+                    area = shahrizor_area
 				}
 			}
 		}
