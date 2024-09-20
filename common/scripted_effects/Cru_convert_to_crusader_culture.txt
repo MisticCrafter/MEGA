@@ -1,4 +1,4 @@
-CRU_convert_to_crusader_culture = { #It's here in case I want to add anatolian-themed cultures.
+CRU_convert_to_crusader_culture = { 
 	if = {
 		limit = {
 			OR = {
