@@ -15,12 +15,14 @@ on_startup = {
 
 	if = {
 		limit = {
-			tag = PAP
-			tag = PER
-			#tag = KHO
-			tag = BAL
-			tag = AFG
-			tag = KRY
+			OR = {
+				tag = PAP
+				tag = PER
+				#tag = KHO
+				tag = BAL
+				tag = AFG
+				tag = KRY
+			}
 		}
 		set_country_flag = CRUS_conversion
 	}
