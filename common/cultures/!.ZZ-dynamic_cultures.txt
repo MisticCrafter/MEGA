@@ -106,45 +106,45 @@ iberian = {
 	balearic = {
 		primary = MJO
 		dynasty_names = {
-			"d'Arag" "de Borja" "de Luna" "d'Urgell" "Folc de Cardona"
+			"d'Aragï¿½" "de Borja" "de Luna" "d'Urgell" "Folc de Cardona"
 			#CK2
 			"de Menezes" "de Mendoza" "de Niebla" "de Silva" "de Alba" "de Borja"  
 			"de Medinaceli" "de Castro" "de Haro" "Santcliment" "de Altamira" Osorio
-			Ziga "de Villahermosa" Vilafermosa Garmendia "de Rocamora" "de Goyeneche"
+			Zï¿½ï¿½iga "de Villahermosa" Vilafermosa Garmendia "de Rocamora" "de Goyeneche"
 			"de Cabrera" "de Villena"
 		}
 		male_names = {
-			Aar Aaron Abelard Abraham Absal Abundi Adalbert Adam Adri Alaric Alb Alb Aleix lvar ngel Antoni Arnau 
-			Artur Blai Carles Cecili Conrad Dari Dions Emili Enric Felip Ferran Francs Francesc Fructus Germ 
-			Gonal Guillem Guiu Ignasi Israel Joan Jordi Josep Josep Maria Lle Lluc Llus Macedoni Mrius Mart Miquel 
-			Octavi scar Pau Pere Pol Pompeu Prsper Prudenci Prudenci Quirze Rafael Ramir Ral Reginald Ricard Robert Roc 
-			Rubn Sergi Sim Teodor Toms Vicen Vicent Xavier
+			Aarï¿½ Aaron Abelard Abraham Absalï¿½ Abundi Adalbert Adam Adriï¿½ Alaric Albï¿½ Albï¿½ Aleix ï¿½lvar ï¿½ngel Antoni Arnau 
+			Artur Blai Carles Cecili Conrad Dari Dionï¿½s Emili Enric Felip Ferran Francï¿½s Francesc Fructuï¿½s Germï¿½ 
+			Gonï¿½al Guillem Guiu Ignasi Israel Joan Jordi Josep Josep Maria Lleï¿½ Lluc Lluï¿½s Macedoni Mï¿½rius Martï¿½ Miquel 
+			Octavi ï¿½scar Pau Pere Pol Pompeu Prï¿½sper Prudenci Prudenciï¿½ Quirze Rafael Ramir Raï¿½l Reginald Ricard Robert Roc 
+			Rubï¿½n Sergi Simï¿½ Teodor Tomï¿½s Vicenï¿½ Vicent Xavier
 		}
 		female_names = {
-			gata gueda Aina Anna Antnia Caterina Ceclia Cristina Dolors Francesca Genoveva Isabel Joana Justina Laia 
-			Montserrat Nria Octvia Prudncia Roberta Rodolfa
+			ï¿½gata ï¿½gueda Aina Anna Antï¿½nia Caterina Cecï¿½lia Cristina Dolors Francesca Genoveva Isabel Joana Justina Laia 
+			Montserrat Nï¿½ria Octï¿½via Prudï¿½ncia Roberta Rodolfa
 		}
 	}
 	valencian = {
 		primary = VAL
 		dynasty_names = {
-			"d'Arag" "de Borja" "de Luna" "d'Urgell" "Folc de Cardona"
+			"d'Aragï¿½" "de Borja" "de Luna" "d'Urgell" "Folc de Cardona"
 			#CK2
 			"de Menezes" "de Mendoza" "de Niebla" "de Silva" "de Alba" "de Borja"  
 			"de Medinaceli" "de Castro" "de Haro" "Santcliment" "de Altamira" Osorio
-			Ziga "de Villahermosa" Vilafermosa Garmendia "de Rocamora" "de Goyeneche"
+			Zï¿½ï¿½iga "de Villahermosa" Vilafermosa Garmendia "de Rocamora" "de Goyeneche"
 			"de Cabrera" "de Villena"
 		}
 		male_names = {
-			Aar Aaron Abelard Abraham Absal Abundi Adalbert Adam Adri Alaric Alb Alb Aleix lvar ngel Antoni Arnau 
-			Artur Blai Carles Cecili Conrad Dari Dions Emili Enric Felip Ferran Francs Francesc Fructus Germ 
-			Gonal Guillem Guiu Ignasi Israel Joan Jordi Josep Josep Maria Lle Lluc Llus Macedoni Mrius Mart Miquel 
-			Octavi scar Pau Pere Pol Pompeu Prsper Prudenci Prudenci Quirze Rafael Ramir Ral Reginald Ricard Robert Roc 
-			Rubn Sergi Sim Teodor Toms Vicen Vicent Xavier
+			Aarï¿½ Aaron Abelard Abraham Absalï¿½ Abundi Adalbert Adam Adriï¿½ Alaric Albï¿½ Albï¿½ Aleix ï¿½lvar ï¿½ngel Antoni Arnau 
+			Artur Blai Carles Cecili Conrad Dari Dionï¿½s Emili Enric Felip Ferran Francï¿½s Francesc Fructuï¿½s Germï¿½ 
+			Gonï¿½al Guillem Guiu Ignasi Israel Joan Jordi Josep Josep Maria Lleï¿½ Lluc Lluï¿½s Macedoni Mï¿½rius Martï¿½ Miquel 
+			Octavi ï¿½scar Pau Pere Pol Pompeu Prï¿½sper Prudenci Prudenciï¿½ Quirze Rafael Ramir Raï¿½l Reginald Ricard Robert Roc 
+			Rubï¿½n Sergi Simï¿½ Teodor Tomï¿½s Vicenï¿½ Vicent Xavier
 		}
 		female_names = {
-			gata gueda Aina Anna Antnia Caterina Ceclia Cristina Dolors Francesca Genoveva Isabel Joana Justina Laia 
-			Montserrat Nria Octvia Prudncia Roberta Rodolfa
+			ï¿½gata ï¿½gueda Aina Anna Antï¿½nia Caterina Cecï¿½lia Cristina Dolors Francesca Genoveva Isabel Joana Justina Laia 
+			Montserrat Nï¿½ria Octï¿½via Prudï¿½ncia Roberta Rodolfa
 		}
 	}
 	andal = {
@@ -360,6 +360,23 @@ crusader_group = {
 		}
 	}
 
+	crusader_siberian = {
+		primary = Z09
+		province = { local_has_caravel = yes local_has_galleon = yes }
+		dynasty_names = {
+			Thinis Memphis Abydos Herakleopolis Thebes Itjtawy Avaris Bubastis Sais
+		}
+		male_names = {
+			Seka Khayu Tiu Thesh Neheb Wazner Mekh "Iry-Hor" Sekhen Serqer Narmer "Hor-Aha" Djer Djet Den Semerkhet "Qa'a" Sneferka Raneb Nynetjer Senedj Neferkara Hudjefa
+			Djoser Sekhemkhet Sanakht Khaba Huni Sneferu Khufu Khafre Djdefre Menkaure Thamphtis Userkaf Sahure Neferefre Shepseskare Nyuserre Unas Teti "Dejkadre Shemai"
+			Neferkare Merenhor Nikare Intef "Sankhkare Mentuhotep" Menkare Segerseni Senusret Nerikare Sonbef Sebkay Sobekhotep Dedumose Sheeshi Nehesy Sheneh Semenre Rahotep
+			"Nebpehtire Ahmose" Amenhotep Thutmose  "Awybre Hor" Akhenaten Tutankhamun Ramesses Herihor Piankh Pinedjem Masaharta Menkheperre Smendes Pinedjem
+		}
+		female_names = {
+			"Sobekkare Sobekneferu" Hatshepsut Tentamun Nitocris Neit Cleopatra Neferneferuaten Nefertiti
+		}
+	}
+
 	crusader_egyptian = {
 		primary = KNI
 		province = { local_has_caravel = yes local_has_galleon = yes }
@@ -523,23 +540,23 @@ finno_ugric = {
 			Mannerheim Furuhjelm Aminoff Armfelt Carpelan Rehbinder Schulman
 		}
 		male_names = {
-			Eerikki Niklas Vinminen Aato Fredrik Jani Aleksanteri Edvard Jaakko Juha Aapeli Alpertti Antero 
+			Eerikki Niklas Vï¿½inï¿½mï¿½inen Aato Fredrik Jani Aleksanteri Edvard Jaakko Juha Aapeli Alpertti Antero 
 			Eino Erno Heikki Jooseppi Jyri Kaarle Kristian Lauri Mainio Mikael Onni Otso Paavo Petteri Ransu 
 			Samuli Taavi Tauno Tuomas Valto Veli Vieno Vilhelmi Voitto Reino
 			Aatos Ahma Aimo Armas Arvo Asikko Ensio Haapa Hannu Havu Hintsa Ihanti Into Jalo Jurva 
 			Kalevi Kettu Kolli Lalli Lauri Laurence Lemetti Kaleva
-			Mielitty Miemo Mikko Michael Oiva Onni Otso Pyry Pivi Pentti Reko Sampo Satajalka 
-			Seppo Susi Tapani Terho Toivo Ukko Uoti Urho Vin Satatieto
+			Mielitty Miemo Mikko Michael Oiva Onni Otso Pyry Pï¿½iviï¿½ Pentti Reko Sampo Satajalka 
+			Seppo Susi Tapani Terho Toivo Ukko Uoti Urho Vï¿½inï¿½ Satatieto
 			Valta Valto Veli Vesa Voitto Erkki Erik Kaarle Charles Johannes John Risto Christopher 
-			Olaf Petri Peter Henri Henry Yrj George Olavi
+			Olaf Petri Peter Henri Henry Yrjï¿½ George Olavi
 			Valteri Walter Riku Richard Matti Matthew Jaakoppi Jacob Taisto Paavo Paul Aatso Adam Ahvo 
 			Artur Asko Tuokko David Rieti Frederick Aarto
 			Kauro Gabriel Kuuti Knut Pekko Soini Sven Tuure Turo Tommo Tohmas Thomas
 		}
 		female_names = {
 			Tarja Aina Jaana
-			Aamu Aino Hell Helmi Ilta Kaarina Catherine Kpy Kielo Kukka Lauha Lempi Mahla Maija 
-			Metta Piv Pivi Pihla Pilvi Rauha Sisko Suoma Marja Mesi 
+			Aamu Aino Hellï¿½ Helmi Ilta Kaarina Catherine Kï¿½py Kielo Kukka Lauha Lempi Mahla Maija 
+			Metta Pï¿½ivï¿½ Pï¿½ivi Pihla Pilvi Rauha Sisko Suoma Marja Mesi 
 			Taimi Terhi Titti Tuija Tuovi Tuuli Tuulikki Tyyne Tyyni Vanamo Venla Mielikki Hertta 
 			Inkeri Ilmatar Irene Irene Ilona Helen Kristiina Christina Loviisa
 			Elisabet Elisabeth Sohvi Sofia Auni Agnes Liekko Helen Kivutar Lemmikki Lyylikki Salme 
@@ -549,42 +566,42 @@ finno_ugric = {
 	hungarian = {
 		primary = HUN
 		dynasty_names = {
-			Bthory Hunyadi Szapolyai Rkczy Bocskai Bethlen Almsy Andrssy Batthyny Csky Dessewffy
-			Erdody Eszterhzy Festetics Hajd Krolyi Kun Magyary Pernyi Rnai Szchenyi Szepessy 
-			Thkly Tisza Zrnyi Teleki
-			Majlth Dczy Dob Kohry Orczy Frankopan Garay Mikes Szcsi Imreffy Ndasdy Rhdey
+			Bï¿½thory Hunyadi Szapolyai Rï¿½kï¿½czy Bocskai Bethlen Almï¿½sy Andrï¿½ssy Batthyï¿½ny Csï¿½ky Dessewffy
+			Erdody Eszterhï¿½zy Festetics Hajdï¿½ Kï¿½rolyi Kun Magyary Perï¿½nyi Rï¿½nai Szï¿½chenyi Szepessy 
+			Thï¿½kï¿½ly Tisza Zrï¿½nyi Teleki
+			Majlï¿½th Dï¿½czy Dobï¿½ Kohï¿½ry Orczy Frankopan Garay Mikes Szï¿½csi Imreffy Nï¿½dasdy Rhï¿½dey
 			
 			#CK2
-			Zrinski Hadik Both "Rkczi" Forgch Cseszneky Derencsnyi Dcsey Rvay Esterhzy
-			Kllay Kemny Thurz Zichy
+			Zrinski Hadik Both "Rï¿½kï¿½czi" Forgï¿½ch Cseszneky Derencsï¿½nyi Dï¿½csey Rï¿½vay Esterhï¿½zy
+			Kï¿½llay Kemï¿½ny Thurzï¿½ Zichy
 		}
 		male_names = {
-			Ulszl Lszl Lajos Albert Jnos Mtys Zsigmond Andrs Kroly Istvn Bla Anasztz Barnabs 
-			Boldizsr Dvid Dmtr Edvrd Ern Ferenc Gbor Gyrgy Izsk Jen Jzsef Klmn Kzmr Lrinc 
-			Mikls Oszkr Ott Patrik Pter Simon Tams Vencel
-			bel drn goston lmos rpd dn Otto Alajos Ambrus Andrs Andrew Antal Attila Blint 
-			Albert Balzs Benedek Benedict Bernt Bernard Bertk Bertalan Boldizsr Bonuslo
-			Borisz Boris Csk Csaba Csongor Dnes Dmtr Dezs Domoszl Dont Elek Elemr Endre Ern 
-			Philip Ferenc Francis Frigyes Gbor Gbriel Gabriel Gspr Caspar Gza Gazsi
-			Gellrt Gergely Gyrgy George Gyula Imre Istvn Stephen Izsk Jkob Jacob Jnos John Jzsef 
-			Joseph Jen Klmn Kroly Charles Konrd Konrad Kornl Kristf Lszl Lzr Lrinc Lajos 
-			Lampert Levente Lukcs Mrk Marcus Mrton Martin Mt Mtys Matthew Mric Mzes Mihly 
-			Michael Louis Fulp Bla
-			Mikls Nndor Orbn Oszkr Pl Paul Pter Peter Smuel Samuel Sndor Alexander Salamon 
-			Szilveszter Silvester Tdor Tacsony Tams Thomas Tibor Tivadar Vazul Vencel Vaclav Vilmos 
-			Zoltn Zsigmond Sigmund Zsolt Saul Soma
+			Ulï¿½szlï¿½ Lï¿½szlï¿½ Lajos Albert Jï¿½nos Mï¿½tyï¿½s Zsigmond Andrï¿½s Kï¿½roly Istvï¿½n Bï¿½la Anasztï¿½z Barnabï¿½s 
+			Boldizsï¿½r Dï¿½vid Dï¿½mï¿½tï¿½r Edvï¿½rd Ernï¿½ Ferenc Gï¿½bor Gyï¿½rgy Izsï¿½k Jenï¿½ Jï¿½zsef Kï¿½lmï¿½n Kï¿½zmï¿½r Lï¿½rinc 
+			Miklï¿½s Oszkï¿½r Ottï¿½ Patrik Pï¿½ter Simon Tamï¿½s Vencel
+			ï¿½bel ï¿½dï¿½rn ï¿½goston ï¿½lmos ï¿½rpï¿½d ï¿½dï¿½n Otto Alajos Ambrus Andrï¿½s Andrew Antal Attila Bï¿½lint 
+			Albert Balï¿½zs Benedek Benedict Bernï¿½t Bernard Bertï¿½k Bertalan Boldizsï¿½r Bonuslo
+			Borisz Boris Csï¿½k Csaba Csongor Dï¿½nes Dï¿½mï¿½tï¿½r Dezsï¿½ Domoszlï¿½ Donï¿½t Elek Elemï¿½r Endre Ernï¿½ 
+			Philip Ferenc Francis Frigyes Gï¿½bor Gï¿½briel Gabriel Gï¿½spï¿½r Caspar Gï¿½za Gazsi
+			Gellï¿½rt Gergely Gyï¿½rgy George Gyula Imre Istvï¿½n Stephen Izsï¿½k Jï¿½kob Jacob Jï¿½nos John Jï¿½zsef 
+			Joseph Jenï¿½ Kï¿½lmï¿½n Kï¿½roly Charles Konrï¿½d Konrad Kornï¿½l Kristï¿½f Lï¿½szlï¿½ Lï¿½zï¿½r Lï¿½rinc Lajos 
+			Lampert Levente Lukï¿½cs Mï¿½rk Marcus Mï¿½rton Martin Mï¿½tï¿½ Mï¿½tyï¿½s Matthew Mï¿½ric Mï¿½zes Mihï¿½ly 
+			Michael Louis Fulï¿½p Bï¿½la
+			Miklï¿½s Nï¿½ndor Orbï¿½n Oszkï¿½r Pï¿½l Paul Pï¿½ter Peter Sï¿½muel Samuel Sï¿½ndor Alexander Salamon 
+			Szilveszter Silvester Tï¿½dor Tacsony Tamï¿½s Thomas Tibor Tivadar Vazul Vencel Vaclav Vilmos 
+			Zoltï¿½n Zsigmond Sigmund Zsolt Saul Soma
 		}
 		female_names = {
-			gnes Agnes va Eva Adelaida Adelaide Agta Agatha Amlia Amelia Angyalka Anik Aranka 
-			Bertha Borbla Csilla Csillag Czenzi Dorottya Dorothy Edit Edith Emke Emese Erika Erzsbet 
+			ï¿½gnes Agnes ï¿½va Eva Adelaida Adelaide Agï¿½ta Agatha Amï¿½lia Amelia Angyalka Anikï¿½ Aranka 
+			Bertha Borbï¿½la Csilla Csillag Czenzi Dorottya Dorothy Edit Edith Emï¿½ke Emese Erika Erzsï¿½bet 
 			Elisabeth Eszter Berta Anna
-			Etel Euphemia Euphemia Gizella Gisela Gyrgyi Georgia Hajnal Hedwig Hedwig Ibolya Ildik 
-			Irn Irene Jcinta Jzsa Jlia Juliana Joln Judith Judith Kamilla Camilla Katalin 
-			Kinga Klra Clara Catherine Illona
-			Konstancia Constance Krisztina Christina Kunigunda Kunigunde Luca Mria Maria Mrta Martha 
-			Magdolna Magdalena Margarta Margaret Margit Matild Matilda Natlia Natalia Odola Orsolya 
-			Panni Piroska Rzsa Rosa Sra Sarah Sarolt Zsuzsa Zsanett
-			Skolasztika Sophia Sophia Tundr Terezia Teresa Viola Viola Virg Zoltna Zsfia Sophia
+			Etel Euphemia Euphemia Gizella Gisela Gyï¿½rgyi Georgia Hajnal Hedwig Hedwig Ibolya Ildikï¿½ 
+			Irï¿½n Irene Jï¿½cinta Jï¿½zsa Jï¿½lia Juliana Jolï¿½n Judith Judith Kamilla Camilla Katalin 
+			Kinga Klï¿½ra Clara Catherine Illona
+			Konstancia Constance Krisztina Christina Kunigunda Kunigunde Luca Mï¿½ria Maria Mï¿½rta Martha 
+			Magdolna Magdalena Margarï¿½ta Margaret Margit Matild Matilda Natï¿½lia Natalia Odola Orsolya 
+			Panni Piroska Rï¿½zsa Rosa Sï¿½ra Sarah Sarolt Zsuzsa Zsanett
+			Skolasztika Sophia Sophia Tundï¿½r Terezia Teresa Viola Viola Virï¿½g Zoltï¿½na Zsï¿½fia Sophia
 		}
 	}
 }
