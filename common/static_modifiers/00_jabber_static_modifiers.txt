@@ -6,10 +6,10 @@ vicerroyalty_subject = {
 
 vicerroyalty_overlord = {
     prestige = 0.025
-    land_forcelimit_modifier = -0.05
-    land_manpower_modifier = -0.05
-    #vassal_manpower_bonus = -0.1
-    #vassal_forcelimit_bonus = -0.1
+    land_forcelimit = 1
+    global_manpower = 1
+    land_forcelimit_modifier = -0.02
+    land_manpower_modifier = -0.02
 }
 
 dominion_subject = {
