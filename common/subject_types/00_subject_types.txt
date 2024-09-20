@@ -1892,3 +1892,176 @@ dummy =
 {
 	copy_from = default
 }
+
+
+
+### ADDED BY MEGACAMPAIGN ###
+
+vicerroyalty = {
+	copy_from = vassal
+	count = vassal
+    sprite = GFX_icon_diplomacy_vicerroyalty
+	diplomacy_overlord_sprite = GFX_icon_diplomacy_vicerroyalty_overlord
+	diplomacy_subject_sprite = GFX_icon_diplomacy_vicerroyalty_subject
+	
+	# Properties:
+	has_power_projection = yes
+	takes_diplo_slot = no
+	gets_help_with_rebels = yes
+	separatists_become_subjects = yes
+	allows_taking_land_without_independence = yes
+	forms_trade_companies = no
+	can_concentrate_development = no
+	can_transfer_in_peace = no
+	can_release_in_peace = yes
+	trust_on_start = 10
+	overlord_can_fabricate_for = yes
+
+	base_liberty_desire = 30.0
+	liberty_desire_development_ratio = 0.25
+	liberty_desire_same_dynasty = -20.0
+	opinion_on_subject_integration = 0
+
+	pays_overlord = 0.25
+	forcelimit_bonus = 0.0
+	forcelimit_to_overlord = 0.0
+	
+	military_focus = 2.0
+
+	relative_power_class = 0
+	should_quit_wars_on_activation = yes
+
+	can_fight = {
+		independent_nations = yes
+		other_overlord = all
+	}
+	can_rival = {
+		other_overlord = all
+		independent_nations = yes
+	}
+	can_ally = {
+		same_overlord = dominion
+	}
+	can_marry = {
+		same_overlord = dominion
+	}
+	
+	# Subject Interactions
+	seize_court_resources = yes
+	request_extra_levies = yes
+	grant_administrative_autonomy = yes
+	#(disable)
+	scutage = yes
+	grant_core_claim = yes
+	grant_province = yes
+	place_relative_on_throne = no
+	enforce_religion = no
+	enforce_culture = no
+	seize_territory = no
+	#(enable)
+	return_land = yes
+	
+	# Modifiers
+	
+	modifier_overlord = clear #We don't want to duplicate the ones inherited from vassal
+	modifier_subject = clear #Ditto
+	modifier_subject = {
+		modifier = vicerroyalty_subject
+	}
+	modifier_subject = {
+		modifier = subject_tax_modifier
+		trigger = {
+			overlord = {
+				has_government_attribute = subject_tax_modifier_25
+			}
+		}
+	}
+	modifier_overlord = {
+		modifier = vicerroyalty_overlord
+	}
+}
+
+dominion = {
+	copy_from = vassal
+	count = vassal
+    sprite = GFX_icon_diplomacy_dominion
+	diplomacy_overlord_sprite = GFX_icon_diplomacy_dominion_overlord
+	diplomacy_subject_sprite = GFX_icon_diplomacy_dominion_subject
+	
+	# Properties:
+	has_power_projection = yes
+	takes_diplo_slot = no
+	gets_help_with_rebels = yes
+	separatists_become_subjects = yes
+	allows_taking_land_without_independence = yes
+	forms_trade_companies = no
+	can_concentrate_development = no
+	can_transfer_in_peace = no
+	can_release_in_peace = yes
+	trust_on_start = 20
+	overlord_can_fabricate_for = yes
+
+	base_liberty_desire = 20.0
+	liberty_desire_development_ratio = 0.25
+	opinion_on_subject_integration = 0
+
+	pays_overlord = 0.1
+	forcelimit_bonus = 2.0
+	forcelimit_to_overlord = 0.3
+	
+	military_focus = 2.0
+
+	relative_power_class = 0
+	should_quit_wars_on_activation = yes
+
+	can_fight = {
+		independent_nations = yes
+		other_overlord = all
+	}
+	can_rival = {
+		other_overlord = all
+		independent_nations = yes
+	}
+	can_ally = {
+		same_overlord = dominion
+	}
+	can_marry = {
+		same_overlord = dominion
+	}
+	
+	# Subject Interactions
+	request_extra_levies = yes
+	grant_administrative_autonomy = yes
+	#(disable)
+	scutage = yes
+	grant_core_claim = yes
+	grant_province = yes
+	place_relative_on_throne = no
+	enforce_religion = no
+	enforce_culture = no
+	seize_territory = no
+	#(enable)
+	return_land = yes
+	conscript_general = yes
+	
+	# Modifiers
+	
+	modifier_overlord = clear #We don't want to duplicate the ones inherited from vassal
+	modifier_subject = clear #Ditto
+	modifier_subject = {
+		modifier = dominion_subject
+	}
+	modifier_subject = {
+		modifier = subject_tax_modifier
+		trigger = {
+			overlord = {
+				has_government_attribute = subject_tax_modifier_25
+			}
+		}
+	}
+	modifier_overlord = {
+		modifier = dominion_overlord
+	}
+}
+
+###

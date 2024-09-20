@@ -163,6 +163,17 @@ estate_nobles = {
 		}
 		loyalty = 10
 	}
+
+	### ADDED BY MEGACAMPAIGN ###
+	loyalty_modifier = {
+		desc = EST_VAL_HAS_ASTARI
+		trigger = {
+			culture_group = iberian
+			has_estate = estate_knights
+		}
+		loyalty = -10
+	}
+	###
 	
 	influence_modifier = {
 		desc = EST_VAL_GREAT_PEASANTS_WAR_NOBLES_LOSE_MINOR_INFLUENCE

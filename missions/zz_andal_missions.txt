@@ -318,7 +318,7 @@ andalos_slot_1_missions = {
 		}
 
 		effect = {
-			add_government_reform = astarostratha_reform
+			add_government_reform = themata_reform
 			if = {
 				limit = { has_dlc = "Cradle of Civilization" }
 				add_army_professionalism = 0.05

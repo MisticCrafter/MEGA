@@ -1,0 +1,26 @@
+vicerroyalty_subject = {
+    global_tax_income = 24
+    global_unrest = -2
+    stability_cost_modifier = -0.25
+}
+
+vicerroyalty_overlord = {
+    prestige = 0.025
+    land_forcelimit = 1
+    global_manpower = 1
+    land_forcelimit_modifier = -0.02
+    land_manpower_modifier = -0.02
+}
+
+dominion_subject = {
+    capped_by_forcelimit = yes
+    land_forcelimit_modifier = 0.5
+    global_unrest = 2
+}
+
+dominion_overlord = {
+    global_manpower_modifier = 0.1
+    land_forcelimit_modifier = 0.1
+    naval_forcelimit_modifier = 0.1
+    vassal_forcelimit_bonus = -0.3
+}

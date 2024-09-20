@@ -119,6 +119,11 @@ ARC_african_alliance = {
     shock_damage = 0.05
 }
 
+ARC_abyssinia_alliance = {
+    land_morale = 0.1
+    shock_damage = 0.05
+}
+
 ARC_andal_red = {
     trade_goods_size = 0.5
     local_unrest = -1

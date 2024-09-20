@@ -1,0 +1,57 @@
+on_startup = {
+    # Added by megacampaign.
+	if = {
+		limit = {
+			tag = ARC
+		}
+		country_event = { id = flavor_andalos.19 }
+        disband_all_regiments = yes
+        create_unit_forcelimit_percentage = {
+            type = infantry
+            special_unit_category = tercio
+            force_limit_percentage = 0.32
+        }
+	}
+
+	if = {
+		limit = {
+			OR = {
+				tag = PAP
+				tag = PER
+				#tag = KHO
+				tag = BAL
+				tag = AFG
+				tag = KRY
+			}
+		}
+		set_country_flag = CRUS_conversion
+	}
+
+	cote_nord_area = {
+		discover_country = CWD
+	}
+	newfoundland_area = {
+		discover_country = CWD
+	}
+	notre_dame_mountains_area = {
+		discover_country = CWD
+	}
+	upper_acadia_area = {
+		discover_country = CWD
+	}
+	lower_acadia_area = {
+		discover_country = CWD
+	}
+	labrador_area = {
+		discover_country = CWD
+	}
+	sea_of_labrador_area = {
+		discover_country = CWD
+	}
+	gulf_of_st_lawrence_area = {
+		discover_country = CWD
+	}
+	1484 = {
+		undiscover_country = CWD
+	}
+}

@@ -589,7 +589,7 @@ east_anglia_area = { #3
 ########################################
 
 jutland_area = { #4
-	15 1984 4142 4149
+	15 1984 4142 4149 13
 }
 
 denmark_area = { #4 +Bornholm
@@ -1040,8 +1040,8 @@ weser_area = { #4
 	54 55 1874 4771
 }
 
-holstein_area = { #3
-	13 1775 4141 
+holstein_area = { #2
+	1775 4141 
 }
 
 lower_saxony_area = { #4
@@ -1404,11 +1404,11 @@ djerba_area = { #3
 }
 
 algiers_area = { #3
-	336 2465 4562
+	336 2465 4562 337
 }
 
 barbary_coast_area = { #3
-	337 2461 338
+	2461 338
 }
 
 kabylia_area = { #3
@@ -1416,7 +1416,7 @@ kabylia_area = { #3
 }
 
 hautes_plaines_area = { #3
-	350 2459 2462 2463 
+	2459 2462 2463 2461 338
 }
 
 ouled_nail_area = { #3
@@ -1424,7 +1424,7 @@ ouled_nail_area = { #3
 }
 
 north_saharan_area = { #5
-	2456 2457 2472
+	2456 2457 2472 350
 }
 
 tafilalt_area = { #4
@@ -1806,7 +1806,7 @@ manding_area = { #4
 }
 
 futa_jallon_area = { #3
-	1117 1121 4083
+	1117 1121
 }
 
 kaabu_area = {
@@ -1918,7 +1918,7 @@ kongo_area = { #5
 }
 
 angola_namibia_area = { #5
-	1098 1167 1171 1172 1174 
+	1098 1167 1171 1172 1174 4083
 }
 
 cape_of_good_hope_area = { #5
