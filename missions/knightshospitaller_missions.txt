@@ -725,7 +725,26 @@ kni_granary_branch = {
 		required_missions = { kni_city_of_god_three } 
 		provinces_to_highlight = {  } 
 
-		trigger = { farm_estate = 5 } 
+		trigger = { 
+			farm_estate = 5
+			2316 = {
+				grown_by_development = 6
+			}
+			362 = {
+				grown_by_development = 6
+			}
+			363 = {
+				grown_by_development = 6
+			}
+			OR = {
+				4316 = {
+					grown_by_development = 6
+				}
+				2316 = {
+					grown_by_development = 12
+				}
+			}
+		 } 
 
 		effect = {
 			if = {
@@ -735,6 +754,30 @@ kni_granary_branch = {
 			else = { add_dip_power = 100 } 
 			custom_tooltip = enable_export_grain_dip_action_tt
 			set_country_flag = enable_export_grain_dip_action_flag
+			2316 = {
+				add_province_modifier = {
+					name = "kni_granary_of_the_mediterranean"
+					duration = -1
+				}
+			}
+			362 = {
+				add_province_modifier = {
+					name = "kni_granary_of_the_mediterranean"
+					duration = -1
+				}
+			}
+			363 = {
+				add_province_modifier = {
+					name = "kni_granary_of_the_mediterranean"
+					duration = -1
+				}
+			}
+			4316 = {
+				add_province_modifier = {
+					name = "kni_granary_of_the_mediterranean"
+					duration = -1
+				}
+			}
 		}
 	}
 
@@ -743,10 +786,50 @@ kni_granary_branch = {
 		position = 8
 		required_missions = { kni_granary } 
 		provinces_to_highlight = {  } 
+		trigger = { 
+			OR = {
+				trading_part = {
+					trade_goods = grain
+					value = 0.12
+				}
+				IF = {
+					2316 = {
+						base_production = 15
+					}
+					362 = {
+						base_production = 15
+					}
+					363 = {
+						base_production = 15
+					}
+					OR = {
+						4316 = {
+							base_production = 15
+						}
+						2316 = {
+							base_production = 25
+						}
+					}
+				}
+			}
+		}
 
-		trigger = {  } 
-
-		effect = {  } 
+		effect = {
+			2316 = {
+				add_province_modifier = {
+						name = "kni_grain_capital"
+						duration = -1
+					}
+				}
+			egypt_region = {
+				add_province_modifier = {
+					name = "kni_great_builders"
+					duration = 1825
+				}
+			}
+			country_event = { id = flavor_mam.102 }
+			custom_tooltip = flavor_mam.102_tt
+		}
 	}
 }
 kni_second_city_branch = {

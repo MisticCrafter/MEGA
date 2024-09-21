@@ -122,7 +122,7 @@ Z09_ideas = {
 Z1C_ideas = {
 	start = {
 		may_perform_slave_raid = yes
-		yearly_army_professionalism = 0.05
+		yearly_army_professionalism = 0.02
 	}
 	
 	bonus = {
