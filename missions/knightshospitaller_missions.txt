@@ -380,6 +380,9 @@ kni_country_of_castles_branch = {
 		trigger = { 361 = { development = 100 }  } 
 
 		effect = {
+			add_adm_power = 100
+			add_mil_power = 100
+			add_dip_power = 100
 			custom_tooltip = kni_city_of_god_tooltip
 			custom_tooltip = add_5_crown_land_share
 			add_country_modifier = {
@@ -413,7 +416,6 @@ kni_country_of_castles_rosetta = {
 			362 = {
 				owned_by = ROOT
 				grown_by_development = 10
-				has_manpower_building_trigger = yes
 				has_fort_building_trigger = yes
 				num_of_times_expanded_infrastructure = 1
 			}
@@ -426,8 +428,8 @@ kni_country_of_castles_rosetta = {
 			}
 			362 = {
 				add_or_upgrade_fort_building = yes
-				add_base_production = 1
-				add_base_manpower = 3
+				add_or_upgrade_manpower_building = yes
+				add_base_manpower = 2
 				add_province_modifier = {
 					name = "kni_citadel_of_rosetta"
 					duration = -1
