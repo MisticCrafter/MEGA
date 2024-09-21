@@ -11,18 +11,21 @@ province_event = {
 			culture_group = crusader_group
 			has_country_flag = CRUS_conversion
 		}
+		AND = {
+			OR = { 
 		culture_group = iranian 
-        culture_group = chaldean
+		culture_group = chaldean
+			}
 		CRUS_eligible_province_for_culture_conversion = yes
+		}
 	}
 	
 	goto = ROOT
 	
 	mean_time_to_happen = {
-		months = 1
+		months = 180
 		modifier = {
 			factor = 3
-			NOT = {
 				OR = {
 					region = persia_region
 					region = khorasan_region
@@ -31,7 +34,6 @@ province_event = {
                     area = al_jazira_area
                     area = shahrizor_area
 				}
-			}
 		}
 		modifier = {
 			factor = 0.50
