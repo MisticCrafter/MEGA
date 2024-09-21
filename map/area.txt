@@ -483,16 +483,12 @@ liguria_area = { #3
 	101 2992
 }
 
-corsica_sardinia_area = { #4
-	127 1247 2986 4735
+corsica_sardinia_area = { #5
+	127 1247 2986 4735 126
 }
 
-sicily_area = { #3 # now Eastern Sicily
-	124 126 2982
-}
-
-western_sicily_area = { #3
-	125 4736 4737
+western_sicily_area = { #5
+	125 4736 4737 124 2982
 }
 
 naples_area = { #3  #Campania
