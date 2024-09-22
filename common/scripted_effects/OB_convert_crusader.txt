@@ -1,0 +1,13 @@
+OB_convert_to_crusader_culture = { 
+	if = {
+		limit = {
+			OR = {
+				area = termez_area
+			}
+		}
+		change_culture = crusader_afghan
+	}
+	else = {
+		change_culture = crusader_siberian
+	}
+}

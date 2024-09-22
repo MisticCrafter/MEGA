@@ -30,99 +30,99 @@ kni_building_a_navy = {
 	navy_tradition = 1
 }
 kni_city_of_god = {
-	local_tax_modifier = 0.10
-	local_production_efficiency = .05
+	local_tax_modifier = 0.20
+	local_production_efficiency = 0.05
 	local_defensiveness = 0.10
-	local_manpower_modifier = .10
-	local_development_cost = -0.10
+	local_manpower_modifier = 0.10
+	local_development_cost = -0.20
 	local_sailors = 500
 }
 kni_city_of_god_II = {
-	local_tax_modifier = 0.20
-	local_production_efficiency = .10
+	local_tax_modifier = 0.40
+	local_production_efficiency = 0.10
 	local_defensiveness = 0.20
-	local_manpower_modifier = .20
-	local_development_cost = -0.15
+	local_manpower_modifier = 0.20
+	local_development_cost = -0.25
+	local_development_cost_modifier = -0.05
 	local_sailors = 1000
 	trade_value = 10
 }
 kni_city_of_god_III = {
 	monthly_splendor = 1
-	monthly_prestige = 1
-	local_tax_modifier = 0.30
-	local_production_efficiency = .15
+	prestige = 1
+	local_tax_modifier = 0.60
+	local_production_efficiency = 0.20
+	trade_goods_size_modifier = 0.5
 	local_defensiveness = 0.30
-	local_manpower_modifier = .30
-	local_development_cost = -0.25
-	local_build_time = -.25
+	local_manpower_modifier = 0.30
+	local_development_cost_modifier = -0.05
+	local_development_cost = -0.33
+	local_build_time = -0.25
 	local_sailors = 1500
 	trade_value = 20
 }
 kni_city_of_god_IV = {
 	monthly_splendor = 1
-	monthly_prestige = 1
-	local_tax_modifier = 0.40
-	local_production_efficiency = .20
+	prestige = 1
+	local_tax_modifier = 1
+	local_production_efficiency = 0.25
+	trade_goods_size_modifier = 0.5
+	trade_goods_size_modifier = 0.05
 	local_defensiveness = 0.40
-	local_manpower_modifier = .40
-	local_development_cost = -0.25
+	local_manpower_modifier = 0.40
+	local_development_cost = -0.65
+	local_development_cost_modifier = -0.10
 	local_sailors = 2000
-	local_build_time = -.35
+	local_build_time = -0.35
 	trade_value = 30
-	allowed_num_of_manufactories = 1
-}
-kni_city_of_god_IV = {
-	monthly_splendor = 1
-	monthly_prestige = 1
-	local_tax_modifier = 0.50
-	local_production_efficiency = .25
-	local_defensiveness = 0.50
-	local_manpower_modifier = .50
-	local_development_cost = -0.30
-	local_sailors = 2500
-	local_build_time = -.45
-	trade_value = 40
 	allowed_num_of_manufactories = 1
 }
 kni_city_of_god_V = {
 	monthly_splendor = 1
-	monthly_prestige = 1
-	local_tax_modifier = 1
-	local_production_efficiency = .30
+	prestige = 1
+	local_tax_modifier = 1.5
+	local_production_efficiency = 0.30
 	local_defensiveness = 1
-	local_manpower_modifier = .60
-	local_development_cost = -0.35
+	local_manpower_modifier = 0.60
+	trade_goods_size_modifier = 0.10
+	local_development_cost = -1
+	local_development_cost_modifier = -0.2
 	local_sailors = 5000
-	local_build_time = -.55
+	local_build_time = -0.55
 	trade_value = 50
 	allowed_num_of_manufactories = 1
 }
 kni_city_of_god_VI = {
 	monthly_splendor = 1
-	monthly_prestige = 1
-	country_admin_power = 1
-	local_tax_modifier = 1.50
-	local_production_efficiency = .35
+	prestige = 1
+	possible_adm_policy = 1
+	local_tax_modifier = 2
+	local_production_efficiency = 0.35
+	trade_goods_size_modifier = 0.10
 	local_defensiveness = 1.5
-	local_manpower_modifier = .70
-	local_development_cost = -0.5
+	local_manpower_modifier = 0.70
+	local_development_cost = -2
+	local_development_cost_modifier = -0.25
+	development_cost = -0.05
 	local_sailors = 5500
-	local_build_time = -.65
+	local_build_time = -0.65
 	trade_value = 60
 	allowed_num_of_manufactories = 1
 }
 kni_city_of_god_VII = {
-	monthly_splendor = 1
-	monthly_prestige = 1
-	country_admin_power = 1
+	monthly_splendor = 2
+	prestige = 2
 	possible_adm_policy = 1
-	local_tax_modifier = 2
-	local_production_efficiency = .25
+	local_tax_modifier = 3.5
+	local_production_efficiency = 0.5
+	trade_goods_size_modifier = 0.10
 	local_defensiveness = 2
-	local_manpower_modifier = .50
-	local_development_cost = -1
+	local_manpower_modifier = 1
+	local_development_cost = -6
+	local_development_cost_modifier = -0.3
+	development_cost = -0.2
 	local_sailors = 6000
-	local_build_time = -.75
+	local_build_time = -0.75
 	trade_value = 70
 	allowed_num_of_manufactories = 2
 }
@@ -144,7 +144,6 @@ kni_citadel_of_triacastra = {
 kni_de_jure_hospitaller = {
 	local_defensiveness = 0.25
 	local_core_creation = 0.25
-	local_warscore_modifier = 0.25
 }
 kni_cyrene_fortifications = {
 	local_defensiveness = 0.25
@@ -163,6 +162,34 @@ kni_benefits_of_the_canal = {
 }
 kni_life_on_the_sea = {
 	naval_tradition_from_trade = 0.50
-	light_ship_power = 0.33
 	privateer_efficiency = 0.25
+}
+kni_piratical_caravels = {
+	ship_trade_power_modifier = 0.25
+	ship_durability = 0.10	
+	is_caravel_modifier = yes
+}
+kni_granary_of_the_mediterranean = {
+	trade_goods_size_modifier = 0.05
+	local_development_cost = -0.15
+}
+kni_grain_capital = {
+	trade_value = 25
+	local_development_cost = -0.20
+}
+kni_great_builders = {
+	local_development_cost = -0.20
+	local_build_time = -0.20
+}
+winged_crowned_stags_modifier = {
+	is_mamluks_modifier = yes
+	shock_damage = 0.15
+	cavalry_power = 0.25
+}
+kni_fort_garrison_grain_maintenence = {
+	fort_maintenance_modifier = 0.20
+}
+kni_fort_garrison_grain = {
+	local_defensiveness = 0.20	
+	garrison_size = 0.10
 }
