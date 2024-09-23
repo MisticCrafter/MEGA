@@ -443,7 +443,11 @@ beieras_area = { #4
 }
 
 alentejo_area = { #5
-	227 229 230 4150 4787 4551
+	227 4150 4787 4551
+}
+
+algarve_area = {
+	230 229
 }
 
 macaronesia_area = { #3

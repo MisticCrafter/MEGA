@@ -4,7 +4,7 @@ on_startup = {
 		limit = {
 			tag = ARC
 		}
-		country_event = { id = flavor_andalos.19 }
+		country_event = { id = flavor_andalos.19 } # Kingdom of the Andals
         disband_all_regiments = yes
         create_unit_forcelimit_percentage = {
             type = infantry

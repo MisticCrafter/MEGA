@@ -1175,16 +1175,16 @@ country_event = {
 	option = {
 		name = flavor_andalos.19.a
 		country_event = { id = flavor_andalos.20 }
-		custom_tooltip = ARC_intro_tt
+		custom_tooltip = flavor_andalos_19_tt
 	}
 }
 
-# Dusk of an Empire (WIP)
+# Mariano's Folly (Recent history)
 country_event = {
 	id = flavor_andalos.20
 	title = flavor_andalos.20.title
 	desc = flavor_andalos.20.desc
-	picture = muslimgfx_RAMADAN_eventPicture
+	picture = BATTLE_eventPicture
 
 
 	fire_only_once = yes
@@ -1196,15 +1196,37 @@ country_event = {
 
 	option = {
 		name = flavor_andalos.20.a
-		custom_tooltip = ARC_intro_tt
+		country_event = { id = flavor_andalos.21 }
+		custom_tooltip = flavor_andalos_20_tt
 	}
 }
 
-# The Subjugation of Hellas
+# Dusk of an Empire (Situation setup)
 country_event = {
 	id = flavor_andalos.21
 	title = flavor_andalos.21.title
 	desc = flavor_andalos.21.desc
+	picture = muslimgfx_RAMADAN_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = ARC
+	}
+
+	option = {
+		name = flavor_andalos.21.a
+		custom_tooltip = flavor_andalos_21_tt
+	}
+}
+
+
+# The Subjugation of Hellas
+country_event = {
+	id = flavor_andalos.22
+	title = flavor_andalos.22.title
+	desc = flavor_andalos.22.desc
 	picture = COURT_eventPicture
 
 	major = yes
@@ -1225,7 +1247,7 @@ country_event = {
 	}
 
 	option = {
-		name = flavor_andalos.21.a
+		name = flavor_andalos.22.a
 		GRE = {
 			override_country_name = ATTICA
 			define_ruler = {
