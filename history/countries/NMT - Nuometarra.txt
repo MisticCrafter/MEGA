@@ -1,5 +1,5 @@
-government = monarchy
-add_government_reform = american_signoria
+government = republic
+add_government_reform = american_merchant_republic
 government_rank = 2
 technology_group = western
 religion = catholic
