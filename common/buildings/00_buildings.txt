@@ -2862,10 +2862,129 @@ venetian_quarters = {
 	time = 12
 
 	modifier = {
+		allowed_num_of_buildings = 1
+		placed_merchant_power = 20
+		trade_steering = 0.10
+	}
+
+	on_built = {
+	}
+
+	on_destroyed = {
 		FROM = {
-			placed_merchant_power = 20
-			trade_steering = 10
+			clr_country_flag = has_venetian_community
 		}
+	}
+
+	## ROOT - Province
+	## FROM - Country that did the action
+
+	# Fires when you start the construction
+	on_construction_started = { }
+	
+	# Fires when you cancel the construction
+	on_construction_canceled = {
+		FROM = {
+			clr_country_flag = has_venetian_community
+		}
+	}
+
+	on_obsolete = {
+	}
+
+	ai_will_do = {
+		factor = 1.5 # Because hard-coded AI only considers what it will gain, not what its enemies will lose.
+	}
+}
+
+ligurian_quarters = {
+	cost = 500
+	time = 12
+
+	modifier = {
+		allowed_num_of_buildings = 1
+		placed_merchant_power = 20
+		trade_steering = 0.10
+	}
+
+	on_built = {
+	}
+
+	on_destroyed = {
+		FROM = {
+			clr_country_flag = has_ligurian_community
+		}
+	}
+
+	## ROOT - Province
+	## FROM - Country that did the action
+
+	# Fires when you start the construction
+	on_construction_started = { }
+	
+	# Fires when you cancel the construction
+	on_construction_canceled = {
+		FROM = {
+			clr_country_flag = has_ligurian_community
+		}
+	}
+
+	on_obsolete = {
+	}
+
+	ai_will_do = {
+		factor = 1.5 # Because hard-coded AI only considers what it will gain, not what its enemies will lose.
+	}
+}
+
+tuscan_quarters = {
+	cost = 500
+	time = 12
+
+	modifier = {
+		allowed_num_of_buildings = 1
+		placed_merchant_power = 20
+		trade_steering = 0.10
+	}
+
+	on_built = {
+	}
+
+	on_destroyed = {
+		FROM = {
+			clr_country_flag = has_tuscan_community
+		}
+	}
+
+	## ROOT - Province
+	## FROM - Country that did the action
+
+	# Fires when you start the construction
+	on_construction_started = { }
+	
+	# Fires when you cancel the construction
+	on_construction_canceled = {
+		FROM = {
+			clr_country_flag = has_tuscan_community
+		}
+	}
+
+	on_obsolete = {
+	}
+
+	ai_will_do = {
+		factor = 1.5 # Because hard-coded AI only considers what it will gain, not what its enemies will lose.
+	}
+}
+
+venetian_quarters_upgraded = {
+	cost = 500
+	time = 12
+
+	modifier = {
+		allowed_num_of_buildings = 1
+		placed_merchant_power = 30
+		trade_steering = 0.15
 	}
 
 	on_built = {

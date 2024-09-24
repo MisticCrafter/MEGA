@@ -245,3 +245,27 @@ diet_roman_republic = {
 		has_reform = dollarstore_roman_republic_government
 	}
 }
+
+american_merchant_republic_names = {
+	rank = {
+		1 = SIGNORIA
+		2 = SIGNORIA
+		3 = SIGNORIA
+	}
+
+	ruler_male = {
+		1 = SIGNORE
+		2 = SIGNORE
+		3 = SIGNORE
+	}
+
+	ruler_female = {
+		1 = SIGNORA
+		2 = SIGNORA
+		3 = SIGNORA
+	}
+	
+	trigger = {
+		has_reform = american_merchant_republic
+	}
+}

@@ -62,6 +62,26 @@
  ATX_ideas: "Artaxian Ideas"
  ATX_ideas_bonus: "Artaxian Ambition"
  ATX_ideas_start: "Artaxian Traditions"
+ NVX: "Nóva Venexia"
+ NVX_ADJ: "New Venetian"
+ NVX_ideas: "New Venetian Ideas"
+ NVX_ideas_bonus: "New Venetian Ambition"
+ NVX_ideas_start: "New Venetian Traditions"
+ TTX: "Tartexa"
+ TTX_ADJ: "Tartessian"
+ TTX_ideas: "Tartessian Ideas"
+ TTX_ideas_bonus: "Tartessian Ambition"
+ TTX_ideas_start: "Tartessian Traditions"
+ ZNT: "Zênatta"
+ ZNT_ADJ: "Zenattan"
+ ZNT_ideas: "Zenattan Ideas"
+ ZNT_ideas_bonus: "Zenattan Ambition"
+ ZNT_ideas_start: "Zenattan Traditions"
+ NMT: "Nuometarra"
+ NMT_ADJ: "Nuometarran"
+ NMT_ideas: "Nuometarran Ideas"
+ NMT_ideas_bonus: "Nuometarran Ambition"
+ NMT_ideas_start: "Nuometarran Traditions"
  ###
 
 
@@ -84,7 +104,8 @@
  crusader_kingdom_reform_desc: "Born of the bloody Sicilian Crusades, the newly-established Crusader states of Mauretania have stood far longer than most wagered they would. Most though that the Frankish and Italian nobility would be embroiled in endless clashes with their new Berber subjects, but history took the opposite course: the martial high nobility of Western Christendom quickly brought the exceptionally skilled Numidian cavalrymen into the fold, forming an equestrian order unparalleled across all of Europe."
  christian_berber_reform: "Berber Principality"
  christian_berber_reform_desc: "Albeit short, Roman rule over Mauretania has left a lasting mark: the Berber peoples have taken to Roman traditions and titles like fishes to water and, though noticeably marked by folk elements, the Berber realms retain the outline of Roman statesmanship to this very day."
- 
+ american_merchant_republic: "American Signoria"
+ american_merchant_republic_desc: "An oligarchical government modelled off the 'signorias' of the old Italian city-states, adapted to the hierarchical traditions of the Native Americans who came into contact with the first Italian settlers."
  # Titles / Government Names
  LORD_PARAMOUNTCY: "Vice Archonate"
  LORD_PARAMOUNT: "Lord Paramount"
@@ -104,6 +125,10 @@
  EXARCHATE: "Exarchate"
  EXARCH: "Exarch"
  EXARCHESS: "Exarchess"
+ SIGNORIA: "Signoria"
+ SIGNORE: "Signore"
+ SIGNORA: "Signora"
+
  ###
 
 
@@ -751,6 +776,13 @@
  ### BUILDINGS ###
  building_venetian_quarters: "Venetian Quarters"
  building_venetian_quarters_desc: "A modest district of the realm's capital gifted to the newly-established Venetian community. Despite the acts committed against them, the Venetians still hold onto much of their old lives, namely their skills and connections, both of which have enhanced our own fortunes significantly."
+ building_ligurian_quarters: "Ligurian Quarters"
+ building_ligurian_quarters_desc: "A modest district of the realm's capital gifted to the newly-established Ligurian community. Despite the acts committed against them, the Ligurians still hold onto much of their old lives, namely their skills and connections, both of which have enhanced our own fortunes significantly."
+ building_tuscan_quarters: "Tuscan Quarters"
+ building_tuscan_quarters_desc: "A modest district of the realm's capital gifted to the newly-established Tuscan community. Despite the acts committed against them, the Tuscans still hold onto much of their old lives, namely their skills and connections, both of which have enhanced our own fortunes significantly."
+ building_venetian_quarters_upgraded: "'Little Venice'"
+ building_venetian_quarters_upgraded_desc: "A modest district of the realm's capital gifted to the newly-established Venetian community. Despite the acts committed against them, the Venetians still hold onto much of their old lives, namely their skills and connections, both of which have enhanced our own fortunes significantly."
+ 
  ###
 
  ### SUBJECT TYPES ###

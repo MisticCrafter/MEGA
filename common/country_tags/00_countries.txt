@@ -1102,6 +1102,11 @@ ANC = "countries/Antioch.txt"
 EDE = "countries/Edessa.txt"
 ATX = "countries/Artaxacerta.txt"
 DUR = "countries/Durazzo.txt"
+NVX = "countries/NovaVenexia.txt" #893 (Capital) + 2516
+TTX = "countries/Tartexa.txt" #2803
+ZNT = "countries/Zenatta.txt" #4626 (Capital) + 2535 
+NMT = "countries/Nuometarra.txt" #2499 (Capital) + 884
+
 
 # c: mlemmer :3
 FNT = "countries/Fontaine.txt"
