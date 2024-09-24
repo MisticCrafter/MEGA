@@ -1440,26 +1440,28 @@ country_event = {
                 cede_province = NVX
                 add_core = NVX
                 change_culture = venetian
-                change_religion = tigranic
+                change_religion = thibaultine
             }
             2516 = {
                 cede_province = NVX
                 add_core = NVX
                 change_culture = venetian
-                change_religion = tigranic
+                change_religion = thibaultine
             }
-            define_ruler = {
-                name = "Alvise Ca' da Mosto"
-                dynasty = "Ca' da Mosto"
-                adm = 3
-                dip = 6
-                mil = 6
-                age = 35
-                claim = 100
-            }
-            add_country_modifier = {
-                name = "sovvertimento_new_beginnings_modifier"
-                duration = 14300
+            NVX = {
+                define_ruler = {
+                    name = "Alvise Ca' da Mosto"
+                    dynasty = "Ca' da Mosto"
+                    adm = 3
+                    dip = 6
+                    mil = 6
+                    age = 35
+                    claim = 100
+                }
+                add_country_modifier = {
+                    name = "sovvertimento_new_beginnings_modifier"
+                    duration = 14300
+                }
             }
 
             #Remove venetians from Europe
@@ -1537,18 +1539,20 @@ country_event = {
                 change_culture = venetian
                 change_religion = catholic
             }
-            define_ruler = {
-                name = "Vettore"
-                dynasty = "Contarini"
-                adm = 3
-                dip = 4
-                mil = 2
-                age = 56
-                claim = 100
-            }
-            add_country_modifier = {
-                name = "sovvertimento_new_beginnings_modifier"
-                duration = 14300
+            TTX = {
+                define_ruler = {
+                    name = "Vettore"
+                    dynasty = "Contarini"
+                    adm = 3
+                    dip = 4
+                    mil = 2
+                    age = 56
+                    claim = 100
+                }
+                add_country_modifier = {
+                    name = "sovvertimento_new_beginnings_modifier"
+                    duration = 14300
+                }
             }
 
             #Remove venetians from Europe
@@ -1632,18 +1636,20 @@ country_event = {
                 change_culture = ligurian
                 change_religion = thibaultine
             }
-            define_ruler = {
-                name = "Amerigo Gattilusio"
-                dynasty = "Gattilusio"
-                adm = 3
-                dip = 5
-                mil = 4
-                age = 42
-                claim = 100
-            }
-            add_country_modifier = {
-                name = "sovvertimento_new_beginnings_modifier"
-                duration = 14300
+            ZNT = {
+                define_ruler = {
+                    name = "Amerigo Gattilusio"
+                    dynasty = "Gattilusio"
+                    adm = 3
+                    dip = 5
+                    mil = 4
+                    age = 42
+                    claim = 100
+                }
+                add_country_modifier = {
+                    name = "sovvertimento_new_beginnings_modifier"
+                    duration = 14300
+                }
             }
 
             #Remove ligurians from Europe
@@ -1719,18 +1725,20 @@ country_event = {
                 change_culture = tuscan
                 change_religion = catholic
             }
-            define_ruler = {
-                name = "Niccolò Machiavelli"
-                dynasty = "Machiavelli"
-                adm = 4
-                dip = 6
-                mil = 3
-                age = 24
-                claim = 100
-            }
-            add_country_modifier = {
-                name = "sovvertimento_new_beginnings_modifier"
-                duration = 14300
+            NMT = {
+                define_ruler = {
+                    name = "Niccolò Machiavelli"
+                    dynasty = "Machiavelli"
+                    adm = 4
+                    dip = 6
+                    mil = 3
+                    age = 24
+                    claim = 100
+                }
+                add_country_modifier = {
+                    name = "sovvertimento_new_beginnings_modifier"
+                    duration = 14300
+                }
             }
 
             #Remove tuscans from Europe
