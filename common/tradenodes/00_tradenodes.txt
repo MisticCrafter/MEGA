@@ -2055,7 +2055,7 @@ bordeaux={
 sevilla={
 	location=1293
 	color={
-		57 160 101 
+		0 102 102
 	}
 	outgoing={
 		name="valencia"

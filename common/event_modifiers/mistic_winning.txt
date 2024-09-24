@@ -68,7 +68,7 @@ influx_of_ligurian_notables_modifier = {
 influx_of_tuscan_notables_modifier = {
     province_trade_power_value = 5
     local_institution_spread = 0.1
-    local_build_cost = 0.15
+    local_build_cost = -0.15
     picture = "tuscan_modifier"
 }
 
