@@ -1,6 +1,6 @@
 owner = DAN
 controller = DAN
-capital = "København"
+capital = "Kï¿½benhavn"
 is_city = yes
 culture = danish
 religion = catholic

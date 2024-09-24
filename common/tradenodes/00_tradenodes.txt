@@ -1072,15 +1072,6 @@ ethiopia={
 gulf_of_aden={
 	location=4346
 	outgoing={
-		name="zanzibar"
-		path={
-			1446 1447 1448 
-		}
-		control={
-			3619.000000 810.000000 3602.000000 764.000000 3521.500000 652.000000 
-		}
-	}
-	outgoing={
 		name="alexandria"
 		path={
 			1330 1329 1328 361 358 
@@ -1130,6 +1121,15 @@ zanzibar={
 	location=1448
 	color={
 		130 17 17 
+	}
+	outgoing={
+		name="gulf_of_aden"
+		path={
+			1448 1447 1446
+		}
+		control={
+			652.000000 3521.500000 764.000000 3619.000000 3602.000000 810.000000 
+		}
 	}
 	outgoing={
 		name="cape_of_good_hope"
@@ -1755,15 +1755,6 @@ wien={
 		220 220 220 
 	}
 	inland=yes
-	outgoing={
-		name="milan"
-		path={
-			132 128 1769 1308 4738 
-		}
-		control={
-			3026.000000 1470.000000 3028.000000 1456.000000 3021.000000 1442.000000 
-		}
-	}
 	outgoing={
 		name="rheinland"
 		path={
