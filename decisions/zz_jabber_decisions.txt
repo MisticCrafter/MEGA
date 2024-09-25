@@ -429,8 +429,14 @@ country_decisions = {
         }
 
         allow = {
-            all_known_country = {
-                NOT = { religion = tigranic }
+            all_country = {
+                OR = {
+                    NOT = { religion_group = christian }
+                    AND = {
+                        religion_group = christian
+                        NOT = { religion = tigranic }
+                    }
+                }
             }
         }
 
@@ -457,8 +463,14 @@ country_decisions = {
         }
 
         allow = {
-            all_known_country = {
-                NOT = { religion = thibaultine }
+            all_country = {
+                OR = {
+                    NOT = { religion_group = christian }
+                    AND = {
+                        religion_group = christian
+                        NOT = { religion = thibaultine }
+                    }
+                }
             }
         }
 
@@ -485,8 +497,14 @@ country_decisions = {
         }
 
         allow = {
-            all_known_country = {
-                NOT = { religion = rationalist }
+            all_country = {
+                OR = {
+                    NOT = { religion_group = christian }
+                    AND = {
+                        religion_group = christian
+                        NOT = { religion = rationalist }
+                    }
+                }
             }
         }
 
@@ -514,8 +532,14 @@ country_decisions = {
         }
 
         allow = {
-            all_known_country = {
-                NOT = { religion = catholic }
+            all_country = {
+                OR = {
+                    NOT = { religion_group = christian }
+                    AND = {
+                        religion_group = christian
+                        NOT = { religion = catholic }
+                    }
+                }
             }
         }
 

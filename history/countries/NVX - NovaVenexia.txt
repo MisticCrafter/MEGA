@@ -2,7 +2,7 @@ government = republic
 add_government_reform = american_merchant_republic
 government_rank = 2
 technology_group = western
-religion = tigranic
+religion = thibaultine
 primary_culture = venetian
 capital = 893
 mercantilism = 30
@@ -14,7 +14,7 @@ mercantilism = 30
 		dip = 6
 		mil = 6
 		birth_date = 1470.3.28
-		religion = tigranic
+		religion = thibaultine
 		culture = venetian
 	}
 	add_ruler_personality = entrepreneur_personality
