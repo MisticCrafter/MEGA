@@ -2127,7 +2127,7 @@ ERANSHAHR_ideas = {
 MUG_ideas = {
 	start = {
 		core_creation = -0.25
-		cavalry_power = 0.20
+		tolerance_heathen = 3
 	}
 	
 	bonus = {
@@ -2143,13 +2143,13 @@ MUG_ideas = {
 		discipline = 0.05
 	}
 	control_of_the_ulema = {
-		global_unrest = -1
+		free_mil_policy = 1 
 	}
 	mughal_ibadat_khana = {
 		idea_cost = -0.1
 	}
 	an_indian_padshah = {
-		free_mil_policy = 1
+		cavalry_power = 0.20
 	}
 	zabt_system = {
 		global_tax_modifier = 0.15
