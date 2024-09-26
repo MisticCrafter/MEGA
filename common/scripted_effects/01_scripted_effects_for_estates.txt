@@ -3936,6 +3936,7 @@ pick_random_estate_if_present = {
 			set_country_flag = estate_knights_$flag$
 			[[estate_action]
 			$estate_action$ = estate_knights
+			]
 		}
 	}
 }
