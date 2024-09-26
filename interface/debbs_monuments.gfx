@@ -7,4 +7,20 @@ spriteTypes = {
         name = "GFX_great_project_nile_cattle_drive"	
         texturefile = "gfx//interface//great_projects//great_project_nile_cattle_drive.dds"
     }
+    spriteType = {
+        name = "GFX_great_project_sleeping_fortress"
+        texturefile = "gfx/interface/great_projects/great_project_sleeping_fortress.dds"
+    }
+    spriteType = {
+        name = "GFX_great_project_throne_of_the_crusader"
+        texturefile = "gfx/interface/great_projects/great_project_throne_of_the_crusader.dds"
+    }
+    spriteType = {
+        name = "GFX_great_project_gate_of_europe"
+        texturefile = "gfx/interface/great_projects/great_project_gate_of_europe.dds"
+    }
+    spriteType = {
+        name = "GFX_great_project_mont_saint_michel"
+        texturefile = "gfx/interface/great_projects/great_project_mont_saint_michel.dds"
+    }
 }

@@ -43,7 +43,7 @@ christian = {
 			stability_cost_modifier = -0.1
 			may_recruit_female_generals = yes
 			female_advisor_chance = 0.2
-			global_religious_conversion_resistance = -0.25
+			global_religious_conversion_resistance = 0.25
 		}
 		country_as_secondary = {
 			yearly_corruption = -0.1

@@ -519,12 +519,13 @@ axumite_ideas = {
 ###################################################################
 african_christian_ideas = {
 	start = {
-		global_sailors_modifier = 0.2
-		land_attrition = -0.10
+		global_sailors_modifier = 0.25
+		land_attrition = -0.20
 	}
 
 	bonus = { 
 		colonists = 1 
+		range = 0.25
 		effect = { remove_temporary_colonist = yes }
 	}					#Iberian influence
 
@@ -539,12 +540,13 @@ african_christian_ideas = {
 
 	african_christian_ties_with_rome = {
 		papal_influence = 2
+		curia_powers_cost = -0.10
 	}
 	african_christian_berber_traditions = {						#unruly nomadic people
-		tolerance_heathen = 2
+		cavalry_power = 0.20
 	}
 	african_christian_establish_new_trade_hubs = {				#fezzan corridors, mediterranean trade
-		global_own_trade_power = 0.15
+		global_own_trade_power = 0.25
 	}
 	african_christian_bastion_of_faith = {						#unfriendly neighbors, geography
 		defensiveness = 0.20
@@ -553,7 +555,7 @@ african_christian_ideas = {
 		missionaries = 1
 	}
 	african_christian_haven_for_religious_refugees = {
-		global_institution_spread = 0.1
+		development_cost = -0.10
 	}
 	african_christian_enroach_on_pirate_strongholds = {
 		naval_forcelimit_modifier = 0.25
