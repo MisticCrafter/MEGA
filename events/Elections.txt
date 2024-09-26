@@ -303,6 +303,7 @@ country_event = {
 			define_ruler = {
 				name = "Astolfo"
 				dynasty = "van Paradyx"
+				female = yes
 				change_adm = 1
 				change_dip = 1
 				change_mil = 1
