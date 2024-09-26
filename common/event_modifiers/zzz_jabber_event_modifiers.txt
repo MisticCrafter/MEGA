@@ -399,7 +399,3 @@ estate_knights_monopoly_of_metals_modifier = {
 estate_knights_monopoly_of_livestock_modifier = {
 	local_production_efficiency = -10
 }
-
-estate_knights_promote_grandmaster_cooldown = {
-    reinforce_speed = 0.01
-}
