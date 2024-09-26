@@ -411,7 +411,7 @@ parramentu_sicilianu = {
 		}
 		country_modifiers = {
 			num_of_parliament_issues = 3
-			parliament_backing_chance = 0.15
+			parliament_backing_chance = 0.20
 			election_cycle = -1
 		}
 		on_upgraded = { }

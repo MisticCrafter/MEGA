@@ -11,7 +11,7 @@ country_decisions = {
 			is_emperor = yes
 		}
 		effect = {
-			add_imperial_influence = 25
+			add_imperial_influence = 10
 			add_legitimacy = 25
 			country_event = { id = pragmatic_sanction.2 }
 		}
