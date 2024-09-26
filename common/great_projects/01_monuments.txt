@@ -4641,6 +4641,7 @@ taj_mahal = {
 			AND = {
 				OR = {
 					culture_group = iranian
+					culture_group = crusader_group
 				}
 				province_is_or_accepts_culture = yes
 			}
@@ -4667,6 +4668,7 @@ taj_mahal = {
 			AND = {
 				OR = {
 					culture_group = iranian
+					culture_group = crusader_group
 				}
 				province_is_or_accepts_culture = yes
 			}
@@ -4683,6 +4685,7 @@ taj_mahal = {
 			AND = {
 				OR = {
 					culture_group = iranian
+					culture_group = crusader_group
 				}
 				province_is_or_accepts_culture = yes
 			}
