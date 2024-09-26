@@ -77,12 +77,13 @@ country_decisions = {
 		effect = {
 			522 = {
 				move_capital_effect = yes
+				change_culture = crusader_indian
 			}
 			change_tag = MUG
 			swap_non_generic_missions = yes
 			on_change_tag_effect = yes
 			remove_non_electors_emperors_from_empire_effect = yes
-			change_primary_culture = crusader_afghan
+			change_primary_culture = crusader_indian
 			set_government_rank = 3
 			522 = {
 			 	add_base_tax = 1

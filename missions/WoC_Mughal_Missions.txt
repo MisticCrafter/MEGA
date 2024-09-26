@@ -896,7 +896,7 @@ WoC_mughals_2 = {
 			
 			524 = {
 				change_province_name = "Agra"
-				change_culture = crusader_afghan
+				change_culture = crusader_indian
 				change_religion = catholic
 				custom_tooltip = " "
 				
