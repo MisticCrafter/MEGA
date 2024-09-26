@@ -2372,7 +2372,7 @@ pagan = {
 		heretic = { MESOAMERICAN_HERETIC }	
 	}
 	
-	#norse_pagan_reformed = {
+	#norse_pagan = {
 	#	icon = 21
 	#	color = { 191 191 191 }
 	#	country = {

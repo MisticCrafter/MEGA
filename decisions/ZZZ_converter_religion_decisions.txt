@@ -513,7 +513,7 @@ country_decisions = {
 		potential = {
 			NOT = { has_country_modifier = spreading_norse_rituals }
 			religion = norse_pagan
-			religion = norse_pagan_reformed
+			religion = norse_pagan
 		}
 		allow = {
 			ADM = 3
