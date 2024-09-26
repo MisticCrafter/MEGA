@@ -1324,7 +1324,7 @@ theocracy = {
 				blood_theocracy_reform
 				#Lithuania
 				depressed_orthodox_church
-				Knightly_Order
+				Sisterly_Order
 				#Hi it's me dotto again smile
 				outremer_government_reform
 				stardust_crusaders_reform

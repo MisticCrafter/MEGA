@@ -1,17 +1,28 @@
 ﻿l_english:
 
- OON: "Sisterhood of St. Nauplius"
- OON_ADJ: "St. Nauplian"
- OON_ideas: "St. Nauplian Ideas"
- depressed_orthodox_church: "Knights-Trikai Power Balance"
- depressed_orthodox_church_desc: "We are curently in a power struggle with the Pomesania-Trakai noble family. Perhaps... we could use them to our advantage..."
+ OON:0 "The Sisterhood"
+ OON_ADJ:0 "Sisterhood"
+ OON_ideas:0 "Sisterhood Ideas"
+ depressed_orthodox_church:0 "Knights-Trikai Power Balance"
+ depressed_orthodox_church_desc:0 "We are curently in a power struggle with the Pomesania-Trakai noble family. Perhaps... we could use them to our advantage..."
+ Sisterly_Order:0 "Sisterly Order"
+ Sisterly_Order_desc:0 ""
 
- smoldering_hope: "Smoldering Hope"
- desc_smoldering_hope: "The last hope for the lithuanian people lies in the order, and that hope is slowly burning out..."
- melancholic_millenium: "Melancholic Millenium"
- desc_melancholic_millenium: "The people have grown tired of the brutal oppression of christendom. The remains of the orthodox church lay in shambles and the people lose hope in continued existence. The order has become Lithuania's last and only hope... (work towards removing this modifier)"
- estonia_conqured: "estonia_conqured"
- desc_estonia_conqured: "hope prevails"
+ smoldering_hope:0 "Smoldering Hope"
+ desc_smoldering_hope:0 "The last hope for the lithuanian people lies in the order, and that hope is slowly burning out..."
+ melancholic_millenium:0 "Melancholic Millenium"
+ desc_melancholic_millenium:0 "The people have grown tired of the brutal oppression of christendom. The remains of the orthodox church lay in shambles and the people lose hope in continued existence. The order has become Lithuania's last and only hope... (work towards removing this modifier)"
+ estonia_conqured:0 "estonia_conqured"
+ desc_estonia_conqured:0 "hope prevails"
+
+ Sisterhood:0 "Sisterhood"
+ Sisterhood_desc:0 "A government ruled by a matriarchal order of knights"
+ HEAD_MISTRESS:0 "Head Mistress"
+ HEAD_MASTER:0 "Head Master"
+
+ez_knights_events.5.t:0 "Sister Rosita's Announcement"
+ez_knights_events.5.d:0 "Today, November 21st 1444 is Sister Rosita's 25th year on thos earth. she plans to celebrate dispite the dark times at hand. At the Sister's grand birthday celebration she took to too the stage and began reciting the history of the sisterhood and how it came to be. the battle at Jegava, Dealings with the Trikai family, and how the Sisterhood barely held on as one of the last bastion of the orthodox faith. She then came to the announcement that she and the Sisterhood has finally amassed an army big enough to vanquish the estonian menace and that she would lead the charge. The Sisterhood would ride at dawn."
+
 
 #OON Missions
  oon_eliminate_estonia_title: "Finish what was started"

@@ -111,7 +111,7 @@ smoldering_hope = {
 }
 
 estonia_conqured = {
-	manpower_in_accepted_culture_provinces = 0.10
+	manpower_in_true_faith_provinces = 0.10
 	church_loyalty_modifier = 0.05
 	church_influence_modifier = 0.05
 	nobles_loyalty_modifier = 0.05
@@ -179,7 +179,7 @@ OON_reduced_atoms = {
 }
 
 OON_naval_industry_booming = {
-	development_cost_modifier = -0.10
+	development_cost = -0.10
 }
 
 OON_scandinavia_dev = {
@@ -226,4 +226,15 @@ dip_tech_focus = {
 dip_dev_focus = {
 	dip_tech_cost_modifier = 0.10
 	production_efficiency = 0.10
+}
+
+image_boosted = {
+	diplomatic_reputation = 1
+}
+missionary_diplomats = {
+	global_missionary_strength = 0.02
+	diplomats = 1
+}
+RUS_DIPLO_RELATIONS = {
+	diplomatic_upkeep = 1
 }
