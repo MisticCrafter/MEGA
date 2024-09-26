@@ -1252,13 +1252,6 @@ andalusia_slot_4_missions = {
 					duration = -1
 				}
 			}
-			sicily_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
 			western_sicily_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -1277,7 +1270,6 @@ andalusia_slot_4_missions = {
 		
 		provinces_to_highlight = {
 			OR = {
-				area = sicily_area
 				area = western_sicily_area
 			}
 			NOT = {
@@ -1287,11 +1279,6 @@ andalusia_slot_4_missions = {
 		
 		trigger = {
 			western_sicily_area = {
-				type = all
-				owned_by = ROOT
-				is_core = ROOT
-			}
-			sicily_area = {
 				type = all
 				owned_by = ROOT
 				is_core = ROOT
