@@ -412,7 +412,7 @@
  estate_burghers_tigranic_tolerance_effect_tooltip: "Every owned province of §YTigranic§! faith gains:\nLocal Missionary Strength: §R-100%§!\nLocal Religious Unity Contribution: §G-100%§!"
  estate_burghers_tigranic_tolerance_revoke_effect_tooltip: "The modifier '§YGranted Tigranic Autonomy§!' is removed from all owned §YOrthodox§! and §YCoptic§! provinces."
  
- estate_astari_americathemes_granted_tt: "Every §Ycolonial subject§! will get '§YSunset Themes§!', giving the following effects:\n   Yearly Army Tradition: §G+0.50§!\n   Astari Force Limit Fraction: §+25.0%§!\n   Country Allows Astari Infantry"
+ estate_astari_americathemes_granted_tt: "Every §Ycolonial subject§! will get '§YSunset Themes§!', giving the following effects:\n   Yearly Army Tradition: §G+0.50§!\n   Astari Force Limit Fraction: §G+25.0%§!\n   Country Allows Astari Infantry"
  estate_astari_americathemes_revoked_tt: "The modifier '§YSunset Themes§!' is removed from all colonial subjects."
  estate_knights_castle_development_granted_tt: "Every owned province with a §Yfort§! gains the following bonus:"
  estate_knights_castle_development_revoked_tt: "The modifier '§YRoyal Patronage§!' is removed from all owned provinces."
