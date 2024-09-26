@@ -1,5 +1,5 @@
 ﻿l_english:
- janissary_regiment:0 "Janissary"
+#  janissary_regiment:0 "Janissary"
  reovlutionary_guard_regiment:0 "Revolutionary Guard"
  LEDGER_SCORE_TC:0 "Team Score"
  CAN_NOT_EXPLOIT_UNTIL: "§R- We have recently exploited $WHERE|Y$, and it is not possible to do it again until $DATE|Y$.§!"
@@ -43,7 +43,7 @@
  REGCAT_banner:0 "Banners"
  REGCAT_streltsy:0 "Streltsy"
  REGCAT_cossacks:0 "Cossacks"
- REGCAT_janissaries:0 "Janissaries"
+#  REGCAT_janissaries:0 "Janissaries" Death. - dotto
  REGCAT_rajput:0 "Rajput"
  COSSACKS_NAME:0 "$HOME$'s $NUM$$ORDER$ Cossacks"
  RAJPUT_NAME:0 "$HOME$'s $NUM$$ORDER$ Rajputs"
@@ -741,7 +741,6 @@
  grant_consessions_to_the_marathas:0 "Grant Concessions to the Marathas"
  grant_consessions_to_the_rajputs:0 "Grant Concessions to the Rajputs"
  grant_consessions_to_the_eunuchs:0 "Grant Concessions to the Eunuchs"
- grant_consessions_to_the_janissaries:0 "Grant Concessions to the Janissaries"
  combat_janissary_decadence:0 "Combat Janissary Decadence"
  issue_investigate_corruption:0 "Investigate Corruption"
  appoint_a_grand_admiral:0 "Appoint a Grand Admiral"
