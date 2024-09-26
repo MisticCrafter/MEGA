@@ -78,6 +78,7 @@ country_event = {
                 change_trade_goods = livestock
             }
         }
+        ROOT = { set_country_flag = milan_purged }
     }
 
     option = {
@@ -1823,7 +1824,10 @@ country_event = {
     }
 }
 
-
 # Lombardei breaks away, 1520
 
-# Occitania becomes a problem, 1475
+# Occitania breaks away, 1515
+
+# Lombardei gets bonuses for breaking away
+
+# Occitania gets bonuses for breaking away
