@@ -26,5 +26,5 @@ aka_colon_buff = {
 }
 
 aka_cacao_plantations = {
-    trade_goods_size = 1
+    trade_goods_size = 2
 }
