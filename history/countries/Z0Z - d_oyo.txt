@@ -30,7 +30,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		death_date = 1484.10.14
 		female = yes
 		religion = catholic
-		culture = mare-roman
+		culture = roman
 	}
 	add_queen_personality = fierce_negotiator_personality
 	add_queen_personality = pious_personality
