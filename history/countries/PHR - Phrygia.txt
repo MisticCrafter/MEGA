@@ -2,6 +2,6 @@ government = monarchy
 add_government_reform = feudalism_reform
 government_rank = 2
 technology_group = western
-religion = cybelene
+religion = catholic
 primary_culture = phrygian
 capital = 4312
