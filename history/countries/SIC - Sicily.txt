@@ -3,7 +3,7 @@ add_government_reform = dollarstore_roman_republic_government
 government_rank = 2
 technology_group = western
 religion = catholic
-primary_culture = mare-roman
+primary_culture = roman
 capital = 125
 set_country_flag = ZZZ_generated_converter_nation
 add_historical_friend = Z00
@@ -17,7 +17,7 @@ add_historical_friend = Z00
 		birth_date = 1387.1.13
 		female = yes
 		religion = catholic
-		culture = mare-roman
+		culture = roman
 	}
 	add_ruler_personality = martial_educator_personality
 	add_ruler_personality = tactical_genius_personality
@@ -46,7 +46,7 @@ add_historical_friend = Z00
 		death_date = 1481.12.26
 		claim = 89
 		religion = catholic
-		culture = mare-roman
+		culture = roman
 	}
 	add_heir_personality = obsessive_perfectionist_personality
 	add_heir_personality = pious_personality

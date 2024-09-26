@@ -45,7 +45,7 @@ add_accepted_culture = georgian
 		death_date = 1490.4.1
 		claim = 89
 		religion = catholic
-		culture = mare-roman
+		culture = roman
 	}
 	add_heir_personality = industrious_personality
 	add_heir_personality = lawgiver_personality

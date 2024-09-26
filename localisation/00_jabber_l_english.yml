@@ -641,11 +641,23 @@
  crusader_greek: "Hesperic"
 
  # Iberian Group
+ andal: "Andal"
  balearic: "Balearic"
  valencian: "Valencian"
 
  # Chaldean Group
  aramaean: "Aramaean"
+
+ # Roman Group
+ roman: "Roman"
+ hispanic: "Hispanic"
+ gallic: "Gallic"
+ rhaetic: "Rhaetic"
+ illyrian: "Illyrian"
+ roman_greek: "Graecian"
+ pannonian: "Pannonian"
+ britannian: "Britannic"
+ romanian: "Romanian"
  ###
  
 
