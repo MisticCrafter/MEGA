@@ -113,4 +113,5 @@ l_english:
  STRENG_ORANGISTS_EFFECT: "Strengthens Paradyxists by §Y$VAL$§!"
  ORANGISTS_IRO: "§YParadyxists§!\n"
  ORANGISTS_DRO: "When the Paradyxists are in power, our current ruler will rule until his/her death."
- MONARCHISTS_IRO:1 "§YParadyxists§!\n"
+ MONARCHISTS_IRO: "§YParadyxists§!\n"
+ MONARCHISTS_DRO: "When the Paradyxists are in power, our current ruler will rule until his/her death."

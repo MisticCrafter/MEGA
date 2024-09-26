@@ -24,3 +24,7 @@ aka_colon_buff = {
     range = 0.2
     colonists = 1
 }
+
+aka_cacao_plantations = {
+    trade_goods_size = 1
+}

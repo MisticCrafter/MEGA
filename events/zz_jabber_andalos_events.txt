@@ -433,7 +433,6 @@ country_event = {
 	option = {
         # Hire Vasco da Gama
 		name = flavor_andalos.8.a
-		ai_chance = { factor = 1 }
 		add_years_of_income = -0.25
 		define_explorer = {
 			name = "Vasco da Gama"
@@ -467,7 +466,7 @@ country_event = {
         create_alliance = FROM
 		add_historical_friend = FROM
         add_country_modifier = {
-            name = "ARC_guinean_alliance"
+            name = "ARC_african_alliance"
             duration = 7300
         }
 		1466 = {
@@ -666,7 +665,7 @@ country_event = {
 			duration = 7300
 		}
 		add_country_modifier = {
-			name = "religious_zeal"
+			name = "conversion_zeal"
 			duration = 7300
 		}
 		capital_scope = {
@@ -968,7 +967,9 @@ country_event = {
 			has_reform = absolutist_andalos_reform
 		}
 
-		add_prestige_or_monarch_power = 15
+		add_prestige_or_monarch_power = {
+			amount = 20
+		}
 	}
 }
 
@@ -1056,7 +1057,10 @@ country_event = {
 		trigger = {
 			has_reform = absolutist_andalos_reform
 		}
-		add_prestige_or_monarch_power = 15
+		
+		add_prestige_or_monarch_power = {
+			amount = 20
+		}
 	}
 }
 
@@ -1154,7 +1158,9 @@ country_event = {
 			has_reform = absolutist_andalos_reform
 		}
 		
-		add_prestige_or_monarch_power = 15
+		add_prestige_or_monarch_power = {
+			amount = 20
+		}
 	}
 }
 
@@ -1270,7 +1276,9 @@ country_event = {
 			custom_tooltip = hellas_skleros_take_power_tt
 		}
 		ARC = {
-			add_prestige_or_monarch_power = 10
+			add_prestige_or_monarch_power = {
+				amount = 10
+			}
 			add_country_modifier = {
 				name = "ARC_house_united"
 				duration = 7300
@@ -1312,7 +1320,7 @@ country_event = {
 
 	option = {
 		name = flavor_andalos.23.a
-		major = yes
+		highlight = yes
 		add_country_modifier = {
 			name = "ARC_adopting_astari"
 			duration = 3650
