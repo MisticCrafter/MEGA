@@ -540,6 +540,20 @@ fort_15th = {
 			}
 		}
 	}
+	if = {
+		limit = {
+			owner = {
+				tag = KNI
+				has_country_modifier = kni_fort_garrison_grain_maintenence
+			}
+		}
+		add_province_modifier = {
+			name = kni_fort_garrison_grain
+			duration = -1
+		}
+	}
+}
+
 
 	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
 	on_destroyed = {
@@ -548,6 +562,12 @@ fort_15th = {
 				has_province_modifier = estate_nobles_vegvar_system_modifier
 			}
 			remove_province_modifier = estate_nobles_vegvar_system_modifier
+		}
+		if = {
+			limit = {
+				has_province_modifier = kni_fort_garrison_grain
+			}
+			remove_province_modifier = kni_fort_garrison_grain
 		}
 		if = {
 			limit = {

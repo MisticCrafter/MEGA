@@ -517,10 +517,9 @@ navy_with_order_reform = {
 	modifiers = {
 		max_admiral_fire = 1
 		sailors_recovery_speed = 0.33
-		naval_forcelimit_modifier = 0.25
 		global_ship_recruit_speed = -0.20
 		special_unit_forcelimit = 0.10
-		max_absolutism_effect = -0.10
+		max_absolutism_effect = -0.15
 	}
 	ai = {
 		factor = 3

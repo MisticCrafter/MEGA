@@ -1,0 +1,100 @@
+namespace = deborah_events
+
+country_event = {
+	id = kni_venice_destroy.t
+	title = kni_venice_destroy.t
+	desc = kni_venice_destroy.d
+	picture = BATTLE_VISTULA_LAGOON_eventPicture
+	major = yes
+	fire_only_once = yes
+	trigger = {
+		112 = {
+			controlled_by = KNI
+		}
+	}
+	option = {
+		name = "KILL_VENICE_DIE"
+		112 = {
+			custom_tooltip = BYZ_this_province_will_lose_development
+			
+			custom_tooltip = " "
+			
+			hidden_effect = {
+				export_to_variable = {
+					which = BYZ_amount_of_dev
+					value = trigger_value:development
+				}
+				multiply_variable = {
+					which = BYZ_amount_of_dev
+					value = 1
+				}
+				while = {
+					limit = {
+						check_variable = {
+							which = BYZ_amount_of_dev
+							value = 0.75
+						}
+						OR = {
+							base_tax = 2
+							base_production = 2
+							base_manpower = 2
+						}
+					}
+					random_list = {
+						1 = {
+							trigger = {
+								base_tax = 2
+							}
+							add_base_tax = -1
+							ROOT = { add_treasury = 75 }
+						}
+						1 = {
+							trigger = {
+								base_production = 2
+							}
+							add_base_production = -1
+							ROOT = { add_treasury = 75 }
+						}
+						1 = {
+							trigger = {
+								base_manpower = 2
+							}
+							add_base_manpower = -1
+							ROOT = { add_treasury = 75 }
+						}
+					}
+					change_variable = {
+						which = BYZ_amount_of_dev
+						value = -1
+					}
+				}
+				set_variable = {
+					which = BYZ_amount_of_dev
+					value = 0
+				}
+			}
+			add_province_modifier = {
+				name = kni_chastening_of_venice
+				duration = 18265
+			}
+		}
+		add_stability = -2
+		add_mil_power = 100
+		reverse_add_aggressive_expansion = {
+			who = SWI
+			value = 50
+		}
+		reverse_add_aggressive_expansion = {
+			who = SIC
+			value = 50
+		}
+		add_country_modifier = {
+			name = kni_treasures_of_venice
+			duration = 7305
+		}
+		add_country_modifier = {
+			name = kni_annihilation_of_venice
+			duration = 18265
+		}
+	}
+}
