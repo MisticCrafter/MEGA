@@ -153,9 +153,9 @@
  ARC_competitive_advantage_desc: "Our history is a bloody one, and none show that fact more brazenly than our paladin warriors. Originally a martial brotherhood born of an unlikely alliance with the crazed crusaders, the Paladins have gradually become an essential part of our armies - however, they are still nominally independent of the Archon and fight only on the agreement of their Lords Palatine. It's abundantly clear that we must rein them in."
  ARC_conquer_coastal_morocco_title: "Tame the Crusaders"
  ARC_conquer_coastal_morocco_desc: "The Berbers have inhabited the lands of Mauretania since time immemorial and haunted our coasts and ships for just as long. In recent times, the region fell to Crusader rule, but that did little to quell the threat. Much the opposite, in fact. They see us as heathen dogs fit for nothing but death, and treat any ship flying our colors accordingly. It's about time we turn our gaze southwards and impose Andal rule on those lands, just as we once did to Iberia."
- ARC_reform_paladins_title: "Refine the Paladins"
+ ARC_reform_paladins_title: "Refine the Astari"
  ARC_reform_paladins_desc: "The integration of the Paladins has been a great success; however, new styles of warfare have been developed to defeat them on the battlefield, so a reform in organization is needed to keep them as unbeatable as they are considered to be."
- ARC_colonial_paladins_title: "Dispatch the Paladins"
+ ARC_colonial_paladins_title: "Sunset Expeditions"
  ARC_colonial_paladins_desc: "With our conquests in Europe and North Africa drawing to a close, many have questioned the purpose set forth for the newly integrated Paladin brotherhoods. Some have proposed that they serve as mere peace-keepers and remain in our home territories to police the realm; some have proposed that they be sent in missions to faraway lands as mercenaries of sorts to act as the state's will in distant realms, and others propose a unique blend of the former: send the Paladins to our newly formed kingdoms in the New World! There, they will aid our viceroys and tend to the Archon's peace, but also act as our proxies and ply our will as ordered."
  ARC_colonize_guinea_title: "Riches of Guinea"
  ARC_colonize_guinea_desc: "The merchants were right! Just beyond the Bojador, the sickly desert fades into the green of Guinea, a land of rivers and grain not unlike our own southern reaches. The people here are queer: they follow some variation of the word of Christ, but their clothing, housing and tongue are completely alien. It matters not, for we understand one another well enough in a common tongue; that of Gold. The realms of Mali and Ghana are fabulously wealthy and seem willing, if appropriately persuaded, to let us partake in said wealth. We must capitalize on this opportunity and set up a factory nearby."
@@ -167,7 +167,7 @@
  ARC_malabar_desc: "We must establish a series of factories along the Malabar coast to produce and market the spices that are native and abundant in the region. While we may be able to purchase some of the land, it may ultimately be necessary to seize it by force where we cannot reach an agreement with the Indian princes."
  ARC_surat_title: "Seize Surat"
  ARC_surat_desc: "Our merchants watch Surat hungrily as the fortunes of its rulers waver. We must pay close attention to the political climate of this region and seize an ideal moment to launch an assault on the city."
- ARC_restore_order_title: "A Dish Served Cold"
+ ARC_restore_order_title: "Dawn of an Empire"
  ARC_restore_order_desc: "In our darkest hour, seven high lords chose to band together and plunge their accursed daggers into our backs. They failed: we perserve, as we always have. Five of them have been slain, and their holdings attained. Two remain: the duke of Cynetaía and the queen of Sarcaía. It's high time we remind them why it was not the crazed papists of the north nor the zealous muslims of the south who sealed the fate of Iberia, but us. And us alone."
  ARC_flagship_title: "The Westward Fleets"
  ARC_flagship_desc: "Shipbuilding has progressed since the foundation of the Royal Arsenals in Sintra and Lisarra in the 13th century. Our previous vessels were incapable of braving the vast oceans and so, after much work and debate, we have crafted two new types of ship: the caravel and the galleon!"
@@ -258,15 +258,15 @@
  ARC_east_india_company_modifier: "Great House of India"
  ARC_andal_red: "Andal Red"
  ARC_rejected_faith_union: "Rejected a Union of Faith"
- ARC_galleons: "Andal Galleons"
- ARC_caravels: "Andal Caravels"
+ ARC_grand_navy: "Ruler of the Waves"
  ARC_adopting_galleons: "Adopting Galleons"
  ARC_adopting_caravels: "Adopting Caravels"
  ARC_reformed_galleons: "Galleons: None so Fierce"
  ARC_reformed_caravels: "Caravels: None so Industrious"
  ARC_new_fleets: "The Invincible Armada"
- ARC_adopting_paladins: "Integrating the Paladins"
- ARC_reformed_paladins: "Paladins: None so Feared"
+ ARC_adopting_astari: "Adopting Grand Army Doctrines"
+ ARC_reformed_paladins: "Astari: None so Feared"
+ ARC_nobility_dissolved: "Dissolved the Nobility"
 
  # (Modifiers) from Andalos Events
  ARC_african_alliance: "Andal Weaponry"
@@ -314,6 +314,15 @@
  # (Modifiers) from Estate Privileges
  estate_burghers_tigranic_autonomy_modifier: "Granted Tigranic Autonomy"
 
+ estate_astari_americathemes_modifier: "Sunset Themes"
+ desc_estate_astari_americathemes_modifier: "This nation is being administrated per the Andal 'Themata' system, albeit adapted to the characteristics of the New World."
+ estate_knights_castle_development_modifier: "Royal Patronage"
+ desc_estate_knights_castle_development_modifier: "This provinge is receiving significant royal funds for infrastructure and development."
+ estate_knights_monopoly_of_metals_modifier: "Monopoly on Mining and Smelting"
+ desc_estate_knights_monopoly_of_metals_modifier: "The state has granted the [Root.Owner.GetKnightsName] monopoly rights over iron and copper production."
+ estate_knights_monopoly_of_livestock_modifier: "Monopoly on Livestock"
+ desc_estate_knights_monopoly_of_livestock_modifier: "The state has granted the [Root.Owner.GetKnightsName] monopoly rights over livestock farming."
+ 
  # (Global) Triggered Modifiers
  heresy_crushed_tigranic: "The Tigranic Rite, Extinguished"
  heresy_crushed_thibaultine: "The Oath of Thibault, Extinguished"
@@ -356,7 +365,8 @@
  flavor_andalos_6_tt: "§GEvent Insight:§!\nAn expedition lead by our explorer, Vasco da Gama, will seize the port city of §YChittagong§! and make it into an '§YAndal Feitoria§!'."
  flavor_andalos_19_tt: "\n§GEvent Insight:§!\nThis event will paint the story of §YMariano 'the Gallant'§!, the last Archon of §YAndalos§! and his tragic defeat in the valleys of Morocco, which is the catalyst of our §Yrecent decline§!."
  flavor_andalos_20_tt: "\n§GEvent Insight:§!\nThis event will paint the story of the recently attempted §Ydissolution of Andalos§!, as well as the current state of the country."
- flavor_andalos_21_tt: "The disaster '§YEventide§!' will start."
+ flavor_andalos_21_tt: "The disaster '§YEventide§!' will start.\n\n§GInsight:§!\nIn order to beat the disaster, the following conditions must be true:\n - §YCynetaía§! must not exist.\n - §YSarcaía§! must not exist.\n - The '§YDucal Cynetaía§!' area must be owned by Andalos.\n - The '§YSarcaía§!' area must be owned by Andalos.\n\nIf all conditions are met, we will be able to proclaim the §TEdict of Lisarra§!, formally abolishing the disloyal nobility.\n\n§RWarning:§! As long as the armistice holds, the rebel countries will try to broker alliances with foreign realms, namely §YTrinacria§! and §YSwitzerland§!; and try to stir unrest in our vicerroyalties in the north. To impede them, sabotage them via §YCovert actions§!, employ good §YSpymaster§! advisors and send aid to your vassal realms."
+ flavor_andalos_23_tt: "The '§TEdict of Lisarra§!' has been proclaimed by the Archon, dissolving the Nobility and transferring their powers, offices and duties to the '§YMagisters§!' and the '§YAstari Order§!'.\n\n§GInsight:§!\nDissolved the §YNobility§! estate.\nUnlocked new privileges for the §YMagisters§! estate.\nUnlocked new privileges for the §YAstari§! estate.\nExiled nobles may approach the courts of foreign rulers, requesting §Ylands and titles§! in exchange for fealty."
  has_guinean_friend_tt: "At least one gold producer in §YWest Africa§! has at least §Y100§! opinion of us."
  hellenic_refugees_andal_tt: "All §YAndal§! nations will gain §G10§! Prestige, lose §R50§! Administrative Power and get '§YHellenic Refugees§!' for §Y20 years§!, giving the following effects:\nState Maintenance: §R+20%§!\nGlobal Settler Increase: §G+20.00§!\nIdea Cost: §G-5.0%§!"
  hellenic_refugees_tigranic_tt: "\nAll §Ynon-Andal Tigranic§! nations will gain §G5§! Prestige, lose §R10§! Administrative Power and get '§YHellenic Refugees§!' for §Y20 years§!, giving the following effects:\nState Maintenance: §R+5%§!\nGlobal Settler Increase: §G+15.00§!"
@@ -383,10 +393,13 @@
  # (Tooltips) for Great Projects
  unlocked_exarchates_tt: "Has unlocked §YExarchates§!."
  unlocks_exarchates_tt: "Unlocks the creation of §YExarchates§!."
+ reverse_unlocks_exarchates_tt: "Revokes the ability to create §YExarchates§!."
  unlocks_meralinea_tt: "Unlocks the great project '§YMeralinéa, the Old Citadel§!'."
- unlocks_mascagar_tt: "Unlocks the great ptoject '§YMascagar, the Bladegarden§!'."
+ unlocks_mascagar_tt: "Unlocks the great project '§YMascagar, the Bladegarden§!'."
+ reverse_unlocks_mascagar_tt: "Revokes the ability to build, improve or benefit '§YMascagar, the Bladegarden§!'"
  province_is_or_accepts_tigranic_tt: "The religion of §Y[Root.GetName]§! is §YTigranic§! and is either the State or the Syncretic Religion of the owner."
  athens_basilica_catholic_trigger_tt: "The religion of §Y[Root.GetName]§! is §YTigranic§! or §YOrthodox§! and this community has been granted §Yreligious autonomy§!."
+ passed_edict_of_lisarra_tt: "Has passed the '§TEdict of Lisarra§!'."
 
  # (Tooltips) for Estate Modifiers
  EST_VAL_HAS_NO_NOBILITY: "Abolished the Old Nobility: §G$VAL$§!"
@@ -399,6 +412,20 @@
  estate_burghers_tigranic_tolerance_effect_tooltip: "Every owned province of §YTigranic§! faith gains:\nLocal Missionary Strength: §R-100%§!\nLocal Religious Unity Contribution: §G-100%§!"
  estate_burghers_tigranic_tolerance_revoke_effect_tooltip: "The modifier '§YGranted Tigranic Autonomy§!' is removed from all owned §YOrthodox§! and §YCoptic§! provinces."
  
+ estate_astari_americathemes_granted_tt: "Every §Ycolonial subject§! will get '§YSunset Themes§!', giving the following effects:\n   Yearly Army Tradition: §G+0.50§!\n   Astari Force Limit Fraction: §+25.0%§!\n   Country Allows Astari Infantry"
+ estate_astari_americathemes_revoked_tt: "The modifier '§YSunset Themes§!' is removed from all colonial subjects."
+ estate_knights_castle_development_granted_tt: "Every owned province with a §Yfort§! gains the following bonus:"
+ estate_knights_castle_development_revoked_tt: "The modifier '§YRoyal Patronage§!' is removed from all owned provinces."
+ 
+ enable_estate_action_PROMOTE_NEW_GRANDMASTER_tt: "[Root.EnableEstateDecisionText] §Y[Root.GetKnightsName]: Annoint a Grandmaster§!"
+ disable_estate_action_PROMOTE_NEW_GRANDMASTER_tt: "[Root.DisableEstateDecisionText] §Y[Root.GetKnightsName]: Annoint a Grandmaster§!"
+
+
+ estate_knights_monopoly_of_metals_granted_tt: "§RNo income from §YIron§! or §YCopper§!§!"
+ estate_knights_monopoly_of_metals_revoked_tt: "Production income from §YIron§! and §YCopper§! is restored."
+ estate_knights_monopoly_of_livestock_granted_tt: "§RNo income from §YLivestock§!§!"
+ estate_knights_monopoly_of_livestock_revoked_tt: "Production income from §YLivestock§! is restored."
+
  # (Tooltips) for Triggered Modifiers
  crush_tigranic_heresy_success_tt: "Every §YCatholic§! nation will get '§YThe Tigranic Rite, Extinguished§!' so long as no §YTigranic§! nation exists, giving the following effects:\n   Technology Cost: §G-10.0%§!\n   Institution Spread In True Faith Provinces: §G+10.0%§!\n   Curia Powers cost: §G-10.0%§!"
  crush_thibaultine_heresy_success_tt: "Every §YCatholic§! nation will get '§YThe Oath of Thibault, Extinguished§!' so long as no §YThibaultine§! nation exists, giving the following effects:\n   Foreign Spy Detection: §G+25.0%§!\n   Average Monarch Lifespan: §G+25.0%§!\n   Spy Action Cost Modifier: §G-25.0§!"
@@ -489,7 +516,9 @@
  flavor_andalos.22.title: "The Subjugation of Hellas"
  flavor_andalos.22.desc: "In centuries past, our house ruled over all of Attica, and all of Morea besides. Then, in a moment of weakness, our subjects turned against us, and so we fled. But soon enough, fate would make the traitors kneel too - in the early days of our new state, the traitorous bannermen who seized Attica from us fell into disgrace, and so one of our own, Darios 'the Daring', seized the opportunity: setting out from Selambina with three thousand Astari, he stormed the beaches of Megara and reclaimed Athens, restoring the House of Sintra to its rightful place.\n\nAnd now, Darios would be rolling in his grave.\nAfter years of grave opposition and stagnation, the Small Council in Athens has opted to supercede their lawful Duke, signing away their realm to a foreign sovereign. Not even two days after the fact, foreign troops landed on the western coasts, intent on seating their king upon his newest throne. Eirenaios, seeing the writing on the wall, did as our ancestors once did: he gathered his household, his trusted men and all he had, and set sail westwards.\nAnd so, a peculiar ship was spotted docking in Nebrissa, flying the colors of our dynasty..."
  flavor_andalos.22.a: "At last! The House of Sintra is finally united again!"
- 
+ flavor_andalos.23.title: "The Edict of Lisarra"
+ flavor_andalos.23.desc: "kiss my ass noble boy"
+ flavor_andalos.23.a: "So mote it be!"
  # Events (Tigranic)
  flavor_tigranic.1.title: "Divine the Stars"
  flavor_tigranic.1.desc: "mlem"
@@ -634,6 +663,10 @@
  andalos_exarchate_france_decision_title: "Proclaim the Exarchate of Gallia"
  andalos_exarchate_france_decision_desc: "Our recently acquired territories in Gallia are proving to be more of a burden than a benefit: they are faraway, populated with different, often hostile, folk and coveted by local lords who plot to strike at our darkest hour. The laws of Andalos will not yield the same fruits here as they would in our heartlands, and thus we will not apply them: we shall apply the laws of the Exarchs, as outlined by our predecessors, and appoint a commissioner to rule in our stead."
  
+ # Astari (Decisions)
+ estate_knights_promote_grandmaster_title: "[Root.GetKnightsName]: Annoint a Grandmaster"
+ estate_knights_promote_grandmaster_desc: "WIP"
+
  # Christian (Decisions)
  crush_tigranic_heresy_decision_title: "Crush the Tigranic Heresy"
  crush_tigranic_heresy_decision_desc: "Religion is a fickle mistress, and deservedly so. To grasp that there is a God is a simple notion. To know that He is all-knowing, all-loving and all-caring is not much harder to grasp. To know the nature of His kingdom, the philosophy behind His plan and, in so, the life He would want us to live, and the path to the ones beyond, is a different matter altogether. Traditionally, it is held that the Pope is our guide, and that by following his word, we may gleam that Great Truth for ourselves; but, over the centuries, many have risen, claiming otherwise...\n\nIn recent centuries, Western Europe has drowned in an utter deluge of these con artists. In the West, smuggled tomes of ancient lore has reignited discussions surrounding the wisdom and truth of the Andals' hellenic forefathers. From this, an unholy blend of Christian tradition, Islamic attitude and Hellenic thought emerged and spread like wildfire. As it stands, it poses a significant threat to the primacy of the Universal Church and must therefore be crushed."
@@ -706,7 +739,7 @@
  estate_knights_desc: "This estate represents the knightly orders operating in your country. Formed in the bygone Age of Crusades to aid the adventurous rulers of Europe in their arduous efforts to seize the Sword Coast, their privileges are guaranteed by centuries-old contracts and agreements, as well as entrenched concessions. In that age, their primary duty was to participate in the eponymous Crusades. But that age is long gone, and many are uncertain as to what the future holds for these orders."
  estate_astari: "Astari"
  estate_astari_desc: "Before the fall of Byzantium, it was not uncommon for disgraced nobles to find new purpose in the Crusades; as a result, there was hardly ever a shortage of noble households crossing the Aegean eastwards. Some opted to stop in Greece, either to simply rest and resupply; or to accrue some glory and gold by making good on deals struck with local lords. One such campaign led a Crusader army, battered and weak, to request aid and shelter within the walls of Athens, then our seat of power. They were lead by Raymond de Lusignan, who had fought with the then-Duke of Hellas on prior wars against common enemies in Anatolia and beyond. Recognizing his old brother-in-arms, the Duke welcomed the crusaders.\n\nHaving fled the political fires of Aquitania, Raymond made Hellas his new home, and his crusaders followed suit. Emboldened by his new liege, he began to shape his troops into a peculiar order: initially mere retainers and palace guards, the 'Astari' - as they were henceforth named - grew in importance and favor as the Dukes grew ever wearier of their feudal subjects' reliability, culminating in their establishment as the Dukes' personal, permanent military; the first of its kind.\n\nEver since then, the Astari Order has grown tenfold, incorporating both wayward crusaders and youthful greeks, never suffering in its legendary prowess and loyalty for it. Their unparalleled prestige has earned them both the favour of Archons and the distate of nobles in equal measure, who see their continued patronage as a threat to their positions and titles..."
- 
+ estate_magisters: "Magisters"
  country_estate_knights_name: "[This.GetKnightsName]"
 
  estate_knights_ownership: "[Country.GetKnightsName] Land Ownership"
@@ -716,6 +749,10 @@
  mechanic_no_knights_loyalty_loss_from_absolutism_yes: "Absolutism no longer reduces §Y[Country.GetKnightsName]§! loyalty."
 
  ### ESTATE PRIVILEGES ###
+
+ # Clergy (Privileges)
+ estate_church_meralinea: "Restore the Old Citadel"
+ estate_church_meralinea: "WIP"
 
  # Nobility (Privileges)
  estate_nobles_andal_strong_duchies: "One King, Seven Crowns"
@@ -729,7 +766,32 @@
 
  # Knights, Astari (Privileges)
  estate_astari_arcagarda: "Arcagarda"
- estate_astari_arcagarda_desc: "aaa"
+ estate_astari_arcagarda_desc: "WIP"
+ estate_astari_astarostratha: "Astarostratha"
+ estate_astari_astarostratha_desc: "WIP"
+ estate_astari_exarches: "Restore the Lords Exarch"
+ estate_astari_exarches_desc: "WIP"
+ estate_astari_americathemes: "The Sunset Themes"
+ estate_astari_americathemes_desc: "WIP"
+
+ # Knights, Generic (Privileges)
+ estate_knights_primacy: "Primacy of the Knights"
+ estate_knights_primacy_desc: "WIP"
+ estate_knights_land_rights: "Knightly Land Rights"
+ estate_knights_land_rights_desc: "WIP"
+ estate_knights_advisors: "Marshals in the Council"
+ estate_knights_advisors_desc: "WIP"
+ estate_knights_autonomy: "Autonomous Palatinates"
+ estate_knights_autonomy_desc: "WIP"
+ estate_knights_monopoly_of_metals: "Monopoly on Mining and Smelting"
+ estate_knights_monopoly_of_metals_desc: "WIP"
+ estate_knights_monopoly_of_livestock: "Monopoly on Livestock"
+ estate_knights_monopoly_of_livestock_desc: "WIP"
+ estate_knights_castle_development: "Charters for Bastion-Cities"
+ estate_knights_castle_development_desc: "WIP"
+ estate_knights_investiture: "Stratocratic Investiture"
+ estate_knights_investiture_desc: "WIP"
+
  ###
  
  ### GREAT PROJECTS ###

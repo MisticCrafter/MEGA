@@ -162,7 +162,7 @@ country_decisions = {
 
             create_subject = {
                 who = AE2
-                subject_type = vassal
+                subject_type = "dominion"
             }
 
             AE2 = {
@@ -252,7 +252,7 @@ country_decisions = {
 
             create_subject = {
                 who = AE3
-                subject_type = vassal
+                subject_type = "dominion"
             }
 
             AE3 = {
@@ -325,7 +325,7 @@ country_decisions = {
 
             create_subject = {
                 who = AE4
-                subject_type = vassal
+                subject_type = "dominion"
             }
 
             AE4 = {
@@ -398,7 +398,7 @@ country_decisions = {
 
             create_subject = {
                 who = AE5
-                subject_type = vassal
+                subject_type = "dominion"
             }
 
             AE5 = {
@@ -498,13 +498,7 @@ country_decisions = {
 
         allow = {
             all_country = {
-                OR = {
-                    NOT = { religion_group = christian }
-                    AND = {
-                        religion_group = christian
-                        NOT = { religion = rationalist }
-                    }
-                }
+                NOT = { religion = rationalist }
             }
         }
 

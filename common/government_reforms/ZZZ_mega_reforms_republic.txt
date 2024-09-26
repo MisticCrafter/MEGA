@@ -156,10 +156,11 @@ american_merchant_republic = {
 	allow_normal_conversion = yes
 	lock_level_when_selected = yes
 	modifiers = {
-		max_absolutism = -10
+		max_absolutism = -20
 		merchants = 1
+		colonists = 1
+		global_trade_goods_size_modifier = 0.1
 		yearly_corruption = -0.1
-		monarch_lifespan = 0.25
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40

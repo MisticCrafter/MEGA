@@ -5,9 +5,11 @@ technology_group = western
 religion = tigranic
 primary_culture = andal
 capital = 224
-1000.1.1 = {
-	set_estate_privilege = estate_nobles_andal_strong_duchies
-}
+
+#1000.1.1 = {
+#	set_estate_privilege = estate_nobles_andal_strong_duchies
+#}
+
 1444.11.11= {	
 	monarch = {
 		name = "Tigrano"
@@ -52,6 +54,7 @@ capital = 224
 	add_heir_personality = tactical_genius_personality
 
 	set_estate_privilege = estate_astari_arcagarda
+
 	change_estate_land_share = {
 		estate = estate_knights
 		share = -15

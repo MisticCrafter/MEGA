@@ -100,7 +100,15 @@ crusader_kingdom_reform = {
 	icon = "holy_state_reform"
 	allow_normal_conversion = no
 	potential = {
-		religion_group = christian
+		religion_group = catholic
+		OR = {
+			tag = MUG
+			culture_group = crusader_group
+			capital_scope = {
+				NOT = { continent = europe }
+			}
+		}
+
 	}
 	nation_designer_trigger = {
 		religion_group = christian

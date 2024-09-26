@@ -98,13 +98,7 @@ heresy_crushed_rationalist = {
 
     trigger = {
         all_country = {
-            OR = {
-                NOT = { religion_group = christian }
-                AND = {
-                    religion_group = christian
-                    NOT = { religion = rationalist }
-                }
-            }
+            NOT = { religion = rationalist }
         }
     }
 

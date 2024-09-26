@@ -2,7 +2,7 @@ andalos_eventide = {
     potential = {
         tag = ARC
         NOT = {
-            has_country_flag = andalos_eventide_end
+            has_country_flag = edict_of_lisarra_flag
         }
     }
 
@@ -10,10 +10,14 @@ andalos_eventide = {
         always = yes
     }
 
+    can_stop = {
+        stability = 3
+    }
+
     progress = {
         modifier = {
             factor = 100
-            always = yes
+            NOT = { stability = 3 }
         }
     }
 
@@ -57,15 +61,14 @@ andalos_eventide = {
     }
 
     #on_start = hi
-    #on_end = bye
+    on_end = flavor_andalos.23
 
     on_monthly = {
         events = {
-
         }
 
         random_events = {
-
+            100 = 0
         }
     }
 }

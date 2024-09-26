@@ -8,6 +8,7 @@ estate_nobles = {
 		#NOT = { has_reform = trading_city }
 		NOT = { has_government_attribute = disables_estate_nobles }
 		NOT = { has_disabled_estate = { estate = estate_nobles } }
+		NOT = { has_country_flag = edict_of_lisarra_flag } # Megacampaign
 		OR = {
 			has_government_attribute = enables_estate_nobles
 			has_enabled_estate = { estate = estate_nobles }

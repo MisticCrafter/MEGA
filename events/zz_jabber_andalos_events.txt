@@ -1217,6 +1217,13 @@ country_event = {
 
 	option = {
 		name = flavor_andalos.21.a
+		define_general = {
+			name = "Eraclio Mûnderanos"
+			shock = 3
+			fire = 0
+			manuever = 2
+			siege = 1
+		}
 		custom_tooltip = flavor_andalos_21_tt
 	}
 }
@@ -1269,5 +1276,51 @@ country_event = {
 				duration = 7300
 			}
 		}
+	}
+}
+
+# Edict of Lisarra (rip nobility)
+country_event = {
+	id = flavor_andalos.23
+	title = flavor_andalos.23.title
+	desc = flavor_andalos.23.desc
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = ARC
+	}
+
+	immediate = {
+		set_country_flag = edict_of_lisarra_flag
+		change_estate_land_share = {
+			estate = estate_burghers
+			share = 4
+		}
+		change_estate_land_share = {
+			estate = estate_church
+			share = 8
+		}
+		change_estate_land_share = {
+			estate = estate_knights
+			share = 8
+		}
+
+	}
+
+	option = {
+		name = flavor_andalos.23.a
+		major = yes
+		add_country_modifier = {
+			name = "ARC_adopting_astari"
+			duration = 3650
+		}
+		add_country_modifier = {
+			name = "ARC_nobility_dissolved"
+			duration = 7300
+		}
+		custom_tooltip = flavor_andalos_23_tt
 	}
 }
