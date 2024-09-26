@@ -18,7 +18,7 @@ akaman_slot_1_missions = {
 		completed_by = 1501.1.1
 		
 		provinces_to_highlight = {
-			province = 1098ss
+			province = 1098
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
@@ -32,9 +32,8 @@ akaman_slot_1_missions = {
 			}
 			custom_trigger_tooltip = {
 				tooltip = miss_colonize_sthelena
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 1
-					province = 1098
+				1098 = {
+					owned_by = ROOT
 					is_city = yes
 				}
 			}
@@ -164,13 +163,6 @@ akaman_slot_1_missions = {
 				name = "aka_yucatan_buff"
 				duration = 7300
 			}
-			define_conquistador = {
-				name = "Valen McSpiegel"
-				fire = 4
-				shock = 4
-				manuever = 5
-				siege = 1
-			}
 			kongo_region = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -217,12 +209,12 @@ akaman_slot_1_missions = {
 				limit = {
 					765 = {
 						NOT = {
-							trade_goods = cacao
+							trade_goods = cocoa
 						}
 					}
 				}
 				765 = {
-					change_trade_goods = cacao
+					change_trade_goods = cocoa
 				}
 			}
 			765 = {

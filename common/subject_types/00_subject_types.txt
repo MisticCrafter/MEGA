@@ -1923,7 +1923,6 @@ vicerroyalty = {
 	opinion_on_subject_integration = 0
 
 	pays_overlord = 0.25
-	forcelimit_bonus = 0.0
 	forcelimit_to_overlord = 0.0
 	
 	military_focus = 2.0
@@ -2006,7 +2005,6 @@ dominion = {
 	opinion_on_subject_integration = 0
 
 	pays_overlord = 0.1
-	forcelimit_bonus = 2.0
 	forcelimit_to_overlord = 0.3
 	
 	military_focus = 2.0
