@@ -4641,6 +4641,7 @@ taj_mahal = {
 			AND = {
 				OR = {
 					culture_group = iranian
+					culture_group = crusader_group
 				}
 				province_is_or_accepts_culture = yes
 			}
@@ -4667,6 +4668,7 @@ taj_mahal = {
 			AND = {
 				OR = {
 					culture_group = iranian
+					culture_group = crusader_group
 				}
 				province_is_or_accepts_culture = yes
 			}
@@ -4683,6 +4685,7 @@ taj_mahal = {
 			AND = {
 				OR = {
 					culture_group = iranian
+					culture_group = crusader_group
 				}
 				province_is_or_accepts_culture = yes
 			}
@@ -9517,9 +9520,9 @@ el_escorial = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			global_autonomy = -0.01	
-			global_tariffs = 0.05
-			treasure_fleet_income = 0.05			
+			global_autonomy = -0.01
+			technology_cost = -0.025
+			global_institution_spread = 0.1
 		}
 
 		#what effects happen when this tier is achieved
@@ -9548,10 +9551,9 @@ el_escorial = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			global_autonomy = -0.025
-			governing_capacity_modifier = 0.05
-			global_tariffs = 0.1
-			treasure_fleet_income = 0.1
+			global_autonomy = -0.0025
+			technology_cost = -0.05
+			global_institution_spread = 0.2
 		}
 
 		#what effects happen when this tier is achieved
@@ -9581,9 +9583,8 @@ el_escorial = {
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			global_autonomy = -0.05
-			governing_capacity_modifier = 0.1
-			global_tariffs = 0.2
-			treasure_fleet_income = 0.2
+			technology_cost = -0.10
+			global_institution_spread = 0.3
 		}
 
 		#what effects happen when this tier is achieved

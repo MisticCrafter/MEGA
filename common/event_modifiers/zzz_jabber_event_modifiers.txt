@@ -143,10 +143,10 @@ ARC_hellenic_refugees = {
     state_maintenance_modifier = 0.20
 }
 
-ARC_adopting_paladins = {
+ARC_adopting_astari = {
     reinforce_speed = -0.3
     land_maintenance_modifier = 0.6
-    land_morale = -0.3
+    shock_damage_received = 0.3
     is_tercio_modifier = yes
 }
 
@@ -158,16 +158,9 @@ ARC_reformed_paladins = {
 	is_tercio_modifier = yes
 }
 
-ARC_galleons = {
-	allowed_galleon_fraction = 0.2
-	has_galleon = yes
-	navy_tradition = 0.25
-}
-
-ARC_caravels = {
-    allowed_caravel_fraction = 0.2
-    has_caravel = yes
-    navy_tradition = 0.25
+ARC_grand_navy = {
+    navy_tradition = 0.5
+    naval_forcelimit_modifier = 0.33
 }
 
 ARC_adopting_galleons = {
@@ -202,6 +195,13 @@ ARC_new_fleets = {
 ARC_house_united = {
     legitimacy = 0.5
     prestige_decay = -0.01
+}
+
+ARC_nobility_dissolved = {
+    reinforce_speed = -0.25
+    global_manpower_modifier = -0.33
+    land_forcelimit_modifier = -0.33
+    allowed_tercio_fraction = 0.33
 }
 
 ###
@@ -381,3 +381,21 @@ estate_burghers_tigranic_autonomy_modifier = {
 }
 
 #sorry if any of these comments make you like, tear up and cry, sob even... I just wanted to write comments smile
+
+estate_astari_americathemes_modifier = {
+    army_tradition = 0.5
+    allowed_tercio_fraction = 0.25
+    has_tercio = yes
+}
+
+estate_knights_castle_development_modifier = {
+    local_development_cost = -0.1
+}
+
+estate_knights_monopoly_of_metals_modifier = {
+	local_production_efficiency = -10
+}
+
+estate_knights_monopoly_of_livestock_modifier = {
+	local_production_efficiency = -10
+}

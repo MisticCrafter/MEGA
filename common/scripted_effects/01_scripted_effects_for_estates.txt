@@ -6596,3 +6596,14 @@ clr_grand_vizier_flags = {
 	clr_country_flag = selected_grand_vizier_from_estate_ghulams
 	clr_country_flag = selected_grand_vizier_from_all
 }
+
+### ADDED BY MEGACAMPAIGN ###
+
+estate_action_PROMOTE_NEW_GRANDMASTER = {
+	create_leader_scaling_with_tradition = {
+		leader = general
+		type = army
+	}
+}
+
+###

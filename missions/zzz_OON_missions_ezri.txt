@@ -15,7 +15,7 @@ Survive = {
 				area = livonia_area
 				province_id = 40
 				province_id = 271
-				province_id = 4543
+				province_id = 4534
 			}		
 		}
 		trigger = {
@@ -23,7 +23,7 @@ Survive = {
 			ROOT = {
 				owns = 40
 				owns = 271
-				owns = 4543
+				owns = 4534
 			}
 			curonia_area = {
 				type = all
@@ -58,7 +58,7 @@ Survive = {
 				area = livonia_area
 				province_id = 40
 				province_id = 271
-				province_id = 4543
+				province_id = 4534
 			}
 		}
 		trigger = {
@@ -66,7 +66,7 @@ Survive = {
 			ROOT = {
 				owns = 40
 				owns = 271
-				owns = 4543
+				owns = 4534
 			}
 			curonia_area = {
 				type = all
@@ -109,7 +109,7 @@ Survive = {
 				area = livonia_area
 				province_id = 40
 				province_id = 271
-				province_id = 4543
+				province_id = 4534
 			}
 		}
 		trigger = {
@@ -117,7 +117,7 @@ Survive = {
 			ROOT = {
 				owns = 40
 				owns = 271
-				owns = 4543
+				owns = 4534
 			}
 			curonia_area = {
 				type = all
@@ -155,7 +155,7 @@ Survive = {
 					area = livonia_area
 					province_id = 40
 					province_id = 271
-					province_id = 4543
+					province_id = 4534
 				}
 			}
 			position = 4
@@ -164,7 +164,7 @@ Survive = {
 				root = {
 					owns = 40
 					owns = 271
-					owns = 4543
+					owns = 4534
 				}
 				curonia_area = {
 					type = all
@@ -176,10 +176,36 @@ Survive = {
 				}
 			}
 			effect = {
-				hidden_effect = {
-					remove_country_modifier = OON_reduced_atoms
+				remove_country_modifier = melancholic_millenium
+				set_country_flag = Trikai_destroyed
+				add_government_reform = Sisterly_Order
+				remove_government_reform = depressed_orthodox_church
+			}
+		}
+		oon_oppose_sweden = {
+			icon = mission_unite_scandinavia
+			required_missions = {
+			}
+			position = 5
+			trigger = {
+				OON = {
+					is_rival = SWE
 				}
-				add_government_reform = Knightly_Order
+				any_claimed_province = {
+					owned_by = SWE
+				}
+				army_size_percentage = 1
+				NOT = {
+					has_estate = estate_nobles
+				}
+				manpower_percentage = 0.5
+			}
+			effect = {
+				add_country_modifier = {
+					name = troops_rallied
+					duration = 1825
+				}
+				declare_war = SWE
 			}
 		}
 	}
@@ -208,6 +234,7 @@ branch_2 = {
 				owned_by = ROOT
 			}
 			army_size_percentage = 0.9
+			mission_completed = oon_destroy_trikai
 		}
 		effect ={
 			ostra_svealand_area = {
@@ -438,21 +465,11 @@ branch_3 = {
 		}
 		position = 2
 		trigger = {
-			NOT = {
-				estonia_ingria_area = {
-					type = any
-					owned_by = ROOT
-				}
-			}
-			estonia_ingria_area = {
-				type = all
-				owned_by = NOV
-			}
 			owns = 38
 			stability = 2
-			adm_power = 100
-			dip_power = 100
-			mil_power = 100
+			adm_power = 50
+			dip_power = 50
+			mil_power = 50
 		}
 		
 		effect = {
@@ -463,6 +480,7 @@ branch_3 = {
 			}
 			38 = {
 				change_religion = orthodox
+				set_c
 				add_base_tax = 1
 				add_base_production = 1
 				add_base_manpower = 2
@@ -556,6 +574,9 @@ branch_3 = {
 				estate_privilege = estate_burghers_forest_expansion
 			}
 			scandinavia_region = {
+				limit = {
+					owned_by = OON
+				}
 				add_province_modifier = {
 					name = OON_scandinavia_dev
 					duration = 1825
@@ -606,6 +627,46 @@ branch_3 = {
 				}
 			}
 			set_country_flag = no_mil_focus_set
+		}
+	}
+
+	oon_arty_barrage = {
+		icon = mission_cannons_firing
+		position = 7
+		required_missions = {
+			
+		}
+		trigger = {
+			num_of_artillery = 15
+			army_professionalism = 0.25
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = oon_artillery_barrage
+				duration = -1
+			}
+		}
+	}
+
+	oon_advanced_arty_production = {
+		icon = mission_industrial_forging
+		position = 8
+		required_missions = {
+			oon_arty_barrage
+		}
+		trigger = {
+			mil_tech = 14
+			num_of_artillery = 30
+			mil_power = 250
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = oon_arty_production
+				duration = -1
+			}
+			add_mil_power = -250
 		}
 	}
 }
@@ -862,7 +923,7 @@ branch_4 = {
 			OR = {
 				province_id = 271
 				province_id = 4534
-				province_id = 4545
+				province_id = 4535
 			}		
 		}
 		position = 8
@@ -937,5 +998,197 @@ branch_5 = {
 	has_country_shield = yes
 	potential = { tag = OON } 
 
+	oon_amry_improvements = {
+		icon = mission_pf_soldier
+		required_missions = {
+			
+		}
+		position = 1
+		trigger = {
+			army_size_percentage = 0.9
+			army_professionalism = 0.05
+			mil_tech = 5
+			monthly_mil = 13
+		}
+
+		effect = {
+			add_army_professionalism = 0.05
+			add_army_tradition = 5
+		}
+	}
+
+	oon_improve_orthodox_relations = {
+		icon = mission_hands_praying
+		required_missions = {
+			oon_eliminate_estonia
+		}
+		position = 2
+		trigger = {	
+			OR = {
+				DAN = {
+					has_opinion = {
+						who = ROOT
+						value = 50
+					}
+				}
+				HAB = {
+					has_opinion = {
+						who = ROOT
+						value = 50
+					}
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = image_boosted
+				duration = 7300
+			}
+			every_neighbor_country = {
+				limit = {
+					religion = catholic
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = improved_image
+				}
+				add_opinion = {
+					who = PSK
+					modifier = improved_image
+				}
+				add_opinion = {
+					who = NOV
+					modifier = improved_image
+				}
+			}			
+		}
+	}	
+
+	oon_cool_russian_tensions = {
+		icon = mission_russian_revolution
+		required_missions = {
+			oon_improve_orthodox_relations
+		}
+		position = 3
+		trigger = {
+			AND = {
+				UKR = {
+					has_opinion = {
+						who = ROOT
+						value = 25
+					}
+				}
+				FIN = {
+					has_opinion = {
+						who = ROOT
+						value = 25
+					}
+				}
+				MOS = {
+					has_opinion = {
+						who = ROOT
+						value = 25
+					}
+				}
+			}
+			treasury = 250
+		}
+		effect = {
+			UKR = {
+				country_event = {
+					id = ez_knights_events.6
+				}
+			}
+			FIN = {
+				country_event = {
+					id = ez_knights_events.6
+				}
+			}
+			MOS = {
+				country_event = {
+					id = ez_knights_events.6
+				}
+			}
+			add_treasury = -250
+		}
+	}
+
+	oon_sisterhood_missionary_diplomats = {
+		icon = mission_autocephalous_archbishopric
+		required_missions = {
+			oon_cool_russian_tensions
+		}
+		position = 4
+		trigger = {
+			adm_power = 100
+			dip_tech = 6
+			any_neighbor_country = {
+				NOT = {
+					tag = NOV
+					tag = PSK
+				}
+				has_opinion = {
+					who = ROOT
+					value = 75
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = missionary_diplomats
+				duration = -1
+			}
+			every_neighbor_country = {
+				limit = {
+					NOT = {
+						tag = NOV
+						tag = PSK
+					}
+				}
+				add_casus_belli = {
+					type = cb_heretic
+					target = THIS
+					months = 600
+				}
+			}
+		}
+	}
 	
-}	
+	oon_approch_ruthenia = {
+		icon = mission_rule_ruthenia
+		required_missions = {
+			oon_sisterhood_missionary_diplomats
+		}
+		position = 5
+		trigger = {
+			OR = {
+				UKR = {
+					has_opinion = {
+						who = ROOT
+						value = 75
+					}
+				}
+				RUS = {
+					has_opinion = {
+						who = ROOT
+						value = 75
+					}
+				}
+			}
+			treasury = 750
+		}
+		effect = {
+			UKR = {
+				country_event = {
+					id = ez_knights_events.7
+				}
+			}
+			RUS = {
+				country_event = {
+					id = ez_knights_events.7
+				}
+			}
+		}
+	}
+
+}

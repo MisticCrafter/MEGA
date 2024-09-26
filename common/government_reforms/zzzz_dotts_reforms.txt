@@ -9,6 +9,7 @@ dollarstore_roman_republic_government = {
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 100
+	royal_marriage = yes
 	potential = {
 		AND = {
 			OR = {
@@ -189,6 +190,7 @@ swiss_minority = {
 		culture_conversion_time = -0.25
 		culture_conversion_cost = -0.35
 		mercenary_manpower = 0.5
+		liberty_desire = 50
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40

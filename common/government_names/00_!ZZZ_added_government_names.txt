@@ -1,3 +1,29 @@
+Sisterhood = {
+	rank = {
+		1 = SISTERHOOD
+		2 = SISTERHOOD
+		3 = GRAND_SISTERHOOD
+	}
+
+	ruler_male = {
+		1 = BROTHER
+		2 = MASTER
+		3 = HEAD_MASTER
+	}
+
+	ruler_female = {
+		1 = SISTER
+		2 = MISTRESS
+		3 = HEAD_MISTRESS
+	}
+	
+	trigger = {
+		OR ={
+			has_reform = depressed_orthodox_church
+			has_reform = Sisterly_Order
+		}
+	}
+}
 grand_duchy_monarchy = {
 	rank = {
 		1 = GRAND_DUCHY

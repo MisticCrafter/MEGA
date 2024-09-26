@@ -1940,10 +1940,10 @@ vicerroyalty = {
 		independent_nations = yes
 	}
 	can_ally = {
-		same_overlord = dominion
+		same_overlord = vicerroyalty
 	}
 	can_marry = {
-		same_overlord = dominion
+		same_overlord = vicerroyalty
 	}
 	
 	# Subject Interactions
@@ -2001,8 +2001,8 @@ dominion = {
 	trust_on_start = 20
 	overlord_can_fabricate_for = yes
 
-	base_liberty_desire = 20.0
-	liberty_desire_development_ratio = 0.25
+	base_liberty_desire = 10.0
+	liberty_desire_development_ratio = 0.05
 	opinion_on_subject_integration = 0
 
 	pays_overlord = 0.1

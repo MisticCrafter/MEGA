@@ -1,0 +1,9 @@
+improved_image = {
+	opinion = 10
+}
+russian_treaties = {
+	opinion = 10
+}
+anti_russian_treaties = {
+	opinion = -20
+}

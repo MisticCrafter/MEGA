@@ -6,6 +6,15 @@ religion = orthodox
 primary_culture = russian
 capital = 295
 unit_type = eastern
+if = {
+	limit = {
+		NOT = {
+			alliance_with = OON
+		}
+		has_country_flag = RUS_OON_ALLIANCE
+	}
+	remove_country_modifier = RUS_DIPLO_RELATIONS
+}
 1462.1.1= {
 	monarch = {
 		name = "Ivan III Veliky"

@@ -1,6 +1,6 @@
 owner = POL
 controller = POL
-capital = "Kraków"
+capital = "Krakï¿½w"
 is_city = yes
 culture = polish
 religion = catholic

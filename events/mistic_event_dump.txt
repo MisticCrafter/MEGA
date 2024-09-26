@@ -17,6 +17,7 @@ country_event = {
         4728 = { country_or_non_sovereign_subject_holds = ROOT }
         1862 = { country_or_non_sovereign_subject_holds = ROOT }
         4739 = { country_or_non_sovereign_subject_holds = ROOT }
+        NOT = { mission_completed = swiss_lombard }
     }
 
     immediate = {
@@ -77,6 +78,7 @@ country_event = {
                 change_trade_goods = livestock
             }
         }
+        ROOT = { set_country_flag = milan_purged }
     }
 
     option = {
@@ -357,6 +359,14 @@ country_event = {
                     name = "influx_of_venetian_notables_modifier"
                     duration = 7300
                 }
+                owner = {
+                    if = {
+                        limit = {
+                            NOT = { has_country_flag = has_venetian_community }
+                        }
+                        set_country_flag = has_venetian_community
+                    }
+                }
             }
             iberia_region = {
                 limit = {
@@ -374,6 +384,14 @@ country_event = {
                 add_province_modifier = {
                     name = "influx_of_venetian_notables_modifier"
                     duration = 7300
+                }
+                owner = {
+                    if = {
+                        limit = {
+                            NOT = { has_country_flag = has_venetian_community }
+                        }
+                        set_country_flag = has_venetian_community
+                    }
                 }
             }
         }
@@ -399,6 +417,7 @@ country_event = {
 		2992 = { country_or_non_sovereign_subject_holds = ROOT }
         101 = { country_or_non_sovereign_subject_holds = ROOT }
         115 = { country_or_non_sovereign_subject_holds = ROOT }
+        NOT = { mission_completed = swiss_genoa }
     }
 
     immediate = {
@@ -479,6 +498,14 @@ country_event = {
                     name = "influx_of_ligurian_notables_modifier"
                     duration = 7300
                 }
+                owner = {
+                    if = {
+                        limit = {
+                            NOT = { has_country_flag = has_ligurian_community }
+                        }
+                        set_country_flag = has_ligurian_community
+                    }
+                }
             }
             low_countries_region = {
                 limit = {
@@ -496,6 +523,14 @@ country_event = {
                 add_province_modifier = {
                     name = "influx_of_ligurian_notables_modifier"
                     duration = 7300
+                }
+                owner = {
+                    if = {
+                        limit = {
+                            NOT = { has_country_flag = has_ligurian_community }
+                        }
+                        set_country_flag = has_ligurian_community
+                    }
                 }
             }
         }
@@ -521,6 +556,7 @@ country_event = {
 		1774 = { country_or_non_sovereign_subject_holds = ROOT }
         111 = { country_or_non_sovereign_subject_holds = ROOT }
         4738 = { country_or_non_sovereign_subject_holds = ROOT }
+        NOT = { mission_completed = swiss_venice }
     }
 
     immediate = {
@@ -625,6 +661,14 @@ country_event = {
                     name = "influx_of_venetian_notables_modifier"
                     duration = 7300
                 }
+                owner = {
+                    if = {
+                        limit = {
+                            NOT = { has_country_flag = has_venetian_community }
+                        }
+                        set_country_flag = has_venetian_community
+                    }
+                }
             }
             balkan_region = {
                 limit = {
@@ -642,6 +686,14 @@ country_event = {
                 add_province_modifier = {
                     name = "influx_of_venetian_notables_modifier"
                     duration = 7300
+                }
+                owner = {
+                    if = {
+                        limit = {
+                            NOT = { has_country_flag = has_venetian_community }
+                        }
+                        set_country_flag = has_venetian_community
+                    }
                 }
             }
         }
@@ -772,6 +824,14 @@ country_event = {
                     name = "influx_of_tuscan_notables_modifier"
                     duration = 7300
                 }
+                owner = {
+                    if = {
+                        limit = {
+                            NOT = { has_country_flag = has_tuscan_community }
+                        }
+                        set_country_flag = has_tuscan_community
+                    }
+                }
             }
             france_region = {
                 limit = {
@@ -789,6 +849,14 @@ country_event = {
                 add_province_modifier = {
                     name = "influx_of_tuscan_notables_modifier"
                     duration = 7300
+                }
+                owner = {
+                    if = {
+                        limit = {
+                            NOT = { has_country_flag = has_tuscan_community }
+                        }
+                        set_country_flag = has_tuscan_community
+                    }
                 }
             }
         }
@@ -1085,6 +1153,7 @@ country_event = {
         is_year = 1500
         SAV = { has_reform = swiss_minority }
 		112 = { country_or_non_sovereign_subject_holds = ROOT }
+        NOT = { mission_completed = swiss_dissolve_league }
     }
 
     mean_time_to_happen = {
@@ -1169,6 +1238,34 @@ country_event = {
                     duration = 14600
                 }
             }
+            italy_region = {
+                limit = {
+                    has_building = venetian_quarters
+                }
+                remove_building = venetian_quarters
+                add_building = venetian_quarters_upgraded
+            }
+            iberia_region = {
+                limit = {
+                    has_building = venetian_quarters
+                }
+                remove_building = venetian_quarters
+                add_building = venetian_quarters_upgraded
+            }
+            balkan_region = {
+                limit = {
+                    has_building = venetian_quarters
+                }
+                remove_building = venetian_quarters
+                add_building = venetian_quarters_upgraded
+            }
+            egypt_region = {
+                limit = {
+                    has_building = venetian_quarters
+                }
+                remove_building = venetian_quarters
+                add_building = venetian_quarters_upgraded
+            }
         }
         custom_tooltip = sovvertimento_venice_death_tt
         custom_tooltip = sovvertimento_venice_diaspora_tt
@@ -1198,19 +1295,539 @@ country_event = {
     }
 
     option = {
-        name = flavor_mistic_swiss.10
-        every_owned_province = {
+        name = flavor_mistic_swiss.10.a
+        if = {
             limit = {
-                has_province_modifier = influx_of_venetian_notables_modifier
+                has_global_flag = rip_venice_flag
             }
-            remove_province_modifier = influx_of_venetian_notables_modifier
+            hidden_effect = {
+                every_owned_province = {
+                    limit = {
+                        has_province_modifier = influx_of_venetian_notables_modifier
+                    }
+                    remove_province_modifier = influx_of_venetian_notables_modifier
+                }
+                capital_scope = {
+                    add_building = venetian_quarters_upgraded
+                }
+            }
+            custom_tooltip = sovvertimento_quarters_veniceplus_tt
         }
+        else {
+            hidden_effect = {
+                every_owned_province = {
+                    limit = {
+                        has_province_modifier = influx_of_venetian_notables_modifier
+                    }
+                    remove_province_modifier = influx_of_venetian_notables_modifier
+                }
+                capital_scope = {
+                    add_building = venetian_quarters
+                }
+            }
+            custom_tooltip = sovvertimento_quarters_venice_tt
+        }
+    }
+}
+
+# The Ligurians of [Root.Capital.GetName]
+# (Removes all 'Influx of Ligurian Notables' modifiers in a country, replacing them with the 'Ligurian Quarters' building)
+country_event = {
+    id = flavor_mistic_swiss.11
+    title = flavor_mistic_swiss.11.t
+    desc = flavor_mistic_swiss.11.d
+    picture = CITY_VIEW_eventPicture
+
+    fire_only_once = yes
+
+    trigger = {
+        has_country_flag = has_ligurian_community
         capital_scope = {
-            add_building = venetian_quarters
+            NOT = { has_building = ligurian_quarters }
+        }
+    }
+
+    mean_time_to_happen = {
+        months = 60
+    }
+
+    option = {
+        name = flavor_mistic_swiss.11.a
+        hidden_effect = {
+            every_owned_province = {
+                limit = {
+                    has_province_modifier = influx_of_ligurian_notables_modifier
+                }
+                remove_province_modifier = influx_of_ligurian_notables_modifier
+            }
+            capital_scope = {
+                add_building = ligurian_quarters
+            }
+        }
+        custom_tooltip = sovvertimento_quarters_liguria_tt
+    }
+}
+
+# The Tuscans of [Root.Capital.GetName]
+# (Removes all 'Influx of Tuscan Notables' modifiers in a country, replacing them with the 'Tuscan Quarters' building)
+country_event = {
+    id = flavor_mistic_swiss.12
+    title = flavor_mistic_swiss.12.t
+    desc = flavor_mistic_swiss.12.d
+    picture = CITY_VIEW_eventPicture
+
+    fire_only_once = yes
+
+    trigger = {
+        has_country_flag = has_tuscan_community
+        capital_scope = {
+            NOT = { has_building = tuscan_quarters }
+        }
+    }
+
+    mean_time_to_happen = {
+        months = 60
+    }
+
+    option = {
+        name = flavor_mistic_swiss.12.a
+        hidden_effect = {
+            every_owned_province = {
+                limit = {
+                    has_province_modifier = influx_of_tuscan_notables_modifier
+                }
+                remove_province_modifier = influx_of_tuscan_notables_modifier
+            }
+            capital_scope = {
+                add_building = tuscan_quarters
+            }
+        }
+        custom_tooltip = sovvertimento_quarters_tuscany_tt
+    }
+}
+
+# New Venice
+country_event = {
+    id = flavor_mistic_swiss.13
+    title = flavor_mistic_swiss.13.t
+    desc = flavor_mistic_swiss.13.d
+    picture = COLONIZATION_eventPicture
+
+    fire_only_once = yes
+    major = yes
+
+    trigger = {
+        is_year = 1510
+        has_global_flag = discovered_americas_flag
+        has_country_flag = has_venetian_community
+        any_owned_province = {
+            OR = {
+                region = iberia_region
+                region = italy_region
+            }
+        }
+    }
+
+    mean_time_to_happen = {
+        months = 5
+    }
+
+    option = {
+        name = flavor_mistic_swiss.13.a
+        hidden_effect = {
+            
+            #Spawn in New Venice
+            893 = {
+                cede_province = NVX
+                add_core = NVX
+                change_culture = venetian
+                change_religion = thibaultine
+            }
+            2516 = {
+                cede_province = NVX
+                add_core = NVX
+                change_culture = venetian
+                change_religion = thibaultine
+            }
+            NVX = {
+                define_ruler = {
+                    name = "Alvise Ca' da Mosto"
+                    dynasty = "Ca' da Mosto"
+                    adm = 3
+                    dip = 6
+                    mil = 6
+                    age = 35
+                    claim = 100
+                }
+                add_country_modifier = {
+                    name = "sovvertimento_new_beginnings_modifier"
+                    duration = 14300
+                }
+            }
+
+            #Remove venetians from Europe
+            iberia_region = {
+                limit = {
+                    OR = {
+                        has_building = venetian_quarters
+                        has_building = venetian_quarters_upgraded
+                    }
+                }
+                remove_building = venetian_quarters
+                remove_building = venetian_quarters_upgraded
+            }
+            iberia_region = {
+                limit = {
+                    has_province_modifier = influx_of_venetian_notables_modifier
+                }
+                remove_province_modifier = influx_of_venetian_notables_modifier
+            }
+            italy_region = {
+                limit = {
+                    OR = {
+                        has_building = venetian_quarters
+                        has_building = venetian_quarters_upgraded
+                    }
+                }
+                remove_building = venetian_quarters
+                remove_building = venetian_quarters_upgraded
+            }
+            italy_region = {
+                limit = {
+                    has_province_modifier = influx_of_venetian_notables_modifier
+                }
+                remove_province_modifier = influx_of_venetian_notables_modifier
+            }
+        }
+        custom_tooltip = sovvertimento_novavenexia_tt
+    }
+}
+
+# Tartexa
+country_event = {
+    id = flavor_mistic_swiss.14
+    title = flavor_mistic_swiss.14.t
+    desc = flavor_mistic_swiss.14.d
+    picture = COLONIZATION_eventPicture
+
+    fire_only_once = yes
+    major = yes
+
+    trigger = {
+        is_year = 1510
+        has_global_flag = discovered_americas_flag
+        has_country_flag = has_venetian_community
+        any_owned_province = {
+            OR = {
+                region = balkan_region
+                region = egypt_region
+            }
+        }
+    }
+
+    mean_time_to_happen = {
+        months = 15
+    }
+
+    option = {
+        name = flavor_mistic_swiss.14.a
+        hidden_effect = {
+            
+            #Spawn in Tartexa
+            2803 = {
+                cede_province = TTX
+                add_core = TTX
+                change_culture = venetian
+                change_religion = catholic
+            }
+            TTX = {
+                define_ruler = {
+                    name = "Vettore"
+                    dynasty = "Contarini"
+                    adm = 3
+                    dip = 4
+                    mil = 2
+                    age = 56
+                    claim = 100
+                }
+                add_country_modifier = {
+                    name = "sovvertimento_new_beginnings_modifier"
+                    duration = 14300
+                }
+            }
+
+            #Remove venetians from Europe
+            balkan_region = {
+                limit = {
+                    OR = {
+                        has_building = venetian_quarters
+                        has_building = venetian_quarters_upgraded
+                    }
+                }
+                remove_building = venetian_quarters
+                remove_building = venetian_quarters_upgraded
+            }
+            balkan_region = {
+                limit = {
+                    has_province_modifier = influx_of_venetian_notables_modifier
+                }
+                remove_province_modifier = influx_of_venetian_notables_modifier
+            }
+            egypt_region = {
+                limit = {
+                    OR = {
+                        has_building = venetian_quarters
+                        has_building = venetian_quarters_upgraded
+                    }
+                }
+                remove_building = venetian_quarters
+                remove_building = venetian_quarters_upgraded
+            }
+            egypt_region = {
+                limit = {
+                    has_province_modifier = influx_of_venetian_notables_modifier
+                }
+                remove_province_modifier = influx_of_venetian_notables_modifier
+            }
+        }
+        custom_tooltip = sovvertimento_tartexa_tt
+    }
+}
+
+#Zenatta
+country_event = {
+    id = flavor_mistic_swiss.15
+    title = flavor_mistic_swiss.15.t
+    desc = flavor_mistic_swiss.15.d
+    picture = COLONIZATION_eventPicture
+
+    fire_only_once = yes
+    major = yes
+
+    trigger = {
+        is_year = 1510
+        has_global_flag = discovered_americas_flag
+        has_country_flag = has_ligurian_community
+        any_owned_province = {
+            OR = {
+                region = low_countries_region
+                region = italy_region
+            }
+        }
+    }
+
+    mean_time_to_happen = {
+        months = 30
+    }
+
+    option = {
+        name = flavor_mistic_swiss.15.a
+        hidden_effect = {
+            
+            #Spawn in Zenatta
+            4626 = {
+                cede_province = ZNT
+                add_core = ZNT
+                change_culture = ligurian
+                change_religion = thibaultine
+            }
+            2535 = {
+                cede_province = ZNT
+                add_core = ZNT
+                change_culture = ligurian
+                change_religion = thibaultine
+            }
+            ZNT = {
+                define_ruler = {
+                    name = "Amerigo Gattilusio"
+                    dynasty = "Gattilusio"
+                    adm = 3
+                    dip = 5
+                    mil = 4
+                    age = 42
+                    claim = 100
+                }
+                add_country_modifier = {
+                    name = "sovvertimento_new_beginnings_modifier"
+                    duration = 14300
+                }
+            }
+
+            #Remove ligurians from Europe
+            low_countries_region = {
+                limit = {
+                    has_building = ligurian_quarters
+                }
+                remove_building = ligurian_quarters
+            }
+            iberia_region = {
+                limit = {
+                    has_province_modifier = influx_of_ligurian_notables_modifier
+                }
+                remove_province_modifier = influx_of_ligurian_notables_modifier
+            }
+            italy_region = {
+                limit = {
+                    has_building = ligurian_quarters
+                }
+                remove_building = ligurian_quarters
+            }
+            italy_region = {
+                limit = {
+                    has_province_modifier = influx_of_ligurian_notables_modifier
+                }
+                remove_province_modifier = influx_of_ligurian_notables_modifier
+            }
+        }
+        custom_tooltip = sovvertimento_zenatta_tt
+    }
+}
+
+# Nuometarra
+country_event = {
+    id = flavor_mistic_swiss.16
+    title = flavor_mistic_swiss.16.t
+    desc = flavor_mistic_swiss.16.d
+    picture = COLONIZATION_eventPicture
+
+    fire_only_once = yes
+    major = yes
+
+    trigger = {
+        is_year = 1510
+        has_global_flag = discovered_americas_flag
+        has_country_flag = has_tuscan_community
+        any_owned_province = {
+            OR = {
+                region = france_region
+                region = north_german_region
+            }
+        }
+    }
+
+    mean_time_to_happen = {
+        months = 30
+    }
+
+    option = {
+        name = flavor_mistic_swiss.16.a
+        hidden_effect = {
+            
+            #Spawn in Nuometarra
+            2499 = {
+                cede_province = NMT
+                add_core = NMT
+                change_culture = tuscan
+                change_religion = catholic
+            }
+            884 = {
+                cede_province = NMT
+                add_core = NMT
+                change_culture = tuscan
+                change_religion = catholic
+            }
+            NMT = {
+                define_ruler = {
+                    name = "Niccolò Machiavelli"
+                    dynasty = "Machiavelli"
+                    adm = 4
+                    dip = 6
+                    mil = 3
+                    age = 24
+                    claim = 100
+                }
+                add_country_modifier = {
+                    name = "sovvertimento_new_beginnings_modifier"
+                    duration = 14300
+                }
+            }
+
+            #Remove tuscans from Europe
+            france_region = {
+                limit = {
+                    has_building = tuscan_quarters
+                }
+                remove_building = tuscan_quarters
+            }
+            france_region = {
+                limit = {
+                    has_province_modifier = influx_of_tuscan_notables_modifier
+                }
+                remove_province_modifier = influx_of_tuscan_notables_modifier
+            }
+            north_german_region = {
+                limit = {
+                    has_building = tuscan_quarters
+                }
+                remove_building = tuscan_quarters
+            }
+            north_german_region = {
+                limit = {
+                    has_province_modifier = influx_of_tuscan_notables_modifier
+                }
+                remove_province_modifier = influx_of_tuscan_notables_modifier
+            }
+        }
+        custom_tooltip = sovvertimento_nuometarra_tt
+    }
+}
+
+# Beyond the Waves (European power discovers the New World)
+country_event = {
+    id = flavor_mistic_swiss.17
+    title = flavor_mistic_swiss.17.t
+    desc = flavor_mistic_swiss.17.d
+    picture = NAVAL_MILITARY_eventPicture
+
+    fire_only_once = yes
+    major = yes
+
+    trigger = {
+        NOT = { has_global_flag = discovered_americas_flag }
+        capital_scope = { NOT = { continent = north_america } }
+        capital_scope = { NOT = { continent = south_america } }
+        religion_group = christian
+        OR = {
+            has_discovered = 1530 #Coast of Brazil
+            has_discovered = 1531 #Coast of Pernambuco
+            has_discovered = 1522 #Windward Islands
+            has_discovered = 1523 #Lesser Antilles
+            has_discovered = 1526 #Mona Passage
+            has_discovered = 1524 #Turks & Caicos Sea
+            has_discovered = 1503 #Bahama Banks
+            has_discovered = 1502 #Sea Islands
+            has_discovered = 1501 #Cape Hatteras
+            has_discovered = 1500 #Delaware Bay
+            has_discovered = 1499 #Massachuetts Bay
+            has_discovered = 1492 #Bay of Fundy
+            has_discovered = 1494 #Fortune Bay
+            has_discovered = 1495 #Notre Dame Bay
+            has_discovered = 1493 #Strait of Belle Isle
+            has_discovered = 1483 #Labrador Strait
+        }
+    }
+
+    mean_time_to_happen = {
+        months = 1
+    }
+
+    option = {
+        name = flavor_mistic_swiss.17.a
+        prestige = 60
+        add_country_modifier = {
+            name = "discovered_america_modifier"
+            duration = 7300
+        }
+        hidden_effect = {
+            set_global_flag = discovered_americas_flag
         }
     }
 }
 
 # Lombardei breaks away, 1520
 
-# Occitania becomes a problem, 1475
+# Occitania breaks away, 1515
+
+# Lombardei gets bonuses for breaking away
+
+# Occitania gets bonuses for breaking away
