@@ -1813,7 +1813,7 @@ country_event = {
 
     option = {
         name = flavor_mistic_swiss.17.a
-        prestige = 60
+        add_prestige = 60
         add_country_modifier = {
             name = "discovered_america_modifier"
             duration = 7300
