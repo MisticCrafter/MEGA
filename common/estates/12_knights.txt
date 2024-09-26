@@ -7,12 +7,6 @@ estate_knights = {
             # Astari
             tag = ARC
             primary_culture = andal
-            AND = {
-                NOT = { primary_culture = andal }
-                NOT = { tag = ARC }
-                culture_group = iberian
-                is_subject_of = ARC
-            }
         }
     }
 
@@ -21,7 +15,6 @@ estate_knights = {
         manpower_recovery_speed = 0.2
         army_tradition = 0.5
         infantry_power = 0.1
-        is_tercio_modifier = yes
     }
 
     country_modifier_neutral = {
@@ -35,7 +28,6 @@ estate_knights = {
         army_tradition = -0.5
         global_unrest = 2
         infantry_power = -0.1
-        is_tercio_modifier = yes
     }
 
     land_ownership_modifier = {
@@ -135,6 +127,17 @@ estate_knights = {
 
     privileges = {
         estate_astari_arcagarda
+		estate_astari_astarostratha
+		estate_astari_exarches
+		estate_astari_americathemes
+		estate_knights_primacy
+		estate_knights_land_rights
+		estate_knights_advisors
+		estate_knights_autonomy
+		estate_knights_monopoly_of_metals
+		estate_knights_monopoly_of_livestock
+		estate_knights_castle_development
+		estate_knights_investiture
     }
 
     agendas = {

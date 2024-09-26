@@ -68,7 +68,7 @@ influx_of_ligurian_notables_modifier = {
 influx_of_tuscan_notables_modifier = {
     province_trade_power_value = 5
     local_institution_spread = 0.1
-    local_build_cost = 0.15
+    local_build_cost = -0.15
     picture = "tuscan_modifier"
 }
 
@@ -83,4 +83,16 @@ sovvertimento_venetians_flee_modifier = {
     tax_income = 72
     global_colonial_growth = 50
     picture = "global_colonial_growth"
+}
+
+sovvertimento_new_beginnings_modifier = {
+    tax_income = 60
+    global_colonial_growth = 50
+    colonist_placement_chance = 0.25
+    land_morale = 0.15
+}
+
+discovered_america_modifier = {
+    colonist_placement_chance = 0.1
+    global_colonial_growth = 15
 }

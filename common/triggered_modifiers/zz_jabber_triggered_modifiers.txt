@@ -53,8 +53,14 @@ heresy_crushed_tigranic = {
     }
 
     trigger = {
-        all_known_country = {
-            NOT = { religion = tigranic }
+        all_country = {
+            OR = {
+                NOT = { religion_group = christian }
+                AND = {
+                    religion_group = christian
+                    NOT = { religion = tigranic }
+                }
+            }
         }
     }
 
@@ -69,8 +75,14 @@ heresy_crushed_thibaultine = {
     }
 
     trigger = {
-        all_known_country = {
-            NOT = { religion = thibaultine }
+        all_country = {
+            OR = {
+                NOT = { religion_group = christian }
+                AND = {
+                    religion_group = christian
+                    NOT = { religion = thibaultine }
+                }
+            }
         }
     }
 
@@ -85,7 +97,7 @@ heresy_crushed_rationalist = {
     }
 
     trigger = {
-        all_known_country = {
+        all_country = {
             NOT = { religion = rationalist }
         }
     }
@@ -102,8 +114,14 @@ heresy_crushed_catholic = {
     }
 
     trigger = {
-        all_known_country = {
-            NOT = { religion = catholic }
+        all_country = {
+            OR = {
+                NOT = { religion_group = christian }
+                AND = {
+                    religion_group = christian
+                    NOT = { religion = catholic }
+                }
+            }
         }
     }
 

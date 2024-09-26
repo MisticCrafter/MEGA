@@ -1,0 +1,43 @@
+estate_church_meralinea = {
+    icon = privilege_build_jain_temple
+    loyalty = 0.1
+    influence = 0.05
+    is_valid = {
+        primary_culture = andal
+        is_subject = no
+    }
+    can_select = {
+        219 = {
+            owned_by = ROOT
+            is_core = ROOT
+        }
+        custom_trigger_tooltip = {
+            tooltip = passed_edict_of_lisarra_tt
+            has_country_flag = edict_of_lisarra_flag
+        }
+    }
+    can_revoke = {
+
+    }
+    on_granted = {
+        custom_tooltip = unlocks_meralinea_tt
+        set_country_flag = unlocked_meralinea_flag
+    }
+    on_revoked = {
+        custom_tooltip = unlocks_meralinea_tt
+        set_country_flag = unlocked_meralinea_flag
+    }
+    on_invalid = {
+        custom_tooltip = unlocks_meralinea_tt
+        set_country_flag = unlocked_meralinea_flag
+    }
+    benefits = {
+
+    }
+    penalties = {
+        global_tax_income = -48
+    }
+    ai_will_do = {
+        factor = 1
+    }
+}

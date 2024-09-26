@@ -79,8 +79,9 @@ TEM_ideas = {
 }
 Z09_ideas = {
 	start = {
-		defensiveness = 0.15
-		army_tradition_decay = -0.01
+		defensiveness = 0.25
+		army_tradition = 0.5
+		army_tradition_from_battle = 1
 	}
 	
 	bonus = {
@@ -112,10 +113,49 @@ Z09_ideas = {
 		core_creation = -0.20
 	}
 	Z09_onward_christian_soldiers = {
-		army_tradition = 0.5
-		army_tradition_from_battle = .5
+		army_tradition_decay = -0.01
 	}
 	Z09_one_is_all = {
+		fire_damage_received = -0.10
+	}
+}
+Z1C_ideas = {
+	start = {
+		may_perform_slave_raid = yes
+		yearly_army_professionalism = 0.02
+	}
+	
+	bonus = {
+		global_missionary_strength = 0.02
+	}
+	
+	trigger = {
+		tag = Z1C
+	}
+	free = yes
+	
+	Z1C_catholic_allies = {
+		improve_relation_modifier = 0.25
+	}
+	Z1C_hostile_borders = {
+		defensiveness = 0.20
+		war_exhaustion = -0.03
+	}
+	Z1C_into_the_abyss = { 
+		land_attrition = -0.1
+		movement_speed = 0.10
+	}
+	Z1C_recover_the_ark = {
+		core_creation = -0.15
+	}
+	Z1C_the_great_crusade = {
+		papal_influence = 2
+		curia_powers_cost = -0.10
+	}
+	Z1C_maritime_ambitions = {
+		naval_forcelimit_modifier = 0.30
+	}
+	Z1C_deus_vult = {
 		fire_damage_received = -0.10
 	}
 }

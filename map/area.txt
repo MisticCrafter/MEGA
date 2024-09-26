@@ -443,7 +443,11 @@ beieras_area = { #4
 }
 
 alentejo_area = { #5
-	227 229 230 4150 4787 4551
+	227 4150 4787 4551
+}
+
+algarve_area = {
+	230 229
 }
 
 macaronesia_area = { #3
@@ -483,16 +487,12 @@ liguria_area = { #3
 	101 2992
 }
 
-corsica_sardinia_area = { #4
-	127 1247 2986 4735
+corsica_sardinia_area = { #5
+	127 1247 2986 4735 126
 }
 
-sicily_area = { #3 # now Eastern Sicily
-	124 126 2982
-}
-
-western_sicily_area = { #3
-	125 4736 4737
+western_sicily_area = { #5
+	125 4736 4737 124 2982
 }
 
 naples_area = { #3  #Campania

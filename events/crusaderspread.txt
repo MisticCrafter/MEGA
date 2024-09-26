@@ -23,7 +23,7 @@ province_event = {
 	goto = ROOT
 	
 	mean_time_to_happen = {
-		months = 180
+		months = 220
 		modifier = {
 			factor = 3
 				OR = {

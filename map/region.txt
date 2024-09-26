@@ -180,6 +180,7 @@ iberia_region = {
 		asturias_area
 		leon_area
 		alentejo_area
+		algarve_area
 		beieras_area
 		basque_country
 		galicia_area

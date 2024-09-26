@@ -7,6 +7,7 @@
  aleppo: "Antioch"
  panama: "Muiscatha"
  wien: "Vienna"
+ basra: "Chaldea"
  # Culture
  latin: "Italian"
  tunisian: "African"
@@ -28,7 +29,7 @@
  TFL: "Gaetulia"
  TFL_ADJ: "Gaetulic"
  # Great Projects
- el_escorial: "La Meralinéa"
+ el_escorial: "Meralinéa"
  belem_tower: "Silver Citadel of Lisarra"
  fuerte_del_morro: "Rheiagarra"
  cartagena_de_indias: "Walls of Cintragena"

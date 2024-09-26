@@ -1,0 +1,32 @@
+country_decisions = {
+    estate_knights_promote_grandmaster = {
+        color = { 195 160 20 }
+        potential = {
+            has_enabled_estate_action = {
+                estate_action = PROMOTE_NEW_GRANDMASTER
+            }
+            has_estate = estate_knights
+        }
+        allow = {
+            has_not_any_estate_disaster_active = yes
+            estate_action_off_cooldown = {
+                estate_action = PROMOTE_NEW_GRANDMASTER
+                duration = 7300
+            }
+        }
+        effect = {
+            set_estate_action_cooldown = {
+                estate_action = PROMOTE_NEW_GRANDMASTER
+            }
+            estate_action = {
+                estate_action = PROMOTE_NEW_GRANDMASTER
+            }
+            increase_estate_action_counter = {
+                estate = estate_knights
+            }
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+}

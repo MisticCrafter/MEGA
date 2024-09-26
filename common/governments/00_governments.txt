@@ -685,7 +685,8 @@ republic = {
 				#Mamluks
 				egyptian_government_reform
 				city_alliance_reform
-				#Added by megacampaign
+
+				### ADDED BY MEGACAMPAIGN ###
 				zeven_provincies_republic_reform
 				reformed_nederlands_republic_reform
 				united_zeven_provincies_republic_reform
@@ -693,8 +694,10 @@ republic = {
 				dollarstore_roman_republic_government
 				swiss_cantonate
 				andal_exarchate_reform
+				american_merchant_republic
 				mandate_of_ierland_republic_reform
 				social_banditry_republic_reform
+				###
 			}
 		}
 		republican_virtues = {
@@ -1418,6 +1421,7 @@ theocracy = {
 				mercenary_leadership_reform
 				#Visible but locked
 				amphibious_specialization_reform
+				winged_crowned_stags_reform
 				royal_marines_reform
 				maritime_military_reform
 				professional_navy_reform
@@ -1496,9 +1500,10 @@ theocracy = {
 				proclaim_republic_reform
 				battle_pope_reform
 				conciliarism_reform
+				navy_with_order_reform
 				#1.35
 				governing_senate_reform
-				enforced_autocracy_reform
+				enforced_autocracy_rms-appid:undefinedeform
 			}
 		}
 		clergy_in_administration = {
