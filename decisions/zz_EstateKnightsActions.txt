@@ -13,6 +13,7 @@ country_decisions = {
                 estate_action = PROMOTE_NEW_GRANDMASTER
                 duration = 7300
             }
+            NOT = { has_country_modifier = estate_knights_promote_grandmaster_cooldown }
         }
         effect = {
             set_estate_action_cooldown = {
@@ -23,6 +24,10 @@ country_decisions = {
             }
             increase_estate_action_counter = {
                 estate = estate_knights
+            }
+            add_country_modifier = {
+                name = estate_knights_promote_grandmaster_cooldown
+                duration = 7300
             }
         }
         ai_will_do = {

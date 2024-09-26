@@ -9,7 +9,7 @@ vicerroyalty_overlord = {
     land_forcelimit = 1
     global_manpower = 1
     land_forcelimit_modifier = -0.02
-    land_manpower_modifier = -0.02
+    global_manpower_modifier = -0.02
 }
 
 dominion_subject = {

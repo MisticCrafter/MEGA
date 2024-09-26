@@ -14142,15 +14142,13 @@ maidan-e_naqsh-e_jahan = {
 	type = monument
 
 	build_trigger = {
-		{
+		OR = {
 			AND = {
 				culture_group = crusader_group
-				}
 				province_is_or_accepts_culture = yes
+			}
 			AND = {
-				OR = {
-					culture_group = iranian
-				}
+				culture_group = iranian
 				province_is_or_accepts_culture = yes
 			}
 		}
@@ -14166,27 +14164,23 @@ maidan-e_naqsh-e_jahan = {
 		OR = {
 			AND = {
 				culture_group = crusader_group
-				}
 				province_is_or_accepts_culture = yes
+			}
 			AND = {
-				OR = {
-					culture_group = iranian
-				}
+				culture_group = iranian
 				province_is_or_accepts_culture = yes
 			}
 		}
 	}
 
 	can_upgrade_trigger = {
-		{
+		OR = {
 			AND = {
 				culture_group = crusader_group
-				}
 				province_is_or_accepts_culture = yes
+			}
 			AND = {
-				OR = {
-					culture_group = iranian
-				}
+				culture_group = iranian
 				province_is_or_accepts_culture = yes
 			}
 		}

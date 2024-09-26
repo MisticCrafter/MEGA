@@ -1503,7 +1503,7 @@ theocracy = {
 				navy_with_order_reform
 				#1.35
 				governing_senate_reform
-				enforced_autocracy_rms-appid:undefinedeform
+				enforced_autocracy_reform
 			}
 		}
 		clergy_in_administration = {
