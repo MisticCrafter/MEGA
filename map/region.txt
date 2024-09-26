@@ -60,7 +60,7 @@ low_countries_region = {
 		frisia_area
 		brabant_area
 		north_brabant_area
-		picardie_area
+		picardy_area
 	}
 
 }
