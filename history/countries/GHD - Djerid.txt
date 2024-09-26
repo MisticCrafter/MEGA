@@ -9,7 +9,6 @@ capital = 352
 	monarch = {
 		name = "Masseno"
 		dynasty = "of the Jugurthii"
-		monarch_name = "Masseno V"
 		adm = 2
 		dip = 4
 		mil = 5
