@@ -9,8 +9,7 @@ sons_of_kaleva_ideas = {
 	trigger = {
 		tag = SKL
 		OR = {
-			religion = finnish_pagan
-			religion = finnish_pagan_reformed
+			religion = catholic
 		}
 		government = theocracy
 	}

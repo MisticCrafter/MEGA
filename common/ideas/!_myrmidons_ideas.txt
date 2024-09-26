@@ -9,9 +9,7 @@ myrmidons_ideas = {
 	trigger = {
 		tag = MYM
 		OR = {
-			religion = pagan_religion
-			religion = hellenic_pagan
-			religion = hellenic_pagan_reformed
+			religion = catholic
 		}
 		government = theocracy
 	}
