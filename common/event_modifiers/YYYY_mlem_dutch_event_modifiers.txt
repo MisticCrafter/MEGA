@@ -166,7 +166,7 @@ republican_guards_buff_3_ZVP = {	# third buff - defenders of the republic
 elite_national_guard_ZVP = {		# mix of previous buffs
 	is_marine_modifier = yes
 	regiment_manpower_usage = -0.25
-	special_unit_cost_modifier = 0.25
+	land_maintenance_modifier = 0.25
 	regiment_disembark_speed = -2
 	shock_damage_received = -0.15
 	fire_damage_received = -0.1
@@ -188,6 +188,75 @@ ZVP_center_of_humanistic_studies = {
 	idea_cost = -0.05
 }
 
+ZVP_centralized_administrative_centers = {
+	local_tax_modifier = 0.25
+	local_production_efficiency = 0.1
+	local_manpower_modifier = 0.1
+}
+
+ZVP_keulen_printing_house = {
+	global_unrest = -1
+	trade_value_modifier = 0.15
+	province_trade_power_value = 10
+}
+
+ZVP_new_keulen_times = {
+	stability_cost_modifier = -0.15
+	innovativeness_gain = 0.25
+
+}
+
+ZVP_government_for_the_people_modifier = {
+	monthly_reform_progress_modifier = 0.20
+	years_of_nationalism = -5
+	idea_cost = -0.1
+}
+
+ZVP_fontaine_administrative_center = {
+	min_autonomy_in_territories = -0.1
+	diplomats = 1
+	trade_goods_size = 0.25
+
+}
+
+FNT_might_of_parajox_i_modifier = {
+	monarch_lifespan = 0.15
+	army_tradition_decay = -0.01
+	land_maintenance_modifier = -0.1
+}
+
+FNT_prestige_of_astolfo_i_modifier = {
+	monarch_lifespan = 0.15
+	prestige_decay = -0.01
+	possible_policy = 1
+
+}
+
+FNT_glory_to_van_paradyx_dynasty_modifier = {
+	missionaries = 1
+	global_spy_defence = 0.33
+	prestige = 0.5
+
+}
+
+enlightened_absolutism_FNT_modifier = {
+	all_power_cost = -0.025
+	free_concentrate_development = yes
+
+}
+
+FNT_foundation_modifier = {
+	prestige = 0.5	
+	free_policy = 1
+}
+
+FNT_all_for_one_one_for_all_modifier = {
+	monthly_militarized_society = 0.05
+	morale_damage_received = -0.1
+	sailors_recovery_speed = 0.33
+	manpower_in_true_faith_provinces = 0.2
+	same_religion_advisor_cost = -0.1
+}
 
 # Misc Modifiers (for vassals and stuff)
 amended_laws_of_settlement_moi = {
