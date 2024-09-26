@@ -413,3 +413,26 @@ mercenary_leadership_reform = {
 		}
 	}
 }
+
+strengthen_clergy_reform = {
+	icon = "church"
+	allow_normal_conversion = yes
+	potential = {
+		NOT = { has_government_attribute = is_pirate_republic_reform }
+		NOT = { religion_group = irreligious }
+		OR = {
+			is_revolutionary = no
+			NOT = { has_dlc = "Emperor" }
+		}
+		has_no_religion_specific_government_available = yes	#This way modders don't have to change this reform explicitly
+	}
+	modifiers = {
+		church_influence_modifier = 0.1
+		church_loyalty_modifier = 0.1
+		war_exhaustion = -0.03
+	}
+	
+	ai = {
+		factor = 1
+	}
+}

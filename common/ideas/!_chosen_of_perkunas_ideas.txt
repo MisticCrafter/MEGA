@@ -9,8 +9,7 @@ chosen_of_perkunas_ideas = {
 	trigger = {
 		tag = COP
 		OR = {
-			religion = baltic_pagan
-			religion = baltic_pagan_reformed			
+			religion = catholic		
 		}
 		government = theocracy
 	}

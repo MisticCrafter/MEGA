@@ -383,8 +383,8 @@ country_event = {			# Astolfo II - stadhouder residency I
 		AND = {
 			tag = NED
 			has_ruler_flag = has_the_tyrant_astolfo_ii
-			NOT = { has_country_modifier = compromise_on_road_networks_astolfo_ii }
-			NOT = { has_country_modifier = standardized_road_networks_astolfo_ii }
+			NOT = { has_country_modifier = building_stadhouder_residency_astolfo_ii }
+			NOT = { has_country_modifier = stadhouder_residency_astolfo_ii }
 			NOT = { has_ruler_modifier = tyranny_of_astolfo_ii_cooldown }
 		}
 	}
@@ -421,6 +421,7 @@ country_event = {			# Astolfo II - stadhouder residency II
 			tag = NED
 			has_ruler_flag = has_the_tyrant_astolfo_ii
 			NOT = { has_country_modifier = building_stadhouder_residency_astolfo_ii }
+			NOT = { has_country_modifier = stadhouder_residency_astolfo_ii }
 			has_country_flag = ned_building_stadhouder_residency_flag
 		}
 	}
@@ -475,7 +476,107 @@ country_event = {
 		name = nederlands_flavour_mega.13.a
 		custom_tooltip = united_zeven_provincies_event_tt
 		add_government_reform = united_zeven_provincies_republic_reform
-		change_government_reform_progress = 100
+		add_stability = -3
 	}
 
+}
+
+country_event = {
+	id = nederlands_flavour_mega.14
+	title = nederlands_flavour_mega.14.title
+	desc = nederlands_flavour_mega.14.desc
+	picture = ""
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = nederlands_flavour_mega.14.a
+		set_country_flag = ned_rationalism_branch
+	}
+
+	after = {
+		swap_non_generic_missions = yes
+	}
+}
+
+country_event = {
+	id = nederlands_flavour_mega.15
+	title = nederlands_flavour_mega.15.title
+	desc = nederlands_flavour_mega.15.desc
+	picture = ""
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = nederlands_flavour_mega.15.a
+	
+		add_country_modifier = {
+			name = ZVP_new_keulen_times
+			duration = 3650
+		}
+	}
+}
+
+country_event = {
+	id = nederlands_flavour_mega.16
+	title = nederlands_flavour_mega.16.title
+	desc = nederlands_flavour_mega.16.desc
+	picture = ""
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = nederlands_flavour_mega.16.a
+	
+		define_advisor = {
+			name = "Sir Levitte Xiloscient"
+			type = philosopher
+			skill = 3
+			discount = yes	
+		}
+	}
+}
+
+country_event = {
+	id = nederlands_flavour_mega.17
+	title = nederlands_flavour_mega.17.title
+	desc = nederlands_flavour_mega.17.desc
+	picture = ""
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = nederlands_flavour_mega.17.a
+		add_government_reform = FNT_cult_of_the_queen_mother_reform
+
+		reduce_stability_or_adm_power = yes
+	}
+}
+
+country_event = {
+	id = nederlands_flavour_mega.18
+	title = nederlands_flavour_mega.18.title
+	desc = nederlands_flavour_mega.18.desc
+	picture = ""
+
+	mean_time_to_happen = {
+		days = 60
+	}
+
+	trigger = {
+		tag = NED
+		current_age = age_of_reformation
+		NOT = { has_country_flag = ZVP_in_the_reformation_age_flag }
+	}
+
+	fire_only_once = yes
+
+	option = {
+		name = nederlands_flavour_mega.18.a
+		set_country_flag = ZVP_in_the_reformation_age_flag
+	}
 }

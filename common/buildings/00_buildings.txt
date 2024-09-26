@@ -474,6 +474,18 @@ fort_15th = {
 		}
 		if = {
 			limit = {
+				owner = {
+					has_estate_privilege = estate_knights_castle_development
+				}
+				NOT = { has_province_modifier = estate_knights_castle_development_modifier }
+			}
+			add_province_modifier = {
+				name = estate_knights_castle_development_modifier
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
 				FROM = {
 					has_country_flag = orm_forts_trade_power_buff_flag
 				}
@@ -539,7 +551,20 @@ fort_15th = {
 				duration = -1
 			}
 		}
+		if = {
+			limit = {
+				owner = {
+					tag = KNI
+					has_country_modifier = kni_fort_garrison_grain_maintenence
+				}
+			}
+			add_province_modifier = {
+				name = kni_fort_garrison_grain
+				duration = -1
+			}
+		}
 	}
+
 
 	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
 	on_destroyed = {
@@ -551,9 +576,21 @@ fort_15th = {
 		}
 		if = {
 			limit = {
+				has_province_modifier = kni_fort_garrison_grain
+			}
+			remove_province_modifier = kni_fort_garrison_grain
+		}
+		if = {
+			limit = {
 				has_province_modifier = estate_nobles_development_of_castles_mod
 			}
 			remove_province_modifier = estate_nobles_development_of_castles_mod
+		}
+		if = {
+			limit = {
+				has_province_modifier = estate_knights_castle_development_modifier
+			}
+			remove_province_modifier = estate_knights_castle_development_modifier
 		}
 		if = {
 			limit = {
@@ -974,6 +1011,18 @@ fort_16th = {
 		if = {
 			limit = {
 				owner = {
+					has_estate_privilege = estate_knights_castle_development
+				}
+				NOT = { has_province_modifier = estate_knights_castle_development_modifier }
+			}
+			add_province_modifier = {
+				name = estate_knights_castle_development_modifier
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				owner = {
 					has_country_flag = ned_buffed_forts_flag
 					NOT = {
 						full_idea_group = defensive_ideas
@@ -1030,6 +1079,12 @@ fort_16th = {
 				has_province_modifier = estate_nobles_development_of_castles_mod
 			}
 			remove_province_modifier = estate_nobles_development_of_castles_mod
+		}
+		if = {
+			limit = {
+				has_province_modifier = estate_knights_castle_development_modifier
+			}
+			remove_province_modifier = estate_knights_castle_development_modifier
 		}
 		if = {
 			limit = {
@@ -1591,6 +1646,18 @@ fort_17th = {
 		if = {
 			limit = {
 				owner = {
+					has_estate_privilege = estate_knights_castle_development
+				}
+				NOT = { has_province_modifier = estate_knights_castle_development_modifier }
+			}
+			add_province_modifier = {
+				name = estate_knights_castle_development_modifier
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				owner = {
 					has_country_flag = ned_buffed_forts_flag
 					NOT = {
 						full_idea_group = defensive_ideas
@@ -1647,6 +1714,12 @@ fort_17th = {
 				has_province_modifier = estate_nobles_development_of_castles_mod
 			}
 			remove_province_modifier = estate_nobles_development_of_castles_mod
+		}
+		if = {
+			limit = {
+				has_province_modifier = estate_knights_castle_development_modifier
+			}
+			remove_province_modifier = estate_knights_castle_development_modifier
 		}
 		if = {
 			limit = {
@@ -2121,6 +2194,18 @@ fort_18th = {
 		if = {
 			limit = {
 				owner = {
+					has_estate_privilege = estate_knights_castle_development
+				}
+				NOT = { has_province_modifier = estate_knights_castle_development_modifier }
+			}
+			add_province_modifier = {
+				name = estate_knights_castle_development_modifier
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				owner = {
 					has_country_flag = ned_buffed_forts_flag
 					NOT = {
 						full_idea_group = defensive_ideas
@@ -2177,6 +2262,12 @@ fort_18th = {
 				has_province_modifier = estate_nobles_development_of_castles_mod
 			}
 			remove_province_modifier = estate_nobles_development_of_castles_mod
+		}
+		if = {
+			limit = {
+				has_province_modifier = estate_knights_castle_development_modifier
+			}
+			remove_province_modifier = estate_knights_castle_development_modifier
 		}
 		if = {
 			limit = {
@@ -2612,6 +2703,18 @@ ramparts = {
 				duration = -1
 			}
 		}
+		if = {
+			limit = {
+				owner = {
+					has_estate_privilege = estate_knights_castle_development
+				}
+				NOT = { has_province_modifier = estate_knights_castle_development_modifier }
+			}
+			add_province_modifier = {
+				name = estate_knights_castle_development_modifier
+				duration = -1
+			}
+		}
 	}
 	
 	on_destroyed = {
@@ -2629,6 +2732,12 @@ ramparts = {
 				has_province_modifier = estate_nobles_development_of_castles_ramparts_mod
 			}
 			remove_province_modifier = estate_nobles_development_of_castles_ramparts_mod
+		}
+		if = {
+			limit = {
+				has_province_modifier = estate_knights_castle_development_modifier
+			}
+			remove_province_modifier = estate_knights_castle_development_modifier
 		}
 	}
 	ai_will_do = {

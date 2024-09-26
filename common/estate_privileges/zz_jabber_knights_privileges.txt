@@ -188,10 +188,10 @@ estate_astari_americathemes = {
 			every_subject_country = {
 				limit = {
 					OR = {
-						subject_type = colony
-						subject_type = crown_colony
-						subject_type = private_enterprise
-						subject_type = self_governing_colony
+						is_subject_of_type = colony
+						is_subject_of_type = crown_colony
+						is_subject_of_type = private_enterprise
+						is_subject_of_type = self_governing_colony
 					}
 				}
 				add_country_modifier = {
@@ -208,16 +208,13 @@ estate_astari_americathemes = {
 			every_subject_country = {
 				limit = {
 					OR = {
-						subject_type = colony
-						subject_type = crown_colony
-						subject_type = private_enterprise
-						subject_type = self_governing_colony
+						is_subject_of_type = colony
+						is_subject_of_type = crown_colony
+						is_subject_of_type = private_enterprise
+						is_subject_of_type = self_governing_colony
 					}
 				}
-				remove_country_modifier = {
-					name = "estate_astari_americathemes_modifier"
-					duration = -1
-				}
+				remove_country_modifier = estate_astari_americathemes_modifier
 			}
 		}
 	}
@@ -228,16 +225,13 @@ estate_astari_americathemes = {
 			every_subject_country = {
 				limit = {
 					OR = {
-						subject_type = colony
-						subject_type = crown_colony
-						subject_type = private_enterprise
-						subject_type = self_governing_colony
+						is_subject_of_type = colony
+						is_subject_of_type = crown_colony
+						is_subject_of_type = private_enterprise
+						is_subject_of_type = self_governing_colony
 					}
 				}
-				remove_country_modifier = {
-					name = "estate_astari_americathemes_modifier"
-					duration = -1
-				}
+				remove_country_modifier = estate_astari_americathemes_modifier
 			}
 		}
 	}

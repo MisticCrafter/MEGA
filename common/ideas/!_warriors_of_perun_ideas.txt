@@ -9,8 +9,7 @@ warriors_of_perun_ideas = {
 	trigger = {
 		tag = WOP
 		OR = {
-			religion = slavic_pagan
-			religion = slavic_pagan_reformed
+			religion = catholic
 		}
 		government = theocracy
 	}

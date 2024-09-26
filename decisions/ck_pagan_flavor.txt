@@ -7,7 +7,7 @@ country_decisions = {
 					culture_group = scandinavian
 					religion_group = pagan						#in case they reform or find a custom faith
 				}
-				religion = norse_pagan_reformed
+				religion = norse_pagan
 			}
 			
 			NOT = {

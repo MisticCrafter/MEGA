@@ -34,7 +34,13 @@ SWI_biscay_monopoly = {
 
 SWI_hohenstaufen_memories = {
     state_governing_cost = -0.15
-    ae_impact = -0.15
+    ae_impact = -0.10
+}
+
+SWI_crown_of_france = {
+    core_creation = -0.1
+    diplomatic_reputation = 1
+    centralize_state_cost = -0.1
 }
 
 influx_of_lombard_notables_modifier = {
@@ -95,4 +101,48 @@ sovvertimento_new_beginnings_modifier = {
 discovered_america_modifier = {
     colonist_placement_chance = 0.1
     global_colonial_growth = 15
+}
+
+SWI_geneva_tier_1 = {
+    local_development_cost = -0.1
+}
+
+SWI_geneva_tier_2 = {
+    local_development_cost = -0.25
+    local_development_cost_modifier = -0.05
+}
+
+SWI_geneva_tier_3 = {
+    local_development_cost = -0.33
+    local_development_cost_modifier = -0.10
+}
+
+SWI_geneva_tier_4 = {
+    local_development_cost = -0.5
+    local_development_cost_modifier = -0.15
+}
+
+SWI_geneva_tier_5 = {
+    local_development_cost = -1
+    local_development_cost_modifier = -0.25
+}
+
+SWI_geneva_tier_6 = {
+    local_development_cost = -2
+    local_development_cost_modifier = -0.33
+}
+
+SWI_geneva_tier_7 = {
+    local_development_cost = -3
+    local_development_cost_modifier = -0.45
+}
+
+SWI_geneva_tier_8 = {
+    local_development_cost = -5
+    local_development_cost_modifier = -0.4999
+}
+
+SWI_geneva_tier_zenith = {
+    local_development_cost = -6.66
+    local_development_cost_modifier = -0.5
 }

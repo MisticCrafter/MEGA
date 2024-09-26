@@ -159,3 +159,45 @@ Z1C_ideas = {
 		fire_damage_received = -0.10
 	}
 }
+anatolia_ideas = {
+	start = {
+		artillery_cost = -0.20
+		global_tax_modifier = 0.15
+	}
+	
+	bonus = {
+		yearly_army_professionalism = 0.01
+	}
+	
+	trigger = {
+		tag = ANA
+		tag = NIK
+	}
+	free = yes
+	
+	ana_repopulation_of_the_countryside = {
+		trade_goods_size_modifier = 0.10
+		development_cost = -0.05
+	}
+	ana_crusader_castles = {
+		defensiveness = 0.25
+	}
+	ana_the_great_crusade = {
+		papal_influence = 2
+		curia_powers_cost = -0.10
+	}
+	ana_lessons_of_the_thrice_crowning = { 
+		land_morale = 0.10
+		army_tradition_decay = -0.01
+	}
+	ana_latin_knights = {
+		shock_damage = 0.10
+	}
+	ana_wrath_of_god = {
+		artillery_fire = 1
+	}
+	ana_terminus_of_the_silk_road = {
+		global_own_trade_power = 0.20
+	}
+}
+

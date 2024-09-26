@@ -8,7 +8,7 @@ jomsvikings_ideas = {
 	}
 	trigger = {
 		tag = JOM
-		religion = norse_pagan_reformed
+		religion = norse_pagan
 		government = theocracy
 	}
 	free = yes

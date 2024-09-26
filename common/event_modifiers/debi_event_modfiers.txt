@@ -186,10 +186,46 @@ winged_crowned_stags_modifier = {
 	shock_damage = 0.15
 	cavalry_power = 0.25
 }
+kni_crusader_fleet = {
+	sunk_ship_morale_hit_recieved = -0.15
+}
+kni_treasures_of_venice = {
+	development_cost = -0.05
+}
+kni_chastening_of_venice = {
+	local_development_cost = 0.50
+	local_monthly_devastation = 0.05
+}
+kni_annihilation_of_venice = {
+	relation_with_same_religion = -50
+	reverse_relation_with_same_religion = -50
+}
 kni_fort_garrison_grain_maintenence = {
 	fort_maintenance_modifier = 0.20
 }
 kni_fort_garrison_grain = {
 	local_defensiveness = 0.20	
 	garrison_size = 0.10
+}
+kni_fort_road = {
+	local_friendly_movement_speed = 0.15
+	local_hostile_movement_speed = 0.10
+	local_development_cost = -0.10
+}
+kni_fort_road_maintenence = {
+	fort_maintenance_modifier = 0.20
+}
+kni_fort_capital = {
+	local_defensiveness = 0.10
+	local_development_cost = -0.05
+}
+kni_fort_capital = {
+	fort_maintenance_modifier = 0.20
+}
+kni_fort_garrison_draft = {
+	local_garrison_size = 0.25
+	local_manpower_modifier = -0.10
+}
+kni_fort_garrison_draft_maintenence = {
+	fort_maintenance_modifier = 0.20
 }

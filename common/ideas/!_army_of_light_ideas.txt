@@ -8,7 +8,7 @@ army_of_light_ideas = {
 	}
 	trigger = {
 		tag = AOL
-		religion = manichean
+		religion = catholic
 		government = theocracy
 	}
 	free = yes

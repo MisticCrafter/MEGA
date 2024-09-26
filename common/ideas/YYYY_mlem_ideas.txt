@@ -14,11 +14,11 @@ FNT_ideas = {		# Fontaine Ideas
 	free = yes
 
 	fontainian_militarism_i1 = {
-		discipline = 0.5
+		discipline = 0.05
 	}
 
 	early_industrialization_i2 = {
-		trade_goods_size_modifier = 0.2
+		global_trade_goods_size_modifier = 0.2
 	}
 
 	marineacademie_van_fontaine_i3 = {
@@ -42,7 +42,7 @@ FNT_ideas = {		# Fontaine Ideas
 	}
 
 	the_queen_mother_loves_us_i7 = {
-		monthly_piety_accelerator = 0.01
+		monthly_piety_accelerator = 0.005
 		monthly_church_power = 0.25
 		monthly_fervor_increase = 1
 		republican_tradition = 0.3

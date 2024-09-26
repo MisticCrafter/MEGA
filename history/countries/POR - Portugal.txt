@@ -15,7 +15,7 @@ add_accepted_culture = galician
 		mil = 3
 		birth_date = 1421.5.31
 		religion = tigranic
-		culture = portuguese
+		culture = portugese
 	}
 	add_ruler_personality = righteous_personality
 	add_ruler_personality = strict_personality

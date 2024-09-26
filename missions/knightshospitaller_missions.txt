@@ -582,6 +582,8 @@ kninaval = {
 		}
 
 		effect = {
+			set_country_flag = "kni_navy_with_order"
+			custom_tooltip = "kni_navy_with_order_tooltip"
 			add_country_modifier = {
 				name = "kni_crusader_fleet"
 				duration = -1
@@ -815,6 +817,7 @@ kni_granary_branch = {
 		}
 
 		effect = {
+			set_country_flag = kni_fort_garrison_grain_flag
 			2316 = {
 				add_province_modifier = {
 						name = "kni_grain_capital"
@@ -1629,7 +1632,9 @@ landfall_venice = {
 
 		trigger = {  } 
 
-		effect = {  } 
+		effect = { 
+			
+		 } 
 	}
 }
 landfall_sicily = {

@@ -9,9 +9,7 @@ spirit_guardians_ideas = {
 	trigger = {
 		tag = SGD
 		OR = {
-			religion = shamanism
-			religion = west_african_pagan
-			religion = west_african_pagan_reformed
+			religion = catholic
 		}
 		government = theocracy
 	}

@@ -20,4 +20,105 @@ country_decisions = {
 			}
 		}
 	}
+	kni_fort_garrison_grain_decision = {
+		major = yes
+		potential = {
+			tag = KNI
+		}
+		allow = { 
+			has_country_flag = kni_fort_garrison_grain_flag
+			NOT = {
+				has_country_modifier = kni_fort_garrison_grain_maintenence
+			}
+		}
+
+		effect = {
+			custom_tooltip = kni_fort_garrison_grain_tooltip
+			add_mil_power = -50
+			add_country_modifier = {
+				name = kni_fort_garrison_grain_maintenence
+				duration = -1
+			}
+			every_owned_province = {
+				limit = {
+					has_fort_building_trigger = yes
+				}
+				add_province_modifier = {
+					name = "kni_fort_garrison_grain"
+					hidden = yes
+					duration = -1
+				}
+			} 
+		}
+	}
+	kni_fort_garrison_grain_decision_disable = {
+		major = yes
+		potential = {
+			tag = KNI
+			has_country_modifier = kni_fort_garrison_grain_maintenence
+		}
+		allow = { 
+			has_country_modifier = kni_fort_garrison_grain_maintenence
+		}
+
+		effect = {
+			add_adm_power = -50
+			remove_country_modifier = kni_fort_garrison_grain_maintenence
+			every_owned_province = {
+				remove_province_modifier = kni_fort_garrison_grain
+			}
+		}
+	}
+	kni_fort_roads_decision = {
+		major = yes
+		potential = {
+			tag = KNI
+		}
+		allow = { 
+			has_country_flag = kni_fort_roads_flag
+			NOT = {
+				has_country_modifier = kni_fort_roads_maintenence
+			}
+		}
+
+		effect = {
+			custom_tooltip = kni_fort_roads_tooltip
+			add_mil_power = -50
+			add_country_modifier = {
+				name = kni_fort_raids_maintenence
+				duration = -1
+			}
+			every_owned_province = {
+				limit = {
+					has_fort_building_trigger = yes
+				}
+				add_province_modifier = {
+					name = "kni_fort_roads"
+					hidden = yes
+					duration = -1
+				}
+			} 
+		}
+	}
+	kni_fort_roads_disable = {
+		major = yes
+		potential = {
+			tag = KNI
+			has_country_modifier = kni_fort_road_maintenence
+		}
+		allow = { 
+			has_country_modifier = kni_fort_road_maintenence
+		}
+
+		effect = {
+			add_adm_power = -50
+			remove_country_modifier = kni_fort_road_maintenence
+			every_owned_province = {
+				remove_province_modifier = kni_fort_road
+			}
+		}
+	}
 }
+	
+	
+

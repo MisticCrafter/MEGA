@@ -14,8 +14,6 @@ knights_of_the_sun_ideas = {
 		tag = KOZ
 		OR = {
 			religion = zoroastrian
-			religion = zun_pagan
-			religion = zun_pagan_reformed
 		}
 		government = theocracy
 	}

@@ -2357,11 +2357,11 @@ country_event = {
 		}
 		if = {
 			limit = { culture_group = scandinavian }
-			change_religion = norse_pagan_reformed
+			change_religion = norse_pagan
 		}
 		else_if = {
 			limit = { culture_group = germanic }
-			change_religion = norse_pagan_reformed
+			change_religion = norse_pagan
 		}
 		else_if = {
 			limit = { culture_group = latin }
@@ -2471,7 +2471,7 @@ country_event = {
 			religion = pagan_religion_reformed
 			religion = baltic_pagan_reformed
 			religion = finnish_pagan_reformed
-			religion = norse_pagan_reformed
+			religion = norse_pagan
 			religion = slavic_pagan_reformed
 			religion = magyar_pagan_reformed
 			religion = siberian_pagan_reformed

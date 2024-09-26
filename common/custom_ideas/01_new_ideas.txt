@@ -92,7 +92,7 @@ new_idea_dip_modifiers = {
 			}
 			modifier = {
 				factor = 5
-				religion = norse_pagan_reformed
+				religion = catholic
 			}
 			modifier = {
 				factor = 10

@@ -802,11 +802,13 @@ republic = {
 				#1.36
 				legacy_of_the_safavid_reform
 				state_madrasas_reform
+				# rationalism - mod
 				strengthen_the_courts_of_realism_reform
 				the_humanistic_principle_of_rationalism_reform
 				maintain_balance_between_the_courts_and_humanists_reform
 				curtail_power_of_the_rationalists_reform
-				# added with mega campaign
+				FNT_cult_of_the_queen_mother_reform
+				# added with mod more stuff ;3
 				the_lollard_church_of_the_exiles_reform
 			}
 		}
@@ -1503,7 +1505,7 @@ theocracy = {
 				navy_with_order_reform
 				#1.35
 				governing_senate_reform
-				enforced_autocracy_rms-appid:undefinedeform
+				enforced_autocracy_reform
 			}
 		}
 		clergy_in_administration = {
