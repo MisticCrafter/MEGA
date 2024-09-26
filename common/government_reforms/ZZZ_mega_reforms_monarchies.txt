@@ -11,7 +11,6 @@ andal_crown_reform = {
 	nation_designer_cost = 10
 	modifiers = {
 		vassal_income = 0.2
-		vassal_forcelimit_bonus = 1
 		governing_capacity_modifier = -0.2
 	}
 	custom_attributes = {
@@ -27,7 +26,7 @@ andal_subject_reform = {
 	allow_normal_conversion = no
 	potential = {
 		culture_group = iberian
-        is_subject_of = ADU
+        is_subject_of = ARC
 	}
 	nation_designer_trigger = {
 		culture_group = iberian
@@ -53,7 +52,7 @@ absolutist_andalos_reform = {
 		has_dlc = "Domination" 
 		OR = {
 			AND = { 
-				tag = ADU 
+				tag = ARC 
 				OR = {
 					has_reform = absolutist_andalos_reform
 					have_had_reform = absolutist_andalos_reform
@@ -64,13 +63,13 @@ absolutist_andalos_reform = {
 				is_playing_custom_nation = yes
 				have_had_reform = absolutist_andalos_reform
 			}
-			mission_completed = adu_revoke_privileges
+			mission_completed = andalos_revoke_privileges
 		}
 	}
 	trigger = {
 		OR = {
 			AND = { 
-				tag = ADU 
+				tag = ARC 
 				OR = {
 					has_reform = absolutist_andalos_reform
 					have_had_reform = absolutist_andalos_reform
@@ -97,15 +96,21 @@ absolutist_andalos_reform = {
 	}
 }
 
-mauretanian_crusader_reform = {
+crusader_kingdom_reform = {
 	icon = "holy_state_reform"
 	allow_normal_conversion = no
 	potential = {
-		culture_group = maghrebi
-		religion_group = christian
+		religion_group = catholic
+		OR = {
+			tag = MUG
+			culture_group = crusader_group
+			capital_scope = {
+				NOT = { continent = europe }
+			}
+		}
+
 	}
 	nation_designer_trigger = {
-		culture_group = maghrebi
 		religion_group = christian
 	}
 	valid_for_nation_designer = yes

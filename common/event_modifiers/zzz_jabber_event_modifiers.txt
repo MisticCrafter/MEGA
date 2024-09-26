@@ -1,60 +1,60 @@
-adu_brazil_buff = {
+ARC_brazil_buff = {
     global_tariffs = 0.25
     reduced_liberty_desire_on_other_continent = 10
     global_colonial_growth = 15
 }
 
-adu_colombia_buff = {
+ARC_colombia_buff = {
     manpower_recovery_speed = 0.10
     reinforce_speed = 0.10
     global_colonial_growth = 15
 }
 
-adu_caribbean_buff = {
+ARC_caribbean_buff = {
     global_trade_goods_size_modifier = 0.1
     trade_steering = 0.1
 }
 
-adu_gold_buff = {
+ARC_gold_buff = {
     trade_goods_size = 2
 }
 
-adu_malabar_buff = {
+ARC_malabar_buff = {
     placed_merchant_power = 5
     global_ship_trade_power = 0.3
 }
 
-adu_defeat_incas_modifier = {
+ARC_defeat_incas_modifier = {
     treasure_fleet_income = 0.1
     global_heathen_missionary_strength = 0.02
     army_tradition_from_battle = 1
 }
 
-adu_defeat_aztecs_modifier = {
+ARC_defeat_aztecs_modifier = {
     treasure_fleet_income = 0.1
     discipline = 0.05
     army_tradition_from_battle = 1
 }
 
-adu_andaman_sea_trade_modifier = {
+ARC_andaman_sea_trade_modifier = {
     local_development_cost = -0.1
     province_trade_power_modifier = 0.15
     statewide_governing_cost = -0.2
 }
 
-adu_east_indies_trade_modifier = {
+ARC_east_indies_trade_modifier = {
     local_development_cost = -0.1
     province_trade_power_modifier = 0.15
     statewide_governing_cost = -0.2
 }
 
-adu_persian_gulf_trade_modifier = {
+ARC_persian_gulf_trade_modifier = {
     local_development_cost = -0.1
     province_trade_power_modifier = 0.15
     statewide_governing_cost = -0.2
 }
 
-adu_malabar_coast_trade_modifier = {
+ARC_malabar_coast_trade_modifier = {
     local_development_cost = -0.1
     province_trade_power_modifier = 0.15
     statewide_governing_cost = -0.2
@@ -64,67 +64,72 @@ swi_andal_alliance_modifier = {
     land_morale = 0.10
 }
 
-adu_ascendancy = {
+ARC_ascendancy = {
     max_absolutism_effect = 0.2
     diplomatic_reputation = 2 #removed morale, honestly the absol effect should offset it once you get absolutism going
 }
 
-adu_circumnavigation_modifier = {
+ARC_circumnavigation_modifier = {
     max_admiral_maneuver = 1
     global_colonial_growth = 25
     admiral_cost = -0.5
 }
 
-adu_feitoria = {
+ARC_feitoria = {
     trade_value = 5
     trade_goods_size = 0.5
     defensiveness = 0.25
     supply_limit_modifier = 0.25
 }
 
-adu_guinean_gold = {
+ARC_guinean_gold = {
     trade_goods_size = 1
     trade_goods_size_modifier = -0.75
 }
 
-adu_restore_crown_authority = {
+ARC_restore_crown_authority = {
     legitimacy = 0.5
     monthly_reform_progress_modifier = 0.1
     all_estate_influence_modifier = -0.1
 }
 
-adu_golden_citadel = {
+ARC_golden_citadel = {
     local_development_cost = -0.1
     allowed_num_of_buildings = 1
     local_institution_spread = 0.1
 }
 
-adu_silver_citadel = {
+ARC_silver_citadel = {
     local_development_cost = -0.1
     local_institution_spread = 0.1
 }
 
-adu_centralization_effect = {
+ARC_centralization_effect = {
     allow_free_estate_privilege_revocation = yes
     global_autonomy = -0.15
 }
 
-adu_east_india_company_modifier = {
+ARC_east_india_company_modifier = {
     global_foreign_trade_power = 0.1
     trade_steering = 0.1
 }
 
-adu_african_alliance = {
+ARC_african_alliance = {
     land_morale = 0.1
     shock_damage = 0.05
 }
 
-adu_andal_red = {
+ARC_abyssinia_alliance = {
+    land_morale = 0.1
+    shock_damage = 0.05
+}
+
+ARC_andal_red = {
     trade_goods_size = 0.5
     local_unrest = -1
 }
 
-adu_rejected_faith_union = {
+ARC_rejected_faith_union = {
     unrest_catholic_provinces = -1
     church_loyalty_modifier = 0.1
     church_influence_modifier = 0.1
@@ -132,71 +137,71 @@ adu_rejected_faith_union = {
     burghers_influence_modifier = -0.1
 }
 
-adu_hellenic_refugees = {
+ARC_hellenic_refugees = {
     idea_cost = -0.05
     global_colonial_growth = 20 #lowered setller growth a bit, but reduced state maint debuf
     state_maintenance_modifier = 0.20
 }
 
-adu_adopting_paladins = {
+ARC_adopting_astari = {
     reinforce_speed = -0.3
     land_maintenance_modifier = 0.6
-    land_morale = -0.3
+    shock_damage_received = 0.3
     is_tercio_modifier = yes
 }
 
 
-adu_reformed_paladins = {
+ARC_reformed_paladins = {
     allowed_tercio_fraction = 0.20 #you will see my side note below, this modifier right here is an exception, too much tercios.... menolike
     drill_gain_modifier = 0.33
 	reinforce_speed = 0.25
 	is_tercio_modifier = yes
 }
 
-adu_galleons = {
-	allowed_galleon_fraction = 0.2
-	has_galleon = yes
-	navy_tradition = 0.25
+ARC_grand_navy = {
+    navy_tradition = 0.5
+    naval_forcelimit_modifier = 0.33
 }
 
-adu_caravels = {
-    allowed_caravel_fraction = 0.2
-    has_caravel = yes
-    navy_tradition = 0.25
-}
-
-adu_adopting_galleons = {
+ARC_adopting_galleons = {
     global_ship_cost = 0.3
     naval_maintenance_modifier = 0.6
     naval_morale = -0.3
     is_galleon_modifier = yes
 }
 
-adu_adopting_caravels = {
+ARC_adopting_caravels = {
     global_ship_cost = 0.3
     naval_maintenance_modifier = 0.6
     naval_morale = -0.3
     is_caravel_modifier = yes
 }
 
-adu_reformed_galleons = {
+ARC_reformed_galleons = {
     movement_speed_in_fleet_modifier = 1
     is_galleon_modifier = yes
 }
 
-adu_reformed_caravels = {
+ARC_reformed_caravels = {
     can_transport_units = yes
     is_caravel_modifier = yes
 }
 #side note again, these caravel, galleon, and paladin ones are perfect, ty 
-adu_new_fleets = {
+ARC_new_fleets = {
     allowed_galleon_fraction = 0.1
     allowed_caravel_fraction = 0.1
 }
 
-adu_house_united = {
+ARC_house_united = {
     legitimacy = 0.5
     prestige_decay = -0.01
+}
+
+ARC_nobility_dissolved = {
+    reinforce_speed = -0.25
+    global_manpower_modifier = -0.33
+    land_forcelimit_modifier = -0.33
+    allowed_tercio_fraction = 0.33
 }
 
 ###
@@ -376,3 +381,21 @@ estate_burghers_tigranic_autonomy_modifier = {
 }
 
 #sorry if any of these comments make you like, tear up and cry, sob even... I just wanted to write comments smile
+
+estate_astari_americathemes_modifier = {
+    army_tradition = 0.5
+    allowed_tercio_fraction = 0.25
+    has_tercio = yes
+}
+
+estate_knights_castle_development_modifier = {
+    local_development_cost = -0.1
+}
+
+estate_knights_monopoly_of_metals_modifier = {
+	local_production_efficiency = -10
+}
+
+estate_knights_monopoly_of_livestock_modifier = {
+	local_production_efficiency = -10
+}

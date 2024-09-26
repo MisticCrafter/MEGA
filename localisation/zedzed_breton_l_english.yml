@@ -1,5 +1,23 @@
 ﻿l_english:
- #Missions
+ # Countries
+ AK1: "Kongo"
+ AK1_ADJ: "Kongo"
+ AK1_ideas: "Kongolese Ideas"
+ AK1_ideas_bonus: "Kongolese Ambition"
+ AK1_ideas_start: "Kongolese Traditions"
+ 
+ AK2: "Oyoman"
+ AK2_ADJ: "Oyoman"
+ AK2_ideas: "Oyo Ideas"
+ AK2_ideas_bonus: "Oyo Ambition"
+ AK2_ideas_start: "Oyo Traditions"
+
+ AK3: "Mali"
+ AK3_ADJ: "Malian"
+ AK3_ideas: "Malian Ideas"
+ AK3_ideas_bonus: "Malian Ambition"
+ AK3_ideas_start: "Malian Traditions"
+ # Missions
  aka_go_westward_title: "Go Westward"
  aka_go_westward_desc: ""
  aka_brazil_colonies_title: "Brazilian Dominance"
@@ -10,12 +28,13 @@
  aka_yucatan_colonies_desc: ""
  aka_cacao_plantations_title: "The Thousand Plantations"
  aka_cacao_plantations_desc: ""
- #Event Modifiers
+ # Event Modifiers
  aka_colon_buff: "Westward Impulse"
  aka_brazil_buff: "The Vice-Kingdom of Brazil"
  aka_yucatan_buff: "Wealth of the Yucatan"
- #Monuments
+ aka_cacao_plantations: "Cocoa Plantations"
+ # Monuments
  lighthouse_of_akkra: "Lighthouse of Akkra"
  golden_mosque: "The Golden Mosque"
- #Tooltips
+ # Tooltips
  aka_exarchates_enables_tt: "Unlocks the creation of §YExarchates§!."

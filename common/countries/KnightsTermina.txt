@@ -1,9 +1,6 @@
 graphical_culture = westerngfx
 color = { 120 106 183 }
 revolutionary_colors = { 15 0 8	}
-religion = catholic
-government = theocracy
-add_government_reform = monastic_order
 historical_idea_groups = {
 	trade_ideas
 	defensive_ideas

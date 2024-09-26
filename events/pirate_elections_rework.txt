@@ -1,0 +1,459 @@
+namespace = pirate_elections
+
+country_event = {
+	id = pirate_elections.2
+	title = "pirates_elections.2.t"
+	picture = BUCCANEERS_eventPicture
+	desc = {
+		trigger = {
+			NOT = { has_country_flag = pirate_death_election }
+			NOT = { has_country_flag = pirate_mutineer_council }
+		}
+		desc = "pirate_elections.2.desc"
+	}
+	desc = {
+		trigger = {
+			has_country_flag = pirate_death_election
+		}
+		desc = "pirate_elections.2.desc2"
+	}
+	desc = {
+		trigger = {
+			has_country_flag = pirate_mutineer_council
+		}
+		desc = "pirate_elections.2.desc3"
+	}
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_government_attribute = is_pirate_republic_reform
+		has_government_attribute = is_cynwyd_social_banditry_republic
+		if = {
+			limit = {
+				has_country_flag = pirate_mutineer_council
+			}
+			republican_tradition = 50
+		}
+	}
+	option = { # Current ruler
+		name = "pirate_elections.2.a"
+		trigger = {
+			has_regency = no
+			NOT = { has_country_flag = pirate_death_election }
+			OR = {
+				AND = {
+					ruler_has_personality = legendary_pirate_personality
+					NOT = {
+						has_ruler_flag = is_legendary_cynwyd_captain
+					}
+				}
+				check_variable = {
+					which = max_election_term
+					which = election_term
+				}
+			}
+		}
+		ai_chance = { 
+			factor = 60
+			modifier = {
+				factor = 0
+				NOT = { republican_tradition = 25 }
+			}	
+			modifier = {
+				factor = 0.5
+				NOT = { republican_tradition = 50 }
+			}				
+			modifier = {
+				factor = 0.5
+				NOT = { republican_tradition = 75 }
+			}	
+			modifier = {
+				factor = 2.0
+				republican_tradition = 90
+			}		
+		}
+		custom_tooltip = remains_ruler
+		if = {
+			limit = {
+				has_government_attribute = has_limited_terms
+				NOT = { ruler_has_personality = legendary_pirate_personality }
+			}
+			custom_tooltip = current_term_tt
+		}
+		if = {
+			limit = {
+				OR = {
+					ruler_has_personality = legendary_pirate_personality
+					has_ruler_flag = historical_pirate
+				}
+			}
+			custom_tooltip = historical_pirate_tooltip
+		}
+		change_adm = 1
+		change_dip = 1
+		change_mil = 1
+		else_if = {
+			limit = {
+				NOT = { has_ruler_flag = historical_pirate }
+				NOT = { ruler_has_personality = legendary_pirate_personality }
+			}
+			if = {
+				limit = {
+					has_country_flag = increased_election_cost
+				}
+				add_scaled_republican_tradition = -15
+				clr_country_flag = increased_election_cost
+			}
+			else = {
+				add_scaled_republican_tradition = -10
+			}
+		}
+		if = {
+			limit = {
+				faction_in_power = pr_buccaneers 
+			}
+			add_faction_influence = {
+				faction = pr_buccaneers
+				influence = -10
+			}	
+		}
+		random_list = {
+			10 = {
+				add_adm_power = 50
+			}
+			10 = {
+				add_dip_power = 50
+			}
+			10 = {
+				add_mil_power = 50
+			}
+		}
+		if = {
+			limit = {
+				has_government_attribute = reelection_depowers_estates
+			}
+			add_estate_influence_modifier = {
+				estate = all
+				influence = -10
+				duration = 1460
+				desc = REELCTION_DEPOWER_ESTATES
+			}
+		}
+		if = {
+			limit = {
+				has_government_attribute = has_limited_terms
+			}
+			hidden_effect = {
+				change_variable = {
+					which = election_term
+					value = 1
+				}
+			}
+		}
+		
+	}
+	option = { # Buccaneer candidate
+		name = "pirate_elections.2.b"
+		ai_chance = { factor = 20 }
+		if = {
+			limit = { has_active_policy = mandatory_service }
+			define_ruler = {
+				mil = 1
+				adm = 4
+				dip = 1
+				random_gender = yes # Allows random gender for republics
+			}
+		}
+		else = {
+			define_ruler = {
+				mil = 1
+				adm = 4
+				dip = 1					
+			}
+		}
+		if = {
+			limit = { has_government_attribute = elections_increase_factions_influence }
+			add_influence_to_adm_faction = {
+				influence = 20
+			}
+		}
+		hidden_effect = {
+			set_variable = {
+				which = election_term
+				value = 1
+			}
+		}
+		
+		custom_tooltip = buccaneer_adm_buffs_tt
+		hidden_effect = {
+			random_list = {
+				20 = {
+					add_ruler_modifier = {
+						name = CWD_mercenary_leadership_adm
+						duration = -1
+					}
+				}
+
+				20 = {
+					add_ruler_modifier = {
+						name = CWD_privateer_leadership_adm
+						duration = -1
+					}
+				}
+
+				20 = {
+					add_ruler_modifier = {
+						name = CWD_smuggler_leadership_adm
+						duration = -1
+					}
+				}
+
+				20 = {
+					add_ruler_modifier = {
+						name = CWD_church_leadership_adm
+						duration = -1
+					}
+				}
+
+				20 = {
+					add_ruler_modifier = {
+						name = CWD_bandit_leadership_adm
+						duration = -1
+					}
+				}
+			}
+		}
+
+	}
+	option = { # Smugglers candidate
+		name = "pirate_elections.2.c"
+		ai_chance = { factor = 20 }
+		if = {
+			limit = {
+				has_active_policy = mandatory_service
+				has_government_attribute = cynwyd_smugglers_empowered_elections
+		}
+			define_ruler = {
+				dip = 4
+				adm = 1
+				mil = 1					
+				random_gender = yes # Allows random gender for republics
+			}
+			clear_scripted_personalities = yes
+			add_ruler_personality = fierce_negotiator_personality
+			add_ruler_personality = entrepreneur_personality
+		}
+		else_if = {
+			limit = {
+				has_government_attribute = cynwyd_smugglers_empowered_elections
+			}
+			define_ruler = {
+				dip = 4
+				adm = 1
+				mil = 1
+			}
+			clear_scripted_personalities = yes
+			add_ruler_personality = fierce_negotiator_personality
+			add_ruler_personality = entrepreneur_personality
+			assign_ruler_focus = {
+				type = dip
+			}
+		}
+		else_if = {
+			limit = { has_active_policy = mandatory_service }
+			define_ruler = {
+				dip = 4
+				adm = 1
+				mil = 1					
+				random_gender = yes # Allows random gender for republics
+			}
+			assign_ruler_focus = {
+				type = dip
+			}
+		}
+		else = {
+			define_ruler = {
+				dip = 4
+				adm = 1
+				mil = 1					
+			}
+		}
+		if = {
+			limit = { has_government_attribute = elections_increase_factions_influence }
+			add_influence_to_dip_faction = {
+				influence = 20
+			}
+		}
+		if = {
+			limit = {
+				has_government_attribute = has_limited_terms
+			}
+			hidden_effect = {
+				set_variable = {
+					which = election_term
+					value = 1
+				}
+			}
+		}
+
+		custom_tooltip = buccaneer_dip_buffs_tt
+		hidden_effect = {
+			random_list = {
+				20 = {
+					add_ruler_modifier = {
+						name = CWD_mercenary_leadership_dip
+						duration = -1
+					}
+				}
+
+				20 = {
+					add_ruler_modifier = {
+						name = CWD_privateer_leadership_dip
+						duration = -1
+					}
+				}
+
+				20 = {
+					add_ruler_modifier = {
+						name = CWD_smuggler_leadership_dip
+						duration = -1
+					}
+				}
+
+				20 = {
+					add_ruler_modifier = {
+						name = CWD_church_leadership_dip
+						duration = -1
+					}
+				}
+
+				20 = {
+					add_ruler_modifier = {
+						name = CWD_bandit_leadership_dip
+						duration = -1
+					}
+				}
+			}
+		}
+
+
+	}
+	option = { # Captains candidate
+		name = "pirate_elections.2.d"
+		ai_chance = { factor = 20 }
+		if = {
+			limit = {
+				has_active_policy = mandatory_service
+				has_government_attribute = legendary_cynwyd_captains_elections
+			}
+			define_ruler = {
+				mil = 4
+				adm = 1
+				dip = 1					
+				random_gender = yes # Allows random gender for republics
+
+			}
+			add_ruler_personality = legendary_pirate_personality
+			set_ruler_flag = is_legendary_cynwyd_captain
+			
+
+		}
+		else_if = {
+			limit = {
+				NOT = { has_active_policy = mandatory_service }
+				has_government_attribute = legendary_cynwyd_captains_elections
+			}
+			define_ruler = {
+				mil = 4
+				adm = 1
+				dip = 1	
+			}
+			add_ruler_personality = legendary_pirate_personality
+			set_ruler_flag = is_legendary_cynwyd_captain
+		}
+		else_if = {
+			limit = { has_active_policy = mandatory_service }
+			define_ruler = {
+				mil = 4
+				adm = 1
+				dip = 1					
+				random_gender = yes # Allows random gender for republics
+			}
+		}
+		else = {
+			define_ruler = {
+				mil = 4
+				adm = 1
+				dip = 1					
+			}
+		}
+		if = {
+			limit = { has_government_attribute = elections_increase_factions_influence }
+			add_influence_to_mil_faction = {
+				influence = 20
+			}
+		}
+		if = {
+			limit = {
+				has_government_attribute = has_limited_terms
+			}
+			hidden_effect = {
+				set_variable = {
+					which = election_term
+					value = 1
+				}
+			}
+		}
+
+		custom_tooltip = buccaneer_mil_buffs_tt
+		hidden_effect = {
+			random_list = {
+				20 = {
+					add_ruler_modifier = {
+						name = CWD_mercenary_leadership_mil
+						duration = -1
+					}
+				}
+
+				20 = {
+					add_ruler_modifier = {
+						name = CWD_privateer_leadership_mil
+						duration = -1
+					}
+				}
+
+				20 = {
+					add_ruler_modifier = {
+						name = CWD_smuggler_leadership_mil
+						duration = -1
+					}
+				}
+
+				20 = {
+					add_ruler_modifier = {
+						name = CWD_church_leadership_mil
+						duration = -1
+					}
+				}
+
+				20 = {
+					add_ruler_modifier = {
+						name = CWD_bandit_leadership_mil
+						duration = -1
+					}
+				}
+			}
+		}
+
+
+	}
+	
+
+
+
+	after = {
+		clr_country_flag = pirate_death_election
+		clr_country_flag = pirate_mutineer_council
+	}
+}

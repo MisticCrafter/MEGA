@@ -184,7 +184,7 @@ religious_center = {
 			limit = {
 				province_id = 1 # Stockholm - or rather Uppsala
 			}
-			religion = norse_pagan_reformed
+			religion = norse_pagan
 		}
 		else_if = {
 			limit = {
@@ -985,8 +985,8 @@ temple_of_confucius_modifier = {
 temple_of_uppsala_modifier = {
 	potential = {}
 	trigger = {
-		religion = norse_pagan_reformed
-		owner = { religion = norse_pagan_reformed }
+		religion = norse_pagan
+		owner = { religion = norse_pagan }
 	}
 	missionaries = 1
 	tolerance_own = 1
@@ -1595,7 +1595,7 @@ BYZ_megalopolis_updater = {
 
 BYZ_galata = {
 	potential = {
-		always = yes
+		always = no
 	}
 	
 	trigger = {

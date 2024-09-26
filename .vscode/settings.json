@@ -1,0 +1,7 @@
+{
+    "[yaml]": {
+        "editor.defaultColorDecorators": false,
+        "editor.unicodeHighlight.includeComments": "inUntrustedWorkspace",
+        "editor.comments.ignoreEmptyLines": true
+    }
+}

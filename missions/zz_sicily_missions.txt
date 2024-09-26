@@ -88,7 +88,7 @@ sicily_mission_1 = {
 			sic_seeking_papal_support
 		}
 		trigger = {
-			sicily_area = {
+			corsica_sardinia_area = {
 				country_or_non_sovereign_subject_holds = ROOT
 				NOT = { unrest = 3 }
 				NOT = { province_id = 126 }
@@ -134,7 +134,7 @@ sicily_mission_1 = {
 					duration = -1
 				}
 			}
-			sicily_area = {
+			corsica_sardinia_area = {
 				if = {
 					limit = { has_dlc = "Mandate of Heaven" }
 					add_prosperity = 50
@@ -861,7 +861,7 @@ sicily_mission_3 = {
 				area = naples_area
 				area = calabria_area
 				area = western_sicily_area
-				area = sicily_area
+				area = corsica_sardinia_area
 			}
 		}
 		trigger = {
@@ -951,7 +951,7 @@ sicily_mission_3 = {
 					NOT = { devastation = 1 }
 				}
 			}
-			sicily_area = {
+			corsica_sardinia_area = {
 				type = all
 				owned_by = ROOT
 				if = {
@@ -1264,7 +1264,7 @@ sicily_mission_5 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			sicily_area = {
+			corsica_sardinia_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 					NOT = { is_core = ROOT }

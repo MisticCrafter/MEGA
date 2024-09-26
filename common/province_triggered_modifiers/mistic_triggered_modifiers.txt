@@ -1,0 +1,12 @@
+SWI_tolerated_jews = {
+    potential = {
+        mission_completed = swiss_optics
+    }
+
+    trigger = {
+        religion = jewish
+    }
+    local_missionary_strength = -0.05
+    local_tolerance_of_heathens = 3
+    innovativeness_gain = 0.5
+}

@@ -1,0 +1,13 @@
+# country
+on_new_term_election = {
+	events = {
+		pirate_elections.2
+	}
+}
+
+# country
+on_death_election = {
+	events = {
+		pirate_elections.2
+		} 
+}

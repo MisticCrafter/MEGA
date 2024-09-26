@@ -17,4 +17,50 @@ add_country_modifier = {
 	name = melancholic_millenium
 	duration = -1
 }
-capital = 40
+if = {
+	limit = {
+		NOT = {
+			has_global_flag = Rosita_Event
+		}
+	}
+	set_global_flag = Rosita_Event
+}
+
+OON = {
+	country_event = {
+		id = ez_knights_events.5 days = 11
+	}
+}
+
+capital = 1935
+1443.11.11= {
+	monarch = {
+		name = "Rosita"
+		dynasty = "Vatneryte"
+		adm = 5
+		dip = 3
+		mil = 6
+		birth_date = 1419.11.21
+		female = yes
+		religion = orthodox
+		culture = lithuanian
+
+		leader = {
+			name = "Rosita Vatneryte"
+			type = general
+			fire = 3
+			shock = 3
+			manuever = 3
+			siege = 3
+		}
+	}
+	add_ruler_personality = inspiring_leader_personality
+		leader = {
+			name = "Celeste Kreivyte"
+			type = general
+			fire = 2
+			shock = 2
+			manuever = 0
+			siege = 3
+		}
+}

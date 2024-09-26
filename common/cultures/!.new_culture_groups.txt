@@ -151,59 +151,49 @@ roman_group = {
 	# For the sake of simplicity, all the names are shared throughout the whole group
 	roman = { primary = ROM }
 	hispanic = { primary = ROM }
-	gaulic = { primary = ROM }
-	theodisc = { primary = ROM }
+	gallic = { primary = ROM }
+	rhaetic = { primary = ROM }
+	illyrian = { primary = ROM }
+	roman_greek = { primary = ROM }
 	pannonian = { primary = ROM }
-	wenedyk = { primary = ROM }
 	britannian = { primary = ROM }
-	hyperborean = { primary = ROM }
-	salinatorian = { primary = ROM }
-	bazramani = { primary = ROM }
-	euxinian = { primary = ROM }
-	xliponian = { primary = ROM }
-
-	sabellian = {
-		primary = NAP
+	romanian = {
 		dynasty_names = {
-			Aemilius Aurelius Calpurnius Calvisius Claudius Curtius Flavius Ligarius Marcius
-			Minatius Oppius Opsius Ostorius Pantuleius Petronius Pinarius Pompilius Pomponius
-			Poppaeus Quirinius Ranius Rubellius Sabinius Safinius Sallustius Saturius Sertorius
-			Sicinius Tarpeius Tineius Titius Valerius Asinius Vetius Cassius Decimius Egnatius
-			Gavius Gellius Herennius Obellius Ofilius Oppidius Opsidius Otacilius Paccius
-			Pacidius Papius Papinius Percennius Petreius Pontius Scutarius Vibius "Pontius Pilatus"
+			"Basarab" "Danesti" "Draculesti"
+			Callimachi Ghica Cantacuzino Cantemiresti Racovita Caradja Sturdza 
+			Conachi Soutzos Golescu Vacarescu Mavrocordatos Craiovesti H jdau
+			Kogalniceanu Movilesti
 		}
-	}
-	old_ligurian = {
-		primary = GEN
-		dynasty_names = {
-			Alpinus Apuanus Bagiennus Beretinus Bimbellus Brinias Boax Casuentillanus
-			Cavaturinus Celelas Cerdicias Decias Dectuminus Docilius Ectinus Eguiturus
-			Epanterius Euburias Frinias Garulus Genuas Hercas Iemerus Ingaunus Intemelius
-			Ilvas Irias Laevus Lapicinus Libicus Libuus Magellus Mucellus Maricus Nematurus
-			Nerusus Odias Oratellus Olivarus Oxybius Sabas Segusinus Sotus Statiellus Sueltrus
-			Tigullus Triullatus Turus Vediantius Veiturius Langas Mentovinus Sestrinus Utrinus
-			Veleias Vellaunus Venenus Venisanus Vesubianus Vibellus
+		male_names = {
+			Alexandru Radu Vlad Constantin Mihail Mircea George Grigore Mihnea Nicolae Besarab Vladislav Mattia 
+			Radu Ilias Scarlat Stefan Dan Alexandru Ilias Gabriel Ioan George Leon Moise Neagoie Besarab 
+			Leon Radu Mihnea Serban Simeon Teodosiu Vintila Vladut Milos Corneliu Flaviu Iuliu Octavian Sergiu 
+			Valeriu Petru Petrascu Radu 
+			Adrian Alexandru Alexander Anghel Angel Aron Bajan Balc Barbat Basarab Bogdan Bogdan Carol 
+			Ciprian Ciubar Claudiu
+			Corneliu Cornelius Costin Damjan Dan Dragos Dumitru Emerik Florin Franjo Francis Gavril 
+			Gheorghe George Grigore Gregory Iacob Gabriel
+			Iancu Ieremia Ilie Ioan John Iorghu Iosif Iuga Janos John Ladislau Latcu Laurentiu Laurence 
+			Litovoi Lucian Lucius Marin Marius
+			Mihai Milos Milosz Mircea Moise Nicolaie Petre Pirvu Radovan Radu Roman Sas Seneslav 
+			Sergiu Simion Simon
+			Stefan Stephen Stelian Teodor Theodore Tepes Tibor Tihomir Timotei Tudor Thierry Valentin 
+			Valentin Valeriu Vasile Basil Veaceslav
+			Victor Vilhelm William Vintila Vlad
 		}
-	}
-	venetic = {
-		primary = VEN
-		dynasty_names = {
-			Histrus Carnus Catarus Catalus Secussis Lopsus
-		}
-	}
-	siculian = {
-		primary = SIC
-		dynasty_names = {
-			Abacaenus Abolla Aetna Agathyrnus Acrillae Ameselus Apollonius Assorus Brucoli Capizzi
-			Caronia Casmenae Catania Cefalus Chersonesus Comicianus Daedalius Drepanus Enna Entella
-			Eryx Gela Halaesa Helorus Hippana "Hybla Gereatis" "Hybla Heraea" "Hybla Maior" Ichana
-			Ietas Imachara Inycus Licata Longaricus Mactorio "Megara Hyblaea" "Monte Bubbonia"
-			Motyo Mytistrato Naxus Netus Pirama Pitinianus Sciaccus Segestus Selinuns Soluntus
-			Taormina Tarantus "Termini Imerese" Tindari
+		female_names = {
+			Adelina Adriana Afina Alexandra Alexia Ana Anna Anastasia Anastasia Angela Arina Christina 
+			Christina Clara Clara Dana Ecatarina Catherine
+			Elena Helen Elisabeta Elisabeth Emilia Emily Eufroysina Euphrosyne Felicia Floarea Flora 
+			Ioana Ionela Irina Iulia Juliana Maria Maria Monica Iacoba
+			Natalia Olimpia Paraschiva Petra Roxana Ruxandra Smaranda Sophia Sophia Stana Stefana 
+			Stefania Stephania Teodora Rahela Flavia Cosmina
+			Tereza Teresa Vasilica Violeta Yolanda Voica Zina
 		}
 	}
 
-	male_names = { Acilius Aebutius Aelius Aemilius Albius Amatius Annaeus Anneius Annius Antonius Arrius
+	male_names = { 
+		Acilius Aebutius Aelius Aemilius Albius Amatius Annaeus Anneius Annius Antonius Arrius
 		Artorius Asinius Atilius Atius Aurelius Autronius Caecilius Caedicius Caelius Calidius
 		Calpurnius Cassius Claudius Cloelius Cocceius Cominius Cornelius Coruncanius Curiatius
 		Curius Curtius Decius Didius Domitius Duilius Durmius Equitius Fabius Fabricius Fannius
@@ -233,8 +223,10 @@ roman_group = {
 		Rutilus Salinator Saturninus Scaeva Scaevola Scapula Scaurus Scipio Scrofa Seneca Severus
 		Silanus Silo Silus Stolo Strabo Structus Sulla Sura Taurus Triarius Trigeminus Trio Tubero
 		Tubertus Tubulus Tuditanus Tullus Turdus Varro Varus Vatia Verres Vespillo Vetus Vitulus
-		Volusus	}
-	female_names = { Acilia Aebutia Aelia Aemilia Albia Amatia Annaea Anneia Annia Antonia Arria
+		Volusus	
+	}
+	female_names = { 
+		Acilia Aebutia Aelia Aemilia Albia Amatia Annaea Anneia Annia Antonia Arria
 		Artoria Asinia Atilia Atia Aurelia Autronia Caecilia Caedicia Caelia Calidia
 		Calpurnia Cassia Claudia Cloelia Cocceia Cominia Cornelia Coruncania Curiatia
 		Curia Curtia Decia Didia Domitia Duilia Durmia Equitia Fabia Fabricia Fannia
@@ -246,8 +238,10 @@ roman_group = {
 		Quinctilia Quinctia Rubellia Rufia Rutilia Sallustia Salonia Salvia Scribonia
 		Seia Sempronia Sentia Sergia Sertoria Servilia Sextia Sicinia Suetonia Sulpicia
 		Tarpeia Tarquitia Terentia Titinia Tituria Tuccia Tullia Ulpia Valeria Vedia
-		Velleia Vergilia Verginia Vibia Villia Vipsania Vitellia Vitruvia Volumnia }
-	dynasty_names = { Aculeo Agricola Agrippa Ahala Ahenobarbus Albinus Albus Ambustus Annalis Aquila
+		Velleia Vergilia Verginia Vibia Villia Vipsania Vitellia Vitruvia Volumnia 
+	}
+	dynasty_names = { 
+		Aculeo Agricola Agrippa Ahala Ahenobarbus Albinus Albus Ambustus Annalis Aquila
 		Aquilinus Arvina Asellio Asina Atellus Avitus Balbus Barba Barbatus Bassus Bestia
 		Bibaculus Bibulus Blaesus Brocchus Brutus Bubulcus Bucco Bulbus Buteo Caecus Caepio
 		Caesar Calidus Calvinus Calvus Camillus Caninus Canus Capito Carbo Catilina Cato
@@ -264,7 +258,8 @@ roman_group = {
 		Rutilus Salinator Saturninus Scaeva Scaevola Scapula Scaurus Scipio Scrofa Seneca Severus
 		Silanus Silo Silus Stolo Strabo Structus Sulla Sura Taurus Triarius Trigeminus Trio Tubero
 		Tubertus Tubulus Tuditanus Tullus Turdus Varro Varus Vatia Verres Vespillo Vetus Vitulus
-		Volusus }
+		Volusus 
+	}
 }
 equine_group = {
 	graphical_culture = westerngfx
@@ -517,6 +512,18 @@ chaldean = {
 		}
 	}
 	assyrian = {
+		primary = ASY
+		male_names = {
+			Naplanum Emisum Samium Zabaia Gungunum Abisare Sumuel "Nur-Adad" "Sin-Iddinam" "Sin-Eribam" "Sin-Iqisham" "Silli-Adad" "Warad-Sin" "Rim-Sin" Hammurabi "Samsu-iluna" "Su-abu" "Sumu-la-El" "Sabum" "Apil-Sin" "Sin-muballit" Abieshu "Ammi-ditana" "Samsu-Ditana" Ammisaduqa Gandas Agum Kastiliasu "Abi-Rattas" Hurbazum Ulamburiash Karaindash "Enlil-nadin-ahi" Gulkishar
+			Addai Betheil Bilgamish Daweska Dawis Diklat Febo Gewargis Jira Narsai Nona Rameel
+			Ukba Yohanan Yonan Yosip
+		}
+		female_names = {
+			Nana Allatu Belit Zirrabanit Tiamat
+			Ator Betheil Bredil Diklat "Il-Shvai" Imama Kasrin Nohara Nona Shamiram Tayara Yalda
+		}
+	}
+	aramaean = {
 		primary = ASY
 		male_names = {
 			Naplanum Emisum Samium Zabaia Gungunum Abisare Sumuel "Nur-Adad" "Sin-Iddinam" "Sin-Eribam" "Sin-Iqisham" "Silli-Adad" "Warad-Sin" "Rim-Sin" Hammurabi "Samsu-iluna" "Su-abu" "Sumu-la-El" "Sabum" "Apil-Sin" "Sin-muballit" Abieshu "Ammi-ditana" "Samsu-Ditana" Ammisaduqa Gandas Agum Kastiliasu "Abi-Rattas" Hurbazum Ulamburiash Karaindash "Enlil-nadin-ahi" Gulkishar

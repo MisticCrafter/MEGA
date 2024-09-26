@@ -9,7 +9,6 @@ capital = 352
 	monarch = {
 		name = "Masseno"
 		dynasty = "of the Jugurthii"
-		monarch_name = "Masseno V"
 		adm = 2
 		dip = 4
 		mil = 5
@@ -28,7 +27,7 @@ capital = 352
 		adm = 3
 		dip = 3
 		mil = 6
-		birth_date = 1449.5.19
+		birth_date = 1439.5.19
 		death_date = 1500.5.19
 		claim = 100
 	}

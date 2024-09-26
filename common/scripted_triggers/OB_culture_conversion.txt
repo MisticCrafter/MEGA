@@ -1,0 +1,23 @@
+OB_eligible_province_for_culture_conversion = {
+	OR = {
+		region = central_asia_region
+		region = west_siberia_region
+        area = ural_area
+        area = tannu_uriankhai_area
+        area = bashkiria_area
+        area = north_zungaria
+		area = zungaria_area
+		AND = {
+			owner = {
+				has_country_flag = OB_conversion
+			}
+			region = central_asia_region
+			region = west_siberia_region
+            area = ural_area
+            area = tannu_uriankhai_area
+            area = bashkiria_area
+            area = north_zungaria
+			area = zungaria_area
+		}
+	}
+}

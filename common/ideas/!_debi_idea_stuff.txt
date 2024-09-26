@@ -1,6 +1,6 @@
 antioch_ideas = {
 	start = {
-		defensiveness = 0.50
+		defensiveness = 0.33
 		discipline = 0.05
 	}
 	
@@ -9,7 +9,7 @@ antioch_ideas = {
 	}
 	
 	trigger = {
-		tag = NAX
+		tag = ANC
 	}
 	free = yes
 	
@@ -40,7 +40,7 @@ antioch_ideas = {
 }
 TEM_ideas = {
 	start = {
-		garrison_size = 0.20
+		num_accepted_cultures = 1
 		discipline = 0.05
 	}
 	
@@ -60,10 +60,11 @@ TEM_ideas = {
 		army_tradition_decay = -0.01
 	}
 	TEM_knights_of_outremer = { 
-		cavalry_power = 0.25
+		cavalry_power = 0.20
 	}
 	TEM_deliver_unto_evil = {
-		shock_damage = 0.20
+		shock_damage = 0.15
+		morale_damage = 0.05
 	}
 	TEM_army_with_an_order = {
 		special_unit_forcelimit = 0.15
@@ -73,7 +74,130 @@ TEM_ideas = {
 	}
 	TEM_shield = {
 		garrison_damage = 0.25
-		infantry_power = 0.10
+		diplomatic_upkeep = 1
+	}
+}
+Z09_ideas = {
+	start = {
+		defensiveness = 0.25
+		army_tradition = 0.5
+		army_tradition_from_battle = 1
+	}
+	
+	bonus = {
+		leader_land_shock = 1
+		leader_land_manuever = 1
+	}
+	
+	trigger = {
+		tag = Z09
+	}
+	free = yes
+	
+	Z09_all_is_one = {
+		missionaries = 1
+	}
+	Z09_antler_crown = {
+		devotion = 1
+		legitimacy = 1
+		horde_unity = 1
+	}
+	Z09_knights_of_the_steppe = { 
+		cavalry_power = 0.25
+	}
+	Z09_life_of_steppe_warrior = {
+		land_attrition = -0.10
+		movement_speed = 0.10
+	}
+	Z09_east_and_west = {
+		core_creation = -0.20
+	}
+	Z09_onward_christian_soldiers = {
+		army_tradition_decay = -0.01
+	}
+	Z09_one_is_all = {
+		fire_damage_received = -0.10
+	}
+}
+Z1C_ideas = {
+	start = {
+		may_perform_slave_raid = yes
+		yearly_army_professionalism = 0.02
+	}
+	
+	bonus = {
+		global_missionary_strength = 0.02
+	}
+	
+	trigger = {
+		tag = Z1C
+	}
+	free = yes
+	
+	Z1C_catholic_allies = {
+		improve_relation_modifier = 0.25
+	}
+	Z1C_hostile_borders = {
+		defensiveness = 0.20
+		war_exhaustion = -0.03
+	}
+	Z1C_into_the_abyss = { 
+		land_attrition = -0.1
+		movement_speed = 0.10
+	}
+	Z1C_recover_the_ark = {
+		core_creation = -0.15
+	}
+	Z1C_the_great_crusade = {
+		papal_influence = 2
+		curia_powers_cost = -0.10
+	}
+	Z1C_maritime_ambitions = {
+		naval_forcelimit_modifier = 0.30
+	}
+	Z1C_deus_vult = {
+		fire_damage_received = -0.10
+	}
+}
+anatolia_ideas = {
+	start = {
+		artillery_cost = -0.20
+		global_tax_modifier = 0.15
+	}
+	
+	bonus = {
+		yearly_army_professionalism = 0.01
+	}
+	
+	trigger = {
+		tag = ANA
+		tag = NIK
+	}
+	free = yes
+	
+	ana_repopulation_of_the_countryside = {
+		trade_goods_size_modifier = 0.10
+		development_cost = -0.05
+	}
+	ana_crusader_castles = {
+		defensiveness = 0.25
+	}
+	ana_the_great_crusade = {
+		papal_influence = 2
+		curia_powers_cost = -0.10
+	}
+	ana_lessons_of_the_thrice_crowning = { 
+		land_morale = 0.10
+		army_tradition_decay = -0.01
+	}
+	ana_latin_knights = {
+		shock_damage = 0.10
+	}
+	ana_wrath_of_god = {
+		artillery_fire = 1
+	}
+	ana_terminus_of_the_silk_road = {
+		global_own_trade_power = 0.20
 	}
 }
 

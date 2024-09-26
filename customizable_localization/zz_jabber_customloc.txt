@@ -1,0 +1,61 @@
+defined_text = {
+	name = GetKnightsOrFallbackName
+	random = no
+	
+	text = {
+		localisation_key = country_estate_knights_name
+		trigger = {
+			has_estate = estate_knights
+		}
+	}
+	
+	text = {
+		localisation_key = estate_knights
+		trigger = {
+			NOT = { has_estate = estate_knights }
+		}
+	}
+}
+
+defined_text = {
+    name = GetKnightsName
+
+    text = {
+        localisation_key = estate_knights
+        trigger = {
+            OR = {
+                religion = catholic
+                culture_group = crusader_group
+                AND = {
+                    is_subject = no
+                    NOT = { culture_group = iberian }
+                }
+                AND = {
+                    is_subject = yes
+                    overlord = {
+                        NOT = { culture_group = iberian }
+                    }
+                }
+            }
+        }
+    }
+	text = {
+        localisation_key = estate_astari
+        trigger = {
+			OR = {
+                tag = ARC
+                primary_culture = andal
+                AND = {
+                    is_subject = no
+                    culture_group = iberian
+                }
+                AND = {
+                    is_subject = yes
+                    overlord = {
+                        culture_group = iberian
+                    }
+                }
+            }
+        }
+    }
+}

@@ -28,12 +28,4 @@ on_startup = {
 		set_global_flag = ZZZ_enhanced_baltic_pagan_reformed
 		set_global_flag = ZZZ_enhanced_old_bon_reformed
 	}
-
-	# Added by megacampaign.
-	if = {
-		limit = {
-			tag = ADU
-		}
-		country_event = { id = flavor_andalos.19 }
-	}
 }

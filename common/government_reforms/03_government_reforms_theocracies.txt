@@ -1355,7 +1355,6 @@ battle_pope_reform = {
 		factor = 3
 	}
 }
-
 conciliarism_reform = {
 	icon = "conciliarism_reform"
 	allow_normal_conversion = yes

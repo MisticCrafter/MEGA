@@ -15,7 +15,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		mil = 1
 		birth_date = 1390.1.1
 		religion = thibaultine
-		primary_culture = cosmopolitan_french
+		culture = cosmopolitan_french
 		female = yes
 	}
 }

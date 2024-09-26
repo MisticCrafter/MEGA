@@ -52,6 +52,92 @@ monarch_names = {
 	"al-Mustansir #1" = 10
 	"August #1" = 10
 	"az-Zahir #1" = 10
+	"Adelfonso #3" = 10
+	"Alfonsu #3" = 10
+	"Arias #0" = 0
+	"Aurelio #1" = 10
+	"Basileios #0" = 0
+	"Bermudu #2" = 10
+	"Brandimena #0" = -1
+	"Diogenes #0" = 0
+	"Ekkehard #0" = 0
+	"Fadrique #1" = 10
+	"Fafila #1" = 10
+	"Fernando #1" = 10
+	"Folquet #3" = 10
+	"Fruela #1" = 10
+	"Fruella #1" = 10
+	"Garc?a #1" = 10
+	"Madalena #1" = -1
+	"Mauregato #1" = 10
+	"Nepociano #1" = 10
+	"Ordo?u #4" = 10
+	"Pelagio #1" = 10
+	"Philaretos #0" = 0
+	"Ramiru #3" = 10
+	"Romanos #1" = 10
+	"Sancho #3" = 10
+	"Sanchu #2" = 10
+	"Sebastianos #1" = 10
+	"Silo #1" = 10
+	"Symeon #0" = 0
+	"Traianos #0" = 0
+	"Veremondo #1" = 10
+	"Philippikos #1" = 0
+	"Philippos #0" = 0
+	"Philotheos #0" = 0
+	"Phokas #1" = 0
+	"Photios #0" = 0
+	"Polykarpos #0" = 0
+	"Porphyrios #0" = 0
+	"Probus #1" = 0
+	"Prokopios #0" = 0
+	"Pulcheria #1" = -1
+	"Pupienus #1" = 0
+	"Pyrros #0" = 0
+	"Quintillus #1" = 0
+	"Raphail #0" = 0
+	"Romanos #0" = 0
+	"Sabas #0" = 0
+	"Samuel #0" = 0
+	"Sebastianos #0" = 0
+	"Septimius #1" = 0
+	"Serapion #0" = 0
+	"Sergios #0" = 0
+	"Severina #1" = -1
+	"Staurakios #0" = 0
+	"Stavrakios #1" = 0
+	"Stephanos #0" = 0
+	"Symeon #0" = 0
+	"Symmachos #0" = 0
+	"Tacitus #1" = 0
+	"Theocharistos #0" = 0
+	"Theodoros #0" = 0
+	"Theodosios #1" = 0
+	"Theodosius #2" = 0
+	"Theodotos #0" = 0
+	"Theodoulos #0" = 0
+	"Theoktistos #0" = 0
+	"Theophanes #0" = 0
+	"Theophilos #1" = 0
+	"Theophylaktos #0" = 0
+	"Thomas #0" = 0
+	"Tiberios #2" = 0
+	"Tiberius #1" = 0
+	"Timotheos #0" = 0
+	"Titus #1" = 0
+	"Traianos #0" = 0
+	"Trajan #1" = 0
+	"Trebonianus #1" = 0
+	"Tryphon #0" = 0
+	"Valens #1" = 0
+	"Valentinian #1" = 0
+	"Valerian #1" = 0
+	"Valerios #0" = 0
+	"Vespasian #1" = 0
+	"Vitellius #1" = 0
+	"Zacharias #0" = 0
+	"Zenobios #0" = 0
 }
 leader_names = {
 	"August"
@@ -98,6 +184,43 @@ leader_names = {
 	"del Monte"
 	"del Ponte"
 	"von Hormpesch"
+	"August"
+	"Caracciolo"
+	"Carafa"
+	"Cotoner"
+	"Despuig"
+	"Garzez"
+	"Orsini"
+	"Perellos y Roccaful"
+	"Zacosta"
+	"Zondadari"
+	"d'Amboise"
+	"d'Aubusson"
+	"de Blanchefort"
+	"de Clermont-Gessant"
+	"de Corneillan"
+	"de Fonseca"
+	"de Gozon"
+	"de Heredia"
+	"de Homedes"
+	"de Juilliac"
+	"de L'Isle-Adam"
+	"de La Vallette-Parisot"
+	"de Lascaris-Castellar"
+	"de Lastic"
+	"de Milly"
+	"de Naillac"
+	"de Paule"
+	"de Pins"
+	"de Redin"
+	"de Rohan-Polduc"
+	"de Saint-Jaille"
+	"de Texada"
+	"de Vasconcellos"
+	"de Verdala"
+	"de Vilhena"
+	"de Villaret"
+	"de Wignacourt"
 }
 ship_names = {
 	"Alfonse of Portugal"
@@ -114,7 +237,16 @@ ship_names = {
 	"Raymond du Puy de Provence"
 	"Roger de Moulins"
 	"The Blessed Gerard"
+	"Ntra. Sra. de la Soledad"
+	"Ntra. Sra. de las Mercedes"
+	"Ntra. Sra. de las Vinas"
+	"Ntra. Sra. de los Buenos Aires"
+	"Ntra. Sra. de los Dolores"
 }
 army_names = {
 	"Knights de $PROVINCE$"
+}
+
+fleet_names = {
+	"Order Armada de $PROVINCE$"
 }

@@ -1,8 +1,8 @@
-owner = Z00
-controller = Z00
+owner = ANC
+controller = ANC
 capital = "Palmira"
 is_city = yes
-culture = crusader_levantine
+culture = aramaean
 religion = catholic
 trade_goods = livestock
 fort_15th = yes
@@ -10,7 +10,7 @@ base_tax = 6
 base_production = 4
 base_manpower = 3
 
-add_core = Z00
+add_core = ANC
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

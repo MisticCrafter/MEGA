@@ -1,0 +1,78 @@
+CWD_exiles_landing_paper_mill = {
+	trade_goods_size = 0.5	
+	picture = "global_trade_goods_size"
+}
+
+# Administrative candidate bonuses
+
+CWD_mercenary_leadership_adm = {
+	mercenary_cost = -0.15
+}
+
+CWD_privateer_leadership_adm = {
+	ship_recruit_speed = -0.15
+}
+
+CWD_smuggler_leadership_adm = {
+	mercantilism_cost = -0.10
+	inflation_reduction = 0.05
+}
+
+CWD_church_leadership_adm = {
+	global_missionary_strength = 0.015
+}
+
+CWD_bandit_leadership_adm = {
+	loot_amount = 0.25
+	available_province_loot = 0.5
+}
+
+# Diplomatic candidate bonuses
+
+CWD_mercenary_leadership_dip = {
+	mercenary_manpower = 0.5
+	trade_range_modifier = 0.25
+}
+
+CWD_privateer_leadership_dip = {
+	caravan_power = 0.25
+	global_ship_cost = -0.05
+}
+
+CWD_smuggler_leadership_dip = {
+	trade_efficiency = 0.1
+}
+
+CWD_church_leadership_dip = {
+	global_trade_goods_size_modifier = 0.05
+}
+
+CWD_bandit_leadership_dip = {
+	development_cost = -0.05
+}
+
+# Military candidate bonuses
+
+CWD_mercenary_leadership_mil = {
+	mercenary_discipline = 0.05
+}
+
+CWD_privateer_leadership_mil = {
+	privateer_efficiency = 0.33
+	ship_durability = 0.05
+}
+
+CWD_smuggler_leadership_mil = {
+	diplomatic_reputation = 1
+	siege_ability = 0.33
+}
+
+CWD_church_leadership_mil = {
+	morale_damage_received = -0.1
+	morale_damage = 0.05
+}
+
+CWD_bandit_leadership_mil = {
+	movement_speed = 0.15
+	global_regiment_cost = -0.05
+}

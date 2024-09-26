@@ -2178,7 +2178,6 @@ kok_persia_mission_sunni_slot_3 = {
 			add_permanent_claim_multi_provinces = { target = valencia_area }
 			add_permanent_claim_multi_provinces = { target = baleares_area }
 			add_permanent_claim_multi_provinces = { target = corsica_sardinia_area }
-			add_permanent_claim_multi_provinces = { target = sicily_area }
 			add_permanent_claim_multi_provinces = { target = western_sicily_area }
 		}
 	}

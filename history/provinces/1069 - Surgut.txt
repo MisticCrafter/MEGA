@@ -1,7 +1,8 @@
 owner = YUG
 controller = YUG
 add_core = YUG
-capital = "Sörgüt"
+add_core = Z09
+capital = "Sï¿½rgï¿½t"
 culture = samoyed
 religion = tengri_pagan
 is_city = yes

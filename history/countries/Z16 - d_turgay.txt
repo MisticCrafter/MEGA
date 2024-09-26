@@ -15,7 +15,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		mil = 6
 		birth_date = 1419.10.18
 		religion = nestorian
-		culture = mare-roman
+		culture = roman
 	}
 	add_ruler_personality = drunkard_personality
 	add_ruler_personality = lawgiver_personality
@@ -46,7 +46,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		female = yes
 		claim = 89
 		religion = nestorian
-		culture = mare-roman
+		culture = roman
 	}
 	add_heir_personality = cruel_personality
 	add_heir_personality = zealot_personality

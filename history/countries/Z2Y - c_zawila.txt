@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = mauretanian_crusader_reform
+add_government_reform = crusader_kingdom_reform
 government_rank = 1
 technology_group = western
 religion = catholic
@@ -10,8 +10,7 @@ set_country_flag = ZZZ_generated_converter_nation
 1444.11.11= {
 	monarch = {
 		name = "Astolfo"
-		monarch_name = "Astolfo IV"
-		dynasty = "de Bragança"
+		dynasty = "de Braganï¿½a"
 		adm = 3
 		dip = 5
 		mil = 3
@@ -21,7 +20,7 @@ set_country_flag = ZZZ_generated_converter_nation
 	}
 	heir = {
 		name = "Diana"
-		dynasty = "de Bragança"
+		dynasty = "de Braganï¿½a"
 		adm = 2
 		dip = 2
 		mil = 3

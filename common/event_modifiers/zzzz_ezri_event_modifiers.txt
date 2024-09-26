@@ -36,7 +36,7 @@ roman_acceptance_epic = {
 }
 developing_farmlands = {
 	supply_limit = 2
-	development_cost_modifier = -0.05
+	local_development_cost = -0.05
 }
 crimean_shipyards = {
 	development_cost_modifier = -0.05
@@ -111,7 +111,7 @@ smoldering_hope = {
 }
 
 estonia_conqured = {
-	manpower_in_accepted_culture_provinces = 0.10
+	manpower_in_true_faith_provinces = 0.10
 	church_loyalty_modifier = 0.05
 	church_influence_modifier = 0.05
 	nobles_loyalty_modifier = 0.05
@@ -179,11 +179,11 @@ OON_reduced_atoms = {
 }
 
 OON_naval_industry_booming = {
-	development_cost_modifier = -0.10
+	development_cost = -0.10
 }
 
 OON_scandinavia_dev = {
-	development_cost_modifier = -0.10
+	development_cost = -0.10
 }
 
 OON_scandinavian_presence = {
@@ -226,4 +226,30 @@ dip_tech_focus = {
 dip_dev_focus = {
 	dip_tech_cost_modifier = 0.10
 	production_efficiency = 0.10
+}
+
+image_boosted = {
+	diplomatic_reputation = 1
+}
+missionary_diplomats = {
+	global_missionary_strength = 0.02
+	diplomats = 1
+}
+RUS_DIPLO_RELATIONS = {
+	diplomatic_upkeep = 1
+}
+troops_rallied = {
+	infantry_power = 0.2
+	manpower_in_own_culture_provinces = 0.1
+}
+oon_artillery_barrage = {
+	artillery_barrage_cost = -0.25
+	artillery_levels_available_vs_fort = 1
+}
+oon_arty_production = {
+	artillery_cost = 0.25
+	artillery_fire = 0.5
+	artillery_power = 0.05
+	infantry_fire = -0.25
+	cavalry_fire = -0.25
 }

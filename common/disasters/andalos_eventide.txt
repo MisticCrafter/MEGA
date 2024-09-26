@@ -1,0 +1,74 @@
+andalos_eventide = {
+    potential = {
+        tag = ARC
+        NOT = {
+            has_country_flag = edict_of_lisarra_flag
+        }
+    }
+
+    can_start = {
+        always = yes
+    }
+
+    can_stop = {
+        stability = 3
+    }
+
+    progress = {
+        modifier = {
+            factor = 100
+            NOT = { stability = 3 }
+        }
+    }
+
+    can_end = {
+        if = {
+            limit = { ai = yes }
+            OR = {
+                AND = {
+                    NOT = { exists = CYN }
+                    NOT = { exists = SRQ }
+                    algarve_area = {
+                        type = all
+                        owned_by = ROOT
+                    }
+                    toledo_area = {
+                        type = all
+                        owned_by = ROOT
+                    }
+                }
+                has_country_flag = andalos_eventide_ai_bypass
+            }
+        }
+        else = {
+            NOT = { exists = CYN }
+            NOT = { exists = SRQ }
+            algarve_area = {
+                type = all
+                owned_by = ROOT
+            }
+            toledo_area = {
+                type = all
+                owned_by = ROOT
+            }
+        }
+    }
+
+    modifier = {
+        land_morale = -0.1
+        stability_cost_modifier = 0.5
+        reduced_liberty_desire = -30
+    }
+
+    #on_start = hi
+    on_end = flavor_andalos.23
+
+    on_monthly = {
+        events = {
+        }
+
+        random_events = {
+            100 = 0
+        }
+    }
+}

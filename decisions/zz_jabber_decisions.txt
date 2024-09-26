@@ -3,7 +3,7 @@ country_decisions = {
     andalos_guinean_ally_decision = {
         major = yes
         potential = {
-            tag = ADU
+            tag = ARC
             custom_trigger_tooltip = {
 				tooltip = miss_discover_west_africa
 				west_africa_coast_area = {
@@ -11,14 +11,14 @@ country_decisions = {
 				}
 			}
 			num_of_colonists = 1
-            NOT = { has_country_flag = adu_has_guinean_friend_flag }
+            NOT = { has_country_flag = ARC_has_guinean_friend_flag }
         }
 
         provinces_to_highlight = {
             has_port = yes
             province_has_center_of_trade_of_level = 1
             owner = {
-                NOT = { tag = ADU }
+                NOT = { tag = ARC }
                 capital_scope = {
                     OR = {
                         region = niger_region
@@ -29,7 +29,7 @@ country_decisions = {
         }
 
         allow = {
-            NOT = { has_country_flag = adu_has_guinean_friend_flag } #redundant
+            NOT = { has_country_flag = ARC_has_guinean_friend_flag } #redundant
             any_known_country = {
                 capital_scope = {
                     OR = {
@@ -50,7 +50,7 @@ country_decisions = {
         }
 
         effect = {
-            set_country_flag = adu_has_guinean_friend_flag
+            set_country_flag = ARC_has_guinean_friend_flag
             random_known_country = {
                 limit = {
                     capital_scope = {
@@ -77,16 +77,16 @@ country_decisions = {
     andalos_exarchate_mauretania_decision = {
         color = { 0 128 128 }
         potential = {
-            tag = ADU
+            tag = ARC
             custom_trigger_tooltip = {
-				tooltip = adu_exarchates_enabled_tt
-				has_country_flag = adu_exarchates_enabled
+				tooltip = unlocked_exarchates_tt
+				has_country_flag = unlocked_exarchates_flag
 			}
             NOT = { exists = AE2 } #Mauretania (andal exarchate 2)
         }
 
         provinces_to_highlight = {
-            NOT = { owned_by = ADU }
+            NOT = { owned_by = ARC }
             OR = {
                 area = western_morocco_area
                 area = marrekesh_area
@@ -162,7 +162,7 @@ country_decisions = {
 
             create_subject = {
                 who = AE2
-                subject_type = vassal
+                subject_type = "dominion"
             }
 
             AE2 = {
@@ -178,16 +178,16 @@ country_decisions = {
     andalos_exarchate_africa_decision = {
         color = { 0 128 128 }
         potential = {
-            tag = ADU
+            tag = ARC
             custom_trigger_tooltip = {
-				tooltip = adu_exarchates_enabled_tt
-				has_country_flag = adu_exarchates_enabled
+				tooltip = unlocked_exarchates_tt
+				has_country_flag = unlocked_exarchates_flag
 			}
             NOT = { exists = AE3 } #Africa (andal exarchate 3)
         }
 
         provinces_to_highlight = {
-            NOT = { owned_by = ADU }
+            NOT = { owned_by = ARC }
             OR = {
                 area = tunisia_area
                 area = djerba_area
@@ -252,7 +252,7 @@ country_decisions = {
 
             create_subject = {
                 who = AE3
-                subject_type = vassal
+                subject_type = "dominion"
             }
 
             AE3 = {
@@ -268,16 +268,16 @@ country_decisions = {
     andalos_exarchate_italy_decision = {
         color = { 0 128 128 }
         potential = {
-            tag = ADU
+            tag = ARC
             custom_trigger_tooltip = {
-				tooltip = adu_exarchates_enabled_tt
-				has_country_flag = adu_exarchates_enabled
+				tooltip = unlocked_exarchates_tt
+				has_country_flag = unlocked_exarchates_flag
 			}
             NOT = { exists = AE4 } #Italia (andal exarchate 4)
         }
 
         provinces_to_highlight = {
-            NOT = { owned_by = ADU }
+            NOT = { owned_by = ARC }
             region = italy_region
         }
 
@@ -325,7 +325,7 @@ country_decisions = {
 
             create_subject = {
                 who = AE4
-                subject_type = vassal
+                subject_type = "dominion"
             }
 
             AE4 = {
@@ -341,16 +341,16 @@ country_decisions = {
     andalos_exarchate_france_decision = {
         color = { 0 128 128 }
         potential = {
-            tag = ADU
+            tag = ARC
             custom_trigger_tooltip = {
-				tooltip = adu_exarchates_enabled_tt
-				has_country_flag = adu_exarchates_enabled
+				tooltip = unlocked_exarchates_tt
+				has_country_flag = unlocked_exarchates_flag
 			}
             NOT = { exists = AE5 } #Gallia (andal exarchate 5)
         }
 
         provinces_to_highlight = {
-            NOT = { owned_by = ADU }
+            NOT = { owned_by = ARC }
             region = france_region
         }
 
@@ -398,7 +398,7 @@ country_decisions = {
 
             create_subject = {
                 who = AE5
-                subject_type = vassal
+                subject_type = "dominion"
             }
 
             AE5 = {
@@ -429,8 +429,14 @@ country_decisions = {
         }
 
         allow = {
-            all_known_country = {
-                NOT = { religion = tigranic }
+            all_country = {
+                OR = {
+                    NOT = { religion_group = christian }
+                    AND = {
+                        religion_group = christian
+                        NOT = { religion = tigranic }
+                    }
+                }
             }
         }
 
@@ -457,8 +463,14 @@ country_decisions = {
         }
 
         allow = {
-            all_known_country = {
-                NOT = { religion = thibaultine }
+            all_country = {
+                OR = {
+                    NOT = { religion_group = christian }
+                    AND = {
+                        religion_group = christian
+                        NOT = { religion = thibaultine }
+                    }
+                }
             }
         }
 
@@ -485,7 +497,7 @@ country_decisions = {
         }
 
         allow = {
-            all_known_country = {
+            all_country = {
                 NOT = { religion = rationalist }
             }
         }
@@ -514,8 +526,14 @@ country_decisions = {
         }
 
         allow = {
-            all_known_country = {
-                NOT = { religion = catholic }
+            all_country = {
+                OR = {
+                    NOT = { religion_group = christian }
+                    AND = {
+                        religion_group = christian
+                        NOT = { religion = catholic }
+                    }
+                }
             }
         }
 

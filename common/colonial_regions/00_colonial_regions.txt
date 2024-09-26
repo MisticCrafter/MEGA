@@ -507,7 +507,7 @@ colonial_louisiana = {
 	}
 	names = {
 		trigger = {
-			tag = ADU
+			tag = ARC
 		}
 		name = "COLONIAL_LOUISIANA_Tigraneia"
 	}
@@ -767,7 +767,7 @@ colonial_mexico = {
 	}
 	names = {
 		trigger = {
-			tag = ADU
+			tag = ARC
 		}
 		name = "COLONIAL_MEXICO_New_Andalos"
 	}
@@ -981,7 +981,7 @@ colonial_colombia = {
 	}
 	names = {
 		trigger = {
-			tag = ADU
+			tag = ARC
 		}
 		name = "COLONIAL_COLOMBIA_Aeliseia"
 	}
@@ -1035,7 +1035,7 @@ colonial_peru = {
 	# Specific
 	names = {
 		trigger = {
-			tag = ADU
+			tag = ARC
 		}
 		name = "COLONIAL_PERU_Tavassereia"
  	}
@@ -1130,7 +1130,7 @@ colonial_la_plata = {
 	}
 	names = {
 		trigger = {
-			tag = ADU
+			tag = ARC
 		}
 		name = "COLONIAL_LA_PLATA_Arganteia"
 	}

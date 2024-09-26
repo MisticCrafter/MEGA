@@ -13,6 +13,15 @@ dependency=
 {
 	subject_type="tributary_state"
 	first="MNG"
+	second="KHA"
+	start_date="769.1.1"
+	end_date="1836.1.1"
+}
+
+dependency=
+{
+	subject_type="tributary_state"
+	first="MNG"
 	second="RYU"
 	start_date="769.1.1"
 	end_date="1836.1.1"

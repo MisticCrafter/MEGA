@@ -25,6 +25,11 @@ spriteTypes = {
     }
 
     spriteType = {
+        name = "GFX_great_project_mascagar"
+        texturefile = "gfx//interface//great_projects//great_project_mascagar.dds"
+    }
+
+    spriteType = {
         name = "GFX_great_project_golden_mosque"
         texturefile = "gfx//interface//great_projects//great_project_golden_mosque.dds"
     }
@@ -32,5 +37,10 @@ spriteTypes = {
     spriteType = {
         name = "GFX_great_project_lighthouse_of_akkra"
         texturefile = "gfx//interface//great_projects//great_project_lighthouse_of_akkra.dds"
+    }
+
+    spriteType = {
+        name = "GFX_great_project_parramentu_sicilianu"
+        texturefile = "gfx//interface//great_projects//great_project_parramentu_sicilianu.dds"
     }
 }

@@ -1,6 +1,7 @@
 owner = SIB
 controller = SIB
 add_core = SIB
+add_core = Z09
 capital = "As"
 is_city = yes
 culture = ostyaki

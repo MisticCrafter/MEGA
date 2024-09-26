@@ -13,16 +13,16 @@ andalos_slot_1_missions = {
 			has_dlc = "Domination" 
 			has_dlc = "Golden Century"
 		}
-		tag = ADU
+		tag = ARC
 		NOT = { map_setup = map_setup_random }
 		is_random_new_world = no
 	}
 	has_country_shield = yes
 	
 	
-	adu_go_westward = {
+	ARC_go_westward = {
 		icon = mission_establish_high_seas_navy
-		required_missions = { adu_beyond_cape_bojador }
+		required_missions = { ARC_beyond_cape_bojador }
 		position = 2
 		completed_by = 1501.1.1
 		
@@ -61,9 +61,9 @@ andalos_slot_1_missions = {
 			else = { add_adm_power = 50 }
 		}
 	}
-	adu_colombia_colonies = {
+	ARC_colombia_colonies = {
 		icon = mission_iberian_conquistador
-		required_missions = { adu_go_westward }
+		required_missions = { ARC_go_westward }
 		completed_by = 1540.1.1
 		
 		provinces_to_highlight = {
@@ -82,7 +82,7 @@ andalos_slot_1_missions = {
 		
 		effect = {
 			add_country_modifier = {
-				name = "adu_colombia_buff"
+				name = "ARC_colombia_buff"
 				duration = 7300
 			}
 			define_conquistador = {
@@ -101,9 +101,9 @@ andalos_slot_1_missions = {
 			}
 		}
 	}
-	adu_defeat_incas = {
+	ARC_defeat_incas = {
 		icon = mission_assemble_an_army
-		required_missions = { adu_colombia_colonies }
+		required_missions = { ARC_colombia_colonies }
 		provinces_to_highlight = {
 			OR = {
 				area = kuntisuyu_area
@@ -130,7 +130,7 @@ andalos_slot_1_missions = {
 		}
 
 		effect = {
-			custom_tooltip = adu_peru_capital_move_tt
+			custom_tooltip = ARC_peru_capital_move_tt
 			hidden_effect = {
 				if = {
 					limit = {
@@ -155,16 +155,16 @@ andalos_slot_1_missions = {
 				}
 			}
 			add_country_modifier = {
-				name = adu_defeat_incas_modifier
+				name = ARC_defeat_incas_modifier
 				duration = 7300
 			}
 			add_years_of_income = 2
 		}
 	}
 	
-	adu_ceylon = {
+	ARC_ceylon = {
 		icon = mission_portuguese_ceylon
-		required_missions = { adu_malabar }
+		required_missions = { ARC_malabar }
 		position = 7
 		provinces_to_highlight = {
 			OR = {
@@ -197,11 +197,11 @@ andalos_slot_1_missions = {
 		}
 	}
 
-	adu_conquer_coastal_morocco = {
+	ARC_conquer_coastal_morocco = {
 		icon = mission_arabian_fort
-		required_missions = { }
+		required_missions = { ARC_restore_order }
 		completed_by = 1488.1.1
-		position = 9
+		position = 10
 		provinces_to_highlight = {
 			area = northern_morocco_area
 			area = western_morocco_area
@@ -293,20 +293,57 @@ andalos_slot_1_missions = {
 		}
 	}
 	
-	adu_competitive_advantage = {
-		icon = spa_tercios_system
-		required_missions = { adu_restore_order adu_conquer_coastal_morocco }
+	#ARC_competitive_advantage = {
+	#	icon = spa_tercios_system
+	#	required_missions = { ARC_restore_order ARC_conquer_coastal_morocco }
+	#	completed_by = 1472.1.1
+	#	position = 10
+	#	
+	#	trigger = {
+	#		num_of_owned_provinces_with = {
+	#			has_manpower_building_trigger = yes 
+	#			value = 15
+	#		}
+	#		OR = { 
+	#			army_tradition = 50 
+	#			army_professionalism = 0.15
+	#		}
+	#		if = {
+	#			limit = { ai = no }
+	#			navy_size_percentage = 0.95
+	#			army_size_percentage = 0.85
+	#		}
+	#		else = { navy_size_percentage = 0.85 army_size_percentage = 0.75 }
+	#		
+	#	}
+	#	
+	#	effect = {
+	#		add_government_reform = themata_reform
+	#		if = {
+	#			limit = { has_dlc = "Cradle of Civilization" }
+	#			add_army_professionalism = 0.05
+	#		}
+	#		else = { add_army_tradition = 10 }
+	#		add_country_modifier = {
+	#			name = "ARC_adopting_astari"
+	#			duration = 3650
+	#		}
+	#	}
+	#}
+
+	ARC_reform_paladins = {
+		icon = spa_reform_tercios
+		required_missions = { ARC_conquer_coastal_morocco }
 		completed_by = 1472.1.1
-		position = 10
+		position = 11
 		
 		trigger = {
-			num_of_owned_provinces_with = {
-				has_manpower_building_trigger = yes 
-				value = 15
-			}
+			has_estate_privilege = estate_astari_astarostratha
+			has_reform = themata_reform
+			num_of_tercio = 60
 			OR = { 
-				army_tradition = 50 
-				army_professionalism = 0.15
+				army_professionalism = 0.75
+				army_tradition = 90 
 			}
 			if = {
 				limit = { ai = no }
@@ -314,48 +351,23 @@ andalos_slot_1_missions = {
 				army_size_percentage = 0.85
 			}
 			else = { navy_size_percentage = 0.85 army_size_percentage = 0.75 }
-			
-		}
-
-		effect = {
-			add_government_reform = tercios_reform
-			if = {
-				limit = { has_dlc = "Cradle of Civilization" }
-				add_army_professionalism = 0.05
-			}
-			else = { add_army_tradition = 10 }
-			add_country_modifier = {
-				name = "adu_adopting_paladins"
-				duration = 3650
-			}
-		}
-	}
-
-	adu_reform_paladins = {
-		icon = spa_reform_tercios
-		required_missions = { adu_competitive_advantage }
-		completed_by = 1472.1.1
-		position = 11
-		
-		trigger = {
-			num_of_tercio = 60
-			OR = { 
-				army_professionalism = 0.75
-				army_tradition = 90 
+			num_of_owned_provinces_with = {
+				has_manpower_building_trigger = yes 
+				value = 15
 			}
 		}
 
 		effect = {
 			add_country_modifier = {
-				name = adu_reformed_paladins
+				name = ARC_reformed_paladins
 				duration = -1 
 			}
 		}
 	}
 
-	adu_colonial_paladins = {
+	ARC_colonial_paladins = {
 		icon = mission_brazilian_bandeirantes
-		required_missions = { adu_reform_paladins }
+		required_missions = { ARC_reform_paladins }
 		
 		provinces_to_highlight = {
 			OR = {
@@ -391,6 +403,7 @@ andalos_slot_1_missions = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
+			has_estate_privilege = estate_astari_americathemes
 		}
 		effect = {
 			if = {
@@ -407,7 +420,7 @@ andalos_slot_1_missions = {
 			}
 			856 = {
 				add_province_modifier = {
-					name = "adu_gold_buff"
+					name = "ARC_gold_buff"
 					duration = -1
 				}
 			}
@@ -432,12 +445,12 @@ andalos_slot_2_missions = {
 			has_dlc = "Domination" 
 			has_dlc = "Golden Century"
 		}
-		tag = ADU
+		tag = ARC
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
 	
-	adu_beyond_cape_bojador = {
+	ARC_beyond_cape_bojador = {
 		icon = mission_look_west
 		required_missions = { }
 		completed_by = 1445.1.1
@@ -467,9 +480,9 @@ andalos_slot_2_missions = {
 			}
 		}
 	}
-	adu_colonize_guinea = {
+	ARC_colonize_guinea = {
 		icon = mission_colonial
-		required_missions = { adu_beyond_cape_bojador }
+		required_missions = { ARC_beyond_cape_bojador }
 		completed_by = 1445.1.1
 		provinces_to_highlight = {
 			OR = {
@@ -505,7 +518,7 @@ andalos_slot_2_missions = {
 				is_city = yes
 			}
 			custom_trigger_tooltip = {
-				tooltip = adu_has_guinean_friend_tt
+				tooltip = ARC_has_guinean_friend_tt
 				niger_region = {
 					trade_goods = gold
 					owner = {
@@ -533,7 +546,7 @@ andalos_slot_2_missions = {
 				add_base_production = 2
 				add_base_manpower = 2
 				add_province_modifier = {
-					name = "adu_feitoria"
+					name = "ARC_feitoria"
 					duration = -1
 				}
 			}
@@ -542,7 +555,7 @@ andalos_slot_2_missions = {
 				add_base_production = 2
 				add_base_manpower = 2
 				add_province_modifier = {
-					name = "adu_feitoria"
+					name = "ARC_feitoria"
 					duration = -1
 				}
 			}
@@ -551,19 +564,19 @@ andalos_slot_2_missions = {
 				add_base_production = 2
 				add_base_manpower = 2
 				add_province_modifier = {
-					name = "adu_feitoria"
+					name = "ARC_feitoria"
 					duration = -1
 				}
 				add_province_modifier = {
-					name = "adu_guinean_gold"
+					name = "ARC_guinean_gold"
 					duration = -1
 				}
 			}
 		}
 	}
-	adu_caribbean = {
+	ARC_caribbean = {
 		icon = mission_colonize_the_caribbean
-		required_missions = { adu_go_westward }
+		required_missions = { ARC_go_westward }
 		completed_by = 1540.1.1
 		
 		provinces_to_highlight = {
@@ -582,7 +595,7 @@ andalos_slot_2_missions = {
 		
 		effect = {
 			add_country_modifier = {
-				name = "adu_caribbean_buff"
+				name = "ARC_caribbean_buff"
 				duration = 7300
 			}
 			define_conquistador = {
@@ -609,9 +622,9 @@ andalos_slot_2_missions = {
 		}
 	}
 
-	adu_defeat_aztecs = {
+	ARC_defeat_aztecs = {
 		icon = mission_assemble_an_army
-		required_missions = { adu_caribbean }
+		required_missions = { ARC_caribbean }
 		position = 4
 		provinces_to_highlight = {
 			OR = {
@@ -639,7 +652,7 @@ andalos_slot_2_missions = {
 		}
 
 		effect = {
-			custom_tooltip = adu_mexico_capital_move_tt
+			custom_tooltip = ARC_mexico_capital_move_tt
 			hidden_effect = {
 				if = {
 					limit = {
@@ -664,7 +677,7 @@ andalos_slot_2_missions = {
 				}
 			}
 			add_country_modifier = {
-				name = adu_defeat_aztecs_modifier
+				name = ARC_defeat_aztecs_modifier
 				duration = 7300
 			}
 			add_years_of_income = 2
@@ -687,15 +700,15 @@ andalos_slot_2_missions_b = {
 			has_dlc = "Domination" 
 			has_dlc = "Golden Century"
 		}
-		tag = ADU
+		tag = ARC
 		NOT = { map_setup = map_setup_random }
 		is_random_new_world = no
 	}
 	has_country_shield = yes
 	
-	adu_malabar = {
+	ARC_malabar = {
 		icon = mission_portuguese_malabar
-		required_missions = { adu_discover_india }
+		required_missions = { ARC_discover_india }
 		position = 6
 		provinces_to_highlight = {
 			area = malabar_area
@@ -767,9 +780,9 @@ andalos_slot_2_missions_b = {
 		}
 	}
 	
-	adu_surat = {
+	ARC_surat = {
 		icon = mission_control_surat
-		required_missions = { adu_malabar }
+		required_missions = { ARC_malabar }
 		position = 7
 		provinces_to_highlight = {
 			OR = {
@@ -801,7 +814,7 @@ andalos_slot_2_missions_b = {
 				}
 			}
 			add_country_modifier = {
-				name = "adu_malabar_buff"
+				name = "ARC_malabar_buff"
 				duration = 7300
 			}
 		}
@@ -823,13 +836,13 @@ andalos_slot_2_missions_c = {
 			has_dlc = "Domination" 
 			has_dlc = "Golden Century"
 		}
-		tag = ADU
+		tag = ARC
 		NOT = { map_setup = map_setup_random }
 		is_random_new_world = no
 	}
 	has_country_shield = yes
 	
-	adu_restore_order = {
+	ARC_restore_order = {
 		icon = mission_unite_home_region
 		required_missions = {}
 		completed_by = 1470.1.1
@@ -849,7 +862,7 @@ andalos_slot_2_missions_c = {
 				}
 				AND = {
 					owned_by = CYN
-				owned_by = VAL
+				owned_by = SRQ
 				NOT = { owned_by = ROOT }
 				}
 			}
@@ -857,9 +870,10 @@ andalos_slot_2_missions_c = {
 		
 		trigger = {
 			NOT = { exists = CYN }
-			NOT = { exists = VAL }
+			NOT = { exists = SRQ }
+			NOT = { has_disaster = andalos_eventide }
 			capital_scope = { 
-				num_of_times_improved = 8 
+				num_of_times_improved = 4 
 			}
 			NOT = { 
 				any_subject_country = { liberty_desire = 5 }
@@ -870,7 +884,7 @@ andalos_slot_2_missions_c = {
 			add_navy_tradition = 15
 			add_army_tradition = 15
 			add_country_modifier = {
-				name = "adu_restore_crown_authority"
+				name = "ARC_restore_crown_authority"
 				duration = 7300
 			}
 			if = { 
@@ -988,9 +1002,9 @@ andalos_slot_2_missions_c = {
 		}
 	}
 	
-	adu_flagship = {
+	ARC_flagship = {
 		icon = mission_launch_a_flagship
-		required_missions = { adu_restore_order }
+		required_missions = { ARC_restore_order }
 		position = 10
 		provinces_to_highlight = {
 			province_id = 224
@@ -1015,6 +1029,10 @@ andalos_slot_2_missions_c = {
 				has_dock_building_trigger = yes 
 				has_shipyard_building_trigger = yes 
 				base_production = 12 
+			}
+			has_great_project = {
+				type = belem_tower
+				tier = 1
 			}
 		}
 		effect = {
@@ -1044,28 +1062,24 @@ andalos_slot_2_missions_c = {
 				else = { add_building = shipyard }
 			}
 			add_country_modifier = {
-				name = "adu_galleons"
+				name = "ARC_grand_navy"
 				duration = -1
 			}
 			add_country_modifier = {
-				name = "adu_caravels"
-				duration = -1
-			}
-			add_country_modifier = {
-				name = "adu_adopting_galleons"
+				name = "ARC_adopting_galleons"
 				duration = 3650
 			}
 
 			add_country_modifier = {
-				name = "adu_adopting_caravels"
+				name = "ARC_adopting_caravels"
 				duration = 3650
 			}
 		}
 	}
 
-	adu_reform_navy = {
+	ARC_reform_navy = {
 		icon = mission_aragonese_navy
-		required_missions = { adu_flagship }
+		required_missions = { ARC_flagship }
 		position = 11
 		trigger = {
 			num_of_caravel = 60
@@ -1080,8 +1094,8 @@ andalos_slot_2_missions_c = {
 			}
 			NOT = {
 				OR = {
-					has_country_modifier = adu_adopting_caravels
-					has_country_modifier = adu_adopting_galleons
+					has_country_modifier = ARC_adopting_caravels
+					has_country_modifier = ARC_adopting_galleons
 				}
 			}
 		}
@@ -1089,15 +1103,15 @@ andalos_slot_2_missions_c = {
 			if = {
 				limit = { has_dlc = "Domination" }
 				add_country_modifier = {
-					name = adu_reformed_galleons
+					name = ARC_reformed_galleons
 					duration = -1 
 				}
 				add_country_modifier = {
-					name = adu_reformed_caravels
+					name = ARC_reformed_caravels
 					duration = -1 
 				}
 				add_country_modifier = {
-					name = adu_new_fleets
+					name = ARC_new_fleets
 					duration = -1 
 				}
 			}
@@ -1128,14 +1142,14 @@ andalos_slot_3_missions = {
 			has_dlc = "Domination" 
 			has_dlc = "Golden Century"
 		}
-		tag = ADU
+		tag = ARC
 		NOT = { map_setup = map_setup_random }
 		is_random_new_world = no
 	}
 	has_country_shield = yes
-	adu_congo = {
+	ARC_congo = {
 		icon = mission_african_soldier
-		required_missions = { adu_beyond_cape_bojador }
+		required_missions = { ARC_beyond_cape_bojador }
 		position = 2
 		completed_by = 1584.1.1
 		provinces_to_highlight = {
@@ -1164,7 +1178,7 @@ andalos_slot_3_missions = {
 		}
 	
 		effect = {
-			custom_tooltip = adu_discover_congo_tt
+			custom_tooltip = ARC_discover_congo_tt
 			hidden_effect = {
 				4097 = {
 					discover_country = ROOT
@@ -1178,7 +1192,7 @@ andalos_slot_3_missions = {
 					key = ivory_coast_ambition
 				}
 			}
-			custom_tooltip = adu_congo_feitorias_tt
+			custom_tooltip = ARC_congo_feitorias_tt
 			if = {
 				limit = {
 					1167 = {
@@ -1187,7 +1201,7 @@ andalos_slot_3_missions = {
 				}
 				1167 = {
 					add_province_modifier = {
-						name = "adu_feitoria"
+						name = "ARC_feitoria"
 						duration = -1
 					}
 				}
@@ -1200,7 +1214,7 @@ andalos_slot_3_missions = {
 				}
 				1172 = {
 					add_province_modifier = {
-						name = "adu_feitoria"
+						name = "ARC_feitoria"
 						duration = -1
 					}
 				}
@@ -1225,14 +1239,14 @@ andalos_slot_3_missions_b = {
 			has_dlc = "Domination" 
 			has_dlc = "Golden Century"
 		}
-		tag = ADU
+		tag = ARC
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
 	
-	adu_discover_east_africa = {
+	ARC_discover_east_africa = {
 		icon = mission_have_two_subjects
-		required_missions = { adu_discover_cape }
+		required_missions = { ARC_discover_cape }
 		completed_by = 1530.1.1
 		position = 3
 		provinces_to_highlight = {
@@ -1284,9 +1298,9 @@ andalos_slot_3_missions_b = {
 		}
 	}
 	
-	adu_african_gold = {
+	ARC_african_gold = {
 		icon = mission_african_gold
-		required_missions = { adu_discover_east_africa }
+		required_missions = { ARC_discover_east_africa }
 		position = 4
 		
 		provinces_to_highlight = {
@@ -1351,16 +1365,16 @@ andalos_slot_3_missions_b = {
 		}
 	}
 
-	adu_bengal = {
+	ARC_bengal = {
 		icon = mission_unite_bengal
-		required_missions = { adu_discover_india }
+		required_missions = { ARC_discover_india }
 		position = 6
 		trigger = {
 			1340 = {
 				is_strongest_trade_power = ROOT
 			}
 			custom_trigger_tooltip = {
-				tooltip = adu_discover_bengal_tt
+				tooltip = ARC_discover_bengal_tt
 				bengal_region = {
 					has_discovered = ROOT
 				}
@@ -1425,9 +1439,9 @@ andalos_slot_3_missions_b = {
 		}
 	}
 
-	adu_burma = {
+	ARC_burma = {
 		icon = mission_portuguese_burma
-		required_missions = { adu_bengal }
+		required_missions = { ARC_bengal }
 		position = 7
 		provinces_to_highlight = {
 			OR = {
@@ -1460,7 +1474,7 @@ andalos_slot_3_missions_b = {
 				limit = { has_dlc = "Domination" }
 				586 = { 
 					add_province_modifier = {
-						name = adu_andaman_sea_trade_modifier
+						name = ARC_andaman_sea_trade_modifier
 						duration = -1 
 					}
 					add_base_production = 2 
@@ -1469,9 +1483,9 @@ andalos_slot_3_missions_b = {
 		}
 	}
 	
-	adu_indian_investment = {
+	ARC_indian_investment = {
 		icon = mission_indian_trade_company
-		required_missions = { adu_surat adu_burma }
+		required_missions = { ARC_surat ARC_burma }
 		position = 8
 		trigger = {
 			if = {
@@ -1503,15 +1517,15 @@ andalos_slot_3_missions_b = {
 			}
 		}
 		effect = {
-			set_country_flag = adu_casa_da_india_flag
+			set_country_flag = ARC_casa_da_india_flag
 			country_event = { id = flavor_andalos.4 }
 			custom_tooltip = flavor_andalos_4_tt
 		}
 	}
 
-	adu_develop_country = {
+	ARC_develop_country = {
 		icon = mission_expand_into_the_forest
-		required_missions = { adu_restore_order }
+		required_missions = { ARC_restore_order }
 		position = 10
 		provinces_to_highlight = {
 			OR = {
@@ -1556,7 +1570,7 @@ andalos_slot_3_missions_b = {
 			capital_scope = {
 				province_id = 224
 				custom_trigger_tooltip = {
-					tooltip = adu_highest_dev_capital_tt
+					tooltip = ARC_highest_dev_capital_tt
 					NOT = {
 						europe_superregion = {
 							NOT = { province_id = 224 }
@@ -1603,9 +1617,9 @@ andalos_slot_3_missions_b = {
 		}
 	}
 
-	adu_revoke_privileges = {
+	ARC_revoke_privileges = {
 		icon = mission_have_two_subjects
-		required_missions = { adu_develop_country }
+		required_missions = { ARC_develop_country }
 		position = 11
 		provinces_to_highlight = {
 			owner = {
@@ -1618,7 +1632,7 @@ andalos_slot_3_missions_b = {
 		}
 		trigger = {
 			custom_trigger_tooltip = {
-				tooltip = centralize_adu_tt
+				tooltip = centralize_andalos_tt
 				NOT = {
 					any_subject_country = {
 						capital_scope = {
@@ -1642,7 +1656,7 @@ andalos_slot_3_missions_b = {
 				}
 			}
 			add_country_modifier = {
-				name = "adu_centralization_effect"
+				name = "ARC_centralization_effect"
 				duration = 3650
 			}
 		}
@@ -1664,14 +1678,14 @@ andalos_slot_4_missions = {
 			has_dlc = "Domination" 
 			has_dlc = "Golden Century"
 		}
-		tag = ADU
+		tag = ARC
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
 	
-	adu_discover_cape = {
+	ARC_discover_cape = {
 		icon = mission_sea_battles
-		required_missions = { adu_beyond_cape_bojador }
+		required_missions = { ARC_beyond_cape_bojador }
 		completed_by = 1499.1.1
 		position = 2
 		
@@ -1716,9 +1730,9 @@ andalos_slot_4_missions = {
 		}
 	}
 	
-	adu_zanzibar = {
+	ARC_zanzibar = {
 		icon = mission_cannons_firing
-		required_missions = { adu_discover_cape }
+		required_missions = { ARC_discover_cape }
 		position = 3
 		
 		provinces_to_highlight = {
@@ -1746,7 +1760,7 @@ andalos_slot_4_missions = {
 				add_base_production = 3
 				add_base_manpower = 3
 				add_province_modifier = {
-					name = "adu_feitoria"
+					name = "ARC_feitoria"
 					duration = -1
 				}
 			}
@@ -1771,9 +1785,9 @@ andalos_slot_4_missions = {
 		}
 	}
 	
-	adu_discover_horn_africa = {
+	ARC_discover_horn_africa = {
 		icon = mission_establish_high_seas_navy
-		required_missions = { adu_zanzibar }
+		required_missions = { ARC_zanzibar }
 		completed_by = 1535.1.1
 		position = 4
 		trigger = { 
@@ -1828,14 +1842,14 @@ andalos_slot_4_missions = {
 		}
 	}
 
-	adu_discover_india = {
+	ARC_discover_india = {
 		icon = mission_trade_company_region_abroad
-		required_missions = { adu_discover_horn_africa }
+		required_missions = { ARC_discover_horn_africa }
 		completed_by = 1536.1.1
 		position = 5
 		trigger = {
 			custom_trigger_tooltip = {
-				tooltip = adu_discover_coromandel_tt
+				tooltip = ARC_discover_coromandel_tt
 				coromandel_region = {
 					has_discovered = POR
 				}
@@ -1873,9 +1887,9 @@ andalos_slot_4_missions = {
 		}
 	}
 	
-	adu_malacca = {
+	ARC_malacca = {
 		icon = mission_portuguese_malacca
-		required_missions = { adu_discover_india }
+		required_missions = { ARC_discover_india }
 		position = 6
 		provinces_to_highlight = {
 			province_id = 596
@@ -1888,11 +1902,11 @@ andalos_slot_4_missions = {
 		effect = {
 			596 = {
 				add_province_modifier = {
-					name = "adu_east_indies_trade_modifier"
+					name = "ARC_east_indies_trade_modifier"
 					duration = -1
 				}
 				add_province_modifier = {
-					name = "adu_feitoria"
+					name = "ARC_feitoria"
 					duration = -1
 				}
 			}
@@ -1955,9 +1969,9 @@ andalos_slot_4_missions = {
 		}
 	}
 	
-	adu_trade_with_china = {
+	ARC_trade_with_china = {
 		icon = mission_trade_with_cathay
-		required_missions = { adu_malacca }
+		required_missions = { ARC_malacca }
 		position = 7
 		provinces_to_highlight = {
 			province_id = 1371
@@ -2003,9 +2017,9 @@ andalos_slot_4_missions = {
 		}
 	}
 	
-	adu_trade_with_japan = {
+	ARC_trade_with_japan = {
 		icon = mission_trade_with_japan
-		required_missions = { adu_trade_with_china }
+		required_missions = { ARC_trade_with_china }
 		provinces_to_highlight = {
 			OR = {
 				province_id = 1376
@@ -2057,7 +2071,7 @@ andalos_slot_4_missions = {
 		}
 	}
 	
-	adu_swiss_alliance = {
+	ARC_swiss_alliance = {
 		icon = catholic_confraternity
 		required_missions = {  }
 		position = 9
@@ -2123,9 +2137,9 @@ andalos_slot_4_missions = {
 		}
 	}
 
-	adu_fate_of_iberia = {
+	ARC_fate_of_iberia = {
 		icon = mission_intervene_in_castile
-		required_missions = { adu_restore_order adu_swiss_alliance }
+		required_missions = { ARC_restore_order ARC_swiss_alliance }
 		position = 10
 		provinces_to_highlight = {
 			OR = {
@@ -2166,9 +2180,9 @@ andalos_slot_4_missions = {
 			add_prestige_or_monarch_power = { amount = 25 }
 		}
 	}
-	adu_imperial_andalos = {
+	ARC_imperial_andalos = {
 		icon = a_real_roman_empire
-		required_missions = { adu_fate_of_iberia adu_reform_navy adu_universities adu_reform_paladins adu_revoke_privileges }
+		required_missions = { ARC_fate_of_iberia ARC_reform_navy ARC_universities ARC_reform_paladins ARC_revoke_privileges }
 		position = 12
 		provinces_to_highlight = {
 			region = iberia_region
@@ -2191,7 +2205,7 @@ andalos_slot_4_missions = {
 				set_government_rank = 3
 			}
 			add_country_modifier = {
-				name = adu_ascendancy
+				name = ARC_ascendancy
 				duration = -1
 			}
 			add_prestige_or_monarch_power = { amount = 50 }
@@ -2215,12 +2229,12 @@ andalos_slot_5_missions = {
 	potential = {
 		has_dlc = "Golden Century"
 		has_dlc = "Domination"
-		tag = ADU
+		tag = ARC
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
 	
-	adu_exploration_ideas = {
+	ARC_exploration_ideas = {
 		icon = imperial_navy
 		required_missions = { }
 		position = 1
@@ -2252,9 +2266,9 @@ andalos_slot_5_missions = {
 		}
 	}
 	
-	adu_circumnavigation = {
+	ARC_circumnavigation = {
 		icon = mission_explore_the_world
-		required_missions = { adu_exploration_ideas adu_discover_cape }
+		required_missions = { ARC_exploration_ideas ARC_discover_cape }
 		position = 3
 		
 		trigger = { 
@@ -2274,13 +2288,13 @@ andalos_slot_5_missions = {
 			if = {
 				limit = { has_country_flag = circumnavigation_first }
 				add_country_modifier = {
-					name = adu_circumnavigation_modifier
+					name = ARC_circumnavigation_modifier
 					duration = -1 
 				}
 			}
 			else = {
 				add_country_modifier = {
-					name = adu_circumnavigation_modifier
+					name = ARC_circumnavigation_modifier
 					duration = 9125
 				}
 			}
@@ -2304,14 +2318,14 @@ andalos_slot_5_missions_b = {
 			has_dlc = "Golden Century"
 			has_dlc = "Domination"
 		}
-		tag = ADU
+		tag = ARC
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
 	
-	adu_hormuz = {
+	ARC_hormuz = {
 		icon = mission_persian_soldiers
-		required_missions = { adu_zanzibar }
+		required_missions = { ARC_zanzibar }
 		position = 4
 		completed_by = 1508.1.1
 		provinces_to_highlight = {
@@ -2329,11 +2343,11 @@ andalos_slot_5_missions_b = {
 				add_base_production = 3
 				add_base_manpower = 3
 				add_province_modifier = {
-					name = "adu_persian_gulf_trade_modifier"
+					name = "ARC_persian_gulf_trade_modifier"
 					duration = -1
 				}
 				add_province_modifier = {
-					name = "adu_feitoria"
+					name = "ARC_feitoria"
 					duration = -1
 				}
 			}
@@ -2346,9 +2360,9 @@ andalos_slot_5_missions_b = {
 			}
 		}
 	}
-	adu_oman = {
+	ARC_oman = {
 		icon = mission_portuguese_oman
-		required_missions = { adu_hormuz }
+		required_missions = { ARC_hormuz }
 		position = 5
 		provinces_to_highlight = {
 			OR = {
@@ -2375,7 +2389,7 @@ andalos_slot_5_missions_b = {
 				add_base_production = 3
 				add_base_manpower = 3
 				add_province_modifier = {
-					name = "adu_feitoria"
+					name = "ARC_feitoria"
 					duration = -1
 				}
 			}
@@ -2390,9 +2404,9 @@ andalos_slot_5_missions_b = {
 			}
 		}
 	}
-	adu_bahrain = {
+	ARC_bahrain = {
 		icon = mission_portuguese_oman
-		required_missions = { adu_oman }
+		required_missions = { ARC_oman }
 		position = 5
 		provinces_to_highlight = {
 			province_id = 396
@@ -2409,7 +2423,7 @@ andalos_slot_5_missions_b = {
 				add_base_production = 3
 				add_base_manpower = 3
 				add_province_modifier = {
-					name = "adu_feitoria"
+					name = "ARC_feitoria"
 					duration = -1
 				}
 			}
@@ -2432,14 +2446,14 @@ andalos_slot_5_missions_c = {
 			has_dlc = "Golden Century"
 			has_dlc = "Domination"
 		}
-		tag = ADU
+		tag = ARC
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
 	
-	adu_indonesia = {
+	ARC_indonesia = {
 		icon = mission_rb_colonise_spice_islands
-		required_missions = { adu_malacca }
+		required_missions = { ARC_malacca }
 		completed_by = 1536.1.1
 		position = 7
 		provinces_to_highlight = {
@@ -2468,13 +2482,13 @@ andalos_slot_5_missions_c = {
 				name = "por_spice_trade"
 				duration = 9125
 			}
-			custom_tooltip = adu_indonesia_feitorias_tt
+			custom_tooltip = ARC_indonesia_feitorias_tt
 			hidden_effect = {
 				4815 = {
 					add_base_production = 3
 					add_base_manpower = 3
 					add_province_modifier = {
-						name = "adu_feitoria"
+						name = "ARC_feitoria"
 						duration = -1
 					}
 				}
@@ -2482,7 +2496,7 @@ andalos_slot_5_missions_c = {
 					add_base_production = 3
 					add_base_manpower = 3
 					add_province_modifier = {
-						name = "adu_feitoria"
+						name = "ARC_feitoria"
 						duration = -1
 					}
 				}
@@ -2490,7 +2504,7 @@ andalos_slot_5_missions_c = {
 					add_base_production = 3
 					add_base_manpower = 3
 					add_province_modifier = {
-						name = "adu_feitoria"
+						name = "ARC_feitoria"
 						duration = -1
 					}
 				}
@@ -2498,7 +2512,7 @@ andalos_slot_5_missions_c = {
 					add_base_production = 3
 					add_base_manpower = 3
 					add_province_modifier = {
-						name = "adu_feitoria"
+						name = "ARC_feitoria"
 						duration = -1
 					}
 				}
@@ -2506,7 +2520,7 @@ andalos_slot_5_missions_c = {
 					add_base_production = 3
 					add_base_manpower = 3
 					add_province_modifier = {
-						name = "adu_feitoria"
+						name = "ARC_feitoria"
 						duration = -1
 					}
 				}
@@ -2514,12 +2528,12 @@ andalos_slot_5_missions_c = {
 					add_base_production = 3
 					add_base_manpower = 3
 					add_province_modifier = {
-						name = "adu_feitoria"
+						name = "ARC_feitoria"
 						duration = -1
 					}
 				}
 			}
-			custom_tooltip = adu_claim_philippines_tt
+			custom_tooltip = ARC_claim_philippines_tt
 			hidden_effect = {
 				mindanao_area = {
 					limit = {
@@ -2567,9 +2581,9 @@ andalos_slot_5_missions_c = {
 		}
 	}
 	
-	adu_philippines = {
+	ARC_philippines = {
 		icon = mission_las_islas_filipinas
-		required_missions = { adu_indonesia }
+		required_missions = { ARC_indonesia }
 		position = 8
 		provinces_to_highlight = {
 			OR = {
@@ -2640,7 +2654,7 @@ andalos_slot_5_missions_c = {
 		}
 	}
 	
-	adu_wine_monopolies = {
+	ARC_wine_monopolies = {
 		icon = mission_wine_monopolies
 		required_missions = {  }
 		position = 9
@@ -2687,7 +2701,7 @@ andalos_slot_5_missions_c = {
 				tooltip = { 
 					add_base_production = 3
 					add_province_modifier = {
-						name = "adu_andal_red"
+						name = "ARC_andal_red"
 						duration = -1
 					}
 				} 
@@ -2696,7 +2710,7 @@ andalos_slot_5_missions_c = {
 						limit = { trade_goods = wine } 
 						add_base_production = 3
 						add_province_modifier = {
-							name = "adu_andal_red"
+							name = "ARC_andal_red"
 							duration = -1
 						} 
 					}
@@ -2704,9 +2718,9 @@ andalos_slot_5_missions_c = {
 			}
 		}
 	}
-	adu_trading_houses = {
+	ARC_trading_houses = {
 		icon = mission_great_trading_houses
-		required_missions = { adu_wine_monopolies }
+		required_missions = { ARC_wine_monopolies }
 		position = 10
 		provinces_to_highlight = {
 			province_id = 1293
@@ -2731,9 +2745,9 @@ andalos_slot_5_missions_c = {
 			}
 		}
 	}
-	adu_universities = {
+	ARC_universities = {
 		icon = mission_arts_and_letters
-		required_missions = { adu_trading_houses }
+		required_missions = { ARC_trading_houses }
 		position = 11
 		provinces_to_highlight = {
 			province_id = 224

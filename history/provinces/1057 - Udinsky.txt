@@ -1,5 +1,8 @@
 capital = "Udinskoye"
 is_city = no
+owner = KHA
+controller = KHA
+add_core = KHA
 culture = khalkha
 religion = mahayana
 trade_goods = unknown

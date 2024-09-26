@@ -1,0 +1,41 @@
+CRU_convert_to_crusader_culture = { 
+	if = {
+		limit = {
+			OR = {
+				area = kerman_area
+				area = mogostan_area
+                area = makran_area
+                area = persian_gulf_coast
+				area = kalat_area
+			}
+		}
+		change_culture = crusader_baluchi
+	}
+	else_if = {
+		limit = {
+			OR = {
+			area = kabulistan_area
+            area = ghor_area
+            area = balkh_area
+            area = sistan_area
+            area = herat_area
+            area = merv_area
+			}
+		}
+		change_culture = crusader_afghan
+	}
+    else_if = {
+		limit = {
+			OR = {
+		    area = iraq_arabi_area
+            area = basra_area
+            area = al_jazira_area
+            area = shahrizor_area
+			}
+		}
+		change_culture = crusader_mesopotamian
+	}
+	else = {
+		change_culture = crusader_persian
+	}
+}

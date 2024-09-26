@@ -1,0 +1,34 @@
+spriteTypes = {
+
+    ### Vicerroyalty ###
+    spriteType = {
+		name = "GFX_icon_diplomacy_vicerroyalty"
+		texturefile = "gfx//interface//diplomacy//icon_vicerroyalty.dds"
+	}
+
+    spriteType = {
+        name = "GFX_icon_diplomacy_vicerroyalty_overlord"
+        texturefile = "gfx//interface//diplomacy//icon_vicerroyalty_overlord.dds"
+    }
+
+    spriteType = {
+        name = "GFX_icon_diplomacy_vicerroyalty_subject"
+        texturefile = "gfx//interface//diplomacy//icon_vicerroyalty_subject.dds"
+    }
+
+    ### Dominion ###
+    spriteType = {
+		name = "GFX_icon_diplomacy_dominion"
+		texturefile = "gfx//interface//diplomacy//icon_dominion.dds"
+	}
+
+    spriteType = {
+        name = "GFX_icon_diplomacy_dominion_overlord"
+        texturefile = "gfx//interface//diplomacy//icon_dominion_overlord.dds"
+    }
+
+    spriteType = {
+        name = "GFX_icon_diplomacy_dominion_subject"
+        texturefile = "gfx//interface//diplomacy//icon_dominion_subject.dds"
+    }
+}

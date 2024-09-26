@@ -129,15 +129,17 @@ monarchy = {
 				austrian_absolute_monarchy
 				merchant_aristocracy_reform
 				gothic_monarchy_reform
-				# Added by megacampaign
+				
+				### MEGACAMPAIGN ###
 				andal_crown_reform
 				andal_subject_reform
-				mauretanian_crusader_reform
+				crusader_kingdom_reform
 				christian_berber_reform
 				#Dotto jumpscare
 				swiss_minority
 				swiss_fed
 				reformed_swiss_fed
+				###
 			}
 		}
 		hereditary_vs_nobility = {
@@ -309,7 +311,7 @@ monarchy = {
 				ahmudan_system_reform
 				ghazi_reform
 				the_cawa_regiments_reform
-				tercio_reform
+				#tercio_reform
 				fuero_militar_reform
 				ordennancas_reform
 				revive_the_almogavars_reform
@@ -332,7 +334,7 @@ monarchy = {
 				qollar_aghasi_regiments_reform
 				manrent_reform
 				merchant_arsenal_reform
-				tercios_reform
+				#tercios_reform
 				expanded_black_army_reform
 				theme_system_reform
 				#1.36
@@ -346,10 +348,15 @@ monarchy = {
 				cuman_lancers_reform
 				#1.37 Bohemia
 				vozove_hradby_reform
-				russian_mercenary_guard_reform 
-				#hi
+				russian_mercenary_guard_reform
+
+				### ADDED BY MEGACAMPAIGN
 				three_branches_reform
 				sic_palatini_reform
+
+				auxiliary_astari_reform
+				themata_reform
+				###
 			}
 		}
 		deliberative_assembly = {
@@ -678,7 +685,8 @@ republic = {
 				#Mamluks
 				egyptian_government_reform
 				city_alliance_reform
-				#Added by megacampaign
+
+				### ADDED BY MEGACAMPAIGN ###
 				zeven_provincies_republic_reform
 				reformed_nederlands_republic_reform
 				united_zeven_provincies_republic_reform
@@ -686,7 +694,10 @@ republic = {
 				dollarstore_roman_republic_government
 				swiss_cantonate
 				andal_exarchate_reform
+				american_merchant_republic
 				mandate_of_ierland_republic_reform
+				social_banditry_republic_reform
+				###
 			}
 		}
 		republican_virtues = {
@@ -727,6 +738,8 @@ republic = {
 				german_other_reform
 				#1.37
 				support_state_reform
+				# added with megacampaign
+				teachings_of_saint_robyn_hwd_reform
 			}
 		}
 		frequent_elections_vs_consolidation_of_power = {
@@ -789,10 +802,14 @@ republic = {
 				#1.36
 				legacy_of_the_safavid_reform
 				state_madrasas_reform
+				# rationalism - mod
 				strengthen_the_courts_of_realism_reform
 				the_humanistic_principle_of_rationalism_reform
 				maintain_balance_between_the_courts_and_humanists_reform
 				curtail_power_of_the_rationalists_reform
+				FNT_cult_of_the_queen_mother_reform
+				# added with mod more stuff ;3
+				the_lollard_church_of_the_exiles_reform
 			}
 		}
 		military_doctrines = {
@@ -828,7 +845,7 @@ republic = {
 				ahmudan_system_reform
 				ghazi_reform
 				the_cawa_regiments_reform
-				tercio_reform
+				#tercio_reform
 				fuero_militar_reform
 				ordennancas_reform
 				revive_the_almogavars_reform
@@ -851,7 +868,7 @@ republic = {
 				qollar_aghasi_regiments_reform
 				manrent_reform
 				merchant_arsenal_reform
-				tercios_reform
+				#tercios_reform
 				expanded_black_army_reform
 				#1.36
 				sparapet_office
@@ -864,10 +881,17 @@ republic = {
 				cuman_lancers_reform
 				#1.37 Bohemia
 				vozove_hradby_reform
-				russian_mercenary_guard_reform 
-				#helo
+				russian_mercenary_guard_reform
+
+				### ADDED BY MEGACAMPAIGN ###
 				three_branches_reform
 				sic_palatini_reform
+				
+				the_band_of_the_exiles_reform
+
+				auxiliary_astari_reform
+				themata_reform
+				###
 			}
 		}
 		parliamentary_vs_presidential = {
@@ -891,6 +915,9 @@ republic = {
 				enforced_autocracy_reform
 				#1.37
 				seven_provinces_reform
+				# added with mod
+				iron_crowned_captain_of_war_reform
+				the_business_of_social_banditry_reform
 			}
 		}
 		federalism_vs_unitarism_vs_confederacy = {
@@ -960,6 +987,7 @@ republic = {
 				equality_principle_reform
 				imperial_principle_reform
 				enlightened_principle_reform
+				principle_of_the_bandit_republic_reform
 			}
 		}
 		electorate = {
@@ -996,6 +1024,8 @@ republic = {
 				scourge_of_the_seven_sea_reform
 				#1.35
 				peters_government_reform
+				#added with mod
+				the_dragon_republic_reform
 			}
 		}
 	}
@@ -1135,7 +1165,7 @@ tribal = {
 				ahmudan_system_reform
 				ghazi_reform
 				the_cawa_regiments_reform
-				tercio_reform
+				#tercio_reform
 				fuero_militar_reform
 				ordennancas_reform
 				revive_the_almogavars_reform
@@ -1158,7 +1188,7 @@ tribal = {
 				qollar_aghasi_regiments_reform
 				manrent_reform
 				merchant_arsenal_reform
-				tercios_reform
+				#tercios_reform
 				expanded_black_army_reform
 				#1.36
 				sparapet_office
@@ -1172,6 +1202,11 @@ tribal = {
 				#1.37 Bohemia
 				vozove_hradby_reform
 				russian_mercenary_guard_reform 
+
+				### ADDED BY MEGACAMPAIGN ###
+				auxiliary_astari_reform
+				themata_reform
+				###
 			}
 		}
 		tribal_modernization = {
@@ -1294,7 +1329,7 @@ theocracy = {
 				blood_theocracy_reform
 				#Lithuania
 				depressed_orthodox_church
-				Knightly_Order
+				Sisterly_Order
 				#Hi it's me dotto again smile
 				outremer_government_reform
 				stardust_crusaders_reform
@@ -1388,6 +1423,7 @@ theocracy = {
 				mercenary_leadership_reform
 				#Visible but locked
 				amphibious_specialization_reform
+				winged_crowned_stags_reform
 				royal_marines_reform
 				maritime_military_reform
 				professional_navy_reform
@@ -1410,7 +1446,7 @@ theocracy = {
 				ahmudan_system_reform
 				ghazi_reform
 				the_cawa_regiments_reform
-				tercio_reform
+				#tercio_reform
 				fuero_militar_reform
 				ordennancas_reform
 				revive_the_almogavars_reform
@@ -1433,7 +1469,7 @@ theocracy = {
 				qollar_aghasi_regiments_reform
 				manrent_reform
 				merchant_arsenal_reform
-				tercios_reform
+				#tercios_reform
 				expanded_black_army_reform
 				#1.36
 				sparapet_office
@@ -1446,10 +1482,15 @@ theocracy = {
 				cuman_lancers_reform
 				#1.37 Bohemia
 				vozove_hradby_reform
-				russian_mercenary_guard_reform 
-				#doubtful
+				russian_mercenary_guard_reform
+
+				### ADDED BY MEGACAMPAIGN ###
 				three_branches_reform
 				sic_palatini_reform
+
+				auxiliary_astari_reform
+				themata_reform
+				###
 			}
 		}
 		secularization = {
@@ -1461,6 +1502,7 @@ theocracy = {
 				proclaim_republic_reform
 				battle_pope_reform
 				conciliarism_reform
+				navy_with_order_reform
 				#1.35
 				governing_senate_reform
 				enforced_autocracy_reform

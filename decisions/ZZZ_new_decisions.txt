@@ -274,7 +274,7 @@ country_decisions = {
 	ZZZ_enhanced_reform_norse_pagan = {
 		major = yes
 		potential = {
-			NOT = { has_global_flag = ZZZ_enhanced_norse_pagan_reformed }
+			NOT = { has_global_flag = ZZZ_enhanced_norse_pagan }
 			NOT = { has_global_flag = ZZZ_enhanced_random_world }
 			religion = norse_pagan
 		}
@@ -305,13 +305,13 @@ country_decisions = {
 
 		effect = {
 			hidden_effect = {
-				set_global_flag = ZZZ_enhanced_norse_pagan_reformed
+				set_global_flag = ZZZ_enhanced_norse_pagan
 				every_country = {
 					country_event = { id = ZZZ_enhanced_religion.1 }
 				}
 			}
 			add_prestige = 100
-			change_religion = norse_pagan_reformed
+			change_religion = norse_pagan
 			add_country_modifier = {
 				name = "conversion_zeal"
 				duration = 3650
@@ -322,7 +322,7 @@ country_decisions = {
 						religion = norse_pagan
 						owned_by = ROOT
 					}
-					change_religion = norse_pagan_reformed
+					change_religion = norse_pagan
 					add_base_tax = 1
 					add_base_production = 1
 					add_base_manpower = 1
@@ -332,7 +332,7 @@ country_decisions = {
 				limit = { religion = norse_pagan }
 				random_list = {
 					75 = {
-						change_religion = norse_pagan_reformed
+						change_religion = norse_pagan
 					}
 					25 = {
 						add_province_modifier = {

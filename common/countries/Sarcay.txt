@@ -1,0 +1,328 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 94 74 120 } #{ 66 99 120 } #{ 0 88 80 }
+revolutionary_colors = { 9 0 9 }
+historical_idea_groups = {
+	exploration_ideas
+	expansion_ideas
+	trade_ideas
+	quality_ideas
+	economic_ideas
+	offensive_ideas
+	quantity_ideas
+	defensive_ideas
+}
+historical_units = {
+	austrian_grenzer
+	austrian_hussar
+	austrian_jaeger
+	austrian_tercio
+	austrian_white_coat
+	mixed_order_infantry
+	napoleonic_lancers
+	napoleonic_square
+	open_order_cavalry
+	spanish_tercio
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+}
+monarch_names = {
+	"Aristarco #0" = 10
+	"Adriano #0" = 10
+	"Aleano #0" = 10
+	"Criso #0" = -1
+	"Georgia #0" = -1
+	"Gerasimo #0" = 0
+	"Constantino #0" = 10
+	"Cosmas #0" = 10
+	"Leontiana #0" = -1
+	"Marcelino #0" = 0
+	"Leonor #0" = -1
+	"Nicodemano #0" = 0
+	"Nuno #0" = 0
+	"Paulina #0" = -1
+	"Romano #0" = 10
+	"Sebastiano #0" = 10
+	"Aldara #0" = -1
+	"Tiberio #0" = 10
+	"Mariano #0" = 10
+	"Tigrano #0" = 10
+	"Gaelouro #0" = 5
+	"Cesantino #0" = 5
+	"Calamouro #0" = 5
+	"Methodio #0" = 0
+	"Tirreno #0" = 0
+	"Maria #0" = -1
+	"Rafael #0" = 0
+	"Aristides #0" = 0
+	"Julio #0" = 5
+	"Ademante #0" = 5
+	"Zeno #0" = 5
+	"Nerissa #0" = -1
+	"Adrameno #0" = 5
+	"Cathelo #0" = 0
+	"Isra #0" = -1
+	"Anái #0" = 0
+	"Mirata #0" = -1
+	"Béatriz #0" = -1
+	"Saviana #0" = -1
+}
+leader_names = {
+	"de Sintra"
+	"Corterreal"
+	"Mûndaneros"
+	"Dûnedanos"
+	"de Gades"
+	"de Braganza"
+	"de Cartagena"
+	"da Câmara"
+	"Álvares Cabral"
+	"de Almeida"
+	"Albuquerque"
+	"Vaz Mardel"
+	"de Targares"
+	"de Tudela"
+	"Lagares"
+	"da Ellada"
+	"da Sardenha"
+	"de Vilhena"
+	"de Penamacor"
+	"de Trastámara"
+	"Cintranos"
+	"Teles de Mindano"
+	"Teles da Guerra"
+	"Teles d'Alcôr"
+	"de Rivia"
+	"de Tauros"
+}
+ship_names = {
+	"Acamanna"
+	"Aquaea"
+	"Acheros"
+	"Aquiles"
+	"Aquino"
+	"Ades"
+	"Adones"
+	"Aegina"
+	"Aelias"
+	"Aerico"
+	"Aethas"
+	"Agamenno"
+	"Agerochanes"
+	"Albacorra"
+	"Alexias"
+	"Amazonias"
+	"Amadeia"
+	"Amarintha"
+	"Amathuza"
+	"Amuranna"
+	"Amphicrona"
+	"Anaxias"
+	"Ancagorra"
+	"Antagorra"
+	"Andorinna"
+	"Argo"
+	"Argolias"
+	"Arpones"
+	"Apolo"
+	"Apoloneia"
+	"Arcangelo"
+	"Aris"
+	"Asterias"
+	"Athanaseia"
+	"Athenias"
+	"Athenna"
+	"Attichias"
+	"Attica"
+	"Augeias"
+	"Autocrator Megas"
+	"Basileias"
+	"Basileos"
+	"Calipsos"
+	"Capitaneia"
+	"Colombos"
+	"Coronna"
+	"Corteraelias"
+	"Chania"
+	"Christos"
+	"Damanno"
+	"Darias"
+	"Darianno"
+	"Daphnes"
+	"Decaleia"
+	"Despota"
+	"Diaconos"
+	"Doristolo"
+	"Docainna"
+	"Delphin"
+	"Doros"
+	"Europias"
+	"Edessa"
+	"Elaio"
+	"Elaidas"
+	"Elis"
+	"Eretria"
+	"Etrurias"
+	"Enoses"
+	"Emporas"
+	"Erimantheia"
+	"Epidauro"
+	"Erchomenno"
+	"Erapetra"
+	"Exangelo"
+	"Exarias"
+	"Falcato"
+	"Focaida"
+	"Farnacheia"
+	"Fereta"
+	"Fior Marias"
+	"Gades"
+	"Gaivota"
+	"Galgo"
+	"Garota"
+	"Garza"
+	"Gadamenno"
+	"Galaxida"
+	"Galaxias"
+	"Gorgona"
+	"Gorias"
+	"Gorganno"
+	"Anagarda"
+	"Catogarda"
+	"Jupiter"
+	"Lebre"
+	"Leio"
+	"Liz"
+	"Lithanno"
+	"Liovelda"
+	"Lioveldor"
+	"Liovelias"
+	"Lobo"
+	"Luantha"
+	"Iris"
+	"Madragaias"
+	"Madrateias"
+	"Magnanias"
+	"Medusa"
+	"Minerva"
+	"Aureomonte"
+	"Neptunno"
+	"Manna"
+	"Macheiras"
+	"Levantias"
+	"Lesbos"
+	"Lesbias"
+	"Magnesia"
+	"Magnesias"
+	"Lindos"
+	"Lemnos"
+	"Mantes"
+	"Mantessa"
+	"Marianias"
+	"Marianos"
+	"Maria"
+	"Nimpha"
+	"Nunes"
+	"Megara"
+	"Melissa"
+	"Maurogenna"
+	"Mauredeia"
+	"Maratonna"
+	"Messolonges"
+	"Methodios"
+	"Methones"
+	"Media"
+	"Miconos"
+	"Nauplio"
+	"Naxos"
+	"Monastires"
+	"Nica"
+	"Nizeia"
+	"Nicitas"
+	"Odisseia"
+	"Oceanos"
+	"Olimpia"
+	"Olimpias"
+	"Omiros"
+	"Odessa"
+	"Oliverra"
+	"Pater"
+	"Polithemos"
+	"Perola"
+	"Pachiamos"
+	"Ostia"
+	"Paraxias"
+	"Orchomenos"
+	"Panagia"
+	"Patras"
+	"Parmenon"
+	"Parmida"
+	"Phanagoria"
+	"Procopio"
+	"Carchida"
+	"Riga"
+	"Reliqueia"
+	"Sacramento"
+	"Stratos"
+	"Strategia"
+	"Stiga"
+	"Spatha"
+	"Solo"
+	"Scilia"
+	"Sicilia"
+	"Sofia"
+	"Salvador"
+	"Santiago"
+	"Santiago Megas"
+	"Serpente"
+	"Sucesso"
+	"Taphoreia"
+	"Tagus"
+	"Tarthes"
+	"Tartessa"
+	"Tarsaia"
+	"Tagaressa"
+	"Tigranias"
+	"Tigrano"
+	"Tigranata"
+	"Tigraniaco"
+	"Torta"
+	"Thalassos"
+	"Thanatos"
+	"Themistos"
+	"Temiateira"
+	"Titano"
+	"Titanias"
+	"Tragurias"
+	"Trapeza"
+	"Theso"
+	"Tharros"
+	"Tigres"
+	"Tira"
+	"Tiranias"
+	"Tritano"
+	"Ulisses"
+	"Unitas"
+	"Uraneia"
+	"Vale"
+	"Vasco da Gama"
+	"Volador"
+	"Vulcano"
+	"Venus"
+	"Zabra Augusta"
+	"Zabra Julia"
+	"Zeus"
+	"Zacintes"
+}
+army_names = {
+	"Arcagarda"
+	"Garda tes $PROVINCE$"
+}
+fleet_names = {
+	"Armatha Basileias"
+	"Nautilea Aureias"
+	"Nautilea Rossadas"
+	"Nautilea Leucadas"
+	"Nautilea Argantas"
+}

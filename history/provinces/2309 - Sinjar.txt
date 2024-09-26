@@ -1,5 +1,5 @@
-owner = PAP
-controller = PAP
+owner = ASY
+controller = ASY
 capital = "Singara"
 is_city = yes
 culture = assyrian
@@ -9,7 +9,7 @@ base_tax = 7
 base_production = 5
 base_manpower = 7
 
-add_core = PAP
+add_core = ASY
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

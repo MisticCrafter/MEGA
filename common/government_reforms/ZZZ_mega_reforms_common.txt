@@ -1,5 +1,5 @@
 # changed so as to account for Andalos
-tercio_reform = {
+auxiliary_astari_reform = {
 	icon = "tercios_reform"
 	allow_normal_conversion = yes
 	potential = {
@@ -11,14 +11,14 @@ tercio_reform = {
 		NOT = { tag = CAS }
 		NOT = { tag = SPA }
 		NOT = { tag = ARA }
-        NOT = { tag = ADU }
+        NOT = { tag = ARC }
 		is_colonial_nation = no
 	}
 	trigger = {
 		if = {
 			limit = { has_modifier_locking_military_tier = yes }
 			OR = {
-				has_reform = tercio_reform
+				has_reform = auxiliary_astari_reform
 				has_not_modifier_locking_military_tier = yes
 			}
 		}
@@ -36,34 +36,24 @@ tercio_reform = {
 }
 
 # changed so as to accomodate Andalos
-tercios_reform = {
+themata_reform = {
 	icon = "tercios_reform"
 	allow_normal_conversion = yes
 	potential = {
 		has_dlc = "Domination" 
 		OR = {
-            is_or_was_tag = { tag = ADU }
-			AND = {
-				is_or_was_tag = { tag = ARA }
-				OR = {
-					total_development = 500 
-					is_great_power = yes 
-				}
+            AND = {
+				is_or_was_tag = { tag = ARC }
+				has_estate = estate_knights
+				has_estate_privilege = estate_astari_astarostratha
 			}
-			mission_completed = spa_tercios_system
-			custom_trigger_tooltip = {
-				tooltip = has_unlocked_this_reform_tt
-				has_country_flag = enable_tercios_reform_flag
-			}
-			has_reform = tercios_reform
-		}
-		NOT = { religion_group = muslim } 
+			has_reform = themata_reform
+		} 
 	}
 	modifiers = {
-		has_tercio = yes
-		allowed_tercio_fraction = 0.2
 		army_tradition = 0.5
-		yearly_army_professionalism = 0.0025
+		free_land_leader_pool = 1
+		special_unit_forcelimit = 0.10
 	}
 	
 	ai = {
@@ -340,6 +330,106 @@ maintain_clergy_balance_of_power_reform = {
 	modifiers = {
 		all_estate_loyalty_equilibrium = 0.05
 		diplomats = 1
+	}
+	
+	ai = {
+		factor = 1
+	}
+}
+
+doppelsoldner_reform = {											# elite mercs, to include not cynwyd.
+	icon = "mercenaries"
+	allow_normal_conversion = yes
+	potential = {
+		has_dlc = "Domination"
+		NOT = { primary_culture = swiss }
+		NOT = { tag = CWD }
+	}
+	trigger = {
+		full_idea_group = mercenary_ideas
+		if = {
+			limit = { has_modifier_locking_military_tier = yes }
+			OR = {
+				has_reform = doppelsoldner_reform
+				has_not_modifier_locking_military_tier = yes
+			}
+		}
+	}
+	modifiers = {
+		mercenary_cost = -0.15
+		possible_condottieri = 0.5
+		merc_leader_army_tradition = 0.25
+	}
+	conditional = {
+		allow = { has_dlc = "Domination" }
+		government_abilities = {
+			hessian_militarization_mechanic
+		}
+	}
+	custom_attributes = {
+		mercs_do_not_cost_army_professionalism = yes
+	}
+	
+	ai = {
+		factor = 1
+	}
+}
+
+mercenary_leadership_reform = {
+	icon = "war_economy"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			NOT = { has_dlc = "Domination" }
+			NOT = { full_idea_group = mercenary_ideas }
+			NOT = { primary_culture = swiss }
+			NOT = { tag = CWD }
+		}
+	}
+	trigger = {
+		if = {
+			limit = { has_modifier_locking_military_tier = yes }
+			OR = {
+				has_reform = mercenary_leadership_reform
+				has_not_modifier_locking_military_tier = yes
+			}
+		}
+	}
+	modifiers = {
+		mercenary_cost = -0.1
+		possible_condottieri = 0.5
+	}
+	
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				has_global_modifier_value = {
+					which = mercenary_discipline
+					value = 0.05
+				}
+			}
+		}
+	}
+}
+
+strengthen_clergy_reform = {
+	icon = "church"
+	allow_normal_conversion = yes
+	potential = {
+		NOT = { has_government_attribute = is_pirate_republic_reform }
+		NOT = { religion_group = irreligious }
+		OR = {
+			is_revolutionary = no
+			NOT = { has_dlc = "Emperor" }
+		}
+		has_no_religion_specific_government_available = yes	#This way modders don't have to change this reform explicitly
+	}
+	modifiers = {
+		church_influence_modifier = 0.1
+		church_loyalty_modifier = 0.1
+		war_exhaustion = -0.03
 	}
 	
 	ai = {
