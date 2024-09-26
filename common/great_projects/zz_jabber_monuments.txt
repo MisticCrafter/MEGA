@@ -530,6 +530,17 @@ nebrissa = {
 			embargo_efficiency = 0.1		
 		}
 
+		conditional_modifier = {
+			trigger = {
+				owner = {
+					mission_completed = ARC_trading_houses
+				}
+			}
+			modifier = {
+				trade_steering = 0.05
+			}
+		}
+
 		#what effects happen when this tier is achieved
 		on_upgraded = {
 		}
@@ -560,6 +571,17 @@ nebrissa = {
 		country_modifiers = {
 			placed_merchant_power_modifier = 0.25
 			embargo_efficiency = 0.25
+		}
+
+		conditional_modifier = {
+			trigger = {
+				owner = {
+					mission_completed = ARC_trading_houses
+				}
+			}
+			modifier = {
+				trade_steering = 0.1
+			}
 		}
 
 		#what effects happen when this tier is achieved
@@ -593,6 +615,17 @@ nebrissa = {
             merchants = 1
 			placed_merchant_power_modifier = 0.5
 			embargo_efficiency = 0.5
+		}
+
+		conditional_modifier = {
+			trigger = {
+				owner = {
+					mission_completed = ARC_trading_houses
+				}
+			}
+			modifier = {
+				trade_steering = 0.15
+			}
 		}
 
 		#what effects happen when this tier is achieved

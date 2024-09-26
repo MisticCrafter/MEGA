@@ -10,11 +10,12 @@ andal_crown_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 10
 	modifiers = {
-		vassal_income = 0.2
+		vassal_income = 0.3
+		leader_cost = -0.1
 		governing_capacity_modifier = -0.2
 	}
+	lock_level_when_selected = yes
 	custom_attributes = {
-		has_appanages = yes
 	}
 	ai = {
 		factor = 1
@@ -39,6 +40,7 @@ andal_subject_reform = {
         global_unrest = -2
         liberty_desire = -10
 	}
+	lock_level_when_selected = yes
 	ai = {
 		factor = 1
 	}
@@ -92,6 +94,7 @@ absolutist_andalos_reform = {
 
 	modifiers = {
 		all_estate_influence_modifier = -0.1
+		leader_cost = -0.1
 		max_absolutism = 10
 	}
 }

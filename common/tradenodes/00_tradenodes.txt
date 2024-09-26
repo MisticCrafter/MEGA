@@ -1098,6 +1098,9 @@ zanzibar={
 }
 gulf_of_aden={
 	location=4346
+	color = {
+		233 155 81
+	}
 	outgoing={
 		name="alexandria"
 		path={
@@ -1122,6 +1125,9 @@ gulf_of_aden={
 }
 hormuz={
 	location=1334
+	color={
+		178 103 5
+	}
 	outgoing={
 		name="basra"
 		path={
@@ -1223,6 +1229,9 @@ persia={
 }
 basra={
 	location=1335
+	color = {
+		165 76 153
+	}
 	outgoing={
 		name="aleppo"
 		path={
