@@ -431,7 +431,6 @@ country_event = {
 	}
 
 	option = {
-        # Hire Vasco da Gama
 		name = flavor_andalos.8.a
 		add_years_of_income = -0.25
 		define_explorer = {
