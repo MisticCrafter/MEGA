@@ -199,9 +199,9 @@ andalos_slot_1_missions = {
 
 	ARC_conquer_coastal_morocco = {
 		icon = mission_arabian_fort
-		required_missions = { }
+		required_missions = { ARC_restore_order }
 		completed_by = 1488.1.1
-		position = 9
+		position = 10
 		provinces_to_highlight = {
 			area = northern_morocco_area
 			area = western_morocco_area
@@ -293,20 +293,57 @@ andalos_slot_1_missions = {
 		}
 	}
 	
-	ARC_competitive_advantage = {
-		icon = spa_tercios_system
-		required_missions = { ARC_restore_order ARC_conquer_coastal_morocco }
+	#ARC_competitive_advantage = {
+	#	icon = spa_tercios_system
+	#	required_missions = { ARC_restore_order ARC_conquer_coastal_morocco }
+	#	completed_by = 1472.1.1
+	#	position = 10
+	#	
+	#	trigger = {
+	#		num_of_owned_provinces_with = {
+	#			has_manpower_building_trigger = yes 
+	#			value = 15
+	#		}
+	#		OR = { 
+	#			army_tradition = 50 
+	#			army_professionalism = 0.15
+	#		}
+	#		if = {
+	#			limit = { ai = no }
+	#			navy_size_percentage = 0.95
+	#			army_size_percentage = 0.85
+	#		}
+	#		else = { navy_size_percentage = 0.85 army_size_percentage = 0.75 }
+	#		
+	#	}
+	#	
+	#	effect = {
+	#		add_government_reform = themata_reform
+	#		if = {
+	#			limit = { has_dlc = "Cradle of Civilization" }
+	#			add_army_professionalism = 0.05
+	#		}
+	#		else = { add_army_tradition = 10 }
+	#		add_country_modifier = {
+	#			name = "ARC_adopting_astari"
+	#			duration = 3650
+	#		}
+	#	}
+	#}
+
+	ARC_reform_paladins = {
+		icon = spa_reform_tercios
+		required_missions = { ARC_conquer_coastal_morocco }
 		completed_by = 1472.1.1
-		position = 10
+		position = 11
 		
 		trigger = {
-			num_of_owned_provinces_with = {
-				has_manpower_building_trigger = yes 
-				value = 15
-			}
+			has_estate_privilege = estate_astari_astarostratha
+			has_reform = themata_reform
+			num_of_tercio = 60
 			OR = { 
-				army_tradition = 50 
-				army_professionalism = 0.15
+				army_professionalism = 0.75
+				army_tradition = 90 
 			}
 			if = {
 				limit = { ai = no }
@@ -314,34 +351,9 @@ andalos_slot_1_missions = {
 				army_size_percentage = 0.85
 			}
 			else = { navy_size_percentage = 0.85 army_size_percentage = 0.75 }
-			
-		}
-
-		effect = {
-			add_government_reform = astarostratha_reform
-			if = {
-				limit = { has_dlc = "Cradle of Civilization" }
-				add_army_professionalism = 0.05
-			}
-			else = { add_army_tradition = 10 }
-			add_country_modifier = {
-				name = "ARC_adopting_paladins"
-				duration = 3650
-			}
-		}
-	}
-
-	ARC_reform_paladins = {
-		icon = spa_reform_tercios
-		required_missions = { ARC_competitive_advantage }
-		completed_by = 1472.1.1
-		position = 11
-		
-		trigger = {
-			num_of_tercio = 60
-			OR = { 
-				army_professionalism = 0.75
-				army_tradition = 90 
+			num_of_owned_provinces_with = {
+				has_manpower_building_trigger = yes 
+				value = 15
 			}
 		}
 
@@ -391,6 +403,7 @@ andalos_slot_1_missions = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
+			has_estate_privilege = estate_astari_americathemes
 		}
 		effect = {
 			if = {
@@ -858,8 +871,9 @@ andalos_slot_2_missions_c = {
 		trigger = {
 			NOT = { exists = CYN }
 			NOT = { exists = SRQ }
+			NOT = { has_disaster = andalos_eventide }
 			capital_scope = { 
-				num_of_times_improved = 8 
+				num_of_times_improved = 4 
 			}
 			NOT = { 
 				any_subject_country = { liberty_desire = 5 }
@@ -1016,6 +1030,10 @@ andalos_slot_2_missions_c = {
 				has_shipyard_building_trigger = yes 
 				base_production = 12 
 			}
+			has_great_project = {
+				type = belem_tower
+				tier = 1
+			}
 		}
 		effect = {
 			add_navy_tradition = 30
@@ -1044,11 +1062,7 @@ andalos_slot_2_missions_c = {
 				else = { add_building = shipyard }
 			}
 			add_country_modifier = {
-				name = "ARC_galleons"
-				duration = -1
-			}
-			add_country_modifier = {
-				name = "ARC_caravels"
+				name = "ARC_grand_navy"
 				duration = -1
 			}
 			add_country_modifier = {

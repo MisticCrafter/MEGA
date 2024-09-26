@@ -11,7 +11,6 @@ andal_crown_reform = {
 	nation_designer_cost = 10
 	modifiers = {
 		vassal_income = 0.2
-		vassal_forcelimit_bonus = 1
 		governing_capacity_modifier = -0.2
 	}
 	custom_attributes = {
@@ -101,7 +100,15 @@ crusader_kingdom_reform = {
 	icon = "holy_state_reform"
 	allow_normal_conversion = no
 	potential = {
-		religion_group = christian
+		religion_group = catholic
+		OR = {
+			tag = MUG
+			culture_group = crusader_group
+			capital_scope = {
+				NOT = { continent = europe }
+			}
+		}
+
 	}
 	nation_designer_trigger = {
 		religion_group = christian

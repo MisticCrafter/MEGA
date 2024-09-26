@@ -329,7 +329,6 @@ age_of_reformation = {
 				religion = anglican
 				religion = hussite
 				religion = cathar
-				religion = waldensian
 				religion = lollard
 			}
 		}

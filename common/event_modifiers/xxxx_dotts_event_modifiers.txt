@@ -61,10 +61,10 @@ out_papal_puppet = {
 	liberty_desire = -50
 }
 out_suez_profit = {
-	global_tax_income = 50
+	global_tax_income = 25
 }
 out_suez_halfprofit = {
-	global_tax_income = 25
+	global_tax_income = 12
 }
 #confed
 confed_frontier = {

@@ -36,7 +36,7 @@ auxiliary_astari_reform = {
 }
 
 # changed so as to accomodate Andalos
-astarostratha_reform = {
+themata_reform = {
 	icon = "tercios_reform"
 	allow_normal_conversion = yes
 	potential = {
@@ -44,20 +44,16 @@ astarostratha_reform = {
 		OR = {
             AND = {
 				is_or_was_tag = { tag = ARC }
-				#has_estate = estate_astari
-				#mission_completed = ARC_dawn
+				has_estate = estate_knights
+				has_estate_privilege = estate_astari_astarostratha
 			}
-			has_reform = astarostratha_reform
+			has_reform = themata_reform
 		} 
 	}
 	modifiers = {
 		army_tradition = 0.5
-		nobles_loyalty_modifier = -0.15
-		nobles_influence_modifier = -0.15
-		astari_loyalty_modifier = 0.15
-		astari_influence_modifier = 0.15
-		allowed_tercio_fraction = 0.1
-		has_tercio = yes
+		free_land_leader_pool = 1
+		special_unit_forcelimit = 0.10
 	}
 	
 	ai = {

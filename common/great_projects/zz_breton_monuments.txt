@@ -100,7 +100,6 @@ golden_mosque = {
 		province_modifiers = {
             local_development_cost = -0.1
             local_institution_spread = 0.1	
-			global_missionary_strength = 0.01	
 		}
 		
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -108,7 +107,8 @@ golden_mosque = {
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
-		country_modifiers = {			
+		country_modifiers = {
+			global_missionary_strength = 0.01			
 		}
 
 		#what effects happen when this tier is achieved
@@ -139,7 +139,8 @@ golden_mosque = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			reform_progress_growth = 0.1
+			global_missionary_strength = 0.015
+			church_power_modifier = 0.05
 		}
 
 		#what effects happen when this tier is achieved
@@ -175,7 +176,8 @@ golden_mosque = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-            reform_progress_growth = 0.1
+            global_missionary_strength = 0.02
+			church_power_modifier = 0.1
 		}
 
 		#what effects happen when this tier is achieved
@@ -284,7 +286,8 @@ lighthouse_of_akkra = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
-            tax_income = 12		
+            local_build_cost = -0.1
+			local_build_time = -0.1	
 		}
 		
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -293,7 +296,10 @@ lighthouse_of_akkra = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			global_missionary_strength = 0.005			
+			global_autonomy = -0.01	
+			global_tariffs = 0.05
+			navy_tradition = 0.1
+			treasure_fleet_income = 0.05		
 		}
 
 		#what effects happen when this tier is achieved
@@ -314,7 +320,8 @@ lighthouse_of_akkra = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
-            tax_income = 24
+            local_build_cost = -0.2
+			local_build_time = -0.2
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -323,7 +330,10 @@ lighthouse_of_akkra = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			global_missionary_strength = 0.01
+			global_autonomy = -0.025
+			governing_capacity_modifier = 0.05
+			navy_tradition = 0.25
+			treasure_fleet_income = 0.1
 		}
 
 		#what effects happen when this tier is achieved
@@ -344,17 +354,20 @@ lighthouse_of_akkra = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
-            tax_income = 24
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
+			local_build_cost = -0.3
+			local_build_time = -0.3
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-            global_missionary_strength = 0.02
-            warscore_cost_vs_other_religion = -0.1
+            global_autonomy = -0.05
+			navy_tradition = 0.5
+			global_tariffs = 0.2
+			treasure_fleet_income = 0.25
 		}
 
 		#what effects happen when this tier is achieved

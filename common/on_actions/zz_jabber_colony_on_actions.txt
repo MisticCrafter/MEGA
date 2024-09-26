@@ -1,0 +1,57 @@
+on_abandon_colony = {
+    if = {
+        limit = {
+            ROOT = {
+                has_country_modifier = estate_astari_americathemes_modifier
+            }
+        }
+        ROOT = {
+            remove_country_modifier = estate_astari_americathemes_modifier
+        }
+    }
+}
+
+on_colonial_liberation = {
+    if = {
+        limit = {
+            ROOT = {
+                has_country_modifier = estate_astari_americathemes_modifier
+            }
+        }
+        ROOT = {
+            remove_country_modifier = estate_astari_americathemes_modifier
+        }
+    }
+}
+
+on_colonial_reintegration = {
+    if = {
+        limit = {
+            FROM = {
+                has_country_flag = activated_americathemes_flag
+            }
+        }
+        ROOT = {
+            add_country_modifier = {
+                name = "estate_astari_americathemes_modifier"
+                duration = -1
+            }
+        }
+    }
+}
+
+on_colonial_nation_established = {
+    if = {
+        limit = {
+            FROM = {
+                has_country_flag = activated_americathemes_flag
+            }
+        }
+        ROOT = {
+            add_country_modifier = {
+                name = "estate_astari_americathemes_modifier"
+                duration = -1
+            }
+        }
+    }
+}

@@ -4633,8 +4633,18 @@ taj_mahal = {
 
 	#can we build it?
 	build_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = muslim
+		OR = {
+			AND = {
+				culture = kashmiri
+				province_is_or_accepts_culture = yes
+			}
+			AND = {
+				OR = {
+					culture_group = iranian
+					culture_group = crusader_group
+				}
+				province_is_or_accepts_culture = yes
+			}
 		}
 	}
 
@@ -4650,15 +4660,35 @@ taj_mahal = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = muslim
+		OR = {
+			AND = {
+				culture = kashmiri
+				province_is_or_accepts_culture = yes
+			}
+			AND = {
+				OR = {
+					culture_group = iranian
+					culture_group = crusader_group
+				}
+				province_is_or_accepts_culture = yes
+			}
 		}
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = muslim
+		OR = {
+			AND = {
+				culture = kashmiri
+				province_is_or_accepts_culture = yes
+			}
+			AND = {
+				OR = {
+					culture_group = iranian
+					culture_group = crusader_group
+				}
+				province_is_or_accepts_culture = yes
+			}
 		}
 	}
 
@@ -4717,7 +4747,6 @@ taj_mahal = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			monthly_piety_accelerator = 0.001
 			prestige_decay = -0.005
 		}
 
@@ -4748,7 +4777,6 @@ taj_mahal = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {	
-			monthly_piety_accelerator = 0.002
 			prestige_decay = -0.005
 			monthly_splendor = 1
 		}
@@ -4780,7 +4808,6 @@ taj_mahal = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			monthly_piety_accelerator = 0.003
 			prestige_decay = -0.01
 			monthly_splendor = 2
 			power_projection_from_insults = 1
@@ -5556,7 +5583,7 @@ registan_square = {
 	#can we build it?
 	build_trigger = {
 		province_is_or_accepts_religion_group = {
-			religion_group = muslim
+			religion_group = christian
 		}
 	}
 
@@ -5573,14 +5600,14 @@ registan_square = {
 	#can our country use it?
 	can_use_modifiers_trigger = {
 		province_is_or_accepts_religion_group = {
-			religion_group = muslim
+			religion_group = christian
 		}
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
 		province_is_or_accepts_religion_group = {
-			religion_group = muslim
+			religion_group = christian
 		}
 	}
 
@@ -5638,7 +5665,6 @@ registan_square = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			monthly_piety_accelerator = 0.001
 			stability_cost_modifier = -0.1
 			enforce_religion_cost = -0.05
 		}
@@ -5669,7 +5695,6 @@ registan_square = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			monthly_piety_accelerator = 0.002
 			stability_cost_modifier = -0.15
 			enforce_religion_cost = -0.1
 		}
@@ -5700,7 +5725,6 @@ registan_square = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			monthly_piety_accelerator = 0.003
 			stability_cost_modifier = -0.25
 			enforce_religion_cost = -0.15
 		}
@@ -9496,9 +9520,9 @@ el_escorial = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			global_autonomy = -0.01	
-			global_tariffs = 0.05
-			treasure_fleet_income = 0.05			
+			global_autonomy = -0.01
+			technology_cost = -0.025
+			global_institution_spread = 0.1
 		}
 
 		#what effects happen when this tier is achieved
@@ -9527,10 +9551,9 @@ el_escorial = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			global_autonomy = -0.025
-			governing_capacity_modifier = 0.05
-			global_tariffs = 0.1
-			treasure_fleet_income = 0.1
+			global_autonomy = -0.0025
+			technology_cost = -0.05
+			global_institution_spread = 0.2
 		}
 
 		#what effects happen when this tier is achieved
@@ -9560,9 +9583,8 @@ el_escorial = {
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			global_autonomy = -0.05
-			governing_capacity_modifier = 0.1
-			global_tariffs = 0.2
-			treasure_fleet_income = 0.2
+			technology_cost = -0.10
+			global_institution_spread = 0.3
 		}
 
 		#what effects happen when this tier is achieved
@@ -9903,9 +9925,6 @@ kaaba = {
 	#can our country use it?
 	can_use_modifiers_trigger = {
 		OR = {
-			province_is_or_accepts_religion_group = {
-				religion_group = muslim
-			}
 			owner = {
 				custom_trigger_tooltip = {
 					tooltip = BYZ_may_use_kaaba 
@@ -9918,9 +9937,6 @@ kaaba = {
 	#can our country upgrade it?
 	can_upgrade_trigger = {
 		OR = {
-			province_is_or_accepts_religion_group = {
-				religion_group = muslim
-			}
 			owner = {
 				custom_trigger_tooltip = {
 					tooltip = BYZ_may_use_kaaba 
@@ -10211,9 +10227,6 @@ holy_city_jerusalem = {
 	build_trigger = {
 		OR = {
 			province_is_or_accepts_religion_group = {
-				religion_group = muslim
-			}
-			province_is_or_accepts_religion_group = {
 				religion_group = christian
 			}
 			province_is_or_accepts_religion = {
@@ -10236,9 +10249,6 @@ holy_city_jerusalem = {
 	can_use_modifiers_trigger = {
 		OR = {
 			province_is_or_accepts_religion_group = {
-				religion_group = muslim
-			}
-			province_is_or_accepts_religion_group = {
 				religion_group = christian
 			}
 			province_is_or_accepts_religion = {
@@ -10250,9 +10260,6 @@ holy_city_jerusalem = {
 	#can our country upgrade it?
 	can_upgrade_trigger = {
 		OR = {
-			province_is_or_accepts_religion_group = {
-				religion_group = muslim
-			}
 			province_is_or_accepts_religion_group = {
 				religion_group = christian
 			}
@@ -10513,7 +10520,6 @@ great_mosque_djenne = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			monthly_piety_accelerator = 0.001
 			global_heathen_missionary_strength = 0.01
 		}
 
@@ -10543,7 +10549,6 @@ great_mosque_djenne = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			monthly_piety_accelerator = 0.002
 			global_heathen_missionary_strength = 0.02
 			missionaries = 1
 		}
@@ -10574,7 +10579,6 @@ great_mosque_djenne = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			monthly_piety_accelerator = 0.003
 			global_heathen_missionary_strength = 0.03
 			missionaries = 1
 		}
@@ -10782,7 +10786,7 @@ baiturrahman_grand_mosque = {
 
 	build_trigger = {
 		province_is_or_accepts_religion_group = {
-			religion_group = muslim
+			religion_group = dharmic
 		}
 	}
 
@@ -10794,13 +10798,13 @@ baiturrahman_grand_mosque = {
 
 	can_use_modifiers_trigger = {
 		province_is_or_accepts_religion_group = {
-			religion_group = muslim
+			religion_group = dharmic
 		}
 	}
 
 	can_upgrade_trigger = {
 		province_is_or_accepts_religion_group = {
-			religion_group = muslim
+			religion_group = dharmic
 		}
 	}
 
@@ -13432,7 +13436,7 @@ holy_city_kairouan = {
 
 	build_trigger = {
 		province_is_or_accepts_religion_group = {
-			religion_group = muslim
+			religion_group = christian
 		}
 	}
 
@@ -13444,13 +13448,13 @@ holy_city_kairouan = {
 
 	can_use_modifiers_trigger = {
 		province_is_or_accepts_religion_group = {
-			religion_group = muslim
+			religion_group = christian
 		}
 	}
 
 	can_upgrade_trigger = {
 		province_is_or_accepts_religion_group = {
-			religion_group = muslim
+			religion_group = christian
 		}
 	}
 
@@ -13486,7 +13490,6 @@ holy_city_kairouan = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			monthly_piety_accelerator = 0.001
 			institution_spread_from_true_faith = 0.2
 		}
 		on_upgraded = {
@@ -13505,7 +13508,6 @@ holy_city_kairouan = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			monthly_piety_accelerator = 0.002
 			tolerance_own = 0.5
 			institution_spread_from_true_faith = 0.33
 		}
@@ -13525,7 +13527,6 @@ holy_city_kairouan = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			monthly_piety_accelerator = 0.003
 			tolerance_own = 1
 			institution_spread_from_true_faith = 0.5
 		}
@@ -13557,7 +13558,7 @@ imam_hussein_al-abbas = {
 
 	build_trigger = {
 		province_is_or_accepts_religion = {
-			religion = shiite
+			religion = catholic
 		}
 	}
 
@@ -13569,13 +13570,13 @@ imam_hussein_al-abbas = {
 
 	can_use_modifiers_trigger = {
 		province_is_or_accepts_religion = {
-			religion = shiite
+			religion = catholic
 		}
 	}
 
 	can_upgrade_trigger = {
 		province_is_or_accepts_religion = {
-			religion = shiite
+			religion = catholic
 		}
 	}
 
@@ -13611,7 +13612,6 @@ imam_hussein_al-abbas = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			monthly_piety_accelerator = 0.001
 			global_heretic_missionary_strength = 0.01
 			church_loyalty_modifier = 0.05
 		}
@@ -13631,7 +13631,6 @@ imam_hussein_al-abbas = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			monthly_piety_accelerator = 0.002
 			global_heretic_missionary_strength = 0.02
 			church_loyalty_modifier = 0.1
 		}
@@ -13651,7 +13650,6 @@ imam_hussein_al-abbas = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			monthly_piety_accelerator = 0.003
 			global_heretic_missionary_strength = 0.03
 			church_loyalty_modifier = 0.15
 		}
@@ -14144,8 +14142,15 @@ maidan-e_naqsh-e_jahan = {
 	type = monument
 
 	build_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = muslim
+		OR = {
+			AND = {
+				culture_group = crusader_group
+				province_is_or_accepts_culture = yes
+			}
+			AND = {
+				culture_group = iranian
+				province_is_or_accepts_culture = yes
+			}
 		}
 	}
 
@@ -14156,14 +14161,28 @@ maidan-e_naqsh-e_jahan = {
 	}
 
 	can_use_modifiers_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = muslim
+		OR = {
+			AND = {
+				culture_group = crusader_group
+				province_is_or_accepts_culture = yes
+			}
+			AND = {
+				culture_group = iranian
+				province_is_or_accepts_culture = yes
+			}
 		}
 	}
 
 	can_upgrade_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = muslim
+		OR = {
+			AND = {
+				culture_group = crusader_group
+				province_is_or_accepts_culture = yes
+			}
+			AND = {
+				culture_group = iranian
+				province_is_or_accepts_culture = yes
+			}
 		}
 	}
 
@@ -15626,8 +15645,8 @@ spiral_minaret_samarra = {
 	type = monument
 
 	build_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = muslim
+		owner = {
+		is_or_was_tag = { tag = PAP } 
 		}
 	}
 
@@ -15638,17 +15657,16 @@ spiral_minaret_samarra = {
 	}
 
 	can_use_modifiers_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = muslim
-		}
+	owner = {
+		is_or_was_tag = { tag = PAP }
+	    }
 	}
 
 	can_upgrade_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = muslim
-		}
+		owner = {
+		is_or_was_tag = { tag = PAP }
+	       }
 	}
-
 	keep_trigger = {
 	}
 
@@ -17769,9 +17787,6 @@ harar_jugol = {
 			stability_cost_modifier = -0.25
 			prestige_per_development_from_conversion = 0.3
 		}
-		on_upgraded = {
-			custom_tooltip = mechanic_allow_piety_switch_decision_yes
-		}
 	}
 }
 
@@ -18486,7 +18501,6 @@ divrigi_hospital_mosque = {
 			
 		}
 		country_modifiers = {
-			monthly_piety_accelerator = 0.001
 			innovativeness_gain = 0.2
 			reinforce_speed = 0.1
 		}
@@ -18507,7 +18521,6 @@ divrigi_hospital_mosque = {
 			
 		}
 		country_modifiers = {
-			monthly_piety_accelerator = 0.001
 			innovativeness_gain = 0.33
 			reinforce_speed = 0.25
 		}
@@ -19671,124 +19684,6 @@ itchan_kala = {
 	}
 }
 
-shah_rukn_e_alam_tomb = {
-	start = 506 
-	date = 1324.5.12
-	time = { months = 0	}
-	build_cost = 0
-	can_be_moved = no
-	move_days_per_unit_distance = 10
-	starting_tier = 1
-	type = monument
-	build_trigger = {
-	}
-	on_built = {
-	}
-	on_destroyed = {
-	}
-	can_use_modifiers_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = muslim
-		}
-	}
-	can_upgrade_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = muslim
-		}
-	}
-	keep_trigger = {
-		
-	}
-
-	tier_0 = {
-		upgrade_time = {
-			months = 0
-		}
-		cost_to_upgrade = {
-			factor = 0
-		}
-		province_modifiers = {
-		}
-		area_modifier = {
-		}
-		country_modifiers = {
-		}
-		on_upgraded = {
-		}
-	}
-
-	tier_1 = {
-		upgrade_time = {
-			months = 120
-		}
-		cost_to_upgrade = {
-			factor = 1000
-		}
-		province_modifiers = {
-			
-		}
-		area_modifier = {
-			
-		}
-		country_modifiers = {
-			tolerance_own = 1
-			relation_with_heretics = 10
-		}
-		on_upgraded = {
-		}
-	}
-
-	tier_2 = {
-		upgrade_time = {
-			months = 240
-		}
-		cost_to_upgrade = {
-			factor = 2500
-		}
-		province_modifiers = {
-			
-		}
-		area_modifier = {
-			
-		}
-		region_modifier = { 
-			
-		}
-		country_modifiers = {
-			tolerance_own = 1
-			relation_with_heretics = 20
-		}	
-		on_upgraded = {
-		}
-	}
-
-	tier_3 = {
-		upgrade_time = {
-			months = 480
-		}
-		cost_to_upgrade = {
-			factor = 5000
-		}
-		province_modifiers = {
-		}
-		area_modifier = {
-			
-		}
-		country_modifiers = {
-			tolerance_own = 2
-			relation_with_heretics = 20
-		}
-		on_upgraded = {
-			custom_tooltip = enable_baseline_invite_scholar_tt
-			custom_tooltip = disable_scholar_cost_tt
-			owner = { 
-				set_country_flag = no_scholar_adm_cost
-				set_country_flag = enabled_baseline_invite_scholar
-			}
-		}
-	}
-}
-
 nizwa_fort = {
 	start = 403 
 	date = 1350.1.1 #1650 
@@ -20917,7 +20812,6 @@ afaq_khoja_mausoleum = {
 		province_modifiers = {}
 		area_modifier = {}
 		country_modifiers = {
-			monthly_piety_accelerator = 0.001
 			religious_unity = 0.25
 			church_loyalty_modifier = 0.05
 		}
@@ -20929,7 +20823,6 @@ afaq_khoja_mausoleum = {
 		province_modifiers = {}
 		area_modifier = {}
 		country_modifiers = {
-			monthly_piety_accelerator = 0.002
 			religious_unity = 0.33
 			church_loyalty_modifier = 0.1
 		}
@@ -20941,7 +20834,6 @@ afaq_khoja_mausoleum = {
 		province_modifiers = {}
 		area_modifier = {}
 		country_modifiers = {
-			monthly_piety_accelerator = 0.003
 			religious_unity = 0.5
 			church_loyalty_modifier = 0.15
 		}

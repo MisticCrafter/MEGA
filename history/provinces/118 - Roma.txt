@@ -2,7 +2,7 @@ owner = SIC
 controller = SIC
 capital = "Roma"
 is_city = yes
-culture = mare-roman
+culture = roman
 religion = catholic
 trade_goods = paper
 base_tax = 12
@@ -19,3 +19,5 @@ discovered_by = nomad_group
 discovered_by = ottoman
 discovered_by = sub_saharan
 discovered_by = western
+
+add_cardinal 

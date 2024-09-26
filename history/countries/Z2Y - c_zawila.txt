@@ -10,7 +10,6 @@ set_country_flag = ZZZ_generated_converter_nation
 1444.11.11= {
 	monarch = {
 		name = "Astolfo"
-		monarch_name = "Astolfo IV"
 		dynasty = "de Bragan�a"
 		adm = 3
 		dip = 5

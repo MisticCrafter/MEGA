@@ -1,0 +1,62 @@
+namespace = ob_conversion
+
+province_event = {
+	id = ob_conversion.1
+	title = ob_conversion.1.t
+	desc = ob_conversion.1.d
+	picture = FARMING_eventPicture
+	
+	trigger = {
+		owner = {
+			culture_group = crusader_group
+			has_country_flag = OB_conversion
+		}
+		AND = {
+			OR = { 
+		culture_group = finno_ugric
+		culture_group = iranian
+		culture_group = tartar
+		culture_group = altaic
+		culture_group = evenks
+			}
+		OB_eligible_province_for_culture_conversion = yes
+		}
+	}
+	
+	goto = ROOT
+	
+	mean_time_to_happen = {
+		months = 220
+		modifier = {
+			factor = 3
+				OR = {
+					region = central_asia_region
+					region = west_siberia_region
+                    area = ural_area
+                    area = tannu_uriankhai_area
+                    area = bashkiria_area
+                    area = north_zungaria
+					area = zungaria_area
+				}
+		}
+		modifier = {
+			factor = 0.50
+			owner = {
+				has_country_flag = CRUSADER_EFFORTS
+			}
+		}
+	}
+	
+	option = {
+		name = ob_conversion.1.a
+		
+		ai_chance = {
+			factor = 1
+		}
+		
+		OB_convert_to_crusader_culture = yes
+	}
+}
+
+
+

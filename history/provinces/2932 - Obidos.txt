@@ -1,14 +1,10 @@
-owner = DAR
-controller = DAR
 capital = "Ouara"
-is_city = yes
 culture = kanuri
 religion = abyss_mystic
-trade_goods = livestock
+trade_goods = unknown
 base_tax = 2
 base_production = 2
 base_manpower = 1
-add_core = DAR
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

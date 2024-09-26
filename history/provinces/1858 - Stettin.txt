@@ -1,5 +1,5 @@
-owner = POL
-controller = POL
+owner = RUG
+controller = RUG
 capital = "Stettin"
 is_city = yes
 culture = old_pommeranian
@@ -9,7 +9,7 @@ base_tax = 1
 base_production = 4
 base_manpower = 2
 extra_cost = 10
-add_core = POL
+add_core = RUG
 add_core = POM
 discovered_by = east_african
 discovered_by = eastern

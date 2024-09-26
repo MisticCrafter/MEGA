@@ -1,32 +1,4 @@
 country_decisions = {
-	use_the_claim = {
-		color = { 196 24 18 }
-		potential = {
-			tag = OON
-			NOT = {
-				has_country_flag = estonia_claim_used
-			}
-		}
-
-		allow = {
-			NOT = {
-				alliance_with = EST
-				truce_with = EST
-			}
-		}
-
-		effect = {
-			livonia_area = {
-				add_claim = OON
-			}
-			add_claim = 35
-			add_core = 38
-			country_event = {
-				id = ez_knights_events.1
-			}
-			set_country_flag = estonia_claim_used
-		}
-	}
 	raid_the_trikai_treasury = {
 		color = { 227 190 25 }
 		potential = {

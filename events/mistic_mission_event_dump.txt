@@ -281,3 +281,35 @@ country_event = {
 		add_prestige = 1
 	}
 }
+
+# TODO Answering the Occitan Question
+country_event = {
+	id = flavor_mistic_swiss_missions.11
+	title = flavor_mistic_swiss_missions.11.t 
+	desc = flavor_mistic_swiss_missions.11.d 
+	picture = INFANTES_ARAGON_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_mistic_swiss_missions.11.a
+		add_prestige = 1
+	}
+}
+
+# TODO The Diary of Karl the Mad
+country_event = {
+	id = flavor_mistic_swiss_missions.12
+	title = flavor_mistic_swiss_missions.12.t 
+	desc = flavor_mistic_swiss_missions.12.d 
+	picture = INFANTES_ARAGON_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_mistic_swiss_missions.12.a
+		add_prestige = 1
+	}
+}

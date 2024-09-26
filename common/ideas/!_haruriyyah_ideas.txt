@@ -8,10 +8,7 @@ haruriyyah_ideas = {
 	}
 	trigger = {
 		tag = HYY
-		religion_group = muslim
-		NOT = { religion = sunni }
-		NOT = { religion = shia }
-		NOT = { religion = yazidi }
+		religion_group = christian
 		OR = {
 			government = theocracy
 			has_reform = feudal_theocracy

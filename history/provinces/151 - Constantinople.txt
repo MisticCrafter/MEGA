@@ -12,6 +12,10 @@ extra_cost = 26
 center_of_trade = 2
 add_core = LAE
 add_core = TRE
+add_permanent_claim = LAE
+add_permanent_claim = CEP
+add_permanent_claim = GRE 
+add_permanent_claim = EPI 
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian
@@ -25,3 +29,4 @@ add_permanent_province_modifier = {
 	duration = -1
 }
 add_province_triggered_modifier = BYZ_galata
+add_cardinal 

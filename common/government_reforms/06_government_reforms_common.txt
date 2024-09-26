@@ -508,7 +508,23 @@ governing_senate_reform = {
 		factor = 1
 	}
 }
+navy_with_order_reform = {
+	icon = "soldiers_6"
+	allow_normal_conversion = yes
+	potential = { tag = KNI }
+	trigger = { tag = KNI }
 
+	modifiers = {
+		max_admiral_fire = 1
+		sailors_recovery_speed = 0.33
+		global_ship_recruit_speed = -0.20
+		special_unit_forcelimit = 0.10
+		max_absolutism_effect = -0.15
+	}
+	ai = {
+		factor = 3
+	}
+}
 enforced_autocracy_reform = {
 	icon = russian_queen
 	potential = {
@@ -1151,7 +1167,7 @@ embedded_norse_government_reform = {
 			is_revolutionary = no
 			NOT = { has_dlc = "Emperor" }
 		}
-		religion = norse_pagan_reformed
+		religion = norse_pagan
 	}
 	modifiers = {
 		may_perform_slave_raid = yes
@@ -1909,6 +1925,36 @@ amphibious_specialization_reform = {
 			factor = 0
 			NOT = { max_sailors = 50000 }
 		}
+	}
+}
+winged_crowned_stags_reform = {
+	icon = "cavalry"
+	allow_normal_conversion = yes
+	potential = {
+		tag = Z09
+	}
+	trigger = {
+		tag = Z09
+	}
+	modifiers = {
+		drill_decay_modifier = -0.25
+		cavalry_cost = -0.10
+		cav_to_inf_ratio = 0.10
+	}
+	effect = {
+		add_country_modifier = {
+			name = winged_crowned_stags_modifier
+			duration = -1
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			remove_country_modifier = winged_crowned_stags_modifier
+		}
+	}
+	
+	ai = {
+		factor = 1000
 	}
 }
 

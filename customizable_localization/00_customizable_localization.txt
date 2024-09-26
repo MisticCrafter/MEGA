@@ -3184,7 +3184,7 @@ defined_text = {
 	text = {
 		localisation_key = norse_paganism_string
 		trigger = {
-			religion = norse_pagan_reformed
+			religion = norse_pagan
 		}
 	}
 	text = {
@@ -6339,7 +6339,7 @@ defined_text = {
 	text = {
 		localisation_key = ODIN_DEITY
 		trigger = {
-			religion = norse_pagan_reformed
+			religion = norse_pagan
 		}
 	}
 	text = {
@@ -6385,7 +6385,7 @@ defined_text = {
 			NOT = { religion = inti }
 			NOT = { religion = nahuatl }
 			NOT = { religion = mesoamerican_religion }
-			NOT = { religion = norse_pagan_reformed }
+			NOT = { religion = norse_pagan }
 			NOT = { religion = tengri_pagan_reformed }
 			NOT = { religion = hinduism }
 			NOT = { religion = sikhism }

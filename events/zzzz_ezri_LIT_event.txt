@@ -99,3 +99,94 @@ namespace = ez_knights_events
 			}
 		}
 	}
+	country_event = {
+		id = ez_knights_events.5
+		title = ez_knights_events.5.t
+		desc = ez_knights_events.5.d
+		picture = wihgfx_FEMALE_GENERAL_eventPicture
+
+		is_triggered_only = yes
+
+		option = {
+			name = ez_knights_events.5.opt1
+			livonia_area = {
+				add_claim = OON
+			}
+			add_claim = 35
+			add_core = 38
+			root = {
+				declare_war = EST
+			}
+		}
+	}
+	country_event = {
+		id = ez_knights_events.6
+		title = ez_knights_events.6.t
+		desc = ez_knights_events.6.d
+		picture = wihgfx_FEMALE_SCHOLAR_eventPicture
+
+		is_triggered_only = yes
+		
+		option = {
+			name = ez_knights_events.6.opt1
+			ai_chance = {
+				factor = 90
+			}
+			add_opinion = {
+				who = NOV
+				modifier = russian_treaties
+			}
+			add_opinion = {
+				who = OON
+				modifier = russian_treaties
+			}
+			add_truce_with = NOV
+			add_truce_with = OON
+		}
+
+		option = {
+			name = ez_knights_events.6.opt2
+			ai_chance = {
+				factor = 10
+			}
+			add_opinion = {
+				who = OON
+				modifier = anti_russian_treaties
+			}
+			add_opinion = {
+				who = NOV
+				modifier = anti_russian_treaties
+			}
+		}
+	}
+	country_event = {
+		id = ez_knights_events.7
+		title = ez_knights_events.7.t
+		desc = ez_knights_events.7.d
+		picture = east_slavic_DIPLOMACY_eventPicture
+
+		is_triggered_only = yes
+
+		option = {
+			name = ez_knights_events.7.opt1
+			ai_chance = {
+				factor = 100
+			}
+			add_historical_friend = OON
+			create_alliance = OON
+			add_treasury = 750
+			add_country_modifier = {
+				name = RUS_DIPLO_RELATIONS
+				duration = -1
+			}
+			set_country_flag = RUS_OON_ALLIANCE
+			OON = {
+				add_historical_friend = UKR
+				add_historical_friend = RUS
+			}
+			
+		}
+		option = {
+			name = ez_knights_events.7.opt2
+		}
+	}

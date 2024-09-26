@@ -30,7 +30,7 @@ add_accepted_culture = greek
 		death_date = 1443.12.30
 		female = yes
 		religion = catholic
-		culture = mare-roman
+		culture = roman
 	}
 	add_queen_personality = entrepreneur_personality
 	add_queen_personality = strict_personality
