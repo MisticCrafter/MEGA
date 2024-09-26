@@ -182,6 +182,32 @@ Survive = {
 				remove_government_reform = depressed_orthodox_church
 			}
 		}
+		oon_oppose_sweden = {
+			icon = mission_unite_scandinavia
+			required_missions = {
+			}
+			position = 5
+			trigger = {
+				OON = {
+					is_rival = SWE
+				}
+				any_claimed_province = {
+					owned_by = SWE
+				}
+				army_size_percentage = 1
+				NOT = {
+					has_estate = estate_nobles
+				}
+				manpower_percentage = 0.5
+			}
+			effect = {
+				add_country_modifier = {
+					name = troops_rallied
+					duration = 1825
+				}
+				declare_war = SWE
+			}
+		}
 	}
 
 
@@ -454,6 +480,7 @@ branch_3 = {
 			}
 			38 = {
 				change_religion = orthodox
+				set_c
 				add_base_tax = 1
 				add_base_production = 1
 				add_base_manpower = 2
@@ -547,6 +574,9 @@ branch_3 = {
 				estate_privilege = estate_burghers_forest_expansion
 			}
 			scandinavia_region = {
+				limit = {
+					owned_by = OON
+				}
 				add_province_modifier = {
 					name = OON_scandinavia_dev
 					duration = 1825
@@ -597,6 +627,46 @@ branch_3 = {
 				}
 			}
 			set_country_flag = no_mil_focus_set
+		}
+	}
+
+	oon_arty_barrage = {
+		icon = mission_cannons_firing
+		position = 7
+		required_missions = {
+			
+		}
+		trigger = {
+			num_of_artillery = 15
+			army_professionalism = 0.25
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = oon_artillery_barrage
+				duration = -1
+			}
+		}
+	}
+
+	oon_advanced_arty_production = {
+		icon = mission_industrial_forging
+		position = 8
+		required_missions = {
+			oon_arty_barrage
+		}
+		trigger = {
+			mil_tech = 14
+			num_of_artillery = 30
+			mil_power = 250
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = oon_arty_production
+				duration = -1
+			}
+			add_mil_power = -250
 		}
 	}
 }
@@ -928,6 +998,25 @@ branch_5 = {
 	has_country_shield = yes
 	potential = { tag = OON } 
 
+	oon_amry_improvements = {
+		icon = mission_pf_soldier
+		required_missions = {
+			
+		}
+		position = 1
+		trigger = {
+			army_size_percentage = 0.9
+			army_professionalism = 0.05
+			mil_tech = 5
+			monthly_mil = 13
+		}
+
+		effect = {
+			add_army_professionalism = 0.05
+			add_army_tradition = 5
+		}
+	}
+
 	oon_improve_orthodox_relations = {
 		icon = mission_hands_praying
 		required_missions = {
@@ -936,25 +1025,6 @@ branch_5 = {
 		position = 2
 		trigger = {	
 			OR = {
-				any_neighbor_country = {
-					NOT = {
-						tag = EST
-					}
-					NOT = {
-						tag = SWE
-					}
-					NOT = {
-						tag = NOV
-					}
-					NOT = {
-						tag = PSK
-					}
-					religion = catholic
-					has_opinion = {
-						who = ROOT
-						value = 50
-					}
-				}
 				DAN = {
 					has_opinion = {
 						who = ROOT
@@ -1108,16 +1178,17 @@ branch_5 = {
 			treasury = 750
 		}
 		effect = {
-				UKR = {
-					country_event = {
-						id = ez_knights_events.7
-					}
+			UKR = {
+				country_event = {
+					id = ez_knights_events.7
 				}
-				RUS = {
-					country_event = {
-						id = ez_knights_events.7
-					}
+			}
+			RUS = {
+				country_event = {
+					id = ez_knights_events.7
 				}
 			}
 		}
 	}
+
+}
