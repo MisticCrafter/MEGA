@@ -351,7 +351,7 @@ orleans_area = {
 # Low Countries				 		   #
 ########################################
 
-artesie_area = { #3
+picardie_area = { #3
 	87 88 1743
 }
 
