@@ -314,6 +314,8 @@
  # (Modifiers) from Estate Privileges
  estate_burghers_tigranic_autonomy_modifier: "Granted Tigranic Autonomy"
 
+ estate_knights_promote_grandmaster_cooldown: "Recently Annointed a Grandmaster"
+
  estate_astari_americathemes_modifier: "Sunset Themes"
  desc_estate_astari_americathemes_modifier: "This nation is being administrated per the Andal 'Themata' system, albeit adapted to the characteristics of the New World."
  estate_knights_castle_development_modifier: "Royal Patronage"

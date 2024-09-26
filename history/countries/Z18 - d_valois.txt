@@ -15,7 +15,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		mil = 6
 		birth_date = 1401.1.1
 		religion = catholic
-		primary_culture = cosmopolitan_french
+		culture = cosmopolitan_french
 	}
 }
 1444.11.11= {

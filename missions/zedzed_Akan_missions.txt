@@ -18,7 +18,7 @@ akaman_slot_1_missions = {
 		completed_by = 1501.1.1
 		
 		provinces_to_highlight = {
-			province = 1098
+			province_id = 1098
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
@@ -219,7 +219,7 @@ akaman_slot_1_missions = {
 			}
 			765 = {
 				add_province_modifier = {
-					name = "cacao_plantations"
+					name = "aka_cacao_plantations"
 					duration = -1
 				}
 			}
