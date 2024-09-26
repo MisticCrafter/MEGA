@@ -2,7 +2,6 @@ capital = "Al-Junaynahr"
 culture = daju
 religion = abyss_mystic
 trade_goods = wool
-fort_15th = yes
 base_tax = 1
 base_production = 1
 base_manpower = 1
