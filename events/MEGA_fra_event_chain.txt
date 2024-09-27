@@ -106,7 +106,7 @@ country_event = {
     option = {
         name = megafrance.2.2
         ai_chance = {
-            factor = 1
+            factor = 1.25
             modifier = {
                 factor = 0
                 is_rival = FRA
@@ -170,11 +170,41 @@ country_event = {
             limit = {
                 owns = 183
             }
-            set_capital = 183
-            change_tag = FRA
+                183 = { #Paris
+                    move_capital_effect = yes
+                }
+                change_tag = FRA
+                swap_non_generic_missions = yes
+                on_change_tag_effect = yes
+                remove_non_electors_emperors_from_empire_effect = yes
+                if = {
+                    limit = {
+                        NOT = { government_rank = 2 }
+                    }
+                    set_government_rank = 2
+                }
+                france_region = {
+                    limit = {
+                        NOT = { owned_by = ROOT }
+                    }
+                    add_permanent_claim = FRA
+                }
+                add_country_modifier = {
+                    name = "centralization_modifier"
+                    duration = 7300
+                }
+                add_prestige = 25
+                if = {
+                    limit = {
+                        has_custom_ideas = no
+                    }
+                    country_event = { id = ideagroups.1 } #Swap Ideas
+                }
+                set_country_flag = formed_france_flag
+            }
         }
         set_in_empire = no
-    }
+    
 }
 
 #War.
@@ -187,24 +217,32 @@ country_event = {
     is_triggered_only = yes
 
     option = {
-        megafrance.4.1
+        name = megafrance.4.1
+        ai_chance = {
+			factor = 100 #Shouldn't take this from them really.
+		}
         BUR = {
-            declare_war_with_cb = {
-                who = FRA
-                casus_belli = cb_core
-            }
-        }
+			declare_war_with_cb = {
+				who = FRA
+				casus_belli = cb_hundred_years_war
+			}
+            set_in_empire = no
+		}
+
         BUR = {
             declare_war_with_cb = {
                 who = BRI
-                casus_belli = cb_core
+                casus_belli = cb_hundred_years_war
             }
         }
         BRI = {
             declare_war_with_cb = {
                 who = FRA
-                casus_belli = cb_core
+                casus_belli = cb_hundred_years_war
             }
+            set_in_empire = no
         }
     }
 }
+
+

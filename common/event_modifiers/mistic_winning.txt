@@ -160,22 +160,22 @@ SWI_romansh_forts = {
 }
 
 SWI_alm_autonomy = {
-    state_governing_cost = -0.5
-    governing_capacity_modifier = 0.25
-    global_unrest = -4
+    state_governing_cost = -0.15
+    governing_capacity_modifier = 0.10
+    global_unrest = -2
 }
 
 SWI_applemod = {
     global_supply_limit_modifier = 0.25
     global_prosperity_growth = 0.25
-    global_monthly_devastation = 0.25
+    global_monthly_devastation = -0.25
     monthly_splendor = 1
 }
 
 SWI_arrowmod = {
     movement_speed = 0.10
     morale_damage_received = -0.05
-    reserves_organisation = -0.25
+    reserves_organisation = 0.25
     war_exhaustion = -0.10
 }
 
@@ -183,11 +183,11 @@ SWI_arrowmod = {
 SWI_helvetic_dominance = {
     movement_speed = 0.20
     morale_damage_received = -0.10
-    reserves_organisation = -0.25
+    reserves_organisation = 0.25
     war_exhaustion = -0.15
     global_supply_limit_modifier = 0.25
     global_prosperity_growth = 0.25
-    global_monthly_devastation = 0.25
+    global_monthly_devastation = -0.25
     monthly_splendor = 1
     all_power_cost = -0.05
 }
