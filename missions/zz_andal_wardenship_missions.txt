@@ -70,7 +70,7 @@ wardenship_slot_1_missions = {
     wardenship_get_astari = {
         icon = mission_expand_into_the_forest
         position = 3
-        required_missions = { wardenship_get_astari }
+        required_missions = { wardenship_develop_capital }
         completed_by = 1455.1.1
 
         provinces_to_highlight = { }
