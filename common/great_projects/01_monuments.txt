@@ -14862,7 +14862,7 @@ qhapaq_nam = {
 	build_trigger = {
 		OR = {
 			culture_group = andean_group
-			culture = cara
+			culture = muisca
 			culture = chachapoyan
 		}
 		province_is_or_accepts_culture = yes
@@ -14877,7 +14877,7 @@ qhapaq_nam = {
 	can_use_modifiers_trigger = {
 		OR = {
 			culture_group = andean_group
-			culture = cara
+			culture = muisca
 			culture = chachapoyan
 		}
 		province_is_or_accepts_culture = yes
@@ -14886,7 +14886,7 @@ qhapaq_nam = {
 	can_upgrade_trigger = {
 		OR = {
 			culture_group = andean_group
-			culture = cara
+			culture = muisca
 			culture = chachapoyan
 		}
 		province_is_or_accepts_culture = yes

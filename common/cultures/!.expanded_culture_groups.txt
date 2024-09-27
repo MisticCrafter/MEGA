@@ -1072,7 +1072,7 @@ je_tupi = {
 je = {
 }
 maranon = {
-	jivaro = {
+	chachapoyan = {
 		primary = JIV
 	}
 }
@@ -1098,7 +1098,7 @@ carribean = {
 	arawak = { #Taino
 		primary = QQA
 	}
-	maipurean = {
+	arawak = {
 		primary = MOX
 	}
 }
