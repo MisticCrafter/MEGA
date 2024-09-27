@@ -200,9 +200,9 @@ ARC_house_united = {
 
 ARC_nobility_dissolved = {
     reinforce_speed = -0.25
-    global_manpower_modifier = -0.33
-    land_forcelimit_modifier = -0.33
-    allowed_tercio_fraction = 0.33
+    global_manpower_modifier = -0.25
+    land_forcelimit_modifier = -0.25
+    allowed_tercio_fraction = 0.25
 }
 
 ###
@@ -482,4 +482,9 @@ ARC_house_of_myron = {
     local_autonomy = 0.03
     local_manpower_modifier = 0.5
     picture = "andalos_narathenos"
+}
+
+ARC_wardenguard = {
+    allowed_tercio_fraction = 0.2
+    has_tercio = yes
 }
