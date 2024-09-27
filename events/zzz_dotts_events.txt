@@ -520,3 +520,399 @@ country_event = {
 		override_country_name = ARI
 	}
 }
+#sisterhood banking shiet 
+country_event = { #initial offer
+	id = dotts_events.9
+	title = dotts_events.9.t
+	desc = dotts_events.9.d
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	option = { # Buys weapons
+		trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						tag = OON
+						mission_completed = oon_develop_swedish_arms
+					}
+					production_leader = {
+						trade_goods = iron
+					}
+				}
+				any_owned_province = {
+					AND = {
+						trade_goods = iron
+						NOT = {
+							has_province_modifier = dotts_buying_arms
+						}
+					}
+				}
+			}
+		}
+		tooltip = {
+			custom_tooltip = banking_offers_tt
+			add_country_modifier = {
+				name = dotts_buying_arms
+				duration = 3650
+			}
+			add_years_of_income = -1
+		}
+		hidden_effect = {
+			FROM = {
+				set_country_flag = buying_arms_flag
+				country_event = {
+					id = dotts_events.13
+				}
+			}
+		}
+		ai_chance = { 
+			factor = 20
+			modifier = {
+				factor = 2
+				years_of_income = 3
+			}
+			modifier = {
+				factor = 0
+				is_in_large_debt = yes
+			}
+		}
+	}
+	option = { #Loans
+		trigger = {
+			FROM = {
+				years_of_income = 2
+			}
+		}
+		tooltip = {
+			custom_tooltip = banking_offers_tt
+			add_loan = {
+				fixed_interest = 2
+				duration = 60
+			}
+			add_loan = {
+				fixed_interest = 2
+				duration = 60
+			}
+		}
+		hidden_effect = {
+			FROM = {
+				set_country_flag = loan_offer_flag
+				country_event = {
+					id = dotts_events.13
+				}
+			}
+		}
+		ai_chance = { 
+			factor = 20
+			modifier = {
+				factor = 2
+				is_in_deficit = yes
+			}
+			modifier = {
+				factor = 1
+				is_in_large_debt = yes
+			}
+		}
+	}
+	option = { #sell merc - sisterhood sect
+		trigger = {
+			FROM = {
+				tag = OON
+			}
+			any_country = {
+				NOT = {
+					has_country_modifier = dotts_sisterhood_sect
+				}
+			}
+		}
+		custom_tooltip = banking_offers_tt
+		custom_tooltip = sisterhood_sect_enable_tt
+		hidden_effect = {
+			FROM = {
+				set_country_flag = sisterhood_sect_flag
+				country_event = {
+					id = dotts_events.13
+				}
+			}
+		}
+		ai_chance = { 
+			factor = 20
+			modifier = {
+				factor = 1
+				is_at_war = yes
+			}
+			modifier = {
+				factor = 2
+				manpower_percentage = 0.2
+			}
+			modifier = {
+				factor = 2
+				war_score = -20
+			}
+		}
+	}
+	option = { #investment 
+		trigger = {
+			FROM = {
+				years_of_income = 2
+			}
+		}
+		custom_tooltip = banking_offers_tt
+		tooltip = {
+			add_years_of_income = -2
+			random_list = {
+				50 = {
+					country_event = {
+						id = dotts_events.11
+						days = 730
+					}
+					FROM = {
+						country_event = {
+							id = dotts_events.11
+							days = 730
+						}
+					}
+				}
+				50 = {
+					country_event = {
+						id = dotts_events.12
+						days = 730
+					}
+					FROM = {
+						country_event = {
+							id = dotts_events.12
+							days = 730
+						}
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			FROM = {
+				set_country_flag = investment_offer_flag
+				country_event = {
+					id = dotts_events.13
+				}
+			}
+		}
+		ai_chance = { 
+			factor = 20
+			modifier = {
+				factor = 2
+				years_of_income = 3
+			}
+			modifier = {
+				factor = 0
+				is_in_large_debt = yes
+			}
+		}
+	}
+	option = { #tradeposts
+		trigger = {
+			NOT = {
+				has_country_modifier = dotts_trade_posts
+			}
+		}
+		tooltip = {
+			custom_tooltip = banking_offers_tt
+			FROM = {
+				add_years_of_income = 1
+			}
+			add_years_of_income = -1
+			add_country_modifier = {
+				name = dotts_trade_posts
+				duration = 1825
+			}
+		}
+		hidden_effect = {
+			FROM = {
+				set_country_flag = tradepost_offer_flag
+				country_event = {
+					id = dotts_events.13
+				}
+			}
+		}
+		ai_chance = { 
+			factor = 20
+			modifier = {
+				factor = 2
+				years_of_income = 2
+			}
+			modifier = {
+				factor = 2
+				is_in_large_debt = yes
+			}
+		}
+	}
+	option = { #I lied lol, I don't want your GARBAGE RAAAAH I HATE THE BANKS
+		
+	}
+}
+country_event = { #Loan money comes back yayayay
+	id = dotts_events.10
+	title = dotts_events.10.t
+	desc = dotts_events.10.d
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		add_years_of_income = 3
+	}
+}
+country_event = { #investment worked
+	id = dotts_events.11
+	title = dotts_events.11.t
+	desc = dotts_events.11.d
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		add_years_of_income = 3
+	}
+}
+country_event = { #investment noworked...
+	id = dotts_events.12
+	title = dotts_events.12.t
+	desc = dotts_events.12.d
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		add_prestige = -25
+	}
+}
+country_event = { #Event that gets sent to initial goober to either accept what the other goober wants or no, hoenstly uneeded I just hate you people to death
+	id = dotts_events.13
+	title = dotts_events.13.t
+	desc = dotts_events.13.d
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	after = {
+		clr_country_flag = buying_arms_flag
+		clr_country_flag = loan_offer_flag
+		clr_country_flag = sisterhood_sect_flag
+		clr_country_flag = investment_offer_flag
+		clr_country_flag = tradepost_offer_flag
+	}
+
+	option = {
+		trigger = {
+			has_country_flag = buying_arms_flag
+		}
+		add_years_of_income = 2
+		every_owned_province = {
+			limit = {
+				trade_goods = iron
+			}
+			add_province_modifier = {
+				name = dotts_selling_arms
+				duration = 3650
+			}
+		}
+		FROM = {
+			add_country_modifier = {
+				name = dotts_buying_arms
+				duration = 3650
+			}
+			add_years_of_income = -1	
+		}
+	}
+	option = { #loan offer
+		trigger = {
+			has_country_flag = loan_offer_flag
+		}
+		FROM = {
+			add_loan = {
+				fixed_interest = 2
+				duration = 60
+			}
+			add_loan = {
+				fixed_interest = 2
+				duration = 60
+			}
+		}
+		add_years_of_income = -2
+		add_country_modifier = {
+			name = dotts_loan_given
+			duration = 3650
+		}
+		country_event = {
+			id = dotts_events.10
+			days = 1825
+		}
+	}
+	option = { #sisterhood sect
+		trigger = {
+			has_country_flag = sisterhood_sect_flag
+		}
+		FROM = {
+			custom_tooltip = sisterhood_sect_enable_tt
+			add_country_modifier = {
+				name = dotts_sisterhood_sect
+				duration = 1825
+				hidden = yes
+			}
+			add_years_of_income = -1
+		}
+		add_years_of_income = 1
+	}
+	option = {
+		trigger = {
+			has_country_flag = investment_offer_flag
+		}
+		FROM = {
+			add_years_of_income = -2
+		}
+		add_years_of_income = -2
+		random_list = {
+			50 = {
+				country_event = {
+					id = dotts_events.11
+					days = 730
+				}
+				FROM = {
+					country_event = {
+						id = dotts_events.11
+						days = 730
+					}
+				}
+			}
+			50 = {
+				country_event = {
+					id = dotts_events.12
+					days = 730
+				}
+				FROM = {
+					country_event = {
+						id = dotts_events.12
+						days = 730
+					}
+				}
+			}
+		}
+	}
+	option = {
+		trigger = {
+			has_country_flag = tradepost_offer_flag
+		}
+		FROM = {
+			add_years_of_income = -1
+			add_country_modifier = {
+				name = dotts_trade_posts
+				duration = 1825
+			}
+		}
+		add_years_of_income = 1
+		
+	}
+	option = {
+		
+	}
+}

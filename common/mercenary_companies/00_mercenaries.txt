@@ -3061,6 +3061,46 @@ jerusalem_legion = {
 		morale_damage_received = -0.10
 	}
 }
+sisterhood_sect_knights = {
+	mercenary_desc_key = FREE_OF_FORCELIMIT_COST
+	counts_towards_force_limit = no
+	regiments_per_development = 0.04
+
+	cost_modifier = 0
+	home_province = 40
+
+	cavalry_weight = 0
+	artillery_weight = 0
+	
+	max_size = 8
+	min_size = 8
+
+	sprites = {
+		easterngfx_sprite_pack
+	}
+
+	trigger = {
+		OR = {
+			has_country_modifier = dotts_sisterhood_sect
+			AND = {
+				tag = OON
+				any_country = {
+					NOT = {
+						has_country_modifier = dotts_sisterhood_sect
+					}
+				}
+			}
+		}
+		
+	}
+
+	modifier = {
+		morale_damage = 0.25
+		fire_damage_received = 0.20
+		shock_damage_received = 0.20
+	}
+}
+#get away from me debi 
 vaquero_knights = {
 	regiments_per_development = 0.04
 
