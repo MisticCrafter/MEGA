@@ -11,6 +11,7 @@ estate_janissaries = {
 		OR = {
 			has_government_attribute = enables_estate_janissaries
 			has_enabled_estate = { estate = estate_janissaries }
+			has_country_flag = SWI_rmn_palatini
 			AND = {
 				has_unlocked_estate = { estate = estate_janissaries }
 				NOT = { has_government_attribute = is_pirate_republic_reform }
