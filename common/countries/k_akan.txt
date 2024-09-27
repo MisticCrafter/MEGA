@@ -1,9 +1,16 @@
 ck2_converter_generated = yes
 graphical_culture = africangfx
 color = { 225 25 25 }
+historical_idea_groups = {
+	trade_ideas
+	exploration_ideas
+	quality_ideas
+	expansion_ideas
+	religious_ideas
+}
 monarch_names = {
 	"Bangben #1" = 10
-	"Bi Awur´bi #0" = 0
+	"Bi Awurï¿½bi #0" = 0
 	"Flomo #1" = 10
 	"Gyem Che #0" = 0
 	"Kwesi #0" = 0
