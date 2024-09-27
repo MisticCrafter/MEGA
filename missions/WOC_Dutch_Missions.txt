@@ -446,6 +446,7 @@ NED_2 = {
 		}
 
 		effect = {
+			remove_country_modifier = astolfo_i_old_age_zeven_provincies_modifier
 			add_country_modifier = {
 				name = zeven_provincies_crisis_1
 				duration = -1
@@ -2115,7 +2116,7 @@ NED_ideoligion_rationalism_path_slot_3 = {
 				name = FNT_foundation_modifier
 				duration = 3650
 			}
-			add_prestige = 25
+			
 			add_stability_or_adm_power = yes
 		}
 	}
@@ -2131,7 +2132,7 @@ NED_ideoligion_rationalism_path_slot_3 = {
 		trigger = {
 			has_government_power = {
 				mechanic_type = queen_mother_militarization_mechanic
-				power_type = militarized_society
+				power_type = queen_mother_militarized_society
 				value = 100
 			}
 
@@ -2627,7 +2628,7 @@ NED_3_colonies = {
 
 	NED_malacca_trade = {
 		icon = mission_portuguese_malacca
-		position = 22
+		position = 23
 		required_missions = { NED_access_to_india } 
 		provinces_to_highlight = {  
 			OR = {

@@ -273,18 +273,31 @@
  ARC_abyssinia_alliance: "Andal Weaponry"
  ARC_hellenic_refugees: "Hellenic Refugees"
  ARC_house_united: "A House United"
+ ARC_house_of_zacantor: "House of Zacantor"
+ ARC_house_of_vaz_mardel: "House of Vaz Mardel"
+ ARC_house_of_samara: "House of Samara"
+ ARC_house_of_garnatha: "House of Garnatha"
+ ARC_house_of_selmanor: "House of Selmanor"
+ ARC_house_of_valsa: "House of Valsa"
+ ARC_house_of_scolarenos: "House of Scolarenos"
+ ARC_house_of_myron: "House of Myrón"
 
  # (Modifiers) from Tigranic Interactions
  tigranic_hellenic_refugees: "Hellenic Refugees"
  tigranic_global_cooldown_modifier: "Recently activated Aspect"
- tigranic_riveraspect_cooldown_modifier: "Recently issued River Decree"
+ tigranic_blessing_cooldown_modifier: "Recently received Primarchal Blessing"
  tigranic_greataspect_cooldown_modifier: "Recently called upon the Realm"
+ tigranic_blessing_madragal_modifier: "Primarchal Blessing: Madragal"
+ tigranic_blessing_athens_modifier: "Primarchal Blessing: Athens"
+ tigranic_blessing_malacca_modifier: "Primarchal Blessing: Malacca"
+ tigranic_blessing_kumasi_modifier: "Primarchal Blessing: Kumasi"
+ tigranic_blessing_newworld_modifier: "Primarchal Blessing: New World"
  tigranic_divination_adm_modifier: "Premonitions of a Good Harvest"
  tigranic_divination_dip_modifier: "Premonitions of a Lucky Encounter"
  tigranic_divination_mil_modifier: "Premonitions of a Great Battle"
  tigranic_festival_modifier: "Magnificent Feast"
  tigranic_triumph_modifier: "Glorious Triumph"
- tigranic_paladins_modifier: "Lords Palatine in High Command"
+ tigranic_royalguard_modifier: "The Finest Knights in the Realm"
  tigranic_warsongs_modifier: "Romanticized Feats"
  tigranic_fertility_modifier: "Rite of Fertility"
  tigranic_feedland_modifier: "From the Great Rivers, comes §GLife§!"
@@ -333,6 +346,10 @@
  catholic_madragal: "The Conquest of Madragal"
  catholic_canterbury: "The Conquest of Canterbury"
  catholic_geneva: "The Conquest of Geneva"
+
+ # Opinion Modifiers
+ opinionARC_helped_renegades: "Sheltered Renegades"
+ opinionARC_denied_renegades: "Turned Away Renegades"
  ###
 
 
@@ -384,8 +401,11 @@
  tigranic_divination_mil_tt: "§GEvent Insight:§!\nThe signs will lead our ruler to anticipate a §Ygreat battle§! in the coming moons."
  tigranic_greatcouncil_toleragal_tt: "Our liege has called for a Great Council in Leragal, and we will attend. It will start in §Y6 months§!."
  tigranic_greatcouncil_tocapital_tt: "Our liege has called for a Great Council in [From.Capital.GetName], and we will attend. It will start in §Y6 months§!."
- tigranic_feedland_tt: "§RNote:§! This decree is mutually exclusive with '§YStewardship of the Rivers: Wealth§!'!"
- tigranic_exploitland_tt: "§RNote:§! This decree is mutually exclusive with '§YStewardship of the Rivers: Life§!'!"
+ tigranic_blessing_madragal_tt: "Every owned province in the §YWestern Europe§!, §YNorthern Africa§! or §YSouthern Africa§! gets..."
+ tigranic_blessing_athens_tt: "Every owned province in the §YEastern Europe§!, §YLevant§! or §YPersia§! subcontinents gets..."
+ tigranic_blessing_malacca_tt: "Every owned province in the §YIndia!, §YEast Indies§!, §YChina§! or §YOceania§! gets..."
+ tigranic_blessing_kumasi_tt: "Every owned province in §YAfrica§! that follows the §YTigranic§! faith will get..."
+ tigranic_blessing_newworld_tt: "Every owned province in the §YNew World§! that follows the §YTigranic§! faith will..."
  tigranic_crusade_overlord_tt: "Until the end of our current religious war, we will get:\n   Manpower in True Faith Provinces: §G+30.0%§!\n   Morale Damage: §G+10.0%§!\n   Church Power: §G+10.0%§!\n   Yearly Prestige: §G+1.00§!\nAnd all of our §Ysubjects§! will get:\n   Manpower in True Faith Provinces: §G+15.0%§!\n   Morale Damage: §G+5.0%§!\n   Church Power: §G+5.0%§!\n   Yearly Prestige: §G+0.50§!"
  tigranic_crusade_subject_tt: "Until the end of our liege's current religious war, we will get:\n   Manpower in True Faith Provinces: §G+15.0%§!\n   Morale Damage: §G+5.0%§!\n   Church Power: §G+5.0%§!\n   Yearly Prestige: §G+0.50§!"
  tigranic_owns_river_province_tt: "Owns at least one province that borders or contains a §Ymajor river§!."
@@ -519,6 +539,10 @@
  flavor_andalos.23.title: "The Edict of Lisarra"
  flavor_andalos.23.desc: "kiss my ass noble boy"
  flavor_andalos.23.a: "So mote it be!"
+ flavor_andalos.24.title: "The Renegade Sons of Andalos"
+ flavor_andalos.24.desc: "It is not uncommon for lords to hear petitions in their halls. It is, in fact, one of the primary functions of feudal lords, besides administering a fief in their liege's name and answering the call of arms when one is sent. All manner of counts and dukes spend hours upon hours listening to the woes of their subjects, adjudicating conflicts and the like.\n\nA monarch, however? Not so much.\n\nAnd yet, [Root.Monarch.GetName] sat upon the throne today, opposite a seemingly-endless line of wide-eyed petitioners. One after the other, they came, no different than they would've in any other holdfast or keep - though perhaps a tad more apprehensively. And then, a man in rich garbs - no doubt a noble, though no doubt one of our own either - stepped up and spoke, and for every sentence he said, [Root.Monarch.GetName]'s eyes grew wider. An Andal nobleman, recently estranged and cast out from his homeland - more than a few gasps could be heard as he detailed how the Archon in Sintra had disposed of his noblemen - seeking a place to start life anew. He pledged the wealth and service of his house in fealty to our realm, in exchange for a fief of his own.\n\nNormally, it would be unwise to turn away coin and swords, especially ones given so freely, but the troubles in Andalos speak for themselves: a dead king, a realm torn in two and a legendary dynasty at the brink of ruin... The man knelt, and [Ruler.Monarch.GetName] pondered."
+ flavor_andalos.24.a: "Rise, my lord! We have much to discuss..."
+ flavor_andalos.24.b: "Begone, traitorous scum!"
  # Events (Tigranic)
  flavor_tigranic.1.title: "Divine the Stars"
  flavor_tigranic.1.desc: "mlem"
@@ -529,13 +553,13 @@
  flavor_tigranic.3.title: "A Triumph in [Root.Capital.GetCapitalName]"
  flavor_tigranic.3.desc: "mlem"
  flavor_tigranic.3.a: "counts > grandees. counts > patricians. counts > ALL"
- flavor_tigranic.4.title: "Annointing a Lord Palatine"
+ flavor_tigranic.4.title: "The Finest in the Realm"
  flavor_tigranic.4.desc: "mlem"
  flavor_tigranic.4.a: "They're rare gems, but truer than most!"
  flavor_tigranic.5.title: "Hymns of Good War"
  flavor_tigranic.5.desc: "mlem"
  flavor_tigranic.5.a: "Such splendor... Such valour... Truly a song for the ages!"
- flavor_tigranic.6.title: "Rite of Fertility"
+ flavor_tigranic.6.title: "Day of Ardent Joy"
  flavor_tigranic.6.desc: "mlem"
  flavor_tigranic.6.a: "Gentlemen! I must retire for the night."
  flavor_tigranic.7.title: "From the Rivers come Life!"
@@ -709,16 +733,22 @@
  desc_tigranic_arrange_a_festival: "Our monarch will summon every lord and lady in the realm for a §Ygreat festival§!, soon to be held in our capital. This is an opportunity to §Yform bonds with the high nobility§! and to smooth over any existing grudges or disagreements."
  tigranic_hold_a_triumph: "Hold a Triumph"
  desc_tigranic_hold_a_triumph: "Owing to our recent victories and martial successes, our monarch will arrange for a glorious §Ytriumph§! to be held throughout the streets of our capital - it is sure to §Yboost morale§! and renew faith and confidence in all who witness it."
- tigranic_paladins: "Annoint a Lord Palatine"
- desc_tigranic_paladins: "Many of our greatest generals and military commanders come from the leadership of the Palatine brotherhoods scattered across the nation, and we are currently in dire need of such men. Our monarch will personally annoint one such leader and bring him into our service."
+ tigranic_royalguard: "Complete the Royalguard"
+ desc_tigranic_royalguard: "The safety of our ruler is paramount. We will accept only the finest knights in the realm to guard them and their family, and there is no better way to seek out such men than a great tourney!"
  tigranic_warsongs: "Hymns of Good War"
  desc_tigranic_warsongs: "Our churches and temples will spread tales of great deeds and sing hymns of valorous feats committed by our men, making our faithful know just how important the making of Good War is to our society."
- tigranic_rite_of_fertility: "Rite of Fertility"
+ tigranic_rite_of_fertility: "Day of Ardent Joy"
  desc_tigranic_rite_of_fertility: "*censored*"
- tigranic_feed_the_land: "§OStewardship of the Rivers:§! §GLife§!"
- desc_tigranic_feed_the_land: "Every province that borders or contains a §Ymajor river§! producing §YGrain§!, §YLivestock§! or §YTea§! will receive the following modifier:\nLocal Development Cost: §G+10.0%§!\nLocal Manpower Modifier: §G+50.0%§!"
- tigranic_exploit_the_land: "§OStewardship of the Rivers:§! §RWealth§!"
- desc_tigranic_exploit_the_land: "Every province that borders or contains a §Ymajor river§! producing §YCotton§!, §YSugar§!, §YSpices§! or §YCocoa§! will receive the following modifier:\nLocal Goods Produced Modifier: §G+25.0%§!"
+ tigranic_blessing_madragal: "§OPrimarchal Blessing: Madragal§!"
+ desc_tigranic_blessing_madragal: "As custodians of the Primarchal Seat of §OMadragal§!, we will call upon the Primarch and receive his blessing."
+ tigranic_blessing_athens: "§OPrimarchal Blessing: Athens§!"
+ desc_tigranic_blessing_athens: "As custodians of the Primarchal Seat of §OAthens§!, we will call upon the Primarch and receive his blessing."
+ tigranic_blessing_malacca: "§OPrimarchal Blessing: Malacca§!"
+ desc_tigranic_blessing_malacca: "As custodians of the Primarchal Seat of §OMalacca§!, we will call upon the Primarch and receive his blessing."
+ tigranic_blessing_kumasi: "§OPrimarchal Blessing: Kumasi§!"
+ desc_tigranic_blessing_kumasi: "As custodians of the Primarchal Seat of §OKumasi§!, we will call upon the Primarch and receive his blessing."
+ tigranic_blessing_newworld: "§OPrimarchal Blessing: New World§!"
+ desc_tigranic_blessing_newworld: "As custodians of the Primarchal Seat of the §ONew World§!, we will call upon the Primarch and receive his blessing."
  tigranic_lessons_of_valerio: "§TLessons of Valerio§!"
  desc_tigranic_lessons_of_valerio: "Valerio the Smith of Wonders was renowned for his commitment to §Ycrafting and engineering§!, having sponsored many alchemists and engineers alike, along with having brought a few notable inventions into the world himself - to face our current challenges, we should strive to emulate him."
  tigranic_lessons_of_tigranna: "§TLessons of Tigranna§!"
@@ -759,6 +789,8 @@
  knights_influence_modifier: "[Country.GetKnightsName] Influence"
  knights_absolutism_loyalty_modifier: "[Country.GetKnightsName] Loyalty Equilibrium Negator"
  mechanic_no_knights_loyalty_loss_from_absolutism_yes: "Absolutism no longer reduces §Y[Country.GetKnightsName]§! loyalty."
+
+ estate_privileges_and_agendas_events.3.p: "The Proposal of the [Root.GetKnightsName]"
 
  ### ESTATE PRIVILEGES ###
 
@@ -805,6 +837,30 @@
  estate_knights_investiture_desc: "WIP"
 
  ###
+
+ ### ESTATE AGENDAS ###
+
+ estate_knights_hire_advisor: ""
+ estate_knights_fire_advisor: ""
+ estate_knights_get_allies: "Build Alliances"
+ estate_knights_befriend_rival_of_rival: "Befriend [rival_country.GetUsableName]'s Rivals"
+ estate_knights_restore_legitimacy: "Restore [Root.GetLegitimacyOrMeritocracy]"
+ estate_knights_relations_with_x: "Improve Relations with [agenda_country.GetUsableName]"
+ estate_knights_break_coalition: "Break the Coalition"
+ estate_knights_retake_core: "Retake [agenda_province.GetName]"
+ estate_knights_crush_revolts: "Crush the Rebels"
+ estate_knights_expand_into_x: "Expand into [agenda_province.GetAreaName]"
+ estate_knights_complete_conquest_of_x: "Complete the Conquest of [agenda_province.GetAreaName]"
+ estate_knights_build_an_army: "Build an Army for our Nation"
+ estate_knights_bigger_army_than_rival: "Protect against [agenda_country.GetUsableName]"
+ estate_knights_build_up_manpower_reserves: "Build up our Manpower Reserves"
+ estate_knights_develop_x: "Increase Manpower in [agenda_province.GetName]"
+ estate_knights_build_army_building_in_y: "Expand Military Infrastructure in [agenda_province.GetName]"
+ estate_knights_build_fort_building_in_y: "Fortify [agenda_province.GetName]"
+ estate_knights_build_manufactory_in_y: "Build a Manufactory in [agenda_province.GetName]"
+ estate_knights_build_university_in_y: "Build a University in [agenda_province.GetName]"
+
+ ###
  
  ### GREAT PROJECTS ###
 
@@ -839,11 +895,16 @@
 
  # Colonial Nation Names
  ATTICA: "Attica"
+ COLONIAL_THE_CARRIBEAN_Andal_West_Indies: "Andal West Indies"
  COLONIAL_COLOMBIA_Aeliseia: "Aelyseía"
  COLONIAL_PERU_Tavassereia: "Tavaserreía"
  COLONIAL_LA_PLATA_Arganteia: "Arganteía"
  COLONIAL_MEXICO_New_Andalos: "Andaleía Nias"
  COLONIAL_LOUISIANA_Tigraneia: "Tigraneía"
+
+ COLONIAL_BRAZIL_Egyannuaman: "Égyannuaman"
+ COLONIAL_MEXICO_Mayekro: "Mayékro"
+ COLONIAL_LA_PLATA_Guareman: "Guaréman"
  ###
 
 

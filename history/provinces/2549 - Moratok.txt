@@ -1,5 +1,5 @@
 capital = "Moratok"
-culture = powhatan
+culture = abenaki
 religion = totemism
 trade_goods = unknown
 base_tax = 1

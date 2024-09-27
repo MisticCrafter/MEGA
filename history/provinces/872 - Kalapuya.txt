@@ -1,5 +1,5 @@
 capital = "Siuslaw"
-culture = chinook
+culture = salish
 religion = totemism
 trade_goods = unknown
 base_tax = 2

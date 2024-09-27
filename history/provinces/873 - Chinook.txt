@@ -1,8 +1,8 @@
 owner = CNK
 controller = CNK
-capital = "Chinook"
+capital = "Salish"
 is_city = yes
-culture = chinook
+culture = salish
 religion = totemism
 trade_goods = fur
 base_tax = 2

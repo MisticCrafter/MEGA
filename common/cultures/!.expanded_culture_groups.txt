@@ -1103,21 +1103,18 @@ carribean = {
 	}
 }
 eskaleut = {
-	aleutian = {
-		primary = SGP
-	}
 	inuit = {
 		primary = KLL
 	}
 }
 central_algonquian = {
-	algonquin = {
-		primary = AGQ #This is Algonquin the country, it does have Algonquin as its primary culture, so why is it not the primary nation?
+	innu = {
+		primary = AGQ #This is Innu the country, it does have Innu as its primary culture, so why is it not the primary nation?
 	}
 }
 plains_algonquian = {
-	bungi = {
-		primary = NAK #This is Nakawe, only country with Bungi as its Primary culture
+	blackfoot = {
+		primary = NAK #This is Nakawe, only country with Blackfoot as its Primary culture
 	}
 }
 eastern_algonquian = {
@@ -1135,10 +1132,10 @@ sonoran = {
 apachean = {
 }
 na_dene = {
-	chipewyan = {
+	haida = {
 		primary = SYD
 	}
-	athabascan = {
+	haida = {
 		primary = DNT
 	}
 }

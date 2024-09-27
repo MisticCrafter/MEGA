@@ -1,5 +1,5 @@
 capital = "Dakota"
-culture = dakota
+culture = osage
 religion = totemism
 trade_goods = fur
 base_tax = 1
