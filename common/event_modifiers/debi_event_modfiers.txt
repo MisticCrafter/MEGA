@@ -9,7 +9,7 @@ kni_cairo_citadel = {
 	monthly_splendor = 1
 }
 kni_friendship_pope = {
-	improve_relation_modifier = 0.10
+	relation_with_same_religion = 10
 }	
 kni_defense_of_the_faith = {
 	army_tradition_decay = -0.01
@@ -192,6 +192,36 @@ kni_crusader_fleet = {
 kni_treasures_of_venice = {
 	development_cost = -0.05
 }
+kni_bridge_to_the_west_modifier = {
+	development_cost_modifier = -0.10
+	papal_influence = 1
+	province_trade_power_modifier = 0.25
+	local_sailors_modifier = 0.25
+	tax_income = 12
+}
+kni_pearl_of_the_mediterranean_modifier = {
+	development_cost_modifier = -0.05
+	local_sailors_modifier = 0.25
+	ship_recruit_speed = -0.15
+	local_ship_cost = -0.15
+	local_ship_repair = 0.15
+	max_flagships = 1
+	galley_power = 0.10
+}
+kni_urban_defenses_modifier = {
+	fort_level = 1
+	development_cost_modifier = -0.10
+	regiment_recruit_speed = -0.20
+	hostile_attrition = 1
+}
+kni_shield_of_the_delta_modifier = {
+	local_defensiveness = 0.50
+	development_cost_modifier = -0.05
+	regiment_recruit_speed = -0.20
+	local_manpower_modifier = 0.25
+	defensiveness = 0.20
+	fort_maintenance_modifier = -0.20
+}
 kni_chastening_of_venice = {
 	local_development_cost = 0.50
 	local_monthly_devastation = 0.05
@@ -199,6 +229,13 @@ kni_chastening_of_venice = {
 kni_annihilation_of_venice = {
 	relation_with_same_religion = -50
 	reverse_relation_with_same_religion = -50
+}
+kni_the_sword = {
+	land_morale = 0.10
+	army_tradition_decay = -0.01
+}
+kni_the_shield = {
+	defensiveness = 0.33
 }
 kni_fort_garrison_grain_maintenence = {
 	fort_maintenance_modifier = 0.20
@@ -210,7 +247,7 @@ kni_fort_garrison_grain = {
 kni_fort_road = {
 	local_friendly_movement_speed = 0.15
 	local_hostile_movement_speed = 0.10
-	local_development_cost = -0.10
+	local_development_cost = -0.05
 }
 kni_fort_road_maintenence = {
 	fort_maintenance_modifier = 0.20
