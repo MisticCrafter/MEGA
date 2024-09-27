@@ -365,3 +365,29 @@ country_event = {
 		}	
 	}
 }
+
+country_event = {
+	id = ME_Sicily_Events.6
+	title = ME_Sicily_Events.6.t 
+	desc = ME_Sicily_Events.6.d 
+	picture = CITY_VIEW_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = ME_Sicily_Events.6.a 
+		SIC = {
+			create_subject = {
+				subject_type = pronoia_subject_type
+				subject = RMN
+			}
+		}
+	}
+
+	option = {
+		name = ME_Sicily_Events.6.b
+		SIC = {
+			add_prestige = -25
+		}
+	}
+}
