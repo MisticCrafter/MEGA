@@ -12,6 +12,7 @@ dutch_colonial_office = {
        owner = {
 			primary_culture = dutch
 			OR = {
+				tag = VRM
 				is_former_colonial_nation = yes
 				is_colonial_nation = yes
 			}
