@@ -1,5 +1,5 @@
 capital = "Ucayali"
-culture = maipurean
+culture = arawak
 religion = inti
 trade_goods = unknown
 base_tax = 1

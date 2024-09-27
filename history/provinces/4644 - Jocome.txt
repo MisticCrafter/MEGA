@@ -1,5 +1,5 @@
 capital = "Jocome"
-culture = apache
+culture = navajo
 religion = totemism
 trade_goods = unknown
 base_tax = 1

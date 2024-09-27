@@ -1,5 +1,5 @@
 capital = "Xochipillan"
-culture = guamares
+culture = tecos
 religion = animism
 trade_goods = wool
 base_tax = 1

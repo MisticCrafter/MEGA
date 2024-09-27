@@ -1,5 +1,5 @@
 capital = "Santiago del Estero"
-culture = diaguita
+culture = inca
 religion = animism
 trade_goods = unknown
 base_tax = 2

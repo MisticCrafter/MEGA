@@ -1,0 +1,210 @@
+namespace = megafrance
+
+#Charlie's Event
+country_event = {
+    id = megafrance.1
+    title = megafrance.1.t
+    desc = megafrance.1.d
+    picture = SIEGE_PRAGUE_CASTLE_eventPicture
+
+    fire_only_once = yes
+
+    trigger = {
+        tag = HAB
+        is_year = 1445
+    }
+
+    mean_time_to_happen = {
+        months = 1
+    }
+
+    option = {
+        name = megafrance.1.1
+        Z24 = {
+            country_event = {id = megafrance.3 }
+        }
+        BUR = {
+            country_event = {id = megafrance.3 }
+        }
+        BRI = {
+            country_event = {id = megafrance.3 }
+        }
+        create_guarantee = Z24
+        183 = {
+            cede_province = Z24
+        }
+        BOU = {
+            country_event = {id = megafrance.2 }
+        }
+        Z10 = {
+            country_event = {id = megafrance.2 }
+        }
+        BER = {
+            country_event = {id = megafrance.2 }
+        }
+        Z0G = {
+            country_event = {id = megafrance.2 }
+        }
+        ORL = {
+            country_event = {id = megafrance.2 }
+        }
+        CHP = {
+            country_event = {id = megafrance.2 }
+        }
+        Z18 = {
+            country_event = {id = megafrance.2 }
+        }
+        NRM = {
+            country_event = {id = megafrance.2 }
+        }
+        BUR = {
+            country_event = {
+                id = megafrance.4
+                days = 30
+            }
+        }
+        BRI = {
+            country_event = {
+                id = megafrance.4
+                days = 30
+            }
+        }
+    }
+}
+
+#Choose!
+country_event = {
+    id = megafrance.2
+    title = megafrance.2.t
+    desc = megafrance.2.d
+    picture = SIEGE_PRAGUE_CASTLE_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = megafrance.2.1
+        ai_chance = {
+            factor = 1.5
+            modifier = {
+                factor = 0
+                is_rival = BRI
+            }
+            modifier = {
+                factor = 2
+                alliance_with = BRI
+            }
+            modifier = {
+                factor = 0.2
+                religion = thibaultine
+            }
+        }
+        set_in_empire = no
+        BRI = {
+            inherit = ROOT
+        }
+    }
+    option = {
+        name = megafrance.2.2
+        ai_chance = {
+            factor = 1
+            modifier = {
+                factor = 0
+                is_rival = FRA
+            }
+            modifier = {
+                factor = 2
+                alliance_with = FRA
+            }
+        }
+        set_in_empire = no
+        FRA = {
+            inherit = ROOT
+        }
+    }
+    option = {
+        name = megafrance.2.3
+        ai_chance = {
+            factor = 1.5
+            modifier = {
+                factor = 0
+                is_rival = BUR
+            }
+            modifier = {
+                factor = 2
+                alliance_with = BUR
+            }
+            modifier = {
+                factor = 0.2
+                religion = catholic
+            }
+        }
+        set_in_empire = no
+        BUR = {
+            inherit = ROOT
+        }
+    }
+    option = {
+        name = megafrance.2.4
+        ai_chance = {
+            factor = 0
+        }
+        set_in_empire = no
+    }
+}
+
+#Cores
+country_event = {
+    id = megafrance.3
+    title = megafrance.3.t
+    desc = megafrance.3.d
+    picture = SIEGE_PRAGUE_CASTLE_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = megafrance.3.1
+        france_region = {
+            add_core = ROOT
+        }
+        if = {
+            limit = {
+                owns = 183
+            }
+            set_capital = 183
+            change_tag = FRA
+        }
+        set_in_empire = no
+    }
+}
+
+#War.
+country_event = {
+    id = megafrance.4
+    title = megafrance.4.t
+    desc = megafrance.4.d
+    picture = SIEGE_PRAGUE_CASTLE_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        megafrance.4.1
+        BUR = {
+            declare_war_with_cb = {
+                who = FRA
+                casus_belli = cb_core
+            }
+        }
+        BUR = {
+            declare_war_with_cb = {
+                who = BRI
+                casus_belli = cb_core
+            }
+        }
+        BRI = {
+            declare_war_with_cb = {
+                who = FRA
+                casus_belli = cb_core
+            }
+        }
+    }
+}

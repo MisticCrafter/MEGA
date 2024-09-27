@@ -4620,7 +4620,7 @@ central_american = {
 			Centehua Moyolehuani Yaotl Mixcoatl Necahual Nelli Ohtli Papa Patli
 		}
 	}
-	totonac = {
+	aztek = {
 		primary = TOT
 		male_names = {
 			Moctezuma Auitzotl Axayacatl Cuauhtemoc Cuitlahuac Huitzilihuitl Itzcoatl Ohimalpopoca Tizoc 
@@ -4634,7 +4634,7 @@ central_american = {
 			Yolyamanitzin 
 		}
 	}
-	purepecha = {
+	aztek = {
 		primary = TAR
 		male_names = {
 			Tariacuri Hiquingaje Hiripan Tangaxuan Tzitzipandaquare Zuangua Huitzimengari Tangaxoan Tzimtzincha 
@@ -4646,7 +4646,7 @@ central_american = {
 			Zyanya Nayeli Teiuc Teicuih Teyacapan Tepin 
 		}
 	}
-	matlatzinca = {
+	aztek = {
 		primary = MAT
 		male_names = {
 			Tariacuri Hiquingaje Hiripan Tangaxuan Tzitzipandaquare Zuangua Huitzimengari Tangaxoan Tzimtzincha 
@@ -4688,7 +4688,7 @@ aridoamerican = {
 			
 		}
 	}
-	tepic = {
+	tecos = {
 		primary = XAL
 		male_names = {
 			Acalan Acacitli Acamapichtli Acolmiztli Aculnahuacatl Ahuiliztli Ahuitzotl Atl Axayacatl Cacamatzin 
@@ -4707,7 +4707,7 @@ aridoamerican = {
 			
 		}
 	}
-	chichimecan = {
+	tecos = {
 		primary = CCM
 		male_names = {
 			Ocuil Olli Opochtli Ozomatli Quauhtli Tapayaxi Tecocoltzin Tecolotl Tetlepanquetzaltzin Tezozomoc 
@@ -4724,7 +4724,7 @@ aridoamerican = {
 			Nenetl Nochtli Papan Teoxihuitl Teuicui Tlachinolli Tlaco Tlahutli Tlalli Tlazohtzin Tlexictli Tonatzin Xihuitl 
 		}
 	}
-	guamares = {
+	tecos = {
 		primary = GAM
 		male_names = {
 			Ocuil Olli Opochtli Ozomatli Quauhtli Tapayaxi Tecocoltzin Tecolotl Tetlepanquetzaltzin Tezozomoc 
@@ -4741,7 +4741,7 @@ aridoamerican = {
 			Nenetl Nochtli Papan Teoxihuitl Teuicui Tlachinolli Tlaco Tlahutli Tlalli Tlazohtzin Tlexictli Tonatzin Xihuitl 
 		}
 	}
-	otomi = {
+	tecos = {
 		primary = OTO
 		male_names = {
 			Ocuil Olli Opochtli Ozomatli Quauhtli Tapayaxi Tecocoltzin Tecolotl Tetlepanquetzaltzin Tezozomoc 
@@ -4758,7 +4758,7 @@ aridoamerican = {
 			Nenetl Nochtli Papan Teoxihuitl Teuicui Tlachinolli Tlaco Tlahutli Tlalli Tlazohtzin Tlexictli Tonatzin Xihuitl 
 		}	
 	}
-	yaqui = {
+	tecos = {
 		primary = YAQ
 		male_names = {
 			Tariacuri Hiquingaje Hiripan Tangaxuan Tzitzipandaquare Zuangua Huitzimengari Tangaxoan Tzimtzincha 
@@ -4795,7 +4795,7 @@ maya = {
 			Sacnite Adsila Aiyana Ayasha Ayita Bly Dena Halona Kimi Magena Nayeli Kisa Eme Yaxkin
 		}
 	}
-	putun = {
+	yucatec = {
 		primary = ITZ
 		male_names = {
 			"Can Ek" "Balam Quitze" "Kan Boar" "Yax Kuk Mok" "Ah Can" "Vahxaqui Caam" "Ah Cacao" "Cham Bahlun" 
@@ -4808,7 +4808,7 @@ maya = {
 			Sacnite Adsila Aiyana Ayasha Ayita Bly Dena Halona Kimi Magena Nayeli Kisa Eme
 		}
 	}
-	mayan = {
+	yucatec = {
 		primary = MAY
 		dynasty_names = {
 			Ahkinxoc Ahmetakkukul Ahmok Ahnakukpech Ahpop-Achi Arana Bakan Balam Bor Canek Chaob Chiam Hnuyg Kayom Kíin Kukumatz 
@@ -4825,7 +4825,7 @@ maya = {
 			Sacnite Adsila Aiyana Ayasha Ayita Bly Dena Halona Kimi Magena Nayeli Kisa Eme
 		}
 	} 
-	highland_mayan = {
+	yucatec = {
 		primary = KIC
 		male_names = {
 			"Can Ek" "Balam Quitze" "Kan Boar" "Yax Kuk Mok" "Ah Can" "Vahxaqui Caam" "Ah Cacao" "Cham Bahlun" 
@@ -4837,7 +4837,7 @@ maya = {
 			Sacnite Adsila Aiyana Ayasha Ayita Bly Dena Halona Kimi Magena Nayeli Kisa Eme
 		}
 	}
-	lacandon = {
+	yucatec = {
 		primary = LAC
 		male_names = {
 			"Can Ek" "Balam Quitze" "Kan Boar" "Yax Kuk Mok" "Ah Can" "Vahxaqui Caam" "Ah Cacao" "Cham Bahlun" 
@@ -4849,7 +4849,7 @@ maya = {
 			Sacnite Adsila Aiyana Ayasha Ayita Bly Dena Halona Kimi Magena Nayeli Kisa Eme
 		}
 	}
-	wastek = {
+	yucatec = {
 		primary = HST
 		male_names = {
 			"Can Ek" "Balam Quitze" "Kan Boar" "Yax Kuk Mok" "Ah Can" "Vahxaqui Caam" "Ah Cacao" "Cham Bahlun" 
@@ -4861,7 +4861,7 @@ maya = {
 			Sacnite Adsila Aiyana Ayasha Ayita Bly Dena Halona Kimi Magena Nayeli Kisa Eme
 		}
 	}
-	chontales = {
+	yucatec = {
 		primary = YOK
 		male_names = {
 			"Can Ek" "Balam Quitze" "Kan Boar" "Yax Kuk Mok" "Ah Can" "Vahxaqui Caam" "Ah Cacao" "Cham Bahlun" 
@@ -4898,7 +4898,7 @@ otomanguean = {
 			Zyanya Nayeli Yoltzin Xilonen Xiloxoch Xiuhtomiyauhtzin Xochitl Xocoh Xocoyotl Yaretzi Zeltzin
 		}
 	}
-	mixtec = {
+	zapotek = {
 		primary = MIX
 		male_names = {
 			Cocijoeza Cocijopi Xolo Nucano Cocijocza Cocijopi Zaachilla Cocijouza Cocijopi Jzió Pwuix Dao 
@@ -4910,7 +4910,7 @@ otomanguean = {
 			Zyanya Nayeli Yoltzin Xilonen Xiloxoch Xiuhtomiyauhtzin Xochitl Xocoh Xocoyotl Yaretzi Zeltzin
 		}
 	}
-	tlapanec = {
+	zapotek = {
 		primary = TLA
 		male_names = {
 			Cocijoeza Cocijopi Xolo Nucano Cocijocza Cocijopi Zaachilla Cocijouza Cocijopi Jzió Pwuix Dao 
@@ -4952,7 +4952,7 @@ andean_group = {
 			Axomamma Cavillaca Kantuta Nina Ana Maiara
 		}
 	}
-	aimara = {
+	inca = {
 		primary = CRA
 		dynasty_names = {
 			Anquimarca Apo Atahualpa Atoc Atoc-Suqui Auqui-Huaman Canchari Chalcuchima Challco Chiaquitinta Chilche Colla-Topa 
@@ -4971,7 +4971,7 @@ andean_group = {
 			Axomamma Cavillaca Kantuta Nina Ana Maiara
 		}
 	}
-	diaguita = {
+	inca = {
 		primary = CCQ
 		dynasty_names = {
 			Caca Capayan Hualfin Paccioca Pular Quilme Aconquijas Anguinahao Tocpo Omaguaca
@@ -4984,7 +4984,7 @@ andean_group = {
 			Axomamma Cavillaca Kantuta Nina Ana Maiara
 		}
 	}
-	chimuan = {
+	inca = {
 		primary = CHM
 		dynasty_names = {
 			Guacricaur Tacaynamo Tiso Nancempinco Chilche Maras Luyes Maila Illa Rimac
@@ -5018,7 +5018,7 @@ je_tupi = { # Tupi
 			Bartira Potira Porasy Jougousa Azelene
 		}
 	}
-	guarani = {
+	tupinamba = {
 		primary = GUA
 		dynasty_names = {
 			Mbigua Caracara Timbu Tucague Calchagui Quiloazaz Cario Itatine Tarci Bomboi Curupaiti Curumai Caaigua Tape Ciriguana
@@ -5036,7 +5036,7 @@ je_tupi = { # Tupi
 
 je = {
 	graphical_culture = northamericagfx
-	charruan = {
+	ge = {
 		primary = CUA
 		dynasty_names = {
 			Sénaqué Sira Gununusa Puyucahua Mataojo Igualdad Yaró Guenoa Bohané Minuan
@@ -5064,7 +5064,7 @@ je = {
 
 maranon = {
 	graphical_culture = southamericagfx
-	jivaro = {
+	chachapoyan = {
 		male_names = {
 			Anquimarca Atoc Sopa Cayo Topa Coyllas Cusichaca Guaritopa Huachuri Huaypalcon Luyes Marcavilca 
 			Cuyuchi Orco Varanca Pascac Pomaguala Pumi Sopa Quispe Titu Ruminavi Sahuaraura Surandaman Taraque 
@@ -5086,7 +5086,7 @@ maranon = {
 		}
 	}
 	dynasty_names = {
-		Marano Jivaro Chachapoya
+		Marano Chachapoyan Chachapoya
 	}
 }
 
@@ -5107,7 +5107,7 @@ chibchan = {
 			Chia China Axomamma Cavillaca Kantuta Nina Ana Maiara
 		}
 	}
-	cara = {
+	muisca = {
 		primary = QTO
 		dynasty_names = {
 			Anquimarca Apo Atahualpa Atoc Atoc-Suqui Auqui-Huaman Canchari Chalcuchima Challco Chiaquitinta Chilche Colla-Topa 
@@ -5124,7 +5124,7 @@ chibchan = {
 			Axomamma Cavillaca Chia China Kantuta Nina Ana Maiara
 		}
 	}
-	miskito = {
+	muisca = {
 		primary = MIS
 		dynasty_names = {
 			Miskito Chibchan
@@ -5159,7 +5159,7 @@ mataco = {	#Matacoan
 araucanian = {
 	graphical_culture = northamericagfx
 	
-	mapuche = {
+	patagonian = {
 		primary = MPC
 		male_names = {
 			Ancamilla Nampai Coñoepán Nahueltripai Millarapue Millalelmo Lautaro Paillamachu Huenecura 
@@ -5182,7 +5182,7 @@ araucanian = {
 			Llanquiray Manque Millaray Peyeche Piro Pitrel Quetroman Quimey Quintruy Quintuqueo Rayen Saqui Somoche
 		}
 	}
-	het = {
+	patagonian = {
 		male_names = {
 			Ancamilla Nampai Coñoepán Nahueltripai Millarapue Millalelmo Lautaro Paillamachu Huenecura 
 			Aillavilu Catrileo Ñanco Melín Caupolicán Illangulién Pinolevi Purrán Mañil Quilapán 
@@ -5193,7 +5193,7 @@ araucanian = {
 			Llanquiray Manque Millaray Peyeche Piro Pitrel Quetroman Quimey Quintruy Quintuqueo Rayen Saqui Somoche
 		}
 	}
-	huarpe = {
+	patagonian = {
 		male_names = {
 			Ancamilla Nampai Coñoepán Nahueltripai Millarapue Millalelmo Lautaro Paillamachu Huenecura 
 			Aillavilu Catrileo Ñanco Melín Caupolicán Illangulién Pinolevi Purrán Mañil Quilapán 
@@ -5221,7 +5221,7 @@ carribean = {
 			Hayá Isani Takuiba Twengga
 		}
 	}
-	maipurean = {
+	arawak = {
 		male_names = {
 			Áhari Ebedimu Gunfuli Kaigouchi Ilumani Pirijá Semén
 			Wiwakaleme Haubariria Toratora Amorotahe Haubariria Kaigouchi Shoko Laliwa Arah Pirijá Arata Toruí Mbicy 
@@ -5230,7 +5230,7 @@ carribean = {
 			Hayá Isani Takuiba Twengga
 		}
 	}
-	carib = {
+	arawak = {
 		primary = CAB
 		male_names = {
 			Áhari Ebedimu Gunfuli Kaigouchi Ilumani Pirijá Semén
@@ -5239,7 +5239,7 @@ carribean = {
 			Hayá Isani
 		}
 	}
-	guajiro = { #	Lokono / Northern Mainland Arawak
+	arawak = { #	Lokono / Northern Mainland Arawak
 		primary = ARW
 		male_names = {
 			Wiwakaleme Haubariria Toratora Amorotahe Haubariria Kaigouchi Shoko Laliwa Arah Pirijá Arata Toruí Mbicy 
@@ -6242,7 +6242,7 @@ sonoran = {
 
 apachean = {
 	graphical_culture = northamericagfx
-	apache = {
+	navajo = {
 		primary = APA
 		dynasty_names = {
 			Jicarilla Chiricahua Tonto Ramah Mojave
@@ -6261,7 +6261,7 @@ apachean = {
 			Dahteste Ilthgozay Gouyen Lozen Tohayea 
 		}
 	}
-	mescalero = {
+	navajo = {
 		primary = MSC
 		dynasty_names = {
 			Jicarilla Chiricahua Tonto Ramah Mojave
@@ -6280,7 +6280,7 @@ apachean = {
 			Dahteste Ilthgozay Gouyen Lozen Tohayea 
 		}
 	}
-	lipan = {
+	navajo = {
 		primary = LIP
 		dynasty_names = {
 			Jicarilla Chiricahua Tonto Ramah Mojave

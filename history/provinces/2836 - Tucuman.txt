@@ -1,5 +1,5 @@
 capital = "Tucuman"
-culture = diaguita
+culture = inca
 religion = animism
 trade_goods = unknown
 base_tax = 4

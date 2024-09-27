@@ -1085,7 +1085,7 @@ native_ideas = {
 	trigger = {
 		government = native
 		NOT = { primary_culture = tupinamba }
-		NOT = { primary_culture = guajiro }
+		NOT = { primary_culture = arawak }
 		NOT = { 
 			capital_scope = {
 				OR = {
@@ -1604,7 +1604,7 @@ aymaran_ideas = {
 	}
 	
 	trigger = {
-		primary_culture = aimara
+		primary_culture = inca
 	}
 	free = yes
 	
@@ -1762,7 +1762,7 @@ guajiro_ideas = {
 	}
 	
 	trigger = {
-		primary_culture = guajiro #Lokono
+		primary_culture = arawak #Lokono
 	}
 	free = yes
 	

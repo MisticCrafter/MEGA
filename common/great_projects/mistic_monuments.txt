@@ -1,4 +1,4 @@
-monument_name = {
+alpine_cross_castle = {
     # Province the project starts in
     start = 1871
 
@@ -203,7 +203,7 @@ monument_name = {
 }
 
 
-monument2_name = {
+depingle_necropolis = {
     # Province the project starts in
     start = 4720
 
@@ -407,7 +407,7 @@ monument2_name = {
 	}
 }
 
-monument3_name = {
+academia_padania = {
     # Province the project starts in
     start = 2981
 

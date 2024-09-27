@@ -146,3 +146,85 @@ SWI_geneva_tier_zenith = {
     local_development_cost = -6.66
     local_development_cost_modifier = -0.5
 }
+
+SWI_pad_smarts = {
+    yearly_innovativeness = 0.25
+    embracement_cost = -0.2
+    global_institution_spread = 0.1
+}
+
+SWI_romansh_forts = {
+    fort_maintenance_modifier = -0.33
+    garrison_damage = 1
+    defensiveness = 0.5
+}
+
+SWI_alm_autonomy = {
+    state_governing_cost = -0.5
+    governing_capacity_modifier = 0.25
+    global_unrest = -4
+}
+
+SWI_applemod = {
+    global_supply_limit_modifier = 0.25
+    global_prosperity_growth = 0.25
+    global_monthly_devastation = 0.25
+    monthly_splendor = 1
+}
+
+SWI_arrowmod = {
+    movement_speed = 0.10
+    morale_damage_received = -0.05
+    reserves_organisation = -0.25
+    war_exhaustion = -0.10
+}
+
+# combines arrow and apple
+SWI_helvetic_dominance = {
+    movement_speed = 0.20
+    morale_damage_received = -0.10
+    reserves_organisation = -0.25
+    war_exhaustion = -0.15
+    global_supply_limit_modifier = 0.25
+    global_prosperity_growth = 0.25
+    global_monthly_devastation = 0.25
+    monthly_splendor = 1
+    all_power_cost = -0.05
+}
+
+SWI_occitan_answer = {
+    diplomatic_upkeep = 1
+}
+
+SWI_gold_rush = {
+    gold_depletion_chance_modifier = -1
+    monthly_gold_inflation_modifier = -1
+}
+
+SWI_pylons = {
+    local_development_cost = -0.1
+    local_production_efficiency = 0.1
+    local_tax_modifier = 0.1
+    local_build_cost = -0.1
+}
+
+SWI_iron_mining = {
+    global_regiment_cost = -0.10
+    development_cost_in_primary_culture = -0.05
+    development_cost = -0.05
+}
+
+SWI_steel = {
+    development_cost_modifier = -0.05
+    infantry_power = 0.05
+}
+
+SWI_rmn_palatini_m = {
+    can_recruit_janissaries = yes
+    allow_janissaries_from_own_faith = yes
+}
+
+SWI_rmn_death_m = {
+    max_absolutism = 15
+    global_unrest = 1
+}

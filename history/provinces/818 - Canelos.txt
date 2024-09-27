@@ -1,5 +1,5 @@
 capital = "Canelos"
-culture = jivaro
+culture = chachapoyan
 religion = animism
 trade_goods = unknown
 base_tax = 2

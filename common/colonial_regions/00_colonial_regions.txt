@@ -716,7 +716,7 @@ colonial_mexico = {
 		navajo = 10
 		aztek = 8
 		zapotek = 6
-		mayan = 7
+		yucatec = 7
 	}
 
 	religion = {
@@ -824,8 +824,8 @@ colonial_the_carribean = {
 	}
 
 	culture = {
-		arawak = 15
-		carib = 8
+		arawak = 23
+		
 	}
 
 	religion = {
@@ -942,7 +942,7 @@ colonial_colombia = {
 	}
 
 	culture = {
-		guajiro = 15
+		arawak = 15
 		inca = 6
 	}
 
@@ -1079,10 +1079,10 @@ colonial_la_plata = {
 	}
 
 	culture = {
-		aimara = 6
+		inca = 6
 		patagonian = 10
 		chacoan = 2
-		guarani = 4
+		tupinamba = 4
 	}
 	religion = {
 		animism = 10
@@ -1191,8 +1191,7 @@ colonial_brazil = {
 	}
 
 	culture = {
-		guarani = 5
-		tupinamba = 12
+		tupinamba = 17
 	}
 
 	religion = {

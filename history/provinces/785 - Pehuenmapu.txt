@@ -1,5 +1,5 @@
 capital = "Pehuenmapu"
-culture = mapuche
+culture = patagonian
 religion = animism
 trade_goods = unknown
 base_tax = 1

@@ -3,10 +3,10 @@ helvetic = {
 
     male_names = { Charlemagne }
     
-    alemannisch = {
+    swiss_new = {
 		primary = SWI
 	}
-    new_arpitan = {
+    auvergnat_new = {
 		primary = AUV
 		dynasty_names = { 
 			"de Valois" "de Bourbon" "de la Tour" "d'Anjou" "de Lorraine" "de Foix" "de Montfort" "de Blois" "de Penthievre" "de Dreux" "de Rohan" "de Bar" "d'Albert" "d'Escoubleau" "de Neufville" "de Bourgogne" "de Castellane" "d'Auvergne" "de Montbéliard" "de Metz" "de Laval" "de la Tour du Pin" "de La Trémoille" "de Créquy" "de Broglie" "de Montesquiou" "de Courtenay" "d'Harcourt" "de La Croix" "Le Tellier" "de Rochechouart" "d'Aumont" "de Vergy" "de Saboulin" "de Gramont" "de Bissy" "de Barrau" "de La Fayette" "d'Armagnac" "de Rougé" "du Quenoy" "de Ficquelmont" "de Talleyrand" "de Saintignon" "von Luxemburg" "de Montmorency" "de Savoie" "de Vaudemont" "de Nicolaÿ"
@@ -21,7 +21,7 @@ helvetic = {
     romansh = {
 		primary = TTL
 	}
-    padanian = {
+    piedmontese_new = {
 		primary = SAV
 		male_names = {
 			Abbondanzio Abbondio Abelardo Abelino Achille Adalberto Adelfo Adelmio Adelmo Adone Agapito Agostino Aimone Alamanno Alarico Adriano Albano Alberico Alberto Albino Alboino Alcide Aldobrandino Aleardo Aleramo Alessandro Alessio Alighiero Alvise Ambrogio Amedeo Anastasio Andrea Angelo Anselmo Antonino Antonio Antoniotto Arcibaldo Arderico Armando Arnolfo Arsenio Artemio Ascanio Astorre Arrigo Annibale Atenolfo Attilio Augusto Aurelio Ausilio Ausonio Averado Azzo Azzone Baldassarre Barnaba Bartolomeo Basilio Basil Bassiano Basso Baldovino Battista Beltrano Benedetto Benvenuto Berardo Bernabò Bernardo Berto Bertoldo Biagio Bonaventura Bonifacio Borso Bruno Bruto Buonconte Buoso Callisto Camillo Candido Cangrande Carlo Cassio Castore Cataldo Catone Cecco Chiaffredo Chiano Ciro Ciuccio Claudio Clemente Costanzo Cesare Comita Conone Cornelio Corradino Corrado Cosimo Cosma Costante Costantino Cristoforo Damiano Davide Demetrio Dioniso Doménico Durante Edoardo Elio Emmanuele Ennio Enrico Enzio Enzo Ercole Ermenegildo Ettore Eugenio Ezio Ezzelino Fabrizio Fausto Federigo Felice Ferdinando Ferruccio Filippo Fiorello Flavio Folco Fortunato Fosco Francesco Fresco Gabriele Gabrino Gaetano Galasso Galeazzo Eriprando Galeotto Gaspare Gastone Gelasio Gentile Geraldo Gerardo Germano Gerolamo Gherardo Giacinto Giacomo Gian Gianfranco Gianleone Giano Giberto Gilberto Giolio Giordano Giorgio Giovanni Giulio Giuseppe Goffredo Gregorio Gualtiero Guarnito Guerrino Guglielmo Guido Guidone Guigliadore Iacopo Igino Innocenzo Ippolito Isnardo Jacopo Lamberto Landolfo Lanfranco Lattanzio Lazzarino Lazzaro Landone Lealdo Leonardo Leone Leonello Leopoldo Libero Lionello Livio Lodovico Lorenzo Luca Luchino Lucio Luigi Malacresta Manfredo Manuele Marco Mariano Marino Mario Marsiglio Martino Mastino Matteo Merigo Michelangelo Michele Napoleone Nazareno Nestore Niccolò Nicola Nino Nolfo Oberto Obizzino Obizzo Oddone Omero Onorio Oreste Orlando Ottavio Ottobono Ottone Pagano Pancrazio Pandolfo Paolo Pasquale Otto Patrizio Pellegrino Pericle Pietro Pio Prospero Rafaello Raimondo Ranerio Raniero Riccardo Rinaldo Rizzardo Roberto Rodolfo Rolando Rosso Ruggiero Salinguerra Salvatore Salvestro Sante Sancho Saverio Sciarra Sebastiano Secondotto Serafino Sergio Sesto Settimio Severino Severo Silvano Silvestro Simone Simonetto Sinibaldo Sinucello Sozzo Spinetto Stefano Taddeo Tedaldo Tedice Teodoro Tibaldo Tiziano Tommaso Lupo Vittorio Umberto

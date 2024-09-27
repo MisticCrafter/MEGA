@@ -1,5 +1,5 @@
 capital = "Kuna"
-culture = guajiro
+culture = arawak
 religion = animism
 trade_goods = unknown
 base_tax = 1

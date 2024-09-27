@@ -1,5 +1,5 @@
 capital = "Huichol"
-culture = tepic
+culture = tecos
 religion = nahuatl
 trade_goods = unknown
 base_tax = 2

@@ -1,5 +1,5 @@
 capital = "Rio Grande"
-culture = guarani
+culture = tupinamba
 religion = animism
 trade_goods = unknown
 base_tax = 2

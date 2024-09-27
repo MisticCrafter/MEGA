@@ -1,7 +1,7 @@
 owner = XAL
 controller = XAL
 capital = "Amaxocotlan"
-culture = tepic
+culture = tecos
 religion = nahuatl
 trade_goods = wool
 base_tax = 1
