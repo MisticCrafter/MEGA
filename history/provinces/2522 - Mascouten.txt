@@ -1,5 +1,5 @@
 capital = "Mascouten"
-culture = mesquakie
+culture = innu
 religion = totemism
 trade_goods = unknown
 base_tax = 1

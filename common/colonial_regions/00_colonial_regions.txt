@@ -16,8 +16,7 @@ colonial_alaska = {
 	}
 
 	culture = {
-		inuit = 10
-		aleutian = 8
+		inuit = 18
 	}
 
 	religion = {
@@ -92,15 +91,11 @@ colonial_canada = {
 
 	culture = {
 		inuit = 10
-		cree = 10
+		innu = 12
 		nakota = 2
 		cheyenne = 2
-		anishinabe = 2
-		huron = 2
-		iroquois = 2
-		mahican = 2
-		abenaki = 2
-		mikmaq = 2
+		huron = 4
+		abenaki = 6
 	}
 
 	religion = {
@@ -314,19 +309,12 @@ colonial_eastern_america = {
 	}
 
 	culture = {
-		creek = 5
-		choctaw = 2
-		chickasaw = 2
-		cherokee = 5
-		shawnee = 5
+		chickasaw = 9
+		huron = 13
+		innu = 5
 		dakota = 2
-		iroquois = 3
-		powhatan = 2
-		delaware = 4
-		susquehannock = 5
-		mahican = 2
+		abenaki = 12
 		pequot = 2
-		abenaki = 4
 	}
 
 	religion = {

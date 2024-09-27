@@ -1103,16 +1103,13 @@ carribean = {
 	}
 }
 eskaleut = {
-	aleutian = {
-		primary = SGP
-	}
 	inuit = {
 		primary = KLL
 	}
 }
 central_algonquian = {
-	algonquin = {
-		primary = AGQ #This is Algonquin the country, it does have Algonquin as its primary culture, so why is it not the primary nation?
+	innu = {
+		primary = AGQ #This is Innu the country, it does have Innu as its primary culture, so why is it not the primary nation?
 	}
 }
 plains_algonquian = {

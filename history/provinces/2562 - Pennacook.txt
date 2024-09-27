@@ -1,5 +1,5 @@
 capital = "Pennacook"
-culture = massachusset
+culture = abenaki
 religion = totemism
 trade_goods = unknown
 base_tax = 2

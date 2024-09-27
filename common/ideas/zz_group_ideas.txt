@@ -3221,7 +3221,7 @@ iroquoian_federation_ideas = {
 	
 	trigger = {
 		AND = { 
-			primary_culture = iroquois
+			primary_culture = huron
 			is_federation_nation = yes
 		}
 	}
@@ -3307,7 +3307,7 @@ eastern_algonquian_federation_ideas = {
 	
 	trigger = {
 		is_federation_nation = yes
-		primary_culture = algonquin
+		primary_culture = innu
 		OR = {
 			capital_scope = {
 				region = northeast_america_region
@@ -3354,7 +3354,7 @@ central_algonquian_federation_ideas = {
 	
 	trigger = {
 		is_federation_nation = yes
-		primary_culture = algonquin
+		primary_culture = innu
 		OR = {
 			capital_scope = {
 				region = great_lakes_region
@@ -3401,7 +3401,7 @@ muskogean_federation_ideas = {
 	
 	trigger = {
 		is_federation_nation = yes
-		primary_culture = creek
+		primary_culture = chickasaw
 	}
 	free = yes
 	
@@ -3442,9 +3442,9 @@ generic_federation_ideas = {
 	trigger = { 
 		is_federation_nation = yes
 		NOT = {
-			primary_culture = iroquois
-			primary_culture = creek
-			primary_culture = algonquin
+			primary_culture = huron
+			primary_culture = chickasaw
+			primary_culture = innu
 			primary_culture = dakota
 		}
 	}

@@ -5257,7 +5257,7 @@ eskaleut = {
 	graphical_culture = inuitgfx
 	second_graphical_culture = northamericagfx
 
-	aleutian = {
+	inuit = {
 		male_names = {
 			Aariak Aassanaaq Aippaq Aklaq Amaqjuaq Ammagaruqnik Anik Apaata Aput Aputi Aqakuktuq Aqillutaq Aqpalibaaqtuq 
 			Aquyittuq Arnauyq Asuilaak Atanarjuat Atiqtalaaq Atuqtuaq Aujaq Aviqming Ila Ilannaq Innugati Iñuksuk Irniq 
@@ -5288,7 +5288,7 @@ eskaleut = {
 central_algonquian = {
 	graphical_culture = northamericagfx
 	
-	shawnee = {
+	innu = {
 		primary = SHA
 		dynasty_names = {
 			Auglaize Alawaymotakah Akepee Aqueloma Chillicothe Calaka Chalaakaatha Conedogwinit Hathawekela Hisoskok 
@@ -5310,7 +5310,7 @@ central_algonquian = {
 			Methoataske Tacumwah Moconnoquah Kickkesequah Oshawsequah 
 		}
 	}
-	illini = {
+	innu = {
 		primary = ILL
 		dynasty_names = {
 			Kaskaskia Cahokia Peoria Tamaroa Moingwena Michigamea Albiui Amonokoa Chepoussa Chinkoa Coiracoentanon Espeminkia 
@@ -5327,7 +5327,7 @@ central_algonquian = {
 			Methoataske Tacumwah Moconnoquah Kickkesequah Oshawsequah 
 		}
 	}
-	miami = {
+	innu = {
 		primary = MMI
 		dynasty_names = {
 			Kaskaskia Cahokia Peoria Tamaroa Moingwena Michigamea Albiui Amonokoa Chepoussa Chinkoa Coiracoentanon Espeminkia 
@@ -5344,7 +5344,7 @@ central_algonquian = {
 			Methoataske Tacumwah Moconnoquah Kickkesequah Oshawsequah 
 		}
 	}
-	anishinabe = {
+	innu = {
 		primary = OJI
 		dynasty_names = {
 			Missisage Saulteaux Bungee Saginaw Achiligouan Amicoures Amikwa Auwause Bawating Chequamegon Keweenaw Kitchigami 
@@ -5371,7 +5371,7 @@ central_algonquian = {
 			Aazhawiggizhigokwe Ayasha Keezheekoni Mitena Waawaaskwane Zaagaasage Wiingashk Miigwaans Kiiwedin Kamenna
 		}
 	}
-	algonquin = {
+	innu = {
 		primary = OJI
 		dynasty_names = {
 			Missisage Saulteaux Bungee Saginaw Achiligouan Amicoures Amikwa Auwause Bawating Chequamegon Keweenaw Kitchigami 
@@ -5398,7 +5398,7 @@ central_algonquian = {
 			Aazhawiggizhigokwe Ayasha Keezheekoni Mitena Waawaaskwane Zaagaasage Wiingashk Miigwaans Kiiwedin Kamenna
 		}
 	}
-	cree = {
+	innu = {
 		primary = WCR
 		dynasty_names = {
 			Iyiyiw Chisasibi Wemindji Whapmagoostui Mistissini Nemaska "Ouje-Bougoumou" Waskaganish Waswanipi Mosoni Maskekowak 
@@ -5430,7 +5430,7 @@ central_algonquian = {
 			Torotiy Meriy Elin Ashenee Astina Echa Kiche Kika Mati Matisa Matisoon Nichena Osceola Pamoon Paniya 
 		}
 	}
-	mesquakie = {
+	innu = {
 		primary = FOX
 		dynasty_names = {
 			Mesquakie Wagosh Asakiwakie Kickapoo Blackhawk Saukenuk Thakiwakie
@@ -5565,7 +5565,7 @@ plains_algonquian = {
 eastern_algonquian = {
 	graphical_culture = northamericagfx
 	
-	delaware = {
+	abenaki = {
 		primary = LEN
 		dynasty_names = {
 			Sapokanikan Nechtanc Aquehonga Manacknong Shawkopoke Nayack Sowanus Sassian Monsey
@@ -5603,7 +5603,7 @@ eastern_algonquian = {
 			Sallot Sopi Klalis Sozn Toloti Talaz
 		}
 	}
-	mikmaq = {
+	abenaki = {
 		primary = MIK
 		dynasty_names = {
 			Epekwik Epeggoitg Eskikewakik Esgigiag Kespek Gespegiag Kespukwitk Gespogoitg Siknikt Sigenitog sipeknekatik 
@@ -5618,7 +5618,7 @@ eastern_algonquian = {
 			Mali Malian Maliazonis Azonis Malgelit
 		}
 	}
-	maliseet = {
+	abenaki = {
 		primary = MLS
 		dynasty_names = {
 			Epekwik Epeggoitg Eskikewakik Esgigiag Kespek Gespegiag Kespukwitk Gespogoitg Siknikt Sigenitog sipeknekatik 
@@ -5633,7 +5633,7 @@ eastern_algonquian = {
 			Mali Malian Maliazonis Azonis Malgelit
 		}
 	}
-	mahican = {
+	abenaki = {
 		primary = MAH
 		dynasty_names = {
 			Muhhcanneuw Mehckentowoon Wawyachtonoc Westenhuck Wiekagjoc Shecomeco Wechquadnach Pamperaug Bantam Weataug 
@@ -5649,10 +5649,10 @@ eastern_algonquian = {
 			Awashonks Djitsbudnaca Weetamoo Wootonekanuske
 		}
 	}
-	powhatan = {
+	abenaki = {
 		primary = POW
 		dynasty_names = {
-			Powhatan Arrohateck Appamattuck Pamunkey Mattaponi Chiskiack Kecoughtan Youghtanund Rappahannock Moraughtacund 
+			abenaki Arrohateck Appamattuck Pamunkey Mattaponi Chiskiack Kecoughtan Youghtanund Rappahannock Moraughtacund 
 			Weyanoak Paspahegh Quiyoughcohannock Warraskoyack Nansemond
 		}
 		male_names = {
@@ -5663,13 +5663,13 @@ eastern_algonquian = {
 			Cockacoeske Pocahontas Amonute Nandua
 		}
 	}
-	pequot = {
+	abenaki = {
 		primary = PEQ
 		dynasty_names = {		
 			Metoac Manchaug Massomuck Menunkantuck Monashackotoog Pequannock
 			Quinebaug Quinnipiac Siwanoy Niantic Asupsuck Aukumbumsk Aushpook
 			Cosattuck Cuppunauginnit Mangunckakuck Mashantucket Mohungannuck
-			Nameauag Natchaug Noank Oneco Paupttokshick Pawcatuck Pequotauk
+			Nameauag Natchaug Noank Oneco Paupttokshick Pawcatuck abenakiauk
 			Poquonock Sauquonckackock Shenecosset Tatuppequauog Weinshauks
 			Weqhetequock Wunnashowatookoog Quahog Mashpee Patuxet Pokanoket
 			Pocasset Assonet
@@ -5682,13 +5682,13 @@ eastern_algonquian = {
 			Awashonks Djitsbudnaca Weetamoo Wootonekanuske
 		}
 	}	
-	massachusset = {
+	abenaki = {
 		primary = WAM
 		dynasty_names = {		
 			Metoac Manchaug Massomuck Menunkantuck Monashackotoog Pequannock
 			Quinebaug Quinnipiac Siwanoy Niantic Asupsuck Aukumbumsk Aushpook
 			Cosattuck Cuppunauginnit Mangunckakuck Mashantucket Mohungannuck
-			Nameauag Natchaug Noank Oneco Paupttokshick Pawcatuck Pequotauk
+			Nameauag Natchaug Noank Oneco Paupttokshick Pawcatuck abenakiauk
 			Poquonock Sauquonckackock Shenecosset Tatuppequauog Weinshauks
 			Weqhetequock Wunnashowatookoog Quahog Mashpee Patuxet Pokanoket
 			Pocasset Assonet
@@ -5706,7 +5706,7 @@ eastern_algonquian = {
 iroquoian = {
 	graphical_culture = northamericagfx
 	
-	iroquois = {
+	huron = {
 		primary = IRO
 		dynasty_names = {
 			Awegen Ahaouet
@@ -5740,7 +5740,7 @@ iroquoian = {
 			Tyonajanegen Alliquippa Konwatsitiaienni Genessee Satékon Tekakwitha 
 		}
 	}
-	cherokee = {
+	huron = {
 		primary = CHE
 		dynasty_names = {
 			Mohe Diwali Waya Tsiyi Onacona Atagulkalu Degataga Cheasequah Adahy Atagulkalu
@@ -5785,7 +5785,7 @@ iroquoian = {
 			Taima Chekaqua Kataka Mecaitch Neshota Chagasort Pecama Namachewana Nanochaatasa Taimah Catchemackeseo
 		}
 	}
-	laurentian = {
+	huron = {
 		primary = OSH
 		dynasty_names = {
 			Andiata Angoutenc Anonatea Arendaonatia Arente Arontaen Anioton Ahiragenrega Ahondihronon Andachkhrob Antouaronon 
@@ -5805,7 +5805,7 @@ iroquoian = {
 			Taima Chekaqua Kataka Mecaitch Neshota Chagasort Pecama Namachewana Nanochaatasa Taimah Catchemackeseo
 		}
 	}
-	tionontate = {
+	huron = {
 		primary = TIO
 		dynasty_names = {
 			Andiata Angoutenc Anonatea Arendaonatia Arente Arontaen Anioton Ahiragenrega Ahondihronon Andachkhrob Antouaronon 
@@ -5828,7 +5828,7 @@ iroquoian = {
 			Taima Chekaqua Kataka Mecaitch Neshota Chagasort Pecama Namachewana Nanochaatasa Taimah Catchemackeseo
 		}
 	}
-	susquehannock = {
+	huron = {
 		primary = SUS
 		dynasty_names = {
 			Akhrakouaeronon Akwinoshioni Atquanachuke Carentouan Cepowig Junita Kaiuariegehaga
@@ -6017,7 +6017,7 @@ muskogean = {
 			Nahomtima Immahoka Lunnabaga
 		}
 	}
-	choctaw = {
+	chickasaw = {
 		primary = CHO
 		dynasty_names = {
 			Usquelagana Saktitamaha Itchechana Shumotakali Tinshinkla Chucafalaya Bissacha Otakchitotamaha Yackniachuchuma 
@@ -6069,7 +6069,7 @@ muskogean = {
 			Mintahoye Phalishta Ishtimmarharlechar Temusharhoctay Mintahoyo
 		}
 	}
-	yuchi = {
+	chickasaw = {
 		primary = CIA
 		dynasty_names = {
 			Ackia Alaoute Amalahta Apeony Apilefaplimengo Ashukhuma Ayebisto Chatelaw
@@ -6092,7 +6092,7 @@ muskogean = {
 			Mintahoye Phalishta Ishtimmarharlechar Temusharhoctay Mintahoyo
 		}
 	}
-	yoron = {
+	chickasaw = {
 		primary = CAQ
 		dynasty_names = {
 			Ackia Alaoute Amalahta Apeony Apilefaplimengo Ashukhuma Ayebisto Chatelaw
@@ -6115,7 +6115,7 @@ muskogean = {
 			Mintahoye Phalishta Ishtimmarharlechar Temusharhoctay Mintahoyo
 		}
 	}
-	catawba = {
+	chickasaw = {
 		primary = COF
 		dynasty_names = {
 			Owasso Pawhuska Niukonska Doppike Neosho Chetopa Hominy Pahusan Mesquakie Wagosh Asakiwakie Kickapoo Blackhawk 
@@ -6130,7 +6130,7 @@ muskogean = {
 			Wakonsamoie Watoesa Sekaname Shonsegra Egraname Misae Niabi
 		}
 	}
-	natchez = {
+	chickasaw = {
 		primary = NTZ
 		dynasty_names = {
 			Ackia Alaoute Amalahta Apeony Apilefaplimengo Ashukhuma Ayebisto Chatelaw
@@ -6153,7 +6153,7 @@ muskogean = {
 			Mintahoye Phalishta Ishtimmarharlechar Temusharhoctay Mintahoyo
 		}
 	}
-	yamasee = {
+	chickasaw = {
 		primary = ALT
 		dynasty_names = {
 			Ackia Alaoute Amalahta Apeony Apilefaplimengo Ashukhuma Ayebisto Chatelaw
