@@ -273,6 +273,14 @@
  ARC_abyssinia_alliance: "Andal Weaponry"
  ARC_hellenic_refugees: "Hellenic Refugees"
  ARC_house_united: "A House United"
+ ARC_house_of_zacantor: "House of Zacantor"
+ ARC_house_of_vaz_mardel: "House of Vaz Mardel"
+ ARC_house_of_samara: "House of Samara"
+ ARC_house_of_garnatha: "House of Garnatha"
+ ARC_house_of_selmanor: "House of Selmanor"
+ ARC_house_of_valsa: "House of Valsa"
+ ARC_house_of_scolarenos: "House of Scolarenos"
+ ARC_house_of_myron: "House of Myrón"
 
  # (Modifiers) from Tigranic Interactions
  tigranic_hellenic_refugees: "Hellenic Refugees"
@@ -333,6 +341,10 @@
  catholic_madragal: "The Conquest of Madragal"
  catholic_canterbury: "The Conquest of Canterbury"
  catholic_geneva: "The Conquest of Geneva"
+
+ # Opinion Modifiers
+ opinionARC_helped_renegades: "Sheltered Renegades"
+ opinionARC_denied_renegades: "Turned Away Renegades"
  ###
 
 
@@ -519,6 +531,10 @@
  flavor_andalos.23.title: "The Edict of Lisarra"
  flavor_andalos.23.desc: "kiss my ass noble boy"
  flavor_andalos.23.a: "So mote it be!"
+ flavor_andalos.24.title: "The Renegade Sons of Andalos"
+ flavor_andalos.24.desc: "It is not uncommon for lords to hear petitions in their halls. It is, in fact, one of the primary functions of feudal lords, besides administering a fief in their liege's name and answering the call of arms when one is sent. All manner of counts and dukes spend hours upon hours listening to the woes of their subjects, adjudicating conflicts and the like.\n\nA monarch, however? Not so much.\n\nAnd yet, [Root.Monarch.GetName] sat upon the throne today, opposite a seemingly-endless line of wide-eyed petitioners. One after the other, they came, no different than they would've in any other holdfast or keep - though perhaps a tad more apprehensively. And then, a man in rich garbs - no doubt a noble, though no doubt one of our own either - stepped up and spoke, and for every sentence he said, [Root.Monarch.GetName]'s eyes grew wider. An Andal nobleman, recently estranged and cast out from his homeland - more than a few gasps could be heard as he detailed how the Archon in Sintra had disposed of his noblemen - seeking a place to start life anew. He pledged the wealth and service of his house in fealty to our realm, in exchange for a fief of his own.\n\nNormally, it would be unwise to turn away coin and swords, especially ones given so freely, but the troubles in Andalos speak for themselves: a dead king, a realm torn in two and a legendary dynasty at the brink of ruin... The man knelt, and [Ruler.Monarch.GetName] pondered."
+ flavor_andalos.24.a: "Rise, my lord! We have much to discuss..."
+ flavor_andalos.24.b: "Begone, traitorous scum!"
  # Events (Tigranic)
  flavor_tigranic.1.title: "Divine the Stars"
  flavor_tigranic.1.desc: "mlem"
@@ -760,6 +776,8 @@
  knights_absolutism_loyalty_modifier: "[Country.GetKnightsName] Loyalty Equilibrium Negator"
  mechanic_no_knights_loyalty_loss_from_absolutism_yes: "Absolutism no longer reduces §Y[Country.GetKnightsName]§! loyalty."
 
+ estate_privileges_and_agendas_events.3.p: "The Proposal of the [Root.GetKnightsName]"
+
  ### ESTATE PRIVILEGES ###
 
  # Clergy (Privileges)
@@ -805,6 +823,30 @@
  estate_knights_investiture_desc: "WIP"
 
  ###
+
+ ### ESTATE AGENDAS ###
+
+ estate_knights_hire_advisor: ""
+ estate_knights_fire_advisor: ""
+ estate_knights_get_allies: "Build Alliances"
+ estate_knights_befriend_rival_of_rival: "Befriend [rival_country.GetUsableName]'s Rivals"
+ estate_knights_restore_legitimacy: "Restore [Root.GetLegitimacyOrMeritocracy]"
+ estate_knights_relations_with_x: "Improve Relations with [agenda_country.GetUsableName]"
+ estate_knights_break_coalition: "Break the Coalition"
+ estate_knights_retake_core: "Retake [agenda_province.GetName]"
+ estate_knights_crush_revolts: "Crush the Rebels"
+ estate_knights_expand_into_x: "Expand into [agenda_province.GetAreaName]"
+ estate_knights_complete_conquest_of_x: "Complete the Conquest of [agenda_province.GetAreaName]"
+ estate_knights_build_an_army: "Build an Army for our Nation"
+ estate_knights_bigger_army_than_rival: "Protect against [agenda_country.GetUsableName]"
+ estate_knights_build_up_manpower_reserves: "Build up our Manpower Reserves"
+ estate_knights_develop_x: "Increase Manpower in [agenda_province.GetName]"
+ estate_knights_build_army_building_in_y: "Expand Military Infrastructure in [agenda_province.GetName]"
+ estate_knights_build_fort_building_in_y: "Fortify [agenda_province.GetName]"
+ estate_knights_build_manufactory_in_y: "Build a Manufactory in [agenda_province.GetName]"
+ estate_knights_build_university_in_y: "Build a University in [agenda_province.GetName]"
+
+ ###
  
  ### GREAT PROJECTS ###
 
@@ -839,11 +881,16 @@
 
  # Colonial Nation Names
  ATTICA: "Attica"
+ COLONIAL_THE_CARRIBEAN_Andal_West_Indies: "Andal West Indies"
  COLONIAL_COLOMBIA_Aeliseia: "Aelyseía"
  COLONIAL_PERU_Tavassereia: "Tavaserreía"
  COLONIAL_LA_PLATA_Arganteia: "Arganteía"
  COLONIAL_MEXICO_New_Andalos: "Andaleía Nias"
  COLONIAL_LOUISIANA_Tigraneia: "Tigraneía"
+
+ COLONIAL_BRAZIL_Egyannuaman: "Égyannuaman"
+ COLONIAL_MEXICO_Mayekro: "Mayékro"
+ COLONIAL_LA_PLATA_Guareman: "Guaréman"
  ###
 
 

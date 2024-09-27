@@ -169,6 +169,17 @@ each_estate_effect = {
 			$ghulams_effect$
 		]
 	}
+	if = {
+		limit = {
+			has_estate = estate_knights
+		}
+		[[effect]
+			$effect$
+		]
+		[[knights_effect]
+			$knights_effect$
+		]
+	}
 }
 
 #Clergy
@@ -288,6 +299,15 @@ add_estate_nobles_loyalty_effect = {
 			loyalty = 10
 		}
 	}
+	else_if = {
+		limit = {
+			has_estate = estate_knights
+		}
+		add_estate_loyalty = {
+			estate = estate_knights
+			loyalty = 10
+		}
+	}
 }
 reduce_estate_nobles_loyalty_effect = {
 	if = {
@@ -314,6 +334,15 @@ reduce_estate_nobles_loyalty_effect = {
 		}
 		add_estate_loyalty = {
 			estate = estate_maratha
+			loyalty = -10
+		}
+	}
+	else_if = {
+		limit = {
+			has_estate = estate_knights
+		}
+		add_estate_loyalty = {
+			estate = estate_knights
 			loyalty = -10
 		}
 	}
@@ -446,6 +475,30 @@ reduce_estate_rajput_loyalty_effect = {
 		}
 		add_estate_loyalty = {
 			estate = estate_rajput
+			loyalty = -10
+		}
+	}
+}
+
+#Knights
+add_estate_knights_loyalty_effect = {
+	if = {
+		limit = {
+			has_estate = estate_knights
+		}
+		add_estate_loyalty = {
+			estate = estate_knights
+			loyalty = 10
+		}
+	}
+}
+reduce_estate_knights_loyalty_effect = {
+	if = {
+		limit = {
+			has_estate = estate_knights
+		}
+		add_estate_loyalty = {
+			estate = estate_knights
 			loyalty = -10
 		}
 	}
@@ -2866,6 +2919,25 @@ on_trade_good_changed_estate_privileges_effect = {
 	}
 	if = {
 		limit = {
+			has_province_modifier = estate_knights_monopoly_of_metals_modifier
+			NOT = { trade_goods = copper }
+			NOT = { trade_goods = iron }
+		}
+		remove_province_modifier = estate_knights_monopoly_of_metals_modifier
+	}
+	else_if = {
+		limit = {
+			from = { has_estate_privilege = estate_knights_monopoly_of_metals }
+			NOT = { has_province_modifier = estate_knights_monopoly_of_metals_modifier }
+			OR = {
+				trade_goods = copper
+				trade_goods = iron
+			}
+		}
+		remove_province_modifier = estate_knights_monopoly_of_metals_modifier
+	}
+	if = {
+		limit = {
 			has_province_modifier = estate_nobles_monopoly_of_livestock_mod
 			NOT = { trade_goods = livestock }
 		}
@@ -2893,6 +2965,21 @@ on_trade_good_changed_estate_privileges_effect = {
 			trade_goods = livestock
 		}
 		remove_province_modifier = estate_rajput_monopoly_of_livestock_mod
+	}
+	if = {
+		limit = {
+			has_province_modifier = estate_knights_monopoly_of_livestock_modifier
+			NOT = { trade_goods = livestock }
+		}
+		remove_province_modifier = estate_knights_monopoly_of_livestock_modifier
+	}
+	else_if = {
+		limit = {
+			from = { has_estate_privilege = estate_knights_monopoly_of_livestock }
+			NOT = { has_province_modifier = estate_knights_monopoly_of_livestock_modifier }
+			trade_goods = livestock
+		}
+		remove_province_modifier = estate_knights_monopoly_of_livestock_modifier
 	}
 	if = {
 		limit = {
@@ -3253,6 +3340,10 @@ scaled_estate_ghulams_land_share_effect = {
 
 scaled_estate_ghulams = {
 	scaled_estate_land_share_reduce_effect = { estate = estate_ghulams }
+}
+
+scaled_estate_knights = {
+	scaled_estate_land_share_reduce_effect = { estate = estate_knights }
 }
 
 #Based on those above, but you can choose which estate you use
@@ -3772,6 +3863,26 @@ spawn_rebels_from_unhappy_estate = {
 					as_if_faction = yes
 				}
 			}
+			1 = {
+				trigger = {
+					owner = {
+						NOT = { disabled_rebels_from_seized_land_for_estate = { estate = estate_knights } }
+						has_estate = estate_knights
+						NOT = {
+							estate_loyalty = {
+								estate = estate_knights
+								loyalty = 30
+							}
+						}
+					}
+				}
+				spawn_rebels = {
+					type = particularist_rebels
+					size = $size$
+					estate = estate_knights
+					as_if_faction = yes
+				}
+			}
 		}
 	}
 }
@@ -4139,6 +4250,7 @@ re_add_loyalty_from_seized_land = {
 			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_eunuchs } }		add_estate_loyalty = { estate = estate_eunuchs			 loyalty = 15 } }
 			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_qizilbash } }		add_estate_loyalty = { estate = estate_qizilbash		 loyalty = 15 } }
 			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_ghulams } }		add_estate_loyalty = { estate = estate_ghulams			 loyalty = 15 } }
+			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_knights } }		add_estate_loyalty = { estate = estate_knights			 loyalty = 15 } }
 		}
 		else = {
 			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_nobles } }			add_estate_loyalty = { estate = estate_nobles			 loyalty = 20 } }
@@ -4156,6 +4268,7 @@ re_add_loyalty_from_seized_land = {
 			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_eunuchs } }		add_estate_loyalty = { estate = estate_eunuchs			 loyalty = 20 } }
 			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_qizilbash } }		add_estate_loyalty = { estate = estate_qizilbash		 loyalty = 20 } }
 			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_ghulams } }		add_estate_loyalty = { estate = estate_ghulams			 loyalty = 20 } }
+			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_knights } }		add_estate_loyalty = { estate = estate_knights			 loyalty = 20 } }
 		}
 	}
 }
@@ -4684,6 +4797,7 @@ clr_auto_complete_flag = {
 		clr_country_flag = auto_complete_estate_agenda_estate_eunuchs
 		clr_country_flag = auto_complete_estate_agenda_estate_qizilbash
 		clr_country_flag = auto_complete_estate_agenda_estate_ghulams
+		clr_country_flag = auto_complete_estate_agenda_estate_knights
 		clr_country_flag = auto_complete_estate_agenda_all
 	}
 }
@@ -4774,6 +4888,13 @@ on_completed_agenda_effect_estate_qizilbash = {
 	}
 }
 on_completed_agenda_effect_estate_ghulams = {
+	if = {
+		limit = { has_government_attribute = theocratic_monarchy_mechanic }
+		change_statists_vs_orangists = 0.05
+	}
+}
+
+on_completed_agenda_effect_estate_knights = {
 	if = {
 		limit = { has_government_attribute = theocratic_monarchy_mechanic }
 		change_statists_vs_orangists = 0.05
@@ -5838,6 +5959,15 @@ estate_action_CALL_DIET_NOBLES = {
 			loyalty = -15
 		}
 	}
+	if = {
+		limit = {
+			has_estate = estate_knights
+		}
+		add_estate_loyalty = {
+			estate = estate_knights
+			loyalty = -15
+		}
+	}
 }
 estate_action_GRANT_GENERALSHIP_NOBLES = {
 	if = {
@@ -5898,6 +6028,15 @@ estate_action_GRANT_GENERALSHIP_NOBLES = {
 		}
 		add_estate_loyalty = {
 			estate = estate_ghulams
+			loyalty = -5
+		}
+	}
+	if = {
+		limit = {
+			has_estate = estate_knights
+		}
+		add_estate_loyalty = {
+			estate = estate_knights
 			loyalty = -5
 		}
 	}
@@ -5985,6 +6124,15 @@ estate_action_RECRUIT_MINISTER_NOBLES = {
 		}
 		add_estate_loyalty = {
 			estate = estate_ghulams
+			loyalty = -5
+		}
+	}
+	if = {
+		limit = {
+			has_estate = estate_knights
+		}
+		add_estate_loyalty = {
+			estate = estate_knights
 			loyalty = -5
 		}
 	}
@@ -6611,6 +6759,7 @@ clr_grand_vizier_flags = {
 	clr_country_flag = selected_grand_vizier_from_estate_eunuchs
 	clr_country_flag = selected_grand_vizier_from_estate_qizilbash
 	clr_country_flag = selected_grand_vizier_from_estate_ghulams
+	clr_country_flag = selected_grand_vizier_from_estate_knights
 	clr_country_flag = selected_grand_vizier_from_all
 }
 

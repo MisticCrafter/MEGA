@@ -1,0 +1,19 @@
+spriteTypes = {
+
+    spriteType = {
+		name = "GFX_andalos_calatharos"
+		texturefile = "gfx//interface//ideas_EU4//andalos_calatharos.dds"	
+	}
+    spriteType = {
+		name = "GFX_andalos_dunedanos"
+		texturefile = "gfx//interface//ideas_EU4//andalos_dunedanos.dds"	
+	}
+    spriteType = {
+		name = "GFX_andalos_munderanos"
+		texturefile = "gfx//interface//ideas_EU4//andalos_munderanos.dds"	
+	}
+    spriteType = {
+		name = "GFX_andalos_narathenos"
+		texturefile = "gfx//interface//ideas_EU4//andalos_narathenos.dds"	
+	}
+}

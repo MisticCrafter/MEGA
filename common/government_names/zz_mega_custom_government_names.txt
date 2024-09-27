@@ -269,3 +269,27 @@ american_merchant_republic_names = {
 		has_reform = american_merchant_republic
 	}
 }
+
+bundespraesident = {
+	rank = {
+		1 = BUNDESREPUBLIK
+		2 = BUNDESREPUBLIK
+		3 = BUNDESREPUBLIK
+	}
+
+	ruler_male = {
+		1 = BUNDESPRAESIDENT
+		2 = BUNDESPRAESIDENT
+		3 = BUNDESPRAESIDENT
+	}
+
+	ruler_female = {
+		1 = BUNDESPRAESIDENT
+		2 = BUNDESPRAESIDENT
+		3 = BUNDESPRAESIDENT
+	}
+	
+	trigger = {
+		is_emperor = yes
+	}
+}
