@@ -6,19 +6,17 @@ country_event = {
 	desc = nederlands_flavour_mega.1.desc
 	picture = GOOD_WITH_MONARCH_eventPicture
 
-	trigger = {
-		AND = {
-			has_game_started = yes
-			tag = NED
-		}
-	}
-
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
 		name = nederlands_flavour_mega.1.a
 		add_ruler_modifier = {
 			name = rule_of_stadhouderess_astolfo_i
+		}
+		add_country_modifier = {
+			name = astolfo_i_old_age_zeven_provincies_modifier
+			duration = -1
 		}
 		change_statists_vs_orangists = 0.50
 	}
@@ -112,7 +110,7 @@ country_event = {		# Astolfo II - adm mana penalty
 	id = nederlands_flavour_mega.4
 	title = nederlands_flavour_mega.4.title
 	desc = nederlands_flavour_mega.4.desc
-	picture = ""
+	picture = FEAST_eventPicture
 
 	trigger = {
 		AND = {
@@ -151,7 +149,7 @@ country_event = {		# Astolfo II - dip mana penalty
 	id = nederlands_flavour_mega.5
 	title = nederlands_flavour_mega.5.title
 	desc = nederlands_flavour_mega.5.desc
-	picture = ""
+	picture = OVEREXTENSION_eventPicture
 
 	trigger = {
 		AND = {
@@ -190,7 +188,7 @@ country_event = {		# Astolfo II - mil mana penalty
 	id = nederlands_flavour_mega.6
 	title = nederlands_flavour_mega.6.title
 	desc = nederlands_flavour_mega.6.desc
-	picture = ""
+	picture = LAND_MILITARY_eventPicture
 
 	trigger = {
 		AND = {
@@ -230,7 +228,7 @@ country_event = {			# Astolfo II - Kathrijne's Skull
 	id = nederlands_flavour_mega.7
 	title = nederlands_flavour_mega.7.title
 	desc = nederlands_flavour_mega.7.desc
-	picture = ""
+	picture = BAD_WITH_MONARCH_eventPicture
 
 	trigger = {
 		AND = {
@@ -274,7 +272,7 @@ country_event = {			# Astolfo II - mercantile regulation
 	id = nederlands_flavour_mega.8
 	title = nederlands_flavour_mega.8.title
 	desc = nederlands_flavour_mega.8.desc
-	picture = ""
+	picture = TRADEGOODS_eventPicture
 
 	trigger = {
 		AND = {
@@ -325,7 +323,7 @@ country_event = {			# Astolfo II - road networks
 	id = nederlands_flavour_mega.9
 	title = nederlands_flavour_mega.9.title
 	desc = nederlands_flavour_mega.9.desc
-	picture = ""
+	picture = DEBATE_REPUBLICAN_eventPicture
 
 	trigger = {
 		AND = {
@@ -377,7 +375,7 @@ country_event = {			# Astolfo II - stadhouder residency I
 	id = nederlands_flavour_mega.10
 	title = nederlands_flavour_mega.10.title
 	desc = nederlands_flavour_mega.10.desc
-	picture = ""
+	picture = HOUSE_OF_TRADE_eventPicture
 
 	trigger = {
 		AND = {
@@ -414,7 +412,7 @@ country_event = {			# Astolfo II - stadhouder residency II
 	id = nederlands_flavour_mega.11
 	title = nederlands_flavour_mega.11.title
 	desc = nederlands_flavour_mega.11.desc
-	picture = ""
+	picture = HOUSE_OF_TRADE_eventPicture
 
 	trigger = {
 		AND = {
@@ -447,11 +445,11 @@ country_event = {			# Astolfo II - stadhouder residency II
 
 }
 
-country_event = {
+country_event = {			# Reformed Nederlandische Republic
 	id = nederlands_flavour_mega.12
 	title = nederlands_flavour_mega.12.title
 	desc = nederlands_flavour_mega.12.desc
-	picture = ""
+	picture = REFORM_eventPicture
 
 	is_triggered_only = yes
 
@@ -463,11 +461,11 @@ country_event = {
 
 }
 
-country_event = {
+country_event = {			# Directorial Republic of Fontaine
 	id = nederlands_flavour_mega.13
 	title = nederlands_flavour_mega.13.title
 	desc = nederlands_flavour_mega.13.desc
-	picture = ""
+	picture = RELIGIOUS_WARS_eventPicture
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -485,7 +483,7 @@ country_event = {
 	id = nederlands_flavour_mega.14
 	title = nederlands_flavour_mega.14.title
 	desc = nederlands_flavour_mega.14.desc
-	picture = ""
+	picture = KING_SICK_IN_BED_eventPicture
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -504,7 +502,7 @@ country_event = {
 	id = nederlands_flavour_mega.15
 	title = nederlands_flavour_mega.15.title
 	desc = nederlands_flavour_mega.15.desc
-	picture = ""
+	picture = REFORM_eventPicture
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -523,7 +521,7 @@ country_event = {
 	id = nederlands_flavour_mega.16
 	title = nederlands_flavour_mega.16.title
 	desc = nederlands_flavour_mega.16.desc
-	picture = ""
+	picture = ADVISOR_eventPicture
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -544,7 +542,7 @@ country_event = {
 	id = nederlands_flavour_mega.17
 	title = nederlands_flavour_mega.17.title
 	desc = nederlands_flavour_mega.17.desc
-	picture = ""
+	picture = RELIGIOUS_WARS_eventPicture
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -561,7 +559,7 @@ country_event = {
 	id = nederlands_flavour_mega.18
 	title = nederlands_flavour_mega.18.title
 	desc = nederlands_flavour_mega.18.desc
-	picture = ""
+	picture = RELIGIOUS_TURMOIL_eventPicture
 
 	mean_time_to_happen = {
 		days = 60

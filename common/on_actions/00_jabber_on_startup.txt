@@ -36,6 +36,13 @@ on_startup = {
 		set_country_flag = OB_conversion
 	}
 
+	if = {
+		limit = { tag = NED }
+		country_event = {
+			id = nederlands_flavour_mega.1
+		}
+	}
+
 	cote_nord_area = {
 		discover_country = CWD
 	}
