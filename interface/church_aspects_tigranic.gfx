@@ -31,6 +31,11 @@ spriteTypes = {
 		legacy_lazy_load=no
 	}
 	spriteType = {
+		name = "GFX_blessing_primarchate"
+		texturefile = "gfx//interface//church_aspects//tigranic//blessing_primarchate.dds"
+		legacy_lazy_load=no
+	}
+	spriteType = {
 		name = "GFX_feed_the_land"
 		texturefile = "gfx//interface//church_aspects//tigranic//feed_the_land.dds"
 		legacy_lazy_load=no
