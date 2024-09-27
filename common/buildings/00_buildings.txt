@@ -575,6 +575,30 @@ fort_15th = {
 				duration = -1
 			}
 		}
+		if = {
+			limit = {
+				owner = {
+					tag = KNI
+					has_country_modifier = kni_fort_capital_maintenance
+				}
+			}
+			add_province_modifier = {
+				name = kni_fort_capital
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				owner = {
+					tag = KNI
+					has_country_modifier = kni_fort_garrison_draft_maintenence
+				}
+			}
+			add_province_modifier = {
+				name = kni_fort_garrison_grain
+				duration = -1
+			}
+		}
 	}
 
 

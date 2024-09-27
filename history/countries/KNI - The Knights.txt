@@ -6,6 +6,7 @@ religion = catholic
 primary_culture = crusader_egyptian
 capital = 361
 add_accepted_culture = al_misr_arabic
+add_historical_friend = MOR
 1444.11.11= {
 	monarch = {
 		name = "Arias"

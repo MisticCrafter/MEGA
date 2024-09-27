@@ -9,7 +9,8 @@ kni_cairo_citadel = {
 	monthly_splendor = 1
 }
 kni_friendship_pope = {
-	relation_with_same_religion = 10
+	relation_with_same_religion = 15
+	reverse_relation_with_same_religion = 15
 }	
 kni_defense_of_the_faith = {
 	army_tradition_decay = -0.01
@@ -169,13 +170,18 @@ kni_piratical_caravels = {
 	ship_durability = 0.10	
 	is_caravel_modifier = yes
 }
+kni_scourge_of_the_mediterranean_modifier = {
+	max_flagships = 1
+	privateer_efficiency = 0.50
+	naval_morale_damage = 0.05
+}
 kni_granary_of_the_mediterranean = {
 	trade_goods_size_modifier = 0.05
 	local_development_cost = -0.15
 }
 kni_grain_capital = {
 	trade_value = 25
-	local_development_cost = -0.20
+	local_development_cost_modifier = -0.15
 }
 kni_great_builders = {
 	local_development_cost = -0.20
@@ -237,6 +243,47 @@ kni_the_sword = {
 kni_the_shield = {
 	defensiveness = 0.33
 }
+kni_flooded_nile_banners = {
+	defensiveness = 0.10
+}
+kni_flooded_nile = {
+	local_monthly_devastation = 1.5
+	defensiveness = 0.25
+	development_cost_modifier = 0.10
+	trade_goods_size_modifier = -0.10
+	local_hostile_attrition = 3
+	max_attrition = 5
+	supply_limit_modifier = -0.50
+}
+kni_nile_sailors = {
+	local_sailors = 500
+}
+kni_knightly_marines = {
+	allowed_marine_fraction = 0.10
+}
+kni_refined_order_knights = {
+	drill_decay_modifier = -0.25
+	discipline = 0.025
+	is_mamluks_modifier = yes
+}
+kni_mastered_boarding = {
+	can_transport_units = yes
+	is_caravel_modifier = yes
+	is_galleon_modifier = yes
+}
+kni_knights_of_the_sea = {
+	shock_damage_received = -0.20
+	movement_speed_onto_off_boat_modifier = 0.33
+	is_marine_modifier = yes
+}
+kni_order_rules_the_waves_modifier = {
+	naval_morale = 0.20
+	development_cost_modifier = -0.05
+}
+kni_mastered_galley = {
+	galley_hull_size_modifier = 0.10
+	galley_cost = -0.10
+}
 kni_fort_garrison_grain_maintenence = {
 	fort_maintenance_modifier = 0.20
 }
@@ -256,11 +303,11 @@ kni_fort_capital = {
 	local_defensiveness = 0.10
 	local_development_cost = -0.05
 }
-kni_fort_capital = {
+kni_fort_capital_maintenance = {
 	fort_maintenance_modifier = 0.20
 }
 kni_fort_garrison_draft = {
-	local_garrison_size = 0.25
+	local_garrison_size = 0.30
 	local_manpower_modifier = -0.10
 }
 kni_fort_garrison_draft_maintenence = {
