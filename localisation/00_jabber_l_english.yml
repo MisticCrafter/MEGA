@@ -229,6 +229,15 @@
  ARC_develop_country_desc: "For centuries, the course for Andalos - and, ultimately, all of Iberia - was set and steered by the happenings of three major courts: that of Sintra, the new capital, raised to splendor by the House of Sintra; that of Madragal, the old capital, as inherited from our islamic predecessors; and that of Leragal, an older capital still and a remnant from a bygone visigothic age. However, times have changed. Now, it is between two great citadels that our future is chartered: that of Sintra, and that of Lisarra. If we are to establish a true empire and be remembered as such, it is imperative that these great cities look the part. We must seek to have the most illustrious cities, such that even the likes of Venice, Palermo and Geneva will seem like dirty hamlets in comparison."
  ARC_revoke_privileges_title: "Revoke the Old Privileges"
  ARC_revoke_privileges_desc: "Ever since days of Tiresias the Breaker have the realms beyond the Arganic mountains been granted a distinctly higher degree of autonomy face the rest of the realm. In his times, this was a clever arrangement: the northern crowns, although defeated, still donned sharp steel in their scabbards, and the realm could ill afford constant warring in such faraway territories; we gained tribute and fealty, they kept their arms and titles.\n\nFour centuries have passed since then, and the political climate of Iberia is no longer the same. The glory of the northern crowns has faded, and talk of disloyalty is heard only among the senile or the thoughtless youth. Despite this, their old privileges still allow for various political factions and estates to harbour significant influence and sway, practically unparalleled in the Andal south. We must rid ourselves of these elements and centralize the lands of Hispania under the Andal Crown for once and for all."
+ 
+ # Wardenships, Generic
+ wardenship_raise_army_title: "The Wars to Come"
+ wardenship_raise_army_desc: "WIP"
+ wardenship_develop_capital_title: "'Naught but Plenty'"
+ wardenship_develop_capital_desc: "WIP"
+ wardenship_get_astari_title: "Assemble the Wardenguard"
+ wardenship_get_astari_desc: "WIP"
+ 
  ###
  
 
@@ -267,6 +276,8 @@
  ARC_adopting_astari: "Adopting Grand Army Doctrines"
  ARC_reformed_paladins: "Astari: None so Feared"
  ARC_nobility_dissolved: "Dissolved the Nobility"
+
+ ARC_wardenguard: "The Wardenguard"
 
  # (Modifiers) from Andalos Events
  ARC_african_alliance: "Andal Weaponry"

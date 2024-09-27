@@ -37,4 +37,11 @@
  lighthouse_of_akkra: "Lighthouse of Akkra"
  golden_mosque: "The Golden Mosque"
  # Tooltips
- aka_exarchates_enables_tt: "Unlocks the creation of §YExarchates§!."
+ aka_exarchates_activate_tt: "Unlocks the creation of §YExarchates§!."
+ # Decisions
+ akan_exarchate_kongo_decision_title: "Proclaim the Exarchate of Kongo"
+ akan_exarchate_kongo_decision_desc: "WIP"
+ akan_exarchate_mali_decision_title: "Proclaim the Exarchate of Mali"
+ akan_exarchate_mali_decision_desc: "WIP"
+ akan_exarchate_oyaman_decision_title: "Proclaim the Exarchate of Oyaman"
+ akan_exarchate_oyaman_decision_desc: "WIP"

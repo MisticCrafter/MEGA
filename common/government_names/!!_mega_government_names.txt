@@ -1,0 +1,295 @@
+andal_subject_monarchy = {
+	rank = {
+		1 = LORD_PARAMOUNTCY
+		2 = LORD_PARAMOUNTCY
+		3 = LORD_PARAMOUNTCY
+	}
+
+	ruler_male = {
+		1 = LORD_PARAMOUNT
+		2 = LORD_PARAMOUNT
+		3 = LORD_PARAMOUNT
+	}
+
+	ruler_female = {
+		1 = LADY_PARAMOUNT
+		2 = LADY_PARAMOUNT
+		3 = LADY_PARAMOUNT
+	}
+	
+	trigger = {
+		is_subject = yes
+		has_reform = andal_subject_reform
+	}
+}
+
+andal_crown_monarchy = {
+	rank = {
+		1 = ARCHONATE
+		2 = ARCHONATE
+		3 = GRAND_ARCHONATE
+	}
+
+	ruler_male = {
+		1 = ARCHON
+		2 = ARCHON
+		3 = GRAND_ARCHON
+	}
+
+	ruler_female = {
+		1 = ARCHONESS
+		2 = ARCHONESS
+		3 = GRAND_ARCHONESS
+	}
+
+	heir_male = {
+		1 = PRINCE
+		2 = PRINCE
+		3 = PRINCE
+	}
+
+	heir_female = {
+		1 = PRINCESS
+		2 = PRINCESS
+		3 = PRINCESS
+	}
+	
+	trigger = {
+		OR = {
+			has_reform = andal_crown_reform
+			AND = {
+				primary_culture = andal
+				is_subject = no
+			}
+		}
+	}
+}
+
+andal_exarchate_republic = {
+	rank = {
+		1 = EXARCHATE
+		2 = EXARCHATE
+		3 = EXARCHATE
+	}
+
+	ruler_male = {
+		1 = EXARCH
+		2 = EXARCH
+		3 = EXARCH
+	}
+
+	ruler_female = {
+		1 = EXARCHESS
+		2 = EXARCHESS
+		3 = EXARCHESS
+	}
+	
+	trigger = {
+		is_subject = yes
+		has_reform = andal_exarchate_reform
+	}
+}
+
+christian_berber_monarchy = {
+	rank = {
+		1 = GRAND_DUCHY
+		2 = PRINCIPALITY
+		3 = PRINCIPALITY
+	}
+
+	ruler_male = {
+		1 = GRAND_DUKE
+		2 = PRINCE
+		3 = PRINCE
+	}
+
+	ruler_female = {
+		1 = GRAND_DUCHESS
+		2 = PRINCESS
+		3 = PRINCESS
+	}
+	
+	trigger = {
+		has_reform = christian_berber_reform
+	}
+}
+
+outremer_monarchy = {
+	rank = {
+		1 = DUCHY
+		2 = KINGDOM
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = DUKE
+		2 = CRUSADER_KING
+		3 = CRUSADER_EMPEROR
+	}
+
+	ruler_female = {
+		1 = DUCHESS
+		2 = CRUSADER_QUEEN
+		3 = CRUSADER_EMPRESS
+	}
+
+	consort_male  = {
+		1 = PRINCE_CONSORT
+		2 = PRINCE_CONSORT
+		3 = PRINCE_CONSORT
+	}
+
+	consort_female = {
+		1 = CONSORT
+		2 = QUEEN_CONSORT
+		3 = EMPRESS_CONSORT
+	}
+
+	heir_male = {
+		1 = HEIR
+		2 = HEIR
+		3 = HEIR
+	}
+
+	heir_female = {
+		1 = HEIR_fem
+		2 = HEIR_fem
+		3 = HEIR_fem
+	}
+
+	trigger = {
+		has_reform = outremer_government_reform
+	}
+}
+
+outremer_japan_monarchy = {
+	rank = {
+		1 = DUCHY
+		2 = KINGDOM
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = DUKE
+		2 = CRUSADER_KING
+		3 = CRUSADER_EMPEROR
+	}
+
+	ruler_female = {
+		1 = DUCHESS
+		2 = CRUSADER_QUEEN
+		3 = CRUSADER_EMPRESS
+	}
+
+	consort_male  = {
+		1 = PRINCE_CONSORT
+		2 = PRINCE_CONSORT
+		3 = PRINCE_CONSORT
+	}
+
+	consort_female = {
+		1 = CONSORT
+		2 = QUEEN_CONSORT
+		3 = EMPRESS_CONSORT
+	}
+
+	heir_male = {
+		1 = HEIR
+		2 = HEIR
+		3 = HEIR
+	}
+
+	heir_female = {
+		1 = HEIR_fem
+		2 = HEIR_fem
+		3 = HEIR_fem
+	}
+
+	trigger = {
+		has_reform = stardust_crusaders_reform
+	}
+}
+#diet roman republic
+diet_roman_republic = {
+	rank = {
+		1 = RES_PUBLICA
+		2 = RES_PUBLICA
+		3 = RES_PUBLICA
+	}
+
+	ruler_male = {
+		1 = CONSUL
+		2 = GRAND_CONSUL
+		3 = GREAT_CONSUL
+	}
+
+	ruler_female = {
+		1 = CONSULESS
+		2 = GRAND_CONSULESS
+		3 = GREAT_CONSULESS
+	}
+
+	consort_male = {
+		1 = CONSORT
+		2 = CONSORT
+		3 = CONSORT
+	}
+
+	consort_female = {
+		1 = CONSORT
+		2 = CONSORT
+		3 = CONSORT
+	}
+	
+	trigger = {
+		has_reform = dollarstore_roman_republic_government
+	}
+}
+
+american_merchant_republic_names = {
+	rank = {
+		1 = SIGNORIA
+		2 = SIGNORIA
+		3 = SIGNORIA
+	}
+
+	ruler_male = {
+		1 = SIGNORE
+		2 = SIGNORE
+		3 = SIGNORE
+	}
+
+	ruler_female = {
+		1 = SIGNORA
+		2 = SIGNORA
+		3 = SIGNORA
+	}
+	
+	trigger = {
+		has_reform = american_merchant_republic
+	}
+}
+
+bundespraesident = {
+	rank = {
+		1 = BUNDESREPUBLIK
+		2 = BUNDESREPUBLIK
+		3 = BUNDESREPUBLIK
+	}
+
+	ruler_male = {
+		1 = BUNDESPRAESIDENT
+		2 = BUNDESPRAESIDENT
+		3 = BUNDESPRAESIDENT
+	}
+
+	ruler_female = {
+		1 = BUNDESPRAESIDENT
+		2 = BUNDESPRAESIDENT
+		3 = BUNDESPRAESIDENT
+	}
+	
+	trigger = {
+		is_emperor = yes
+	}
+}

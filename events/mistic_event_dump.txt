@@ -8,6 +8,8 @@ country_event = {
     picture = ANGRY_MOB_eventPicture
 
     fire_only_once = yes
+
+    major = yes
     
     trigger = {
         tag = SWI
@@ -137,6 +139,8 @@ country_event = {
 
     fire_only_once = yes
 
+    major = yes
+
     trigger = {
         tag = SWI
         is_year = 1460
@@ -230,6 +234,8 @@ country_event = {
     picture = ANGRY_MOB_eventPicture
     
     fire_only_once = yes
+
+    major = yes
     
     trigger = {
         tag = SWI
@@ -409,6 +415,8 @@ country_event = {
     picture = ANGRY_MOB_eventPicture
     
     fire_only_once = yes
+
+    major = yes
     
     trigger = {
         tag = SWI
@@ -549,6 +557,8 @@ country_event = {
     picture = ANGRY_MOB_eventPicture
     
     fire_only_once = yes
+
+    major = yes
     
     trigger = {
         tag = SWI
@@ -713,6 +723,8 @@ country_event = {
     picture = ANGRY_MOB_eventPicture
     
     fire_only_once = yes
+
+    major = yes
     
     trigger = {
         tag = SWI
@@ -876,6 +888,8 @@ country_event = {
     picture = ANGRY_MOB_eventPicture
     
     fire_only_once = yes
+
+    major = yes
     
     trigger = {
         tag = SWI
@@ -1003,6 +1017,8 @@ country_event = {
     picture = ANGRY_MOB_eventPicture
     
     fire_only_once = yes
+
+    major = yes
     
     trigger = {
         tag = SWI
@@ -1150,6 +1166,8 @@ country_event = {
     
     fire_only_once = yes
     
+    major = yes
+
     trigger = {
         tag = SWI
         is_year = 1500
@@ -1788,7 +1806,10 @@ country_event = {
         NOT = { has_global_flag = discovered_americas_flag }
         capital_scope = { NOT = { continent = north_america } }
         capital_scope = { NOT = { continent = south_america } }
-        religion_group = christian
+        OR = {
+            religion_group = christian
+            religion = rationalist
+        }
         OR = {
             has_discovered = 1530 #Coast of Brazil
             has_discovered = 1531 #Coast of Pernambuco

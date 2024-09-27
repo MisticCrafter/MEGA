@@ -25,7 +25,7 @@ estate_astari_arcagarda = {
         has_estate_privilege = estate_astari_astarostratha
     }
     penalties = {
-		land_forcelimit_modifier = -0.5
+		land_forcelimit_modifier = -0.25
         nobles_loyalty_modifier = -0.2
         nobles_influence_modifier = -0.1
     }
@@ -84,7 +84,7 @@ estate_astari_astarostratha = {
     benefits = {
         country_military_power = 1
         allowed_tercio_fraction = 0.15
-        yearly_army_professionalism = 0.25
+        yearly_army_professionalism = 0.0025
         has_tercio = yes   
     }
     ai_will_do = {
