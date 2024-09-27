@@ -1,5 +1,5 @@
-capital = "Nakota"
-culture = chiwere
+capital = "Osage"
+culture = osage
 religion = totemism
 trade_goods = unknown
 base_tax = 1

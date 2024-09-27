@@ -1,7 +1,7 @@
 owner = NAK
 controller = NAK
 capital = "Wappus"
-culture = bungi
+culture = blackfoot
 religion = totemism
 trade_goods = unknown
 base_tax = 1

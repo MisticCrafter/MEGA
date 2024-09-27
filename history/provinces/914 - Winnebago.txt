@@ -1,5 +1,5 @@
 capital = "Winnebago"
-culture = chiwere
+culture = osage
 religion = totemism
 trade_goods = unknown
 base_tax = 2

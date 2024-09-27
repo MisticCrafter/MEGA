@@ -92,8 +92,8 @@ colonial_canada = {
 	culture = {
 		inuit = 10
 		innu = 12
-		nakota = 2
-		cheyenne = 2
+		osage = 2
+		blackfoot = 2
 		huron = 4
 		abenaki = 6
 	}
@@ -312,7 +312,7 @@ colonial_eastern_america = {
 		chickasaw = 9
 		huron = 13
 		innu = 5
-		dakota = 2
+		osage = 2
 		abenaki = 12
 		pequot = 2
 	}
@@ -450,13 +450,9 @@ colonial_louisiana = {
 	}
 
 	culture = {
-		nakota = 2
-		dakota = 8
-		chiwere = 3
-		pawnee = 10
-		osage = 3
-		caddo = 6
-		cheyenne = 1
+		osage = 17
+		wichita = 16
+		blackfoot = 1
 		shoshone = 1
 	}
 
@@ -598,7 +594,7 @@ colonial_louisiana = {
 		trigger = {
 			OR = {
 				owns = 903 # Omaha
-				owns = 901 # Pawnee
+				owns = 901 # Wichita
 			}
 		}
 		name = "COLONIAL_LOUISIANA_Nebraska"
@@ -632,8 +628,7 @@ colonial_california = {
 	}
 
 	culture = {
-		shoshone = 10
-		piman = 8
+		shoshone = 18
 		navajo = 1
 	}
 
@@ -717,9 +712,8 @@ colonial_mexico = {
 	}
 
 	culture = {
-		pueblo = 2
+		shoshone = 7
 		navajo = 10
-		piman = 5
 		aztek = 8
 		zapotek = 6
 		mayan = 7

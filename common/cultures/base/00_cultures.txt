@@ -5458,7 +5458,7 @@ central_algonquian = {
 plains_algonquian = {
 	graphical_culture = northamericagfx
 
-	cheyenne = {
+	blackfoot = {
 		primary = CHY
 		dynasty_names = {
 			Mohe Diwali Waya Tsiyi Onacona Atagulkalu Degataga Cheasequah Adahy Atagulkalu
@@ -5494,7 +5494,7 @@ plains_algonquian = {
 			Oota dabun Pules Sokanon Sokw Sooleawa Tahki Wapun Wawetseka Koko Peta Sinopa
 		}
 	}
-	arapaho = {
+	blackfoot = {
 		primary = ARP
 		dynasty_names = {
 			Clatsop Cathlamet Skilloot Cathlapotle Multnomah Watlala Clowwewalla Clackamas Chiluckittequaw Wishram Wasco 
@@ -5516,7 +5516,7 @@ plains_algonquian = {
 			Smriti Surabhi Tapi Tara
 		}
 	}
-	plains_cree = {
+	blackfoot = {
 		primary = NEH
 		dynasty_names = {
 			Iyiyiw Chisasibi Wemindji Whapmagoostui Mistissini Nemaska "Ouje-Bougoumou" Waskaganish Waswanipi Mosoni Maskekowak 
@@ -5533,7 +5533,7 @@ plains_algonquian = {
 			Torotiy Meriy Elin Ashenee Astina Echa Kiche Kika Mati Matisa Matisoon Nichena Osceola Pamoon Paniya 
 		}
 	}
-	bungi = {
+	blackfoot = {
 		primary = OJI
 		dynasty_names = {
 			Missisage Saulteaux Bungee Saginaw Achiligouan Amicoures Amikwa Auwause Bawating Chequamegon Keweenaw Kitchigami 
@@ -5849,7 +5849,7 @@ iroquoian = {
 siouan = {
 	graphical_culture = northamericagfx
 	
-	dakota = {
+	osage = {
 		primary = SIO
 		dynasty_names = {
 			Sichangu Oglala Itazipcho Hunkpapha Mnikhowozu Sihasapa Oohenunpa
@@ -5868,7 +5868,7 @@ siouan = {
 			Talutah Wachiwi Wasula Weayaya Wichapi
 		}
 	}
-	nakota = {
+	osage = {
 		primary = ASI
 		dynasty_names = {
 			Aegitina Bizibina Cephubi Canhdada Canhewincasta Canknuhabi Hudesabina Hebina Huhumasmibi Huhuganebabi
@@ -5890,7 +5890,7 @@ siouan = {
 			Talutah Wachiwi Wasula Weayaya Wichapi
 		}
 	}
-	chiwere = {
+	osage = {
 		primary = OEO
 		dynasty_names = {
 			Sichangu Oglala Itazipcho Hunkpapha Mnikhowozu Sihasapa Oohenunpa
@@ -5960,7 +5960,7 @@ caddoan = {
 			Smriti Surabhi Tapi Tara
 		}
 	}
-	caddo = {
+	wichita = {
 		primary = CAD
 		dynasty_names = {
 			Adai Cahinnio Doustioni Eyeish Hainai Hasinai Kadohadacho
@@ -5976,7 +5976,7 @@ caddoan = {
 			Zacado Tstakurriwax Tstaka Tstarahuxtu Tsaktahiraas Tskusaski Tstaruri'u Tstapittarius
 		}
 	}
-	pawnee = {
+	wichita = {
 		primary = PAW
 		dynasty_names = {
 			Marhar Skidi Turikaku Kitkehaxpakuxtu Tuhitspiat Tukistkita Tuhawukasa Arikararikutsu
@@ -6181,7 +6181,7 @@ muskogean = {
 sonoran = {
 	graphical_culture = northamericagfx
 	
-	pueblo = {
+	shoshone = {
 		primary = PUE
 		dynasty_names = {
 			Acoma Cochiti Isleta Jemez Laguna Nambe "Ohkay Owingeh" Picuris Pojoaque Sandia 
@@ -6194,7 +6194,7 @@ sonoran = {
 			Ootcakao Kahavasooah Ootcakao Sacagawea Chipeta Tocmetone
 		}
 	}
-	piman = {
+	shoshone = {
 		primary = PIM
 		dynasty_names = {
 			Akimel Tohono "Hia Ced" Sobaipuri Otama Kina Equituni Uturituc Sacaton "Onk Akimal"
@@ -6220,7 +6220,7 @@ sonoran = {
 			Kahavasooah Ootcakao Sacagawea Chipeta Tocmetone
 		}
 	}
-	kiowa = {
+	shoshone = {
 		primary = KIO
 		dynasty_names = {
 			Clatsop Cathlamet Skilloot Cathlapotle Multnomah Watlala Clowwewalla Clackamas Chiluckittequaw 
@@ -6322,7 +6322,7 @@ apachean = {
 na_dene = {
 	graphical_culture = northamericagfx
 
-	chipewyan = {
+	haida = {
 		dynasty_names = {
 			"Tsi'naajinii" "Deeshchii'nii" "Tl'izi Lani" "Tl'aaschi'I" Tsenabahituii Nashashi "T'üschebaanii" "Jaa'yaaloolii"
 			"Keha'atiintii" "Naashaashi"
@@ -6351,7 +6351,7 @@ na_dene = {
 			Dahteste Ilthgozay Gouyen Lozen Tohayea
 		}
 	}
-	athabascan = {
+	haida = {
 		dynasty_names = {
 			Kiusta Kung Yan Hiellan Skidegate "Cha'atl" Haina Kaisun Cumshewa Skedans Tanu Ninstints
 			Masset Atewaas Jaahguhl Kayung "Hlk'yah GaawGa" Klinkwan Sukkwan Howkan Kasaan
@@ -6392,7 +6392,7 @@ penutian = {
 			Kikisoblu Wewick Sholeetsa Ladalia Olahl
 		}
 	}
-	chinook = {
+	salish = {
 		primary = CNK
 		dynasty_names = {
 			Clatsop Cathlamet Skilloot Cathlapotle Multnomah Watlala Clowwewalla Clackamas Chiluckittequaw 
@@ -6410,7 +6410,7 @@ penutian = {
 			Smriti Surabhi Tapi Tara
 		}
 	}
-	yokuts = {
+	salish = {
 		primary = YKT
 		dynasty_names = {
 			Wishram Wasco Atfalati Yamel Lakmiut Chepenafa Santiam Chelamela Calapooya Yoncalla

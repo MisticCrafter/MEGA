@@ -1113,8 +1113,8 @@ central_algonquian = {
 	}
 }
 plains_algonquian = {
-	bungi = {
-		primary = NAK #This is Nakawe, only country with Bungi as its Primary culture
+	blackfoot = {
+		primary = NAK #This is Nakawe, only country with Blackfoot as its Primary culture
 	}
 }
 eastern_algonquian = {
@@ -1132,10 +1132,10 @@ sonoran = {
 apachean = {
 }
 na_dene = {
-	chipewyan = {
+	haida = {
 		primary = SYD
 	}
-	athabascan = {
+	haida = {
 		primary = DNT
 	}
 }

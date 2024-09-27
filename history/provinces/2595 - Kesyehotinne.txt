@@ -1,5 +1,5 @@
 capital = "Kesyehotinne"
-culture = chipewyan
+culture = haida
 religion = totemism
 trade_goods = unknown
 base_tax = 1
