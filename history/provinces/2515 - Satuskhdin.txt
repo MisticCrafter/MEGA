@@ -1,5 +1,5 @@
 capital = "Satsukhdin"
-culture = yoron
+culture = chickasaw
 religion = totemism
 trade_goods = unknown
 base_tax = 1

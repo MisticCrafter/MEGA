@@ -1,5 +1,5 @@
-capital = "Delaware"
-culture = delaware
+capital = "abenaki"
+culture = abenaki
 religion = totemism
 trade_goods = unknown
 base_tax = 4

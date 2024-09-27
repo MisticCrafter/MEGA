@@ -1,5 +1,5 @@
 capital = "Woods cree"
-culture = plains_cree
+culture = blackfoot
 religion = totemism
 trade_goods = unknown
 base_tax = 1

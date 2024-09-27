@@ -94,7 +94,7 @@ country_event = {
 	}
 }
 
-# The Paladins of [country]
+# The Finest in the Realm
 country_event = {
     id = flavor_tigranic.4
 	title = flavor_tigranic.4.title
@@ -109,11 +109,28 @@ country_event = {
 
 	option = {
 		name = flavor_tigranic.4.a
-		create_general = { tradition = 90 }
-		#add_country_modifier = {
-		#	name = "tigranic_paladins_modifier"
-		#	duration = 4750
-		#}
+		random_list = {
+			25 = {
+				create_general_scaling_with_tradition_and_pips = {
+					add_fire = 1
+				}
+			}
+			25 = {
+				create_general_scaling_with_tradition_and_pips = {
+					add_shock = 1
+				}
+			}
+			25 = {
+				create_general_scaling_with_tradition_and_pips = {
+					add_manuever = 1
+				}
+			}
+			25 = {
+				create_general_scaling_with_tradition_and_pips = {
+					add_siege = 1
+				}
+			}
+		}
 	}
 }
 

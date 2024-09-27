@@ -1,4 +1,4 @@
-capital = "Arapaho"
+capital = "Blackfoot"
 culture = wichita
 religion = totemism
 trade_goods = unknown

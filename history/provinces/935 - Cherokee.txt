@@ -1,8 +1,8 @@
 owner = CIA
 controller = CIA
-capital = "Cherokee"
+capital = "huron"
 is_city = yes
-culture = yuchi
+culture = chickasaw
 religion = totemism
 trade_goods = naval_supplies
 base_tax = 2

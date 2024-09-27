@@ -1,5 +1,5 @@
 capital = "Tsoyaha"
-culture = yuchi
+culture = chickasaw
 religion = totemism
 trade_goods = grain
 base_tax = 1

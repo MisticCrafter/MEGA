@@ -1,5 +1,5 @@
 capital = "Adai"
-culture = caddo
+culture = wichita
 religion = totemism
 trade_goods = unknown
 base_tax = 2

@@ -1429,7 +1429,7 @@ native_council_legacy = {
 	valid_for_new_country = no
 	allow_convert = no
 	native_mechanic = yes
-	allow_migration = yes
+	allow_migration = no
 
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
@@ -1469,7 +1469,7 @@ siberian_native_council = {
 	valid_for_new_country = yes
 	allow_convert = no
 	native_mechanic = no
-	allow_migration = yes
+	allow_migration = no
 
 	valid_for_nation_designer = yes
 	nation_designer_cost = -10

@@ -1833,3 +1833,31 @@ country_event = {
 # Lombardei gets bonuses for breaking away
 
 # Occitania gets bonuses for breaking away
+
+# Temp event for punishing the AI
+country_event = {
+    id = flavor_mistic_swiss.999
+    title = flavor_mistic_swiss.999.t
+    desc = flavor_mistic_swiss.999.d
+    picture = NAVAL_MILITARY_eventPicture
+
+    fire_only_once = yes
+
+    trigger = {
+        is_year = 1520
+        tag = SWI
+        NOT = { mission_completed = swiss_lombardy_integration }
+    }
+
+    immediate = {
+        release_all_subjects = yes
+        italy_region = {
+            country_or_non_sovereign_subject_holds = ROOT   
+            cede_province = SAV
+        }
+    }
+
+    option = {
+        name = flavor_mistic_swiss.999.a
+    }
+}

@@ -1,7 +1,7 @@
 owner = TON
 controller = TON
 capital = "Tonala"
-culture = tepic
+culture = tecos
 religion = nahuatl
 trade_goods = wool
 base_tax = 1

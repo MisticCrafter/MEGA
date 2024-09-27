@@ -1085,7 +1085,7 @@ native_ideas = {
 	trigger = {
 		government = native
 		NOT = { primary_culture = tupinamba }
-		NOT = { primary_culture = guajiro }
+		NOT = { primary_culture = arawak }
 		NOT = { 
 			capital_scope = {
 				OR = {
@@ -1604,7 +1604,7 @@ aymaran_ideas = {
 	}
 	
 	trigger = {
-		primary_culture = aimara
+		primary_culture = inca
 	}
 	free = yes
 	
@@ -1762,7 +1762,7 @@ guajiro_ideas = {
 	}
 	
 	trigger = {
-		primary_culture = guajiro #Lokono
+		primary_culture = arawak #Lokono
 	}
 	free = yes
 	
@@ -2839,8 +2839,8 @@ nw_native_ideas = {
 	
 	trigger = {
 		OR = {
-			primary_culture = athabascan
-			primary_culture = chinook
+			primary_culture = haida
+			primary_culture = salish
 			primary_culture = haida
 			primary_culture = salish
 		}
@@ -2890,11 +2890,11 @@ plains_native_ideas = {
 			culture_group = caddoan
 			culture_group = plains_algonquian
 			culture_group = siouan
-			primary_culture = chipewyan
-			primary_culture = kiowa
+			primary_culture = haida
+			primary_culture = shoshone
 			primary_culture = shoshone
 		}
-		NOT = { primary_culture = caddo }
+		NOT = { primary_culture = wichita }
 	}
 	free = yes
 	
@@ -2982,7 +2982,7 @@ ne_native_ideas = {
 					culture_group = central_algonquian
 					culture_group = eastern_algonquian
 					culture_group = iroquoian
-					primary_culture = chiwere
+					primary_culture = osage
 					primary_culture = osage
 				}
 				NOT = {
@@ -3034,7 +3034,7 @@ se_native_ideas = {
 		government = native
 		OR = {
 			culture_group = muskogean
-			primary_culture = caddo
+			primary_culture = wichita
 			tag = CHE
 			tag = TSC
 		}
@@ -3081,7 +3081,7 @@ sw_native_ideas = {
 		}
 		NOT = {
 			OR = {
-				primary_culture = kiowa
+				primary_culture = shoshone
 				primary_culture = shoshone
 			}
 		}
@@ -3221,7 +3221,7 @@ iroquoian_federation_ideas = {
 	
 	trigger = {
 		AND = { 
-			primary_culture = iroquois
+			primary_culture = huron
 			is_federation_nation = yes
 		}
 	}
@@ -3265,7 +3265,7 @@ siouan_federation_ideas = {
 		OR = {
 			AND = {
 				is_federation_nation = yes
-				primary_culture = dakota
+				primary_culture = osage
 			}
 			tag = SIO
 		}
@@ -3307,7 +3307,7 @@ eastern_algonquian_federation_ideas = {
 	
 	trigger = {
 		is_federation_nation = yes
-		primary_culture = algonquin
+		primary_culture = innu
 		OR = {
 			capital_scope = {
 				region = northeast_america_region
@@ -3354,7 +3354,7 @@ central_algonquian_federation_ideas = {
 	
 	trigger = {
 		is_federation_nation = yes
-		primary_culture = algonquin
+		primary_culture = innu
 		OR = {
 			capital_scope = {
 				region = great_lakes_region
@@ -3401,7 +3401,7 @@ muskogean_federation_ideas = {
 	
 	trigger = {
 		is_federation_nation = yes
-		primary_culture = creek
+		primary_culture = chickasaw
 	}
 	free = yes
 	
@@ -3442,10 +3442,10 @@ generic_federation_ideas = {
 	trigger = { 
 		is_federation_nation = yes
 		NOT = {
-			primary_culture = iroquois
-			primary_culture = creek
-			primary_culture = algonquin
-			primary_culture = dakota
+			primary_culture = huron
+			primary_culture = chickasaw
+			primary_culture = innu
+			primary_culture = osage
 		}
 	}
 	free = yes

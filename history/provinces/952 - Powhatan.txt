@@ -1,8 +1,8 @@
 owner = POW
 controller = POW
-capital = "Powhatan"
+capital = "abenaki"
 is_city = yes
-culture = powhatan
+culture = abenaki
 religion = totemism
 trade_goods = tobacco
 base_tax = 2

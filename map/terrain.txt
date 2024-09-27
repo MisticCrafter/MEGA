@@ -133,7 +133,7 @@ categories =  {
 			2774 2775 2794 2796 #South Somalia
 
 			# Added by megacampaign
-			224 4548 230 4610 362 2798
+			224 4548 230 4610 2798
 		}		
 	}
 	
@@ -523,7 +523,7 @@ categories =  {
 			1031 #Japan
 			408 2311 4288 4290 #Middle East
 			462 #Caucasus
-			#362 #Egypt
+			362 #Egypt
 			2702 #Philippines
 			4706 # 1.30 Greece and Bulgaria
 		}
