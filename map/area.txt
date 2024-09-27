@@ -351,7 +351,7 @@ orleans_area = {
 # Low Countries				 		   #
 ########################################
 
-artesie_area = { #3
+picardy_area = { #3
 	87 88 1743
 }
 
@@ -488,7 +488,11 @@ liguria_area = { #3
 }
 
 corsica_sardinia_area = { #5
-	127 1247 2986 4735 126
+	127 1247 2986 4735 
+}
+
+sicily_area = { 
+	126 
 }
 
 western_sicily_area = { #5

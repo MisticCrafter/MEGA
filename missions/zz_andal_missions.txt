@@ -535,7 +535,7 @@ andalos_slot_2_missions = {
 	
 		effect = {
 			define_explorer = {
-				name = "Diogo Cï¿½o"
+				name = "Diogo Cão"
 				shock = 2
 				fire = 2
 				manuever = 4
@@ -599,7 +599,7 @@ andalos_slot_2_missions = {
 				duration = 7300
 			}
 			define_conquistador = {
-				name = "Fernando Corterreal"
+				name = "Amandro de Targares"
 				shock = 5
 				fire = 5
 				manuever = 6
@@ -1280,7 +1280,23 @@ andalos_slot_3_missions_b = {
 	
 		effect = {
 			add_prestige_or_monarch_power = { amount = 15 }
-			add_years_of_income = 1 
+			add_years_of_income = 1
+			1186 = {
+				add_base_production = 2
+				add_base_manpower = 2
+				add_province_modifier = {
+					name = "ARC_feitoria"
+					duration = -1
+				}
+			}
+			1192 = {
+				add_base_production = 2
+				add_base_manpower = 2
+				add_province_modifier = {
+					name = "ARC_feitoria"
+					duration = -1
+				}
+			}
 			zimbabwe_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -1882,6 +1898,7 @@ andalos_slot_4_missions = {
 				add_permanent_claim = ROOT
 			}
 			596 = { add_permanent_claim = ROOT }
+			1248 = { add_permanent_claim = ROOT }
 			country_event = { id = flavor_andalos.5 }
 			custom_tooltip = flavor_andalos_5_tt
 		}
@@ -2672,13 +2689,9 @@ andalos_slot_5_missions_c = {
 		
 		trigger = {
 			OR = {
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 10
+				trade_goods_produced_amount = {
 					trade_goods = wine
-					OR = {
-						has_building = workshop
-						has_building = counting_house
-					}
+					amount = 10
 				}
 				trading_bonus = {
 					trade_goods = wine

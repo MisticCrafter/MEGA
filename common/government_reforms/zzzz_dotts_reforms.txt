@@ -13,7 +13,7 @@ dollarstore_roman_republic_government = {
 	potential = {
 		AND = {
 			OR = {
-				primary_culture = mare-roman
+				primary_culture = roman
 				primary_culture = roman
 			}
 			OR = {

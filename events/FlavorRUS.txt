@@ -5206,7 +5206,8 @@ country_event = {
 		add_country_modifier = {
 			name = roman_visions_realized
 			duration = -1
-			}
+		}
+	}
 
 	option = {
 		name = "flavor_rus.EVTOPTB2001"
@@ -5217,11 +5218,11 @@ country_event = {
 			add_province_modifier = {
 				name = "fourth_rome_modifier"
 				duration = -1
-				}
 			}
 		}
 	}
 }
+
 # The Restoration of Kiev - alt history
 country_event = {
 	id = flavor_rus.2002

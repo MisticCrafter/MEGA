@@ -238,6 +238,7 @@ country_event = {
 		trigger = { 
 			NOT = { has_reform = monastic_elections_reform }
 			NOT = { has_reform = feuillant_reform }
+			NOT = { has_reform = FNT_cult_of_the_queen_mother_reform }
 		}
 		if = {
 			limit = {
@@ -296,6 +297,22 @@ country_event = {
 		}
 		name = elections.720.b
 		if = {
+			limit = {
+				has_reform = FNT_cult_of_the_queen_mother_reform
+			}
+			define_ruler = {
+				name = "Astolfo"
+				dynasty = "van Paradyx"
+				female = yes
+				change_adm = 1
+				change_dip = 1
+				change_mil = 1
+			}
+			hidden_effect = {
+				set_dynasty = "van Paradyx"
+			}
+		}
+		else_if = {
 			limit = {
 				NOT = {
 					has_country_flag = ned_buff_orangist_candidates_flag

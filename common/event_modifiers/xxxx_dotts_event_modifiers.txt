@@ -5,7 +5,7 @@ out_kni_ally = {
 out_lae_ally = {
 	infantry_power = 0.05
 }
-out_nax_ally = {
+out_anc_ally = {
 	defensiveness = 0.20
 }
 out_mor_ally = {
@@ -99,6 +99,25 @@ sister_holy_order_vassal_overlord_modifier = {
 	global_missionary_strength = 0.01
 	papal_influence = 2
 }
+#Services stuffs
+dotts_buying_arms = {
+	infantry_cost = -0.15
+	artillery_cost = -0.15
+}
+dotts_selling_arms = {
+	trade_goods_size_modifier = -0.05
+}
+dotts_loan_given = {
+	interest = 1
+}
+dotts_sisterhood_sect = {
+	
+}
+dotts_trade_posts = {
+	global_trade_power = 0.05
+	trade_steering = 0.1
+}
+
 #sicily
 palatini_regiments = {
 	assault_fort_ability = -0.25

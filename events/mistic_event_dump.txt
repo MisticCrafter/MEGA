@@ -475,6 +475,7 @@ country_event = {
             cede_province = SAV
             add_core = SAV
         }
+        set_country_flag = SWI_liguria_razed
     }
 
     option = {
@@ -624,7 +625,7 @@ country_event = {
                 add_core = SAV
             }
         }
-        europe = {
+        balkan_region = {
             limit = {
                 country_or_non_sovereign_subject_holds = ROOT
                 culture_group = italian
@@ -638,6 +639,7 @@ country_event = {
             cede_province = SAV
             add_core = SAV
         }
+        set_country_flag = SWI_trieste_razed
     }
 
     option = {
@@ -1813,7 +1815,7 @@ country_event = {
 
     option = {
         name = flavor_mistic_swiss.17.a
-        prestige = 60
+        add_prestige = 60
         add_country_modifier = {
             name = "discovered_america_modifier"
             duration = 7300

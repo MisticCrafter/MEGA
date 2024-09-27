@@ -11,7 +11,7 @@ country_decisions = {
             has_not_any_estate_disaster_active = yes
             estate_action_off_cooldown = {
                 estate_action = PROMOTE_NEW_GRANDMASTER
-                duration = 7300
+                days = 7300
             }
         }
         effect = {

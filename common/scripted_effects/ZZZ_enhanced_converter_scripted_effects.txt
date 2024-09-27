@@ -448,7 +448,7 @@ ZZZ_enhanced_converter_battle_cult_spreading_effect = {
 			FROM = {
 				OR = {
 					religion = norse_pagan
-					religion = norse_pagan_reformed
+					religion = norse_pagan
 					has_unlocked_cult = norse_cult
 				}
 			}
@@ -465,7 +465,7 @@ ZZZ_enhanced_converter_battle_cult_spreading_effect = {
 			ROOT = {
 				OR = {
 					religion = norse_pagan
-					religion = norse_pagan_reformed
+					religion = norse_pagan
 					has_unlocked_cult = norse_cult
 				}
 			}
@@ -821,7 +821,7 @@ ZZZ_enhanced_converter_battle_cult_spreading_effect = {
 						NOT = { religion = finnish_pagan  }
 						NOT = { religion = finnish_pagan_reformed }
 						NOT = { religion = norse_pagan }
-						NOT = { religion = norse_pagan_reformed }
+						NOT = { religion = norse_pagan }
 						NOT = { religion = hellenic_pagan }
 						NOT = { religion = hellenic_pagan_reformed }
 						NOT = { religion = kushitism_pagan }
@@ -861,7 +861,7 @@ ZZZ_enhanced_converter_battle_cult_spreading_effect = {
 						NOT = { religion = finnish_pagan  }
 						NOT = { religion = finnish_pagan_reformed }
 						NOT = { religion = norse_pagan }
-						NOT = { religion = norse_pagan_reformed }
+						NOT = { religion = norse_pagan }
 						NOT = { religion = hellenic_pagan }
 						NOT = { religion = hellenic_pagan_reformed }
 						NOT = { religion = kushitism_pagan }
