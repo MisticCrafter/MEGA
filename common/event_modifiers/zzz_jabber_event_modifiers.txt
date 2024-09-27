@@ -160,7 +160,7 @@ ARC_reformed_paladins = {
 
 ARC_grand_navy = {
     navy_tradition = 0.5
-    naval_forcelimit_modifier = 0.33
+    naval_forcelimit_modifier = 0.2
 }
 
 ARC_adopting_galleons = {

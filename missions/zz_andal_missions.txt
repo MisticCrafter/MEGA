@@ -2754,7 +2754,7 @@ andalos_slot_5_missions_c = {
 		effect = {
 			add_country_modifier = {
 				name = "por_houses_of_trade"
-				duration = 14600
+				duration = 7300
 			}
 		}
 	}
@@ -2783,7 +2783,7 @@ andalos_slot_5_missions_c = {
 		effect = {
 			add_country_modifier = {
 				name = "por_arts_and_letters"
-				duration = 14600
+				duration = 7300
 			}
 		}
 	}

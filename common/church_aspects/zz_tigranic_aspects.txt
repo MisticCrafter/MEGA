@@ -151,9 +151,12 @@ tigranic_blessing_madragal = {
     effect = {
         custom_tooltip = tigranic_blessing_madragal_tt
         hidden_effect = {
-            every_owned_province = {
+            every_province = {
                 limit = {
-                    owned_by = ROOT
+                    owner = {
+                        tag = ROOT
+                        is_subject_of = ROOT
+                    }
                     OR = {
                         superregion = europe_superregion
                         AND = {
@@ -196,9 +199,12 @@ tigranic_blessing_athens = {
     effect = {
         custom_tooltip = tigranic_blessing_athens_tt
         hidden_effect = {
-            every_owned_province = {
+            every_province = {
                 limit = {
-                    owned_by = ROOT
+                    owner = {
+                        tag = ROOT
+                        is_subject_of = ROOT
+                    }
                     OR = {
                         superregion = eastern_europe_superregion
                         superregion = near_east_superregion
@@ -239,9 +245,12 @@ tigranic_blessing_malacca = {
     effect = {
         custom_tooltip = tigranic_blessing_malacca_tt
         hidden_effect = {
-            every_owned_province = {
+            every_province = {
                 limit = {
-                    owned_by = ROOT
+                    owner = {
+                        tag = ROOT
+                        is_subject_of = ROOT
+                    }
                     OR = {
                         superregion = india_superregion
                         superregion = east_indies_superregion
@@ -283,9 +292,12 @@ tigranic_blessing_kumasi = {
     effect = {
         custom_tooltip = tigranic_blessing_kumasi_tt
         hidden_effect = {
-            every_owned_province = {
+            every_province = {
                 limit = {
-                    owned_by = ROOT
+                    owner = {
+                        tag = ROOT
+                        is_subject_of = ROOT
+                    }
                     continent = africa
                     religion = tigranic
                 }
@@ -328,9 +340,14 @@ tigranic_blessing_newworld = {
     effect = {
         custom_tooltip = tigranic_blessing_newworld_tt
         hidden_effect = {
-            every_owned_province = {
+            every_province = {
                 limit = {
-                    owned_by = ROOT
+                    owner = {
+                        OR = {
+                            tag = ROOT
+                            is_subject_of = ROOT
+                        }
+                    }
                     OR = {
                         continent = north_america
                         continent = south_america
