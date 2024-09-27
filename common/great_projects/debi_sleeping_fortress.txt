@@ -179,7 +179,6 @@ sleeping_fortress = {
 
         # What modifiers are given to the area of the province the project is located in
         area_modifier = {
-            local_defensiveness = 0.25
         }
 
         # What modifiers are given to the nation that owns the monument
@@ -188,7 +187,7 @@ sleeping_fortress = {
 
         # What modifiers are given to the region of the province the project is located in
         region_modifier = {
-
+            local_defensiveness = 0.25
         }
 
         # What happens when the upgrade is complete

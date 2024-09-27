@@ -159,7 +159,8 @@ Z1C_ideas = {
 		fire_damage_received = -0.10
 	}
 }
-anatolia_ideas = {
+
+anatoliaanatolia_ideas = {
 	start = {
 		artillery_cost = -0.20
 		global_tax_modifier = 0.15
@@ -171,7 +172,9 @@ anatolia_ideas = {
 	
 	trigger = {
 		tag = ANA
-		tag = NIK
+		OR = {
+			tag = NIK
+		}
 	}
 	free = yes
 	
