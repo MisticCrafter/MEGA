@@ -60,13 +60,24 @@
   kni_fort_garrison_grain_decision_disable_title: "Cancel Grain Surplus in Garrisons"
   kni_fort_garrison_grain_maintenence: "Grain Surplus Maintenence"
   kni_fort_garrison_grain: "Grain Surplus in Garrisons"
+  kni_fort_road_decision_title: "Castle Roads"
+  kni_fort_road_decision_disable_title: "Cancel Castle Roads"
+  kni_fort_road_maintenence: "Castle Road Maintenance"
+  kni_fort_road: "Castle Roads"
   sleeping_fortress: "Sleeping Fortress"
   gate_of_europe:0 "Gate of Europe"
   throne_of_the_crusader:0 "Throne of the Crusader"
   mont_saint_michel:0 "Mont Saint Michel"
+  kni_bridge_to_the_west_modifier: "Bridge to the West"
+  kni_pearl_of_the_mediterranean_modifier: "Pearl of the Mediterranean"
+  kni_urban_defenses_modifier: "Urban Defenses"
+  kni_shield_of_the_delta_modifier: "Shield of the Delta"
+  humanitarianism_edict: "Humanitarianism"
   african_christian_ideas: Mauretanian Ideas
   african_christian_ideas_bonus: Mauretanian Ambition
   african_christian_ideas_start: Mauretanian Traditions
   anatolia_ideas: Anatolian Ideas
   anatolia_ideas_start: Anatolian Traditions
   anatolia_ideas_bonus: Anatolian Ambition
+  beacons_of_rosetta: "Beacons of Rosetta"
+  kni_every_province_nile_tt:0 "Create a fort in all the provinces across the Nile. :)"

@@ -77,7 +77,7 @@ country_decisions = {
 		allow = { 
 			has_country_flag = kni_fort_roads_flag
 			NOT = {
-				has_country_modifier = kni_fort_roads_maintenence
+				has_country_modifier = "kni_fort_roads_maintenence"
 			}
 		}
 
@@ -85,7 +85,7 @@ country_decisions = {
 			custom_tooltip = kni_fort_roads_tooltip
 			add_mil_power = -50
 			add_country_modifier = {
-				name = kni_fort_raids_maintenence
+				name = "kni_fort_raids_maintenence"
 				duration = -1
 			}
 			every_owned_province = {
@@ -93,7 +93,7 @@ country_decisions = {
 					has_fort_building_trigger = yes
 				}
 				add_province_modifier = {
-					name = "kni_fort_roads"
+					name = "kni_fort_road"
 					hidden = yes
 					duration = -1
 				}
