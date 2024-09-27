@@ -2,9 +2,7 @@ estate_knights = {
     icon = 16
     trigger = {
         OR = {
-            # Knights
-                # debi write ur shit here
-            # Astari
+            culture_group = crusader_group
             tag = ARC
             primary_culture = andal
         }
