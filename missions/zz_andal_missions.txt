@@ -518,7 +518,7 @@ andalos_slot_2_missions = {
 				is_city = yes
 			}
 			custom_trigger_tooltip = {
-				tooltip = ARC_has_guinean_friend_tt
+				tooltip = ARC_has_african_friend_tt
 				niger_region = {
 					trade_goods = gold
 					owner = {

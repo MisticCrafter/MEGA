@@ -10,7 +10,7 @@ set_country_flag = ZZZ_generated_converter_nation
 1444.11.11= {
 	monarch = {
 		name = "Astolfo"
-		dynasty = "de Braganï¿½a"
+		dynasty = "de Bragança"
 		adm = 3
 		dip = 5
 		mil = 3
@@ -20,7 +20,7 @@ set_country_flag = ZZZ_generated_converter_nation
 	}
 	heir = {
 		name = "Diana"
-		dynasty = "de Braganï¿½a"
+		dynasty = "de Bragança"
 		adm = 2
 		dip = 2
 		mil = 3

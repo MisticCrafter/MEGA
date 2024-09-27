@@ -80,6 +80,7 @@ ARC_feitoria = {
     trade_goods_size = 0.5
     defensiveness = 0.25
     supply_limit_modifier = 0.25
+    picture = "andal_feitoria"
 }
 
 ARC_guinean_gold = {
@@ -438,47 +439,47 @@ estate_knights_monopoly_of_livestock_modifier = {
 ARC_house_of_zacantor = {
     local_autonomy = 0.03
     local_manpower_modifier = 0.5
-    picture = "GFX_andalos_dunedanos"
+    picture = "andalos_dunedanos"
 }
 
 ARC_house_of_vaz_mardel = {
     local_autonomy = 0.03
     local_manpower_modifier = 0.5
-    picture = "GFX_andalos_calatharos"
+    picture = "andalos_calatharos"
 }
 
 ARC_house_of_samara = {
     local_autonomy = 0.03
     local_manpower_modifier = 0.5
-    picture = "GFX_andalos_calatharos"
+    picture = "andalos_calatharos"
 }
 
 ARC_house_of_garnatha = {
     local_autonomy = 0.03
     local_manpower_modifier = 0.5
-    picture = "GFX_andalos_narathenos"
+    picture = "andalos_narathenos"
 }
 
 ARC_house_of_selmanor = {
     local_autonomy = 0.03
     local_manpower_modifier = 0.5
-    picture = "GFX_andalos_dunedanos"
+    picture = "andalos_dunedanos"
 }
 
 ARC_house_of_valsa = {
     local_autonomy = 0.03
     local_manpower_modifier = 0.5
-    picture = "GFX_andalos_munderanos"
+    picture = "andalos_munderanos"
 }
 
 ARC_house_of_scolarenos = {
     local_autonomy = 0.03
     local_manpower_modifier = 0.5
-    picture = "GFX_andalos_munderanos"
+    picture = "andalos_munderanos"
 }
 
 ARC_house_of_myron = {
     local_autonomy = 0.03
     local_manpower_modifier = 0.5
-    picture = "GFX_andalos_narathenos"
+    picture = "andalos_narathenos"
 }
