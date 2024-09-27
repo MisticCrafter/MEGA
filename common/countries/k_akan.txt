@@ -2,7 +2,6 @@ ck2_converter_generated = yes
 graphical_culture = africangfx
 color = { 225 25 25 }
 historical_idea_groups = {
-	trade_ideas
 	exploration_ideas
 	quality_ideas
 	expansion_ideas
