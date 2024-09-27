@@ -969,7 +969,7 @@ swiss_slot_2 = {
 				name = SWI_alm_autonomy
 				duration = -1
 			}
-			add_adm_power -200
+			add_adm_power = -200
 		} 
 	}
 }
@@ -1027,7 +1027,7 @@ swiss_slot_3 = {
 					culture = roman
 				}
 			}
-			else {
+			else = {
 				add_army_tradition = 10
 				add_navy_tradition = 10
 			}
@@ -1438,7 +1438,7 @@ swiss_slot_3 = {
 				add_casus_belli = {
 					target = FRA
 					type = cb_restore_personal_union
-					duration = 7300
+					months = 240
 				}
 			}
 			else = {
@@ -1494,7 +1494,7 @@ swiss_slot_3 = {
 
 		effect = {
 			4720 = {
-				add_permanent_province_modifier {
+				add_permanent_province_modifier = {
 					name = SWI_geneva_tier_1
 					duration = -1
 				}
@@ -1517,7 +1517,7 @@ swiss_slot_3 = {
 		effect = {
 			4720 = {
 				remove_province_modifier = SWI_geneva_tier_1
-				add_permanent_province_modifier {
+				add_permanent_province_modifier = {
 					name = SWI_geneva_tier_2
 					duration = -1
 				}
@@ -1540,7 +1540,7 @@ swiss_slot_3 = {
 		effect = {
 			4720 = {
 				remove_province_modifier = SWI_geneva_tier_2
-				add_permanent_province_modifier {
+				add_permanent_province_modifier = {
 					name = SWI_geneva_tier_3
 					duration = -1
 				}
@@ -1563,7 +1563,7 @@ swiss_slot_3 = {
 		effect = {
 			4720 = {
 				remove_province_modifier = SWI_geneva_tier_3
-				add_permanent_province_modifier {
+				add_permanent_province_modifier = {
 					name = SWI_geneva_tier_4
 					duration = -1
 				}
@@ -1593,7 +1593,7 @@ swiss_slot_3 = {
 		effect = {
 			4720 = {
 				remove_province_modifier = SWI_geneva_tier_4
-				add_permanent_province_modifier {
+				add_permanent_province_modifier = {
 					name = SWI_geneva_tier_5
 					duration = -1
 				}
@@ -1619,7 +1619,7 @@ swiss_slot_3 = {
 		effect = {
 			4720 = {
 				remove_province_modifier = SWI_geneva_tier_5
-				add_permanent_province_modifier {
+				add_permanent_province_modifier = {
 					name = SWI_geneva_tier_6
 					duration = -1
 				}
@@ -1642,7 +1642,7 @@ swiss_slot_3 = {
 		effect = {
 			4720 = {
 				remove_province_modifier = SWI_geneva_tier_6
-				add_permanent_province_modifier {
+				add_permanent_province_modifier = {
 					name = SWI_geneva_tier_7
 					duration = -1
 				}
@@ -1665,7 +1665,7 @@ swiss_slot_3 = {
 		effect = {
 			4720 = {
 				remove_province_modifier = SWI_geneva_tier_7
-				add_permanent_province_modifier {
+				add_permanent_province_modifier = {
 					name = SWI_geneva_tier_8
 					duration = -1
 				}
@@ -1694,7 +1694,7 @@ swiss_slot_3 = {
 		effect = {
 			4720 = {
 				remove_province_modifier = SWI_geneva_tier_8
-				add_permanent_province_modifier {
+				add_permanent_province_modifier = {
 					name = SWI_geneva_tier_zenith
 					duration = -1
 				}
@@ -1717,22 +1717,35 @@ swiss_slot_3 = {
 				name = SWI_romansh_forts
 				duration = -1
 			}
-			110 = {
+			if = {
+				limit = { owns = 110 }
+				110 = {
 				change_culture = romansh
 				add_province_triggered_modifier = SWI_romansh_stronghold
 			}
-			111 = {
+
+			}
+			if = {
+				limit = { owns = 111 }
+				111 = {
 				change_culture = romansh
 				add_province_triggered_modifier = SWI_romansh_stronghold
 			}
-			1873 = {
+		}
+			if = {
+				limit = { owns = 1873 }
+				1873 = {
 				change_culture = romansh
 				add_province_triggered_modifier = SWI_romansh_stronghold
 			}
-			4722 = {
+		}
+			if = {
+				limit = { owns = 4722 }
+				4722 = {
 				change_culture = romansh
 				add_province_triggered_modifier = SWI_romansh_stronghold
 			}
+		}
 			add_mil_power = -200
 		} 
 	}
@@ -1749,7 +1762,7 @@ swiss_slot_3 = {
 		trigger = {
 			OR = {
 				army_tradition = 100
-				army_professionalism = 100
+				army_professionalism = 1
 			}
 			num_of_owned_provinces_with = {
 				value = 50
@@ -2098,12 +2111,12 @@ swiss_slot_4 = {
 			add_casus_belli = {
 				target = HAB
 				type = cb_restore_personal_union
-				duration = 7300
+				months = 240
 			}
 			add_casus_belli = {
 				target = AUH
 				type = cb_restore_personal_union
-				duration = 7300
+				months = 240
 			}
 			
 		} 
@@ -2379,14 +2392,14 @@ swiss_slot_5 = {
 				change_province_name = "Port Tell"
 			}
 			coromandel_region = {
-				type = all
+				
 				if = {
 					limit = { trade_goods = spices }
 					add_permanent_claim = ROOT
 				}
 			}
 			deccan_region = {
-				type = all
+				
 				if = {
 					limit = { trade_goods = spices }
 					add_permanent_claim = ROOT
