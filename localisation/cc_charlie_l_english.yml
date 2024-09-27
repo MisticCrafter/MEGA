@@ -18,3 +18,5 @@
  HRE_INFLUENCE_DESC:1 "Federal Authority represents the amount of control the Bundespraesident exerts over the Princes of the Empire. Authority is needed to enact reform decisions within the German Confederation. A high Authority may inspire more nations to join the Confederation."
  convince_elector_desc:0 "$COUNTRY$ is an elector of the German Confederation, but sadly they are not endorsing our ambitions to be Bundespraesident. We must change this, with promises, threats and gold!"
  finno_ugric:0 "Finno-Ugric"
+ BUNDESREPUBLIK: "Bundesrepublik"
+ BUNDESPRAESIDENT: "Bundespraesident"

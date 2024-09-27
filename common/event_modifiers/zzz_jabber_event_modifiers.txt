@@ -399,3 +399,51 @@ estate_knights_monopoly_of_metals_modifier = {
 estate_knights_monopoly_of_livestock_modifier = {
 	local_production_efficiency = -10
 }
+
+ARC_house_of_zacantor = {
+    local_autonomy = 0.03
+    local_manpower_modifier = 0.5
+    picture = "GFX_andalos_dunedanos"
+}
+
+ARC_house_of_vaz_mardel = {
+    local_autonomy = 0.03
+    local_manpower_modifier = 0.5
+    picture = "GFX_andalos_calatharos"
+}
+
+ARC_house_of_samara = {
+    local_autonomy = 0.03
+    local_manpower_modifier = 0.5
+    picture = "GFX_andalos_calatharos"
+}
+
+ARC_house_of_garnatha = {
+    local_autonomy = 0.03
+    local_manpower_modifier = 0.5
+    picture = "GFX_andalos_narathenos"
+}
+
+ARC_house_of_selmanor = {
+    local_autonomy = 0.03
+    local_manpower_modifier = 0.5
+    picture = "GFX_andalos_dunedanos"
+}
+
+ARC_house_of_valsa = {
+    local_autonomy = 0.03
+    local_manpower_modifier = 0.5
+    picture = "GFX_andalos_munderanos"
+}
+
+ARC_house_of_scolarenos = {
+    local_autonomy = 0.03
+    local_manpower_modifier = 0.5
+    picture = "GFX_andalos_munderanos"
+}
+
+ARC_house_of_myron = {
+    local_autonomy = 0.03
+    local_manpower_modifier = 0.5
+    picture = "GFX_andalos_narathenos"
+}

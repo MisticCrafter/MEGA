@@ -771,6 +771,12 @@ colonial_mexico = {
 		}
 		name = "COLONIAL_MEXICO_New_Andalos"
 	}
+	names = {
+		trigger = {
+			tag = Z01
+		}
+		name = "COLONIAL_MEXICO_Mayekro"
+	}
 	# Generic
 	names = {
 		name = "COLONIAL_MEXICO_Root_Culture_GetName_Mexico"
@@ -910,6 +916,12 @@ colonial_the_carribean = {
 			tag = POR
 		}
 		name = "COLONIAL_THE_CARRIBEAN_Antilhas"
+	}
+	names = {
+		trigger = {
+			tag = ARC
+		}
+		name = "COLONIAL_THE_CARRIBEAN_Andal_West_Indies"
 	}
 	# Generic
 	names = {
@@ -1134,6 +1146,12 @@ colonial_la_plata = {
 		}
 		name = "COLONIAL_LA_PLATA_Arganteia"
 	}
+	names = {
+		trigger = {
+			tag = Z01
+		}
+		name = "COLONIAL_LA_PLATA_Guareman"
+	}
 	# Generic
 	names = {
 		name = "COLONIAL_LA_PLATA_Root_Culture_GetName_La_Plata"
@@ -1214,6 +1232,12 @@ colonial_brazil = {
 	}
 
 	# Specific
+	names = {
+		trigger = {
+			tag = Z01
+		}
+		name = "COLONIAL_BRAZIL_Egyannuaman"
+	}
 	names = {
 		trigger = {
 			tag = FRA

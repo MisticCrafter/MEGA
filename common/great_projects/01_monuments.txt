@@ -9525,6 +9525,17 @@ el_escorial = {
 			global_institution_spread = 0.1
 		}
 
+		conditional_modifier = {
+			trigger = {
+				owner = {
+					mission_completed = ARC_universities
+				}
+			}
+			modifier = {
+				innovativeness_gain = 0.1
+			}
+		}
+
 		#what effects happen when this tier is achieved
 		on_upgraded = {
 		}
@@ -9556,6 +9567,17 @@ el_escorial = {
 			global_institution_spread = 0.2
 		}
 
+		conditional_modifier = {
+			trigger = {
+				owner = {
+					mission_completed = ARC_universities
+				}
+			}
+			modifier = {
+				innovativeness_gain = 0.2
+			}
+		}
+
 		#what effects happen when this tier is achieved
 		on_upgraded = {
 		}
@@ -9585,6 +9607,17 @@ el_escorial = {
 			global_autonomy = -0.05
 			technology_cost = -0.10
 			global_institution_spread = 0.3
+		}
+
+		conditional_modifier = {
+			trigger = {
+				owner = {
+					mission_completed = ARC_universities
+				}
+			}
+			modifier = {
+				innovativeness_gain = 0.3
+			}
 		}
 
 		#what effects happen when this tier is achieved

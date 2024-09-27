@@ -1,0 +1,7 @@
+opinionARC_helped_renegades = {
+    opinion = -40
+}
+
+opinionARC_denied_renegades = {
+    opinion = -40
+}
