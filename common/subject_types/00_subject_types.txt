@@ -1912,31 +1912,29 @@ vicerroyalty = {
 	allows_taking_land_without_independence = yes
 	forms_trade_companies = no
 	can_concentrate_development = no
+	trust_on_start = 10
+
 	can_transfer_in_peace = no
 	can_release_in_peace = yes
-	trust_on_start = 10
-	overlord_can_fabricate_for = yes
 
 	base_liberty_desire = 30.0
-	liberty_desire_development_ratio = 0.25
 	liberty_desire_same_dynasty = -20.0
+	liberty_desire_development_ratio = 0.25
 	opinion_on_subject_integration = 0
 
-	pays_overlord = 0.25
+	military_focus = 1.2
+	pays_overlord = 0.5
 	forcelimit_to_overlord = 0.0
-	
-	military_focus = 2.0
+	overlord_can_fabricate_for = yes
 
 	relative_power_class = 0
 	should_quit_wars_on_activation = yes
 
 	can_fight = {
-		independent_nations = yes
-		other_overlord = all
+		
 	}
 	can_rival = {
-		other_overlord = all
-		independent_nations = yes
+		
 	}
 	can_ally = {
 		same_overlord = vicerroyalty
@@ -2013,12 +2011,10 @@ dominion = {
 	should_quit_wars_on_activation = yes
 
 	can_fight = {
-		independent_nations = yes
-		other_overlord = all
+		
 	}
 	can_rival = {
-		other_overlord = all
-		independent_nations = yes
+		
 	}
 	can_ally = {
 		same_overlord = dominion
