@@ -647,6 +647,9 @@ australia={
 }
 nippon={
 	location=1376
+	color={
+		194 53 60
+	}
 	outgoing={
 		name="hangzhou"
 		path={
@@ -720,6 +723,9 @@ xian={
 }
 beijing={
 	location=4233
+	color = {
+		179 128 104
+	}
 	outgoing={
 		name="yumen"
 		path={

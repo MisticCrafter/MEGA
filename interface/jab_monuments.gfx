@@ -54,4 +54,9 @@ spriteTypes = {
         name = "GFX_great_project_academia_padania"
         texturefile = "gfx//interface//great_projects//great_project_la_scala.dds"
     }
+
+    spriteType = {
+        name = "GFX_great_project_depingle_necropolis"
+        texturefile = "gfx//interface//great_projects//great_project_depingle_necropolis.dds"
+    }
 }
