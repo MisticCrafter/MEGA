@@ -1713,7 +1713,7 @@ andalos_slot_4_missions = {
 				}
 			}
 			light_ship_fraction = 0.25
-			navy_size_percentage = 1
+			navy_size_percentage = 0.8
 		}
 	
 		effect = {

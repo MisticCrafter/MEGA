@@ -926,7 +926,7 @@ country_event = {
 		ai_chance = { factor = 33 }
 		highlight = yes
 		trigger = {
-			has_estate_privilege = estate_nobles_andal_strong_duchies
+			has_reform = andal_crown_reform
 		}
 
 		custom_tooltip = ARC_cede_aragon_to_wardenship_tt
@@ -943,7 +943,7 @@ country_event = {
 
 			create_subject = {
 				subject = ARA
-				subject_type = appanage
+				subject_type = vicerroyalty
 			}
 
 			ARA = {
@@ -953,6 +953,7 @@ country_event = {
 					culture = ROOT
 					religion = ROOT
 				}
+				swap_non_generic_missions = yes
 			}	
 		}
 	}
@@ -1019,7 +1020,7 @@ country_event = {
 		ai_chance = { factor = 33 }
 		highlight = yes
 		trigger = {
-			has_estate_privilege = estate_nobles_andal_strong_duchies
+			has_reform = andal_crown_reform
 		}
 
 		custom_tooltip = ARC_cede_catalonia_to_wardenship_tt
@@ -1035,7 +1036,7 @@ country_event = {
 
 			create_subject = {
 				subject = CAT
-				subject_type = appanage
+				subject_type = vicerroyalty
 			}
 
 			CAT = {
@@ -1045,6 +1046,7 @@ country_event = {
 					culture = ROOT
 					religion = ROOT
 				}
+				swap_non_generic_missions = yes
 			}
 		}
 	}
@@ -1113,7 +1115,7 @@ country_event = {
 		ai_chance = { factor = 33 }
 		highlight = yes
 		trigger = {
-			has_estate_privilege = estate_nobles_andal_strong_duchies
+			has_reform = andal_crown_reform
 		}
 
 		custom_tooltip = ARC_cede_majorca_to_wardenship_tt
@@ -1132,7 +1134,7 @@ country_event = {
 
 			create_subject = {
 				subject = MJO
-				subject_type = appanage
+				subject_type = vicerroyalty
 			}
 
 			MJO = {
@@ -1142,6 +1144,7 @@ country_event = {
 					culture = ROOT
 					religion = ROOT
 				}
+				swap_non_generic_missions = yes
 			}
 		}
 	}
