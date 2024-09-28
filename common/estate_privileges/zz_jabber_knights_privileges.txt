@@ -84,7 +84,7 @@ estate_astari_astarostratha = {
     benefits = {
         country_military_power = 1
         allowed_tercio_fraction = 0.15
-        yearly_army_professionalism = 0.0025
+        yearly_army_professionalism = 0.005
         has_tercio = yes   
     }
     ai_will_do = {
