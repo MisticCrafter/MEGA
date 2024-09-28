@@ -49,4 +49,9 @@ spriteTypes = {
         name = "GFX_great_project_alpine_cross_castle"
         texturefile = "gfx//interface//great_projects//great_project_loeche_ville.dds"
     }
+
+    spriteType = {
+        name = "GFX_great_project_academia_padania"
+        texturefile = "gfx//interface//great_projects//great_project_la_scala.dds"
+    }
 }
