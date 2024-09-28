@@ -273,7 +273,7 @@ country_event = {
 			}
 			owner = {
 				country_event = {
-					flavor_mistic_swiss_missions.8
+					id = flavor_mistic_swiss_missions.8
 				}
 			}
 			add_devastation = 100
@@ -285,7 +285,7 @@ country_event = {
 	}
 
 	option = {
-		name = flavor_mistic_swiss_missions.7.a
+		name = flavor_mistic_swiss_missions.7.b
 
 		SWI = {
 			add_country_modifier = {

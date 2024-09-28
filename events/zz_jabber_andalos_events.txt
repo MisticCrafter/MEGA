@@ -431,13 +431,13 @@ country_event = {
 	
 	trigger = {
 		tag = ARC
-		exploration_ideas = 2
-		1460 = {
-            has_discovered = ROOT
-        }
-        1177 = {
-            has_discovered = ROOT
-        }
+		#exploration_ideas = 2
+		#1460 = {
+        #    has_discovered = ROOT
+        #}
+        #1177 = {
+        #    has_discovered = ROOT
+        #}
 	}
 
 	mean_time_to_happen = {
@@ -1555,12 +1555,12 @@ country_event = {
 				add_manuever = 1
 			}
 		}
-		ai_chance = { chance = 100 }
+		ai_chance = { factor = 90 }
 	}
 
 	option = {
 		name = flavor_andalos.24.b
-		ai_chance = { chance = 0 }
+		ai_chance = { factor = 10 }
 		add_prestige_or_monarch_power = {
 			amount = 10
 		}
