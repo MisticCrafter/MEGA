@@ -1,5 +1,5 @@
 capital = "Chitimacha"
-culture = natchez
+culture = chickasaw
 religion = totemism
 trade_goods = unknown
 base_tax = 5

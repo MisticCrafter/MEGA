@@ -1,4 +1,4 @@
-monument_name = {
+alpine_cross_castle = {
     # Province the project starts in
     start = 1871
 
@@ -12,7 +12,7 @@ monument_name = {
     can_be_moved = no
 
     # Starting tier of the project
-    starting_tier = 0
+    starting_tier = 1
 
     # Project type
     type = monument
@@ -102,7 +102,7 @@ monument_name = {
 
         # What modifiers are given to the province the project is located in
         province_modifiers = {
-            
+            supply_limit_modifier = 0.15
         }
 
         # What modifiers are given to the area of the province the project is located in
@@ -112,7 +112,8 @@ monument_name = {
 
         # What modifiers are given to the nation that owns the monument
         country_modifiers = {
-            
+            monthly_fervor_increase = 0.1
+            tolerance_heretic = 0.5
         }
 
         # What modifiers are given to the region of the province the project is located in
@@ -139,7 +140,8 @@ monument_name = {
 
         # What modifiers are given to the province the project is located in
         province_modifiers = {
-            
+            local_defender_dice_roll_bonus = 1
+            supply_limit_modifier = 0.3
         }
 
         # What modifiers are given to the area of the province the project is located in
@@ -149,7 +151,8 @@ monument_name = {
 
         # What modifiers are given to the nation that owns the monument
         country_modifiers = {
-            
+            monthly_fervor_increase = 0.25
+            tolerance_heretic = 1
         }
 
         # What modifiers are given to the region of the province the project is located in
@@ -176,8 +179,8 @@ monument_name = {
 
         # What modifiers are given to the province the project is located in
         province_modifiers = {
-            
-
+            local_defender_dice_roll_bonus = 1
+            supply_limit_modifier = 0.5
         }
 
         # What modifiers are given to the area of the province the project is located in
@@ -187,7 +190,8 @@ monument_name = {
 
         # What modifiers are given to the nation that owns the monument
         country_modifiers = {
-            
+            monthly_fervor_increase = 0.5
+            tolerance_heretic = 2
         }
 
         # What modifiers are given to the region of the province the project is located in
@@ -203,7 +207,7 @@ monument_name = {
 }
 
 
-monument2_name = {
+depingle_necropolis = {
     # Province the project starts in
     start = 4720
 
@@ -217,7 +221,7 @@ monument2_name = {
     can_be_moved = no
 
     # Starting tier of the project
-    starting_tier = 0
+    starting_tier = 1
 
     # Project type
     type = monument
@@ -317,7 +321,7 @@ monument2_name = {
 
         # What modifiers are given to the nation that owns the monument
         country_modifiers = {
-            
+			reinforce_speed = 0.10
         }
 
         # What modifiers are given to the region of the province the project is located in
@@ -354,7 +358,8 @@ monument2_name = {
 
         # What modifiers are given to the nation that owns the monument
         country_modifiers = {
-            
+            innovativeness_gain = 0.20
+			reinforce_speed = 0.10
         }
 
         # What modifiers are given to the region of the province the project is located in
@@ -396,18 +401,20 @@ monument2_name = {
         }
 
         # What modifiers are given to the region of the province the project is located in
-        region_modifier = {
-            #<modifiers>
-        }
+        country_modifiers = {
+			innovativeness_gain = 0.33
+			reinforce_speed = 0.25
+		}
 
         # What happens when the upgrade is complete
-        on_upgraded = {
-            #<do stuff> #For example; add_prestige = 25
-        }
+		on_upgraded = {
+			custom_tooltip = fewer_plagues_tt
+			owner = { set_country_flag = has_competent_doctors }
+		}
 	}
 }
 
-monument3_name = {
+academia_padania = {
     # Province the project starts in
     start = 2981
 
@@ -516,12 +523,13 @@ monument3_name = {
 
         # What modifiers are given to the area of the province the project is located in
         area_modifier = {
-            #<modifiers>
+            local_institution_spread = 0.05
         }
 
         # What modifiers are given to the nation that owns the monument
         country_modifiers = {
-            
+            technology_cost = -0.025
+            innovativeness_gain = 0.1
         }
 
         # What modifiers are given to the region of the province the project is located in
@@ -553,12 +561,13 @@ monument3_name = {
 
         # What modifiers are given to the area of the province the project is located in
         area_modifier = {
-            #<modifiers>
+            local_institution_spread = 0.1
         }
 
         # What modifiers are given to the nation that owns the monument
         country_modifiers = {
-            
+            technology_cost = -0.5
+            innovativeness_gain = 0.25
         }
 
         # What modifiers are given to the region of the province the project is located in
@@ -585,18 +594,18 @@ monument3_name = {
 
         # What modifiers are given to the province the project is located in
         province_modifiers = {
-            
 
         }
 
         # What modifiers are given to the area of the province the project is located in
         area_modifier = {
-            
+            local_institution_spread = 0.2            
         }
 
         # What modifiers are given to the nation that owns the monument
         country_modifiers = {
-            
+            technology_cost = -0.1
+            innovativeness_gain = 0.5
         }
 
         # What modifiers are given to the region of the province the project is located in

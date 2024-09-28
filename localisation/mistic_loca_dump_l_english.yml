@@ -82,7 +82,8 @@ l_english:
   verona_immune_to_lombardei: "If this mission is completed while Verona still exists, then Lombardei will be unable to force our hand in Verona."
   modena_immune_to_lombardei: "If this mission is completed before Lombardei sacks Modena, then Modena will be too developed for the planned purge to succeed."
   milan_immune_to_lombardei: "Our embedded agents will prevent Lombardei from razing Milan"
-  merchants_immune_to_lombardei: "The newly-loyal merchants and their Maritime Cities will no longer have to fear invasion or partition by Lombardei"
+  liguria_merchants_immune_to_lombardei: "The newly-loyal merchants and their Maritime Cities of Liguria will no longer have to fear invasion or partition by Lombardei"
+  trieste_immune_to_lombardei: "The newly-loyal merchants and their Maritime Cities of Trieste will no longer have to fear invasion or partition by Lombardei"
   lombardei_regency_abolished: "With the end of the treasonous Lombardei Regency, our italian subjects will no longer have to fear violent assimilation."
   SWI_failed_verona: "We failed to protect Verona from our own errant subjects. There is no reward, and we live in shame."
   SWI_failed_merchants: "We failed to protect the Maritime Republics from our own errant subjects. There is no reward, and we live in shame."
@@ -116,3 +117,9 @@ l_english:
   sovvertimento_tartexa_tt: "The state of §YTartexa§! has been founded on the mouth of the §YOrinoco River§!.\n\n§GInsight§!\nThe province of §YOrinoco Delta§! will be ceded to Tartexa.\nTartexa will follow the §YCatholic§! faith.\nTartexa will be of §YVenetian§! heritage.\nTartexa will be ruled by §YVettore Contarini§! (3/4/2).\nTartexa gets '§YNew Beginnings§!', giving the following effects:\n   Yearly Tax Income: §G+60.00§!\n   Global Settler Increase: §G+50.00§!\n   Settler Chance: §G+25.0%§!\n   Morale of Armies: §G+15.0%§!"
   sovvertimento_zenatta_tt: "The state of §YZênatta§! has been founded on the §Yinner coast of Florida§!.\n\n§GInsight§!\nThe province of §YPotano§! will be ceded to Zênatta.\nThe province of §YCalusa§! will be ceded to Zênatta.\nZênatta will follow the §YThibaultine§! faith.\nZênatta will be of §YLigurian§! heritage.\nZênatta will be ruled by §YAmerigo Gattilusio§! (3/5/4).\nZênatta gets '§YNew Beginnings§!', giving the following effects:\n   Yearly Tax Income: §G+60.00§!\n   Global Settler Increase: §G+50.00§!\n   Settler Chance: §G+25.0%§!\n   Morale of Armies: §G+15.0%§!"
   sovvertimento_nuometarra_tt: "The state of §YNuometarra§! has been founded on the §Ycoast of Texas§!.\n\n§GInsight§!\nThe province of §YCoahuilteco§! will be ceded to Nuometarra.\nThe province of §YAuia§! will be ceded to Nuometarra.\nNuometarra will follow the §YCatholic§! faith.\nNuometarra will be of §YTuscan§! heritage.\nNuometarra will be ruled by §YNiccolò Machiavelli§! (4/6/3).\nNuometarra gets '§YNew Beginnings§!', giving the following effects:\n   Yearly Tax Income: §G+60.00§!\n   Global Settler Increase: §G+50.00§!\n   Settler Chance: §G+25.0%§!\n   Morale of Armies: §G+15.0%§!"
+
+# Great Projects
+l_english:
+ alpine_cross_castle: "Castle of the Alpine Cross"
+ depingle_necropolis: "The Great Necropolis"
+ academia_padania: "Academia Padanica"

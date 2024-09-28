@@ -100,6 +100,11 @@ stadhouder_residency_astolfo_ii = {
 
 # Mission Events! (not Astolfo II anymore :D) 
 
+astolfo_i_old_age_zeven_provincies_modifier = {
+	all_power_cost = 0.25
+	reduced_liberty_desire = -10
+}
+
 zeven_provincies_crisis_1 = {
 	diplomatic_annexation_cost = -0.075
 	reduced_liberty_desire = 10
@@ -251,7 +256,7 @@ FNT_foundation_modifier = {
 }
 
 FNT_all_for_one_one_for_all_modifier = {
-	monthly_militarized_society = 0.05
+	monthly_queen_mother_militarized_society = 0.05
 	morale_damage_received = -0.1
 	sailors_recovery_speed = 0.33
 	manpower_in_true_faith_provinces = 0.2

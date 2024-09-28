@@ -35,10 +35,10 @@ andal_subject_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 10
 	modifiers = {
-		global_manpower_modifier = 0.10
-		reinforce_speed = 0.10
         global_unrest = -2
-        liberty_desire = -10
+		land_forcelimit_modifier = 0.25
+		global_manpower_modifier = 0.25
+		reinforce_speed = 0.25
 	}
 	lock_level_when_selected = yes
 	ai = {

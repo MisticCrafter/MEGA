@@ -1,5 +1,5 @@
 capital = "Acaxee"
-culture = chichimecan
+culture = tecos
 religion = animism
 trade_goods = unknown
 base_tax = 1

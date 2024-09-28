@@ -27,23 +27,23 @@ andalos_slot_1_missions = {
 		completed_by = 1501.1.1
 		
 		provinces_to_highlight = {
-			colonial_region = colonial_brazil
+			colonial_region = colonial_colombia
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
 		
 		trigger = { 
 			custom_trigger_tooltip = {
-				tooltip = miss_discover_brazil
-				colonial_brazil = {
+				tooltip = ARC_discover_colombia_tt
+				colonial_colombia = {
 					has_discovered = ROOT
 				}
 			}
 			custom_trigger_tooltip = {
-				tooltip = miss_colonize_brazil
+				tooltip = ARC_colonize_colombia_tt
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					value = 1
-					colonial_region = colonial_brazil
+					colonial_region = colonial_colombia
 					is_city = yes
 				}
 			}
@@ -518,7 +518,7 @@ andalos_slot_2_missions = {
 				is_city = yes
 			}
 			custom_trigger_tooltip = {
-				tooltip = ARC_has_guinean_friend_tt
+				tooltip = ARC_has_african_friend_tt
 				niger_region = {
 					trade_goods = gold
 					owner = {
@@ -1713,7 +1713,7 @@ andalos_slot_4_missions = {
 				}
 			}
 			light_ship_fraction = 0.25
-			navy_size_percentage = 1
+			navy_size_percentage = 0.8
 		}
 	
 		effect = {
@@ -2754,7 +2754,7 @@ andalos_slot_5_missions_c = {
 		effect = {
 			add_country_modifier = {
 				name = "por_houses_of_trade"
-				duration = 14600
+				duration = 7300
 			}
 		}
 	}
@@ -2783,7 +2783,7 @@ andalos_slot_5_missions_c = {
 		effect = {
 			add_country_modifier = {
 				name = "por_arts_and_letters"
-				duration = 14600
+				duration = 7300
 			}
 		}
 	}

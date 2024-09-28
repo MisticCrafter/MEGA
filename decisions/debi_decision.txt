@@ -20,6 +20,118 @@ country_decisions = {
 			}
 		}
 	}
+	kni_flood_the_nile = {
+		major = yes
+		potential = {
+			tag = KNI
+		}
+		allow = { 
+			has_country_flag = kni_flood_the_nile_flag
+			NOT = {
+				has_country_modifier = kni_flooded_nile_banners
+			}
+		}
+
+		effect = {
+			add_adm_power = -200
+			add_stability = -2
+			add_country_modifier = {
+				name = kni_flooded_nile_banners
+				duration = 3650
+			}
+			362 = {
+				add_province_modifier = {
+					name = kni_flooded_nile
+					duration = 3650
+				}
+			}
+			363 = {
+				add_province_modifier = {
+					name = kni_flooded_nile
+					duration = 3650
+				}
+			}
+			2316 = {
+				add_province_modifier = {
+					name = kni_flooded_nile
+					duration = 3650
+				}
+			}
+			361 = {
+				add_province_modifier = {
+					name = kni_flooded_nile
+					duration = 3650
+				}
+			}
+			359 = {
+				add_province_modifier = {
+					name = kni_flooded_nile
+					duration = 3650
+				}
+			}
+			vostani_area = {
+				add_province_modifier = {
+					name = kni_flooded_nile
+					duration = 3650
+				}
+			}
+			said_area = {
+				add_province_modifier = {
+					name = kni_flooded_nile
+					duration = 3650
+				}
+			}
+		}
+	}
+	kni_fort_capital_decision = {
+		major = yes
+		potential = {
+			tag = KNI
+		}
+		allow = { 
+			has_country_flag = kni_fort_capital_flag
+			NOT = {
+				has_country_modifier = "kni_fort_capital_maintenance"
+			}
+		}
+
+		effect = {
+			custom_tooltip = kni_fort_capital_tooltip
+			add_mil_power = -50
+			add_country_modifier = {
+				name = "kni_fort_capital_maintenance"
+				duration = -1
+			}
+			every_owned_province = {
+				limit = {
+					has_fort_building_trigger = yes
+				}
+				add_province_modifier = {
+					name = "kni_fort_capital"
+					hidden = yes
+					duration = -1
+				}
+			} 
+		}
+	}
+	kni_fort_capital_disable = {
+		major = yes
+		potential = {
+			tag = KNI
+			has_country_modifier = kni_fort_capital_maintenance
+		}
+		allow = { 
+			has_country_modifier = kni_fort_capital_maintenance
+		}
+
+		effect = {
+			add_adm_power = -50
+			remove_country_modifier = kni_fort_capital_maintenance
+			every_owned_province = {
+				remove_province_modifier = kni_fort_capital
+			}
+		}
+	}
 	kni_fort_garrison_grain_decision = {
 		major = yes
 		potential = {
@@ -75,17 +187,17 @@ country_decisions = {
 			tag = KNI
 		}
 		allow = { 
-			has_country_flag = kni_fort_roads_flag
+			has_country_flag = kni_fort_road_flag
 			NOT = {
-				has_country_modifier = kni_fort_roads_maintenence
+				has_country_modifier = "kni_fort_road_maintenence"
 			}
 		}
 
 		effect = {
-			custom_tooltip = kni_fort_roads_tooltip
+			custom_tooltip = kni_fort_road_tooltip
 			add_mil_power = -50
 			add_country_modifier = {
-				name = kni_fort_raids_maintenence
+				name = "kni_fort_road_maintenence"
 				duration = -1
 			}
 			every_owned_province = {
@@ -93,7 +205,7 @@ country_decisions = {
 					has_fort_building_trigger = yes
 				}
 				add_province_modifier = {
-					name = "kni_fort_roads"
+					name = "kni_fort_road"
 					hidden = yes
 					duration = -1
 				}
@@ -115,6 +227,55 @@ country_decisions = {
 			remove_country_modifier = kni_fort_road_maintenence
 			every_owned_province = {
 				remove_province_modifier = kni_fort_road
+			}
+		}
+	}
+	kni_fort_garrison_draft_decision = {
+		major = yes
+		potential = {
+			tag = KNI
+		}
+		allow = { 
+			has_country_flag = kni_fort_garrison_draft_flag
+			NOT = {
+				has_country_modifier = "kni_fort_garrison_draft_maintenence"
+			}
+		}
+
+		effect = {
+			custom_tooltip = kni_fort_garrison_draft_tooltip
+			add_mil_power = -50
+			add_country_modifier = {
+				name = "kni_fort_garrison_draft_maintenence"
+				duration = -1
+			}
+			every_owned_province = {
+				limit = {
+					has_fort_building_trigger = yes
+				}
+				add_province_modifier = {
+					name = "kni_fort_garrison_draft"
+					hidden = yes
+					duration = -1
+				}
+			} 
+		}
+	}
+	kni_fort_garrison_draft_disable = {
+		major = yes
+		potential = {
+			tag = KNI
+			has_country_modifier = kni_fort_garrison_draft_maintenence
+		}
+		allow = { 
+			has_country_modifier = kni_fort_garrison_draft_maintenence
+		}
+
+		effect = {
+			add_adm_power = -50
+			remove_country_modifier = kni_fort_garrison_draft_maintenence
+			every_owned_province = {
+				remove_province_modifier = kni_fort_garrison_draft
 			}
 		}
 	}

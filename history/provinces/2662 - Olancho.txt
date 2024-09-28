@@ -1,5 +1,5 @@
 capital = "Olancho"
-culture = miskito
+culture = muisca
 religion = animism
 trade_goods = unknown
 base_tax = 1

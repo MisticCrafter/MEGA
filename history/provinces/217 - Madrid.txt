@@ -1,10 +1,10 @@
 owner = ARC
 controller = ARC
-capital = "Meralinéa"
+capital = "Arcenias"
 is_city = yes
 culture = andal
 religion = tigranic
-trade_goods = cloth
+trade_goods = iron
 base_tax = 3
 base_production = 5
 base_manpower = 2

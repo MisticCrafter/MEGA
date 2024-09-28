@@ -10,3 +10,17 @@ SWI_tolerated_jews = {
     local_tolerance_of_heathens = 3
     innovativeness_gain = 0.5
 }
+
+SWI_romansh_stronghold = {
+    potential = {
+        mission_completed = swiss_romansh
+    }
+
+    trigger = {
+        culture = romansh
+    }
+
+    local_culture_conversion_cost = 0.5
+    local_culture_conversion_time = 1
+    defensiveness = 1
+}

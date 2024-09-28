@@ -1564,7 +1564,7 @@ petra = {
 	build_trigger = {
 		OR = {
 			AND = {
-				culture = al_suryah_arabic
+				culture_group = crusader_group
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
@@ -1592,7 +1592,7 @@ petra = {
 	can_use_modifiers_trigger = {
 		OR = {
 			AND = {
-				culture = al_suryah_arabic
+				culture_group = crusader_group
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
@@ -1610,7 +1610,7 @@ petra = {
 	can_upgrade_trigger = {
 		OR = {
 			AND = {
-				culture = al_suryah_arabic
+				culture_group = crusader_group
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
@@ -14862,7 +14862,7 @@ qhapaq_nam = {
 	build_trigger = {
 		OR = {
 			culture_group = andean_group
-			culture = cara
+			culture = muisca
 			culture = chachapoyan
 		}
 		province_is_or_accepts_culture = yes
@@ -14877,7 +14877,7 @@ qhapaq_nam = {
 	can_use_modifiers_trigger = {
 		OR = {
 			culture_group = andean_group
-			culture = cara
+			culture = muisca
 			culture = chachapoyan
 		}
 		province_is_or_accepts_culture = yes
@@ -14886,7 +14886,7 @@ qhapaq_nam = {
 	can_upgrade_trigger = {
 		OR = {
 			culture_group = andean_group
-			culture = cara
+			culture = muisca
 			culture = chachapoyan
 		}
 		province_is_or_accepts_culture = yes

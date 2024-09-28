@@ -1,5 +1,5 @@
 capital = "La Rioja"
-culture = huarpe
+culture = patagonian
 religion = animism
 trade_goods = unknown
 base_tax = 2

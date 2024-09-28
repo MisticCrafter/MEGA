@@ -4620,7 +4620,7 @@ central_american = {
 			Centehua Moyolehuani Yaotl Mixcoatl Necahual Nelli Ohtli Papa Patli
 		}
 	}
-	totonac = {
+	aztek = {
 		primary = TOT
 		male_names = {
 			Moctezuma Auitzotl Axayacatl Cuauhtemoc Cuitlahuac Huitzilihuitl Itzcoatl Ohimalpopoca Tizoc 
@@ -4634,7 +4634,7 @@ central_american = {
 			Yolyamanitzin 
 		}
 	}
-	purepecha = {
+	aztek = {
 		primary = TAR
 		male_names = {
 			Tariacuri Hiquingaje Hiripan Tangaxuan Tzitzipandaquare Zuangua Huitzimengari Tangaxoan Tzimtzincha 
@@ -4646,7 +4646,7 @@ central_american = {
 			Zyanya Nayeli Teiuc Teicuih Teyacapan Tepin 
 		}
 	}
-	matlatzinca = {
+	aztek = {
 		primary = MAT
 		male_names = {
 			Tariacuri Hiquingaje Hiripan Tangaxuan Tzitzipandaquare Zuangua Huitzimengari Tangaxoan Tzimtzincha 
@@ -4688,7 +4688,7 @@ aridoamerican = {
 			
 		}
 	}
-	tepic = {
+	tecos = {
 		primary = XAL
 		male_names = {
 			Acalan Acacitli Acamapichtli Acolmiztli Aculnahuacatl Ahuiliztli Ahuitzotl Atl Axayacatl Cacamatzin 
@@ -4707,7 +4707,7 @@ aridoamerican = {
 			
 		}
 	}
-	chichimecan = {
+	tecos = {
 		primary = CCM
 		male_names = {
 			Ocuil Olli Opochtli Ozomatli Quauhtli Tapayaxi Tecocoltzin Tecolotl Tetlepanquetzaltzin Tezozomoc 
@@ -4724,7 +4724,7 @@ aridoamerican = {
 			Nenetl Nochtli Papan Teoxihuitl Teuicui Tlachinolli Tlaco Tlahutli Tlalli Tlazohtzin Tlexictli Tonatzin Xihuitl 
 		}
 	}
-	guamares = {
+	tecos = {
 		primary = GAM
 		male_names = {
 			Ocuil Olli Opochtli Ozomatli Quauhtli Tapayaxi Tecocoltzin Tecolotl Tetlepanquetzaltzin Tezozomoc 
@@ -4741,7 +4741,7 @@ aridoamerican = {
 			Nenetl Nochtli Papan Teoxihuitl Teuicui Tlachinolli Tlaco Tlahutli Tlalli Tlazohtzin Tlexictli Tonatzin Xihuitl 
 		}
 	}
-	otomi = {
+	tecos = {
 		primary = OTO
 		male_names = {
 			Ocuil Olli Opochtli Ozomatli Quauhtli Tapayaxi Tecocoltzin Tecolotl Tetlepanquetzaltzin Tezozomoc 
@@ -4758,7 +4758,7 @@ aridoamerican = {
 			Nenetl Nochtli Papan Teoxihuitl Teuicui Tlachinolli Tlaco Tlahutli Tlalli Tlazohtzin Tlexictli Tonatzin Xihuitl 
 		}	
 	}
-	yaqui = {
+	tecos = {
 		primary = YAQ
 		male_names = {
 			Tariacuri Hiquingaje Hiripan Tangaxuan Tzitzipandaquare Zuangua Huitzimengari Tangaxoan Tzimtzincha 
@@ -4795,7 +4795,7 @@ maya = {
 			Sacnite Adsila Aiyana Ayasha Ayita Bly Dena Halona Kimi Magena Nayeli Kisa Eme Yaxkin
 		}
 	}
-	putun = {
+	yucatec = {
 		primary = ITZ
 		male_names = {
 			"Can Ek" "Balam Quitze" "Kan Boar" "Yax Kuk Mok" "Ah Can" "Vahxaqui Caam" "Ah Cacao" "Cham Bahlun" 
@@ -4808,7 +4808,7 @@ maya = {
 			Sacnite Adsila Aiyana Ayasha Ayita Bly Dena Halona Kimi Magena Nayeli Kisa Eme
 		}
 	}
-	mayan = {
+	yucatec = {
 		primary = MAY
 		dynasty_names = {
 			Ahkinxoc Ahmetakkukul Ahmok Ahnakukpech Ahpop-Achi Arana Bakan Balam Bor Canek Chaob Chiam Hnuyg Kayom Kíin Kukumatz 
@@ -4825,7 +4825,7 @@ maya = {
 			Sacnite Adsila Aiyana Ayasha Ayita Bly Dena Halona Kimi Magena Nayeli Kisa Eme
 		}
 	} 
-	highland_mayan = {
+	yucatec = {
 		primary = KIC
 		male_names = {
 			"Can Ek" "Balam Quitze" "Kan Boar" "Yax Kuk Mok" "Ah Can" "Vahxaqui Caam" "Ah Cacao" "Cham Bahlun" 
@@ -4837,7 +4837,7 @@ maya = {
 			Sacnite Adsila Aiyana Ayasha Ayita Bly Dena Halona Kimi Magena Nayeli Kisa Eme
 		}
 	}
-	lacandon = {
+	yucatec = {
 		primary = LAC
 		male_names = {
 			"Can Ek" "Balam Quitze" "Kan Boar" "Yax Kuk Mok" "Ah Can" "Vahxaqui Caam" "Ah Cacao" "Cham Bahlun" 
@@ -4849,7 +4849,7 @@ maya = {
 			Sacnite Adsila Aiyana Ayasha Ayita Bly Dena Halona Kimi Magena Nayeli Kisa Eme
 		}
 	}
-	wastek = {
+	yucatec = {
 		primary = HST
 		male_names = {
 			"Can Ek" "Balam Quitze" "Kan Boar" "Yax Kuk Mok" "Ah Can" "Vahxaqui Caam" "Ah Cacao" "Cham Bahlun" 
@@ -4861,7 +4861,7 @@ maya = {
 			Sacnite Adsila Aiyana Ayasha Ayita Bly Dena Halona Kimi Magena Nayeli Kisa Eme
 		}
 	}
-	chontales = {
+	yucatec = {
 		primary = YOK
 		male_names = {
 			"Can Ek" "Balam Quitze" "Kan Boar" "Yax Kuk Mok" "Ah Can" "Vahxaqui Caam" "Ah Cacao" "Cham Bahlun" 
@@ -4898,7 +4898,7 @@ otomanguean = {
 			Zyanya Nayeli Yoltzin Xilonen Xiloxoch Xiuhtomiyauhtzin Xochitl Xocoh Xocoyotl Yaretzi Zeltzin
 		}
 	}
-	mixtec = {
+	zapotek = {
 		primary = MIX
 		male_names = {
 			Cocijoeza Cocijopi Xolo Nucano Cocijocza Cocijopi Zaachilla Cocijouza Cocijopi Jzió Pwuix Dao 
@@ -4910,7 +4910,7 @@ otomanguean = {
 			Zyanya Nayeli Yoltzin Xilonen Xiloxoch Xiuhtomiyauhtzin Xochitl Xocoh Xocoyotl Yaretzi Zeltzin
 		}
 	}
-	tlapanec = {
+	zapotek = {
 		primary = TLA
 		male_names = {
 			Cocijoeza Cocijopi Xolo Nucano Cocijocza Cocijopi Zaachilla Cocijouza Cocijopi Jzió Pwuix Dao 
@@ -4952,7 +4952,7 @@ andean_group = {
 			Axomamma Cavillaca Kantuta Nina Ana Maiara
 		}
 	}
-	aimara = {
+	inca = {
 		primary = CRA
 		dynasty_names = {
 			Anquimarca Apo Atahualpa Atoc Atoc-Suqui Auqui-Huaman Canchari Chalcuchima Challco Chiaquitinta Chilche Colla-Topa 
@@ -4971,7 +4971,7 @@ andean_group = {
 			Axomamma Cavillaca Kantuta Nina Ana Maiara
 		}
 	}
-	diaguita = {
+	inca = {
 		primary = CCQ
 		dynasty_names = {
 			Caca Capayan Hualfin Paccioca Pular Quilme Aconquijas Anguinahao Tocpo Omaguaca
@@ -4984,7 +4984,7 @@ andean_group = {
 			Axomamma Cavillaca Kantuta Nina Ana Maiara
 		}
 	}
-	chimuan = {
+	inca = {
 		primary = CHM
 		dynasty_names = {
 			Guacricaur Tacaynamo Tiso Nancempinco Chilche Maras Luyes Maila Illa Rimac
@@ -5018,7 +5018,7 @@ je_tupi = { # Tupi
 			Bartira Potira Porasy Jougousa Azelene
 		}
 	}
-	guarani = {
+	tupinamba = {
 		primary = GUA
 		dynasty_names = {
 			Mbigua Caracara Timbu Tucague Calchagui Quiloazaz Cario Itatine Tarci Bomboi Curupaiti Curumai Caaigua Tape Ciriguana
@@ -5036,7 +5036,7 @@ je_tupi = { # Tupi
 
 je = {
 	graphical_culture = northamericagfx
-	charruan = {
+	ge = {
 		primary = CUA
 		dynasty_names = {
 			Sénaqué Sira Gununusa Puyucahua Mataojo Igualdad Yaró Guenoa Bohané Minuan
@@ -5064,7 +5064,7 @@ je = {
 
 maranon = {
 	graphical_culture = southamericagfx
-	jivaro = {
+	chachapoyan = {
 		male_names = {
 			Anquimarca Atoc Sopa Cayo Topa Coyllas Cusichaca Guaritopa Huachuri Huaypalcon Luyes Marcavilca 
 			Cuyuchi Orco Varanca Pascac Pomaguala Pumi Sopa Quispe Titu Ruminavi Sahuaraura Surandaman Taraque 
@@ -5086,7 +5086,7 @@ maranon = {
 		}
 	}
 	dynasty_names = {
-		Marano Jivaro Chachapoya
+		Marano Chachapoyan Chachapoya
 	}
 }
 
@@ -5107,7 +5107,7 @@ chibchan = {
 			Chia China Axomamma Cavillaca Kantuta Nina Ana Maiara
 		}
 	}
-	cara = {
+	muisca = {
 		primary = QTO
 		dynasty_names = {
 			Anquimarca Apo Atahualpa Atoc Atoc-Suqui Auqui-Huaman Canchari Chalcuchima Challco Chiaquitinta Chilche Colla-Topa 
@@ -5124,7 +5124,7 @@ chibchan = {
 			Axomamma Cavillaca Chia China Kantuta Nina Ana Maiara
 		}
 	}
-	miskito = {
+	muisca = {
 		primary = MIS
 		dynasty_names = {
 			Miskito Chibchan
@@ -5159,7 +5159,7 @@ mataco = {	#Matacoan
 araucanian = {
 	graphical_culture = northamericagfx
 	
-	mapuche = {
+	patagonian = {
 		primary = MPC
 		male_names = {
 			Ancamilla Nampai Coñoepán Nahueltripai Millarapue Millalelmo Lautaro Paillamachu Huenecura 
@@ -5182,7 +5182,7 @@ araucanian = {
 			Llanquiray Manque Millaray Peyeche Piro Pitrel Quetroman Quimey Quintruy Quintuqueo Rayen Saqui Somoche
 		}
 	}
-	het = {
+	patagonian = {
 		male_names = {
 			Ancamilla Nampai Coñoepán Nahueltripai Millarapue Millalelmo Lautaro Paillamachu Huenecura 
 			Aillavilu Catrileo Ñanco Melín Caupolicán Illangulién Pinolevi Purrán Mañil Quilapán 
@@ -5193,7 +5193,7 @@ araucanian = {
 			Llanquiray Manque Millaray Peyeche Piro Pitrel Quetroman Quimey Quintruy Quintuqueo Rayen Saqui Somoche
 		}
 	}
-	huarpe = {
+	patagonian = {
 		male_names = {
 			Ancamilla Nampai Coñoepán Nahueltripai Millarapue Millalelmo Lautaro Paillamachu Huenecura 
 			Aillavilu Catrileo Ñanco Melín Caupolicán Illangulién Pinolevi Purrán Mañil Quilapán 
@@ -5221,7 +5221,7 @@ carribean = {
 			Hayá Isani Takuiba Twengga
 		}
 	}
-	maipurean = {
+	arawak = {
 		male_names = {
 			Áhari Ebedimu Gunfuli Kaigouchi Ilumani Pirijá Semén
 			Wiwakaleme Haubariria Toratora Amorotahe Haubariria Kaigouchi Shoko Laliwa Arah Pirijá Arata Toruí Mbicy 
@@ -5230,7 +5230,7 @@ carribean = {
 			Hayá Isani Takuiba Twengga
 		}
 	}
-	carib = {
+	arawak = {
 		primary = CAB
 		male_names = {
 			Áhari Ebedimu Gunfuli Kaigouchi Ilumani Pirijá Semén
@@ -5239,7 +5239,7 @@ carribean = {
 			Hayá Isani
 		}
 	}
-	guajiro = { #	Lokono / Northern Mainland Arawak
+	arawak = { #	Lokono / Northern Mainland Arawak
 		primary = ARW
 		male_names = {
 			Wiwakaleme Haubariria Toratora Amorotahe Haubariria Kaigouchi Shoko Laliwa Arah Pirijá Arata Toruí Mbicy 
@@ -5257,7 +5257,7 @@ eskaleut = {
 	graphical_culture = inuitgfx
 	second_graphical_culture = northamericagfx
 
-	aleutian = {
+	inuit = {
 		male_names = {
 			Aariak Aassanaaq Aippaq Aklaq Amaqjuaq Ammagaruqnik Anik Apaata Aput Aputi Aqakuktuq Aqillutaq Aqpalibaaqtuq 
 			Aquyittuq Arnauyq Asuilaak Atanarjuat Atiqtalaaq Atuqtuaq Aujaq Aviqming Ila Ilannaq Innugati Iñuksuk Irniq 
@@ -5288,7 +5288,7 @@ eskaleut = {
 central_algonquian = {
 	graphical_culture = northamericagfx
 	
-	shawnee = {
+	innu = {
 		primary = SHA
 		dynasty_names = {
 			Auglaize Alawaymotakah Akepee Aqueloma Chillicothe Calaka Chalaakaatha Conedogwinit Hathawekela Hisoskok 
@@ -5310,7 +5310,7 @@ central_algonquian = {
 			Methoataske Tacumwah Moconnoquah Kickkesequah Oshawsequah 
 		}
 	}
-	illini = {
+	innu = {
 		primary = ILL
 		dynasty_names = {
 			Kaskaskia Cahokia Peoria Tamaroa Moingwena Michigamea Albiui Amonokoa Chepoussa Chinkoa Coiracoentanon Espeminkia 
@@ -5327,7 +5327,7 @@ central_algonquian = {
 			Methoataske Tacumwah Moconnoquah Kickkesequah Oshawsequah 
 		}
 	}
-	miami = {
+	innu = {
 		primary = MMI
 		dynasty_names = {
 			Kaskaskia Cahokia Peoria Tamaroa Moingwena Michigamea Albiui Amonokoa Chepoussa Chinkoa Coiracoentanon Espeminkia 
@@ -5344,7 +5344,7 @@ central_algonquian = {
 			Methoataske Tacumwah Moconnoquah Kickkesequah Oshawsequah 
 		}
 	}
-	anishinabe = {
+	innu = {
 		primary = OJI
 		dynasty_names = {
 			Missisage Saulteaux Bungee Saginaw Achiligouan Amicoures Amikwa Auwause Bawating Chequamegon Keweenaw Kitchigami 
@@ -5371,7 +5371,7 @@ central_algonquian = {
 			Aazhawiggizhigokwe Ayasha Keezheekoni Mitena Waawaaskwane Zaagaasage Wiingashk Miigwaans Kiiwedin Kamenna
 		}
 	}
-	algonquin = {
+	innu = {
 		primary = OJI
 		dynasty_names = {
 			Missisage Saulteaux Bungee Saginaw Achiligouan Amicoures Amikwa Auwause Bawating Chequamegon Keweenaw Kitchigami 
@@ -5398,7 +5398,7 @@ central_algonquian = {
 			Aazhawiggizhigokwe Ayasha Keezheekoni Mitena Waawaaskwane Zaagaasage Wiingashk Miigwaans Kiiwedin Kamenna
 		}
 	}
-	cree = {
+	innu = {
 		primary = WCR
 		dynasty_names = {
 			Iyiyiw Chisasibi Wemindji Whapmagoostui Mistissini Nemaska "Ouje-Bougoumou" Waskaganish Waswanipi Mosoni Maskekowak 
@@ -5430,7 +5430,7 @@ central_algonquian = {
 			Torotiy Meriy Elin Ashenee Astina Echa Kiche Kika Mati Matisa Matisoon Nichena Osceola Pamoon Paniya 
 		}
 	}
-	mesquakie = {
+	innu = {
 		primary = FOX
 		dynasty_names = {
 			Mesquakie Wagosh Asakiwakie Kickapoo Blackhawk Saukenuk Thakiwakie
@@ -5458,7 +5458,7 @@ central_algonquian = {
 plains_algonquian = {
 	graphical_culture = northamericagfx
 
-	cheyenne = {
+	blackfoot = {
 		primary = CHY
 		dynasty_names = {
 			Mohe Diwali Waya Tsiyi Onacona Atagulkalu Degataga Cheasequah Adahy Atagulkalu
@@ -5494,7 +5494,7 @@ plains_algonquian = {
 			Oota dabun Pules Sokanon Sokw Sooleawa Tahki Wapun Wawetseka Koko Peta Sinopa
 		}
 	}
-	arapaho = {
+	blackfoot = {
 		primary = ARP
 		dynasty_names = {
 			Clatsop Cathlamet Skilloot Cathlapotle Multnomah Watlala Clowwewalla Clackamas Chiluckittequaw Wishram Wasco 
@@ -5516,7 +5516,7 @@ plains_algonquian = {
 			Smriti Surabhi Tapi Tara
 		}
 	}
-	plains_cree = {
+	blackfoot = {
 		primary = NEH
 		dynasty_names = {
 			Iyiyiw Chisasibi Wemindji Whapmagoostui Mistissini Nemaska "Ouje-Bougoumou" Waskaganish Waswanipi Mosoni Maskekowak 
@@ -5533,7 +5533,7 @@ plains_algonquian = {
 			Torotiy Meriy Elin Ashenee Astina Echa Kiche Kika Mati Matisa Matisoon Nichena Osceola Pamoon Paniya 
 		}
 	}
-	bungi = {
+	blackfoot = {
 		primary = OJI
 		dynasty_names = {
 			Missisage Saulteaux Bungee Saginaw Achiligouan Amicoures Amikwa Auwause Bawating Chequamegon Keweenaw Kitchigami 
@@ -5565,7 +5565,7 @@ plains_algonquian = {
 eastern_algonquian = {
 	graphical_culture = northamericagfx
 	
-	delaware = {
+	abenaki = {
 		primary = LEN
 		dynasty_names = {
 			Sapokanikan Nechtanc Aquehonga Manacknong Shawkopoke Nayack Sowanus Sassian Monsey
@@ -5603,7 +5603,7 @@ eastern_algonquian = {
 			Sallot Sopi Klalis Sozn Toloti Talaz
 		}
 	}
-	mikmaq = {
+	abenaki = {
 		primary = MIK
 		dynasty_names = {
 			Epekwik Epeggoitg Eskikewakik Esgigiag Kespek Gespegiag Kespukwitk Gespogoitg Siknikt Sigenitog sipeknekatik 
@@ -5618,7 +5618,7 @@ eastern_algonquian = {
 			Mali Malian Maliazonis Azonis Malgelit
 		}
 	}
-	maliseet = {
+	abenaki = {
 		primary = MLS
 		dynasty_names = {
 			Epekwik Epeggoitg Eskikewakik Esgigiag Kespek Gespegiag Kespukwitk Gespogoitg Siknikt Sigenitog sipeknekatik 
@@ -5633,7 +5633,7 @@ eastern_algonquian = {
 			Mali Malian Maliazonis Azonis Malgelit
 		}
 	}
-	mahican = {
+	abenaki = {
 		primary = MAH
 		dynasty_names = {
 			Muhhcanneuw Mehckentowoon Wawyachtonoc Westenhuck Wiekagjoc Shecomeco Wechquadnach Pamperaug Bantam Weataug 
@@ -5649,10 +5649,10 @@ eastern_algonquian = {
 			Awashonks Djitsbudnaca Weetamoo Wootonekanuske
 		}
 	}
-	powhatan = {
+	abenaki = {
 		primary = POW
 		dynasty_names = {
-			Powhatan Arrohateck Appamattuck Pamunkey Mattaponi Chiskiack Kecoughtan Youghtanund Rappahannock Moraughtacund 
+			abenaki Arrohateck Appamattuck Pamunkey Mattaponi Chiskiack Kecoughtan Youghtanund Rappahannock Moraughtacund 
 			Weyanoak Paspahegh Quiyoughcohannock Warraskoyack Nansemond
 		}
 		male_names = {
@@ -5663,13 +5663,13 @@ eastern_algonquian = {
 			Cockacoeske Pocahontas Amonute Nandua
 		}
 	}
-	pequot = {
+	abenaki = {
 		primary = PEQ
 		dynasty_names = {		
 			Metoac Manchaug Massomuck Menunkantuck Monashackotoog Pequannock
 			Quinebaug Quinnipiac Siwanoy Niantic Asupsuck Aukumbumsk Aushpook
 			Cosattuck Cuppunauginnit Mangunckakuck Mashantucket Mohungannuck
-			Nameauag Natchaug Noank Oneco Paupttokshick Pawcatuck Pequotauk
+			Nameauag Natchaug Noank Oneco Paupttokshick Pawcatuck abenakiauk
 			Poquonock Sauquonckackock Shenecosset Tatuppequauog Weinshauks
 			Weqhetequock Wunnashowatookoog Quahog Mashpee Patuxet Pokanoket
 			Pocasset Assonet
@@ -5682,13 +5682,13 @@ eastern_algonquian = {
 			Awashonks Djitsbudnaca Weetamoo Wootonekanuske
 		}
 	}	
-	massachusset = {
+	abenaki = {
 		primary = WAM
 		dynasty_names = {		
 			Metoac Manchaug Massomuck Menunkantuck Monashackotoog Pequannock
 			Quinebaug Quinnipiac Siwanoy Niantic Asupsuck Aukumbumsk Aushpook
 			Cosattuck Cuppunauginnit Mangunckakuck Mashantucket Mohungannuck
-			Nameauag Natchaug Noank Oneco Paupttokshick Pawcatuck Pequotauk
+			Nameauag Natchaug Noank Oneco Paupttokshick Pawcatuck abenakiauk
 			Poquonock Sauquonckackock Shenecosset Tatuppequauog Weinshauks
 			Weqhetequock Wunnashowatookoog Quahog Mashpee Patuxet Pokanoket
 			Pocasset Assonet
@@ -5706,7 +5706,7 @@ eastern_algonquian = {
 iroquoian = {
 	graphical_culture = northamericagfx
 	
-	iroquois = {
+	huron = {
 		primary = IRO
 		dynasty_names = {
 			Awegen Ahaouet
@@ -5740,7 +5740,7 @@ iroquoian = {
 			Tyonajanegen Alliquippa Konwatsitiaienni Genessee Satékon Tekakwitha 
 		}
 	}
-	cherokee = {
+	huron = {
 		primary = CHE
 		dynasty_names = {
 			Mohe Diwali Waya Tsiyi Onacona Atagulkalu Degataga Cheasequah Adahy Atagulkalu
@@ -5785,7 +5785,7 @@ iroquoian = {
 			Taima Chekaqua Kataka Mecaitch Neshota Chagasort Pecama Namachewana Nanochaatasa Taimah Catchemackeseo
 		}
 	}
-	laurentian = {
+	huron = {
 		primary = OSH
 		dynasty_names = {
 			Andiata Angoutenc Anonatea Arendaonatia Arente Arontaen Anioton Ahiragenrega Ahondihronon Andachkhrob Antouaronon 
@@ -5805,7 +5805,7 @@ iroquoian = {
 			Taima Chekaqua Kataka Mecaitch Neshota Chagasort Pecama Namachewana Nanochaatasa Taimah Catchemackeseo
 		}
 	}
-	tionontate = {
+	huron = {
 		primary = TIO
 		dynasty_names = {
 			Andiata Angoutenc Anonatea Arendaonatia Arente Arontaen Anioton Ahiragenrega Ahondihronon Andachkhrob Antouaronon 
@@ -5828,7 +5828,7 @@ iroquoian = {
 			Taima Chekaqua Kataka Mecaitch Neshota Chagasort Pecama Namachewana Nanochaatasa Taimah Catchemackeseo
 		}
 	}
-	susquehannock = {
+	huron = {
 		primary = SUS
 		dynasty_names = {
 			Akhrakouaeronon Akwinoshioni Atquanachuke Carentouan Cepowig Junita Kaiuariegehaga
@@ -5849,7 +5849,7 @@ iroquoian = {
 siouan = {
 	graphical_culture = northamericagfx
 	
-	dakota = {
+	osage = {
 		primary = SIO
 		dynasty_names = {
 			Sichangu Oglala Itazipcho Hunkpapha Mnikhowozu Sihasapa Oohenunpa
@@ -5868,7 +5868,7 @@ siouan = {
 			Talutah Wachiwi Wasula Weayaya Wichapi
 		}
 	}
-	nakota = {
+	osage = {
 		primary = ASI
 		dynasty_names = {
 			Aegitina Bizibina Cephubi Canhdada Canhewincasta Canknuhabi Hudesabina Hebina Huhumasmibi Huhuganebabi
@@ -5890,7 +5890,7 @@ siouan = {
 			Talutah Wachiwi Wasula Weayaya Wichapi
 		}
 	}
-	chiwere = {
+	osage = {
 		primary = OEO
 		dynasty_names = {
 			Sichangu Oglala Itazipcho Hunkpapha Mnikhowozu Sihasapa Oohenunpa
@@ -5960,7 +5960,7 @@ caddoan = {
 			Smriti Surabhi Tapi Tara
 		}
 	}
-	caddo = {
+	wichita = {
 		primary = CAD
 		dynasty_names = {
 			Adai Cahinnio Doustioni Eyeish Hainai Hasinai Kadohadacho
@@ -5976,7 +5976,7 @@ caddoan = {
 			Zacado Tstakurriwax Tstaka Tstarahuxtu Tsaktahiraas Tskusaski Tstaruri'u Tstapittarius
 		}
 	}
-	pawnee = {
+	wichita = {
 		primary = PAW
 		dynasty_names = {
 			Marhar Skidi Turikaku Kitkehaxpakuxtu Tuhitspiat Tukistkita Tuhawukasa Arikararikutsu
@@ -6017,7 +6017,7 @@ muskogean = {
 			Nahomtima Immahoka Lunnabaga
 		}
 	}
-	choctaw = {
+	chickasaw = {
 		primary = CHO
 		dynasty_names = {
 			Usquelagana Saktitamaha Itchechana Shumotakali Tinshinkla Chucafalaya Bissacha Otakchitotamaha Yackniachuchuma 
@@ -6069,7 +6069,7 @@ muskogean = {
 			Mintahoye Phalishta Ishtimmarharlechar Temusharhoctay Mintahoyo
 		}
 	}
-	yuchi = {
+	chickasaw = {
 		primary = CIA
 		dynasty_names = {
 			Ackia Alaoute Amalahta Apeony Apilefaplimengo Ashukhuma Ayebisto Chatelaw
@@ -6092,7 +6092,7 @@ muskogean = {
 			Mintahoye Phalishta Ishtimmarharlechar Temusharhoctay Mintahoyo
 		}
 	}
-	yoron = {
+	chickasaw = {
 		primary = CAQ
 		dynasty_names = {
 			Ackia Alaoute Amalahta Apeony Apilefaplimengo Ashukhuma Ayebisto Chatelaw
@@ -6115,7 +6115,7 @@ muskogean = {
 			Mintahoye Phalishta Ishtimmarharlechar Temusharhoctay Mintahoyo
 		}
 	}
-	catawba = {
+	chickasaw = {
 		primary = COF
 		dynasty_names = {
 			Owasso Pawhuska Niukonska Doppike Neosho Chetopa Hominy Pahusan Mesquakie Wagosh Asakiwakie Kickapoo Blackhawk 
@@ -6130,7 +6130,7 @@ muskogean = {
 			Wakonsamoie Watoesa Sekaname Shonsegra Egraname Misae Niabi
 		}
 	}
-	natchez = {
+	chickasaw = {
 		primary = NTZ
 		dynasty_names = {
 			Ackia Alaoute Amalahta Apeony Apilefaplimengo Ashukhuma Ayebisto Chatelaw
@@ -6153,7 +6153,7 @@ muskogean = {
 			Mintahoye Phalishta Ishtimmarharlechar Temusharhoctay Mintahoyo
 		}
 	}
-	yamasee = {
+	chickasaw = {
 		primary = ALT
 		dynasty_names = {
 			Ackia Alaoute Amalahta Apeony Apilefaplimengo Ashukhuma Ayebisto Chatelaw
@@ -6181,7 +6181,7 @@ muskogean = {
 sonoran = {
 	graphical_culture = northamericagfx
 	
-	pueblo = {
+	shoshone = {
 		primary = PUE
 		dynasty_names = {
 			Acoma Cochiti Isleta Jemez Laguna Nambe "Ohkay Owingeh" Picuris Pojoaque Sandia 
@@ -6194,7 +6194,7 @@ sonoran = {
 			Ootcakao Kahavasooah Ootcakao Sacagawea Chipeta Tocmetone
 		}
 	}
-	piman = {
+	shoshone = {
 		primary = PIM
 		dynasty_names = {
 			Akimel Tohono "Hia Ced" Sobaipuri Otama Kina Equituni Uturituc Sacaton "Onk Akimal"
@@ -6220,7 +6220,7 @@ sonoran = {
 			Kahavasooah Ootcakao Sacagawea Chipeta Tocmetone
 		}
 	}
-	kiowa = {
+	shoshone = {
 		primary = KIO
 		dynasty_names = {
 			Clatsop Cathlamet Skilloot Cathlapotle Multnomah Watlala Clowwewalla Clackamas Chiluckittequaw 
@@ -6242,7 +6242,7 @@ sonoran = {
 
 apachean = {
 	graphical_culture = northamericagfx
-	apache = {
+	navajo = {
 		primary = APA
 		dynasty_names = {
 			Jicarilla Chiricahua Tonto Ramah Mojave
@@ -6261,7 +6261,7 @@ apachean = {
 			Dahteste Ilthgozay Gouyen Lozen Tohayea 
 		}
 	}
-	mescalero = {
+	navajo = {
 		primary = MSC
 		dynasty_names = {
 			Jicarilla Chiricahua Tonto Ramah Mojave
@@ -6280,7 +6280,7 @@ apachean = {
 			Dahteste Ilthgozay Gouyen Lozen Tohayea 
 		}
 	}
-	lipan = {
+	navajo = {
 		primary = LIP
 		dynasty_names = {
 			Jicarilla Chiricahua Tonto Ramah Mojave
@@ -6322,7 +6322,7 @@ apachean = {
 na_dene = {
 	graphical_culture = northamericagfx
 
-	chipewyan = {
+	haida = {
 		dynasty_names = {
 			"Tsi'naajinii" "Deeshchii'nii" "Tl'izi Lani" "Tl'aaschi'I" Tsenabahituii Nashashi "T'üschebaanii" "Jaa'yaaloolii"
 			"Keha'atiintii" "Naashaashi"
@@ -6351,7 +6351,7 @@ na_dene = {
 			Dahteste Ilthgozay Gouyen Lozen Tohayea
 		}
 	}
-	athabascan = {
+	haida = {
 		dynasty_names = {
 			Kiusta Kung Yan Hiellan Skidegate "Cha'atl" Haina Kaisun Cumshewa Skedans Tanu Ninstints
 			Masset Atewaas Jaahguhl Kayung "Hlk'yah GaawGa" Klinkwan Sukkwan Howkan Kasaan
@@ -6392,7 +6392,7 @@ penutian = {
 			Kikisoblu Wewick Sholeetsa Ladalia Olahl
 		}
 	}
-	chinook = {
+	salish = {
 		primary = CNK
 		dynasty_names = {
 			Clatsop Cathlamet Skilloot Cathlapotle Multnomah Watlala Clowwewalla Clackamas Chiluckittequaw 
@@ -6410,7 +6410,7 @@ penutian = {
 			Smriti Surabhi Tapi Tara
 		}
 	}
-	yokuts = {
+	salish = {
 		primary = YKT
 		dynasty_names = {
 			Wishram Wasco Atfalati Yamel Lakmiut Chepenafa Santiam Chelamela Calapooya Yoncalla

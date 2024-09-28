@@ -1,5 +1,5 @@
 capital = "Carmen"
-culture = het
+culture = patagonian
 religion = animism
 trade_goods = unknown
 base_tax = 1

@@ -80,6 +80,7 @@ ARC_feitoria = {
     trade_goods_size = 0.5
     defensiveness = 0.25
     supply_limit_modifier = 0.25
+    picture = "andal_feitoria"
 }
 
 ARC_guinean_gold = {
@@ -160,7 +161,7 @@ ARC_reformed_paladins = {
 
 ARC_grand_navy = {
     navy_tradition = 0.5
-    naval_forcelimit_modifier = 0.33
+    naval_forcelimit_modifier = 0.2
 }
 
 ARC_adopting_galleons = {
@@ -199,9 +200,9 @@ ARC_house_united = {
 
 ARC_nobility_dissolved = {
     reinforce_speed = -0.25
-    global_manpower_modifier = -0.33
-    land_forcelimit_modifier = -0.33
-    allowed_tercio_fraction = 0.33
+    global_manpower_modifier = -0.25
+    land_forcelimit_modifier = -0.25
+    allowed_tercio_fraction = 0.25
 }
 
 ###
@@ -210,7 +211,7 @@ tigranic_global_cooldown_modifier = {
     church_loyalty_modifier = 0.02
 }
 
-tigranic_riveraspect_cooldown_modifier = {
+tigranic_blessing_cooldown_modifier = {
     church_loyalty_modifier = 0.03
 }
 
@@ -249,7 +250,7 @@ tigranic_triumph_modifier = {
     discipline = -0.05
 }
 
-tigranic_paladins_modifier = {
+tigranic_royalguard_modifier = {
     leader_land_shock = 1
     leader_cost = 0.33
 }
@@ -262,6 +263,41 @@ tigranic_warsongs_modifier = {
 tigranic_fertility_modifier = {
     heir_chance = 0.5
     advisor_cost = 0.25 #lowkey misread a minus here, 33% more cost is BASED, buffing it for you though cause god damn man, keep breeding tho fr
+}
+
+tigranic_blessing_madragal_modifier = {
+    local_regiment_cost = -0.5
+    local_manpower_modifier = 0.25
+    local_tax_modifier = -0.125
+    local_friendly_movement_speed = 0.1
+}
+
+tigranic_blessing_athens_modifier = {
+    local_regiment_cost = -0.5
+    local_manpower_modifier = 0.25
+    local_tax_modifier = -0.125
+    local_friendly_movement_speed = 0.1
+}
+
+tigranic_blessing_malacca_modifier = {
+    local_regiment_cost = -0.5
+    local_manpower_modifier = 0.25
+    local_tax_modifier = -0.125
+    local_friendly_movement_speed = 0.1
+}
+
+tigranic_blessing_kumasi_modifier = {
+    local_regiment_cost = -0.5
+    local_manpower_modifier = 0.25
+    local_tax_modifier = -0.125
+    local_friendly_movement_speed = 0.1
+}
+
+tigranic_blessing_newworld_modifier = {
+    local_regiment_cost = -0.5
+    local_manpower_modifier = 0.25
+    local_tax_modifier = -0.125
+    local_friendly_movement_speed = 0.1
 }
 
 tigranic_feedland_modifier = {
@@ -398,4 +434,57 @@ estate_knights_monopoly_of_metals_modifier = {
 
 estate_knights_monopoly_of_livestock_modifier = {
 	local_production_efficiency = -10
+}
+
+ARC_house_of_zacantor = {
+    local_autonomy = 0.03
+    local_manpower_modifier = 0.5
+    picture = "andalos_dunedanos"
+}
+
+ARC_house_of_vaz_mardel = {
+    local_autonomy = 0.03
+    local_manpower_modifier = 0.5
+    picture = "andalos_calatharos"
+}
+
+ARC_house_of_samara = {
+    local_autonomy = 0.03
+    local_manpower_modifier = 0.5
+    picture = "andalos_calatharos"
+}
+
+ARC_house_of_garnatha = {
+    local_autonomy = 0.03
+    local_manpower_modifier = 0.5
+    picture = "andalos_narathenos"
+}
+
+ARC_house_of_selmanor = {
+    local_autonomy = 0.03
+    local_manpower_modifier = 0.5
+    picture = "andalos_dunedanos"
+}
+
+ARC_house_of_valsa = {
+    local_autonomy = 0.03
+    local_manpower_modifier = 0.5
+    picture = "andalos_munderanos"
+}
+
+ARC_house_of_scolarenos = {
+    local_autonomy = 0.03
+    local_manpower_modifier = 0.5
+    picture = "andalos_munderanos"
+}
+
+ARC_house_of_myron = {
+    local_autonomy = 0.03
+    local_manpower_modifier = 0.5
+    picture = "andalos_narathenos"
+}
+
+ARC_wardenguard = {
+    allowed_tercio_fraction = 0.2
+    has_tercio = yes
 }

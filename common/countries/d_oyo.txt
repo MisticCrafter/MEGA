@@ -1,6 +1,7 @@
 ck2_converter_generated = yes
 graphical_culture = africangfx
 color = { 45 55 222 }
+
 monarch_names = {
 	"Abiade #1" = 10
 	"Abiodun #1" = 10
@@ -16,5 +17,5 @@ monarch_names = {
 	"Omogbogbo #2" = 10
 	"Osinkola #1" = 10
 	"Wenkouni #0" = -1
-	"Æthelfrith #0" = 0
+	"ï¿½thelfrith #0" = 0
 }

@@ -1,5 +1,5 @@
 capital = "Kilatika"
-culture = miami
+culture = innu
 religion = totemism
 trade_goods = unknown
 base_tax = 1

@@ -1,7 +1,7 @@
 owner = CCM
 controller = CCM
 capital = "Guachichil"
-culture = chichimecan
+culture = tecos
 religion = animism
 trade_goods = gold
 base_tax = 1

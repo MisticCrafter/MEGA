@@ -563,6 +563,42 @@ fort_15th = {
 				duration = -1
 			}
 		}
+		if = {
+			limit = {
+				owner = {
+					tag = KNI
+					has_country_modifier = kni_fort_road_maintenence
+				}
+			}
+			add_province_modifier = {
+				name = kni_fort_road
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				owner = {
+					tag = KNI
+					has_country_modifier = kni_fort_capital_maintenance
+				}
+			}
+			add_province_modifier = {
+				name = kni_fort_capital
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				owner = {
+					tag = KNI
+					has_country_modifier = kni_fort_garrison_draft_maintenence
+				}
+			}
+			add_province_modifier = {
+				name = kni_fort_garrison_grain
+				duration = -1
+			}
+		}
 	}
 
 
@@ -574,11 +610,18 @@ fort_15th = {
 			}
 			remove_province_modifier = estate_nobles_vegvar_system_modifier
 		}
+		
 		if = {
 			limit = {
 				has_province_modifier = kni_fort_garrison_grain
 			}
 			remove_province_modifier = kni_fort_garrison_grain
+		}
+		if = {
+			limit = {
+				has_province_modifier = kni_fort_road
+			}
+			remove_province_modifier = kni_fort_road
 		}
 		if = {
 			limit = {

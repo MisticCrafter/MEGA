@@ -43,7 +43,7 @@ on_colonial_reintegration = {
 on_colonial_nation_established = {
     if = {
         limit = {
-            FROM = {
+            overlord = {
                 has_country_flag = activated_americathemes_flag
             }
         }

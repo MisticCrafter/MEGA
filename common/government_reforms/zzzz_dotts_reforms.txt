@@ -237,7 +237,7 @@ reformed_swiss_fed = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
 	potential = {
-		tag = VRN
+		has_reform = reformed_swiss_fed
 	}
 
 	custom_attributes = {

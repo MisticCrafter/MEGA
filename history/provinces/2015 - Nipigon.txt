@@ -1,5 +1,5 @@
 capital = "Nipigon"
-culture = anishinabe
+culture = innu
 religion = totemism
 trade_goods = fur
 base_tax = 1

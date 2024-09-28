@@ -1,4 +1,4 @@
-Sisterhood = {
+sisterhood = {
 	rank = {
 		1 = SISTERHOOD
 		2 = SISTERHOOD

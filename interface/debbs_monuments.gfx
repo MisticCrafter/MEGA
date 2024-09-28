@@ -23,4 +23,8 @@ spriteTypes = {
         name = "GFX_great_project_mont_saint_michel"
         texturefile = "gfx/interface/great_projects/great_project_mont_saint_michel.dds"
     }
+    spriteType = {
+        name = "GFX_great_project_beacons_of_rosetta"
+        texturefile = "gfx/interface/great_projects/great_project_beacons_of_rosetta.dds"
+    }
 }

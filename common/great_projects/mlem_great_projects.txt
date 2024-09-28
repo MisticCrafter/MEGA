@@ -12,6 +12,7 @@ dutch_colonial_office = {
        owner = {
 			primary_culture = dutch
 			OR = {
+				tag = VRM
 				is_former_colonial_nation = yes
 				is_colonial_nation = yes
 			}
@@ -348,11 +349,26 @@ parramentu_sicilianu = {
 	starting_tier = 1
 	type = monument
 	can_be_moved = no
-	build_trigger = {is_capital = yes }
+	build_trigger = {
+		OR = {
+			is_capital = yes
+			has_country_flag = SWI_rmn_senate
+		}
+	}
 	on_built = { }
 	on_destroyed = { }
-	can_use_modifiers_trigger = {is_capital = yes }
-	can_upgrade_trigger = { is_capital = yes}
+	can_use_modifiers_trigger = {
+		OR = {
+			is_capital = yes
+			has_country_flag = SWI_rmn_senate
+		}
+	}
+	can_upgrade_trigger = { 
+		OR = {
+			is_capital = yes
+			has_country_flag = SWI_rmn_senate
+		}
+	}
 	keep_trigger = {}
 	tier_0 = {
 		upgrade_time = { months = 0	}

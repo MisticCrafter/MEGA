@@ -1,4 +1,4 @@
-namespace = deborah_events
+namespace = kni_venice_destroy
 
 country_event = {
 	id = kni_venice_destroy.t
@@ -7,11 +7,7 @@ country_event = {
 	picture = BATTLE_VISTULA_LAGOON_eventPicture
 	major = yes
 	fire_only_once = yes
-	trigger = {
-		112 = {
-			controlled_by = KNI
-		}
-	}
+	is_triggered_only = yes
 	option = {
 		name = "KILL_VENICE_DIE"
 		112 = {

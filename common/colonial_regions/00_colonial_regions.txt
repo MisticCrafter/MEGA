@@ -16,8 +16,7 @@ colonial_alaska = {
 	}
 
 	culture = {
-		inuit = 10
-		aleutian = 8
+		inuit = 18
 	}
 
 	religion = {
@@ -92,15 +91,11 @@ colonial_canada = {
 
 	culture = {
 		inuit = 10
-		cree = 10
-		nakota = 2
-		cheyenne = 2
-		anishinabe = 2
-		huron = 2
-		iroquois = 2
-		mahican = 2
-		abenaki = 2
-		mikmaq = 2
+		innu = 12
+		osage = 2
+		blackfoot = 2
+		huron = 4
+		abenaki = 6
 	}
 
 	religion = {
@@ -314,19 +309,12 @@ colonial_eastern_america = {
 	}
 
 	culture = {
-		creek = 5
-		choctaw = 2
-		chickasaw = 2
-		cherokee = 5
-		shawnee = 5
-		dakota = 2
-		iroquois = 3
-		powhatan = 2
-		delaware = 4
-		susquehannock = 5
-		mahican = 2
+		chickasaw = 9
+		huron = 13
+		innu = 5
+		osage = 2
+		abenaki = 12
 		pequot = 2
-		abenaki = 4
 	}
 
 	religion = {
@@ -462,13 +450,9 @@ colonial_louisiana = {
 	}
 
 	culture = {
-		nakota = 2
-		dakota = 8
-		chiwere = 3
-		pawnee = 10
-		osage = 3
-		caddo = 6
-		cheyenne = 1
+		osage = 17
+		wichita = 16
+		blackfoot = 1
 		shoshone = 1
 	}
 
@@ -610,7 +594,7 @@ colonial_louisiana = {
 		trigger = {
 			OR = {
 				owns = 903 # Omaha
-				owns = 901 # Pawnee
+				owns = 901 # Wichita
 			}
 		}
 		name = "COLONIAL_LOUISIANA_Nebraska"
@@ -644,8 +628,7 @@ colonial_california = {
 	}
 
 	culture = {
-		shoshone = 10
-		piman = 8
+		shoshone = 18
 		navajo = 1
 	}
 
@@ -729,12 +712,11 @@ colonial_mexico = {
 	}
 
 	culture = {
-		pueblo = 2
+		shoshone = 7
 		navajo = 10
-		piman = 5
 		aztek = 8
 		zapotek = 6
-		mayan = 7
+		yucatec = 7
 	}
 
 	religion = {
@@ -770,6 +752,12 @@ colonial_mexico = {
 			tag = ARC
 		}
 		name = "COLONIAL_MEXICO_New_Andalos"
+	}
+	names = {
+		trigger = {
+			tag = Z01
+		}
+		name = "COLONIAL_MEXICO_Mayekro"
 	}
 	# Generic
 	names = {
@@ -836,8 +824,8 @@ colonial_the_carribean = {
 	}
 
 	culture = {
-		arawak = 15
-		carib = 8
+		arawak = 23
+		
 	}
 
 	religion = {
@@ -911,6 +899,12 @@ colonial_the_carribean = {
 		}
 		name = "COLONIAL_THE_CARRIBEAN_Antilhas"
 	}
+	names = {
+		trigger = {
+			tag = ARC
+		}
+		name = "COLONIAL_THE_CARRIBEAN_Andal_West_Indies"
+	}
 	# Generic
 	names = {
 		name = "COLONIAL_THE_CARRIBEAN_Root_Culture_GetName_West_Indies"
@@ -948,7 +942,7 @@ colonial_colombia = {
 	}
 
 	culture = {
-		guajiro = 15
+		arawak = 15
 		inca = 6
 	}
 
@@ -1085,10 +1079,10 @@ colonial_la_plata = {
 	}
 
 	culture = {
-		aimara = 6
+		inca = 6
 		patagonian = 10
 		chacoan = 2
-		guarani = 4
+		tupinamba = 4
 	}
 	religion = {
 		animism = 10
@@ -1133,6 +1127,12 @@ colonial_la_plata = {
 			tag = ARC
 		}
 		name = "COLONIAL_LA_PLATA_Arganteia"
+	}
+	names = {
+		trigger = {
+			tag = Z01
+		}
+		name = "COLONIAL_LA_PLATA_Guareman"
 	}
 	# Generic
 	names = {
@@ -1191,8 +1191,7 @@ colonial_brazil = {
 	}
 
 	culture = {
-		guarani = 5
-		tupinamba = 12
+		tupinamba = 17
 	}
 
 	religion = {
@@ -1214,6 +1213,12 @@ colonial_brazil = {
 	}
 
 	# Specific
+	names = {
+		trigger = {
+			tag = Z01
+		}
+		name = "COLONIAL_BRAZIL_Egyannuaman"
+	}
 	names = {
 		trigger = {
 			tag = FRA

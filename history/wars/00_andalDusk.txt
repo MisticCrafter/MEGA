@@ -1,0 +1,19 @@
+name = "Andal Dusk"           # Name of the war in the war screen
+war_goal = {
+    type = take_claim       # The wargoal to use from 00_wargoals.txt
+    casus_belli = cb_conquest    # The cb to use from 00_cb_types.txt
+    province = 224
+}
+
+# Used to start the war at the specified date
+1443.11.11 = {
+    add_attacker = SRQ    # Adds a country to the attackers side
+    add_attacker = CYN    # Adds a country to the attackers side
+    add_defender = ARC    # Adds a country to the defenders side
+}
+# Used to end the war at the specified date
+1444.11.10 = {
+    rem_attacker = SRQ    # Removes a country to the attackers side
+    rem_attacker = CYN    # Removes a country to the attackers side
+    rem_defender = ARC    # Removes a country to the defenders side
+}

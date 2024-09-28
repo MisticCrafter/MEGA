@@ -9,7 +9,7 @@ on_startup = {
         create_unit_forcelimit_percentage = {
             type = infantry
             special_unit_category = tercio
-            force_limit_percentage = 0.72
+            force_limit_percentage = 0.42
         }
 	}
 
@@ -34,6 +34,13 @@ on_startup = {
 			}
 		}
 		set_country_flag = OB_conversion
+	}
+
+	if = {
+		limit = { tag = NED }
+		country_event = {
+			id = nederlands_flavour_mega.1
+		}
 	}
 
 	cote_nord_area = {

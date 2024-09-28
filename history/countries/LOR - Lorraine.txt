@@ -6,6 +6,7 @@ religion = rationalist
 primary_culture = dutch
 capital = 80
 add_accepted_culture = lothringen
+elector = yes
 1444.11.11= {
 	monarch = {
 		name = "Parajox"

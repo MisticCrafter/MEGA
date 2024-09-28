@@ -69,14 +69,14 @@ tigranic_hold_a_triumph = {
     }
 }
 
-tigranic_paladins = {
+tigranic_royalguard = {
     sprite = "GFX_elevate_paladins"
     cost = 50
 
     trigger = {
         dominant_religion = tigranic
         NOT = { has_country_modifier = tigranic_global_cooldown_modifier }
-        NOT = { has_country_modifier = tigranic_paladins_modifier }
+        #NOT = { has_country_modifier = tigranic_royalguards_modifier }
     }
 
     effect = {
@@ -135,34 +135,45 @@ tigranic_rite_of_fertility = {
     }
 }
 
-tigranic_feed_the_land = {
-    sprite = "GFX_feed_the_land"
+tigranic_blessing_madragal = {
+    sprite = "GFX_blessing_primarchate"
     cost = 100
 
     trigger = {
-        custom_trigger_tooltip = {
-            tooltip = tigranic_owns_river_province_tt
-            any_owned_province = {
-                province_group = majorrivers
-            }
-        }
-        NOT = { has_country_modifier = tigranic_riveraspect_cooldown_modifier }
+        NOT = { has_country_modifier = tigranic_blessing_cooldown_modifier }
         NOT = { has_country_modifier = tigranic_global_cooldown_modifier }
-        NOT = {
-			OR = {
-				has_country_modifier = tigranic_feedland_modifier
-				has_country_modifier = tigranic_exploitland_modifier
-			}
-		}
+        219 = {
+            owned_by = ROOT
+            religion = tigranic
+        }
     }
 
     effect = {
-        custom_tooltip = tigranic_feedland_tt
+        custom_tooltip = tigranic_blessing_madragal_tt
         hidden_effect = {
-            country_event = { id = flavor_tigranic.7 } # Feed the Land
+            every_province = {
+                limit = {
+                    owner = {
+                        tag = ROOT
+                        is_subject_of = ROOT
+                    }
+                    OR = {
+                        superregion = europe_superregion
+                        AND = {
+                            continent = africa
+                            NOT = { superregion = near_east_superregion }
+                        }
+                    }
+                    religion = tigranic
+                }
+                add_province_modifier = {
+                    name = tigranic_blessing_madragal_modifier
+                    duration = 1825
+                }
+            }
             add_country_modifier = {
-                name = tigranic_riveraspect_cooldown_modifier
-                duration = 7300
+                name = tigranic_blessing_cooldown_modifier
+                duration = 3650
             }
             add_country_modifier = {
                 name = tigranic_global_cooldown_modifier
@@ -172,34 +183,185 @@ tigranic_feed_the_land = {
     }
 }
 
-tigranic_exploit_the_land = {
-    sprite = "GFX_exploit_the_land"
+tigranic_blessing_athens = {
+    sprite = "GFX_blessing_primarchate"
     cost = 100
 
     trigger = {
-        custom_trigger_tooltip = {
-            tooltip = tigranic_owns_river_province_tt
-            any_owned_province = {
-                province_group = majorrivers
-            }
-        }
-        NOT = { has_country_modifier = tigranic_riveraspect_cooldown_modifier }
+        NOT = { has_country_modifier = tigranic_blessing_cooldown_modifier }
         NOT = { has_country_modifier = tigranic_global_cooldown_modifier }
-        NOT = {
-			OR = {
-				has_country_modifier = tigranic_feedland_modifier
-				has_country_modifier = tigranic_exploitland_modifier
-			}
-		}
+        146 = {
+            owned_by = ROOT
+            religion = tigranic
+        }
     }
 
     effect = {
-        custom_tooltip = tigranic_exploitland_tt
+        custom_tooltip = tigranic_blessing_athens_tt
         hidden_effect = {
-            country_event = { id = flavor_tigranic.8 } # Exploit the Land
+            every_province = {
+                limit = {
+                    owner = {
+                        tag = ROOT
+                        is_subject_of = ROOT
+                    }
+                    OR = {
+                        superregion = eastern_europe_superregion
+                        superregion = near_east_superregion
+                        superregion = persia_superregion
+                    }
+                    religion = tigranic
+                }
+                add_province_modifier = {
+                    name = tigranic_blessing_athens_modifier
+                    duration = 1825
+                }
+            }
             add_country_modifier = {
-                name = tigranic_riveraspect_cooldown_modifier
-                duration = 7300
+                name = tigranic_blessing_cooldown_modifier
+                duration = 3650
+            }
+            add_country_modifier = {
+                name = tigranic_global_cooldown_modifier
+                duration = 365
+            }
+        }
+    }
+}
+
+tigranic_blessing_malacca = {
+    sprite = "GFX_blessing_primarchate"
+    cost = 100
+
+    trigger = {
+        NOT = { has_country_modifier = tigranic_blessing_cooldown_modifier }
+        NOT = { has_country_modifier = tigranic_global_cooldown_modifier }
+        596 = {
+            owned_by = ROOT
+            religion = tigranic
+        }
+    }
+
+    effect = {
+        custom_tooltip = tigranic_blessing_malacca_tt
+        hidden_effect = {
+            every_province = {
+                limit = {
+                    owner = {
+                        tag = ROOT
+                        is_subject_of = ROOT
+                    }
+                    OR = {
+                        superregion = india_superregion
+                        superregion = east_indies_superregion
+                        superregion = oceania_superregion
+                        superregion = china_superregion
+                    }
+                    religion = tigranic
+                }
+                add_province_modifier = {
+                    name = tigranic_blessing_malacca_modifier
+                    duration = 1825
+                }
+            }
+            add_country_modifier = {
+                name = tigranic_blessing_cooldown_modifier
+                duration = 3650
+            }
+            add_country_modifier = {
+                name = tigranic_global_cooldown_modifier
+                duration = 365
+            }
+        }
+    }
+}
+
+tigranic_blessing_kumasi = {
+    sprite = "GFX_blessing_primarchate"
+    cost = 100
+
+    trigger = {
+        NOT = { has_country_modifier = tigranic_blessing_cooldown_modifier }
+        NOT = { has_country_modifier = tigranic_global_cooldown_modifier }
+        1138 = {
+            owned_by = ROOT
+            religion = tigranic
+        }
+    }
+
+    effect = {
+        custom_tooltip = tigranic_blessing_kumasi_tt
+        hidden_effect = {
+            every_province = {
+                limit = {
+                    owner = {
+                        tag = ROOT
+                        is_subject_of = ROOT
+                    }
+                    continent = africa
+                    religion = tigranic
+                }
+                add_province_modifier = {
+                    name = tigranic_blessing_kumasi_modifier
+                    duration = 1825
+                }
+            }
+            add_country_modifier = {
+                name = tigranic_blessing_cooldown_modifier
+                duration = 3650
+            }
+            add_country_modifier = {
+                name = tigranic_global_cooldown_modifier
+                duration = 365
+            }
+        }
+    }
+}
+
+tigranic_blessing_newworld = {
+    sprite = "GFX_blessing_primarchate"
+    cost = 100
+
+    trigger = {
+        NOT = { has_country_modifier = tigranic_blessing_cooldown_modifier }
+        NOT = { has_country_modifier = tigranic_global_cooldown_modifier }
+        OR = {
+            AND = {
+                owns_or_non_sovereign_subject_of = 763
+                763 = { religion = tigranic }
+            }
+            AND = {
+                owns_or_non_sovereign_subject_of = 4610
+                4610 = { religion = tigranic }
+            }
+        }
+    }
+
+    effect = {
+        custom_tooltip = tigranic_blessing_newworld_tt
+        hidden_effect = {
+            every_province = {
+                limit = {
+                    owner = {
+                        OR = {
+                            tag = ROOT
+                            is_subject_of = ROOT
+                        }
+                    }
+                    OR = {
+                        continent = north_america
+                        continent = south_america
+                    }
+                    religion = tigranic
+                }
+                add_province_modifier = {
+                    name = tigranic_blessing_newworld_modifier
+                    duration = 1825
+                }
+            }
+            add_country_modifier = {
+                name = tigranic_blessing_cooldown_modifier
+                duration = 3650
             }
             add_country_modifier = {
                 name = tigranic_global_cooldown_modifier

@@ -7,7 +7,6 @@ primary_culture = burgundian
 capital = 192
 add_accepted_culture = cosmopolitan_french
 add_accepted_culture = breton
-elector = yes
 1444.11.11= {
 	monarch = {
 		name = "Guoretan II"

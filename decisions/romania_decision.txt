@@ -1,0 +1,31 @@
+country_decisions = {
+            romanian_friendship = {
+            
+				major = yes
+				potential = {
+                    tag = SIC
+					RMN = {
+						exists = yes
+						ai = no
+					}
+				}
+				allow = { 
+					RMN = {
+						has_opinion = {
+							who = SIC
+							value = 190
+						}
+						alliance_with = SIC
+					}
+					
+				}
+				effect = {
+		            RMN = {
+						country_event = {
+							id = ME_Sicily_Events.6
+						}
+					}
+				}
+			}
+
+}

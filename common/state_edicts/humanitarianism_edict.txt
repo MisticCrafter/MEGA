@@ -1,0 +1,20 @@
+humanitarianism_edict = {
+	potential = {
+		tag = KNI		#we support "potential" if modders want to have lots and just show some.
+	}
+	
+	allow = {
+		tag = KNI
+	}
+	
+	modifier = {
+		local_monthly_devastation = -0.33
+	}
+	
+	color = {  36 114 25  }
+	
+	
+	ai_will_do = {
+		factor = 0
+	}
+}

@@ -1,5 +1,5 @@
 capital = "Meductic"
-culture = maliseet
+culture = abenaki
 religion = totemism
 trade_goods = unknown
 base_tax = 2

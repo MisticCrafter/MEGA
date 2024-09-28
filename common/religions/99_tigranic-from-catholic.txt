@@ -30,12 +30,15 @@ christian = {
 			tigranic_divine_the_stars
 			tigranic_arrange_a_festival
 			tigranic_hold_a_triumph
-			tigranic_paladins
+			tigranic_royalguard
 			tigranic_warsongs
 			tigranic_rite_of_fertility
 
-			tigranic_feed_the_land
-			tigranic_exploit_the_land
+			tigranic_blessing_madragal
+			tigranic_blessing_athens
+			tigranic_blessing_malacca
+			tigranic_blessing_kumasi
+			tigranic_blessing_newworld
 
 			tigranic_lessons_of_valerio
 			tigranic_lessons_of_tigranna
@@ -46,7 +49,7 @@ christian = {
 		}
 		aspects_name = ANGLICAN_ASPECTS
 		
-	heretic = { BOGOMILIST WALDENSIAN FRATICELLI LOLLARD SOCINIAN }
+	heretic = { CATHOLIC THIBAULTINE BOGOMILIST WALDENSIAN FRATICELLI LOLLARD SOCINIAN }
 
 	}
 }

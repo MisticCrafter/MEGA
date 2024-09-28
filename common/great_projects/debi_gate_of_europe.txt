@@ -1,6 +1,6 @@
 gate_of_europe = {
     # Province the project starts in
-    start = 4561
+    start = 343
 
     # Date built in real life (If you start the game at a date later than this, then the project will show up)
     date = 1344.01.01
@@ -94,7 +94,7 @@ gate_of_europe = {
 
         # What modifiers are given to the province the project is located in
         province_modifiers = {
-            hostile_disembark_speed = 0.50
+            garrison_damage = 0.1
             local_defensiveness = 0.15
             province_trade_power_modifier = 0.25
         }
@@ -130,7 +130,7 @@ gate_of_europe = {
 
         # What modifiers are given to the province the project is located in
         province_modifiers = {
-            hostile_disembark_speed = 1
+            garrison_damage = 0.25
             province_trade_power_modifier = 0.50
         }
 
@@ -173,7 +173,7 @@ gate_of_europe = {
 
         # What modifiers are given to the area of the province the project is located in
         area_modifier = {
-            hostile_disembark_speed = 1
+            garrison_damage = 0.5
             local_defensiveness = 0.33
         }
 

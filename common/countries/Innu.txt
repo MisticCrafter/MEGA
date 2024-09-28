@@ -83,7 +83,7 @@ leader_names = {
 	"Wôlinak"
 }
 ship_names = {
-	"Abenaki"
+	"abenaki"
 	"Ahaso"
 	"Alemos"
 	"Awasos"
@@ -93,7 +93,7 @@ ship_names = {
 	"Doleba"
 	"Gokokhoko"
 	"Kogw"
-	"Maliseet"
+	"abenaki"
 	"Mategwas"
 	"Megeso"
 	"Mi'kmaq"
