@@ -8,6 +8,7 @@ trade_goods = livestock
 base_tax = 1
 base_production = 3
 base_manpower = 2
+fort_15th = yes
 add_core = Z0B
 discovered_by = east_african
 discovered_by = eastern

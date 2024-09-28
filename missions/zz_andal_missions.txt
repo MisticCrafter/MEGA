@@ -27,23 +27,23 @@ andalos_slot_1_missions = {
 		completed_by = 1501.1.1
 		
 		provinces_to_highlight = {
-			colonial_region = colonial_brazil
+			colonial_region = colonial_colombia
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
 		
 		trigger = { 
 			custom_trigger_tooltip = {
-				tooltip = miss_discover_brazil
-				colonial_brazil = {
+				tooltip = ARC_discover_colombia_tt
+				colonial_colombia = {
 					has_discovered = ROOT
 				}
 			}
 			custom_trigger_tooltip = {
-				tooltip = miss_colonize_brazil
+				tooltip = ARC_colonize_colombia_tt
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					value = 1
-					colonial_region = colonial_brazil
+					colonial_region = colonial_colombia
 					is_city = yes
 				}
 			}

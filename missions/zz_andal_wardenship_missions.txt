@@ -22,11 +22,9 @@ wardenship_slot_1_missions = {
 				limit = { 
                     ai = no 
                 }
-				navy_size_percentage = 0.95
 				army_size_percentage = 0.85
 			}
-			else = { 
-                navy_size_percentage = 0.85 
+			else = {
                 army_size_percentage = 0.75 
             }
         }

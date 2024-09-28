@@ -1361,9 +1361,8 @@ country_event = {
 	desc = flavor_andalos.24.desc
 	picture = CONQUEST_eventPicture
 
-	fire_only_once = yes
-
 	trigger = {
+		NOT = { has_country_flag = received_andal_renegades_flag }
 		ROOT = { 
 			has_estate = estate_nobles
 			total_development = 200
@@ -1387,6 +1386,10 @@ country_event = {
 
 	mean_time_to_happen = {
 		months = 5
+	}
+
+	immediate = {
+		set_country_flag = received_andal_renegades_flag
 	}
 
 	option = {
@@ -1566,4 +1569,31 @@ country_event = {
 			modifier = opinionARC_denied_renegades
 		}
 	}
+}
+
+#(give 'Sunset Themes' modifier to colonial nations)
+country_event = {
+	id = flavor_andalos.25
+	title = flavor_andalos.25.title
+	desc = flavor_andalos.25.desc
+	picture = CONQUEST_eventPicture
+
+	hidden = yes
+
+	trigger = {
+		is_subject = yes
+		overlord = {
+			has_estate_privilege = estate_astari_americathemes
+		}
+		NOT = { has_country_modifier = estate_astari_americathemes_modifier }
+	}
+
+	option = {
+		name = flavor_andalos.25.a
+		add_country_modifier = {
+			name = "estate_astari_americathemes_modifier"
+			duration = -1
+		}
+	}
+
 }

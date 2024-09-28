@@ -8,6 +8,7 @@ trade_goods = iron
 base_tax = 3
 base_production = 7
 base_manpower = 5
+fort_15th = yes
 add_core = KBA
 add_permanent_claim = AFR
 discovered_by = east_african

@@ -383,6 +383,8 @@
  224_gets_trade_upgrade_tt: "§YSintra§! will have its §YTrade§! building upgraded."
  227_gets_trade_upgrade_tt: "§YLisarra§! will have its §YTrade§! building upgraded."
  ARC_highest_dev_capital_tt: "§YSintra§! has the highest development in Europe."
+ ARC_discover_colombia_tt: "§Y[Root.GetName]§! has discovered any province in the Colonial Colombia colonial region."
+ ARC_colonize_colombia_tt: "§Y[Root.GetName]§! or their subjects own at least one fully colonized province in the Colonial Colombia colonial region."
  
  # (Tooltips) for Andalos Events
  flavor_andalos_1_tt: "§GEvent Insight:§!\nWe will make a petition for the purchase of §YMacau§!. If we have good enough relations with its ruler, we may be successful.\n§RNote: If the local ruler agrees, we will pay a sum equal to two years of their monthly income!§!"
