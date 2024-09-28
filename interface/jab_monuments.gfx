@@ -43,4 +43,10 @@ spriteTypes = {
         name = "GFX_great_project_parramentu_sicilianu"
         texturefile = "gfx//interface//great_projects//great_project_parramentu_sicilianu.dds"
     }
+
+    # Mistic Zone
+    spriteType = {
+        name = "GFX_great_project_alpine_cross_castle"
+        texturefile = "gfx//interface//great_projects//great_project_loeche_ville.dds"
+    }
 }
