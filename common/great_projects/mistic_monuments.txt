@@ -112,7 +112,7 @@ alpine_cross_castle = {
 
         # What modifiers are given to the nation that owns the monument
         country_modifiers = {
-            monthly_fervor_increase = 0.05
+            monthly_fervor_increase = 0.1
             tolerance_heretic = 0.5
         }
 
@@ -151,7 +151,7 @@ alpine_cross_castle = {
 
         # What modifiers are given to the nation that owns the monument
         country_modifiers = {
-            monthly_fervor_increase = 0.1
+            monthly_fervor_increase = 0.25
             tolerance_heretic = 1
         }
 
@@ -190,7 +190,7 @@ alpine_cross_castle = {
 
         # What modifiers are given to the nation that owns the monument
         country_modifiers = {
-            monthly_fervor_increase = 0.2
+            monthly_fervor_increase = 0.5
             tolerance_heretic = 2
         }
 
