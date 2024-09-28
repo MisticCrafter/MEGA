@@ -1,0 +1,94 @@
+wardenship_slot_1_missions = {
+    slot = 1
+    generic = yes
+    ai = yes
+	has_country_shield = yes
+	potential = {
+        is_subject_of_type_with_overlord = {
+            who = ARC
+            type = "vicerroyalty"
+        }
+    }
+
+    wardenship_raise_army = {
+        icon = mission_assemble_an_army
+        position = 1
+        completed_by = 1445.1.1
+
+        provinces_to_highlight = { }
+
+        trigger = {
+            if = {
+				limit = { 
+                    ai = no 
+                }
+				army_size_percentage = 0.85
+			}
+			else = {
+                army_size_percentage = 0.75 
+            }
+        }
+
+        effect = {
+            create_general_with_pips = {
+                tradition = 50
+                add_shock = 1
+            }
+            add_country_modifier = {
+				name = por_struggle_for_iberia_modifier 
+				duration = 5475
+			}
+        }
+    }
+
+    wardenship_develop_capital = {
+        icon = spa_tercios_system
+        position = 2
+        required_missions = { wardenship_raise_army }
+        completed_by = 1450.1.1
+
+        provinces_to_highlight = {
+            is_capital_of = ROOT
+        }
+
+        trigger = {
+            capital_scope = {
+                num_of_times_improved = 5
+                has_trade_building_trigger = yes
+				has_tax_building_trigger = yes
+				has_production_building_trigger = yes 
+            }
+        }
+
+        effect = {
+            add_prestige_or_monarch_power = { amount = 30 }
+        }
+    }
+
+    wardenship_get_astari = {
+        icon = mission_expand_into_the_forest
+        position = 3
+        required_missions = { wardenship_develop_capital }
+        completed_by = 1455.1.1
+
+        provinces_to_highlight = { }
+
+        trigger = {
+            reverse_has_opinion = {
+                who = ARC
+                value = 190
+            }
+            ARC = {
+                NOT = { has_estate = estate_nobles }
+                has_estate_privilege = estate_astari_astarostratha
+            }
+        }
+
+        effect = {
+            add_country_modifier = {
+                name = "ARC_wardenguard"
+                duration = -1
+            }
+        }
+    }
+}

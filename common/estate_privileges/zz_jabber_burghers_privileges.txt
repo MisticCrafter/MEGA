@@ -112,5 +112,14 @@ estate_burghers_tigranic_tolerance = {
 				has_idea_group = religious_ideas
 			}
 		}
+		modifier = {
+			factor = 0
+			NOT = { 
+				OR = {
+					owns_or_non_sovereign_subject_of = 146
+					owns_or_non_sovereign_subject_of = 225
+				}
+			}
+		}
 	}
 }

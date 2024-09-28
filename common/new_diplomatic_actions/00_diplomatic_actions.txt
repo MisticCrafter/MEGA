@@ -2020,7 +2020,10 @@ promote_appanage_heir = {
 		has_government_attribute = heir
 		FROM = {
 			is_subject_of = ROOT
-			is_subject_of_type = appanage
+			OR = {
+				is_subject_of_type = appanage
+				is_subject_of_type = vicerroyalty
+			}
 			has_government_attribute = heir
 		}
 	}

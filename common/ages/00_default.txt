@@ -219,7 +219,7 @@ age_of_discovery = {
 				OR = {
 					tag = TUR
 					AND = {
-						technology_group = ottoman
+						technology_group = eastern
 						government_rank = 2
 					}
 				}

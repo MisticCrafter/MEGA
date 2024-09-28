@@ -1,4 +1,4 @@
-akan_ideas = {
+Z01_ideas = {
 	start = {
 		range = 0.35
 		gold_depletion_chance_modifier = -0.25

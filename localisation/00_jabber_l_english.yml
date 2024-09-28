@@ -229,6 +229,15 @@
  ARC_develop_country_desc: "For centuries, the course for Andalos - and, ultimately, all of Iberia - was set and steered by the happenings of three major courts: that of Sintra, the new capital, raised to splendor by the House of Sintra; that of Madragal, the old capital, as inherited from our islamic predecessors; and that of Leragal, an older capital still and a remnant from a bygone visigothic age. However, times have changed. Now, it is between two great citadels that our future is chartered: that of Sintra, and that of Lisarra. If we are to establish a true empire and be remembered as such, it is imperative that these great cities look the part. We must seek to have the most illustrious cities, such that even the likes of Venice, Palermo and Geneva will seem like dirty hamlets in comparison."
  ARC_revoke_privileges_title: "Revoke the Old Privileges"
  ARC_revoke_privileges_desc: "Ever since days of Tiresias the Breaker have the realms beyond the Arganic mountains been granted a distinctly higher degree of autonomy face the rest of the realm. In his times, this was a clever arrangement: the northern crowns, although defeated, still donned sharp steel in their scabbards, and the realm could ill afford constant warring in such faraway territories; we gained tribute and fealty, they kept their arms and titles.\n\nFour centuries have passed since then, and the political climate of Iberia is no longer the same. The glory of the northern crowns has faded, and talk of disloyalty is heard only among the senile or the thoughtless youth. Despite this, their old privileges still allow for various political factions and estates to harbour significant influence and sway, practically unparalleled in the Andal south. We must rid ourselves of these elements and centralize the lands of Hispania under the Andal Crown for once and for all."
+ 
+ # Wardenships, Generic
+ wardenship_raise_army_title: "The Wars to Come"
+ wardenship_raise_army_desc: "WIP"
+ wardenship_develop_capital_title: "'Naught but Plenty'"
+ wardenship_develop_capital_desc: "WIP"
+ wardenship_get_astari_title: "Assemble the Wardenguard"
+ wardenship_get_astari_desc: "WIP"
+ 
  ###
  
 
@@ -267,6 +276,8 @@
  ARC_adopting_astari: "Adopting Grand Army Doctrines"
  ARC_reformed_paladins: "Astari: None so Feared"
  ARC_nobility_dissolved: "Dissolved the Nobility"
+
+ ARC_wardenguard: "The Wardenguard"
 
  # (Modifiers) from Andalos Events
  ARC_african_alliance: "Andal Weaponry"
@@ -372,6 +383,8 @@
  224_gets_trade_upgrade_tt: "§YSintra§! will have its §YTrade§! building upgraded."
  227_gets_trade_upgrade_tt: "§YLisarra§! will have its §YTrade§! building upgraded."
  ARC_highest_dev_capital_tt: "§YSintra§! has the highest development in Europe."
+ ARC_discover_colombia_tt: "§Y[Root.GetName]§! has discovered any province in the Colonial Colombia colonial region."
+ ARC_colonize_colombia_tt: "§Y[Root.GetName]§! or their subjects own at least one fully colonized province in the Colonial Colombia colonial region."
  
  # (Tooltips) for Andalos Events
  flavor_andalos_1_tt: "§GEvent Insight:§!\nWe will make a petition for the purchase of §YMacau§!. If we have good enough relations with its ruler, we may be successful.\n§RNote: If the local ruler agrees, we will pay a sum equal to two years of their monthly income!§!"
@@ -540,7 +553,7 @@
  flavor_andalos.23.desc: "kiss my ass noble boy"
  flavor_andalos.23.a: "So mote it be!"
  flavor_andalos.24.title: "The Renegade Sons of Andalos"
- flavor_andalos.24.desc: "It is not uncommon for lords to hear petitions in their halls. It is, in fact, one of the primary functions of feudal lords, besides administering a fief in their liege's name and answering the call of arms when one is sent. All manner of counts and dukes spend hours upon hours listening to the woes of their subjects, adjudicating conflicts and the like.\n\nA monarch, however? Not so much.\n\nAnd yet, [Root.Monarch.GetName] sat upon the throne today, opposite a seemingly-endless line of wide-eyed petitioners. One after the other, they came, no different than they would've in any other holdfast or keep - though perhaps a tad more apprehensively. And then, a man in rich garbs - no doubt a noble, though no doubt one of our own either - stepped up and spoke, and for every sentence he said, [Root.Monarch.GetName]'s eyes grew wider. An Andal nobleman, recently estranged and cast out from his homeland - more than a few gasps could be heard as he detailed how the Archon in Sintra had disposed of his noblemen - seeking a place to start life anew. He pledged the wealth and service of his house in fealty to our realm, in exchange for a fief of his own.\n\nNormally, it would be unwise to turn away coin and swords, especially ones given so freely, but the troubles in Andalos speak for themselves: a dead king, a realm torn in two and a legendary dynasty at the brink of ruin... The man knelt, and [Ruler.Monarch.GetName] pondered."
+ flavor_andalos.24.desc: "It is not uncommon for lords to hear petitions in their halls. It is, in fact, one of the primary functions of feudal lords, besides administering a fief in their liege's name and answering the call of arms when one is sent. All manner of counts and dukes spend hours upon hours listening to the woes of their subjects, adjudicating conflicts and the like.\n\nA monarch, however? Not so much.\n\nAnd yet, [Root.Monarch.GetName] sat upon the throne today, opposite a seemingly-endless line of wide-eyed petitioners. One after the other, they came, no different than they would've in any other holdfast or keep - though perhaps a tad more apprehensively. And then, a man in rich garbs - no doubt a noble, though no doubt one of our own either - stepped up and spoke, and for every sentence he said, [Root.Monarch.GetName]'s eyes grew wider. An Andal nobleman, recently estranged and cast out from his homeland - more than a few gasps could be heard as he detailed how the Archon in Sintra had disposed of his noblemen - seeking a place to start life anew. He pledged the wealth and service of his house in fealty to our realm, in exchange for a fief of his own.\n\nNormally, it would be unwise to turn away coin and swords, especially ones given so freely, but the troubles in Andalos speak for themselves: a dead king, a realm torn in two and a legendary dynasty at the brink of ruin... The man knelt, and [Root.Monarch.GetName] pondered."
  flavor_andalos.24.a: "Rise, my lord! We have much to discuss..."
  flavor_andalos.24.b: "Begone, traitorous scum!"
  # Events (Tigranic)
@@ -682,6 +695,9 @@
  pannonian: "Pannonian"
  britannian: "Britannic"
  romanian: "Romanian"
+
+ # Caucasian Group
+ cilician_armenian: "Cilician"
  ###
  
 

@@ -1,4 +1,4 @@
-namespace = deborah_events
+namespace = kni_venice_destroy
 
 country_event = {
 	id = kni_venice_destroy.t

@@ -431,13 +431,13 @@ country_event = {
 	
 	trigger = {
 		tag = ARC
-		exploration_ideas = 2
-		1460 = {
-            has_discovered = ROOT
-        }
-        1177 = {
-            has_discovered = ROOT
-        }
+		#exploration_ideas = 2
+		#1460 = {
+        #    has_discovered = ROOT
+        #}
+        #1177 = {
+        #    has_discovered = ROOT
+        #}
 	}
 
 	mean_time_to_happen = {
@@ -926,7 +926,7 @@ country_event = {
 		ai_chance = { factor = 33 }
 		highlight = yes
 		trigger = {
-			has_estate_privilege = estate_nobles_andal_strong_duchies
+			has_reform = andal_crown_reform
 		}
 
 		custom_tooltip = ARC_cede_aragon_to_wardenship_tt
@@ -943,7 +943,7 @@ country_event = {
 
 			create_subject = {
 				subject = ARA
-				subject_type = appanage
+				subject_type = vicerroyalty
 			}
 
 			ARA = {
@@ -953,6 +953,7 @@ country_event = {
 					culture = ROOT
 					religion = ROOT
 				}
+				swap_non_generic_missions = yes
 			}	
 		}
 	}
@@ -1019,7 +1020,7 @@ country_event = {
 		ai_chance = { factor = 33 }
 		highlight = yes
 		trigger = {
-			has_estate_privilege = estate_nobles_andal_strong_duchies
+			has_reform = andal_crown_reform
 		}
 
 		custom_tooltip = ARC_cede_catalonia_to_wardenship_tt
@@ -1035,7 +1036,7 @@ country_event = {
 
 			create_subject = {
 				subject = CAT
-				subject_type = appanage
+				subject_type = vicerroyalty
 			}
 
 			CAT = {
@@ -1045,6 +1046,7 @@ country_event = {
 					culture = ROOT
 					religion = ROOT
 				}
+				swap_non_generic_missions = yes
 			}
 		}
 	}
@@ -1113,7 +1115,7 @@ country_event = {
 		ai_chance = { factor = 33 }
 		highlight = yes
 		trigger = {
-			has_estate_privilege = estate_nobles_andal_strong_duchies
+			has_reform = andal_crown_reform
 		}
 
 		custom_tooltip = ARC_cede_majorca_to_wardenship_tt
@@ -1132,7 +1134,7 @@ country_event = {
 
 			create_subject = {
 				subject = MJO
-				subject_type = appanage
+				subject_type = vicerroyalty
 			}
 
 			MJO = {
@@ -1142,6 +1144,7 @@ country_event = {
 					culture = ROOT
 					religion = ROOT
 				}
+				swap_non_generic_missions = yes
 			}
 		}
 	}
@@ -1361,9 +1364,8 @@ country_event = {
 	desc = flavor_andalos.24.desc
 	picture = CONQUEST_eventPicture
 
-	fire_only_once = yes
-
 	trigger = {
+		NOT = { has_country_flag = received_andal_renegades_flag }
 		ROOT = { 
 			has_estate = estate_nobles
 			total_development = 200
@@ -1387,6 +1389,10 @@ country_event = {
 
 	mean_time_to_happen = {
 		months = 5
+	}
+
+	immediate = {
+		set_country_flag = received_andal_renegades_flag
 	}
 
 	option = {
@@ -1552,12 +1558,12 @@ country_event = {
 				add_manuever = 1
 			}
 		}
-		ai_chance = { chance = 100 }
+		ai_chance = { factor = 90 }
 	}
 
 	option = {
 		name = flavor_andalos.24.b
-		ai_chance = { chance = 0 }
+		ai_chance = { factor = 10 }
 		add_prestige_or_monarch_power = {
 			amount = 10
 		}
@@ -1566,4 +1572,31 @@ country_event = {
 			modifier = opinionARC_denied_renegades
 		}
 	}
+}
+
+#(give 'Sunset Themes' modifier to colonial nations)
+country_event = {
+	id = flavor_andalos.25
+	title = flavor_andalos.25.title
+	desc = flavor_andalos.25.desc
+	picture = CONQUEST_eventPicture
+
+	hidden = yes
+
+	trigger = {
+		is_subject = yes
+		overlord = {
+			has_estate_privilege = estate_astari_americathemes
+		}
+		NOT = { has_country_modifier = estate_astari_americathemes_modifier }
+	}
+
+	option = {
+		name = flavor_andalos.25.a
+		add_country_modifier = {
+			name = "estate_astari_americathemes_modifier"
+			duration = -1
+		}
+	}
+
 }

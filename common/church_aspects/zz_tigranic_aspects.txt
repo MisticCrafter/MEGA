@@ -76,7 +76,7 @@ tigranic_royalguard = {
     trigger = {
         dominant_religion = tigranic
         NOT = { has_country_modifier = tigranic_global_cooldown_modifier }
-        NOT = { has_country_modifier = tigranic_royalguards_modifier }
+        #NOT = { has_country_modifier = tigranic_royalguards_modifier }
     }
 
     effect = {
