@@ -151,3 +151,7 @@
  iers_ZVP: "Iers"
  kelten_ZVP: "Keltisch"
  zvp_preview_placeholder_branch: "Placeholder xd :3"
+# Non-dutch localizations:
+# Government Reform
+ mandate_of_ierland_republic_reform: "Mandaatrepubliek of Ierland"
+ mandate_of_ierland_republic_reform_desc: "The Mandaatrepubliek is the de facto 'government' of Ierland. It operates as a minority-lead kleptocratic hereditary stratocracy. The military and their forts are the only places to which order is kept. Generals and rulers frequently loot towns and raze cities that are not sworn to their new nederlandische overlords. The land outside of the bases and conquered cities is a free fire zone, and is devastated by being an endless warzone.\n\nHas elections, but re-elects the same dynasty."

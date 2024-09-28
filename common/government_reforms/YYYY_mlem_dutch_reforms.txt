@@ -305,6 +305,7 @@ mandate_of_ierland_republic_reform = {
 	potential = {
 		OR = { 
 			tag = IRE
+			has_reform = mandate_of_ierland_republic_reform
 			have_had_reform = mandate_of_ierland_republic_reform
 		}
 	}
