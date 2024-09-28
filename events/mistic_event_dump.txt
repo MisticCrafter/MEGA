@@ -19,7 +19,6 @@ country_event = {
         4728 = { country_or_non_sovereign_subject_holds = ROOT }
         1862 = { country_or_non_sovereign_subject_holds = ROOT }
         4739 = { country_or_non_sovereign_subject_holds = ROOT }
-        NOT = { mission_completed = swiss_lombard }
     }
 
     immediate = {
@@ -30,10 +29,17 @@ country_event = {
                 }
             }
             104 = {
-                add_base_tax = -2
-		        add_base_production = -2
-		        add_base_manpower = -2
-                add_devastation = 50
+                if = {
+                    limit = {
+                        NOT = {
+                            mission_completed = swiss_lombard
+                        }
+                    }
+                    add_base_tax = -2
+		            add_base_production = -2
+		            add_base_manpower = -2
+                    add_devastation = 50
+                }
                 change_culture = piedmontese
             }
         }
@@ -44,10 +50,17 @@ country_event = {
                 }
             }
             4728 = {
-                add_base_tax = -1
-		        add_base_production = -1
-		        add_base_manpower = -1
-                add_devastation = 25
+                if = {
+                    limit = {
+                        NOT = {
+                            mission_completed = swiss_lombard
+                        }
+                    }
+                    add_base_tax = -1
+		            add_base_production = -1
+		            add_base_manpower = -1
+                    add_devastation = 25
+                }
                 change_culture = piedmontese
             }
         }
@@ -58,10 +71,17 @@ country_event = {
                 }
             }
             1862 = {
-                add_base_tax = -1
-		        add_base_production = -1
-		        add_base_manpower = -1
-                add_devastation = 25
+                if = {
+                    limit = {
+                        NOT = {
+                            mission_completed = swiss_lombard
+                        }
+                    }
+                    add_base_tax = -1
+		            add_base_production = -1
+		            add_base_manpower = -1
+                    add_devastation = 25
+                }
                 change_culture = piedmontese
             }
         }
@@ -72,12 +92,19 @@ country_event = {
                 }
             }
             4739 = {
-                add_base_tax = -1
-		        add_base_production = -1
-		        add_base_manpower = -1
-                add_devastation = 25
+                if = {
+                    limit = {
+                        NOT = {
+                            mission_completed = swiss_lombard
+                        }
+                    }
+                    add_base_tax = -1
+		            add_base_production = -1
+		            add_base_manpower = -1
+                    add_devastation = 25
+                    change_trade_goods = livestock
+                }
                 change_culture = piedmontese
-                change_trade_goods = livestock
             }
         }
         ROOT = { set_country_flag = milan_purged }
@@ -85,7 +112,15 @@ country_event = {
 
     option = {
         name = flavor_mistic_swiss.1.a
-        add_prestige = -30
+        if = {
+            limit = {
+                mission_completed = swiss_lombard
+            }
+            add_prestige = 5
+        }
+        else = {
+            add_prestige = -15
+        }
         hidden_effect = {
             italy_region = {
                 limit = {
@@ -148,7 +183,6 @@ country_event = {
         105 = { country_or_non_sovereign_subject_holds = ROOT }
         106 = { country_or_non_sovereign_subject_holds = ROOT }
         109 = { country_or_non_sovereign_subject_holds = ROOT }
-        NOT = { mission_completed = swiss_modena }
     }
 
     immediate = {
@@ -159,11 +193,18 @@ country_event = {
                 }
             }
             105 = {
-		        add_base_tax = -1
-		        add_base_production = -1
-		        add_base_manpower = -1
+                if = {
+                    limit = {
+                        NOT = {
+                            mission_completed = swiss_modena
+                        }
+                    }
+                    add_base_tax = -1
+		            add_base_production = -1
+		            add_base_manpower = -1
+                    add_devastation = 25
+                }
                 change_culture = piedmontese
-                add_devastation = 25
             }
         }
         if = {
@@ -173,11 +214,18 @@ country_event = {
                 }
             }
             106 = {
-		        add_base_tax = -2
-		        add_base_production = -2
-		        add_base_manpower = -2
+                if = {
+                    limit = {
+                        NOT = {
+                            mission_completed = swiss_modena
+                        }
+                    }
+                    add_base_tax = -2
+		            add_base_production = -2
+		            add_base_manpower = -2
+                    add_devastation = 25
+                }
                 change_culture = piedmontese
-                add_devastation = 25
             }
 		}
         if = {
@@ -187,11 +235,18 @@ country_event = {
                 }
             }
             109 = {
-		        add_base_tax = -1
-		        add_base_production = -1
-		        add_base_manpower = -1
+                if = {
+                    limit = {
+                        NOT = {
+                            mission_completed = swiss_modena
+                        }
+                    }
+                    add_base_tax = -1
+		            add_base_production = -1
+		            add_base_manpower = -1
+                    add_devastation = 25
+                }
                 change_culture = piedmontese
-                add_devastation = 25
             }
         }
         ROOT = { set_country_flag = modena_purged }
@@ -199,7 +254,15 @@ country_event = {
 
     option = {
         name = flavor_mistic_swiss.2.a
-        add_prestige = -30
+        if = {
+            limit = {
+                mission_completed = swiss_modena
+            }
+            add_prestige = 5
+        }
+        else = {
+            add_prestige = -15
+        }
         hidden_effect = {
             italy_region = {
                 limit = {
@@ -246,7 +309,6 @@ country_event = {
         108 = { country_or_non_sovereign_subject_holds = ROOT }
         109 = { country_or_non_sovereign_subject_holds = ROOT }
         110 = { country_or_non_sovereign_subject_holds = ROOT }
-        NOT = { mission_completed = swiss_verona }
     }
 
     immediate = {
@@ -255,12 +317,19 @@ country_event = {
                 4729 = { religion = jewish }
             }
             4729 = {
-                add_base_tax = -1
-			    add_base_production = -1
-			    add_base_manpower = -1
-                remove_building = temple
+                if = {
+                    limit = {
+                        NOT = {
+                            mission_completed = swiss_verona
+                        }
+                    }
+                    add_base_tax = -1
+			        add_base_production = -1
+			        add_base_manpower = -1
+                    remove_building = temple
+                    add_devastation = 25
+                }
                 change_religion = thibaultine
-                add_devastation = 25
             }
         }
         if = {
@@ -270,12 +339,19 @@ country_event = {
                 }
             }
             4729 = {
-		        add_base_tax = -2
-		        add_base_production = -2
-		        add_base_manpower = -2
+		        if = {
+                    limit = {
+                        NOT = {
+                            mission_completed = swiss_verona
+                        }
+                    }
+                    add_base_tax = -2
+		            add_base_production = -2
+		            add_base_manpower = -2
+                    add_devastation = 50
+                    change_trade_goods = grain
+                }
                 change_culture = piedmontese
-                add_devastation = 25
-                change_trade_goods = grain
             }
 		}
         if = {
@@ -285,11 +361,18 @@ country_event = {
                 }
             }
             107 = {
-                add_base_tax = -1
-			    add_base_production = -1
-		        add_base_manpower = -1
-                add_devastation = 25
-                change_culture = piedmontese 
+                if = {
+                    limit = {
+                        NOT = {
+                            mission_completed = swiss_verona
+                        }
+                    }
+                    add_base_tax = -1
+		            add_base_production = -1
+		            add_base_manpower = -1
+                    add_devastation = 25
+                }
+                change_culture = piedmontese
             }
 		}
         if = {
@@ -299,11 +382,18 @@ country_event = {
                 }
             }
             108 = {
-                add_base_tax = -1
-			    add_base_production = -1
-			    add_base_manpower = -1
-                add_devastation = 25
-                change_culture = piedmontese 
+                if = {
+                    limit = {
+                        NOT = {
+                            mission_completed = swiss_verona
+                        }
+                    }
+                    add_base_tax = -1
+		            add_base_production = -1
+		            add_base_manpower = -1
+                    add_devastation = 25
+                }
+                change_culture = piedmontese
             }
 		}
         if = {
@@ -313,40 +403,62 @@ country_event = {
                         OR = {
                             culture = piedmontese
                             culture = austrian 
-                            }
+                        }
                     }
                 }
             }
             110 = {
-                add_base_tax = -1
-		        add_base_production = -1
-		        add_base_manpower = -1
-                add_devastation = 25
+                if = {
+                    limit = {
+                        NOT = {
+                            mission_completed = swiss_verona
+                        }
+                    }
+                    add_base_tax = -1
+		            add_base_production = -1
+		            add_base_manpower = -1
+                    add_devastation = 25
+                }
                 change_culture = austrian
                 add_core = HAB
             }
         }
-        4729 = {
-            cede_province = SAV
-            add_core = SAV
-        }
-        107 = {
-            cede_province = SAV
-            add_core = SAV
-        }
-        108 = {
-            cede_province = SAV
-            add_core = SAV
-        }
-        110 = {
-            cede_province = SAV
-            add_core = SAV
+        if = {
+            limit = {
+                NOT = {
+                    mission_completed = swiss_verona
+                }
+            }
+            4729 = {
+                cede_province = SAV
+                add_core = SAV
+            }
+            107 = {
+                cede_province = SAV
+                add_core = SAV
+            }
+            108 = {
+                cede_province = SAV
+                add_core = SAV
+            }
+            110 = {
+                cede_province = SAV
+                add_core = SAV
+            }
         }
     }
 
     option = {
         name = "flavor_mistic_swiss.3.a"
-        add_prestige = -30
+        if = {
+            limit = {
+                mission_completed = swiss_verona
+            }
+            add_prestige = 5
+        }
+        else = {
+            add_prestige = -15
+        }
         hidden_effect = {
             italy_region = {
                 limit = {
@@ -425,7 +537,6 @@ country_event = {
 		2992 = { country_or_non_sovereign_subject_holds = ROOT }
         101 = { country_or_non_sovereign_subject_holds = ROOT }
         115 = { country_or_non_sovereign_subject_holds = ROOT }
-        NOT = { mission_completed = swiss_genoa }
     }
 
     immediate = {
@@ -436,11 +547,18 @@ country_event = {
                 }
             }
             2992 = {
-                add_base_tax = -1
-			    add_base_production = -1
-			    add_base_manpower = -1
-                add_devastation = 25
-                change_culture = piedmontese 
+                if = {
+                    limit = {
+                        NOT = {
+                            mission_completed = swiss_genoa
+                        }
+                    }
+                    add_base_tax = -1
+		            add_base_production = -1
+		            add_base_manpower = -1
+                    add_devastation = 25
+                }
+                change_culture = piedmontese
             }
 		}
         if = {
@@ -450,11 +568,18 @@ country_event = {
                 }
             }
             101 = {
-                add_base_tax = -2
-			    add_base_production = -2
-			    add_base_manpower = -2
-                add_devastation = 25
-                change_culture = piedmontese 
+                if = {
+                    limit = {
+                        NOT = {
+                            mission_completed = swiss_genoa
+                        }
+                    }
+                    add_base_tax = -2
+		            add_base_production = -2
+		            add_base_manpower = -2
+                    add_devastation = 50
+                }
+                change_culture = piedmontese
             }
 		}
         if = {
@@ -464,31 +589,53 @@ country_event = {
                 }
             }
             115 = {
-                add_base_tax = -1
-			    add_base_production = -1
-			    add_base_manpower = -1
-                add_devastation = 25
-                change_culture = piedmontese 
+                if = {
+                    limit = {
+                        NOT = {
+                            mission_completed = swiss_genoa
+                        }
+                    }
+                    add_base_tax = -1
+		            add_base_production = -1
+		            add_base_manpower = -1
+                    add_devastation = 25
+                }
+                change_culture = piedmontese
             }
 		}
-        2992 = {
-            cede_province = SAV
-            add_core = SAV
-        }
-        101 = {
-            cede_province = SAV
-            add_core = SAV
-        }
-        115 = {
-            cede_province = SAV
-            add_core = SAV
+        if = {
+            limit = {
+                NOT = {
+                    mission_completed = swiss_genoa
+                }
+            }
+            2992 = {
+                cede_province = SAV
+                add_core = SAV
+            }
+            101 = {
+                cede_province = SAV
+                add_core = SAV
+            }
+            115 = {
+                cede_province = SAV
+                add_core = SAV
+            }
         }
         set_country_flag = SWI_liguria_razed
     }
 
     option = {
         name = flavor_mistic_swiss.4.a
-        add_prestige = -30
+        if = {
+            limit = {
+                mission_completed = swiss_genoa
+            }
+            add_prestige = 5
+        }
+        else = {
+            add_prestige = -15
+        }
         hidden_effect = {
             italy_region = {
                 limit = {
@@ -567,7 +714,6 @@ country_event = {
 		1774 = { country_or_non_sovereign_subject_holds = ROOT }
         111 = { country_or_non_sovereign_subject_holds = ROOT }
         4738 = { country_or_non_sovereign_subject_holds = ROOT }
-        NOT = { mission_completed = swiss_venice }
     }
 
     immediate = {
@@ -578,12 +724,19 @@ country_event = {
                 }
             }
             1774 = {
-                add_base_tax = -1
-			    add_base_production = -1
-			    add_base_manpower = -1
-                add_devastation = 25
+                if = {
+                    limit = {
+                        NOT = {
+                            mission_completed = swiss_venice
+                        }
+                    }
+                    add_base_tax = -1
+			        add_base_production = -1
+			        add_base_manpower = -1
+                    add_devastation = 25
+                    change_trade_goods = livestock
+                }
                 change_culture = piedmontese 
-                change_trade_goods = livestock
             }
 		}
         if = {
@@ -593,10 +746,17 @@ country_event = {
                 }
             }
             111 = {
-                add_base_tax = -1
-			    add_base_production = -1
-			    add_base_manpower = -1
-                add_devastation = 25
+                if = {
+                    limit = {
+                        NOT = {
+                            mission_completed = swiss_venice
+                        }
+                    }
+                    add_base_tax = -1
+			        add_base_production = -1
+			        add_base_manpower = -1
+                    add_devastation = 25
+                }
                 change_culture = piedmontese 
             }
 		}
@@ -607,10 +767,17 @@ country_event = {
                 }
             }
             4738 = {
-                add_base_tax = -2
-			    add_base_production = -2
-			    add_base_manpower = -2
-                add_devastation = 25
+                IF = {
+                    limit = {
+                        NOT = {
+                            mission_completed = swiss_venice
+                        }
+                    }
+                    add_base_tax = -2
+			        add_base_production = -2
+			        add_base_manpower = -2
+                    add_devastation = 25
+                }
                 change_culture = piedmontese 
             }
         }
@@ -639,12 +806,18 @@ country_event = {
             limit = {
                 country_or_non_sovereign_subject_holds = ROOT
                 culture_group = italian
-                NOT = { region = italy_region}
             }
-            add_base_tax = -1
-		    add_base_production = -1
-    	    add_base_manpower = -1
-            add_devastation = 25
+            if = {
+                limit = {
+                    NOT = {
+                        mission_completed = swiss_venice
+                    }
+                }
+                add_base_tax = -1
+		        add_base_production = -1
+    	        add_base_manpower = -1
+                dd_devastation = 25
+            }
             change_culture = piedmontese 
             cede_province = SAV
             add_core = SAV
@@ -654,7 +827,15 @@ country_event = {
 
     option = {
         name = flavor_mistic_swiss.5.a
-        add_prestige = -30
+        if = {
+            limit = {
+                mission_completed = swiss_venice
+            }
+            add_prestige = 5
+        }
+        else = {
+            add_prestige = -15
+        }
         hidden_effect = {
             egypt_region = {
                 limit = {
@@ -819,7 +1000,7 @@ country_event = {
 
     option = {
         name = flavor_mistic_swiss.6.a
-        add_prestige = -30
+        add_prestige = -15
         hidden_effect = {
             north_german_region = {
                 limit = {
@@ -964,7 +1145,7 @@ country_event = {
 
     option = {
         name = flavor_mistic_swiss.7.a
-        add_prestige = -30
+        add_prestige = -15
         hidden_effect = {
             british_isles_region = {
                 limit = {
@@ -1112,7 +1293,7 @@ country_event = {
 
     option = {
         name = flavor_mistic_swiss.8.a
-        add_prestige = -30
+        add_prestige = -15
         hidden_effect = {
             mashriq_region = {
                 limit = {
@@ -1173,7 +1354,6 @@ country_event = {
         is_year = 1500
         SAV = { has_reform = swiss_minority }
 		112 = { country_or_non_sovereign_subject_holds = ROOT }
-        NOT = { mission_completed = swiss_dissolve_league }
     }
 
     mean_time_to_happen = {
@@ -1188,12 +1368,19 @@ country_event = {
                 }
             }
             112 = {
-                add_base_tax = -5
-			    add_base_production = -5
-			    add_base_manpower = -5
-                add_devastation = 100
+                if = {
+                    limit = {
+                        NOT = {
+                            mission_completed = swiss_dissolve_league
+                        }
+                    }
+                    add_base_tax = -5
+			        add_base_production = -5
+			        add_base_manpower = -5
+                    add_devastation = 100
+                    change_trade_goods = fish
+                }
                 change_culture = piedmontese
-                change_trade_goods = fish
             }
 		}
         112 = {
@@ -1240,7 +1427,15 @@ country_event = {
     
     option = {
         name = flavor_mistic_swiss.9.a
-        add_prestige = -30
+        if = {
+            limit = {
+                mission_completed = swiss_dissolve_league
+            }
+            add_prestige = 5
+        }
+        else = {
+            add_prestige = -15
+        }
         hidden_effect = {
             set_global_flag = rip_venice_flag
             every_country = {
@@ -1867,13 +2062,15 @@ country_event = {
     trigger = {
         is_year = 1520
         tag = SWI
-        NOT = { mission_completed = swiss_lombardy_integration }
+        NOT = { mission_completed = swiss_regency }
     }
 
     immediate = {
         release_all_subjects = yes
         italy_region = {
-            country_or_non_sovereign_subject_holds = ROOT   
+            limit = {
+                country_or_non_sovereign_subject_holds = ROOT 
+            }  
             cede_province = SAV
         }
     }

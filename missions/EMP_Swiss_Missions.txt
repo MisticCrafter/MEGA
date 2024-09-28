@@ -621,12 +621,12 @@ swiss_slot_2 = {
 			197 = {
 				country_or_non_sovereign_subject_holds = ROOT
 				fort_level = 2
-				base_manpower = 10
+				base_manpower = 5
 			}
 			176 = {
 				country_or_non_sovereign_subject_holds = ROOT
 				fort_level = 2
-				base_manpower = 10
+				base_manpower = 5
 			}
 		} 
 
@@ -1094,10 +1094,14 @@ swiss_slot_3 = {
 				AND = {
 					SAV = {
 						is_subject_of = ROOT
-						liberty_desire = 1
+						NOT = { liberty_desire = 1 }
 					}
 					army_size = 50
 					mil_power = 200
+					OR = {
+						2981 = { has_building = courthouse }
+						104 = { has_building = courthouse }
+					}
 				}
 				SAV = {
 					NOT = {
@@ -1151,10 +1155,6 @@ swiss_slot_3 = {
 						}
 					}
 					dip_power = 750
-					OR = {
-						2981 = { has_building = courthouse }
-						104 = { has_building = courthouse }
-					}
 				}
 				NOT = { SAV = { is_subject_of = ROOT } }
 			}
@@ -1829,7 +1829,7 @@ swiss_slot_4 = {
 						}
 						owes_favors = {
 							who = ROOT
-							value = 50
+							value = 20
 						}
 					}
 					101 = {
@@ -1852,7 +1852,7 @@ swiss_slot_4 = {
 				VEN = {
 					add_favors = {
    						who = ROOT
-   						amount = -50
+   						amount = -20
 					}
 				}
 			}
@@ -2383,6 +2383,7 @@ swiss_slot_5 = {
 				base_production = 10
 				has_building = workshop
 				has_building = shipyard
+				has_building = marketplace
 			}
 		} 
 
@@ -2390,6 +2391,7 @@ swiss_slot_5 = {
 			2029 = {
 				change_trade_goods = coffee
 				change_province_name = "Port Tell"
+				add_center_of_trade_level = 1
 			}
 			coromandel_region = {
 				
@@ -2424,7 +2426,7 @@ swiss_slot_5 = {
 						}
 						owes_favors = {
 							who = ROOT
-							value = 50
+							value = 20
 						}
 					}
 					101 = {
@@ -2447,7 +2449,7 @@ swiss_slot_5 = {
 				VEN = {
 					add_favors = {
    						who = ROOT
-   						amount = -50
+   						amount = -20
 					}
 				}
 			}
