@@ -3,30 +3,19 @@ christian = {
 		color = { 82 10 226 }
 		icon =  177
 		country = {
- 
-		technology_cost = -0.05
+			technology_cost = -0.05
+			discipline = 0.05
+		}
 
-		discipline = 0.05
-	
-}
 		country_as_secondary = {
- 
-		technology_cost = -0.025
-	
-
-		heir_chance = 1
-	
-}
+			technology_cost = -0.025
+			heir_chance = 1
+		}
 		province = {
- 
-		local_missionary_strength = -0.02
-	
-
-		local_missionary_strength = 0.01
-	
-}
+			local_missionary_strength = -0.02
+			local_missionary_strength = 0.01
+		}
 		
-	
 		holy_sites = { 2769 1134 360 1234 358 1211 379 118 }
 
 		blessings = { 
@@ -38,11 +27,10 @@ christian = {
 			lessons_shaman
 			lessons_traveller
 			lessons_widow
-
-	flags_with_emblem_percentage = 20
-	flag_emblem_index_range = { 1 4 }
-	heretic = { ZAMIKAELITES STEPHANITES EUSTATHIANS }
-
+		}
+		
+		flags_with_emblem_percentage = 20
+		flag_emblem_index_range = { 1 4 }
+		heretic = { ZAMIKAELITES STEPHANITES EUSTATHIANS }
 	}
-}
 }
