@@ -1817,6 +1817,7 @@ sister_holy_order = {
 	can_set_mil_focus = yes
 	can_send_missionary_to_subject = yes
 	extend_trading_range = yes
+	counts_for_borders = yes
 	overlord_can_be_subject = yes
 
 	max_government_rank = 2
@@ -1852,6 +1853,7 @@ sister_holy_order = {
 	# (continuous)
 	subsidize_armies = yes
 	send_officers = yes
+	transfer_trade_power = yes
 	# (immediate)
 	fortify_march = yes
 	takeondebt = yes
