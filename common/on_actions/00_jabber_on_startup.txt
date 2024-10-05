@@ -3,7 +3,9 @@ on_startup = {
 	if = {
 		limit = {
 			tag = ARC
+			NOT = { has_country_flag = andalos_startup_flag }
 		}
+		set_country_flag = andalos_startup_flag
 		country_event = { id = flavor_andalos.19 } # Kingdom of the Andals
         disband_all_regiments = yes
         create_unit_forcelimit_percentage = {
