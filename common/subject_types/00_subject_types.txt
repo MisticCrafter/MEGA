@@ -1854,12 +1854,13 @@ sister_holy_order = {
 	subsidize_armies = yes
 	send_officers = yes
 	transfer_trade_power = yes
+	divert_trade = yes
 	# (immediate)
 	fortify_march = yes
 	takeondebt = yes
 	bestow_gifts = yes
 	send_additional_troops = yes
-	return_land = yes
+	seize_territory = yes
 
 	# Modifiers:
 	modifier_subject = clear
