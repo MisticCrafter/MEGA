@@ -226,8 +226,7 @@ country_decisions = {
 		}
 		allow = {
 			2444 = {
-				base_production = 6
-				has_building = workshop
+				base_production = 10
 			}
 			
 		}

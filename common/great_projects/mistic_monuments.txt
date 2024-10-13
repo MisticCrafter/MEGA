@@ -566,7 +566,7 @@ academia_padania = {
 
         # What modifiers are given to the nation that owns the monument
         country_modifiers = {
-            technology_cost = -0.5
+            technology_cost = -0.05
             innovativeness_gain = 0.25
         }
 
