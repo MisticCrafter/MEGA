@@ -3,8 +3,10 @@ country_decisions = {
             
 				major = yes
 				potential = {
-                    tag = SIC
+                    or = {
+					tag = SIC
 					tag = ITA
+				}
 					RMN = {
 						exists = yes
 						ai = no
