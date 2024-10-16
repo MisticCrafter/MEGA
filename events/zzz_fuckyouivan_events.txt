@@ -378,7 +378,7 @@ country_event = {
 		name = ME_Sicily_Events.6.a 
 		SIC = {
 			create_subject = {
-				subject_type = pronoia_subject_type
+				subject_type = hereditary_pronoia_subject_type
 				subject = RMN
 			}
 		}
