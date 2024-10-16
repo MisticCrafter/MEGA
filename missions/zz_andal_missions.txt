@@ -1030,9 +1030,11 @@ andalos_slot_2_missions_c = {
 				has_shipyard_building_trigger = yes 
 				base_production = 12 
 			}
-			has_great_project = {
-				type = belem_tower
-				tier = 1
+			227 = {
+				has_great_project = {
+					type = belem_tower
+					tier = 1
+				}
 			}
 		}
 		effect = {
@@ -1621,14 +1623,18 @@ andalos_slot_3_missions_b = {
 				}
 			}
 
-			add_great_project_tier = {
-				type = golden_citadel
-				tier = 1
+			224 = {
+				add_great_project_tier = {
+					type = golden_citadel
+					tier = 1
+				}
 			}
 
-			add_great_project_tier = {
-				type = belem_tower
-				tier = 1
+			227 = {
+				add_great_project_tier = {
+					type = belem_tower
+					tier = 1
+				}
 			}
 		}
 	}

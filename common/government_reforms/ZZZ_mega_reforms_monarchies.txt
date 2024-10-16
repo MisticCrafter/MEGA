@@ -65,7 +65,7 @@ absolutist_andalos_reform = {
 				is_playing_custom_nation = yes
 				have_had_reform = absolutist_andalos_reform
 			}
-			mission_completed = andalos_revoke_privileges
+			mission_completed = ARC_revoke_privileges
 		}
 	}
 	trigger = {
