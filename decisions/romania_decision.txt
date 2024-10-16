@@ -4,6 +4,7 @@ country_decisions = {
 				major = yes
 				potential = {
                     tag = SIC
+					tag = ITA
 					RMN = {
 						exists = yes
 						ai = no
