@@ -15,10 +15,9 @@ country_decisions = {
 				allow = { 
 					RMN = {
 						has_opinion = {
-							who = SIC
+							who = ITA
 							value = 190
 						}
-						alliance_with = SIC
 					}
 					
 				}

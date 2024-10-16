@@ -376,11 +376,14 @@ country_event = {
 
 	option = {
 		name = ME_Sicily_Events.6.a 
-		SIC = {
+		FROM = {
 			create_subject = {
 				subject_type = hereditary_pronoia_subject_type
 				subject = RMN
 			}
+		}
+		RMN = {
+			add_government_reform = janissary_autocracy_reform
 		}
 	}
 
