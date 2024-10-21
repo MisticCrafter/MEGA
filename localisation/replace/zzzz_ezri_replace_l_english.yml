@@ -1,4 +1,14 @@
 ﻿l_english:
+ 
+ KRL:0 "Suomi-Karelia"
+ KRL_ADJ:0 "Suomi-Karelian"
+ KRL_ideas:0 "Suomi-Karelian Ideas"
 
- nov_rus_conquer_ruthenia_at:0 "This event will give us a choice to develop one aspect of §Y[295.GetName]§!."
+ russian:0 "Kasimovan"
+
+ kremlin:0 "Kasimov Kremlin"
+
+ nov_rus_conquer_ruthenia_at:0 "This event will give us a choice to develop one aspect of §Y[1778.GetName]§!."
+
+
 

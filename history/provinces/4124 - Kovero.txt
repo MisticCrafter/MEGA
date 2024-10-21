@@ -1,5 +1,5 @@
-owner = FIN
-controller = FIN
+owner = KRL
+controller = KRL
 capital = "Lieksa"
 is_city = yes
 culture = karelian

@@ -1,5 +1,5 @@
-owner = MOS
-controller = MOS
+owner = KAI
+controller = KAI
 capital = "Vladimir"
 is_city = yes
 culture = russian
@@ -8,7 +8,7 @@ trade_goods = iron
 base_tax = 1
 base_production = 1
 base_manpower = 1
-add_core = MOS
+add_core = KAI
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

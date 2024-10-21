@@ -1,5 +1,5 @@
-owner = UKR
-controller = UKR
+owner = MSH
+controller = MSH
 capital = "Kursk"
 is_city = yes
 culture = ruthenian
@@ -9,6 +9,7 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 add_core = UKR
+add_core = MSH
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

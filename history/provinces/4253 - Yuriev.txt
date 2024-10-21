@@ -1,5 +1,5 @@
-owner = MOS
-controller = MOS
+owner = KAI
+controller = KAI
 capital = "Yuriev"
 is_city = yes
 culture = russian
@@ -10,7 +10,7 @@ base_production = 1
 base_manpower = 1
 extra_cost = 8
 center_of_trade = 1
-add_core = MOS
+add_core = KAI
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian
