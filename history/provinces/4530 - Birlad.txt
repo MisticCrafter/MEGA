@@ -10,6 +10,7 @@ base_production = 4
 base_manpower = 2
 add_core = RMN
 add_core = WAL
+add_core = LPA
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

@@ -1,5 +1,5 @@
-government = monarchy
-add_government_reform = feudalism_reform
+government = republic
+add_government_reform = Kasimov_Institute
 government_rank = 2
 technology_group = eastern
 religion = catholic
@@ -10,5 +10,5 @@ capital = 1778
 	add_treasury = 61
 }
 add_accepted_culture = mordvin
-create_vassal = MDV
-create_vassal = KAZ
+add_historical_rival = NOV
+add_historical_rival = UKR

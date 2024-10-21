@@ -1080,6 +1080,9 @@ republic = {
 		dutch_republic
 		force_reelection_reform
 	}
+	exclusive_reforms = {
+		Kasimov_Institute
+	}
 }
 
 tribal = {

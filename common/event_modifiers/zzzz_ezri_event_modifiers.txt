@@ -253,3 +253,6 @@ oon_arty_production = {
 	infantry_fire = -0.25
 	cavalry_fire = -0.25
 }
+Tamed_Steppeland = {
+	local_development_cost = -0.20
+}

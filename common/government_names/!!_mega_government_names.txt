@@ -293,3 +293,26 @@ bundespraesident = {
 		is_emperor = yes
 	}
 }
+
+Kasimov_Institute = {
+	rank = {
+		1 = INSTITUTE
+		2 = INSTITUTE
+		3 = INSTITUTE
+	}
+
+	ruler_male = {
+		1 = BOARD_PRESIDENT
+		2 = BOARD_PRESIDENT
+		3 = BOARD_PRESIDENT
+	}
+
+	ruler_female = {
+		1 = BOARD_PRESIDENT
+		2 = BOARD_PRESIDENT
+		3 = BOARD_PRESIDENT
+	}
+	trigger = {
+		has_reform = Kasimov_Institute
+	}
+}

@@ -1,5 +1,5 @@
-owner = VOL
-controller = VOL
+owner = LPA
+controller = LPA
 capital = "Halicz"
 is_city = yes
 culture = kishinyov
@@ -9,6 +9,7 @@ base_tax = 3
 base_production = 2
 base_manpower = 1
 add_core = VOL
+add_core = LPA
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

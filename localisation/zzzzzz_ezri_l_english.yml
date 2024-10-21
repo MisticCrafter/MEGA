@@ -4,6 +4,17 @@
  KAI_ADJ:0 "Kasimovan"
  KAI_ideas:0 "Kasimovan Ideas"
 
+ Kasimov_Institute:0 "Kasimov Institute"
+ Kasimov_Institute_desc:0 "I turned myself into a russian principality Morty"
+
+ INSTITUTE:0 "Institution"
+ INSTITUTE_desc:0 "I turned myself into a russian principality Morty"
+ BOARD_PRESIDENT:0 "Board President"
+
+ LPA:0 "Lipova"
+ LPA_ADJ:0 "Lipovan"
+ LPA_ideas:0 "Lipovan Ideas"
+
  OON:0 "The Sisterhood"
  OON_ADJ:0 "Sisterhood"
  OON_ideas:0 "Sisterhood Ideas"
