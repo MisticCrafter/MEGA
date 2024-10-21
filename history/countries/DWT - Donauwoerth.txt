@@ -2,7 +2,7 @@ government = republic
 add_government_reform = free_city
 government_rank = 1
 technology_group = western
-religion = catholic
+religion = hussite
 primary_culture = swabian
 capital = 4711
 fixed_capital = 4711
@@ -15,7 +15,7 @@ mercantilism = 25
 		dip = 6
 		mil = 5
 		birth_date = 1414.4.6
-		religion = catholic
+		religion = hussite
 		culture = swabian
 	}
 	add_ruler_personality = embezzler_personality
@@ -30,7 +30,7 @@ mercantilism = 25
 		birth_date = 1419.9.9
 		death_date = 1479.9.9
 		female = yes
-		religion = catholic
+		religion = hussite
 		culture = swedish
 	}
 	add_queen_personality = lawgiver_personality
@@ -45,7 +45,7 @@ mercantilism = 25
 		birth_date = 1440.9.9
 		death_date = 1505.9.9
 		claim = 89
-		religion = catholic
+		religion = hussite
 		culture = swedish
 	}
 	add_heir_personality = inspiring_leader_personality
