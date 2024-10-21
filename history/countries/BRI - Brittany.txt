@@ -2,7 +2,7 @@ government = monarchy
 add_government_reform = feudalism_reform
 government_rank = 2
 technology_group = western
-religion = catholic
+religion = hussite
 primary_culture = breton
 capital = 4384
 1444.11.11= {
@@ -13,7 +13,7 @@ capital = 4384
 		dip = 3
 		mil = 4
 		birth_date = 1401.2.25
-		religion = catholic
+		religion = hussite
 		culture = breton
 	}
 	add_ruler_personality = drunkard_personality
@@ -28,7 +28,7 @@ capital = 4384
 		birth_date = 1401.4.21
 		death_date = 1461.4.21
 		female = yes
-		religion = catholic
+		religion = hussite
 		culture = bavarian
 	}
 	add_queen_personality = infertile_personality
@@ -43,7 +43,7 @@ capital = 4384
 		birth_date = 1418.9.10
 		death_date = 1483.9.10
 		claim = 89
-		religion = catholic
+		religion = hussite
 		culture = breton
 	}
 	add_heir_personality = charismatic_negotiator_personality
