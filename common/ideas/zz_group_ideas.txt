@@ -873,6 +873,13 @@ german_ideas = {
 	
 	trigger = {
 		culture_group = germanic
+		NOT = {
+			OR = {
+				tag = Z0Y
+				tag = Z0F
+				tag = VER
+			}
+		}
 	}
 	free = yes        #will be added at load.
 	
