@@ -41,3 +41,5 @@ set_country_flag = ZZZ_generated_converter_nation
 	add_prestige = 62
 	add_treasury = 75
 }
+historical_rival = Z0F
+historical_rival = ANH
