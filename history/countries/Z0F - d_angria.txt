@@ -17,7 +17,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		dip = 3
 		mil = 5
 		birth_date = 1403.4.2
-		religion = catholic
+		religion = hussite
 		culture = hannoverian
 	}
 	add_ruler_personality = architectural_visionary_personality
@@ -32,7 +32,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		birth_date = 1389.1.23
 		death_date = 1449.1.23
 		female = yes
-		religion = catholic
+		religion = hussite
 		culture = bavarian
 	}
 	add_queen_personality = greedy_personality
@@ -47,7 +47,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		birth_date = 1423.6.1
 		death_date = 1488.6.1
 		claim = 89
-		religion = catholic
+		religion = hussite
 		culture = franconian
 	}
 	add_heir_personality = conqueror_personality
@@ -57,3 +57,6 @@ set_country_flag = ZZZ_generated_converter_nation
 	add_prestige = 78
 	add_treasury = 72
 }
+historical_rival = Z0Y
+historical_rival = ANH	
+historical_rival = WES

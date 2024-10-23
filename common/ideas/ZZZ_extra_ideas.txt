@@ -840,22 +840,6 @@ KIE_ideas = {
 	}
 }
 
-POM_ideas = {
-	trigger = {
-		OR = {
-			tag = POM
-			AND = {
-				num_of_cities = 15
-				is_subject = no
-				OR = {
-					government_rank = 2
-					government_rank = 3
-				}
-				primary_culture = pommeranian
-			}
-		}
-	}
-}
 
 ARM_ideas = {
 	trigger = {
@@ -948,11 +932,6 @@ CEY_ideas = {
 	}
 }
 
-BRE_ideas = {
-	trigger = {
-		tag = BRE
-	}
-}
 
 SHL_ideas = {
 	trigger = {
@@ -1166,11 +1145,6 @@ FEO_ideas = {
 	}
 }
 
-HAN_ideas = {
-	trigger = {
-		tag = HAN
-	}
-}
 
 KAR_ideas = {
 	trigger = {
