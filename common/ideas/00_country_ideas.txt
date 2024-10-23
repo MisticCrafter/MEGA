@@ -18449,3 +18449,41 @@ oon_ideas = {
 		artillery_power = 0.10
 	}
 }
+
+kai_ideas = {
+	start = {
+		technology_cost = -0.10
+		yearly_army_professionalism = 0.01
+	}
+	bonus = {
+		yearly_innovativeness = 0.25
+	}
+	trigger = {
+		tag = KAI
+	}
+
+	free = yes
+
+	kai_1 = {
+		build_cost = -0.10
+	}
+	kai_2 = {
+		global_autonomy = -0.05
+	}
+	kai_3 = {
+		artillery_power = 0.10
+	}
+	kai_4 = {
+		diplomats = 1
+	}
+	kai_5 = {
+		num_accepted_cultures = 2
+	}
+	kai_6 = {
+		global_manpower_modifier = 0.10
+	}
+	kai_7 = {
+		improve_relation_modifier = 0.10
+	}
+
+}

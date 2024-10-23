@@ -1,8 +1,8 @@
-government = tribal
-add_government_reform = steppe_horde
+government = monarchy
+add_government_reform = feudal_monarchy
 government_rank = 1
 technology_group = nomad_group
-religion = sunni
+religion = zoroastrian
 primary_culture = astrakhani
 capital = 464
 religious_school = hanafi_school

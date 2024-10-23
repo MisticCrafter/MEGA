@@ -5,6 +5,7 @@ is_city = yes
 culture = georgian
 religion = catholic
 trade_goods = livestock
+add_devastation = 15
 base_tax = 3
 base_production = 4
 base_manpower = 2

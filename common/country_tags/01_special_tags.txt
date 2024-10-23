@@ -22,6 +22,7 @@ CHN = "countries/China.txt"
 #Holy Orders
 ADD = "countries/OrderAddai.txt"
 AOL = "countries/ArmyOfLight.txt"
+CRS = "countries/CrusadersoftheRedStar.txt"
 BEK = "countries/BektashiOrder.txt"
 BHS = "countries/BrotherhoodHolySepulchre.txt"
 BOR = "countries/BullsOfRishabha.txt"

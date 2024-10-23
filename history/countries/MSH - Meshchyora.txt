@@ -4,5 +4,4 @@ government_rank = 1
 technology_group = eastern
 religion = catholic
 primary_culture = meshchera
-capital = 295
-fixed_capital = 295
+capital = 4255

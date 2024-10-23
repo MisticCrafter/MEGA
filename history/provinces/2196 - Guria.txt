@@ -1,14 +1,14 @@
-owner = ARM
-controller = ARM
+owner = GEO
+controller = GEO
 capital = "Batumi"
 is_city = yes
 culture = georgian
 religion = catholic
 trade_goods = fish
+add_devastation = 15
 base_tax = 4
 base_production = 4
 base_manpower = 2
-add_core = ARM
 add_core = GEO
 discovered_by = east_african
 discovered_by = eastern

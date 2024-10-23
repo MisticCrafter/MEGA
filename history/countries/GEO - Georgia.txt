@@ -2,9 +2,10 @@ government = monarchy
 add_government_reform = autocracy_reform
 government_rank = 1
 technology_group = eastern
-religion = orthodox
+religion = catholic
 primary_culture = georgian
 capital = 423
+1443.9.23 = {add_truce_with = ARM}
 1399.1.1= {
 	monarch = {
 		name = "Giorgi VII"

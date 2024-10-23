@@ -1,5 +1,5 @@
-owner = UKR
-controller = UKR
+owner = RYA
+controller = RYA
 capital = "Odayev"
 is_city = yes
 culture = ryazanian
@@ -8,7 +8,6 @@ trade_goods = grain
 base_tax = 1
 base_production = 4
 base_manpower = 1
-add_core = UKR
 add_core = RYA
 discovered_by = east_african
 discovered_by = eastern

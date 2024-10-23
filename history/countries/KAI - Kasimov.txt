@@ -9,6 +9,7 @@ capital = 1778
 	add_prestige = 85
 	add_treasury = 61
 }
+
 add_accepted_culture = mordvin
 add_historical_rival = NOV
 add_historical_rival = UKR

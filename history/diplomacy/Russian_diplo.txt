@@ -21,3 +21,11 @@ dependency = {
 	start_date = "1444.11.11"
 	end_date = "1836.1.1"
 }	
+
+dependency = {
+	subject_type = vassal
+	first = UKR
+	second = SMO
+	start_date = "1444.11.11"
+	end_date = "1836.1.1"
+}

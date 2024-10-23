@@ -4,6 +4,18 @@
  KAI_ADJ:0 "Kasimovan"
  KAI_ideas:0 "Kasimovan Ideas"
 
+ CRS:0 "Crusaders of the Red Star"
+ CRS_ADJ:0 "Crusaders of the Red Star"
+ CRS_ideas:0 "Crusaders of the Red Star Ideas"
+
+ RZH:0 "Rzhev"
+ RZH_ADJ:0 "Rzhevian"
+ RZH_ideas:9 "Rzhev Ideas"
+
+ VLG:0 "Vologda"
+ VLG_ADJ:0 "Vologdan"
+ VLG_ideas:0 "Vologdan Ideas"
+
  Kasimov_Institute:0 "Kasimov Institute"
  Kasimov_Institute_desc:0 "I turned myself into a russian principality Morty"
 
