@@ -54,6 +54,9 @@ Ural_gold_mine = {
 	local_gold_depletion_chance_modifier = -0.20
 	local_production_efficiency = 0.05
 }
+ukr_mission_manpower = {
+	manpower_in_true_faith_provinces = 0.10
+}
 
 #OON
 appeased_trikai_family = {
