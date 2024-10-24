@@ -1,0 +1,373 @@
+ukr_conquer_neighbors = {
+	slot = 1
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = UKR
+	}
+	has_country_shield = yes
+
+		ukr_secure_the_dnipro = {
+			icon = mission_advance_to_the_dnieper
+			required_missions = {	}
+			position = 1
+
+			trigger = {
+				west_dniepr_area = {
+					type = all 
+					owned_by = root
+				}
+				east_dniepr_area = {
+					type = all 
+					owned_by = root
+				}
+				283 = {
+					owned_by = root
+				}
+			}
+		
+			effect = {
+				add_stability = 1
+				add_prestige = 20
+				ruthenia_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = root
+				}
+			}
+		}
+
+		ukr_rule_ruthenia = {
+			icon = mission_rule_ruthenia
+			required_missions = {
+				ukr_secure_the_dnipro
+			}
+			position = 2
+
+			trigger = {
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 35
+					region = ruthenia_region
+				}
+			}	
+			effect = {
+				add_adm_power = 75
+				add_dip_power = 75
+				add_mil_power = 75
+			}
+		}
+
+		ukr_conquer_nov = {
+			icon = mission_conquer_novgorod
+			required_missions = { ukr_rule_ruthenia }
+			position = 2
+			provinces_to_highlight = {
+				area = novgorod_area
+				NOT = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+			trigger = {
+				novgorod_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}			
+			}
+			effect = {
+				add_country_modifier = {
+					name = "tr_conquered_nov"
+					duration = 7300
+				}
+				pskov_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				beloozero_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				pomor_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				karelia_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				north_karelia = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				arkhangelsk_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				vologda_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+}	
+ukr_military = {
+	slot = 2
+	generic = no
+	ai = yes
+
+	potential = {
+		tag = UKR
+	}
+	has_country_shield = yes
+
+	ukr_army_recruitment = {
+		icon = mission_recruit_the_cossacks
+		required_missions = {
+			ukr_secure_the_dnipro
+			ukr_consolidate
+		}
+		position = 2
+
+		trigger = {
+			manpower_percentage = 0.25
+			280 = {
+				base_manpower = 11
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = ukr_mission_manpower
+				duration = 7300
+			}
+			add_mil_power = 50
+		}
+	}
+
+	ukr_annex_smo = {
+		icon = mission_novgorod_the_great
+		required_missions = {	}
+		position = 3
+
+		trigger = {
+			AND = {
+				NOT = {
+					exists = SMO
+				}
+				NOT = {
+					exists = RZH
+				}
+				1752 = {
+					owned_by = root
+				}
+				293 = {
+					owned_by = root
+				}
+			}	
+		}
+
+		effect = {
+			add_prestige = 10
+			293 = {
+				add_base_manpower = 1
+				add_base_production = 1
+				add_base_tax = 1
+			}
+		}
+	}
+
+	ukr_unite_the_rus = {
+		icon = mission_autocratic_rule
+		required_missions = {
+			ukr_conquer_nov
+			ukr_conquer_kasimov
+		}
+		position = 4
+
+		trigger = {
+			AND = {
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 40
+					region = ruthenia_region
+				}
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 40
+					region = russia_region
+				}
+			}
+		}
+
+		effect = {
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
+			add_country_modifier = {
+				name = "tr_united_russia"
+				duration = 7300
+			}
+		}
+	}
+}
+ukr_consolidate = {
+	slot = 3
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = UKR
+	}
+	has_country_shield = yes
+
+	ukr_consolidate = {
+		icon = mission_conquer_romania
+		required_missions = {	}
+		position = 1
+
+		trigger = {
+			stability = 2
+			num_of_states = 3
+			army_size_percentage = 0.85
+		}
+
+		effect = {
+			add_adm_power = 50
+			add_prestige = 10
+			novgorod_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = root
+			}
+			ryazan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = root
+			}
+		}
+	}
+
+	ukr_baltic_question = {
+		icon = mission_conquer_baltic_region
+		required_missions = {
+			ukr_consolidate
+		}
+		position = 2
+
+		trigger = {
+			OR = {
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 13
+					region = baltic_region
+				}
+				any_ally = {
+					capital_scope = {
+						region = baltic_region
+					}
+					num_of_cities = 13
+				}
+			}
+		}
+	
+		
+
+		effect = {
+			add_dip_power = 50
+			add_prestige = 10
+			tver_area = {
+				add_permanent_claim = root
+			}
+		}
+	}
+
+	ukr_conquer_kasimov = {
+		icon = mission_conquer_moscow
+		required_missions = { ukr_rule_ruthenia }
+		position = 2
+		provinces_to_highlight = {
+			area = ryazan_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			ryazan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "nov_defeated_muscovy"
+				duration = 7300
+			}
+			oka_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			moscow_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			vladimir_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			suzdal_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			yaroslavl_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			tambov_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}	

@@ -6,7 +6,8 @@ tr_russian_minors_1 = {
 		has_dlc = "Third Rome"
 	}
 	potential = {
-		OR = {
+		always = no
+		NOT = {
 			tag = VOL
 			tag = KIE
 			tag = CHR
@@ -30,12 +31,6 @@ tr_russian_minors_1 = {
 				}
 				NOT = { technology_group = nomad_group }
 			}
-			AND = {
-				culture_group = east_slavic
-				NOT = { tag = MOS }
-				NOT = { tag = NOV }
-				NOT = { tag = RUS }
-			}			
 		}
 		has_dlc = "Third Rome"
 		NOT = { map_setup = map_setup_random }
@@ -260,7 +255,8 @@ tr_russian_minors_2 = {
 		has_dlc = "Third Rome"
 	}
 	potential = {
-		OR = {
+		always = no
+		NOT = {
 			tag = VOL
 			tag = KIE
 			tag = CHR
@@ -284,12 +280,6 @@ tr_russian_minors_2 = {
 				}
 				NOT = { technology_group = nomad_group }
 			}
-			AND = {
-				culture_group = east_slavic
-				NOT = { tag = MOS }
-				NOT = { tag = NOV }
-				NOT = { tag = RUS }
-			}			
 		}
 		has_dlc = "Third Rome"
 		NOT = { map_setup = map_setup_random }
@@ -422,6 +412,7 @@ tr_russian_minors_3 = {
 		has_dlc = "Third Rome"
 	}
 	potential = {
+		always = no
 		OR = {
 			tag = VOL
 			tag = KIE
@@ -446,12 +437,6 @@ tr_russian_minors_3 = {
 				}
 				NOT = { technology_group = nomad_group }
 			}
-			AND = {
-				culture_group = east_slavic
-				NOT = { tag = MOS }
-				NOT = { tag = NOV }
-				NOT = { tag = RUS }
-			}			
 		}
 		has_dlc = "Third Rome"
 		NOT = { map_setup = map_setup_random }
