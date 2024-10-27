@@ -1,4 +1,12 @@
 ﻿l_english:
+
+# Kashmir Cores
+
  punjab_flavor.1.title: "Kashmiri Push for Unification"
- punjab_flavor.1.desc: "REPLACE_ME"
- punjab_flavor.1.a: "REPLACE_ME"
+ punjab_flavor.1.desc: "For years, the Kashmiri people have been separated under many governments of varying cultures, relgions, and languages without representation. This shall persist no longer. The Kashmiri people have started a movement aiming to unite with their brethren. They have asked our government for help in this cause, will we accept and face war or decline and focus on other issues?"
+ punjab_flavor.1.a: "We will help them in their cause."
+ punjab_flavor.1.b: "We have more pressing matters at hand."
+
+# Opinion Modifiers
+
+ denied_help_to_kashmir: "Denied Help"

@@ -1,0 +1,3 @@
+denied_help_to_kashmir = {
+	opinion = -50
+}
