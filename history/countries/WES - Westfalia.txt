@@ -2,7 +2,7 @@ government = theocracy
 add_government_reform = leading_clergy_reform
 government_rank = 1
 technology_group = western
-religion = catholic
+religion = hussite
 primary_culture = hannoverian
 capital = 56
 elector = yes
@@ -14,7 +14,7 @@ elector = yes
 		dip = 5
 		mil = 4
 		birth_date = 1400.5.8
-		religion = catholic
+		religion = hussite
 		culture = hannoverian
 	}
 	add_ruler_personality = greedy_personality
