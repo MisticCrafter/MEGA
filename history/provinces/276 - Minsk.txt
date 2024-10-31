@@ -1,5 +1,5 @@
-owner = UKR
-controller = UKR
+owner = WRA
+controller = WRA
 capital = "Minsk"
 is_city = yes
 culture = byelorussian
@@ -8,7 +8,7 @@ trade_goods = naval_supplies
 base_tax = 5
 base_production = 5
 base_manpower = 6
-add_core = UKR
+add_core = WRA
 add_core = PLT
 discovered_by = east_african
 discovered_by = eastern

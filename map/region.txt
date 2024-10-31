@@ -281,7 +281,6 @@ balkan_region = {
 		albania_area
 		silistria_area
 		slavonia_area
-		western_thrace_area
 	}
 }
 

@@ -139,6 +139,7 @@ namespace = ez_knights_events
 			add_opinion = {
 				who = OON
 				modifier = russian_treaties
+				
 			}
 			add_truce_with = NOV
 			add_truce_with = OON

@@ -1,5 +1,5 @@
-owner = MDV
-controller = MDV
+owner = ZAZ
+controller = ZAZ
 capital = "Borisoglebsk"
 is_city = yes
 culture = meshchera
@@ -9,7 +9,7 @@ base_tax = 2
 base_production = 1
 base_manpower = 1
 add_core = CMN
-add_core = MDV
+add_core = ZAZ
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

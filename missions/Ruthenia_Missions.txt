@@ -289,7 +289,7 @@ ukr_consolidate = {
 					capital_scope = {
 						region = baltic_region
 					}
-					num_of_cities = 13
+					num_of_cities = 8
 				}
 			}
 		}

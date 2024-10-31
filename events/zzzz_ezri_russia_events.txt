@@ -61,4 +61,4 @@ country_event = {
 		option = {
 			name = ez_russia_events_y.2.opt2
 		}
-	}
+}

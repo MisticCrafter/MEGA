@@ -18500,7 +18500,7 @@ oon_ideas = {
 kai_ideas = {
 	start = {
 		technology_cost = -0.10
-		yearly_army_professionalism = 0.01
+		yearly_army_professionalism = 0.0025
 	}
 	bonus = {
 		yearly_innovativeness = 0.25

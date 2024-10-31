@@ -1,5 +1,5 @@
-owner = KHZ
-controller = KHZ
+owner = ZAZ
+controller = ZAZ
 capital = "Ukek"
 is_city = yes
 culture = chuvash
@@ -9,7 +9,7 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 add_core = AST
-add_core = KHZ
+add_core = ZAZ
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

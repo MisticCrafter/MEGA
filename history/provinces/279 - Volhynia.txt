@@ -1,5 +1,5 @@
-owner = VOL
-controller = VOL
+owner = UKR
+controller = UKR
 capital = "Volodymyr"
 is_city = yes
 culture = ruthenian
@@ -9,7 +9,7 @@ fort_15th = yes
 base_tax = 3
 base_production = 5
 base_manpower = 1
-add_core = VOL
+add_core = UKR
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian
