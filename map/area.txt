@@ -835,7 +835,7 @@ astrakhan_area = { #5
 }
 
 lower_don_area = { #4
-	288 467 1971 2409
+	288 467 1971 2409 4942
 }
 
 kazan_area = { #3

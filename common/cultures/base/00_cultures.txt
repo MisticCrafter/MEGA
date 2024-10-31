@@ -2502,7 +2502,7 @@ east_slavic = {
 		Veleslava Verkhoslava Vasilisa
 		Vseslava Viacheslava Yaroslava Zabava Zvenislava
 	}
-}
+}	
 
 slavic = {
 	graphical_culture = easterngfx

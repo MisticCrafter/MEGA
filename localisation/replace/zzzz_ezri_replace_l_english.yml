@@ -6,6 +6,8 @@
 
  russian:0 "Kasimovan"
 
+ red_ruthenian:0 "Cossack"
+
  kremlin:0 "Kasimov Kremlin"
 
  nov_rus_conquer_ruthenia_at:0 "This event will give us a choice to develop one aspect of §Y[1778.GetName]§!."

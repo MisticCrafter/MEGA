@@ -1,5 +1,5 @@
-owner = BSH
-controller = BSH
+owner = Z04
+controller = Z04
 capital = "Agyidel"
 is_city = yes
 culture = bashkirian
@@ -8,7 +8,7 @@ trade_goods = iron
 base_tax = 1
 base_production = 1
 base_manpower = 2
-add_core = BSH
+add_core = Z04
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

@@ -814,6 +814,9 @@ categories =  {
 			4200 4202 4203 4218 4219 4220 #Greater China
 
 			4629 #Texas additions
+
+			#MEGA MOD ADDITION
+			4942
 			
 			# 1.29
 			4664 4665 4674 4666 4667 4673 4675 4672 4671 4668 4683

@@ -10,7 +10,11 @@ country_event = {
 	mean_time_to_happen = {
 		days = 730
 	}
-	
+	trigger = {
+		KSH = {
+			is_vassal = yes
+		}
+	}
 	option = {
 		name = punjab_flavor.1.a
 		if = {

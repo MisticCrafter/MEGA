@@ -1,5 +1,5 @@
-owner = VOL
-controller = VOL
+owner = UKR
+controller = UKR
 capital = "Zhytomyr"
 is_city = yes
 culture = ruthenian
@@ -8,8 +8,7 @@ trade_goods = grain
 base_tax = 1
 base_production = 4
 base_manpower = 2
-add_core = VOL
-add_permanent_claim = UKR
+add_core = UKR
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

@@ -644,6 +644,7 @@ republic = {
 			reforms = {
 				oligarchy_reform
 				signoria_reform
+				Kasimov_Institute
 				merchants_reform
 				venice_merchants_reform
 				civic_republicanism_government
