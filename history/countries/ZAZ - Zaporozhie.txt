@@ -4,7 +4,7 @@ government_rank = 2
 technology_group = eastern
 religion = catholic
 primary_culture = red_ruthenian
-capital = 282
+capital = 4946
 add_accepted_culture = ruthenian
 
 1444.11.11= {

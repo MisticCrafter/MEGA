@@ -5,6 +5,7 @@ is_city = yes
 culture = cuman
 religion = catholic
 trade_goods = slaves
+center_of_trade = 1
 base_tax = 1
 base_production = 3
 base_manpower = 4

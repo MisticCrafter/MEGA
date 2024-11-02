@@ -25,6 +25,9 @@ ukr_conquer_neighbors = {
 				283 = {
 					owned_by = root
 				}
+				4946 = {
+					owned_by = root
+				}
 			}
 		
 			effect = {
