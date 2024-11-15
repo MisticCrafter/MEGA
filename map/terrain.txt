@@ -621,7 +621,7 @@ categories =  {
 			2728
 
 			# Added by megacampaign
-			1751 335
+			1751 335 4948
 		}
 	}	
 	
@@ -816,7 +816,7 @@ categories =  {
 			4629 #Texas additions
 
 			#MEGA MOD ADDITION
-			4942 4943 4945 4946
+			4942 4943 4945 4946 4947
 			
 			# 1.29
 			4664 4665 4674 4666 4667 4673 4675 4672 4671 4668 4683

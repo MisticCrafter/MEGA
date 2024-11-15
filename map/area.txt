@@ -769,7 +769,7 @@ azov_area = { #4
 }
 
 crimea_area = { #4
-	284 285 2410 2447
+	284 285 2410 2447 4947 4948
 }
 
 white_ruthenia_area = { #3
