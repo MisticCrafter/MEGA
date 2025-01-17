@@ -1,5 +1,6 @@
-owner = FIN
-controller = FIN
+owner = KRL
+controller = KRL
+add_core = KRL
 capital = "Olofsborg"
 is_city = yes
 culture = finnish

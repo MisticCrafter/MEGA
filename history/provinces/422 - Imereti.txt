@@ -1,5 +1,5 @@
-owner = ARM
-controller = ARM
+owner = GEO
+controller = GEO
 capital = "Kutaisi"
 is_city = yes
 culture = georgian
@@ -8,7 +8,6 @@ trade_goods = cloth
 base_tax = 1
 base_production = 1
 base_manpower = 1
-add_core = ARM
 add_core = GEO
 discovered_by = east_african
 discovered_by = eastern

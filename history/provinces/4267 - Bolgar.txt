@@ -1,5 +1,5 @@
-owner = BSH
-controller = BSH
+owner = KAZ
+controller = KAZ
 capital = "Bolgar"
 is_city = yes
 culture = mordvin

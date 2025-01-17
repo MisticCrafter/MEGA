@@ -2,7 +2,7 @@ government = monarchy
 add_government_reform = feudalism_reform
 government_rank = 1
 technology_group = western
-religion = catholic
+religion = hussite
 primary_culture = franconian
 capital = 66
 fixed_capital = 66
@@ -14,7 +14,7 @@ fixed_capital = 66
 		dip = 3
 		mil = 4
 		birth_date = 1401.8.4
-		religion = catholic
+		religion = hussite
 		culture = franconian
 	}
 	add_ruler_personality = architectural_visionary_personality

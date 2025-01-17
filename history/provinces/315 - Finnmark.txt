@@ -1,5 +1,6 @@
-owner = NOR
-controller = NOR
+owner = SMI
+controller = SMI
+add_core = SMI
 capital = "Vardø"
 is_city = yes
 culture = sapmi

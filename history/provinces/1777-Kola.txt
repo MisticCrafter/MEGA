@@ -1,5 +1,5 @@
-owner = FIN
-controller = FIN
+owner = SMI
+controller = SMI
 capital = "Kola"
 is_city = yes
 culture = sapmi

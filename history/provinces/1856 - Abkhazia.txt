@@ -1,5 +1,5 @@
-owner = ARM
-controller = ARM
+owner = GEO
+controller = GEO
 capital = "Sukhumi"
 is_city = yes
 culture = georgian
@@ -9,7 +9,6 @@ fort_15th = yes
 base_tax = 5
 base_production = 4
 base_manpower = 3
-add_core = ARM
 add_core = GEO
 discovered_by = east_african
 discovered_by = eastern

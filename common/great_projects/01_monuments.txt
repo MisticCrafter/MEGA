@@ -1953,7 +1953,7 @@ cologne_cathedral = {
 
 kremlin = {
 	# province it starts in
-	start = 295
+	start = 1778
 	
 	# date built in real life (so anything built during game time will be there if you start a game after that date)
 	date = 1339.01.01
@@ -18565,7 +18565,7 @@ divrigi_hospital_mosque = {
 }
 
 st_basil_cathedral = {
-	start = 295 #Moskva
+	start = 1778 #Moskva
 	date = 1444.06.01
 	time = { months = 0	}
 	build_cost = 0

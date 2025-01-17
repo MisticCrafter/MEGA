@@ -1,7 +1,11 @@
-government = tribal
-add_government_reform = tribal_kingdom
+government = republic
+add_government_reform = noble_elite_reform
 government_rank = 1
 technology_group = eastern
-religion = orthodox
+religion = catholic
 primary_culture = karelian
-capital = 32
+capital = 30
+add_accepted_culture = finnish
+add_accepted_culture = vepsian
+add_historical_friend = DAN
+add_historical_rival = SWE

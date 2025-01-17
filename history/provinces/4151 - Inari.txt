@@ -1,9 +1,10 @@
-owner = FIN
-controller = FIN
+owner = SMI
+controller = SMI
+add_core = SMI
 capital = "Sodankylä"
 is_city = yes
 culture = sapmi
-religion = catholic
+religion = cathar
 trade_goods = fur
 base_tax = 3
 base_production = 1

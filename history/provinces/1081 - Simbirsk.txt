@@ -1,5 +1,5 @@
-owner = MDV
-controller = MDV
+owner = KAZ
+controller = KAZ
 capital = "Bolgar"
 is_city = yes
 culture = mordvin
@@ -8,7 +8,7 @@ trade_goods = iron
 base_tax = 1
 base_production = 1
 base_manpower = 1
-add_core = MDV
+add_core = KAZ
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

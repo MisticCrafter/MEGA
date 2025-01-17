@@ -54,6 +54,9 @@ Ural_gold_mine = {
 	local_gold_depletion_chance_modifier = -0.20
 	local_production_efficiency = 0.05
 }
+ukr_mission_manpower = {
+	manpower_in_true_faith_provinces = 0.10
+}
 
 #OON
 appeased_trikai_family = {
@@ -78,21 +81,12 @@ enraged_triakai_family = {
 	nobles_loyalty_modifier = -0.15
 }
 melancholic_millenium = {
+	all_power_cost = 0.10
 	own_territory_dice_roll_bonus = -1
 	infantry_cost = 0.75
 	cavalry_cost = 0.50
 	artillery_cost = 0.25
-	discipline = -0.10
-	movement_speed = -0.35
-	fire_damage_received = 0.10
-	shock_damage_received = 0.15
-	mercenary_cost = 0.75
 	global_tax_modifier = -0.50
-	production_efficiency = -0.30
-	global_trade_goods_size_modifier = -0.20
-	interest = 4
-	spy_offence = -0.50
-	global_prosperity_growth = -0.20
 	stability_cost_modifier = 0.25
 	country_admin_power = -2
 	tolerance_own = -3
@@ -252,4 +246,7 @@ oon_arty_production = {
 	artillery_power = 0.05
 	infantry_fire = -0.25
 	cavalry_fire = -0.25
+}
+Tamed_Steppeland = {
+	local_development_cost = -0.20
 }

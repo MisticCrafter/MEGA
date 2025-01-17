@@ -3,7 +3,7 @@ add_government_reform = feudalism_reform
 government_rank = 1
 technology_group = western
 religion = catholic
-primary_culture = sorbian
+primary_culture = baumvolk
 capital = 4748
 1444.11.11= {
 	monarch = {
@@ -14,7 +14,7 @@ capital = 4748
 		mil = 6
 		birth_date = 1412.5.31
 		religion = catholic
-		culture = polish
+		culture = baumvolk
 	}
 	add_ruler_personality = embezzler_personality
 	add_ruler_personality = midas_touched_personality
@@ -29,7 +29,7 @@ capital = 4748
 		death_date = 1473.6.7
 		female = yes
 		religion = catholic
-		culture = austrian
+		culture = baumvolk
 	}
 	add_queen_personality = careful_personality
 	add_queen_personality = tolerant_personality
@@ -44,7 +44,7 @@ capital = 4748
 		death_date = 1488.8.28
 		claim = 89
 		religion = catholic
-		culture = austrian
+		culture = baumvolk
 	}
 	add_heir_personality = pious_personality
 }

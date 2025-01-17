@@ -1,8 +1,50 @@
 ﻿l_english:
 
+ KAI:0 "Kasimov"
+ KAI_ADJ:0 "Kasimovan"
+ KAI_ideas:0 "Kasimovan Ideas"
+
+ PROV4942:0 "Dzhangar"
+ PROV4943:0 "Yershov"
+ PROV4944:0 "Zavadivka"
+ PROV4945:0 "Nikopol"
+ PROV4946:0 "Zaporizhia"
+ PROV4947:0 "Aqmescit"
+ PROV4948:0 "Yalta"
+ PROV4949:0 "Jelgava"
+ PROV4950:0 "Talsi"
+ 
+ WRA:0 "White Ruthenia"
+ WRA_ADJ:0 "White Ruthenian"
+ WRA_ideas:0 "Byelorussian Ideas"
+ 
+ CRS:0 "Crusaders of the Red Star"
+ CRS_ADJ:0 "Crusaders of the Red Star"
+ CRS_ideas:0 "Crusaders of the Red Star Ideas"
+
+ RZH:0 "Rzhev"
+ RZH_ADJ:0 "Rzhevian"
+ RZH_ideas:9 "Rzhev Ideas"
+
+ VLG:0 "Vologda"
+ VLG_ADJ:0 "Vologdan"
+ VLG_ideas:0 "Vologdan Ideas"
+
+ Kasimov_Institute:0 "Kasimov Institute"
+ Kasimov_Institute_desc:0 "I turned myself into a russian principality Morty"
+
+ INSTITUTE:0 "Institution"
+ INSTITUTE_desc:0 "I turned myself into a russian principality Morty"
+ BOARD_PRESIDENT:0 "Board President"
+
+ LPA:0 "Lipova"
+ LPA_ADJ:0 "Lipovan"
+ LPA_ideas:0 "Lipovan Ideas"
+
  OON:0 "The Sisterhood"
  OON_ADJ:0 "Sisterhood"
  OON_ideas:0 "Sisterhood Ideas"
+
  depressed_orthodox_church:0 "Knights-Trikai Power Balance"
  depressed_orthodox_church_desc:0 "We are curently in a power struggle with the Pomesania-Trakai noble family. Perhaps... we could use them to our advantage..."
  Sisterly_Order:0 "Sisterly Order"

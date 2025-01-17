@@ -1,5 +1,5 @@
-owner = VOL
-controller = VOL
+owner = LPA
+controller = LPA
 capital = "Przemysl"
 is_city = yes
 culture = kishinyov
@@ -9,6 +9,7 @@ base_tax = 4
 base_production = 4
 base_manpower = 1
 add_core = VOL
+add_core = LPA
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

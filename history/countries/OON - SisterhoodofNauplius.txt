@@ -32,7 +32,7 @@ OON = {
 	}
 }
 
-capital = 1935
+capital = 4949
 1443.11.11= {
 	monarch = {
 		name = "Rosita"

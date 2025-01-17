@@ -1,5 +1,5 @@
-owner = VOL
-controller = VOL
+owner = LPA
+controller = LPA
 capital = "Kamieniec"
 is_city = yes
 culture = ruthenian
@@ -9,6 +9,7 @@ base_tax = 1
 base_production = 1
 base_manpower = 2
 add_core = VOL
+add_core = LPA
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

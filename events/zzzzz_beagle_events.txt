@@ -1,0 +1,62 @@
+namespace = punjab_flavor
+
+# Kashmir Cores
+country_event = {
+	id = punjab_flavor.1
+	title = punjab_flavor.1.title
+	desc = punjab_flavor.1.desc
+	picture = LIBERUM_VETO_eventPicture
+
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 730
+	}
+	trigger = {
+		tag = PUN
+		KSH = { is_vassal = yes }
+	}
+	
+	option = {
+		# Kashmir gains cores.
+		name = punjab_flavor.1.a
+		ai_chance = { factor = 1 }
+		if = {
+			limit = {
+				4521 = {
+					AND = {
+						NOT = {
+							is_core = KSH
+							owned_by = KSH
+						}
+					}
+				}
+				2074 = {
+					AND = {
+						NOT = {
+							is_core = KSH
+							owned_by = KSH
+						}
+					}
+				}
+			}
+			4521 = {
+				add_core = KSH
+			}
+			2074 = {
+				add_core = KSH
+			}
+		}
+	}
+
+	option = {
+		# Punjab gains admin power.
+		name = punjab_flavor.1.b
+		ai_chance = { factor = 0 }
+		add_adm_power = 50
+		reverse_add_opinion = {
+			years = 20
+			who = KSH
+			modifier = denied_help_to_kashmir
+		}
+	}
+}

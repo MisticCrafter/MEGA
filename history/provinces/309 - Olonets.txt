@@ -1,5 +1,5 @@
-owner = FIN
-controller = FIN
+owner = KRL
+controller = KRL
 capital = "Olonets"
 is_city = yes
 culture = karelian
@@ -9,7 +9,6 @@ fort_15th = yes
 base_tax = 1
 base_production = 2
 base_manpower = 1
-add_core = FIN
 add_core = KRL
 discovered_by = east_african
 discovered_by = eastern

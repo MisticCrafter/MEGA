@@ -2,7 +2,7 @@ government = republic
 add_government_reform = free_city
 government_rank = 1
 technology_group = eastern
-religion = catholic
+religion = hussite
 primary_culture = hungarian
 capital = 4240
 fixed_capital = 4240
@@ -16,7 +16,7 @@ set_country_flag = ZZZ_generated_converter_nation
 		dip = 3
 		mil = 5
 		birth_date = 1393.1.7
-		religion = catholic
+		religion = hussite
 		culture = hungarian
 	}
 	add_ruler_personality = malevolent_personality

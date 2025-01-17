@@ -2,7 +2,7 @@ government = monarchy
 add_government_reform = feudalism_reform
 government_rank = 1
 technology_group = western
-religion = catholic
+religion = hussite
 primary_culture = lower_saxon
 capital = 53
 elector = yes
@@ -41,3 +41,5 @@ set_country_flag = ZZZ_generated_converter_nation
 	add_prestige = 62
 	add_treasury = 75
 }
+historical_rival = Z0F
+historical_rival = ANH

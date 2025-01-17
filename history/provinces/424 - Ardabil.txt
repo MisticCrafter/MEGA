@@ -1,5 +1,5 @@
-owner = KRY
-controller = KRY
+owner = AST
+controller = AST
 capital = "Ardabil"
 is_city = yes
 culture = persian
@@ -8,7 +8,7 @@ trade_goods = dyes
 base_tax = 4
 base_production = 4
 base_manpower = 3
-add_core = KRY
+add_core = AST
 add_core = TAB
 discovered_by = east_african
 discovered_by = eastern

@@ -55,3 +55,5 @@ elector = yes
 	add_prestige = 70
 	add_treasury = 39
 }
+historical_rival = Z0F
+historical_rival = Z0Y

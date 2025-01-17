@@ -1,0 +1,474 @@
+namespace = confederation_hun_petition
+
+country_event = {
+	id = flavor_hunconfederation.1
+	title = flavor_hunconfederation.1.t
+	desc = flavor_hunconfederation.1.desc
+	picture = HRE_eventPicture
+	fire_only_once = yes
+	trigger = {
+		hre_size = 1
+		if = {
+			limit = { has_dlc = "Emperor" }
+			NOT = { active_imperial_incident = any }
+		}
+		tag = HUN
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {	# We must seek out the protection of the HRE
+		name = flavor_hunconfederation.1.a
+		
+		if = {
+			limit = { has_dlc = "Emperor" }
+			custom_tooltip = burgundy_asks_to_join_empire_tt
+			emperor = {
+				set_imperial_incident = incident_teutonic_order_wants_to_join #
+			}
+		}
+		else = {
+			hidden_effect = {
+				emperor = {
+					country_event = {
+						id = flavor_hunconfederation.28 #This event is only gonna fire if you do not have emperor dlc
+					}
+				}
+			}
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+	
+	option = {	# We can hold the ground by our own
+		name = flavor_hunconfederation.1.b
+		add_mil_power = 100
+		add_country_modifier = {
+			name = teu_rejects_imperial_protection
+			duration = 9125
+		}
+		reverse_add_opinion = {
+			who = emperor
+			modifier = teu_rejects_the_hre
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+country_event = {
+	id = flavor_hunconfederation.28
+	title = flavor_hunconfederation.28.t
+	desc = flavor_hunconfederation.28.desc
+	picture = KNIGHTS_eventPicture
+	is_triggered_only = yes
+	major = yes
+	
+	option = {	# Accept the order as part of the HRE
+		name = flavor_hunconfederation.28.a
+		custom_tooltip = flavor_hunconfederation.28.a.tt
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = teu_allowed_us_to_join
+			}
+		}
+		hidden_effect = {
+			FROM = {
+				country_event = {
+					id = flavor_hunconfederation.29
+				}
+				every_neighbor_country = {
+					limit = {
+						is_part_of_hre = yes
+					}
+					add_opinion = {
+						who = ROOT
+						modifier = teu_allowed_the_teutons_into_the_hre
+					}
+				}
+			}
+		}
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 0
+				HUN = { has_country_flag = teu_crusader_path }
+			}
+		}
+	}
+	
+	option = {	# Accept the order, but they need to become a proper nation within the HRE
+		name = flavor_hunconfederation.28.b
+		custom_tooltip = flavor_hunconfederation.28.b.tt
+		hidden_effect = {
+			FROM = {
+				country_event = {
+					id = flavor_hunconfederation.30
+				}
+			}
+		}
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				OR = {
+					ai_attitude = { who = FROM attitude = attitude_hostile }
+					ai_attitude = { who = FROM attitude = attitude_domineering }
+					ai_attitude = { who = FROM attitude = attitude_outraged }
+					ai_attitude = { who = FROM attitude = attitude_rivalry }
+				}
+			}
+			modifier = {
+				factor = 0
+				HUN = { has_country_flag = teu_crusader_path }
+			}
+		}
+	}
+	
+	option = {	# The Teutonic Order has no business in the HRE.
+		name = flavor_hunconfederation.28.c
+		custom_tooltip = flavor_hunconfederation.28.c.tt
+		hidden_effect = {
+			FROM = {
+				country_event = {
+					id = flavor_hunconfederation.31
+				}
+			}
+		}
+		reverse_add_opinion = {
+			who = FROM
+			modifier = teu_rejected_us_from_joining
+		}
+		add_opinion = {
+			who = FROM
+			modifier = teu_does_not_want_the_order_in_the_hre
+		}
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				OR = {
+					ai_attitude = { who = FROM attitude = attitude_allied }
+					ai_attitude = { who = FROM attitude = attitude_defensive }
+					ai_attitude = { who = FROM attitude = attitude_friendly }
+					ai_attitude = { who = FROM attitude = attitude_neutral }
+					ai_attitude = { who = FROM attitude = attitude_protective }
+				}
+			}
+		}
+	}
+}
+# Hungary can have the cities.
+country_event = {
+	id = flavor_hunconfederation.29
+	title = flavor_hunconfederation.29.t
+	desc = flavor_hunconfederation.29.desc
+	picture = DIPLOMACY_SIGNING_eventPicture
+	is_triggered_only = yes
+	
+	option = {	# Nice
+		name = flavor_hunconfederation.29.a
+		ai_chance = {
+			factor = 100
+		}
+		4125 = {
+			if = {
+				limit = {
+					owned_by = Z1T
+					controlled_by = Z1T
+				}
+				cede_province = HUN
+			}
+		}
+		4240 = {
+			if = {
+				limit = {
+					owned_by = Z1S
+					controlled_by = Z1S
+				}
+			cede_province = HUN
+			}
+		}
+		135 = {
+			if = {
+				limit = {
+					owned_by = Z2H
+					controlled_by = Z2H
+				}
+			cede_province = HUN
+			}
+		}
+	}
+}	
+# Hungary is allowed to have the cities only if they join the empire
+country_event = {
+	id = flavor_hunconfederation.30
+	title = flavor_hunconfederation.30.t
+	desc = flavor_hunconfederation.30.desc
+	picture = DIPLOMAT_INTERROGATION_eventPicture
+	is_triggered_only = yes
+	
+	option = {	# Okay.
+		name = flavor_hunconfederation.30.a
+		custom_tooltip = flavor_hunconfederation.30.a.tt
+			set_in_empire = yes
+			set_country_flag = teu_joined_the_hre
+			4125 = {
+				if = {
+					limit = {
+						owned_by = Z1T
+						controlled_by = Z1T
+					}
+					cede_province = HUN
+				}
+			}
+			4240 = {
+				if = {
+					limit = {
+						owned_by = Z1S
+						controlled_by = Z1S
+					}
+				cede_province = HUN
+				}
+			}
+			135 = {
+				if = {
+					limit = {
+						owned_by = Z2H
+						controlled_by = Z2H
+					}
+				cede_province = HUN
+				}
+			}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {	# This is outrageous! This is unfair!
+		name = flavor_hunconfederation.30.b
+		if = {
+			limit = { is_part_of_hre = yes }
+			set_in_empire = no
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+# No go fuck off
+country_event = {
+	id = flavor_hunconfederation.31
+	title = flavor_hunconfederation.31.t
+	desc = flavor_hunconfederation.31.desc
+	picture = ACCUSATION_eventPicture
+	is_triggered_only = yes
+	
+	option = {	# Okay.
+		name = flavor_hunconfederation.31.a
+		custom_tooltip = flavor_hunconfederation.31.a.tt
+		tooltip = {
+			reverse_add_opinion = {
+				who = FROM
+				modifier = teu_rejected_us_from_joining
+			}
+			add_opinion = {
+				who = FROM
+				modifier = teu_does_not_want_the_order_in_the_hre
+			}
+		}
+		if = {
+			limit = { is_part_of_hre = yes }
+			set_in_empire = no
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+# The Order is requesting to join the HRE - Imperial Incident 
+country_event = {
+	id = flavor_hunconfederation.43
+	title = flavor_hunconfederation.28.t
+	desc = flavor_hunconfederation.28.desc
+	picture = KNIGHTS_eventPicture
+	is_triggered_only = yes
+	major = yes
+	
+	option = {	# Accept the order as part of the HRE
+		name = flavor_hunconfederation.28.a
+		custom_tooltip = flavor_hunconfederation.43.a.tt
+		HUN = {
+			add_opinion = {
+				who = Emperor
+				modifier = teu_allowed_us_to_join
+			}
+			country_event = {
+				id = flavor_hunconfederation.29
+			}
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 2
+				has_opinion = {
+					who = HUN
+					value = 100
+				}
+			}
+			modifier = {
+				factor = 0
+				emperor = { is_rival = HUN }
+			}
+			modifier = {
+				factor = 0
+				HUN = { is_rival = emperor }
+			}
+			modifier = {
+				factor = 2
+				NOT = { emperor = { is_rival = HUN } }
+			}
+			modifier = {
+				factor = 2
+				NOT = { HUN = { is_rival = emperor } }
+			}
+			modifier = {
+				factor = 3
+				HUN = { diplomatic_reputation = 1 }
+			}
+			modifier = {
+				factor = 3
+				HUN = { diplomatic_reputation = 2 }
+			}
+			modifier = {
+				factor = 3
+				HUN = { diplomatic_reputation = 3 }
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					is_enemy = HUN
+					is_rival = HUN
+				}
+			}
+			modifier = {
+				factor = 0.1
+				is_neighbor_of = HUN
+			}
+		}
+	}
+	
+	option = {	# Accept the order, but they need to become a proper nation within the HRE
+		name = flavor_hunconfederation.28.b
+		custom_tooltip = flavor_hunconfederation.28.b.tt
+		hidden_effect = {
+			HUN = {
+				country_event = {
+					id = flavor_hunconfederation.30
+				}
+			}
+		}
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0.5
+				emperor = { is_rival = HUN }
+			}
+			modifier = {
+				factor = 0.5
+				HUN = { is_rival = emperor }
+			}
+			modifier = {
+				factor = 2
+				NOT = { emperor = { is_rival = HUN } }
+			}
+			modifier = {
+				factor = 2
+				NOT = { HUN = { is_rival = emperor } }
+			}
+			modifier = {
+				factor = 10
+				is_neighbor_of = HUN
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					is_enemy = HUN
+					is_rival = HUN
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					ai_attitude = { who = HUN attitude = attitude_hostile }
+					ai_attitude = { who = HUN attitude = attitude_domineering }
+					ai_attitude = { who = HUN attitude = attitude_outraged }
+					ai_attitude = { who = HUN attitude = attitude_rivalry }
+				}
+			}
+		}
+	}
+	
+	option = {	# The Teutonic Order has no business in the HRE.
+		name = flavor_hunconfederation.28.c
+		custom_tooltip = flavor_hunconfederation.28.c.tt
+		hidden_effect = {
+			HUN = {
+				country_event = {
+					id = flavor_hunconfederation.31
+				}
+			}
+		}
+		emperor = {
+			reverse_add_opinion = {
+				who = HUN
+				modifier = teu_rejected_us_from_joining
+			}
+			add_opinion = {
+				who = HUN
+				modifier = teu_does_not_want_the_order_in_the_hre
+			}
+		}
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 1.5
+				NOT = {
+					has_opinion = {
+						who = emperor
+						value = 0
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				is_rival = HUN
+			}
+			modifier = {
+				factor = 2
+				HUN = { is_rival = emperor }
+			}
+			modifier = {
+				factor = 0
+				alliance_with = HUN
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					ai_attitude = { who = HUN attitude = attitude_allied }
+					ai_attitude = { who = HUN attitude = attitude_defensive }
+					ai_attitude = { who = HUN attitude = attitude_friendly }
+					ai_attitude = { who = HUN attitude = attitude_neutral }
+					ai_attitude = { who = HUN attitude = attitude_protective }
+				}
+			}
+			modifier = {
+				factor = 10
+				HUN = { has_country_flag = teu_crusader_path }
+			}
+		}
+	}
+}
+

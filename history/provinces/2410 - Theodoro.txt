@@ -10,6 +10,7 @@ base_production = 4
 base_manpower = 3
 add_core = TRE
 add_core = VEN
+add_claim = CRS
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

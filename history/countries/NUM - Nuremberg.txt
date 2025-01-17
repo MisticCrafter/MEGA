@@ -2,7 +2,7 @@ government = republic
 add_government_reform = free_city
 government_rank = 1
 technology_group = western
-religion = catholic
+religion = hussite
 primary_culture = franconian
 capital = 67
 fixed_capital = 67
@@ -15,7 +15,7 @@ mercantilism = 25
 		dip = 4
 		mil = 6
 		birth_date = 1405.1.4
-		religion = catholic
+		religion = hussite
 		culture = franconian
 	}
 	add_ruler_personality = cruel_personality

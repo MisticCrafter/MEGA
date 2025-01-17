@@ -1,5 +1,5 @@
-owner = MDV
-controller = MDV
+owner = KAZ
+controller = KAZ
 capital = "Tetyushi"
 is_city = yes
 culture = mordvin
@@ -8,7 +8,7 @@ trade_goods = grain
 base_tax = 3
 base_production = 2
 base_manpower = 1
-add_core = MDV
+add_core = KAZ
 add_core = CVS
 discovered_by = east_african
 discovered_by = eastern

@@ -91,3 +91,35 @@ Sisterly_Order = {
         }
     }
 }
+
+Kasimov_Institute = {
+	icon = "assembly_hall"
+	allow_normal_conversion = no
+	potential = {
+		tag = KAI
+	}
+	trigger = {
+		tag = KAI
+	}
+	duration = 5
+	has_term_election = yes
+	government_abilities = {
+		russian_mechanic	
+	}
+	fixed_rank = 2
+	
+	custom_attributes = {
+		has_parliament = yes
+		has_limited_terms = yes
+		weaker_russian_ability = yes
+	}
+
+	modifiers = {
+		global_institution_spread = 0.10
+		embracement_cost = -0.10
+		female_advisor_chance = 0.50
+		has_streltsy = yes
+		allowed_streltsy_fraction = 0.10
+		governing_capacity = 100
+	}
+}
