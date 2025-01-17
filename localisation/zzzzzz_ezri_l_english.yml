@@ -11,6 +11,8 @@
  PROV4946:0 "Zaporizhia"
  PROV4947:0 "Aqmescit"
  PROV4948:0 "Yalta"
+ PROV4949:0 "Jelgava"
+ PROV4950:0 "Talsi"
  
  WRA:0 "White Ruthenia"
  WRA_ADJ:0 "White Ruthenian"
@@ -42,6 +44,7 @@
  OON:0 "The Sisterhood"
  OON_ADJ:0 "Sisterhood"
  OON_ideas:0 "Sisterhood Ideas"
+
  depressed_orthodox_church:0 "Knights-Trikai Power Balance"
  depressed_orthodox_church_desc:0 "We are curently in a power struggle with the Pomesania-Trakai noble family. Perhaps... we could use them to our advantage..."
  Sisterly_Order:0 "Sisterly Order"

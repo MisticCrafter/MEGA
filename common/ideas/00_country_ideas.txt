@@ -18458,7 +18458,7 @@ voc_ideas = {
 	}
 }
 
-oon_ideas = {
+OON_ideas = {
 	start = {
 		yearly_patriarch_authority = 0.01
 		manpower_in_true_faith_provinces = 0.20
@@ -18497,7 +18497,7 @@ oon_ideas = {
 	}
 }
 
-kai_ideas = {
+KAI_ideas = {
 	start = {
 		technology_cost = -0.10
 		yearly_army_professionalism = 0.0025

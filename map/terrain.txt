@@ -133,7 +133,7 @@ categories =  {
 			2774 2775 2794 2796 #South Somalia
 
 			# Added by megacampaign
-			224 4548 230 4610 2798 1944
+			224 4548 230 4610 2798 1944 4949
 		}		
 	}
 	
