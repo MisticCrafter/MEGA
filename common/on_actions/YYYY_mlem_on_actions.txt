@@ -11,3 +11,12 @@ on_death_election = {
 		pirate_elections.2
 		} 
 }
+
+on_startup = {
+	if = {
+		limit = { tag = IRE }
+		country_event = {
+			id = flavour_MVI.1
+		}
+	}	
+}

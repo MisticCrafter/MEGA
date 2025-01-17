@@ -1,0 +1,238 @@
+namespace = flavour_MVI
+
+country_event = {
+	id = flavour_MVI.1
+	title = flavour_MVI.1.title
+	desc = flavour_MVI.1.desc
+	picture = ""
+
+	is_triggered_only = yes
+
+	option = {
+		name = flavour_MVI.1.a
+
+		add_country_modifier = {
+			name = MVI_false_republic_modifier
+			duration = -1
+		}
+
+	}
+}
+
+country_event = {
+	id = flavour_MVI.2
+	title = flavour_MVI.2.title
+	desc = flavour_MVI.2.desc
+	picture = ""
+
+	is_triggered_only = yes
+
+	option = {		# prevent Parajox's assassination.
+		name = flavour_MVI.2.a
+		add_yearly_manpower = -2
+		add_country_modifier = {
+			name = MVI_assassination_prevented
+			duration = 3650
+		}
+		add_ruler_modifier = {
+			name = MVI_parajox_the_bandit_modifier
+			duration = -1
+		}
+
+		ai_chance = {
+			factor = 75
+		}
+	}
+
+	option = {		# Assassinate Parajox but revolution fails, replace with someone worse.
+		name = flavour_MVI.2.b
+		define_ruler = {
+			name = "Jan"
+			dynasty = "Alexanderszoon"
+			adm = 4
+			dip = 3
+			mil = 6
+			age = 22
+			culture = dutch
+			religion = rationalist
+		}
+		add_ruler_personality = reaver_personality
+		add_ruler_personality = righteous_personality
+		add_ruler_personality = cruel_personality
+
+		add_yearly_manpower = -2.5
+		add_stability = -1
+		add_country_modifier = {
+			name = MVI_avenging_assassination
+			duration = 3650
+		}
+
+		add_ruler_modifier = {
+			name = MVI_jan_the_vengeful_dictator_modifier
+			duration = -1
+		}
+
+		ai_chance = {
+			factor = 24
+		}
+	}
+
+	option = {		# Overthrow Parajox and revolution succeeds, contact the Zeven Provincies for help.
+		name = flavour_MVI.2.c
+		define_ruler = {
+			name = "Tyvanie"
+			dynasty = "of Corwin"
+			female = yes
+			adm = 4
+			dip = 5
+			mil = 4
+			age = 19
+			culture = irish
+			religion = rationalist
+		}
+		change_primary_culture = irish
+		add_accepted_culture = dutch
+
+		add_country_modifier = {
+			name = MVI_revolution_succeeded
+			duration = 3650
+		}
+
+		add_ruler_modifier = {
+			name = MVI_tyvanie_the_dealmaker_modifier
+			duration = -1
+		}
+
+		add_government_reform = MVI_emergency_republik_reform
+
+		NED = {
+			country_event = {
+				id = flavour_MVI.3
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+}
+
+country_event = {
+	id = flavour_MVI.3
+	title = flavour_MVI.3.title
+	desc = flavour_MVI.3.desc
+	picture = ""
+
+	is_triggered_only = yes
+
+	option = {		# Accept Tyvanie's Offer
+		name = flavour_MVI.3.a
+
+		create_march = IRE
+
+		IRE = {
+			country_event = {
+				id = flavour_MVI.4
+			}
+		}
+
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {		# Reject Tyvanie's Offer
+		name = flavour_MVI.3.b
+
+		IRE = {
+			country_event = {
+				id = flavour_MVI.5
+			}
+		}
+
+		add_country_modifier = {
+			name = ZVP_integrate_ierland_modifier
+			duration = 3650
+		}
+
+		ai_chance = {
+			factor = 0
+		}
+	}
+
+}
+
+country_event = {	# Deal was accepted.
+	id = flavour_MVI.4
+	title = flavour_MVI.4.title
+	desc = flavour_MVI.4.desc
+	picture = ""
+
+	is_triggered_only = yes
+
+	option = {
+		name = flavour_MVI.4.a
+		add_historical_friend = NED
+		NED = {
+			add_historical_friend = IRE
+		}
+
+		add_prestige = 25
+	}
+
+}
+
+country_event = {	# Deal was rejected.
+	id = flavour_MVI.5
+	title = flavour_MVI.5.title
+	desc = flavour_MVI.5.desc
+	picture = ""
+
+	is_triggered_only = yes
+
+	option = {		# disappointed, but accept changes
+		name = flavour_MVI.5.a
+
+		add_liberty_desire = -15
+
+		ai_chance = {
+			factor = 9
+		}
+
+	}
+
+	option = {		# plot a rebellion against the Zeven Provincies
+		name = flavour_MVI.5.b
+
+		add_historical_rival = NED
+		NED = {
+			add_historical_rival = IRE
+		}
+
+		add_liberty_desire = 50
+
+		add_country_modifier = {
+			name = MVI_formenting_independence_tyvanie_modifier
+			duration = 7300
+		}
+
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+
+country_event = {
+	id = flavour_MVI.6
+	title = flavour_MVI.6.title
+	desc = flavour_MVI.6.desc
+	picture = ""
+
+	is_triggered_only = yes
+
+	option = {
+		
+	}
+}

@@ -263,9 +263,11 @@ FNT_all_for_one_one_for_all_modifier = {
 	same_religion_advisor_cost = -0.1
 }
 
-# Misc Modifiers (for vassals and stuff)
-amended_laws_of_settlement_moi = {
-	monthly_mandate_authority_militancy = -0.40
-	global_unrest = -4
-	development_cost = -0.05
+
+
+
+# extra dutch modifiers 
+ZVP_integrate_ierland_modifier = {
+	diplomatic_reputation = 1
+	diplomatic_annexation_cost = -0.1
 }

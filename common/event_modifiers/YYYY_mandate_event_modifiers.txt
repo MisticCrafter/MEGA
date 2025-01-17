@@ -1,0 +1,72 @@
+MVI_false_republic_modifier = {
+	can_not_build_buildings = yes
+	land_maintenance_modifier = -0.25
+	naval_maintenance_modifier = -0.25
+	global_monthly_devastation = 0.025
+
+}
+
+MVI_assassination_prevented = {
+	discipline = 0.05
+	global_monthly_devastation = -0.025
+	monthly_reform_progress_modifier = 0.2
+	
+}
+
+MVI_parajox_the_bandit_modifier = {
+	monarch_lifespan = 0.50
+	reelection_cost = -0.25
+	loot_amount = 0.33
+	available_province_loot = 0.35
+
+}
+
+MVI_avenging_assassination = {
+	global_monthly_devastation = 0.025
+	global_unrest = -3
+	monthly_reform_progress_modifier = 0.1
+	land_morale = 0.1
+
+}
+
+MVI_jan_the_vengeful_dictator_modifier = {
+	monarch_lifespan = 0.5
+	election_cycle = 12
+	reelection_cost = -1
+	global_monthly_devastation = 0.025
+	
+}
+
+MVI_revolution_succeeded = {
+	liberty_desire = -25
+	global_monthly_devastation = -0.075
+	tax_income = 24
+	global_unrest = -5
+	min_autonomy = 33
+
+}
+
+MVI_tyvanie_the_dealmaker_modifier = {
+	monarch_lifespan = 0.5
+	reelection_cost = -0.10
+	improve_relation_modifier = 0.33
+	diplomats = 1
+	diplomatic_reputation = 1
+
+}
+
+MVI_formenting_independence_tyvanie_modifier = {
+	land_forcelimit = 10
+	manpower_recovery_speed = 0.33
+	land_maintenance_modifier = -0.1
+	liberty_desire_from_subject_development = 0.33
+
+}
+
+MVI_muskets_handle_firearms_modifier = {
+	infantry_fire = 0.1
+	infantry_shock = 0.15
+	drill_decay_modifier = -0.33
+	drill_gain_modifier = 0.25
+
+}

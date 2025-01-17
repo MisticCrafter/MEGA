@@ -1,13 +1,15 @@
 ﻿l_english:
 # Rationalist Religion
- rationalist:3 "Rationalist"
- rationalist_rebels_army:3 "$RELIGION$ Army"
- rationalist_rebels_desc:3 "Rationalist fanatics tend to rise up in provinces controlled by nations of a different belief system. They seek to spread their beliefs and smite all god-worshippers."
- rationalist_rebels_name:3 "$RELIGION$ Rebels"
- rationalist_rebels_title:3 "Rationalists"
- rationalist_religion_desc:3 "Extolling a radical doctrine of ultra-violent, anti-religious, cannibalistic humanism. The Cult of Reason and their Rationalists spread the beliefs of King Parajox I of the Netherlands. Through the use of the Courts of Justice, the Rationalists repurpose the generic 'temples and churches' of the god-worshipping unenlightened folk, they conduct meetings preaching equality for all and humanity first beliefs. While others think they are created in a gods image, we know that all humans are virtuous."
+ rationalist: "Rationalist"
+ rationalist_rebels_army: "$RELIGION$ Army"
+ rationalist_rebels_desc: "Rationalist fanatics tend to rise up in provinces controlled by nations of a different belief system. They seek to spread their beliefs and smite all god-worshippers."
+ rationalist_rebels_name: "$RELIGION$ Rebels"
+ rationalist_rebels_title: "Rationalists"
+ rationalist_religion_desc: "Extolling a radical doctrine of ultra-violent, anti-religious, cannibalistic humanism. The Cult of Reason and their Rationalists spread the beliefs of King Parajox I of the Netherlands. Through the use of the Courts of Justice, the Rationalists repurpose the generic 'temples and churches' of the god-worshipping unenlightened folk, they conduct meetings preaching equality for all and humanity first beliefs. While others think they are created in a gods image, we know that all humans are virtuous."
  irreligious: "Irreligious"
  ICONOCLAST_CAMPAIGN: "Iconoclast Campaign"
+# Novemberist Religion
+
 # Fontaine - Country Formable
  FNT: "Fontaine"
  FNT_ADJ: "Fontainian"
@@ -151,7 +153,3 @@
  iers_ZVP: "Iers"
  kelten_ZVP: "Keltisch"
  zvp_preview_placeholder_branch: "Placeholder xd :3"
-# Non-dutch localizations:
-# Government Reform
- mandate_of_ierland_republic_reform: "Mandaatrepubliek of Ierland"
- mandate_of_ierland_republic_reform_desc: "The Mandaatrepubliek is the de facto 'government' of Ierland. It operates as a minority-lead kleptocratic hereditary stratocracy. The military and their forts are the only places to which order is kept. Generals and rulers frequently loot towns and raze cities that are not sworn to their new nederlandische overlords. The land outside of the bases and conquered cities is a free fire zone, and is devastated by being an endless warzone.\n\nHas elections, but re-elects the same dynasty."

@@ -1,0 +1,216 @@
+MVI_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+
+	potential = {
+		tag = IRE
+	}
+
+}
+
+MVI_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+
+	potential = {
+		tag = IRE
+	}
+
+	MVI_operatie_zwarte_luchten = {
+		position = 3
+		icon = mission_unknown_mission
+
+		required_missions = {
+			MVI_false_republic
+		}
+
+		trigger = {
+			
+		}
+
+		effect = {
+			
+		}
+	}
+}
+
+MVI_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+
+	potential = {
+		tag = IRE
+	}
+
+	MVI_false_republic = {
+		position = 1
+		icon = mission_unknown_mission
+
+		trigger = {
+			has_country_modifier = MVI_false_republic_modifier
+		}
+
+		effect = {
+			country_event= {
+				id = flavour_MVI.2
+			}
+		}
+	}
+
+	MVI_knifes_edge = {
+		position = 2
+		icon = mission_unknown_mission
+
+		required_missions = {
+			MVI_false_republic
+		}
+
+		trigger = {
+			army_size_percentage = 0.9
+			num_of_generals = 1
+		}
+
+		effect = {
+
+		}
+	}
+
+	MVI_muskets_handle = {
+		position = 3
+		icon = mission_unknown_mission
+
+		required_missions = {
+			MVI_knifes_edge
+		}
+
+		trigger = {
+			mil_tech = 4
+			army_professionalism = 0.05
+		}
+
+		effect = {
+			
+		}
+	}
+
+	MVI_independence = {
+		position = 4
+		icon = mission_unknown_mission
+
+		required_missions = {
+			MVI_muskets_handle
+			MVI_operatie_zwarte_luchten
+		}
+
+		trigger = {
+			
+		}
+
+		effect = {
+			
+		}
+	}
+
+	MVI_future_of_the_mandate = {
+		position = 5
+		icon = mission_unknown_mission
+
+		required_missions = {
+			MVI_independence
+			MVI_economic_plan
+		}
+
+		trigger = {
+			
+		}
+
+		effect = {
+			
+		}
+	}
+
+}
+
+
+MVI_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+
+	potential = {
+		tag = IRE
+	}
+
+	MVI_shadow_governance = {
+		position = 2
+		icon = mission_unknown_mission
+
+		required_missions = {
+			MVI_false_republic
+		}
+
+		trigger = {
+
+		}
+
+		effect = {
+
+		}
+	}
+
+	MVI_bandits_and_merchants = {
+		position = 3
+		icon = mission_unknown_mission
+
+		required_missions = {
+			MVI_shadow_governance
+		}
+
+		trigger = {
+
+		}
+
+		effect = {
+
+		}
+	}
+
+	MVI_economic_plan = {
+		position = 4
+		icon = mission_unknown_mission
+
+		required_missions = {
+			MVI_muskets_handle
+			MVI_bandits_and_merchants
+		}
+
+		trigger = {
+
+		}
+
+		effect = {
+			
+		}
+	}
+
+}
+
+
+MVI_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+
+	potential = {
+		tag = IRE
+	}
+
+}
