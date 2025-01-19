@@ -697,6 +697,7 @@ republic = {
 				andal_exarchate_reform
 				american_merchant_republic
 				mandate_of_ierland_republic_reform
+				MVI_emergency_republik_reform
 				social_banditry_republic_reform
 				###
 			}

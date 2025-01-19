@@ -71,7 +71,7 @@ zeven_provincies_republic_reform = {				# Starting reform for my nation, is mode
 	fixed_rank = 2
 }
 
-reformed_nederlands_republic_reform = {				# reform after you first remove all the appenages, is going to be modeled on dutch republic normally.
+reformed_nederlands_republic_reform = {				# reform after you first remove all the appenages, is going to be modeled on dutch republic normally. Although removes upon non-rationalist paths.
 	icon = "support_state_reform"
 	allow_normal_conversion = no
 	potential = {
@@ -293,3 +293,4 @@ FNT_cult_of_the_queen_mother_reform = {
 	lock_level_when_selected = yes
 
 }
+

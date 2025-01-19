@@ -1117,5 +1117,6 @@ NMT = "countries/Nuometarra.txt" #2499 (Capital) + 884
 # c: mlemmer :3
 FNT = "countries/Fontaine.txt"
 CWD = "countries/Cynwyd.txt"
+VRW = "countries/Verenieuw.txt"
 
 ###

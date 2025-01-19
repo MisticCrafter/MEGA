@@ -368,7 +368,6 @@ fervor_education_n = {
 	cost = 10
 	potential = {
 		FROM = {
-			NOT = { has_country_flag = ned_buff_fervor_actions }
 			religion = novemberist
 		}
 	}
@@ -402,7 +401,6 @@ fervor_unity_n = {
 	cost = -4
 	potential = {
 		FROM = {
-			NOT = { has_country_flag = ned_buff_fervor_actions }
 			religion = novemberist
 		}
 	}
@@ -443,7 +441,6 @@ fervor_suffering_n = {
 	cost = 10
 	potential = {
 		FROM = {
-			NOT = { has_country_flag = ned_buff_fervor_actions }
 			religion = novemberist
 		}
 	}
@@ -472,7 +469,6 @@ fervor_collaboration_n = {
 	cost = 10
 	potential = {
 		FROM = {
-			NOT = { has_country_flag = ned_buff_fervor_actions }
 			religion = novemberist
 		}
 	}

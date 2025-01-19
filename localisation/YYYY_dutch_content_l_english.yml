@@ -9,7 +9,16 @@
  irreligious: "Irreligious"
  ICONOCLAST_CAMPAIGN: "Iconoclast Campaign"
 # Novemberist Religion
-
+ novemberist: "Novemberist"
+ novemberist_religion_desc: "(To be determined after other naming)"
+ fervor_education_n: "Fervant focus on Education"
+ fervor_education_n_short: "Education"
+ fervor_unity_n: "Fervant focus on Unity"
+ fervor_unity_n_short: "Unity"
+ fervor_suffering_n: "Fervant focus on Suffering"
+ fervor_suffering_n_short: "Suffering"
+ fervor_collaboration_n: "Fervant focus on Collaboration"
+ fervor_collaboration_n_short: "Collaboration"
 # Fontaine - Country Formable
  FNT: "Fontaine"
  FNT_ADJ: "Fontainian"
