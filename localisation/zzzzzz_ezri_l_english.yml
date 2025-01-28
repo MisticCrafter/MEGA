@@ -49,7 +49,11 @@
  depressed_orthodox_church_desc:0 "We are curently in a power struggle with the Pomesania-Trakai noble family. Perhaps... we could use them to our advantage..."
  Sisterly_Order:0 "Sisterly Order"
  Sisterly_Order_desc:0 ""
-
+ 
+ APOSTLES:0 "Apostles"
+ ORDER_OON:0 "Order"
+ HIGH_ORDER_OON:0 "High Order"
+ 
  smoldering_hope:0 "Smoldering Hope"
  desc_smoldering_hope:0 "The last hope for the lithuanian people lies in the order, and that hope is slowly burning out..."
  melancholic_millenium:0 "Melancholic Millenium"

@@ -1,8 +1,8 @@
 sisterhood = {
 	rank = {
-		1 = SISTERHOOD
-		2 = SISTERHOOD
-		3 = GRAND_SISTERHOOD
+		1 = APOSTLES
+		2 = ORDER_OON
+		3 = HIGH_ORDER_OON
 	}
 
 	ruler_male = {

@@ -1,0 +1,50 @@
+kai_consolidate_the_state = {
+	slot = 1
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = KAI
+	}
+	has_country_shield = yes
+
+		kai_return_kasimov = {
+			icon = mission_beyond_the_urals
+			required_missions = {	}
+			position = 1
+
+			trigger = {
+				ryazan_area = {
+					type = all 
+					owned_by = root
+				}
+				300 = {
+					owned_by = root
+				}
+				302 = {
+					owned_by = root
+				}
+			}
+
+			effect = {
+				add_stability = 1
+				add_prestige = 20
+				lower_don_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = root
+				}
+
+				azov_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = root
+				}
+			}
+		}
+
+}

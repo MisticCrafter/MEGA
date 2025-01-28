@@ -4,7 +4,7 @@ capital = "Matrega"
 is_city = yes
 culture = czech
 religion = catholic
-trade_goods = livestock
+trade_goods = cloth
 base_tax = 2
 base_production = 1
 base_manpower = 3
@@ -19,7 +19,7 @@ discovered_by = nomad_group
 discovered_by = ottoman
 discovered_by = sub_saharan
 discovered_by = western
-add_province_modifier = {
+add_province_modifier = { 
 	name = Tamed_Steppeland
 	duration = -0
 }
